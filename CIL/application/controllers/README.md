@@ -1,4 +1,4 @@
-####Test REST API
+####Testing the REST API
 
 curl -X GET http://localhost/CIL/index.php/CIL_REST_API/image/1/test_type
 
