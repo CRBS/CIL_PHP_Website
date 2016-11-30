@@ -39,13 +39,13 @@
 	<!-- CSS Customization -->
 	<link rel="stylesheet" href="/assets/css/custom.css">
         <link href="/static/css/custom.d4ef5c8a635d.css" rel="stylesheet">
-          <link rel="stylesheet" type="text/css" href="/NeuroKS/resources/sckb.css">
-          <link rel="stylesheet" type="text/css" href="/NeuroKS/resources/waiting.css"> 
-          <link rel="stylesheet" href="/NeuroKS/js/sortable/css/sortable-theme-bootstrap.css" /> 
-           <link rel="stylesheet" href="/NeuroKS/js/sortable/css/sortable-theme-finder.css" />
+          <link rel="stylesheet" type="text/css" href="/resources/sckb.css">
+          <link rel="stylesheet" type="text/css" href="/resources/waiting.css"> 
+          <link rel="stylesheet" href="/js/sortable/css/sortable-theme-bootstrap.css" /> 
+           <link rel="stylesheet" href="/js/sortable/css/sortable-theme-finder.css" />
    <!-- <link href="/NeuroKS/resources/Knowledge_Space_files/bootstrap.min.78e7f91c0c4c.css" rel="stylesheet"> -->
-    <link href="/NeuroKS/resources/Knowledge_Space_files/landing-page.c750721445d1.css" rel="stylesheet">
-    <link href="/NeuroKS/resources/Knowledge_Space_files/custom.d4ef5c8a635d.css" rel="stylesheet">
+    <link href="/resources/Knowledge_Space_files/landing-page.c750721445d1.css" rel="stylesheet">
+    <link href="/resources/Knowledge_Space_files/custom.d4ef5c8a635d.css" rel="stylesheet">
    
     
     
@@ -69,8 +69,8 @@
 	<script type="text/javascript" src="/assets/js/plugins/parallax-slider.js"></script>
         <!-- Custom js -->
         <!-- <script src="/NeuroKS/application/views/js/fullscreen.js"></script> -->
-        <script src="/NeuroKS/application/views/js/fullscreen_layout.js"></script>
-        <script src="/NeuroKS/js/sortable/js/sortable.min.js"></script>
+        <!-- <script src="/NeuroKS/application/views/js/fullscreen_layout.js"></script> -->
+        <script src="/js/sortable/js/sortable.min.js"></script>
         
         
         <link rel="stylesheet" href="/CIL/css/cil.css">
