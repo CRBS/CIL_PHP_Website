@@ -8,5 +8,7 @@ Elastica http://elastica.io/
 
 CodeIgniter https://www.codeigniter.com/
 
+codeigniter-restserver https://github.com/chriskacerguis/codeigniter-restserver
+
 ##Sample URL:
 http://localhost/CIL/index.php/Images/view/2
