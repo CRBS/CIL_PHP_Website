@@ -20,6 +20,62 @@ require_once './application/libraries/REST_Controller.php';
 
 class CIL_REST_API extends REST_Controller
 {
+  /**
+   *  Authenticate the user key using the doPost method.
+   */
+  public function user_key_auth_post()
+  {
+      $input = file_get_contents('php://input', 'r');
+      
+      if(is_null($input))
+      {
+          $mainA = array();
+          $mainA['error_message'] ="No input parameter";
+          $this->response($mainA);
+       
+          
+      }
+          
+      
+      $params = json_decode($input);
+       if(is_null($params))
+      {
+          $mainA = array();
+          $mainA['error_message'] ="Invalid input parameter:".$input;
+          $this->response($mainA);
+       
+          
+      }
+      
+      
+      $key = $params->key;
+      
+      
+      /////////////////Check key//////////////////////
+       require_once 'CILServiceUtil.php';
+      $sutil = new CILServiceUtil();
+      $result = $sutil->getCIL_user_key($key);
+      //var_dump($result[0]->getHit());
+      
+      
+      
+      $results = $result->getResults();
+      if(count($results) >0)
+      { 
+          //$item = $hits = $results[0];
+          //var_dump($item);
+          $mainA = array();
+          $mainA['valid_key'] =true;
+          $this->response($mainA);
+      }
+      else
+      {
+          $mainA = array();
+          $mainA['valid_key'] =false;
+          $this->response(false);
+      }
+  }
+    
     
   public function user_key_auth_get($key=0)
   {
