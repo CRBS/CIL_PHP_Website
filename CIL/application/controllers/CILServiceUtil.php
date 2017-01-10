@@ -13,6 +13,28 @@
 });*/
 class CILServiceUtil 
 {
+    
+    public function getCIL_user_key($key)
+    {
+        $elasticaClient = new \Elastica\Client([
+    'connections' => [
+        ['transport' => 'Http', 'host' => 'search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com', 'port' => 80],
+        
+        ],
+        ]);
+        
+        
+        $elasticaIndex = $elasticaClient->getIndex('cil');
+        $elasticaType = $elasticaIndex->getType('user_key');
+        $query = "key:".$key;
+        $result = $elasticaType->search($query);
+        return $result;
+        //var_dump($result);
+        
+    }
+    
+    
+    
     public function getImage($id)
     {
         
