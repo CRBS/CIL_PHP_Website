@@ -15,15 +15,13 @@
         
         
 	<!-- Web Fonts -->
-	<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+	<!-- <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'> -->
 
 	<!-- CSS Global Compulsory -->
 	<link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/assets/css/style.css">
+	<!-- <link rel="stylesheet" href="/assets/css/style.css"> -->
 
-	<!-- CSS Header and Footer -->
-	<!-- <link rel="stylesheet" href="/assets/css/headers/header-default.css">
-	<link rel="stylesheet" href="/assets/css/footers/footer-v1.css"> -->
+	
         
         	<!-- CSS Header and Footer -->
 	<link rel="stylesheet" href="/assets/css/headers/header-v4.css">
@@ -32,26 +30,25 @@
         
 
 	<!-- CSS Implementing Plugins -->
-	<link rel="stylesheet" href="/assets/plugins/animate.css">
+	<!-- <link rel="stylesheet" href="/assets/plugins/animate.css">
 	<link rel="stylesheet" href="/assets/plugins/line-icons/line-icons.css">
 	<link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/assets/plugins/parallax-slider/css/parallax-slider.css">
-	<link rel="stylesheet" href="/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css"> -->
 
 	<!-- CSS Theme -->
-	<link rel="stylesheet" href="/assets/css/theme-colors/default.css" id="style_color">
-	<link rel="stylesheet" href="/assets/css/theme-skins/dark.css">
+	<!-- <link rel="stylesheet" href="/assets/css/theme-colors/default.css" id="style_color">
+	<link rel="stylesheet" href="/assets/css/theme-skins/dark.css"> -->
 
 	<!-- CSS Customization -->
-	<link rel="stylesheet" href="/assets/css/custom.css">
+	<!-- <link rel="stylesheet" href="/assets/css/custom.css">
         <link href="/static/css/custom.d4ef5c8a635d.css" rel="stylesheet">
           <link rel="stylesheet" type="text/css" href="/resources/sckb.css">
           <link rel="stylesheet" type="text/css" href="/resources/waiting.css"> 
           <link rel="stylesheet" href="/js/sortable/css/sortable-theme-bootstrap.css" /> 
            <link rel="stylesheet" href="/js/sortable/css/sortable-theme-finder.css" />
-   <!-- <link href="/NeuroKS/resources/Knowledge_Space_files/bootstrap.min.78e7f91c0c4c.css" rel="stylesheet"> -->
-    <link href="/resources/Knowledge_Space_files/landing-page.c750721445d1.css" rel="stylesheet">
-    <link href="/resources/Knowledge_Space_files/custom.d4ef5c8a635d.css" rel="stylesheet">
+        <link href="/resources/Knowledge_Space_files/landing-page.c750721445d1.css" rel="stylesheet">
+        <link href="/resources/Knowledge_Space_files/custom.d4ef5c8a635d.css" rel="stylesheet">  -->
    
     
     
@@ -79,7 +76,17 @@
         <script src="/js/sortable/js/sortable.min.js"></script>
         
         
-        <link rel="stylesheet" href="/CIL/css/cil.css">
+       <!-- <link rel="stylesheet" href="/CIL/css/cil.css"> -->
+        
+        
+        <link href="http://www.cellimagelibrary.org/stylesheets/all.css?1395102362" media="screen" rel="stylesheet" type="text/css" />
+        <link href="http://www.cellimagelibrary.org/stylesheets/reset.css?1325775274" media="print" rel="stylesheet" type="text/css" />
+        <link href="http://www.cellimagelibrary.org/stylesheets/960.css?1395102369" media="print" rel="stylesheet" type="text/css" />
+        <link href="http://www.cellimagelibrary.org/stylesheets/jquery.autocomplete.css?1325775274" media="print" rel="stylesheet" type="text/css" />
+        <link href="http://www.cellimagelibrary.org/stylesheets/grid.css?1325775274" media="print" rel="stylesheet" type="text/css" />
+        <link href="http://www.cellimagelibrary.org/stylesheets/typography.css?1325775274" media="print" rel="stylesheet" type="text/css" />
+        <link href="http://www.cellimagelibrary.org/stylesheets/buttons.css?1325775274" media="print" rel="stylesheet" type="text/css" />
+        <link href="http://www.cellimagelibrary.org/stylesheets/application.css?1325775274" media="print" rel="stylesheet" type="text/css" /> 
 </head>
 
 

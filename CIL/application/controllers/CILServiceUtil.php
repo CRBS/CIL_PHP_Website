@@ -66,4 +66,33 @@ class CILServiceUtil
         //echo "<br/>-------End Response";
         return $response;
     }
+    
+    
+     public function getCCDBImage($id)
+    {
+        
+        
+        $response = null;
+       
+        
+        $elasticaClient = new \Elastica\Client([
+    'connections' => [
+        ['transport' => 'Http', 'host' => 'search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com', 'port' => 80],
+        
+    ],
+]);
+        
+        $elasticaIndex = $elasticaClient->getIndex('ccdb');
+        $elasticaType = $elasticaIndex->getType('data');
+        
+        try {
+            $response = $elasticaType->getDocument($id);
+        } catch (Exception $e) {
+           
+        }
+        //echo "<br/>-------Response";
+         //var_dump($response);
+        //echo "<br/>-------End Response";
+        return $response;
+    }
 }
