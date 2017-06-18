@@ -7,26 +7,25 @@
             <div class="row">
                  <br/>
                 <div class="col-md-12">
-                     <?php //include_once 'inner_pages/innerImage.php' ?>
+                     <?php include_once 'cil_inner_pages/cil_inner_image.php' ?>
                 </div>
             </div>
             
             <div class="row">
                 <div class="col-md-12">
                 
-                     <?php //include_once 'inner_pages/innerTermsAndConditions.php' ?>
+                     <?php include_once 'cil_inner_pages/cil_inner_license.php' ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                     <?php include_once 'cil_inner_pages/cil_inner_social_media.php' ?>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                 
-                     <?php //include_once 'inner_pages/innerSocialMedia.php' ?>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                
-                     <?php //include_once 'inner_pages/innerComments.php' ?>
+                     <?php include_once 'cil_inner_pages/cil_inner_comments.php' ?>
                 </div>
             </div>
         </div>
