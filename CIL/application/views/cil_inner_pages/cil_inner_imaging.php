@@ -8,30 +8,56 @@
         $imagetype = $json->CIL_CCDB->CIL->CORE->ITEMTYPE;
         if(!is_array($imagetype))
         {
+            if(isset($imagetype->onto_id))
+            {
 ?>
-            <dt><b>Image Type</b></dt>
-            <dd class='eol_dd'>
-            <span>
-            <a class='eol_onto_term_link' href='<?php  echo $imagetype->onto_id;   ?>' title=''><em><?php echo $imagetype->onto_name ?></em></a>
-            </span>
-            </dd>
+            
+                <dt><b>Image Type</b></dt>
+                <dd class='eol_dd'>
+                <span>
+                <a class='eol_onto_term_link' href='<?php  echo $imagetype->onto_id;   ?>' title=''><em><?php echo $imagetype->onto_name ?></em></a>
+                </span>
+                </dd>
 
 <?php
+            }
+            else if(isset($imagetype->free_text))
+            {
+?>
+                <dt><b>Image Type</b></dt>
+                <dd class='eol_dd'>
+                <?php echo  $imagetype->free_text; ?>
+                </dd>
+<?php
+            }
         }
         else
         {
             echo "<dt><b>Image Type</b></dt>";
             foreach ($imagetype as $itype) 
             {
+                if(isset($itype->onto_id))
+                {
 ?>
                 
-                <dd class='eol_dd'>
-                <span>
-                <a class='eol_onto_term_link' href='<?php  echo $itype->onto_id;   ?>' title=''><em><?php echo $itype->onto_name ?></em></a>
-                </span>
-                </dd>       
+                    <dd class='eol_dd'>
+                    <span>
+                    <a class='eol_onto_term_link' href='<?php  echo $itype->onto_id;   ?>' title=''><em><?php echo $itype->onto_name ?></em></a>
+                    </span>
+                    </dd>       
         
 <?php
+                }
+                else if(isset($itype->free_text))
+                {
+?>
+                    <dd class='eol_dd'>
+                    <?php echo $itype->free_text ?>
+                    </dd> 
+
+<?php                    
+                    
+                }
                 
             }
         }
@@ -49,30 +75,54 @@
         $imagemode = $json->CIL_CCDB->CIL->CORE->IMAGINGMODE;
         if(!is_array($imagemode))
         {
+            if(isset($imagemode->onto_id))
+            {
 ?>
-            <dt><b>Image Mode</b></dt>
-            <dd class='eol_dd'>
-            <span>
-            <a class='eol_onto_term_link' href='<?php  echo $imagemode->onto_id;   ?>' title=''><em><?php echo $imagemode->onto_name ?></em></a>
-            </span>
-            </dd>
+                <dt><b>Image Mode</b></dt>
+                <dd class='eol_dd'>
+                <span>
+                <a class='eol_onto_term_link' href='<?php  echo $imagemode->onto_id;   ?>' title=''><em><?php echo $imagemode->onto_name ?></em></a>
+                </span>
+                </dd>
 
 <?php
+            }
+            else if(isset($imagemode->free_text))
+            {
+?>
+               <dt><b>Image Mode</b></dt>
+                <?php echo $imagemode->free_text; ?>
+                </dd>
+
+<?php                
+            }
         }
         else
         {
             echo "<dt><b>Image Mode</b></dt>";
             foreach ($imagemode as $imode) 
             {
+                if(isset($imode->onto_id))
+                {
 ?>
                 
-                <dd class='eol_dd'>
-                <span>
-                <a class='eol_onto_term_link' href='<?php  echo $imode->onto_id;   ?>' title=''><em><?php echo $imode->onto_name ?></em></a>
-                </span>
-                </dd>       
+                    <dd class='eol_dd'>
+                    <span>
+                    <a class='eol_onto_term_link' href='<?php  echo $imode->onto_id;   ?>' title=''><em><?php echo $imode->onto_name ?></em></a>
+                    </span>
+                    </dd>       
         
 <?php
+                }
+                else if($imode->free_text)
+                {
+?>
+                    <dd class='eol_dd'>
+                    <?php echo $imode->free_text; ?>
+                    </dd>   
+                    
+<?php
+                }
                 
             }
         }

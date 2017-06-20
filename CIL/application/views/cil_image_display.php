@@ -37,27 +37,47 @@
                     <!-- <button class="btn-u btn-u-xs rounded-4x btn-u-green" type="button">Add to photobox</button> -->
                     
                     <a href="/accounts/login_prompt_required" class="mini button" id="toggle_img_favorites_2_logged_out">Add to Photobox</a>
-                    <span class="cil pull-right">CIL:2<sup class="detailed_cil_asterisk">*</sup></span> 
-                    <?php include_once 'cil_inner_pages/cil_inner_description.php' ?>
+                    <span class="cil pull-right">CIL:<?php 
+                        if(!is_null($numeric_id))
+                        {
+                            echo $numeric_id;
+                        }
+                    ?><sup class="detailed_cil_asterisk">*</sup></span> 
+                    <?php 
+                        if(isset($json->CIL_CCDB->CIL->CORE->IMAGEDESCRIPTION->free_text))
+                            include_once 'cil_inner_pages/cil_inner_description.php' 
+                    ?>
                 </div>
                 
                 <div class="col-md-12">
-                     <?php include_once 'cil_inner_pages/cil_inner_technical.php' ?>
+                     <?php 
+                           if(isset($json->CIL_CCDB->CIL->CORE->TECHNICALDETAILS->free_text))
+                                include_once 'cil_inner_pages/cil_inner_technical.php' 
+                        ?>
                 </div>
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <?php include_once 'cil_inner_pages/cil_inner_biological_sources.php' ?>
+                                        <?php
+                                            if(isset($json->CIL_CCDB->CIL->CORE->NCBIORGANISMALCLASSIFICATION))
+                                                include_once 'cil_inner_pages/cil_inner_biological_sources.php' 
+                                        ?>
                                     
                                 </div>
                                 <div class="col-md-12">
-                                        <?php include_once 'cil_inner_pages/cil_inner_biological_context.php' ?>
+                                        <?php 
+                                        if(isset($json->CIL_CCDB->CIL->CORE->BIOLOGICALPROCESS))
+                                            include_once 'cil_inner_pages/cil_inner_biological_context.php' 
+                                        ?>
 
                                 </div>
                                 <div class="col-md-12">
-                                        <?php include_once 'cil_inner_pages/cil_inner_attribution.php' ?>
+                                        <?php 
+                                            if(isset($json->CIL_CCDB->CIL->CORE->ATTRIBUTION))
+                                                include_once 'cil_inner_pages/cil_inner_attribution.php' 
+                                        ?>
 
                                 </div>
                             </div>
@@ -66,11 +86,18 @@
                             <div class="row">
                                 <div class="col-md-12">
                                         
-                                     <?php include_once 'cil_inner_pages/cil_inner_imaging.php' ?>
+                                     <?php 
+                                          if(isset($json->CIL_CCDB->CIL->CORE->ITEMTYPE) || isset($json->CIL_CCDB->CIL->CORE->IMAGINGMODE))
+                                            include_once 'cil_inner_pages/cil_inner_imaging.php' 
+                                     
+                                       ?>
                                    
                                 </div>
                                 <div class="col-md-12">
-                                        <?php include_once 'cil_inner_pages/cil_inner_sample_prep.php' ?>
+                                        <?php 
+                                        if(isset($json->CIL_CCDB->CIL->CORE->PREPARATION))
+                                            include_once 'cil_inner_pages/cil_inner_sample_prep.php' 
+                                        ?>
 
                                 </div>
                                 <div class="col-md-12">

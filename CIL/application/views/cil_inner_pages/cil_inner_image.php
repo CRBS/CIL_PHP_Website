@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-12">
         <center>
-        <img src="http://www.cellimagelibrary.org/cil_ccdb/images/2/2.jpg" width="100%" class="img-thumbnail pull-right"/>
+        <img src="http://www.cellimagelibrary.org/cil_ccdb/images/<?php echo $numeric_id;   ?>/<?php echo $numeric_id;   ?>.jpg" width="100%" class="img-thumbnail pull-right"/>
         </center>
     </div>
 </div>
