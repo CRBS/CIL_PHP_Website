@@ -96,12 +96,15 @@
                                 <div class="col-md-12">
                                         <?php 
                                         if(isset($json->CIL_CCDB->CIL->CORE->PREPARATION))
-                                            include_once 'cil_inner_pages/cil_inner_sample_prep.php' 
+                                            include_once 'cil_inner_pages/cil_inner_sample_prep.php'; 
                                         ?>
 
                                 </div>
                                 <div class="col-md-12">
-                                        <?php //include_once 'inner_pages/innerDimension.php' ?>
+                                        <?php 
+                                        if(isset($json->CIL_CCDB->CIL->CORE->DIMENSION))
+                                            include_once 'cil_inner_pages/cil_inner_dimension.php';  
+                                        ?>
 
                                 </div>
                             </div>

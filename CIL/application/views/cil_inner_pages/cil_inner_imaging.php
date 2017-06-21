@@ -215,7 +215,7 @@
                     {
                 ?>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $pimage->onto_id;   ?>' title=''><em><?php echo $pimage->onto_name ?></em></a>
+                <a class='eol_onto_term_link' href='<?php  echo $sc->onto_id;   ?>' title=''><em><?php echo $sc->onto_name ?></em></a>
                 </span>
                 <?php
                     }

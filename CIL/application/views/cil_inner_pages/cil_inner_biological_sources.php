@@ -143,31 +143,53 @@
         $ccomponent = $json->CIL_CCDB->CIL->CORE->CELLULARCOMPONENT;
         if(!is_array($ccomponent))
         {
+            if(isset($ccomponent->onto_id))
+            {
 ?>
-        <dt><b>Cell Type</b></dt>
-        <dd class='eol_dd'>
-        <span>
-        <a class='eol_onto_term_link' href='<?php  echo $ccomponent->onto_id;   ?>' title=''><em><?php echo $ccomponent->onto_name ?></em></a>
-        </span>
-        </dd>
+                <dt><b>Cell Type</b></dt>
+                <dd class='eol_dd'>
+                <span>
+                <a class='eol_onto_term_link' href='<?php  echo $ccomponent->onto_id;   ?>' title=''><em><?php echo $ccomponent->onto_name ?></em></a>
+                </span>
+                </dd>
 
 <?php
+            }
+            else if(isset($ccomponent->free_text))
+            {
+?>                
+                <dt><b>Cell Type</b></dt>
+                <dd class='eol_dd'>
+                <?php echo $ccomponent->free_text; ?>
+                </dd>
+<?php
+            }
         }
         else
         {
             echo "<dt><b>Cellular Component</b></dt>";
             foreach ($ccomponent as $comp) 
             {
+                if(isset($comp->onto_id))
+                {
 ?>
                 
-                <dd class='eol_dd'>
-                <span>
-                <a class='eol_onto_term_link' href='<?php  echo $comp->onto_id;   ?>' title=''><em><?php echo $comp->onto_name ?></em></a>
-                </span>
-                </dd>       
+                    <dd class='eol_dd'>
+                    <span>
+                    <a class='eol_onto_term_link' href='<?php  echo $comp->onto_id;   ?>' title=''><em><?php echo $comp->onto_name ?></em></a>
+                    </span>
+                    </dd>       
         
 <?php
-                
+                }
+                else if(isset($comp->free_text))
+                {
+                    
+?>                  <dd class='eol_dd'>
+                    <?php echo $comp->free_text; ?>
+                    </dd>
+<?php
+                }
             }
         }
 
