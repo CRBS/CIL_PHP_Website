@@ -84,7 +84,7 @@
             <dt><b>Cell Type</b></dt>
             <dd class='eol_dd'>
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $celltype->onto_id;   ?>' title=''><em><?php echo $celltype->onto_name ?></em></a>
+            <a class='eol_onto_term_link' href='<?php  echo $celltype->onto_id;   ?>' title=''><?php echo $celltype->onto_name ?></a>
             </span>
             </dd>
 
@@ -112,7 +112,7 @@
                    
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $ct->onto_id;   ?>' title=''><em><?php echo $ct->onto_name ?></em></a>
+                    <a class='eol_onto_term_link' href='<?php  echo $ct->onto_id;   ?>' title=''><?php echo $ct->onto_name ?></a>
                     </span>
                     </dd>
                 
@@ -150,7 +150,7 @@
                 <dt><b>Cell Type</b></dt>
                 <dd class='eol_dd'>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $ccomponent->onto_id;   ?>' title=''><em><?php echo $ccomponent->onto_name ?></em></a>
+                <a class='eol_onto_term_link' href='<?php  echo $ccomponent->onto_id;   ?>' title=''><?php echo $ccomponent->onto_name ?></a>
                 </span>
                 </dd>
 
@@ -177,7 +177,7 @@
                 
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $comp->onto_id;   ?>' title=''><em><?php echo $comp->onto_name ?></em></a>
+                    <a class='eol_onto_term_link' href='<?php  echo $comp->onto_id;   ?>' title=''><?php echo $comp->onto_name ?></a>
                     </span>
                     </dd>       
         

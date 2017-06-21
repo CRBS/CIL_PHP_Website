@@ -1,4 +1,5 @@
 <div class='biological_sources'>
+<br/>
 <h2>Licensing</h2>
 <?php
     if(isset($json->CIL_CCDB->CIL->CORE->TERMSANDCONDITIONS->free_text))

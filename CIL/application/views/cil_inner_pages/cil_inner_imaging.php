@@ -13,9 +13,9 @@
 ?>
             
                 <dt><b>Image Type</b></dt>
-                <dd class='eol_dd'>
+                <dd>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $imagetype->onto_id;   ?>' title=''><em><?php echo $imagetype->onto_name ?></em></a>
+                <a class='onto_term_link' href='<?php  echo $imagetype->onto_id;   ?>' title=''><?php echo $imagetype->onto_name ?></a>
                 </span>
                 </dd>
 
@@ -25,7 +25,7 @@
             {
 ?>
                 <dt><b>Image Type</b></dt>
-                <dd class='eol_dd'>
+                <dd>
                 <?php echo  $imagetype->free_text; ?>
                 </dd>
 <?php
@@ -42,7 +42,7 @@
                 
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $itype->onto_id;   ?>' title=''><em><?php echo $itype->onto_name ?></em></a>
+                    <a class='eol_onto_term_link' href='<?php  echo $itype->onto_id;   ?>' title=''><?php echo $itype->onto_name ?></a>
                     </span>
                     </dd>       
         
@@ -81,7 +81,7 @@
                 <dt><b>Image Mode</b></dt>
                 <dd class='eol_dd'>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $imagemode->onto_id;   ?>' title=''><em><?php echo $imagemode->onto_name ?></em></a>
+                <a class='eol_onto_term_link' href='<?php  echo $imagemode->onto_id;   ?>' title=''><?php echo $imagemode->onto_name ?></a>
                 </span>
                 </dd>
 
@@ -108,7 +108,7 @@
                 
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $imode->onto_id;   ?>' title=''><em><?php echo $imode->onto_name ?></em></a>
+                    <a class='eol_onto_term_link' href='<?php  echo $imode->onto_id;   ?>' title=''><?php echo $imode->onto_name ?></a>
                     </span>
                     </dd>       
         
@@ -143,7 +143,7 @@
             <dt><b>Parameters Imaged</b></dt>
             <dd class='eol_dd'>
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $paramimage->onto_id;   ?>' title=''><em><?php echo $paramimage->onto_name ?></em></a>
+            <a class='eol_onto_term_link' href='<?php  echo $paramimage->onto_id;   ?>' title=''><?php echo $paramimage->onto_name ?></a>
             </span>
             </dd>
 
@@ -158,7 +158,7 @@
                 
                 <dd class='eol_dd'>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $pimage->onto_id;   ?>' title=''><em><?php echo $pimage->onto_name ?></em></a>
+                <a class='eol_onto_term_link' href='<?php  echo $pimage->onto_id;   ?>' title=''><?php echo $pimage->onto_name ?></a>
                 </span>
                 </dd>       
         
@@ -187,7 +187,7 @@
              ?>    
              
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $paramimage->onto_id;   ?>' title=''><em><?php echo $paramimage->onto_name ?></em></a>
+            <a class='eol_onto_term_link' href='<?php  echo $paramimage->onto_id;   ?>' title=''><?php echo $paramimage->onto_name ?></a>
             </span>
             <?php
                 }
@@ -215,7 +215,7 @@
                     {
                 ?>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $sc->onto_id;   ?>' title=''><em><?php echo $sc->onto_name ?></em></a>
+                <a class='eol_onto_term_link' href='<?php  echo $sc->onto_id;   ?>' title=''><?php echo $sc->onto_name ?></a>
                 </span>
                 <?php
                     }
@@ -254,7 +254,7 @@
              ?>    
              
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $visual->onto_id;   ?>' title=''><em><?php echo $visual->onto_name ?></em></a>
+            <a class='eol_onto_term_link' href='<?php  echo $visual->onto_id;   ?>' title=''><?php echo $visual->onto_name ?></a>
             </span>
             <?php
                 }
@@ -282,7 +282,7 @@
                     {
                 ?>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $vs->onto_id;   ?>' title=''><em><?php echo $vs->onto_name ?></em></a>
+                <a class='eol_onto_term_link' href='<?php  echo $vs->onto_id;   ?>' title=''><?php echo $vs->onto_name ?></a>
                 </span>
                 <?php
                     }
@@ -319,7 +319,7 @@
              ?>    
              
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $phistory->onto_id;   ?>' title=''><em><?php echo $phistory->onto_name ?></em></a>
+            <a class='eol_onto_term_link' href='<?php  echo $phistory->onto_id;   ?>' title=''><?php echo $phistory->onto_name ?></a>
             </span>
             <?php
                 }
@@ -347,7 +347,7 @@
                     {
                 ?>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $ph->onto_id;   ?>' title=''><em><?php echo $ph->onto_name ?></em></a>
+                <a class='eol_onto_term_link' href='<?php  echo $ph->onto_id;   ?>' title=''><?php echo $ph->onto_name ?></a>
                 </span>
                 <?php
                     }

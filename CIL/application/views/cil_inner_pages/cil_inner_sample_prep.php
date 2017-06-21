@@ -18,7 +18,7 @@
              ?>    
              
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $method->onto_id;   ?>' title=''><em><?php echo $method->onto_name ?></em></a>
+            <a class='eol_onto_term_link' href='<?php  echo $method->onto_id;   ?>' title=''><?php echo $method->onto_name ?></a>
             </span>
             <?php
                 }
@@ -46,7 +46,7 @@
                     {
                 ?>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $mh->onto_id;   ?>' title=''><em><?php echo $mh->onto_name ?></em></a>
+                <a class='eol_onto_term_link' href='<?php  echo $mh->onto_id;   ?>' title=''><?php echo $mh->onto_name ?></a>
                 </span>
                 <?php
                     }
@@ -83,7 +83,7 @@
              ?>    
              
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $intacell->onto_id;   ?>' title=''><em><?php echo $intacell->onto_name ?></em></a>
+            <a class='eol_onto_term_link' href='<?php  echo $intacell->onto_id;   ?>' title=''><?php echo $intacell->onto_name ?></a>
             </span>
             <?php
                 }
@@ -111,7 +111,7 @@
                     {
                 ?>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $ic->onto_id;   ?>' title=''><em><?php echo $ic->onto_name ?></em></a>
+                <a class='eol_onto_term_link' href='<?php  echo $ic->onto_id;   ?>' title=''><?php echo $ic->onto_name ?></a>
                 </span>
                 <?php
                     }

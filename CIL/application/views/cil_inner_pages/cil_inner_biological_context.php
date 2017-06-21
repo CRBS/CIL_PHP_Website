@@ -16,7 +16,7 @@
                 <dt><b>Biological Process</b></dt>
                 <dd class='eol_dd'>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $bprocess->onto_id;   ?>' title=''><em><?php echo $bprocess->onto_name ?></em></a>
+                <a class='eol_onto_term_link' href='<?php  echo $bprocess->onto_id;   ?>' title=''><?php echo $bprocess->onto_name ?></a>
                 </span>
                 </dd>
 
@@ -43,7 +43,7 @@
                 
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $bp->onto_id;   ?>' title=''><em><?php echo $bp->onto_name ?></em></a>
+                    <a class='eol_onto_term_link' href='<?php  echo $bp->onto_id;   ?>' title=''><?php echo $bp->onto_name ?></a>
                     </span>
                     </dd>       
         
@@ -79,7 +79,7 @@
                 <dt><b>Molecular Function</b></dt>
                 <dd class='eol_dd'>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $mfunction->onto_id;   ?>' title=''><em><?php echo $mfunction->onto_name ?></em></a>
+                <a class='eol_onto_term_link' href='<?php  echo $mfunction->onto_id;   ?>' title=''><?php echo $mfunction->onto_name ?></a>
                 </span>
                 </dd>
 
@@ -106,7 +106,7 @@
 ?>
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $mf->onto_id;   ?>' title=''><em><?php echo $mf->onto_name ?></em></a>
+                    <a class='eol_onto_term_link' href='<?php  echo $mf->onto_id;   ?>' title=''><?php echo $mf->onto_name ?></a>
                     </span>
                     </dd>       
         

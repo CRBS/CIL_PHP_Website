@@ -85,9 +85,11 @@
                         {
                             
                             if(strcmp($dim->Pixel_size->unit, "nanometers")==0)
-                                echo "<abbr title=\"nanometers\">nm</abbr></td>";
+                                echo "nm";
+                                //echo "<abbr title=\"nanometers\">nm</abbr></td>";
                             else if(strcmp($dim->Pixel_size->unit, "microns")==0)
-                                echo "<abbr title=\"microns\">&micro;m</abbr></td>";
+                                echo "&micro;m";
+                                //echo "<abbr title=\"microns\">&micro;m</abbr></td>";
                             else 
                                 echo "——";
                             
@@ -112,7 +114,7 @@
 <?php
         }
        
-        if(isset($hasImageSize))
+        if(isset($hasWavelength))
         {
 ?>
             <table cellspacing="0" summary="Image dimensions. There is one row of column headers, and one column of row headers describing the dimension">
@@ -146,9 +148,11 @@
                         {
                             echo $dim->Value;
                             if(strcmp($dim->Unit, "nanometers")==0)
-                                echo "<abbr title=\"nanometers\">nm</abbr></td>";
+                                    echo "nm";
+                                //echo "<abbr title=\"nanometers\">nm</abbr></td>";
                             else if(strcmp($dim->Unit, "microns")==0)
-                                echo "<abbr title=\"microns\">&micro;m</abbr></td>";
+                                    echo "&micro;m";
+                                //echo "<abbr title=\"microns\">&micro;m</abbr></td>";
                             else 
                                 echo "——";
                         }
