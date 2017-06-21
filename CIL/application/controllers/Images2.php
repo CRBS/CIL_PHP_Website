@@ -11,6 +11,10 @@ class Images2  extends CI_Controller
         $sutil = new CILServiceUtil2();
         $gutil = new GeneralUtil();
         
+        
+        
+        
+        
         $response = $sutil->getImage($imageID);
         $json = json_decode($response);
         $data['test'] = "test";
@@ -31,8 +35,10 @@ class Images2  extends CI_Controller
              if($gutil->startsWith($imageID,"CIL_"))
              {
                  
-                $data['numeric_id'] = str_replace("CIL_", "", $imageID); 
-             
+                $numeric_id = str_replace("CIL_", "", $imageID); 
+                $data['numeric_id'] =$numeric_id;
+                $data['has_video'] = $sutil->is_url_exist("http://www.cellimagelibrary.org/videos/".$numeric_id.".flv");
+                $data['video_url'] = "http://www.cellimagelibrary.org/videos/".$numeric_id.".flv";
              }
              else 
              {

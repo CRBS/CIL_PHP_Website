@@ -77,6 +77,7 @@
         $celltype = $json->CIL_CCDB->CIL->CORE->CELLTYPE;
         if(!is_array($celltype))
         {
+           
             if(isset($celltype->onto_id))
             {
 ?>
@@ -92,9 +93,9 @@
             else if(isset($celltype->free_text))
             {
 ?>
-                <dt><b>Cell Type</b></dt>
+            <dd class='eol_dd'>
                 <?php echo $celltype->free_text ?>
-                </dd>
+            </dd>
             
 <?php    
             }
@@ -108,7 +109,7 @@
                 if(isset($ct->onto_id))
                 {
 ?>
-                    <dt><b>Cell Type</b></dt>
+                   
                     <dd class='eol_dd'>
                     <span>
                     <a class='eol_onto_term_link' href='<?php  echo $ct->onto_id;   ?>' title=''><em><?php echo $ct->onto_name ?></em></a>
@@ -122,7 +123,7 @@
                 {
                    
 ?>
-                    <dt><b>Cell Type</b></dt>
+                    <dd>
                     <?php echo $ct->free_text ?>
                     </dd>
 <?php

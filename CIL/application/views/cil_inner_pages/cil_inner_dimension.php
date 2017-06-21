@@ -43,6 +43,8 @@
                     <?php
                         if(isset($dim->Space))
                             echo $dim->Space;
+                        else
+                            echo "——";
                     ?>
                     </th>
                     <td>
@@ -52,12 +54,18 @@
                             echo $dim->Image_size;
                             echo "<abbr title=\"pixels\">px</abbr>";
                         }
+                        else
+                        {
+                            echo "——";
+                        }
                     ?>
                     </td>
                     <td>
                     <?php
                         if(isset($dim->Pixel_size->value))
                             echo $dim->Pixel_size->value;
+                        else
+                            echo "——";
                         if(isset($dim->Pixel_size->unit))
                         {
                             
@@ -65,6 +73,9 @@
                                 echo "<abbr title=\"nanometers\">nm</abbr></td>";
                             else if(strcmp($dim->Pixel_size->unit, "microns"))
                                 echo "<abbr title=\"microns\">&micro;m</abbr></td>";
+                            else 
+                                echo "——";
+                            
                         }
                     ?>
                      

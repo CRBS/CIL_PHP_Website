@@ -1,10 +1,34 @@
-<div class="row">
-    <div class="col-md-12">
+<?php 
+
+    if(!$has_video)
+    {
+?>
+
+        <div class="row">
+            <div class="col-md-12">
+                <center>
+                <img src="http://www.cellimagelibrary.org/cil_ccdb/display_images/<?php echo $numeric_id;   ?>/<?php echo "display_".$numeric_id;   ?>.png" width="100%" class="img-thumbnail pull-right"/>
+                </center>
+            </div>
+        </div>
+<?php
+    }
+    else
+    {
+?>
+        <div id='detailed_page_flowplayer'>
         <center>
-        <img src="http://www.cellimagelibrary.org/cil_ccdb/images/<?php echo $numeric_id;   ?>/<?php echo $numeric_id;   ?>.jpg" width="100%" class="img-thumbnail pull-right"/>
+        <a href="<?php echo $video_url ?>" id="player" style="display:block;width:460px;height:330px"></a>
         </center>
-    </div>
-</div>
+        <script type="text/javascript" language="javascript" >
+            flowplayer("player", "/flowplayer-3.2.5.swf", { clip:{scaling: "orig", onBeforeFinish: function() { return false; }, autoPlay:true, autoBuffering:true}});
+        </script>
+        </div>
+
+<?php
+    }
+?>
+
 <div class="row">
     <div class="col-md-6">
         <div class='download'>
