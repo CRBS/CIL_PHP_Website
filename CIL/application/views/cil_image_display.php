@@ -80,6 +80,13 @@
                                         ?>
 
                                 </div>
+                                <div class="col-md-12">
+                                        <?php 
+                                            if(isset($json->CIL_CCDB->CIL->CORE->GROUP_ID))
+                                                include_once 'cil_inner_pages/cil_inner_grouping.php' 
+                                        ?>
+
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">

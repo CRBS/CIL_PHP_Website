@@ -27,7 +27,7 @@ class Images2  extends CI_Controller
            {
              
                
-             $this->load->view('templates/cil_header2', $data);
+             $this->load->view('templates/cil_header', $data);
              $this->load->view('ccdb_image_display', $data);
            }
            else if(isset($json->CIL_CCDB->CIL))
@@ -44,8 +44,9 @@ class Images2  extends CI_Controller
              {
                  $data['numeric_id'] = $imageID;
              }    
-             $this->load->view('templates/cil_header2', $data);
+             $this->load->view('templates/cil_header4', $data);
              $this->load->view('cil_image_display', $data);
+             $this->load->view('templates/cil_footer2', $data);
            }
         }
         else

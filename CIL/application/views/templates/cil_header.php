@@ -80,6 +80,22 @@
         
         
         <link rel="stylesheet" href="/CIL/css/cil.css">
+        
+                <link href="http://www.cellimagelibrary.org/stylesheets/all.css?1395102362" media="screen" rel="stylesheet" type="text/css" />
+        <link href="http://www.cellimagelibrary.org/stylesheets/reset.css?1325775274" media="print" rel="stylesheet" type="text/css" />
+        <link href="http://www.cellimagelibrary.org/stylesheets/960.css?1395102369" media="print" rel="stylesheet" type="text/css" />
+        <link href="http://www.cellimagelibrary.org/stylesheets/jquery.autocomplete.css?1325775274" media="print" rel="stylesheet" type="text/css" />
+        <link href="http://www.cellimagelibrary.org/stylesheets/grid.css?1325775274" media="print" rel="stylesheet" type="text/css" />
+        <link href="http://www.cellimagelibrary.org/stylesheets/typography.css?1325775274" media="print" rel="stylesheet" type="text/css" />
+        <link href="http://www.cellimagelibrary.org/stylesheets/buttons.css?1325775274" media="print" rel="stylesheet" type="text/css" />
+        <link href="http://www.cellimagelibrary.org/stylesheets/application.css?1325775274" media="print" rel="stylesheet" type="text/css" /> 
+
+
+        <script src="http://www.cellimagelibrary.org/javascripts/jquery-ui-1.8.16.custom.min.js?1325775274" type="text/javascript"></script>
+        <link href="http://www.cellimagelibrary.org/stylesheets/jquery-ui-1.8.16.custom.css?1325775274" media="screen" rel="stylesheet" type="text/css" />
+        <script src="http://www.cellimagelibrary.org/javascripts/all.js?1374879263" type="text/javascript"></script>
+        <script src="http://www.cellimagelibrary.org/javascripts/jquery.jstree.js?1325775274" type="text/javascript"></script>
+
 </head>
 
 
