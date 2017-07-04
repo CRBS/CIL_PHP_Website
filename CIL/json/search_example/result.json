@@ -1,0 +1,183 @@
+{"took":17,"timed_out":false,"_shards":{"total":5,"successful":5,"failed":0},"hits":{"total":2,"max_score":0.35355338,"hits":[{"_index":"ccdbv7","_type":"data","_id":"CIL_41544","_score":0.35355338,"_source":{"CIL_CCDB": {
+    "Status": {
+        "Deleted": false,
+        "Is_public": true
+    },
+    "CIL": {"CORE": {
+        "PREPARATION": {
+            "onto_name": "chemically fixed tissue",
+            "onto_id": "FBbi:00000002"
+        },
+        "IMAGINGMODE": {
+            "onto_name": "bright-field microscopy",
+            "onto_id": "FBbi:00000243"
+        },
+        "CELLULARCOMPONENT": {
+            "onto_name": "hyaline layer",
+            "onto_id": "GO:0033166"
+        },
+        "RELATIONTOINTACTCELL": {
+            "onto_name": "sectioned tissue",
+            "onto_id": "FBbi:00000026"
+        },
+        "SOURCEOFCONTRAST": {
+            "onto_name": "differences in adsorption or binding of stain",
+            "onto_id": "FBbi:00000598"
+        },
+        "NCBIORGANISMALCLASSIFICATION": {
+            "onto_name": "Homo sapiens",
+            "onto_id": "NCBITaxon:9606"
+        },
+        "PARAMETERIMAGED": {
+            "onto_name": "absorption of illumination",
+            "onto_id": "FBbi:00000308"
+        },
+        "TECHNICALDETAILS": {"free_text": "<img src=\"http://www.cellimagelibrary.org/HistologyIcon512.jpg\" width=\"96\" height=\"96\"/>"},
+        "DIMENSION": [
+            {"Space": {
+                "axis": "X",
+                "Image_size": 4000
+            }},
+            {"Space": {
+                "axis": "Y",
+                "Image_size": 1264
+            }}
+        ],
+        "VISUALIZATIONMETHODS": [
+            {
+                "onto_name": "hematoxylin",
+                "onto_id": "FBbi:00000041"
+            },
+            {
+                "onto_name": "eosin",
+                "onto_id": "FBbi:00000037"
+            }
+        ],
+        "CELLTYPE": {
+            "onto_name": "ciliated epithelial cell",
+            "onto_id": "CL:0000067"
+        },
+        "IMAGEDESCRIPTION": {"free_text": "Histology sample illustrating the pseudostratified, ciliated columnar epithelium of the trachea. Note that the basement membrane underlying this particular epithelium is especially prominent.  This image is slide 40 in the University of Michigan Histology and Virtual Learning Resource.  A more detailed description can be found by following the indicated url link http://histology.med.umich.edu/medical/connective-tissue."},
+        "ATTRIBUTION": {
+            "OTHER": ["slide 40"],
+            "URLs": [{
+                "Href": "http://histology.med.umich.edu/medical/connective-tissue",
+                "Label": "University of Michigan Histology and Virtual Learning Resource"
+            }]
+        },
+        "TERMSANDCONDITIONS": {"free_text": "attribution_nc_sa"},
+        "ITEMTYPE": {
+            "onto_name": "recorded image",
+            "onto_id": "FBbi:00000265"
+        }
+    }}
+}}},{"_index":"ccdbv7","_type":"data","_id":"CIL_2","_score":0.35355338,"_source":{"CIL_CCDB": {
+    "Status": {
+        "Deleted": false,
+        "Is_public": true
+    },
+    "CIL": {"CORE": {
+        "PREPARATION": {
+            "onto_name": "methanol fixed tissue",
+            "onto_id": "FBbi:00000007"
+        },
+        "IMAGINGMODE": {
+            "onto_name": "fluorescence microscopy",
+            "onto_id": "FBbi:00000246"
+        },
+        "CELLULARCOMPONENT": [
+            {
+                "onto_name": "type III intermediate filament",
+                "onto_id": "GO:0045098"
+            },
+            {
+                "onto_name": "mitochondrion",
+                "onto_id": "GO:0005739"
+            }
+        ],
+        "BIOLOGICALPROCESS": [
+            {
+                "onto_name": "intermediate filament-based process",
+                "onto_id": "GO:0045103"
+            },
+            {
+                "onto_name": "mitochondrion morphogenesis",
+                "onto_id": "GO:0070584"
+            }
+        ],
+        "RELATIONTOINTACTCELL": {
+            "onto_name": "whole mounted tissue",
+            "onto_id": "FBbi:00000024"
+        },
+        "SOURCEOFCONTRAST": {"free_text": "localized accumulation of fluorescent probe"},
+        "NCBIORGANISMALCLASSIFICATION": {
+            "onto_name": "Mus musculus",
+            "onto_id": "NCBITaxon:10090"
+        },
+        "PARAMETERIMAGED": {
+            "onto_name": "fluorescence emission",
+            "onto_id": "FBbi:00000316"
+        },
+        "TECHNICALDETAILS": {"free_text": "Test12345"},
+        "MOLECULARFUNCTION": [
+            {
+                "onto_name": "cytoplasm organization",
+                "onto_id": "GO:0007028"
+            },
+            {
+                "onto_name": "ATP biosynthetic process",
+                "onto_id": "GO:0006754"
+            }
+        ],
+        "DIMENSION": [
+            {"Space": {
+                "axis": "X",
+                "Image_size": 1300,
+                "Pixel_size": {
+                    "unit": "nanometers",
+                    "value": 104.0
+                }
+            }},
+            {"Space": {
+                "axis": "Y",
+                "Image_size": 1030,
+                "Pixel_size": {
+                    "unit": "microns",
+                    "value": 104.0
+                }
+            }}
+        ],
+        "VISUALIZATIONMETHODS": [
+            {
+                "onto_name": "Alexa Fluor 594",
+                "onto_id": "FBbi:00000444"
+            },
+            {
+                "onto_name": "Alexa Fluor 488",
+                "onto_id": "FBbi:00000440"
+            },
+            {
+                "onto_name": "primary antibody plus labeled secondary antibody",
+                "onto_id": "FBbi:00000156"
+            }
+        ],
+        "PROCESSINGHISTORY": {
+            "onto_name": "unprocessed raw data",
+            "onto_id": "FBbi:00000582"
+        },
+        "CELLTYPE": {
+            "onto_name": "fibroblast",
+            "onto_id": "CL:0000057"
+        },
+        "IMAGEDESCRIPTION": {"free_text": "The distribution of the mitochondria (labeled with antibody to hsp70) in relation to intermediate filaments (labeled with vimentin antibody) 8 hours after release from serum starvation in methanol-fixed 3T3 fibroblasts.\n\nMicroscope - Zeiss Axioplan I\nIllumination - Mercury arc lamp\nObjective - 100X oil/1.3 NA\nIntermediate lens between obj and camera - 0.63X\nCamera - Axiocam MRM CCD\nFilters:  \n1.  Ex 485/20, Em 515-565 BP, dichroic 510\n2.  Ex 560/40, Em 630/60, dichroic 595"},
+        "ATTRIBUTION": {"Contributors": [
+            "Linda Parysek",
+            "Trudy Aebig"
+        ]},
+        "TERMSANDCONDITIONS": {"free_text": "public_domain"},
+        "ITEMTYPE": {
+            "onto_name": "microscopy",
+            "onto_id": "FBbi:00000241"
+        }
+    }}
+}}}]}}
