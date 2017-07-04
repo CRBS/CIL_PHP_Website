@@ -160,7 +160,7 @@
                             if(strcmp($dim->Wavelength->unit, "nanometers")==0)
                                     echo "nm";
                                 //echo "<abbr title=\"nanometers\">nm</abbr></td>";
-                            else if(strcmp($dim->Wavelength->Unit, "microns")==0)
+                            else if(strcmp($dim->Wavelength->unit, "microns")==0)
                                     echo "&micro;m";
                                 //echo "<abbr title=\"microns\">&micro;m</abbr></td>";
                             else 
