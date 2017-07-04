@@ -4,6 +4,8 @@ class CILServiceUtil2
 {
     public $apiDocPrefix = "http://ec2-35-165-216-15.us-west-2.compute.amazonaws.com/CIL_RS/index.php/rest/documents/";
     public $homepage_settings = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7/website_settings/homepage";
+    
+    public $elasticsearchPrefix = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7";
     /**
      * This is a helpping method to call CURL PUT request with the username and key
      * 
@@ -105,6 +107,22 @@ class CILServiceUtil2
         return $response;
     }
     
+    private function just_curl_get_data($url,$data)
+    {
+ 
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        //curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json','Content-Length: ' . strlen($doc)));
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+        curl_setopt($ch, CURLOPT_POSTFIELDS,$data);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        
+        $response  = curl_exec($ch);
+        curl_close($ch);
+        return $response;
+
+    }
+    
     
     
     public function getHomepageSettings()
@@ -116,6 +134,14 @@ class CILServiceUtil2
     public function getImage($imageID)
     {
         $response = $this->curl_get($this->apiDocPrefix.$imageID);
+        return $response;
+    }
+    
+    public function getImges($data)
+    {
+        $url = $this->elasticsearchPrefix."/data/_search";
+        //echo $url."<br/>";
+        $response = $this->just_curl_get_data($url, $data);
         return $response;
     }
     
