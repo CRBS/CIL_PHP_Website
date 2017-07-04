@@ -24,7 +24,7 @@
                // echo "Does not have ".$image."<br/>";
                 
 ?>
-            <a href="/CIL/index.php/images2/view/CIL_<?php echo $image;  ?>" alt="" class="most_popular " title="<?php echo $title; ?>"><img width="88" height="88" alt="<?php echo $image  ?>" src="http://www.cellimagelibrary.org/cil_ccdb/display_images/<?php echo $image; ?>/display_<?php echo $image; ?>.png"></a>
+            <a href="/images/<?php echo $image;  ?>" alt="" class="most_popular " title="<?php echo $title; ?>"><img width="88" height="88" alt="<?php echo $image  ?>" src="http://www.cellimagelibrary.org/cil_ccdb/display_images/<?php echo $image; ?>/display_<?php echo $image; ?>.png"></a>
 
 <?php
         }
