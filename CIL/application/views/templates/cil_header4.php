@@ -50,7 +50,7 @@
         <script src="http://www.cellimagelibrary.org/javascripts/all.js?1374879263" type="text/javascript"></script>
         <script src="http://www.cellimagelibrary.org/javascripts/jquery.jstree.js?1325775274" type="text/javascript"></script> 
 
-                <link rel="stylesheet" href="/CIL/css/cil.css"> 
+                <link rel="stylesheet" href="/css/cil.css"> 
 	</head>
 
 	<body>
@@ -115,7 +115,9 @@
 					<div class="col-xs-12 col-sm-5 col-md-3 col-lg-3">
 
 						<!-- START CONTENT ITEM -->
+                                                <a href="/home" target="_self">
 						<img src="http://www.cellimagelibrary.org/pix/logo.jpg?1449872028" alt="Logo" class="img-responsive">
+                                                </a>
 						<!-- END CONTENT ITEM -->
 
 					</div>

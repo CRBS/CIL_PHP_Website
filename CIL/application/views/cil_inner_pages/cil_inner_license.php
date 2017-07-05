@@ -10,7 +10,7 @@
 ?>
             <div class="row">
                 <div class="col-md-2">
-                    <img src="/CIL/images/pd.gif">
+                    <img src="/pic/pd.gif">
                 </div>
                 <div class="col-md-10">
                     <div class="licensing_details_text_container">
@@ -25,7 +25,7 @@
 ?>
             <div class="row">
                 <div class="col-md-2">
-                    <img src="/CIL/images/attribution_cc_by.png">
+                    <img src="/pic/attribution_cc_by.png">
                 </div>
                 <div class="col-md-10">
                     <div class="licensing_details_text_container">
@@ -41,7 +41,7 @@
 ?>
             <div class="row">
                 <div class="col-md-3">
-                    <img src="/CIL/images/attribution_nc_sa.png">
+                    <img src="/pic/attribution_nc_sa.png">
                 </div>
                 <div class="licensing_details_text_container">
                 <b>Attribution Non-Commercial Share Alike:</b>This image is licensed under a Creative Commons Attribution, Non-Commercial Share Alike License.  <a href="http://creativecommons.org/licenses/by-nc-sa/3.0" class="license_view_links" target="_blank">View License Deed</a> | <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode" class="license_view_links" target="_blank">View Legal Code</a>
@@ -56,7 +56,7 @@
 ?>
             <div class="row">
                 <div class="col-md-1">
-                    <img src="/CIL/images/copyright.jpg" width="40px" height="40px">
+                    <img src="/pic/copyright.jpg" width="40px" height="40px">
                 </div>
                 <div class="col-md-11">
                 <div class="licensing_details_text_container">
@@ -71,7 +71,7 @@
 ?>
             <div class="row">
                 <div class="col-md-2">
-                    <img src="/CIL/images/attribution_by_sa.png">
+                    <img src="/pic/attribution_by_sa.png">
                 </div>
                 <div class="col-md-10">
                 <div class="licensing_details_text_container">
@@ -86,7 +86,7 @@
        {
 ?>          <div class="row">
                 <div class="col-md-2">
-                    <img src="/CIL/images/attribution_by_nd.png">
+                    <img src="/pic/attribution_by_nd.png">
                 </div>
                 <div class="col-md-10">
                 <div class="licensing_details_text_container">
@@ -103,7 +103,7 @@
 ?>  
             <div class="row">
                 <div class="col-md-2">
-                    <img src="/CIL/images/attribution_by_nc.png">
+                    <img src="/pic/attribution_by_nc.png">
                 </div>
                 <div class="col-md-10">
                 <div class="licensing_details_text_container">
@@ -119,7 +119,7 @@
 ?>          
            <div class="row">
                 <div class="col-md-2">
-                    <img src="/CIL/images/attribution_by_nc_nd.png">
+                    <img src="/pic/attribution_by_nc_nd.png">
                 </div>
                 <div class="col-md-10">
                 <div class="licensing_details_text_container">

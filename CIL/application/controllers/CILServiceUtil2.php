@@ -133,7 +133,9 @@ class CILServiceUtil2
     
     public function getImage($imageID)
     {
-        $response = $this->curl_get($this->apiDocPrefix.$imageID);
+        $url = $this->apiDocPrefix.$imageID;
+        //echo "<br/>".$url;
+        $response = $this->curl_get($url);
         return $response;
     }
     

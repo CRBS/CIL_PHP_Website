@@ -21,7 +21,7 @@
         <a href="<?php echo $video_url ?>" id="player" style="display:block;width:460px;height:330px"></a>
         </center>
         <script type="text/javascript" language="javascript" >
-            flowplayer("player", "/flowplayer-3.2.5.swf", { clip:{scaling: "orig", onBeforeFinish: function() { return false; }, autoPlay:true, autoBuffering:true}});
+            flowplayer("player", "/swf/flowplayer-3.2.5.swf", { clip:{scaling: "orig", onBeforeFinish: function() { return false; }, autoPlay:true, autoBuffering:true}});
         </script>
         </div>
 

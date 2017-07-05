@@ -16,6 +16,33 @@ class Home  extends CI_Controller
          //echo $settings_response;
          $settings_json = json_decode($settings_response);
          $summary = array();
+         
+         if($settings_json->_source->Home_page->Featured_image)
+         {
+             $video_folder =  $this->config->item('video_folder');
+             $featured_id = $settings_json->_source->Home_page->Featured_image[0];
+             //echo "<br/>Featured image:".$featured_id;
+             $base_url = $this->config->base_url();
+             $data['featured_id']  = $featured_id;
+             //$data['featured_has_video'] = $sutil->is_url_exist($base_url."/videos/".$featured_id .".flv");
+             $data['featured_has_video'] = file_exists($video_folder."/".$featured_id .".flv");
+             $data['featured_video_url'] = $base_url."/videos/".$featured_id .".flv";
+             $image_id = $featured_id;
+             if(is_numeric($featured_id))
+             {
+                 $image_id = "CIL_".$image_id;
+             }
+             $response = $sutil->getImage($image_id);
+             //echo $response;
+             $json = json_decode($response);
+             
+             $data['featured_info'] = null;
+             if(!is_null($json))
+                 $data['featured_info'] = $json;
+             //var_dump($json);
+         }
+         
+         
          if(isset($settings_json->_source->Home_page->Image_of_note))
          {
              $images = array();
