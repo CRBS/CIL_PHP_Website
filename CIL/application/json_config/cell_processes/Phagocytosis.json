@@ -1,0 +1,9 @@
+{
+    "query": {
+        "query_string" : {
+            "fields" : ["CIL_CCDB.CIL.CORE.BIOLOGICALPROCESS.onto_id"],
+            "default_operator": "OR",
+            "use_dis_max" : true,
+             "query" : " \"GO:0090388\"  \"GO:0090389\"  \"GO:0090386\"  \"GO:0060097\"  \"GO:0090387\"  \"GO:0060098\"  \"GO:0090384\"  \"GO:0043277\"  \"GO:0090385\"  \"GO:0038096\"  \"GO:0043652\"  \"GO:0043654\"  \"GO:0008228\"  \"GO:0090390\"  \"GO:0002433\"  \"GO:0006910\"  \"GO:0006911\"  \"GO:0001845\"  \"GO:0006909\" "}
+    }
+}

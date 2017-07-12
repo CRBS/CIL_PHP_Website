@@ -107,7 +107,7 @@ class CILServiceUtil2
         return $response;
     }
     
-    private function just_curl_get_data($url,$data)
+    public function just_curl_get_data($url,$data)
     {
  
         $ch = curl_init();

@@ -179,8 +179,15 @@
 							</div>
 							<div class="collapse navbar-collapse">
 								<ul class="nav navbar-nav navbar-left">
-									<li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
-									<li><a href="category.html">Cell Process</a></li>
+                                                                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+									<li <?php 
+                                                                            if(isset($category))
+                                                                            {
+                                                                                echo "class=\"active\"";
+                                                                            }
+                                                                            ?>
+                                                                        
+                                                                        ><a href="/browse/cellprocess">Cell Process</a></li>
 				
 									<li><a href="contact.html">Cell Component</a></li>
 									<li><a href="sitemap.html">Cell Type</a></li>

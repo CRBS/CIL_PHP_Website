@@ -1,7 +1,7 @@
 <?php
 require_once 'CILServiceUtil2.php';
 require_once 'GeneralUtil.php';
-class images  extends CI_Controller 
+class Images  extends CI_Controller 
 {
     
     
