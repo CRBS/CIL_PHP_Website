@@ -17,8 +17,9 @@ class Browse  extends CI_Controller
         
     }
     
-    public function cellprocess($input="None")
+    public function cellprocess($input="None",$page_num=0,$size=10)
     {
+        $from = $page_num*$size;
         $sutil = new CILServiceUtil2();
         $gutil = new GeneralUtil();
         
@@ -33,9 +34,11 @@ class Browse  extends CI_Controller
         $this->load->view('categories/cell_processes_display', $data);
         $this->load->view('templates/cil_footer2', $data);
        }
-       else if(strcmp($input,"Actin%20Based%20Processes")==0)
+       else //if(strcmp($input,"Actin%20Based%20Processes")==0)
        {
+           $category = $input;
            $input = str_replace("%20", " ", $input);
+           $context_name = "cellprocess";
            $data['category_title'] = $input;
            $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
            
@@ -45,12 +48,21 @@ class Browse  extends CI_Controller
            $queryFileName = $this->getQueryFileName($configJson, $input);
            $query = file_get_contents(getcwd()."/application/json_config/cell_processes/".$queryFileName);
            //echo $query;
-           $response = $sutil->just_curl_get_data($this->config->item('data_search_url')."?start=0&size=10",$query);
+           $query_url =  $this->config->item('data_search_url')."?from=".$from."&size=".$size;
+           //echo $query_url;
+           $response = $sutil->just_curl_get_data($query_url,$query);
            //echo $response;
            $result = json_decode($response);
            if($result->hits->total > 0)
            {
                 $data['result'] = $result;
+                $data['total'] = $result->hits->total;
+                $data['size'] = $size;
+                
+                $data['category'] = $category;
+                $data['context_name'] = $context_name;
+                //echo "<br/>Category".$category;
+                $data['page_num'] = $page_num;
                 $this->load->view('categories/category_search_result_page', $data);
            }
            $this->load->view('templates/cil_footer2', $data);

@@ -17,7 +17,7 @@
     while($i < $count)
     {
 ?>
-<br/>
+
 <div class="row">
     <div class="col-md-6">
 <?php
@@ -61,6 +61,7 @@
 ?>       
     </div>
 </div>
+
 
 
 <?php        

@@ -18,6 +18,7 @@
 ?> 
     </div>
 </div>
+<br/>
         
 <?php
 
@@ -25,8 +26,16 @@
        
 ?>        
         
-        
-    
+<div class="row">
+    <div class="col-md-12"> 
+<?php
+
+        include 'inner_search_pagination.php';
+       
+?>
+        </div>
+</div>
+            
     
     </form>
 </div>
