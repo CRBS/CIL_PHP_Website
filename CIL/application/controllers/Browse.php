@@ -37,6 +37,7 @@ class Browse  extends CI_Controller
        {
            $input = str_replace("%20", " ", $input);
            $data['category_title'] = $input;
+           $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
            
            $this->load->view('templates/cil_header4', $data);
            
@@ -45,8 +46,13 @@ class Browse  extends CI_Controller
            $query = file_get_contents(getcwd()."/application/json_config/cell_processes/".$queryFileName);
            //echo $query;
            $response = $sutil->just_curl_get_data($this->config->item('data_search_url')."?start=0&size=10",$query);
-           echo $response;
-           $this->load->view('categories/category_search_result_page', $data);
+           //echo $response;
+           $result = json_decode($response);
+           if($result->hits->total > 0)
+           {
+                $data['result'] = $result;
+                $this->load->view('categories/category_search_result_page', $data);
+           }
            $this->load->view('templates/cil_footer2', $data);
        }
     }
