@@ -1,4 +1,3 @@
-
 <!doctype html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="nl"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="nl"><![endif]-->
@@ -50,6 +49,7 @@
         <script src="http://www.cellimagelibrary.org/javascripts/all.js?1374879263" type="text/javascript"></script>
         <script src="http://www.cellimagelibrary.org/javascripts/jquery.jstree.js?1325775274" type="text/javascript"></script> 
 
+        <link rel='shortcut icon' type='image/x-icon' href='/pix/favicon.ico' />
                 <link rel="stylesheet" href="/css/cil.css"> 
 	</head>
 
@@ -116,7 +116,7 @@
 
 						<!-- START CONTENT ITEM -->
                                                 <a href="/home" target="_self">
-						<img src="http://www.cellimagelibrary.org/pix/logo.jpg?1449872028" alt="Logo" class="img-responsive">
+						<img src="/pix/logo.jpg?<?php echo rand();  ?>" alt="Logo" class="img-responsive">
                                                 </a>
 						<!-- END CONTENT ITEM -->
 
@@ -143,12 +143,19 @@
 							<div class="col-xs-12">
 
 								<!-- START CONTENT ITEM -->
+                                                                <form action="/images" method="get">
 								<div class="input-group form-search header-search">
-									<input class="form-control search-query" type="text" placeholder="Search all images...">
+									<input name="k" id="k" class="form-control search-query" 
+                                                                               type="text" placeholder="Search all images..." value="<?php   
+                                                                                    if(isset($keywords))
+                                                                                        echo $keywords;
+                                                                               ?>">
+                                                                        <input type="hidden" name="simple_search" value="Search">
 									<span class="input-group-btn">
-										<button class="btn btn-default" type="button">Search</button>
+                                                                            <button class="btn btn-default" type="submit">Search</button>
 									</span>
 								</div>
+                                                                </form>
 								<!-- END CONTENT ITEM -->
 
 							</div>

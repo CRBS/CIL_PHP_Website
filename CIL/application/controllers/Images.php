@@ -4,12 +4,51 @@ require_once 'GeneralUtil.php';
 class Images  extends CI_Controller 
 {
     
+    public function Index()
+    {
+        $sutil = new CILServiceUtil2();
+        $gutil = new GeneralUtil();
+        
+        $keywords = $this->input->get('k', TRUE);
+        $data['keywords'] = $keywords;
+        $queryString = urlencode($keywords);
+        $simple_search = $this->input->get('simple_search',TRUE);
+        $page = 0;
+        $size = 10;
+        
+        $temp = $this->input->get('page',TRUE);
+        if(!is_null($temp))
+            $page = intval(temp);
+        
+        $from = $page*$size;
+        $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
+        
+        //echo $keywords."<br/>";
+        //echo $simple_search."<br/>";
+        if(!is_null($keywords) && strcmp("$simple_search", "Search")==0)
+        {
+            $searchPrefix = $this->config->item('data_search_url');
+            $searchPostfix = "+CIL_CCDB.Status.Is_public:true+CIL_CCDB.Status.Deleted:false&default_operator=AND&from=".$from."&size=".$size;
+            $searchURL = $searchPrefix."?q=".$queryString.$searchPostfix;
+            
+            echo $searchURL;
+            $response = $sutil->just_curl_get($searchURL);
+            //echo $response;
+            $result = json_decode($response);
+            
+            $data['result']=$result;
+            $this->load->view('templates/cil_header4', $data);
+            $this->load->view('search/search_results', $data);
+            $this->load->view('templates/cil_footer2', $data);
+             
+        }
+    }
     
     public function view($imageID)
     {
-        
         $sutil = new CILServiceUtil2();
         $gutil = new GeneralUtil();
+        
         
         if(is_numeric($imageID))
         {
