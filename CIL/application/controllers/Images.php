@@ -18,7 +18,11 @@ class Images  extends CI_Controller
         
         $temp = $this->input->get('page',TRUE);
         if(!is_null($temp))
-            $page = intval(temp);
+        {
+            $page = intval($temp);
+            $page = $page-1;
+            //echo "---------page after:".$page."<br/>";
+        }
         
         $from = $page*$size;
         $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
@@ -31,12 +35,16 @@ class Images  extends CI_Controller
             $searchPostfix = "+CIL_CCDB.Status.Is_public:true+CIL_CCDB.Status.Deleted:false&default_operator=AND&from=".$from."&size=".$size;
             $searchURL = $searchPrefix."?q=".$queryString.$searchPostfix;
             
-            echo $searchURL;
+            //echo $searchURL;
             $response = $sutil->just_curl_get($searchURL);
             //echo $response;
             $result = json_decode($response);
             
+            $data['page_num'] = $page;
+            $data['size']=$size;
+            $data['total']=$result->hits->total;
             $data['result']=$result;
+            $data['keywords']=$keywords;
             $this->load->view('templates/cil_header4', $data);
             $this->load->view('search/search_results', $data);
             $this->load->view('templates/cil_footer2', $data);
@@ -68,10 +76,12 @@ class Images  extends CI_Controller
         {
            if(isset($json->CIL_CCDB->CCDB))
            {
-             
-               
-             $this->load->view('templates/cil_header', $data);
-             $this->load->view('ccdb_image_display', $data);
+             $data['image_id'] = $imageID;
+             $data['result'] = $json;
+             $this->load->view('templates/cil_header4', $data);
+             $this->load->view('ccdb/ccdb_image_display', $data);
+             $this->load->view('templates/cil_footer2', $data);
+
            }
            else if(isset($json->CIL_CCDB->CIL))
            {

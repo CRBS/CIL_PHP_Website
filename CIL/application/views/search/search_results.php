@@ -38,6 +38,14 @@
 
         include 'inner_search_result.php';
        
-    ?>      
-    
+    ?>
+    <div class="row">
+        <div class="col-md-12">
+        <?php
+
+        include 'inner_ccdb_search_pagination.php';
+       
+        ?>
+        </div>
+    </div>    
 </div>
