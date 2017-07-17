@@ -14,10 +14,10 @@
 		<meta name="viewport" content="width=device-width">
                 
                 	<!-- CSS Global Compulsory -->
-	<link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="/assets/css/style.css"> 
+                <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
+                <link rel="stylesheet" href="/assets/css/style.css"> 
                 
-		<link rel="stylesheet" href="https://apps.bigbase.nl/templates/data/web/5001-6/bootstrap/css/bootstrap.css">
+		<!--<link rel="stylesheet" href="https://apps.bigbase.nl/templates/data/web/5001-6/bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" href="https://apps.bigbase.nl/templates/data/web/5001-6/css/style.css">
 		<link rel="stylesheet" href="https://apps.bigbase.nl/templates/data/web/5001-6/css/nivo-slider.css">
 		<link rel="stylesheet" href="https://apps.bigbase.nl/templates/data/web/5001-6/css/colorbox.css">
@@ -30,7 +30,22 @@
 		<script src="https://apps.bigbase.nl/templates/data/web/5001-6/js/jquery.nivo.slider.pack.js"></script>
 		<script src="https://apps.bigbase.nl/templates/data/web/5001-6/js/jquery.colorbox-1.6.4.min.js"></script>
 		<script src="https://apps.bigbase.nl/templates/data/web/5001-6/js/respond.min.js"></script>
-		<script src="https://apps.bigbase.nl/templates/data/web/5001-6/js/script.js"></script>
+		<script src="https://apps.bigbase.nl/templates/data/web/5001-6/js/script.js"></script> -->
+               
+		<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="/template/css/style.css">
+		<link rel="stylesheet" href="/template/css/nivo-slider.css">
+		<link rel="stylesheet" href="/template/css/colorbox.css">
+		<link rel="stylesheet" href="/template/nivo-themes/bar/bar.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/template/nivo-themes/light/light.css" type="text/css" media="screen" />
+		<script src="/template/js/config.js"></script>
+		<script src="/template/js/modernizr-3.3.1.min.js"></script>
+		<script src="/template/js/jquery-1.12.4.min.js"></script>
+		<script src="/template/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/template/js/jquery.nivo.slider.pack.js"></script>
+		<script src="/template/js/jquery.colorbox-1.6.4.min.js"></script>
+		<script src="/template/js/respond.min.js"></script>
+		<script src="/template/js/script.js"></script>
 
                 
                 

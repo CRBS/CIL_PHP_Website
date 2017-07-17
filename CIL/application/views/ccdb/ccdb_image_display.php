@@ -18,7 +18,10 @@
             <div class="row">
                 <div class="col-md-12">
                 
-                     <?php include_once 'inner_ccdb_reconstruction.php' ?>
+                     <?php 
+                            if(isset($result->CIL_CCDB->CCDB->Reconstruction))
+                                include_once 'inner_ccdb_reconstruction.php'; 
+                     ?>
                 </div>
             </div>
             <div class="row">

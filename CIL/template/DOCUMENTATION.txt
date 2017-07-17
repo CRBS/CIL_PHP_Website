@@ -1,0 +1,11 @@
+# bb-shop-advanced
+- Bootstrap E-Shop Template
+- Version: 2.1.0 from march 2017
+
+# Documentation
+
+## Installation
+This template is not based on any (open source) content management system, so there is no installation required. Just upload your website to a ftp client and be sure to name your homepage "index.html". HTML knowledge is required to edit this template.
+
+## Customize the template
+You can easily customize the template by choosing the "blank" template and fill the lines marked with <!-- Place content here--> comment. You can find all available code for bootstrap components in the other template files. These components are marked with comments <!-- START CONTENT ITEM --> and <!-- END CONTENT ITEM -->

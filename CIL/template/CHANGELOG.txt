@@ -1,0 +1,41 @@
+# bb-shop-advanced
+- Bootstrap E-Shop Template
+- Version: 2.1 from march 2017
+
+# Changelog
+
+## v1.1.0 May 2013
+- Bootstrap update to 2.3.2
+- Created more links to different pages
+- Added support for IE10
+- Added fix when switching tab content with buttons to also select tab itself
+- Fix with showing product images in shopping cart
+- Fix issue with shopping cart trash can positioning in firefox
+
+## v2.0.0 March 2014
+- Bootstrap update to 3.1.1
+- Pages are more responsive
+- Removed fluid pages
+- Changed some css styles for a more modern look
+- Updated all images
+
+## v2.0.1 June 2014
+- Updated colorbox to newest version 1.5.9
+
+## v2.0.2 June 2015
+- Updated Bootstrap to version 3.3.4
+- Updated jQuery to version 1.9.1
+- Updated Nivo to version 3.2
+
+## v2.1 March 2017
+- Improved style, added different fonts, new colors
+- Some minor bugfixes
+- Added 404 page
+- Added more alternative page layouts
+- Updated images
+- Added different logo
+- Updated Bootstrap to version 3.3.7
+- Updated jQuery to version 1.12.4
+- Updated Colorbox to version 1.6.4
+- Updated Modernizr to version 3.3.1
+- Updated Respond.js to version 1.4.2
