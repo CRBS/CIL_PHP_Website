@@ -1,0 +1,62 @@
+@font-face {
+	font-family: 'DroidSansRegular';
+	src: url('/fonts/DroidSans-webfont.eot');
+	src: local('☺'), url('/fonts/DroidSans-webfont.woff') format('woff'), url('/fonts/DroidSans-webfont.ttf') format('truetype'), url('/fonts/DroidSans-webfont.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DroidSansBold';
+	src: url('/fonts/DroidSans-Bold-webfont.eot');
+	src: local('☺'), url('/fonts/DroidSans-Bold-webfont.woff') format('woff'), url('/fonts/DroidSans-Bold-webfont.ttf') format('truetype'), url('/fonts/DroidSans-Bold-webfont.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body {
+	font-size: 11px;
+	line-height: 14px;
+	font-family:  'DroidSansRegular', 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+#header #logo h1,
+#header #logo span,
+#header form,
+#header_nav,
+nav,
+#categories,
+.toolbar {
+  display: none;
+}
+
+a#logo {
+  position: absolute;
+  top:0;
+  right: 0;
+}
+
+.column {
+  width: 50%;
+  float: left;
+}
+
+dt {
+	font-family: 'DroidSansBold';
+	margin-top: 14px;
+}
+
+dt:first-child {
+	margin-top: 0;
+}
+
+dd {
+	background: url(/pix/2px_grey_square.gif) no-repeat 0 5px;
+	padding-left: 5px;
+	margin-left: -5px;
+}
+
+dd:last-child {
+	margin-bottom: 14px;
+}

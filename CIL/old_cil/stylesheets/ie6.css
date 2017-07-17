@@ -1,0 +1,13 @@
+#header #logo {
+  margin-left: 5px; /* double margin bug */
+  padding: 0;
+}
+
+table {
+  border-top: 1px solid #000;
+}
+
+/* IE6 for some reason won't let you change the margin/padding on legends?? */
+#advanced_search_form legend {
+  width: 430px;
+}
