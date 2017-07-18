@@ -36,6 +36,7 @@
                 </div>
             </div>
         </div>
+        <!-----Starting right panel------------------->
         <div class="col-md-6">
             <div class="row">
                  
@@ -51,17 +52,32 @@
                         }
                     ?><sup class="detailed_cil_asterisk">*</sup></span> 
                     <?php 
-                        //if(isset($json->CIL_CCDB->CIL->CORE->IMAGEDESCRIPTION->free_text))
-                           // include_once 'cil_inner_pages/cil_inner_description.php' 
+                        
+                        if(isset($result->CIL_CCDB->CCDB->Project))
+                            include_once  'inner_ccdb_project.php';
                     ?>
                 </div>
                 
                 <div class="col-md-12">
-                     <?php 
-                          // if(isset($json->CIL_CCDB->CIL->CORE->TECHNICALDETAILS->free_text))
-                               // include_once 'cil_inner_pages/cil_inner_technical.php' 
+                     <div class="row">
+                        <div class="col-md-6">
+                        <?php 
+                        
+                        if(isset($result->CIL_CCDB->CCDB->Experiment))
+                            include_once  'inner_ccdb_experiment.php';
                         ?>
+                        </div>
+                         <div class="col-md-6">
+                        <?php 
+                        
+                        if(isset($result->CIL_CCDB->CCDB->Subject))
+                            include_once  'inner_ccdb_subject.php';
+                        ?>
+                        </div>
+                     </div>
                 </div>
+                         
+                         
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-6">
