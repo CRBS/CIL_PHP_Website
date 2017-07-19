@@ -108,7 +108,13 @@
                 
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $imode->onto_id;   ?>' title=''><?php echo $imode->onto_name ?></a>
+                    <a class='eol_onto_term_link' href='<?php  echo $imode->onto_id;   ?>' title=''><?php 
+                        if(isset($imode->onto_name))
+                            echo $imode->onto_name;
+                        else
+                            echo $imode->onto_id;
+                    ?>
+                    </a>
                     </span>
                     </dd>       
         

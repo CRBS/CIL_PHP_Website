@@ -70,13 +70,61 @@
                          <div class="col-md-6">
                         <?php 
                         
-                        if(isset($result->CIL_CCDB->CCDB->Subject))
-                            include_once  'inner_ccdb_subject.php';
+                        if(isset($result->CIL_CCDB->CCDB->Microscopy_product))
+                            include_once  'inner_ccdb_microscopy_product.php';
                         ?>
                         </div>
                      </div>
                 </div>
-                         
+                
+                <div class="col-md-12">
+                     <div class="row">
+                        <div class="col-md-6">
+                        <?php 
+                        
+                        if(isset($result->CIL_CCDB->CCDB->Subject))
+                            include_once  'inner_ccdb_subject.php';
+                        ?>
+                        </div>
+                         <div class="col-md-6">
+                         <?php 
+                        
+                        if(isset($result->CIL_CCDB->CCDB->Subject->Tissue_section))
+                            include_once  'inner_ccdb_tissue_section.php';
+                        ?>
+                        </div>
+                     </div>
+                </div>
+                
+                
+                <div class="col-md-12">
+                     <div class="row">
+                        <div class="col-md-6">
+                        <?php 
+                        if(isset($result->CIL_CCDB->CCDB->Specimen_description))
+                            include_once  'inner_ccdb_specimen_description.php';
+                        ?>
+                        </div>
+                         <div class="col-md-6">
+                        <?php 
+                        if(isset($result->CIL_CCDB->CCDB->Imaging_parameters->Lm_microscopy_product))
+                            include_once  'inner_ccdb_lm_product.php';
+                        ?>
+                        </div>
+                     </div>
+                </div>
+                 
+                <div class="col-md-12">
+                     <div class="row">
+                         <div class="col-md-12">
+                         <?php 
+                            if(isset($result->CIL_CCDB->CCDB->Specimen_preparation->Protocol_used))
+                                include_once  'inner_ccdb_specimen_preparation.php';
+                         ?>
+                         </div>
+                     </div>
+                </div>
+                    
                          
                 <div class="col-md-12">
                     <div class="row">
