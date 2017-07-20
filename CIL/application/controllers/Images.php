@@ -64,7 +64,7 @@ class Images  extends CI_Controller
         
         }
         
-        
+        $data['ccdb_direct_data_prefix'] = $this->config->item('ccdb_direct_data_prefix');
         
         $response = $sutil->getImage($imageID);
         $json = json_decode($response);

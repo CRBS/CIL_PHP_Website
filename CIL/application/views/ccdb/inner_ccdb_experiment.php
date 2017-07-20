@@ -44,7 +44,12 @@
                 <dl>
                     <dt><b>Experiment date</b></dt>
                     <dd class='eol_dd'>
-                        <?php echo $result->CIL_CCDB->CCDB->Experiment->Date; ?>
+                        <?php 
+                        
+                            $mil = $result->CIL_CCDB->CCDB->Experiment->Date;
+                            $seconds = $mil / 1000;
+                            echo date("m-d-Y", $seconds);
+                        ?>
                     </dd>
                 </dl>
             </div>

@@ -80,8 +80,10 @@
         
         
         
-        <link rel='shortcut icon' type='image/x-icon' href='/pix/favicon.ico' />
+        
                 <link rel="stylesheet" href="/css/cil.css?<?php echo rand(100000,99999999);   ?>"> 
+                
+                <link rel='shortcut icon' type='image/x-icon' href='/pix/favicon.ico' />
 	</head>
 
 	<body>

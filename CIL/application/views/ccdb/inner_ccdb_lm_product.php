@@ -67,7 +67,7 @@
 <?php
 
       
-    if(isset($result->CIL_CCDB->CCDB->Imaging_parameters->Lm_microscopy_product->Mounting_medium))
+    if(isset($result->CIL_CCDB->CCDB->Imaging_parameters->Lm_microscopy_product->Lens))
     {
         
 ?>

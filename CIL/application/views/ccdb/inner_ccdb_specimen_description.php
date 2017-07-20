@@ -123,7 +123,7 @@
                 <dl>
                     <dt><b>Map location</b></dt>
                     <dd class='eol_dd'>
-                        <?php echo $result->CIL_CCDB->CCDB->Specimen_description->Map_location; ?>
+                        <a href="<?php echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Specimen_description->Map_location; ?>" target="_blank">View location</a>
                     </dd>
                 </dl>
             </div>
@@ -183,8 +183,11 @@
                                 $a_count = count($atlas_coordinate);
                                 for($i=0;$i<$a_count;$i++)
                                 {
-                                    echo $a_count[$i];
-                                    $i++;
+                                    if($a_count[$i] == 0)
+                                        echo "0";
+                                    else
+                                        echo $a_count[$i];
+                                   
                                     if($i<$a_count)
                                     {
                                         echo ", ";

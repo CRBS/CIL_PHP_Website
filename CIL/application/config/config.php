@@ -525,3 +525,5 @@ $config['video_folder'] = 'C:/Users/Willy/Documents/apache/Apache24/CIL_PHP_Webs
 $config['data_search_url'] = 'http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7/_search';
 
 $config['cil_image_prefix'] = 'http://www.cellimagelibrary.org/cil_ccdb/display_images/';
+
+$config['ccdb_direct_data_prefix'] = 'http://ccdb.ucsd.edu/ccdbdata';

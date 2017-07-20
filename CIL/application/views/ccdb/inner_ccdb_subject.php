@@ -102,7 +102,7 @@
 <?php
 
       
-    if(isset($result->CIL_CCDB->CCDB->Subject->Scientific_name))
+    if(isset($result->CIL_CCDB->CCDB->Subject->Treatment))
     {
 ?>
         <div class="row">

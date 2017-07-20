@@ -109,6 +109,8 @@
                         <?php 
                         if(isset($result->CIL_CCDB->CCDB->Imaging_parameters->Lm_microscopy_product))
                             include_once  'inner_ccdb_lm_product.php';
+                        else if(isset($result->CIL_CCDB->CCDB->Imaging_parameters->Em_microscopy_product))
+                            include_once  'inner_ccdb_em_product.php';
                         ?>
                         </div>
                      </div>
@@ -124,7 +126,20 @@
                          </div>
                      </div>
                 </div>
-                    
+                <div class="col-md-12">
+                     <div class="row">
+                        <div class="col-md-6">
+                        <?php 
+                        
+                        if(isset($result->CIL_CCDB->CCDB->Imaging_product_types->Double_tilt))
+                            include_once  'inner_ccdb_double_tilt.php';
+                        ?>
+                        </div>
+                         <div class="col-md-6">
+                         
+                        </div>
+                     </div>
+                </div>    
                          
                 <div class="col-md-12">
                     <div class="row">
