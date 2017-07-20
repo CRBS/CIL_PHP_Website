@@ -8,7 +8,14 @@
 	<head>
 
 		<meta charset="utf-8">
-		<title>Index</title>
+		<title><?php
+                
+                    if(isset($title))
+                        echo $title;
+                    else
+                        echo "The Cell Image Library";
+                
+                ?></title>
 		<meta name="description" content="Page description here">
 		<meta name="author" content="BigBase - D. Tiems">
 		<meta name="viewport" content="width=device-width">
@@ -83,7 +90,10 @@
         
                 <link rel="stylesheet" href="/css/cil.css?<?php echo rand(100000,99999999);   ?>"> 
                 
-                <link rel='shortcut icon' type='image/x-icon' href='/pix/favicon.ico' />
+                <!-- <link rel='shortcut icon' type='image/x-icon' href='/pix/favicon.ico' /> -->
+                
+                <link rel="icon" href="/pix/favicon.ico" type="image/x-icon" />
+                <link rel="shortcut icon" href="/pix/favicon.ico" type="image/x-icon" />
 	</head>
 
 	<body>

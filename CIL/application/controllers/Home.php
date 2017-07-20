@@ -16,6 +16,7 @@ class Home  extends CI_Controller
          //echo $settings_response;
          $settings_json = json_decode($settings_response);
          $summary = array();
+         $data['title'] = 'The Cell Image Library';
          
          if($settings_json->_source->Home_page->Featured_image)
          {

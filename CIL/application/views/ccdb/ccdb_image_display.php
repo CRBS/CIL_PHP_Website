@@ -133,6 +133,9 @@
                         
                         if(isset($result->CIL_CCDB->CCDB->Imaging_product_types->Double_tilt))
                             include_once  'inner_ccdb_double_tilt.php';
+                        else if(isset($result->CIL_CCDB->CCDB->Imaging_product_types->Mosaic))
+                            include_once 'inner_ccdb_mosaic.php';
+                        
                         ?>
                         </div>
                          <div class="col-md-6">
