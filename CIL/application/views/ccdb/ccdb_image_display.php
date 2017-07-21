@@ -19,14 +19,42 @@
                 <div class="col-md-12">
                 
                      <?php 
-                            if(isset($result->CIL_CCDB->CCDB->Reconstruction))
+                            $multiple_image = false;
+                            if(isset($result->CIL_CCDB->CCDB->Reconstruction->Recon_Downloadable_data))
+                            {
                                 include_once 'inner_ccdb_reconstruction.php'; 
+                                $multiple_image = true;
+                            }
                      ?>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                     <?php //include_once 'cil_inner_pages/cil_inner_social_media.php' ?>
+                     <?php 
+                     
+                            if(isset($result->CIL_CCDB->CCDB->Image2d->Image2D_Downloadable_data))
+                            {
+                                if($multiple_image)
+                                    echo "<hr>";
+                                include_once 'inner_ccdb_image2d.php';
+                                $multiple_image = true;
+                            }
+                     
+                     ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                     <?php 
+                     
+                            if(isset($result->CIL_CCDB->CCDB->Segmentation->Seg_Downloadable_data))
+                            {
+                                if($multiple_image)
+                                    echo "<hr>";
+                                include_once 'inner_ccdb_segmentation.php';
+                            }
+                     
+                     ?>
                 </div>
             </div>
             <div class="row">

@@ -1,7 +1,7 @@
-
+<!-- <h2 class='detailed_description'>Reconstruction</h2> -->
     <div class="row">
     <div class="col-md-12">
-           <div class="row">
+            <div class="row">
               <div class="col-md-12">
                 <div class="grid_12" id="browse_header">
                 <div class="grid_6" id="browse_header_text">
@@ -10,7 +10,8 @@
                 </div>
                 </div>    
               </div>
-           </div>
+           </div> 
+           
         <!-- <div style="height:2px;font-size:1px;">&nbsp;</div> -->
         <div class="row top-buffer">
             <div class="col-md-12">
@@ -53,7 +54,7 @@
                     {
                 ?>    
                 <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-                <a class='download_menu_anchor' href='http://ccdb.ucsd.edu/ccdbdata/<?php echo $result->CIL_CCDB->CCDB->Reconstruction->Recon_Downloadable_data->Full_resolution->URL  ?>'  download="<?php echo $image_id."_full_resolution"; ?>">Download full resolution image</a>
+                <a class='download_menu_anchor' href='http://ccdb.ucsd.edu/ccdbdata/<?php echo $result->CIL_CCDB->CCDB->Reconstruction->Recon_Downloadable_data->Full_resolution->URL;  ?>'  download="<?php echo $image_id."_full_resolution"; ?>">Download full resolution image</a>
                 </div>
                 <?php
                     }
@@ -241,7 +242,7 @@
         <!---------------------Volume_scale------------------------------->
         
         <?php
-            if(isset($result->CIL_CCDB->CCDB->Reconstruction->Volume_dimension))
+            if(isset($result->CIL_CCDB->CCDB->Reconstruction->Volume_scale))
             {
         ?>
          <div class="row">

@@ -89,7 +89,7 @@
 <?php
 
       
-    if(isset($result->CIL_CCDB->CCDB->Imaging_product_types->Through_focus->Psf_file) )
+    if(isset($result->CIL_CCDB->CCDB->Imaging_product_types->Through_focus->Notes) )
     {
 ?>
         <div class="row">
