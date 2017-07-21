@@ -121,7 +121,14 @@
                          <div class="col-md-12">
                          <?php 
                             if(isset($result->CIL_CCDB->CCDB->Specimen_preparation->Protocol_used))
-                                include_once  'inner_ccdb_specimen_preparation.php';
+                            {
+                                $protocol_used = $result->CIL_CCDB->CCDB->Specimen_preparation->Protocol_used;
+                                if(strlen($protocol_used)>0)
+                                {
+                                    include_once  'inner_ccdb_specimen_preparation.php';
+                                }
+                                
+                            }
                          ?>
                          </div>
                      </div>
@@ -130,11 +137,68 @@
                      <div class="row">
                         <div class="col-md-6">
                         <?php 
-                        
+                        $multiple_types = false;
                         if(isset($result->CIL_CCDB->CCDB->Imaging_product_types->Double_tilt))
+                        {
                             include_once  'inner_ccdb_double_tilt.php';
-                        else if(isset($result->CIL_CCDB->CCDB->Imaging_product_types->Mosaic))
+                            $multiple_types = true;
+                        }
+                        if(isset($result->CIL_CCDB->CCDB->Imaging_product_types->Mosaic))
+                        {
                             include_once 'inner_ccdb_mosaic.php';
+                            if($multiple_types)
+                                echo "<hr>";
+                            $multiple_types = true;
+                        }
+                        if(isset($result->CIL_CCDB->CCDB->Imaging_product_types->Optical_section))
+                        {
+                            include_once 'inner_ccdb_optical_section.php';
+                            if($multiple_types)
+                                echo "<hr>";
+                            $multiple_types = true;
+                        }
+                        if(isset($result->CIL_CCDB->CCDB->Imaging_product_types->Serial_section))
+                        {
+                            include_once 'inner_ccdb_serial_section.php';
+                            if($multiple_types)
+                                echo "<hr>";
+                            $multiple_types = true;
+                        }
+                        if(isset($result->CIL_CCDB->CCDB->Imaging_product_types->Single_tilt))
+                        {
+                            include_once 'inner_ccdb_single_tilt.php';
+                            if($multiple_types)
+                                echo "<hr>";
+                            $multiple_types = true;
+                        }
+                        if(isset($result->CIL_CCDB->CCDB->Imaging_product_types->Stereo_pairs))
+                        {
+                            include_once 'inner_ccdb_stereo_pairs.php';
+                            if($multiple_types)
+                                echo "<hr>";
+                            $multiple_types = true;
+                        }
+                        if(isset($result->CIL_CCDB->CCDB->Imaging_product_types->Survey))
+                        {
+                            include_once 'inner_ccdb_survey.php';
+                            if($multiple_types)
+                                echo "<hr>";
+                            $multiple_types = true;
+                        }
+                        if(isset($result->CIL_CCDB->CCDB->Imaging_product_types->Through_focus))
+                        {
+                            include_once 'inner_ccdb_through_focus.php';
+                            if($multiple_types)
+                                echo "<hr>";
+                            $multiple_types = true;
+                        }
+                        if(isset($result->CIL_CCDB->CCDB->Imaging_product_types->Optical_section))
+                        {
+                            include_once 'inner_ccdb_optical_section.php';
+                            if($multiple_types)
+                                echo "<hr>";
+                            $multiple_types = true;
+                        }
                         
                         ?>
                         </div>

@@ -30,7 +30,7 @@
 <?php
 
       
-    if(isset($result->CIL_CCDB->CCDB->Specimen_description->Organ))
+    if(isset($result->CIL_CCDB->CCDB->Specimen_description->System))
     {
         
 ?>
