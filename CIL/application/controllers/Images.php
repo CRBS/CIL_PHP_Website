@@ -77,6 +77,11 @@ class Images  extends CI_Controller
            if(isset($json->CIL_CCDB->CCDB))
            {
              $data['image_id'] = $imageID;
+             if($gutil->startsWith($imageID, "CCDB_"))
+             {
+                 $numeric_id = str_replace("CCDB_", "", $imageID);
+                 $data['$numeric_id'] = $numeric_id;
+             }
              $data['result'] = $json;
              $this->load->view('templates/cil_header4', $data);
              $this->load->view('ccdb/ccdb_image_display', $data);
