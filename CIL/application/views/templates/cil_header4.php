@@ -208,8 +208,10 @@
 					<div class="hidden-xs hidden-sm col-md-3 col-lg-4">
 
 						<!-- START CONTENT ITEM -->
-						<img src="https://ncmir.ucsd.edu/site/media/images/crbs_logo_100.png" alt="No shipping" class="img-responsive">
-						<!-- END CONTENT ITEM -->
+                                                <a href="http://crbs.ucsd.edu/" target="_blank">
+                                                <img src="/pix/CRBS_LOGO.png" alt="CRBS" class="img-responsive" width="150px">
+                                                </a>
+                                                <!-- END CONTENT ITEM -->
 
 					</div>
 				</div>

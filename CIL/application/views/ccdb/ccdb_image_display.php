@@ -57,10 +57,11 @@
                      ?>
                 </div>
             </div>
-            <div class="row">
+            
+            <div class="row top-buffer">
                 <div class="col-md-12">
                 
-                     <?php //include_once 'cil_inner_pages/cil_inner_comments.php' ?>
+                     <?php  include_once 'inner_ccdb_license.php' ?>
                 </div>
             </div>
         </div>
