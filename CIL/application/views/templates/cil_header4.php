@@ -245,7 +245,12 @@
                                                                                 echo "class=\"active\"";
                                                                             }
                                                                             ?>><a href="/browse/cellcomponent">Cell Component</a></li>
-									<li><a href="sitemap.html">Cell Type</a></li>
+									<li <?php 
+                                                                            if(isset($category) && strcmp($category, "celltype")== 0)
+                                                                            {
+                                                                                echo "class=\"active\"";
+                                                                            }
+                                                                            ?>><a href="/browse/celltype">Cell Type</a></li>
 									<li><a href="order.html">Organism</a></li>
                                                                         <li><a href="order.html">Data Set</a></li>
                                                                         <li><a href="order.html">Pivot View</a></li>

@@ -1,0 +1,56 @@
+{"Cell_type": [
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/42804/display_42804.png",
+        "Query_file": "Acinar_cell.json",
+        "Count": 20,
+        "Name": "Acinar cell"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10970/display_10970.png",
+        "Query_file": "Acinar_cell_of_salivary_gland.json",
+        "Count": 1,
+        "Name": "Acinar cell of salivary gland"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35996/display_35996.png",
+        "Query_file": "Adrenal_medulla_chromaffin.json",
+        "Count": 1,
+        "Name": "Adrenal medulla chromaffin"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10772/display_10772.png",
+        "Query_file": "Adrenocorticotropic_hormone_secreting_cell.json",
+        "Count": 1,
+        "Name": "Adrenocorticotropic hormone secreting cell"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/7326/display_7326.png",
+        "Query_file": "Amoeboid_cell.json",
+        "Count": 20,
+        "Name": "Amoeboid cell"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38941/display_38941.png",
+        "Query_file": "Ascospore.json",
+        "Count": 1,
+        "Name": "Ascospore"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/36420/display_36420.png",
+        "Query_file": "Astrocyte.json",
+        "Count": 271,
+        "Name": "Astrocyte"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40197/display_40197.png",
+        "Query_file": "Astrocyte_of_the_cerebellum.json",
+        "Count": 3,
+        "Name": "Astrocyte of the cerebellum"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40263/display_40263.png",
+        "Query_file": "Astrocyte_of_the_cerebral_cortex.json",
+        "Count": 1,
+        "Name": "Astrocyte of the cerebral cortex"
+    }
+]}
