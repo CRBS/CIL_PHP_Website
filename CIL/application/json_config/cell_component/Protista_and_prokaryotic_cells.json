@@ -1,0 +1,9 @@
+{
+    "query": {
+        "query_string" : {
+            "fields" : ["CIL_CCDB.CIL.CORE.CELLULARCOMPONENT.onto_id"],
+            "default_operator": "OR",
+            "use_dis_max" : true,
+             "query" : " \"GO:0031912\"  \"GO:0032123\" "}
+    }
+}

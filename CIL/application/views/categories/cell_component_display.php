@@ -6,7 +6,7 @@
         <div class="grid_12" id="browse_header">
         <div class="grid_6" id="browse_header_text">
         Explore the Cell Image Library by
-        <span class="category">Cell Process</span>
+        <span class="category">Cell Component</span>
         </div>
 
         </div>
@@ -26,8 +26,8 @@
     </div>
     <br/>
 <?php
-    $cell_processes = $summary->Cell_process;
-    $count = count($cell_processes);
+    $cell_component = $summary->Cell_component;
+    $count = count($cell_component);
     
         $newRow = false;
     $i = 0;
@@ -38,9 +38,9 @@
         <div class="row">
             <div class="col-md-4">
 <?php
-        $cp = $cell_processes[$i];
+        $cc = $cell_component[$i];
         //echo $cp->Name;
-        include 'inner_cell_processes_image.php';
+        include 'inner_cell_component_image.php';
         $i++;
 ?>
         </div>
@@ -49,9 +49,9 @@
 <?php                
          if($i<$count)
          {
-             $cp = $cell_processes[$i];
+             $cc = $cell_component[$i];
              //echo $cp->Name;
-             include 'inner_cell_processes_image.php';
+             include 'inner_cell_component_image.php';
             $i++;
          }
 ?>
@@ -61,9 +61,9 @@
 <?php                
          if($i<$count)
          {
-             $cp = $cell_processes[$i];
+             $cc = $cell_component[$i];
              //echo $cp->Name;
-             include 'inner_cell_processes_image.php';
+             include 'inner_cell_component_image.php';
             $i++;
          }
 ?>
@@ -74,8 +74,5 @@
 <?php                
     }
 ?>
-
-
     
-    
-</div> 
+</div>

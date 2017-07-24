@@ -233,15 +233,18 @@
 								<ul class="nav navbar-nav navbar-left">
                                                                     <li><a href="/home"><span class="glyphicon glyphicon-home"></span></a></li>
 									<li <?php 
-                                                                            if(isset($category))
+                                                                            if(isset($category) && strcmp($category, "cellprocess")== 0)
                                                                             {
                                                                                 echo "class=\"active\"";
                                                                             }
-                                                                            ?>
-                                                                        
-                                                                        ><a href="/browse/cellprocess">Cell Process</a></li>
+                                                                            ?>><a href="/browse/cellprocess">Cell Process</a></li>
 				
-									<li><a href="contact.html">Cell Component</a></li>
+									<li <?php 
+                                                                            if(isset($category) && strcmp($category, "cellcomponent")== 0)
+                                                                            {
+                                                                                echo "class=\"active\"";
+                                                                            }
+                                                                            ?>><a href="/browse/cellcomponent">Cell Component</a></li>
 									<li><a href="sitemap.html">Cell Type</a></li>
 									<li><a href="order.html">Organism</a></li>
                                                                         <li><a href="order.html">Data Set</a></li>

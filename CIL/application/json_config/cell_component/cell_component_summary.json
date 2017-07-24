@@ -1,0 +1,152 @@
+{"Cell_component": [
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/24786/display_24786.png",
+        "Query_file": "Actin_cytoskeleton.json",
+        "Count": 677,
+        "Name": "Actin Cytoskeleton"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12586/display_12586.png",
+        "Query_file": "Cell_wall.json",
+        "Count": 32,
+        "Name": "Cell Wall"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39125/display_39125.png",
+        "Query_file": "Chloroplast.json",
+        "Count": 97,
+        "Name": "Chloroplast"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10771/display_10771.png",
+        "Query_file": "Endoplasmic_reticulum.json",
+        "Count": 532,
+        "Name": "Endoplasmic Reticulum"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12617/display_12617.png",
+        "Query_file": "Endosome.json",
+        "Count": 65,
+        "Name": "Endosome"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12658/display_12658.png",
+        "Query_file": "Extracellular_matrix.json",
+        "Count": 426,
+        "Name": "Extracellular Matrix"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/34524/display_34524.png",
+        "Query_file": "Flagella_and_cilia.json",
+        "Count": 173,
+        "Name": "Flagella And Cilia"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/7594/display_7594.png",
+        "Query_file": "Golgi_apparatus.json",
+        "Count": 301,
+        "Name": "Golgi Apparatus"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/111/display_111.png",
+        "Query_file": "Intermediate_filament_cytoskeleton.json",
+        "Count": 80,
+        "Name": "Intermediate Filament Cytoskeleton"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/7587/display_7587.png",
+        "Query_file": "Lysosome_and_related_organelles.json",
+        "Count": 158,
+        "Name": "Lysosome And Related Organelles"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38912/display_38912.png",
+        "Query_file": "Microtubule_cytoskeleton.json",
+        "Count": 1540,
+        "Name": "Microtubule Cytoskeleton"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10455/display_10455.png",
+        "Query_file": "Microtubule_organizing_centers.json",
+        "Count": 363,
+        "Name": "Microtubule Organizing Centers"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/7567/display_7567.png",
+        "Query_file": "Mitochondrion.json",
+        "Count": 531,
+        "Name": "Mitochondrion"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/7752/display_7752.png",
+        "Query_file": "Molecular_machinery.json",
+        "Count": 33,
+        "Name": "Molecular Machinery"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/8082/display_8082.png",
+        "Query_file": "Molecular_motors.json",
+        "Count": 107,
+        "Name": "Molecular Motors"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/8735/display_8735.png",
+        "Query_file": "Neurons.json",
+        "Count": 699,
+        "Name": "Neurons"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11052/display_11052.png",
+        "Query_file": "Nuclear_envelope.json",
+        "Count": 121,
+        "Name": "Nuclear Envelope"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/9233/display_9233.png",
+        "Query_file": "Nucleolus.json",
+        "Count": 103,
+        "Name": "Nucleolus"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10974/display_10974.png",
+        "Query_file": "Nucleus.json",
+        "Count": 3038,
+        "Name": "Nucleus"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10903/display_10903.png",
+        "Query_file": "Plasma_membrane.json",
+        "Count": 583,
+        "Name": "Plasma Membrane"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40337/display_40337.png",
+        "Query_file": "Pollen_wall.json",
+        "Count": 83,
+        "Name": "Pollen Wall"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10522/display_10522.png",
+        "Query_file": "Protista_and_prokaryotic_cells.json",
+        "Count": 187,
+        "Name": "Protista And Prokaryotic Cells"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/37119/display_37119.png",
+        "Query_file": "Vacuole.json",
+        "Count": 354,
+        "Name": "Vacuole"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/9687/display_9687.png",
+        "Query_file": "Vesicle.json",
+        "Count": 494,
+        "Name": "Vesicle"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/16310/display_16310.png",
+        "Query_file": "Virus.json",
+        "Count": 10,
+        "Name": "Virus"
+    }
+]}

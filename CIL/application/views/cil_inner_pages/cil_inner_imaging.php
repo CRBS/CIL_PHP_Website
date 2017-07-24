@@ -15,7 +15,13 @@
                 <dt><b>Image Type</b></dt>
                 <dd>
                 <span>
-                <a class='onto_term_link' href='<?php  echo $imagetype->onto_id;   ?>' title=''><?php echo $imagetype->onto_name ?></a>
+                <a class='onto_term_link' href='<?php  echo $imagetype->onto_id;   ?>' title=''><?php 
+                                                                                                        if(isset($imagetype->onto_name))
+                                                                                                            echo $imagetype->onto_name; 
+                                                                                                        else 
+                                                                                                            echo $imagetype->onto_id;
+                                                                                                                
+                                                                                                            ?></a>
                 </span>
                 </dd>
 
