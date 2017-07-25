@@ -171,8 +171,8 @@
 							<div class="col-xs-12">
 								<div class="navbar header-search-nav">
 									<ul class="nav navbar-nav">
-                                                                                <li><a href="column2.html">Advanced search</a></li>
-										<li><a href="column2.html">Contributors</a></li>
+                                                                                <li><a href="/images/advanced_search">Advanced search</a></li>
+										<li><a href="/contributors">Contributors</a></li>
 										<li><a href="column2.html">Help</a></li>
 										<li><a href="column2.html">Login</a></li>
 									</ul>
@@ -251,13 +251,23 @@
                                                                                 echo "class=\"active\"";
                                                                             }
                                                                             ?>><a href="/browse/celltype">Cell Type</a></li>
-									<li><a href="order.html">Organism</a></li>
-                                                                        <li><a href="order.html">Data Set</a></li>
-                                                                        <li><a href="order.html">Pivot View</a></li>
+									<li <?php 
+                                                                            if(isset($category) && strcmp($category, "organism")== 0)
+                                                                            {
+                                                                                echo "class=\"active\"";
+                                                                            }
+                                                                            ?>><a href="/browse/organism">Organism</a></li>
+                                                                        <li <?php 
+                                                                            if(isset($category) && strcmp($category, "datasets")== 0)
+                                                                            {
+                                                                                echo "class=\"active\"";
+                                                                            }
+                                                                            ?>><a href="/pages/datasets">Data Set</a></li>
+                                                                        <!-- <li><a href="order.html">Pivot View</a></li> -->
 									
 								</ul>
 								<ul class="nav navbar-nav navbar-right">
-									<li class="dropdown">
+									<!-- <li class="dropdown">
 										<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-question-sign"></span></a>
 										<ul class="dropdown-menu">
 											<li>
@@ -273,23 +283,32 @@
 												</div>
 											</li>
 										</ul>
-									</li>
+									</li> -->
 									<li class="dropdown">
 										<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-envelope"></span></a>
 										<ul class="dropdown-menu">
 											<li>
 												<div class="dropdown-content">
 													<address>
-														<strong>CompanyName</strong><br>
-														Address 123<br>
-														Zipcode, State and City
+														<strong>Center for Research in Biological Systems</strong><br>
+														Basic Science Building, Room 1000 <br/>
+														University of California, San Diego<br/>
+                                                                                                                9500 Gilman Drive<br/>
+                                                                                                                La Jolla, CA 92093-0608, USA<br/>
 													</address>
 												</div>
 											</li>
 											<li class="divider"></li>
 											<li>
 												<div class="dropdown-content">
-													<strong>Phone</strong>: 012-345 67 89<br>
+													<strong>Voice</strong>: (858) 534-0276<br/>
+                                                                                                        <strong>Fax</strong>: (858) 534-7497<br/>
+												</div>
+											</li>
+                                                                                        <li>
+												<div class="dropdown-content">
+													<strong>Email</strong>: dorloff@ncmir.ucsd.edu<br/>
+                                                                                                        
 												</div>
 											</li>
                                             <li class="divider"></li>

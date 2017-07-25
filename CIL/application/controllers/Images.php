@@ -54,6 +54,15 @@ class Images  extends CI_Controller
     
     public function view($imageID)
     {
+        if(strcmp($imageID,"advanced_search")==0)
+        {
+            $data['test'] = "test";
+            $this->load->view('templates/cil_header4', $data);
+            $this->load->view('temp/comming_soon', $data);
+            $this->load->view('templates/cil_footer2', $data);
+            return;
+        }
+        
         $sutil = new CILServiceUtil2();
         $gutil = new GeneralUtil();
         
@@ -121,6 +130,11 @@ class Images  extends CI_Controller
         
     }
     
+    
+    public function Advanced_search()
+    {
+        
+    }
     
 }
 

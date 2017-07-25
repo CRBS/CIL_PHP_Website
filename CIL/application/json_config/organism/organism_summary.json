@@ -1,0 +1,56 @@
+{"Organism": [
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41488/display_41488.png",
+        "Query_file": "Acacia_dealbata.json",
+        "Count": 1,
+        "Name": "Acacia dealbata"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/13092/display_13092.png",
+        "Query_file": "Acanthamoeba_castellanii.json",
+        "Count": 4,
+        "Name": "Acanthamoeba castellanii"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/37288/display_37288.png",
+        "Query_file": "Actinobacillus_pleuropneumoniae.json",
+        "Count": 1,
+        "Name": "Actinobacillus pleuropneumoniae"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38807/display_38807.png",
+        "Query_file": "Aggregatibacter.json",
+        "Count": 1,
+        "Name": "Aggregatibacter"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39044/display_39044.png",
+        "Query_file": "Aggregatibacter_actinomycetemcomitans .json",
+        "Count": 4,
+        "Name": "Aggregatibacter actinomycetemcomitans"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38950/display_38950.png",
+        "Query_file": "Agromyces_sp._r.json",
+        "Count": 1,
+        "Name": "Agromyces sp. R"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41038/display_41038.png",
+        "Query_file": "Alcea_rosea.json",
+        "Count": 1,
+        "Name": "Alcea rosea"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40356/display_40356.png",
+        "Query_file": "Allium.json",
+        "Count": 6,
+        "Name": "Allium"
+    },
+    {
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39065/display_39065.png",
+        "Query_file": "Allium_cepa.json",
+        "Count": 2,
+        "Name": "Allium cepa"
+    }
+]}
