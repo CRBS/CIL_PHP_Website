@@ -27,4 +27,36 @@ class Pages  extends CI_Controller
         $this->load->view('pages/project_20269_display', $data);
         $this->load->view('templates/cil_footer2', $data);
     }
+    
+    public function About()
+    {
+        $data['test']="test";
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('pages/about_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+    }
+    
+    public function Press()
+    {
+        $data['test']="test";
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('pages/press_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+    }
+    
+    public function License()
+    {
+        $data['test']="test";
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('pages/license_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+    }
+    
+    public function Notification()
+    {
+        $data['test']="test";
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('pages/notification_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+    }
 }

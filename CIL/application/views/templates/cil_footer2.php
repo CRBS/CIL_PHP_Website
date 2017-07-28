@@ -4,10 +4,10 @@
     <div class="col-md-12">
         <center>
         <ul class="footer_nav">
-        <li><a class="survey_plain" href="http://www.cellimagelibrary.org/pages/about">About</a></li>
-        <li><a class="survey_plain" href="http://www.cellimagelibrary.org/pages/press">In the News</a></li>
-        <li><a class="survey_plain"href="http://www.cellimagelibrary.org/pages/license">Licensing</a></li>
-        <li><a class="survey_plain" href="http://www.cellimagelibrary.org/pages/notification">Notification of Use</a></li>
+        <li><a class="survey_plain" href="/pages/about">About</a></li>
+        <li><a class="survey_plain" href="/pages/press">In the News</a></li>
+        <li><a class="survey_plain"href="/pages/license">Licensing</a></li>
+        <li><a class="survey_plain" href="/pages/notification">Notification of Use</a></li>
         </ul>
         </center>
     </div>

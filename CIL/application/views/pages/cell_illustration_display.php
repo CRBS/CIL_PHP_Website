@@ -1,5 +1,5 @@
 <div class="container">
-<div class="row">
+    <div class="row">
     <div class="col-md-12">
         <h2>Explore the Eukaryotic Cell</h2>
         <script type="text/javascript">
@@ -18,6 +18,9 @@
           <!--<![endif]-->
         </object>
     </div>
+    </div>
+    <br/>
+    <div class="row top-buffer">
     <div class="col-md-12">
         <h2>Explore <i>Escherichia coli</i></h2>
         <script type="text/javascript">
@@ -36,6 +39,9 @@
           <!--<![endif]-->
         </object>
     </div>
+    </div>
+    <br/>
+    <div class="row top-buffer">
     <div class="col-md-12">
         <h2>Explore <i>Paramecium</i></h2>
         <script type="text/javascript">
@@ -53,6 +59,7 @@
           </object>
           <!--<![endif]-->
         </object>
+    </div>
     </div>
 </div>
 </div>
