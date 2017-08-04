@@ -1,2202 +1,2202 @@
 {"Organism": [
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41488/display_41488.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41488/display_41488.png",
         "Query_file": "Acacia_dealbata.json",
         "Count": 1,
         "Name": "Acacia dealbata"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/19326/display_19326.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/19326/display_19326.png",
         "Query_file": "Acanthamoeba_castellanii.json",
         "Count": 4,
         "Name": "Acanthamoeba castellanii"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/37288/display_37288.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/37288/display_37288.png",
         "Query_file": "Actinobacillus_pleuropneumoniae.json",
         "Count": 1,
         "Name": "Actinobacillus pleuropneumoniae"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38807/display_38807.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38807/display_38807.png",
         "Query_file": "Aggregatibacter.json",
         "Count": 1,
         "Name": "Aggregatibacter"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39045/display_39045.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39045/display_39045.png",
         "Query_file": "Aggregatibacter_actinomycetemcomitans.json",
         "Count": 4,
         "Name": "Aggregatibacter actinomycetemcomitans"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38950/display_38950.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38950/display_38950.png",
         "Query_file": "Agromyces_sp._R.json",
         "Count": 1,
         "Name": "Agromyces sp. R"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41038/display_41038.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41038/display_41038.png",
         "Query_file": "Alcea_rosea.json",
         "Count": 1,
         "Name": "Alcea rosea"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40339/display_40339.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40339/display_40339.png",
         "Query_file": "Allium.json",
         "Count": 6,
         "Name": "Allium"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39065/display_39065.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39065/display_39065.png",
         "Query_file": "Allium_cepa.json",
         "Count": 2,
         "Name": "Allium cepa"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40289/display_40289.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40289/display_40289.png",
         "Query_file": "Amaranthus.json",
         "Count": 2,
         "Name": "Amaranthus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40604/display_40604.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40604/display_40604.png",
         "Query_file": "Amaryllis.json",
         "Count": 1,
         "Name": "Amaryllis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40295/display_40295.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40295/display_40295.png",
         "Query_file": "Ambrosia_artemisiifolia.json",
         "Count": 2,
         "Name": "Ambrosia artemisiifolia"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11209/display_11209.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11209/display_11209.png",
         "Query_file": "Ambystoma.json",
         "Count": 1,
         "Name": "Ambystoma"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11135/display_11135.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11135/display_11135.png",
         "Query_file": "Amia_calva.json",
         "Count": 1,
         "Name": "Amia calva"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11433/display_11433.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11433/display_11433.png",
         "Query_file": "Amoeba.json",
         "Count": 2,
         "Name": "Amoeba"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39379/display_39379.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39379/display_39379.png",
         "Query_file": "Amorphophallus_titanum.json",
         "Count": 8,
         "Name": "Amorphophallus titanum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11058/display_11058.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11058/display_11058.png",
         "Query_file": "Amphiuma_tridactylum.json",
         "Count": 1,
         "Name": "Amphiuma tridactylum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40273/display_40273.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40273/display_40273.png",
         "Query_file": "Anethum_graveolens.json",
         "Count": 1,
         "Name": "Anethum graveolens"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11961/display_11961.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11961/display_11961.png",
         "Query_file": "Annelida.json",
         "Count": 8,
         "Name": "Annelida"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39089/display_39089.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39089/display_39089.png",
         "Query_file": "Anopheles_stephensi.json",
         "Count": 1,
         "Name": "Anopheles stephensi"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11054/display_11054.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11054/display_11054.png",
         "Query_file": "Anura.json",
         "Count": 7,
         "Name": "Anura"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11214/display_11214.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11214/display_11214.png",
         "Query_file": "Aphrodita_aculeata.json",
         "Count": 1,
         "Name": "Aphrodita aculeata"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/42511/display_42511.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/42511/display_42511.png",
         "Query_file": "Aplysia.json",
         "Count": 1,
         "Name": "Aplysia"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40585/display_40585.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40585/display_40585.png",
         "Query_file": "Arabidopsis.json",
         "Count": 27,
         "Name": "Arabidopsis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38859/display_38859.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38859/display_38859.png",
         "Query_file": "Arabidopsis_thaliana.json",
         "Count": 26,
         "Name": "Arabidopsis thaliana"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11963/display_11963.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11963/display_11963.png",
         "Query_file": "Arbacia.json",
         "Count": 3,
         "Name": "Arbacia"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11963/display_11963.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11963/display_11963.png",
         "Query_file": "Arbacia_punctulata.json",
         "Count": 2,
         "Name": "Arbacia punctulata"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41634/display_41634.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41634/display_41634.png",
         "Query_file": "Arcyria_stipata.json",
         "Count": 1,
         "Name": "Arcyria stipata"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/44001/display_44001.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/44001/display_44001.png",
         "Query_file": "Ascaris_sp..json",
         "Count": 1,
         "Name": "Ascaris sp."
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39011/display_39011.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39011/display_39011.png",
         "Query_file": "Ascidiacea.json",
         "Count": 3,
         "Name": "Ascidiacea"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41623/display_41623.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41623/display_41623.png",
         "Query_file": "Asplenium_trichomanes.json",
         "Count": 1,
         "Name": "Asplenium trichomanes"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39029/display_39029.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39029/display_39029.png",
         "Query_file": "Astyanax_mexicanus.json",
         "Count": 1,
         "Name": "Astyanax mexicanus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40965/display_40965.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40965/display_40965.png",
         "Query_file": "Bacillariophyta.json",
         "Count": 8,
         "Name": "Bacillariophyta"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/25566/display_25566.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/25566/display_25566.png",
         "Query_file": "Bacillus_subtilis.json",
         "Count": 4,
         "Name": "Bacillus subtilis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41753/display_41753.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41753/display_41753.png",
         "Query_file": "Bacillus_thuringiensis.json",
         "Count": 6,
         "Name": "Bacillus thuringiensis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/24570/display_24570.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/24570/display_24570.png",
         "Query_file": "Balamuthia_mandrillaris.json",
         "Count": 23,
         "Name": "Balamuthia mandrillaris"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38680/display_38680.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38680/display_38680.png",
         "Query_file": "Barbulanympha.json",
         "Count": 1,
         "Name": "Barbulanympha"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11041/display_11041.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11041/display_11041.png",
         "Query_file": "Barbus_tauricus.json",
         "Count": 1,
         "Name": "Barbus tauricus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35984/display_35984.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35984/display_35984.png",
         "Query_file": "Batrachoseps_attenuatus.json",
         "Count": 5,
         "Name": "Batrachoseps attenuatus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40328/display_40328.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40328/display_40328.png",
         "Query_file": "Betula_papyrifera.json",
         "Count": 2,
         "Name": "Betula papyrifera"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40653/display_40653.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40653/display_40653.png",
         "Query_file": "Bidens_ferulifolia.json",
         "Count": 1,
         "Name": "Bidens ferulifolia"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/36063/display_36063.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/36063/display_36063.png",
         "Query_file": "Bombylius_major.json",
         "Count": 1,
         "Name": "Bombylius major"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/219/display_219.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/219/display_219.png",
         "Query_file": "Bos_primigenius.json",
         "Count": 1,
         "Name": "Bos primigenius"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41745/display_41745.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41745/display_41745.png",
         "Query_file": "Bos_sp..json",
         "Count": 6,
         "Name": "Bos sp."
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39061/display_39061.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39061/display_39061.png",
         "Query_file": "Bos_taurus.json",
         "Count": 7,
         "Name": "Bos taurus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40655/display_40655.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40655/display_40655.png",
         "Query_file": "Botryotinia_sphaerosperma.json",
         "Count": 1,
         "Name": "Botryotinia sphaerosperma"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/37174/display_37174.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/37174/display_37174.png",
         "Query_file": "Bufo.json",
         "Count": 4,
         "Name": "Bufo"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/37174/display_37174.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/37174/display_37174.png",
         "Query_file": "Bufo_marinus.json",
         "Count": 2,
         "Name": "Bufo marinus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/1012/display_1012.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/1012/display_1012.png",
         "Query_file": "Caenorhabditis_elegans.json",
         "Count": 1174,
         "Name": "Caenorhabditis elegans"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/36025/display_36025.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/36025/display_36025.png",
         "Query_file": "Callithrix_jacchus.json",
         "Count": 1,
         "Name": "Callithrix jacchus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35992/display_35992.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35992/display_35992.png",
         "Query_file": "Campylenchia_latipes.json",
         "Count": 1,
         "Name": "Campylenchia latipes"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/16217/display_16217.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/16217/display_16217.png",
         "Query_file": "Canis_lupus_familiaris.json",
         "Count": 29,
         "Name": "Canis lupus familiaris"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38807/display_38807.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38807/display_38807.png",
         "Query_file": "Capnocytophaga.json",
         "Count": 1,
         "Name": "Capnocytophaga"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/42607/display_42607.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/42607/display_42607.png",
         "Query_file": "Carassius_auratus.json",
         "Count": 2,
         "Name": "Carassius auratus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/42607/display_42607.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/42607/display_42607.png",
         "Query_file": "Carassius_auratus_auratus.json",
         "Count": 1,
         "Name": "Carassius auratus auratus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11643/display_11643.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11643/display_11643.png",
         "Query_file": "Carassius_sp._U8MN.json",
         "Count": 1,
         "Name": "Carassius sp. U8MN"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40123/display_40123.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40123/display_40123.png",
         "Query_file": "Caulobacter_crescentus_CB15.json",
         "Count": 11,
         "Name": "Caulobacter crescentus CB15"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40123/display_40123.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40123/display_40123.png",
         "Query_file": "Caulobacter_crescentus_NA1000.json",
         "Count": 1,
         "Name": "Caulobacter crescentus NA1000"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10773/display_10773.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10773/display_10773.png",
         "Query_file": "Cavia_porcellus.json",
         "Count": 75,
         "Name": "Cavia porcellus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11046/display_11046.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11046/display_11046.png",
         "Query_file": "Cavia_sp..json",
         "Count": 1,
         "Name": "Cavia sp."
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35964/display_35964.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35964/display_35964.png",
         "Query_file": "Cecidomyiinae.json",
         "Count": 2,
         "Name": "Cecidomyiinae"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11944/display_11944.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11944/display_11944.png",
         "Query_file": "Chaetopterus_pergamentaceus.json",
         "Count": 1,
         "Name": "Chaetopterus pergamentaceus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11961/display_11961.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11961/display_11961.png",
         "Query_file": "Chaetopterus_sp._1_Woods_Hole_MA.json",
         "Count": 5,
         "Name": "Chaetopterus sp. 1 Woods Hole MA"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11372/display_11372.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11372/display_11372.png",
         "Query_file": "Chinchilla.json",
         "Count": 3,
         "Name": "Chinchilla"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35966/display_35966.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35966/display_35966.png",
         "Query_file": "Chinchilla_lanigera.json",
         "Count": 1,
         "Name": "Chinchilla lanigera"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11426/display_11426.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11426/display_11426.png",
         "Query_file": "Chiroptera.json",
         "Count": 15,
         "Name": "Chiroptera"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39041/display_39041.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39041/display_39041.png",
         "Query_file": "Chlamydia_trachomatis.json",
         "Count": 1,
         "Name": "Chlamydia trachomatis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/37250/display_37250.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/37250/display_37250.png",
         "Query_file": "Chlamydomonas.json",
         "Count": 1,
         "Name": "Chlamydomonas"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38713/display_38713.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38713/display_38713.png",
         "Query_file": "Chlamydomonas_reinhardtii.json",
         "Count": 33,
         "Name": "Chlamydomonas reinhardtii"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/25690/display_25690.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/25690/display_25690.png",
         "Query_file": "Chlorella.json",
         "Count": 8,
         "Name": "Chlorella"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/13685/display_13685.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/13685/display_13685.png",
         "Query_file": "Chlorocebus_aethiops.json",
         "Count": 13,
         "Name": "Chlorocebus aethiops"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40178/display_40178.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40178/display_40178.png",
         "Query_file": "Chlorocebus_pygerythrus.json",
         "Count": 4,
         "Name": "Chlorocebus pygerythrus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/723/display_723.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/723/display_723.png",
         "Query_file": "Chlorocebus_sabaeus.json",
         "Count": 18,
         "Name": "Chlorocebus sabaeus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35975/display_35975.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35975/display_35975.png",
         "Query_file": "Chrysemys_picta.json",
         "Count": 1,
         "Name": "Chrysemys picta"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41566/display_41566.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41566/display_41566.png",
         "Query_file": "Claviceps.json",
         "Count": 2,
         "Name": "Claviceps"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39096/display_39096.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39096/display_39096.png",
         "Query_file": "Closterium.json",
         "Count": 1,
         "Name": "Closterium"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38815/display_38815.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38815/display_38815.png",
         "Query_file": "Clostridium_difficile.json",
         "Count": 1,
         "Name": "Clostridium difficile"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38675/display_38675.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38675/display_38675.png",
         "Query_file": "Clypeaster_japonicus.json",
         "Count": 1,
         "Name": "Clypeaster japonicus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41063/display_41063.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41063/display_41063.png",
         "Query_file": "Cocconeis.json",
         "Count": 1,
         "Name": "Cocconeis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/2881/display_2881.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/2881/display_2881.png",
         "Query_file": "Coleps_hirtus.json",
         "Count": 47,
         "Name": "Coleps hirtus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/37132/display_37132.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/37132/display_37132.png",
         "Query_file": "Coloceras_guinea.json",
         "Count": 1,
         "Name": "Coloceras guinea"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/12103/display_12103.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12103/display_12103.png",
         "Query_file": "Colpoda_cucullus.json",
         "Count": 20,
         "Name": "Colpoda cucullus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40405/display_40405.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40405/display_40405.png",
         "Query_file": "Convallaria_majalis.json",
         "Count": 1,
         "Name": "Convallaria majalis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41037/display_41037.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41037/display_41037.png",
         "Query_file": "Corallinales.json",
         "Count": 1,
         "Name": "Corallinales"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41842/display_41842.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41842/display_41842.png",
         "Query_file": "Corallium_rubrum.json",
         "Count": 1,
         "Name": "Corallium rubrum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/7690/display_7690.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/7690/display_7690.png",
         "Query_file": "Coturnix_japonica.json",
         "Count": 1,
         "Name": "Coturnix japonica"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41635/display_41635.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41635/display_41635.png",
         "Query_file": "Craterium_minutum.json",
         "Count": 1,
         "Name": "Craterium minutum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/12411/display_12411.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12411/display_12411.png",
         "Query_file": "Cricetulus_griseus.json",
         "Count": 119,
         "Name": "Cricetulus griseus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39018/display_39018.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39018/display_39018.png",
         "Query_file": "Cucumis_sativus.json",
         "Count": 1,
         "Name": "Cucumis sativus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38928/display_38928.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38928/display_38928.png",
         "Query_file": "Cucurbita.json",
         "Count": 1,
         "Name": "Cucurbita"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35970/display_35970.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35970/display_35970.png",
         "Query_file": "Culex.json",
         "Count": 1,
         "Name": "Culex"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41811/display_41811.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41811/display_41811.png",
         "Query_file": "Cyanobacteria.json",
         "Count": 2,
         "Name": "Cyanobacteria"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11443/display_11443.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11443/display_11443.png",
         "Query_file": "Cyprinodon_variegatus.json",
         "Count": 1,
         "Name": "Cyprinodon variegatus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/19117/display_19117.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/19117/display_19117.png",
         "Query_file": "Dalbulus_gelbus.json",
         "Count": 4,
         "Name": "Dalbulus gelbus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/12585/display_12585.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12585/display_12585.png",
         "Query_file": "Dalbulus_maidis.json",
         "Count": 11,
         "Name": "Dalbulus maidis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11813/display_11813.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11813/display_11813.png",
         "Query_file": "Danio_rerio.json",
         "Count": 140,
         "Name": "Danio rerio"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41017/display_41017.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41017/display_41017.png",
         "Query_file": "Daphnia_atkinsoni.json",
         "Count": 1,
         "Name": "Daphnia atkinsoni"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/15784/display_15784.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/15784/display_15784.png",
         "Query_file": "Dendraster_excentricus.json",
         "Count": 12,
         "Name": "Dendraster excentricus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/24045/display_24045.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/24045/display_24045.png",
         "Query_file": "Dictyostelium_discoideum.json",
         "Count": 17,
         "Name": "Dictyostelium discoideum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/24045/display_24045.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/24045/display_24045.png",
         "Query_file": "Dictyostelium_discoideum_AX2.json",
         "Count": 4,
         "Name": "Dictyostelium discoideum AX2"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11027/display_11027.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11027/display_11027.png",
         "Query_file": "Didelphimorphia.json",
         "Count": 3,
         "Name": "Didelphimorphia"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10908/display_10908.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10908/display_10908.png",
         "Query_file": "Didelphinae.json",
         "Count": 1,
         "Name": "Didelphinae"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10907/display_10907.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10907/display_10907.png",
         "Query_file": "Didelphis_marsupialis.json",
         "Count": 1,
         "Name": "Didelphis marsupialis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35978/display_35978.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35978/display_35978.png",
         "Query_file": "Didelphis_virginiana.json",
         "Count": 1,
         "Name": "Didelphis virginiana"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10008/display_10008.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10008/display_10008.png",
         "Query_file": "Didinium_nasutum.json",
         "Count": 62,
         "Name": "Didinium nasutum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38940/display_38940.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38940/display_38940.png",
         "Query_file": "Dipsacaceae.json",
         "Count": 1,
         "Name": "Dipsacaceae"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39110/display_39110.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39110/display_39110.png",
         "Query_file": "Drosophila.json",
         "Count": 4,
         "Name": "Drosophila"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35447/display_35447.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35447/display_35447.png",
         "Query_file": "Drosophila_melanocephala.json",
         "Count": 19,
         "Name": "Drosophila melanocephala"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11993/display_11993.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11993/display_11993.png",
         "Query_file": "Drosophila_melanogaster.json",
         "Count": 246,
         "Name": "Drosophila melanogaster"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38808/display_38808.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38808/display_38808.png",
         "Query_file": "Dytiscus_marginalis.json",
         "Count": 1,
         "Name": "Dytiscus marginalis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11627/display_11627.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11627/display_11627.png",
         "Query_file": "Elliptio_crassidens.json",
         "Count": 1,
         "Name": "Elliptio crassidens"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41832/display_41832.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41832/display_41832.png",
         "Query_file": "Elodea_canadensis.json",
         "Count": 1,
         "Name": "Elodea canadensis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41401/display_41401.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41401/display_41401.png",
         "Query_file": "Enallagma_cyathigerum.json",
         "Count": 1,
         "Name": "Enallagma cyathigerum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41128/display_41128.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41128/display_41128.png",
         "Query_file": "Enterobacteria_phage_T4.json",
         "Count": 10,
         "Name": "Enterobacteria phage T4"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11115/display_11115.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11115/display_11115.png",
         "Query_file": "Entosphenus_tridentatus.json",
         "Count": 1,
         "Name": "Entosphenus tridentatus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11426/display_11426.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11426/display_11426.png",
         "Query_file": "Eptesicus_fuscus.json",
         "Count": 1,
         "Name": "Eptesicus fuscus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/28235/display_28235.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/28235/display_28235.png",
         "Query_file": "Escherichia_coli.json",
         "Count": 11,
         "Name": "Escherichia coli"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39067/display_39067.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39067/display_39067.png",
         "Query_file": "Eudorina.json",
         "Count": 1,
         "Name": "Eudorina"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/37249/display_37249.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/37249/display_37249.png",
         "Query_file": "Euglena.json",
         "Count": 1,
         "Name": "Euglena"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38680/display_38680.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38680/display_38680.png",
         "Query_file": "Eukaryota.json",
         "Count": 1,
         "Name": "Eukaryota"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41556/display_41556.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41556/display_41556.png",
         "Query_file": "Eupholus.json",
         "Count": 1,
         "Name": "Eupholus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/12339/display_12339.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12339/display_12339.png",
         "Query_file": "Euplotes_sp..json",
         "Count": 42,
         "Name": "Euplotes sp."
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35993/display_35993.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35993/display_35993.png",
         "Query_file": "Felis_catus.json",
         "Count": 25,
         "Name": "Felis catus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/27226/display_27226.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/27226/display_27226.png",
         "Query_file": "Fundulus_heteroclitus.json",
         "Count": 14,
         "Name": "Fundulus heteroclitus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41119/display_41119.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41119/display_41119.png",
         "Query_file": "Fungia.json",
         "Count": 1,
         "Name": "Fungia"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41616/display_41616.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41616/display_41616.png",
         "Query_file": "Galium_odoratum.json",
         "Count": 1,
         "Name": "Galium odoratum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10418/display_10418.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10418/display_10418.png",
         "Query_file": "Gallus_gallus.json",
         "Count": 174,
         "Name": "Gallus gallus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10702/display_10702.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10702/display_10702.png",
         "Query_file": "Gallus_gallus_gallus.json",
         "Count": 141,
         "Name": "Gallus gallus gallus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40335/display_40335.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40335/display_40335.png",
         "Query_file": "Geranium_cinereum.json",
         "Count": 4,
         "Name": "Geranium cinereum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11118/display_11118.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11118/display_11118.png",
         "Query_file": "Gerbillinae.json",
         "Count": 2,
         "Name": "Gerbillinae"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11467/display_11467.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11467/display_11467.png",
         "Query_file": "Glis_glis.json",
         "Count": 1,
         "Name": "Glis glis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/42510/display_42510.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/42510/display_42510.png",
         "Query_file": "Gloeotrichia.json",
         "Count": 1,
         "Name": "Gloeotrichia"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41027/display_41027.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41027/display_41027.png",
         "Query_file": "Goniastrea.json",
         "Count": 1,
         "Name": "Goniastrea"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/36025/display_36025.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/36025/display_36025.png",
         "Query_file": "Gorilla.json",
         "Count": 1,
         "Name": "Gorilla"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11853/display_11853.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11853/display_11853.png",
         "Query_file": "Haemanthus_katharinae.json",
         "Count": 75,
         "Name": "Haemanthus katharinae"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41019/display_41019.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41019/display_41019.png",
         "Query_file": "Haematococcus_pluvialis.json",
         "Count": 1,
         "Name": "Haematococcus pluvialis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/12318/display_12318.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12318/display_12318.png",
         "Query_file": "Halteria_grandinella.json",
         "Count": 23,
         "Name": "Halteria grandinella"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40353/display_40353.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40353/display_40353.png",
         "Query_file": "Helianthus_annuus.json",
         "Count": 12,
         "Name": "Helianthus annuus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40971/display_40971.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40971/display_40971.png",
         "Query_file": "Hibiscus.json",
         "Count": 2,
         "Name": "Hibiscus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40971/display_40971.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40971/display_40971.png",
         "Query_file": "Hibiscus_rosa-sinensis.json",
         "Count": 1,
         "Name": "Hibiscus rosa-sinensis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11056/display_11056.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11056/display_11056.png",
         "Query_file": "Hirudinea.json",
         "Count": 1,
         "Name": "Hirudinea"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10101/display_10101.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10101/display_10101.png",
         "Query_file": "Homo_sapiens.json",
         "Count": 2266,
         "Name": "Homo sapiens"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39118/display_39118.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39118/display_39118.png",
         "Query_file": "Hordeum_vulgare_subsp._vulgare.json",
         "Count": 7,
         "Name": "Hordeum vulgare subsp. vulgare"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40117/display_40117.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40117/display_40117.png",
         "Query_file": "HTLV-1_subtype_A.json",
         "Count": 5,
         "Name": "HTLV-1 subtype A"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/25356/display_25356.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/25356/display_25356.png",
         "Query_file": "Hydra.json",
         "Count": 4,
         "Name": "Hydra"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/25356/display_25356.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/25356/display_25356.png",
         "Query_file": "Hydra_viridis.json",
         "Count": 3,
         "Name": "Hydra viridis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41558/display_41558.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41558/display_41558.png",
         "Query_file": "Hydriomena.json",
         "Count": 1,
         "Name": "Hydriomena"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41648/display_41648.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41648/display_41648.png",
         "Query_file": "Hymenolepis_microstoma.json",
         "Count": 1,
         "Name": "Hymenolepis microstoma"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/44601/display_44601.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/44601/display_44601.png",
         "Query_file": "Hypsiprymnodon_moschatus.json",
         "Count": 1,
         "Name": "Hypsiprymnodon moschatus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/12012/display_12012.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12012/display_12012.png",
         "Query_file": "Hypsophrys_nicaraguensis.json",
         "Count": 8,
         "Name": "Hypsophrys nicaraguensis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11018/display_11018.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11018/display_11018.png",
         "Query_file": "Insecta.json",
         "Count": 6,
         "Name": "Insecta"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11447/display_11447.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11447/display_11447.png",
         "Query_file": "Jalysus.json",
         "Count": 1,
         "Name": "Jalysus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41633/display_41633.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41633/display_41633.png",
         "Query_file": "Juncus.json",
         "Count": 1,
         "Name": "Juncus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40598/display_40598.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40598/display_40598.png",
         "Query_file": "Juniperus_ashei.json",
         "Count": 1,
         "Name": "Juniperus ashei"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39084/display_39084.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39084/display_39084.png",
         "Query_file": "Lactuca_sativa.json",
         "Count": 1,
         "Name": "Lactuca sativa"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40580/display_40580.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40580/display_40580.png",
         "Query_file": "Lamiaceae.json",
         "Count": 1,
         "Name": "Lamiaceae"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39475/display_39475.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39475/display_39475.png",
         "Query_file": "Lavandula.json",
         "Count": 1,
         "Name": "Lavandula"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/12407/display_12407.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12407/display_12407.png",
         "Query_file": "Leishmania_mexicana.json",
         "Count": 10,
         "Name": "Leishmania mexicana"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38801/display_38801.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38801/display_38801.png",
         "Query_file": "Lepidoptera.json",
         "Count": 3,
         "Name": "Lepidoptera"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35965/display_35965.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35965/display_35965.png",
         "Query_file": "Lepidosaphes.json",
         "Count": 1,
         "Name": "Lepidosaphes"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10797/display_10797.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10797/display_10797.png",
         "Query_file": "Leporidae.json",
         "Count": 6,
         "Name": "Leporidae"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41063/display_41063.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41063/display_41063.png",
         "Query_file": "Licmophora_juergensii.json",
         "Count": 1,
         "Name": "Licmophora juergensii"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40616/display_40616.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40616/display_40616.png",
         "Query_file": "Lilium.json",
         "Count": 1,
         "Name": "Lilium"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40323/display_40323.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40323/display_40323.png",
         "Query_file": "Lilium_auratum.json",
         "Count": 5,
         "Name": "Lilium auratum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35292/display_35292.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35292/display_35292.png",
         "Query_file": "Lilium_formosanum.json",
         "Count": 12,
         "Name": "Lilium formosanum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40354/display_40354.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40354/display_40354.png",
         "Query_file": "Lilium_longiflorum.json",
         "Count": 12,
         "Name": "Lilium longiflorum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11957/display_11957.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11957/display_11957.png",
         "Query_file": "Lilium_maritimum.json",
         "Count": 1,
         "Name": "Lilium maritimum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11237/display_11237.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11237/display_11237.png",
         "Query_file": "Limulus_polyphemus.json",
         "Count": 1,
         "Name": "Limulus polyphemus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40620/display_40620.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40620/display_40620.png",
         "Query_file": "Listeria.json",
         "Count": 1,
         "Name": "Listeria"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/25362/display_25362.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/25362/display_25362.png",
         "Query_file": "Listeria_monocytogenes.json",
         "Count": 2,
         "Name": "Listeria monocytogenes"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35980/display_35980.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35980/display_35980.png",
         "Query_file": "Litocranius_walleri.json",
         "Count": 1,
         "Name": "Litocranius walleri"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11943/display_11943.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11943/display_11943.png",
         "Query_file": "Lytechinus.json",
         "Count": 11,
         "Name": "Lytechinus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39790/display_39790.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39790/display_39790.png",
         "Query_file": "Lytechinus_pictus.json",
         "Count": 10,
         "Name": "Lytechinus pictus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/48055/display_48055.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/48055/display_48055.png",
         "Query_file": "Macaca_mulatta.json",
         "Count": 12,
         "Name": "Macaca mulatta"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/6568/display_6568.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/6568/display_6568.png",
         "Query_file": "Macropus_sp..json",
         "Count": 1,
         "Name": "Macropus sp."
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39235/display_39235.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39235/display_39235.png",
         "Query_file": "Macropus_sp._MG002.json",
         "Count": 1,
         "Name": "Macropus sp. MG002"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/25366/display_25366.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/25366/display_25366.png",
         "Query_file": "Maize_mosaic_virus.json",
         "Count": 30,
         "Name": "Maize mosaic virus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39012/display_39012.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39012/display_39012.png",
         "Query_file": "Malaclemys_terrapin.json",
         "Count": 1,
         "Name": "Malaclemys terrapin"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40344/display_40344.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40344/display_40344.png",
         "Query_file": "Malva_alcea.json",
         "Count": 1,
         "Name": "Malva alcea"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40589/display_40589.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40589/display_40589.png",
         "Query_file": "Malvaceae.json",
         "Count": 2,
         "Name": "Malvaceae"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11597/display_11597.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11597/display_11597.png",
         "Query_file": "Mammalia.json",
         "Count": 5,
         "Name": "Mammalia"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40582/display_40582.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40582/display_40582.png",
         "Query_file": "Mazus.json",
         "Count": 1,
         "Name": "Mazus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40965/display_40965.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40965/display_40965.png",
         "Query_file": "Mediopyxis_helysia.json",
         "Count": 1,
         "Name": "Mediopyxis helysia"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/12624/display_12624.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12624/display_12624.png",
         "Query_file": "Mesocricetus_auratus.json",
         "Count": 6,
         "Name": "Mesocricetus auratus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41823/display_41823.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41823/display_41823.png",
         "Query_file": "Micrasterias.json",
         "Count": 15,
         "Name": "Micrasterias"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/13152/display_13152.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/13152/display_13152.png",
         "Query_file": "Micrasterias_denticulata.json",
         "Count": 13,
         "Name": "Micrasterias denticulata"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38959/display_38959.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38959/display_38959.png",
         "Query_file": "Micrasterias_rotata.json",
         "Count": 1,
         "Name": "Micrasterias rotata"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11426/display_11426.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11426/display_11426.png",
         "Query_file": "Microchiroptera.json",
         "Count": 14,
         "Name": "Microchiroptera"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/12648/display_12648.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12648/display_12648.png",
         "Query_file": "Mollicutes.json",
         "Count": 1,
         "Name": "Mollicutes"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35963/display_35963.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35963/display_35963.png",
         "Query_file": "Monarthropalpus.json",
         "Count": 1,
         "Name": "Monarthropalpus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41640/display_41640.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41640/display_41640.png",
         "Query_file": "Montastraea_annularis.json",
         "Count": 1,
         "Name": "Montastraea annularis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39016/display_39016.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39016/display_39016.png",
         "Query_file": "Morbillivirus.json",
         "Count": 1,
         "Name": "Morbillivirus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/131/display_131.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/131/display_131.png",
         "Query_file": "Mouse_rat_NG108-15.json",
         "Count": 3,
         "Name": "Mouse/rat NG108-15"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38939/display_38939.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38939/display_38939.png",
         "Query_file": "Mumps_virus.json",
         "Count": 1,
         "Name": "Mumps virus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40623/display_40623.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40623/display_40623.png",
         "Query_file": "Musa.json",
         "Count": 1,
         "Name": "Musa"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/47055/display_47055.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/47055/display_47055.png",
         "Query_file": "Mus_musculus.json",
         "Count": 803,
         "Name": "Mus musculus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/47055/display_47055.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/47055/display_47055.png",
         "Query_file": "Mus_musculus_castaneus.json",
         "Count": 6,
         "Name": "Mus musculus castaneus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10931/display_10931.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10931/display_10931.png",
         "Query_file": "Myotis.json",
         "Count": 12,
         "Name": "Myotis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10763/display_10763.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10763/display_10763.png",
         "Query_file": "Myotis_lucifugus.json",
         "Count": 11,
         "Name": "Myotis lucifugus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40607/display_40607.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40607/display_40607.png",
         "Query_file": "Myxogastria.json",
         "Count": 1,
         "Name": "Myxogastria"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/19336/display_19336.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/19336/display_19336.png",
         "Query_file": "Naegleria_fowleri.json",
         "Count": 1,
         "Name": "Naegleria fowleri"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10370/display_10370.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10370/display_10370.png",
         "Query_file": "Nassula.json",
         "Count": 33,
         "Name": "Nassula"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/700/display_700.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/700/display_700.png",
         "Query_file": "Necturus_maculosus.json",
         "Count": 26,
         "Name": "Necturus maculosus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/34522/display_34522.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/34522/display_34522.png",
         "Query_file": "Neisseria_gonorrhoeae.json",
         "Count": 4,
         "Name": "Neisseria gonorrhoeae"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40606/display_40606.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40606/display_40606.png",
         "Query_file": "Nelumbo_nucifera.json",
         "Count": 1,
         "Name": "Nelumbo nucifera"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35967/display_35967.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35967/display_35967.png",
         "Query_file": "Neotragus_moschatus.json",
         "Count": 2,
         "Name": "Neotragus moschatus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/12028/display_12028.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12028/display_12028.png",
         "Query_file": "Nephrotoma.json",
         "Count": 24,
         "Name": "Nephrotoma"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/37195/display_37195.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/37195/display_37195.png",
         "Query_file": "Neurospora.json",
         "Count": 1,
         "Name": "Neurospora"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/37257/display_37257.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/37257/display_37257.png",
         "Query_file": "Neurospora_crassa.json",
         "Count": 1,
         "Name": "Neurospora crassa"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39340/display_39340.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39340/display_39340.png",
         "Query_file": "Nicotiana_alata.json",
         "Count": 3,
         "Name": "Nicotiana alata"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35989/display_35989.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35989/display_35989.png",
         "Query_file": "Nicotiana_tabacum.json",
         "Count": 1,
         "Name": "Nicotiana tabacum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38958/display_38958.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38958/display_38958.png",
         "Query_file": "Nostoc.json",
         "Count": 1,
         "Name": "Nostoc"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40972/display_40972.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40972/display_40972.png",
         "Query_file": "Nostoc_commune.json",
         "Count": 1,
         "Name": "Nostoc commune"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35960/display_35960.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35960/display_35960.png",
         "Query_file": "Notophthalmus.json",
         "Count": 3,
         "Name": "Notophthalmus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10711/display_10711.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10711/display_10711.png",
         "Query_file": "Notophthalmus_viridescens.json",
         "Count": 24,
         "Name": "Notophthalmus viridescens"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40334/display_40334.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40334/display_40334.png",
         "Query_file": "Oenothera_fruticosa.json",
         "Count": 2,
         "Name": "Oenothera fruticosa"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35488/display_35488.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35488/display_35488.png",
         "Query_file": "Olea_europaea.json",
         "Count": 2,
         "Name": "Olea europaea"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11113/display_11113.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11113/display_11113.png",
         "Query_file": "Oncorhynchus_kisutch.json",
         "Count": 1,
         "Name": "Oncorhynchus kisutch"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11366/display_11366.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11366/display_11366.png",
         "Query_file": "Oniscus.json",
         "Count": 1,
         "Name": "Oniscus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39170/display_39170.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39170/display_39170.png",
         "Query_file": "Opercularia_[NCBITaxon:168247].json",
         "Count": 48,
         "Name": "Opercularia [NCBITaxon:168247]"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/36051/display_36051.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/36051/display_36051.png",
         "Query_file": "Opsanus_tau.json",
         "Count": 4,
         "Name": "Opsanus tau"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10797/display_10797.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10797/display_10797.png",
         "Query_file": "Oryctolagus.json",
         "Count": 1,
         "Name": "Oryctolagus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/1456/display_1456.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/1456/display_1456.png",
         "Query_file": "Oryctolagus_cuniculus.json",
         "Count": 92,
         "Name": "Oryctolagus cuniculus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40384/display_40384.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40384/display_40384.png",
         "Query_file": "Oryza.json",
         "Count": 4,
         "Name": "Oryza"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40384/display_40384.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40384/display_40384.png",
         "Query_file": "Oryza_sativa.json",
         "Count": 3,
         "Name": "Oryza sativa"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/12577/display_12577.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12577/display_12577.png",
         "Query_file": "Oryzias_latipes.json",
         "Count": 1,
         "Name": "Oryzias latipes"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/14702/display_14702.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/14702/display_14702.png",
         "Query_file": "Oscillatoria_tenuis.json",
         "Count": 8,
         "Name": "Oscillatoria tenuis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35980/display_35980.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35980/display_35980.png",
         "Query_file": "Ovis_aries.json",
         "Count": 4,
         "Name": "Ovis aries"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39048/display_39048.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39048/display_39048.png",
         "Query_file": "Paeonia.json",
         "Count": 1,
         "Name": "Paeonia"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40333/display_40333.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40333/display_40333.png",
         "Query_file": "Paeonia_lactiflora.json",
         "Count": 2,
         "Name": "Paeonia lactiflora"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11111/display_11111.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11111/display_11111.png",
         "Query_file": "Paracheirodon_innesi.json",
         "Count": 1,
         "Name": "Paracheirodon innesi"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40986/display_40986.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40986/display_40986.png",
         "Query_file": "Paramecium.json",
         "Count": 2,
         "Name": "Paramecium"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/36763/display_36763.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/36763/display_36763.png",
         "Query_file": "Paramecium_caudatum.json",
         "Count": 76,
         "Name": "Paramecium caudatum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10414/display_10414.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10414/display_10414.png",
         "Query_file": "Paramecium_multimicronucleatum.json",
         "Count": 292,
         "Name": "Paramecium multimicronucleatum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/17891/display_17891.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/17891/display_17891.png",
         "Query_file": "Paramecium_sp..json",
         "Count": 19,
         "Name": "Paramecium sp."
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/12075/display_12075.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12075/display_12075.png",
         "Query_file": "Paramecium_tetraurelia.json",
         "Count": 37,
         "Name": "Paramecium tetraurelia"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11110/display_11110.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11110/display_11110.png",
         "Query_file": "Parophrys_vetulus.json",
         "Count": 1,
         "Name": "Parophrys vetulus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/36058/display_36058.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/36058/display_36058.png",
         "Query_file": "Passeriformes.json",
         "Count": 1,
         "Name": "Passeriformes"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39344/display_39344.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39344/display_39344.png",
         "Query_file": "Passiflora_edulis.json",
         "Count": 2,
         "Name": "Passiflora edulis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/503/display_503.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/503/display_503.png",
         "Query_file": "Patiria_miniata.json",
         "Count": 33,
         "Name": "Patiria miniata"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38677/display_38677.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38677/display_38677.png",
         "Query_file": "Pectinaria_gouldii.json",
         "Count": 1,
         "Name": "Pectinaria gouldii"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/36046/display_36046.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/36046/display_36046.png",
         "Query_file": "Pelomyxa.json",
         "Count": 1,
         "Name": "Pelomyxa"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41020/display_41020.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41020/display_41020.png",
         "Query_file": "Penium.json",
         "Count": 2,
         "Name": "Penium"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41563/display_41563.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41563/display_41563.png",
         "Query_file": "Penium_margaritaceum.json",
         "Count": 1,
         "Name": "Penium margaritaceum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40970/display_40970.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40970/display_40970.png",
         "Query_file": "Pentatomoidea.json",
         "Count": 1,
         "Name": "Pentatomoidea"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10837/display_10837.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10837/display_10837.png",
         "Query_file": "Perameles_nasuta.json",
         "Count": 1,
         "Name": "Perameles nasuta"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/14483/display_14483.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/14483/display_14483.png",
         "Query_file": "Peranema_trichophorum.json",
         "Count": 1,
         "Name": "Peranema trichophorum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/25368/display_25368.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/25368/display_25368.png",
         "Query_file": "Peregrinus_maidis.json",
         "Count": 22,
         "Name": "Peregrinus maidis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11164/display_11164.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11164/display_11164.png",
         "Query_file": "Periplaneta_americana.json",
         "Count": 2,
         "Name": "Periplaneta americana"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/36045/display_36045.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/36045/display_36045.png",
         "Query_file": "Petromyzon_marinus.json",
         "Count": 2,
         "Name": "Petromyzon marinus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40304/display_40304.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40304/display_40304.png",
         "Query_file": "Petunia.json",
         "Count": 3,
         "Name": "Petunia"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38941/display_38941.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38941/display_38941.png",
         "Query_file": "Peziza.json",
         "Count": 1,
         "Name": "Peziza"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39977/display_39977.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39977/display_39977.png",
         "Query_file": "Phaeocystis_antarctica.json",
         "Count": 13,
         "Name": "Phaeocystis antarctica"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41472/display_41472.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41472/display_41472.png",
         "Query_file": "Phalangium_opilio.json",
         "Count": 1,
         "Name": "Phalangium opilio"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11962/display_11962.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11962/display_11962.png",
         "Query_file": "Phallusia_mammilata.json",
         "Count": 1,
         "Name": "Phallusia mammilata"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/45002/display_45002.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/45002/display_45002.png",
         "Query_file": "Philodina_roseola.json",
         "Count": 2,
         "Name": "Philodina roseola"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10796/display_10796.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10796/display_10796.png",
         "Query_file": "Phodopus.json",
         "Count": 13,
         "Name": "Phodopus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39105/display_39105.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39105/display_39105.png",
         "Query_file": "Phragmidium_tuberculatum.json",
         "Count": 1,
         "Name": "Phragmidium tuberculatum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41021/display_41021.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41021/display_41021.png",
         "Query_file": "Physalia_physalis.json",
         "Count": 1,
         "Name": "Physalia physalis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39334/display_39334.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39334/display_39334.png",
         "Query_file": "Physarum_polycephalum.json",
         "Count": 1,
         "Name": "Physarum polycephalum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40286/display_40286.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40286/display_40286.png",
         "Query_file": "Pinaceae.json",
         "Count": 3,
         "Name": "Pinaceae"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41643/display_41643.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41643/display_41643.png",
         "Query_file": "Pinus_[NCBITaxon:139271].json",
         "Count": 2,
         "Name": "Pinus [NCBITaxon:139271]"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/37193/display_37193.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/37193/display_37193.png",
         "Query_file": "Plasmodium.json",
         "Count": 1,
         "Name": "Plasmodium"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39089/display_39089.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39089/display_39089.png",
         "Query_file": "Plasmodium_yoelii_nigeriensis.json",
         "Count": 1,
         "Name": "Plasmodium yoelii nigeriensis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39037/display_39037.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39037/display_39037.png",
         "Query_file": "Platyias_quadricornis.json",
         "Count": 1,
         "Name": "Platyias quadricornis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/25777/display_25777.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/25777/display_25777.png",
         "Query_file": "Platynereis_dumerilii.json",
         "Count": 3,
         "Name": "Platynereis dumerilii"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35970/display_35970.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35970/display_35970.png",
         "Query_file": "Polycentropus.json",
         "Count": 1,
         "Name": "Polycentropus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11529/display_11529.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11529/display_11529.png",
         "Query_file": "Pongo_pygmaeus.json",
         "Count": 1,
         "Name": "Pongo pygmaeus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39071/display_39071.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39071/display_39071.png",
         "Query_file": "Populus.json",
         "Count": 1,
         "Name": "Populus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40588/display_40588.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40588/display_40588.png",
         "Query_file": "Porifera.json",
         "Count": 1,
         "Name": "Porifera"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41657/display_41657.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41657/display_41657.png",
         "Query_file": "Portulaca.json",
         "Count": 1,
         "Name": "Portulaca"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/8072/display_8072.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/8072/display_8072.png",
         "Query_file": "Potorous_tridactylus.json",
         "Count": 22,
         "Name": "Potorous tridactylus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/7744/display_7744.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/7744/display_7744.png",
         "Query_file": "Potorous_tridactylus_tridactylus.json",
         "Count": 3,
         "Name": "Potorous tridactylus tridactylus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/13858/display_13858.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/13858/display_13858.png",
         "Query_file": "Prochloron.json",
         "Count": 37,
         "Name": "Prochloron"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39143/display_39143.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39143/display_39143.png",
         "Query_file": "Prochloron_sp..json",
         "Count": 4,
         "Name": "Prochloron sp."
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40386/display_40386.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40386/display_40386.png",
         "Query_file": "Psidium_guajava.json",
         "Count": 3,
         "Name": "Psidium guajava"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39225/display_39225.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39225/display_39225.png",
         "Query_file": "Psophus_stridulus.json",
         "Count": 5,
         "Name": "Psophus stridulus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/36043/display_36043.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/36043/display_36043.png",
         "Query_file": "Pterophyllum_scalare.json",
         "Count": 1,
         "Name": "Pterophyllum scalare"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38946/display_38946.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38946/display_38946.png",
         "Query_file": "Puccinia_graminis.json",
         "Count": 1,
         "Name": "Puccinia graminis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41914/display_41914.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41914/display_41914.png",
         "Query_file": "Quercus.json",
         "Count": 1,
         "Name": "Quercus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10053/display_10053.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10053/display_10053.png",
         "Query_file": "Rana_catesbeiana.json",
         "Count": 24,
         "Name": "Rana catesbeiana"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11075/display_11075.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11075/display_11075.png",
         "Query_file": "Rana_pipiens.json",
         "Count": 3,
         "Name": "Rana pipiens"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38954/display_38954.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38954/display_38954.png",
         "Query_file": "Ranunculus.json",
         "Count": 1,
         "Name": "Ranunculus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10204/display_10204.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10204/display_10204.png",
         "Query_file": "Rattus.json",
         "Count": 571,
         "Name": "Rattus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/13762/display_13762.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/13762/display_13762.png",
         "Query_file": "Rattus_norvegicus.json",
         "Count": 269,
         "Name": "Rattus norvegicus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/12931/display_12931.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12931/display_12931.png",
         "Query_file": "Rattus_rattus.json",
         "Count": 119,
         "Name": "Rattus rattus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11626/display_11626.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11626/display_11626.png",
         "Query_file": "Rattus_sp..json",
         "Count": 6,
         "Name": "Rattus sp."
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35995/display_35995.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35995/display_35995.png",
         "Query_file": "Rhipicephalus_appendiculatus.json",
         "Count": 4,
         "Name": "Rhipicephalus appendiculatus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38927/display_38927.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38927/display_38927.png",
         "Query_file": "Rhizopus.json",
         "Count": 1,
         "Name": "Rhizopus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11202/display_11202.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11202/display_11202.png",
         "Query_file": "Rhodnius_prolixus.json",
         "Count": 1,
         "Name": "Rhodnius prolixus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40357/display_40357.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40357/display_40357.png",
         "Query_file": "Rhododendron.json",
         "Count": 4,
         "Name": "Rhododendron"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41063/display_41063.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41063/display_41063.png",
         "Query_file": "Rhodophyta.json",
         "Count": 1,
         "Name": "Rhodophyta"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40284/display_40284.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40284/display_40284.png",
         "Query_file": "Ricinus_communis.json",
         "Count": 2,
         "Name": "Ricinus communis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/36057/display_36057.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/36057/display_36057.png",
         "Query_file": "Rodentia.json",
         "Count": 3,
         "Name": "Rodentia"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40301/display_40301.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40301/display_40301.png",
         "Query_file": "Rosa.json",
         "Count": 4,
         "Name": "Rosa"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40301/display_40301.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40301/display_40301.png",
         "Query_file": "Rosa_rugosa.json",
         "Count": 3,
         "Name": "Rosa rugosa"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/45002/display_45002.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/45002/display_45002.png",
         "Query_file": "Rotifera.json",
         "Count": 3,
         "Name": "Rotifera"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/143/display_143.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/143/display_143.png",
         "Query_file": "Saccharomyces_cerevisiae.json",
         "Count": 603,
         "Name": "Saccharomyces cerevisiae"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/13444/display_13444.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/13444/display_13444.png",
         "Query_file": "Saccharomyces_cerevisiae_S288c.json",
         "Count": 54,
         "Name": "Saccharomyces cerevisiae S288c"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/143/display_143.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/143/display_143.png",
         "Query_file": "Saccharomyces_cerevisiae_Y12.json",
         "Count": 1,
         "Name": "Saccharomyces cerevisiae Y12"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40985/display_40985.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40985/display_40985.png",
         "Query_file": "Saccharomyces_cerevisiae_Y9.json",
         "Count": 1,
         "Name": "Saccharomyces cerevisiae Y9"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10452/display_10452.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10452/display_10452.png",
         "Query_file": "Saccharomyces_cerevisiae_YJM789.json",
         "Count": 2,
         "Name": "Saccharomyces cerevisiae YJM789"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40592/display_40592.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40592/display_40592.png",
         "Query_file": "Salmonella.json",
         "Count": 1,
         "Name": "Salmonella"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40331/display_40331.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40331/display_40331.png",
         "Query_file": "Schlumbergera_truncata.json",
         "Count": 2,
         "Name": "Schlumbergera truncata"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11406/display_11406.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11406/display_11406.png",
         "Query_file": "Serpentes.json",
         "Count": 1,
         "Name": "Serpentes"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38936/display_38936.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38936/display_38936.png",
         "Query_file": "Shigella.json",
         "Count": 1,
         "Name": "Shigella"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10946/display_10946.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10946/display_10946.png",
         "Query_file": "Siphonaptera.json",
         "Count": 3,
         "Name": "Siphonaptera"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39085/display_39085.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39085/display_39085.png",
         "Query_file": "Sisymbrium_officinale.json",
         "Count": 1,
         "Name": "Sisymbrium officinale"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40380/display_40380.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40380/display_40380.png",
         "Query_file": "Solenostemon_scutellarioides.json",
         "Count": 5,
         "Name": "Solenostemon scutellarioides"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41814/display_41814.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41814/display_41814.png",
         "Query_file": "Spartium.json",
         "Count": 1,
         "Name": "Spartium"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/36068/display_36068.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/36068/display_36068.png",
         "Query_file": "Spermophilus_citellus.json",
         "Count": 6,
         "Name": "Spermophilus citellus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38676/display_38676.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38676/display_38676.png",
         "Query_file": "Spirocodon_saltatrix.json",
         "Count": 1,
         "Name": "Spirocodon saltatrix"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41009/display_41009.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41009/display_41009.png",
         "Query_file": "Spirogyra.json",
         "Count": 1,
         "Name": "Spirogyra"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/12588/display_12588.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12588/display_12588.png",
         "Query_file": "Spiroplasma_kunkelii.json",
         "Count": 30,
         "Name": "Spiroplasma kunkelii"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11971/display_11971.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11971/display_11971.png",
         "Query_file": "Spisula_solidissima.json",
         "Count": 1,
         "Name": "Spisula solidissima"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/47583/display_47583.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/47583/display_47583.png",
         "Query_file": "Staphylococcus_aureus.json",
         "Count": 188,
         "Name": "Staphylococcus aureus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/36050/display_36050.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/36050/display_36050.png",
         "Query_file": "Stentor_coeruleus.json",
         "Count": 2,
         "Name": "Stentor coeruleus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/37289/display_37289.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/37289/display_37289.png",
         "Query_file": "Streptococcus_pneumoniae.json",
         "Count": 2,
         "Name": "Streptococcus pneumoniae"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/13403/display_13403.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/13403/display_13403.png",
         "Query_file": "Strongylocentrotus_purpuratus.json",
         "Count": 9,
         "Name": "Strongylocentrotus purpuratus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10849/display_10849.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10849/display_10849.png",
         "Query_file": "Sus_scrofa.json",
         "Count": 2,
         "Name": "Sus scrofa"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40266/display_40266.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40266/display_40266.png",
         "Query_file": "Sus_scrofa_domestica.json",
         "Count": 17,
         "Name": "Sus scrofa domestica"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11037/display_11037.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11037/display_11037.png",
         "Query_file": "Sus_scrofa_scrofa.json",
         "Count": 1,
         "Name": "Sus scrofa scrofa"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11420/display_11420.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11420/display_11420.png",
         "Query_file": "Talpidae.json",
         "Count": 2,
         "Name": "Talpidae"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39474/display_39474.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39474/display_39474.png",
         "Query_file": "Tanacetum_parthenium.json",
         "Count": 1,
         "Name": "Tanacetum parthenium"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11938/display_11938.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11938/display_11938.png",
         "Query_file": "Taraxacum_officinale.json",
         "Count": 1,
         "Name": "Taraxacum officinale"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/12297/display_12297.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12297/display_12297.png",
         "Query_file": "Taricha_granulosa.json",
         "Count": 6,
         "Name": "Taricha granulosa"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39039/display_39039.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39039/display_39039.png",
         "Query_file": "Termitidae.json",
         "Count": 1,
         "Name": "Termitidae"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/34752/display_34752.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/34752/display_34752.png",
         "Query_file": "Tetrahymena_pyriformis.json",
         "Count": 93,
         "Name": "Tetrahymena pyriformis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11627/display_11627.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11627/display_11627.png",
         "Query_file": "Tetrahymena_sp._SPE01.json",
         "Count": 1,
         "Name": "Tetrahymena sp. SPE01"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41642/display_41642.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41642/display_41642.png",
         "Query_file": "Tilia.json",
         "Count": 1,
         "Name": "Tilia"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41810/display_41810.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41810/display_41810.png",
         "Query_file": "Tinca_tinca.json",
         "Count": 1,
         "Name": "Tinca tinca"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10526/display_10526.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10526/display_10526.png",
         "Query_file": "Toxoplasma_gondii.json",
         "Count": 93,
         "Name": "Toxoplasma gondii"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/10506/display_10506.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/10506/display_10506.png",
         "Query_file": "Toxoplasma_gondii_RH.json",
         "Count": 90,
         "Name": "Toxoplasma gondii RH"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40394/display_40394.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40394/display_40394.png",
         "Query_file": "Tradescantia_virginiana.json",
         "Count": 2,
         "Name": "Tradescantia virginiana"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41008/display_41008.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41008/display_41008.png",
         "Query_file": "Tribulus.json",
         "Count": 1,
         "Name": "Tribulus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/25690/display_25690.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/25690/display_25690.png",
         "Query_file": "Trichodina.json",
         "Count": 8,
         "Name": "Trichodina"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39039/display_39039.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39039/display_39039.png",
         "Query_file": "Trichonympha.json",
         "Count": 1,
         "Name": "Trichonympha"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/35961/display_35961.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/35961/display_35961.png",
         "Query_file": "Trichoptera_sp._PACaddisfly-1.json",
         "Count": 1,
         "Name": "Trichoptera sp. PACaddisfly-1"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39000/display_39000.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39000/display_39000.png",
         "Query_file": "Triticum_aestivum.json",
         "Count": 3,
         "Name": "Triticum aestivum"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39080/display_39080.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39080/display_39080.png",
         "Query_file": "Triticum_sp..json",
         "Count": 7,
         "Name": "Triticum sp."
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/12595/display_12595.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/12595/display_12595.png",
         "Query_file": "Trypanosoma_brucei.json",
         "Count": 1,
         "Name": "Trypanosoma brucei"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11410/display_11410.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11410/display_11410.png",
         "Query_file": "Trypanosoma_mega.json",
         "Count": 1,
         "Name": "Trypanosoma mega"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41831/display_41831.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41831/display_41831.png",
         "Query_file": "Ulmus_americana.json",
         "Count": 1,
         "Name": "Ulmus americana"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41039/display_41039.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41039/display_41039.png",
         "Query_file": "Unclassified_coccolithophorid_CCMP300.json",
         "Count": 1,
         "Name": "Unclassified coccolithophorid CCMP300"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11422/display_11422.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11422/display_11422.png",
         "Query_file": "Unclassified_Insecta.json",
         "Count": 4,
         "Name": "Unclassified Insecta"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11968/display_11968.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11968/display_11968.png",
         "Query_file": "Uncultured_Pyrsonympha_sp..json",
         "Count": 1,
         "Name": "Uncultured Pyrsonympha sp."
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/25897/display_25897.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/25897/display_25897.png",
         "Query_file": "Uncultured_scuticociliate.json",
         "Count": 24,
         "Name": "Uncultured scuticociliate"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/24921/display_24921.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/24921/display_24921.png",
         "Query_file": "Uncultured_Scuticociliatia.json",
         "Count": 4,
         "Name": "Uncultured Scuticociliatia"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41537/display_41537.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41537/display_41537.png",
         "Query_file": "Unidentified_monkey.json",
         "Count": 2,
         "Name": "Unidentified monkey"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/27147/display_27147.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/27147/display_27147.png",
         "Query_file": "Unidentified_plant.json",
         "Count": 2,
         "Name": "Unidentified plant"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11970/display_11970.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11970/display_11970.png",
         "Query_file": "Unidentified_spirochete.json",
         "Count": 1,
         "Name": "Unidentified spirochete"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38911/display_38911.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38911/display_38911.png",
         "Query_file": "Urtica_dioica.json",
         "Count": 1,
         "Name": "Urtica dioica"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40602/display_40602.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40602/display_40602.png",
         "Query_file": "Utricularia_aurea.json",
         "Count": 1,
         "Name": "Utricularia aurea"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40601/display_40601.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40601/display_40601.png",
         "Query_file": "Utricularia_striatula.json",
         "Count": 1,
         "Name": "Utricularia striatula"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/38817/display_38817.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/38817/display_38817.png",
         "Query_file": "Vaginicola.json",
         "Count": 2,
         "Name": "Vaginicola"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/36045/display_36045.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/36045/display_36045.png",
         "Query_file": "Vertebrata.json",
         "Count": 3,
         "Name": "Vertebrata"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/40399/display_40399.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/40399/display_40399.png",
         "Query_file": "Vibrio_cholerae.json",
         "Count": 4,
         "Name": "Vibrio cholerae"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11406/display_11406.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11406/display_11406.png",
         "Query_file": "Vicia_faba.json",
         "Count": 1,
         "Name": "Vicia faba"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/39040/display_39040.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/39040/display_39040.png",
         "Query_file": "Volvox.json",
         "Count": 2,
         "Name": "Volvox"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/41655/display_41655.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/41655/display_41655.png",
         "Query_file": "Vorticella.json",
         "Count": 82,
         "Name": "Vorticella"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/36247/display_36247.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/36247/display_36247.png",
         "Query_file": "Vorticella_convallaria.json",
         "Count": 75,
         "Name": "Vorticella convallaria"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/36288/display_36288.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/36288/display_36288.png",
         "Query_file": "Vorticella_microstoma.json",
         "Count": 6,
         "Name": "Vorticella microstoma"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/11435/display_11435.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/11435/display_11435.png",
         "Query_file": "Xenopus.json",
         "Count": 2,
         "Name": "Xenopus"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/24807/display_24807.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/24807/display_24807.png",
         "Query_file": "Xenopus_laevis.json",
         "Count": 391,
         "Name": "Xenopus laevis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/26269/display_26269.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/26269/display_26269.png",
         "Query_file": "Xenopus_laevis_laevis.json",
         "Count": 10,
         "Name": "Xenopus laevis laevis"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/13088/display_13088.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/13088/display_13088.png",
         "Query_file": "Xenopus_[NCBITaxon:262014].json",
         "Count": 394,
         "Name": "Xenopus [NCBITaxon:262014]"
     },
     {
-        "image_url": "http://flagella.crbs.ucsd.edu/display_images/686/display_686.png",
+        "image_url": "http://www.cellimagelibrary.org/cil_ccdb/display_images/686/display_686.png",
         "Query_file": "Zea_mays.json",
         "Count": 31,
         "Name": "Zea mays"
