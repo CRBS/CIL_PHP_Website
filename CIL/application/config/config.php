@@ -24,6 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost';
+//$config['base_url'] = 'http://flagella.crbs.ucsd.edu';
 
 /*
 |--------------------------------------------------------------------------
@@ -158,8 +159,8 @@ $config['composer_autoload'] = FALSE;
 | DO NOT CHANGE THIS UNLESS YOU FULLY UNDERSTAND THE REPERCUSSIONS!!
 |
 */
-$config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
-
+//$config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
+$config['permitted_uri_chars'] = 'a-z 0-9~%.:_()@&\-!+';
 /*
 |--------------------------------------------------------------------------
 | Enable Query Strings
@@ -527,3 +528,13 @@ $config['data_search_url'] = 'http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjz
 $config['cil_image_prefix'] = 'http://www.cellimagelibrary.org/cil_ccdb/display_images/';
 
 $config['ccdb_direct_data_prefix'] = 'http://ccdb.ucsd.edu/ccdbdata';
+
+/* JSON URL containting the homepage settings */
+$config['homepage_settings'] = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7/website_settings/homepage";
+
+/* CIL REST Document API URL */
+$config['apiDocPrefix'] = "http://ec2-35-165-216-15.us-west-2.compute.amazonaws.com/CIL_RS/index.php/rest/documents/";
+
+
+/* Elasticsearch prefix */
+$config['elasticsearchPrefix'] = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7";

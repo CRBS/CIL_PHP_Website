@@ -1,11 +1,14 @@
 <?php
-
+//require_once './application/config/config.php';
 class CILServiceUtil2
 {
-    public $apiDocPrefix = "http://ec2-35-165-216-15.us-west-2.compute.amazonaws.com/CIL_RS/index.php/rest/documents/";
-    public $homepage_settings = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7/website_settings/homepage";
+    //public $apiDocPrefix = "http://ec2-35-165-216-15.us-west-2.compute.amazonaws.com/CIL_RS/index.php/rest/documents/";
     
-    public $elasticsearchPrefix = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7";
+    //public $homepage_settings = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7/website_settings/homepage";
+    
+    //public $elasticsearchPrefix = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7";
+    
+    
     /**
      * This is a helpping method to call CURL PUT request with the username and key
      * 
@@ -127,13 +130,25 @@ class CILServiceUtil2
     
     public function getHomepageSettings()
     {
-        $response = $this->just_curl_get($this->homepage_settings);
+        
+        //$url = $config['homepage_settings'];
+        //$homepage_settings = $this->config->item('homepage_settings');
+        $CI = CI_Controller::get_instance();
+        //var_dump($CI->config);
+        $homepage_settings = $CI->config->item('homepage_settings');
+        
+        //echo $homepage_settings;
+        $response = $this->just_curl_get($homepage_settings);
         return $response;
     }
     
     public function getImage($imageID)
     {
-        $url = $this->apiDocPrefix.$imageID;
+        $CI = CI_Controller::get_instance();
+        $apiDocPrefix = $CI->config->item('apiDocPrefix');
+        
+        //$url = $this->apiDocPrefix.$imageID;
+        $url = $apiDocPrefix.$imageID;
         //echo "<br/>".$url;
         $response = $this->curl_get($url);
         return $response;
@@ -141,7 +156,11 @@ class CILServiceUtil2
     
     public function getImges($data)
     {
-        $url = $this->elasticsearchPrefix."/data/_search";
+        $CI = CI_Controller::get_instance();
+        $url = $CI->config->item('elasticsearchPrefix')."/data/_search";
+        
+        //$url = $this->config->item('elasticsearchPrefix');
+        //$url = $this->elasticsearchPrefix."/data/_search";
         //echo $url."<br/>";
         $response = $this->just_curl_get_data($url, $data);
         return $response;

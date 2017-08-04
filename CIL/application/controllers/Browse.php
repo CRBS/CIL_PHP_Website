@@ -19,6 +19,10 @@ class Browse  extends CI_Controller
     
     private function getQueryFileName2(&$summary,$input,$title)
     {
+        //Replace the slash with the underscore
+        $input = str_replace("+", "/", $input);
+        echo "<br/>INPUT:".$input;
+        
         $cell_processes = $summary->{$title};
         foreach($cell_processes as $cp)
         {

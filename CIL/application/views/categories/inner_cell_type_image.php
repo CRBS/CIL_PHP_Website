@@ -9,7 +9,7 @@
         </center>
     </div>
     <div class="col-md-12">
-        <center><a href="/browse/celltype/<?php echo $ct->Name; ?>" class="survey_plain" target="_self"><?php echo $ct->Name."<br/>(".$ct->Count.")"; ?></a></center>
+        <center><a href="/browse/celltype/<?php echo str_replace("/", "+", $ct->Name) ; ?>" class="survey_plain" target="_self"><?php echo $ct->Name."<br/>(".$ct->Count.")"; ?></a></center>
     </div>
 
     

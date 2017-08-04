@@ -1,0 +1,9 @@
+{
+    "query": {
+        "query_string" : {
+            "fields" : ["CIL_CCDB.CIL.CORE.NCBIORGANISMALCLASSIFICATION.onto_id"],
+            "default_operator": "OR",
+            "use_dis_max" : true,
+             "query" : " \"NCBITaxon:4136\"  \"NCBITaxon:41392\"  \"NCBITaxon:41391\"  \"NCBITaxon:41380\"  \"NCBITaxon:548836\"  \"NCBITaxon:549704\"  \"NCBITaxon:216705\"  \"NCBITaxon:216704\"  \"NCBITaxon:216729\"  \"NCBITaxon:216706\"  \"NCBITaxon:216701\"  \"NCBITaxon:426101\"  \"NCBITaxon:216703\"  \"NCBITaxon:426102\"  \"NCBITaxon:216702\"  \"NCBITaxon:548839\"  \"NCBITaxon:549708\"  \"NCBITaxon:54476\" "}
+    }
+}

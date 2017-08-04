@@ -1,0 +1,9 @@
+{
+    "query": {
+        "query_string" : {
+            "fields" : ["CIL_CCDB.CIL.CORE.NCBIORGANISMALCLASSIFICATION.onto_id"],
+            "default_operator": "OR",
+            "use_dis_max" : true,
+             "query" : " \"NCBITaxon:338913\"  \"NCBITaxon:468657\"  \"NCBITaxon:338912\"  \"NCBITaxon:468658\"  \"NCBITaxon:338911\"  \"NCBITaxon:468655\"  \"NCBITaxon:468656\"  \"NCBITaxon:468653\"  \"NCBITaxon:468654\"  \"NCBITaxon:338313\"  \"NCBITaxon:338312\"  \"NCBITaxon:468652\"  \"NCBITaxon:338311\"  \"NCBITaxon:44578\"  \"NCBITaxon:44579\"  \"NCBITaxon:564348\"  \"NCBITaxon:317012\"  \"NCBITaxon:408863\"  \"NCBITaxon:333504\"  \"NCBITaxon:468659\"  \"NCBITaxon:333505\"  \"NCBITaxon:468646\"  \"NCBITaxon:362736\"  \"NCBITaxon:44581\"  \"NCBITaxon:44582\"  \"NCBITaxon:44580\"  \"NCBITaxon:392030\"  \"NCBITaxon:392031\"  \"NCBITaxon:362737\"  \"NCBITaxon:392032\"  \"NCBITaxon:392033\"  \"NCBITaxon:392034\"  \"NCBITaxon:104795\"  \"NCBITaxon:317009\"  \"NCBITaxon:468648\"  \"NCBITaxon:195510\"  \"NCBITaxon:104783\"  \"NCBITaxon:392022\"  \"NCBITaxon:478557\"  \"NCBITaxon:104785\"  \"NCBITaxon:563910\"  \"NCBITaxon:104784\"  \"NCBITaxon:563911\"  \"NCBITaxon:104787\"  \"NCBITaxon:104786\"  \"NCBITaxon:563913\"  \"NCBITaxon:392028\"  \"NCBITaxon:392029\"  \"NCBITaxon:104788\"  \"NCBITaxon:338308\"  \"NCBITaxon:338307\"  \"NCBITaxon:96448\"  \"NCBITaxon:231625\"  \"NCBITaxon:231624\"  \"NCBITaxon:231623\"  \"NCBITaxon:468664\"  \"NCBITaxon:10191\"  \"NCBITaxon:468665\"  \"NCBITaxon:468662\"  \"NCBITaxon:10190\"  \"NCBITaxon:468660\"  \"NCBITaxon:104779\"  \"NCBITaxon:104778\"  \"NCBITaxon:86133\"  \"NCBITaxon:86132\"  \"NCBITaxon:338909\"  \"NCBITaxon:84394\"  \"NCBITaxon:86131\"  \"NCBITaxon:563907\"  \"NCBITaxon:563908\"  \"NCBITaxon:468628\"  \"NCBITaxon:563909\"  \"NCBITaxon:468629\"  \"NCBITaxon:317505\" "}
+    }
+}

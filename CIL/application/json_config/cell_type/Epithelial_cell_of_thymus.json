@@ -1,0 +1,9 @@
+{
+    "query": {
+        "query_string" : {
+            "fields" : ["CIL_CCDB.CIL.CORE.CELLTYPE.onto_id"],
+            "default_operator": "OR",
+            "use_dis_max" : true,
+             "query" : " \"CL:0002297\"  \"CL:0002296\"  \"CL:0002299\"  \"CL:0002365\"  \"CL:0002364\"  \"CL:0002298\"  \"CL:0002293\"  \"CL:0002295\"  \"CL:0002294\"  \"CL:0002300\" "}
+    }
+}

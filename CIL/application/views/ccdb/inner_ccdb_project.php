@@ -53,7 +53,7 @@
 ?>
     
 <?php   
-    if(isset($result->CIL_CCDB->CCDB->Project->Name))
+    if(isset($result->CIL_CCDB->CCDB->Project->Funding_agency))
     {
 ?>
         <div class="row">
