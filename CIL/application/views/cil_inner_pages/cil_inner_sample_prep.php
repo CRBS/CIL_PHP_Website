@@ -1,5 +1,6 @@
 <div class='biological_sources'>
-<h2>Sample Preparation</h2>
+<!-- <h2>Sample Preparation</h2> -->
+<span class="cil_title2">Sample Preparation</span>
 <dl>
     
 <!------------------Methods---------------------->

@@ -1,6 +1,7 @@
 
 <div class='biological_sources'>
-<h2>Biological Sources</h2>
+<!-- <h2>Biological Sources2</h2>  -->
+<span class="cil_title2">Biological Sources</span>
 <dl>
     
     
@@ -93,6 +94,7 @@
             else if(isset($celltype->free_text))
             {
 ?>
+            <dt><b>Cell Type</b></dt>
             <dd class='eol_dd'>
                 <?php echo $celltype->free_text ?>
             </dd>
@@ -119,7 +121,7 @@
 <?php
                     
                 }
-                else if(isset($celltype->free_text))   
+                else if(isset($ct->free_text))   
                 {
                    
 ?>
@@ -135,6 +137,79 @@
 ?>
 <!------------------End Cell type---------------------->        
         
+
+
+
+<!------------------Cell LINE---------------------->
+<?php
+    if(isset($json->CIL_CCDB->CIL->CORE->CELLLINE))
+    {
+        $cellline = $json->CIL_CCDB->CIL->CORE->CELLLINE;
+        if(!is_array($cellline))
+        {
+           
+            if(isset($cellline->onto_id))
+            {
+?>
+            <dt><b>Cell Line</b></dt>
+            <dd class='eol_dd'>
+            <span>
+            <a class='eol_onto_term_link' href='<?php  echo $cellline->onto_id;   ?>' title=''><?php echo $cellline->onto_name ?></a>
+            </span>
+            </dd>
+
+<?php
+            }
+            else if(isset($cellline->free_text))
+            {
+?>
+            <dt><b>Cell Line</b></dt>
+            <dd class='eol_dd'>
+                <?php echo $cellline->free_text ?>
+            </dd>
+            
+<?php    
+            }
+
+        }
+        else
+        {
+            echo "<dt><b>Cell Line</b></dt>";
+            foreach($cellline as $cl)
+            {
+                if(isset($cl->onto_id))
+                {
+?>
+                   
+                    <dd class='eol_dd'>
+                    <span>
+                    <a class='eol_onto_term_link' href='<?php  echo $cl->onto_id;   ?>' title=''><?php echo $cl->onto_name ?></a>
+                    </span>
+                    </dd>
+                
+<?php
+                    
+                }
+                else if(isset($cl->free_text))   
+                {
+                   
+?>
+                    <dd>
+                    <?php echo $cl->free_text ?>
+                    </dd>
+<?php
+                }
+            }
+        }
+
+    }
+?>
+<!------------------End Cell Line---------------------->
+
+
+
+
+
 
 
 <!------------------Cell Components---------------------->

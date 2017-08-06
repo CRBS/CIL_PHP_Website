@@ -39,7 +39,8 @@
         
 ?>
         <div class='biological_sources'>
-        <h2>Dimensions</h2>
+        <!-- <h2>Dimensions</h2> -->
+        <span class="cil_title2">Dimensions</span>
 <?php
         if($hasImageSize)
         {

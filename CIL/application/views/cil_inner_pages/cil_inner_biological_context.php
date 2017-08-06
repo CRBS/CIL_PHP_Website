@@ -1,6 +1,7 @@
 
 <div class='biological_sources'>
-<h2>Biological Context</h2>
+<!-- <h2>Biological Context</h2> -->
+<span class="cil_title2">Biological Context</span>
 <dl>
     
 <!------------------Biological process---------------------->

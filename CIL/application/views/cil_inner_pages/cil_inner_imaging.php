@@ -1,5 +1,6 @@
 <div class='biological_sources'>
-<h2>Imaging</h2>
+<!-- <h2>Imaging</h2> -->
+<span class="cil_title2">Imaging</span>
 <dl>
 <!------------------Imaging type---------------------->
 <?php

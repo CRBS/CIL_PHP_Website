@@ -1,5 +1,6 @@
 <div class='biological_sources'>
-<h2>Attribution</h2>
+<!-- <h2>Attribution</h2> -->
+<span class="cil_title2">Attribution</span>
 <dl>
 <!------------------Names---------------------->
 <?php

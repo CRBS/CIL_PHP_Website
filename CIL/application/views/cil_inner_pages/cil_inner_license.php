@@ -1,6 +1,7 @@
 <div class='biological_sources'>
 <br/>
-<h2>Licensing</h2>
+<!-- <h2>Licensing</h2> -->
+<span class="cil_title2">Licensing</span>
 <?php
     if(isset($json->CIL_CCDB->CIL->CORE->TERMSANDCONDITIONS->free_text))
     {
