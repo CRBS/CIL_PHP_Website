@@ -1,4 +1,5 @@
-<h2 class='detailed_description'>Specimen description</h2>
+<!-- <h2 class='detailed_description'>Specimen description</h2> -->
+<span class="cil_title2">Specimen description</span>
 <!--------------------Organ------------------------->
 <?php
 

@@ -1,11 +1,12 @@
-<h2 class='detailed_description'>Experiment
+<!-- <h2 class='detailed_description'>Experiment -->
+<span class="cil_title2">Experiment
 <?php
     //if(isset($result->CIL_CCDB->CCDB->Experiment->ID))
       //  echo "(".$result->CIL_CCDB->CCDB->Experiment->ID.")";
 
 ?>
-
-</h2>
+</span>
+<!-- </h2> -->
 
 <!--------------------Experiment ID------------------------->
 <?php

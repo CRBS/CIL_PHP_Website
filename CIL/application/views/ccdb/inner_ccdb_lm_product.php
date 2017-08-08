@@ -1,4 +1,5 @@
-<h2 class='detailed_description'>Imaging parameters</h2>
+<!-- <h2 class='detailed_description'>Imaging parameters</h2> -->
+<span class="cil_title2">Imaging parameters</span>
 <div class="row">
             <div class="col-md-12">
                 <dl>

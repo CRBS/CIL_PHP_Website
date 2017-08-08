@@ -14,10 +14,13 @@
            
         <!-- <div style="height:2px;font-size:1px;">&nbsp;</div> -->
         <div class="row top-buffer">
-            <div class="col-md-12">
             <?php  
-                $imageURL = $result->CIL_CCDB->CCDB->Reconstruction->Recon_Display_image->URL; 
+                if(isset($result->CIL_CCDB->CCDB->Reconstruction->Recon_Display_image->URL))
+                {
+                    $imageURL = $result->CIL_CCDB->CCDB->Reconstruction->Recon_Display_image->URL; 
             ?>
+            <div class="col-md-12">
+            
             <div class="row">
                 <div class="col-md-12">
                     <center>
@@ -26,6 +29,9 @@
                 </div>
             </div>
             </div>
+            <?php
+                }
+            ?>
         </div>
         <!-- <div style="height:2px;font-size:1px;">&nbsp;</div> -->
         <!----------------------Download section-------------------------->

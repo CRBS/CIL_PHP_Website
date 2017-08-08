@@ -1,13 +1,14 @@
 <div class="images">
 <div class="description">
-<h2 class='detailed_description'>Project
+<!-- <h2 class='detailed_description'>Project -->
+<span class="cil_title2">Project
 <?php
     if(isset($result->CIL_CCDB->CCDB->Project->ID))
         echo "(".$result->CIL_CCDB->CCDB->Project->ID.")";
 
 ?>
-
-</h2>
+</span>
+<!-- </h2> -->
 <?php
 
       

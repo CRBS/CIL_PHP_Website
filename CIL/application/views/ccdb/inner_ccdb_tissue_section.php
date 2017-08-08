@@ -1,4 +1,5 @@
-<h2 class='detailed_description'>Tissue section</h2>
+<!-- <h2 class='detailed_description'>Tissue section</h2> -->
+<span class="cil_title2">Tissue section</span>
 <!--------------------Anatomical_location------------------------->
 <?php
 

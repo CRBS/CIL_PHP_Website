@@ -1,4 +1,5 @@
-<h2 class='detailed_description'>Microscopy product</h2>
+<!-- <h2 class='detailed_description'>Microscopy product</h2> -->
+<span class="cil_title2">Microscopy product</span>
 <!--------------------ID------------------------->
 <?php
 

@@ -1,4 +1,5 @@
-<h2 class='detailed_description'>Subject</h2>
+<!-- <h2 class='detailed_description'>Subject</h2> -->
+<span class="cil_title2">Subject</span>
 <!--------------------Species------------------------->
 <?php
 
