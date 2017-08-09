@@ -15,7 +15,8 @@
         <div class="row top-buffer">
             <div class="col-md-12">
             <?php  
-                $imageURL = $result->CIL_CCDB->CCDB->Segmentation->Seg_Display_image->URL; 
+                if(isset($result->CIL_CCDB->CCDB->Segmentation->Seg_Display_image->URL))
+                    $imageURL = $result->CIL_CCDB->CCDB->Segmentation->Seg_Display_image->URL; 
             ?>
             <div class="row">
                 <div class="col-md-12">
