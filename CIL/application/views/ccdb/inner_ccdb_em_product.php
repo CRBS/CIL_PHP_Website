@@ -203,7 +203,7 @@
 <?php
 
       
-    if(isset($result->CIL_CCDB->CCDB->Imaging_parameters->Em_microscopy_product->Energy_filter_type))
+    if(isset($result->CIL_CCDB->CCDB->Imaging_parameters->Em_microscopy_product->Notes))
     {
         
 ?>
