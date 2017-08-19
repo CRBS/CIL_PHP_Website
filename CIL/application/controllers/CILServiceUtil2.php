@@ -25,6 +25,7 @@ class CILServiceUtil2
         curl_setopt($ch, CURLOPT_POSTFIELDS,$data);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); //On dev server only
         $response  = curl_exec($ch);
         curl_close($ch);
         return $response;
@@ -47,6 +48,7 @@ class CILServiceUtil2
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); //On dev server only
         $response  = curl_exec($ch);
         curl_close($ch);
         return $response;
@@ -68,6 +70,7 @@ class CILServiceUtil2
         curl_setopt($ch, CURLOPT_POSTFIELDS,$data);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); //On dev server only
         $response  = curl_exec($ch);
         curl_close($ch);
         return $response;
@@ -90,6 +93,7 @@ class CILServiceUtil2
         
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); //On dev server only
         $response  = curl_exec($ch);
         curl_close($ch);
         return $response;

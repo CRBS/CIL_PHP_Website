@@ -523,18 +523,23 @@ $config['video_folder'] = 'C:/Users/Willy/Documents/apache/Apache24/CIL_PHP_Webs
 //$config['video_folder'] = '/var/www/html/videos';
 
 
-$config['data_search_url'] = 'http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7/_search';
+//$config['data_search_url'] = 'http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7/_search';
+$config['data_search_url'] = 'http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv8/_search';
 
 $config['cil_image_prefix'] = 'http://www.cellimagelibrary.org/cil_ccdb/display_images/';
 
 $config['ccdb_direct_data_prefix'] = 'http://ccdb.ucsd.edu/ccdbdata';
 
 /* JSON URL containting the homepage settings */
-$config['homepage_settings'] = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7/website_settings/homepage";
+//$config['homepage_settings'] = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7/website_settings/homepage";
+$config['homepage_settings'] = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv8/website_settings/homepage";
+
 
 /* CIL REST Document API URL */
-$config['apiDocPrefix'] = "http://ec2-35-165-216-15.us-west-2.compute.amazonaws.com/CIL_RS/index.php/rest/documents/";
+//$config['apiDocPrefix'] = "http://ec2-35-165-216-15.us-west-2.compute.amazonaws.com/CIL_RS/index.php/rest/documents/";
+$config['apiDocPrefix'] = "https://cilia.crbs.ucsd.edu/CIL_RS/index.php/rest/documents/";
 
 
 /* Elasticsearch prefix */
-$config['elasticsearchPrefix'] = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7";
+//$config['elasticsearchPrefix'] = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7";
+$config['elasticsearchPrefix'] = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv8";
