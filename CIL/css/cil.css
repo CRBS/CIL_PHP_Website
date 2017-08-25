@@ -1,7 +1,8 @@
 /* navbar */
 .navbar-default {
     background-color: #1899ce;
-    border-color: #E7E7E7;
+    border-top: 5px solid #92d4f0;
+    border-bottom: 5px solid #92d4f0;
 }
 
 .nav.navbar-nav.navbar-left li a {
