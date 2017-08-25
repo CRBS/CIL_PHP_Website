@@ -2246,7 +2246,7 @@ img.image_type_icon {
   text-align: left;
 }
 #browse_header {
-    border-bottom: 2px solid black;
+<!--    border-bottom: 2px solid black; -->
 }
 #browse_header_text {
     font-size: 18px;
