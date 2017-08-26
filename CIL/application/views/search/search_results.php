@@ -1,9 +1,9 @@
 <div class="container">
-    <div class="row">
+    <div class="row" id="browse_header">
         
         <div class="col-md-6">
            
-            <div class="grid_12" id="browse_header">
+            <div class="grid_12">
         <div class="grid_6" id="browse_header_text">
         Search Results for
         <em><?php 
