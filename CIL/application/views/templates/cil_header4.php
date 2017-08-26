@@ -215,43 +215,47 @@
 
 					</div>
 				</div>
+			</header>
+        </div> <!-- container -->
+        
 
-				<div class="row hidden-print">
-					<div class="col-xs-12">
+                <div class="row hidden-print">
+                    <div class="col-xs-12">
 
-						<!-- START CONTENT ITEM -->
-						<nav class="navbar navbar-default main-nav" role="navigation">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-									<span class="sr-only">menu</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-							</div>
-							<div class="collapse navbar-collapse">
-								<ul class="nav navbar-nav navbar-left">
+                        <!-- START CONTENT ITEM -->
+                        <nav class="navbar navbar-default main-nav" role="navigation">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">menu</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse ">
+                                <ul class="nav navbar-nav navbar-left">
                                                                     <li><a href="/home"><span class="glyphicon glyphicon-home"></span></a></li>
-									<li <?php 
+                                      <li <?php 
                                                                             if(isset($category) && strcmp($category, "cellprocess")== 0)
                                                                             {
                                                                                 echo "class=\"active\"";
                                                                             }
                                                                             ?>><a href="/browse/cellprocess">Cell Process</a></li>
-				
-									<li <?php 
+                
+                                    <li <?php 
                                                                             if(isset($category) && strcmp($category, "cellcomponent")== 0)
                                                                             {
                                                                                 echo "class=\"active\"";
                                                                             }
                                                                             ?>><a href="/browse/cellcomponent">Cell Component</a></li>
-									<li <?php 
+                                    <li <?php 
                                                                             if(isset($category) && strcmp($category, "celltype")== 0)
                                                                             {
                                                                                 echo "class=\"active\"";
                                                                             }
                                                                             ?>><a href="/browse/celltype">Cell Type</a></li>
-									<li <?php 
+                                    <li <?php 
                                                                             if(isset($category) && strcmp($category, "organism")== 0)
                                                                             {
                                                                                 echo "class=\"active\"";
@@ -264,70 +268,63 @@
                                                                             }
                                                                             ?>><a href="/pages/datasets">Data Set</a></li>
                                                                         <!-- <li><a href="order.html">Pivot View</a></li> -->
-									
-								</ul>
-								<ul class="nav navbar-nav navbar-right">
-									<!-- <li class="dropdown">
-										<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-question-sign"></span></a>
-										<ul class="dropdown-menu">
-											<li>
-												<div class="dropdown-content dropdown-content-wide">
-													<form class="col-xs-12 form-search">
-														<div class="input-group">
-															<input class="form-control search-query" type="text" placeholder="Type your question...">
-															<span class="input-group-btn">
-																<button class="btn btn-default" type="button">ok</button>
-															</span>
-														</div>
-													</form>
-												</div>
-											</li>
-										</ul>
-									</li> -->
-									<li class="dropdown">
-										<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-envelope"></span></a>
-										<ul class="dropdown-menu">
-											<li>
-												<div class="dropdown-content">
-													<address>
-														<strong>Center for Research in Biological Systems</strong><br>
-														Basic Science Building, Room 1000 <br/>
-														University of California, San Diego<br/>
+                                    
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <!-- <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-question-sign"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="dropdown-content dropdown-content-wide">
+                                                    <form class="col-xs-12 form-search">
+                                                        <div class="input-group">
+                                                            <input class="form-control search-query" type="text" placeholder="Type your question...">
+                                                            <span class="input-group-btn">
+                                                                <button class="btn btn-default" type="button">ok</button>
+                                                            </span>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li> -->
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="dropdown-content">
+                                                    <address>
+                                                        <strong>Center for Research in Biological Systems</strong><br>
+                                                        Basic Science Building, Room 1000 <br/>
+                                                        University of California, San Diego<br/>
                                                                                                                 9500 Gilman Drive<br/>
                                                                                                                 La Jolla, CA 92093-0608, USA<br/>
-													</address>
-												</div>
-											</li>
-											<li class="divider"></li>
-											<li>
-												<div class="dropdown-content">
-													<strong>Voice</strong>: (858) 534-0276<br/>
-                                                                                                        <strong>Fax</strong>: (858) 534-7497<br/>
-												</div>
-											</li>
-                                                                                        <li>
-												<div class="dropdown-content">
-													<strong>Email</strong>: dorloff@ncmir.ucsd.edu<br/>
-                                                                                                        
-												</div>
-											</li>
+                                                    </address>
+                                                </div>
+                                            </li>
                                             <li class="divider"></li>
-											<li><a href="contact.html"><strong>E-mail</strong>: info@example.com</a></li>
-										</ul>
-									</li>
-									
-								</ul>
-							</div>
-						</nav>
-						<!-- END CONTENT ITEM -->
+                                            <li>
+                                                <div class="dropdown-content">
+                                                    <strong>Voice</strong>: (858) 534-0276<br/>
+                                                                                                        <strong>Fax</strong>: (858) 534-7497<br/>
+                                                </div>
+                                            </li>
+                                                                                        <li>
+                                                <div class="dropdown-content">
+                                                    <strong>Email</strong>: dorloff@ncmir.ucsd.edu<br/>
+                                                                                                        
+                                                </div>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li><a href="contact.html"><strong>E-mail</strong>: info@example.com</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            </div>
+                        </nav>
+                        <!-- END CONTENT ITEM -->
 
-					</div>
-				</div>
-
-				
-
-				
-
-			</header>
+                    </div>
                 </div>
-        
