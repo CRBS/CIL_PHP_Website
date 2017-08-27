@@ -11,12 +11,23 @@ class Search  extends CI_Controller
         $keywords = $this->input->get('keywords', TRUE);
         $queryString = urlencode($keywords);
         
-        $searchPrefix = $this->config->item('data_search_url');
+        //$searchPrefix = $this->config->item('data_search_url');
+        //$searchPostfix = "+CIL_CCDB.Status.Is_public:true+CIL_CCDB.Status.Deleted:false&default_operator=AND";
+        //$searchURL = $searchPrefix."?q=".$queryString.$searchPostfix;
+        $searchPrefix = $this->config->item('apiDocPrefix');
         $searchPostfix = "+CIL_CCDB.Status.Is_public:true+CIL_CCDB.Status.Deleted:false&default_operator=AND";
+        $searchURL = $searchPrefix."?search=".$queryString.$searchPostfix;
+
+        echo $searchURL;
         
-        $searchURL = $searchPrefix."?q=".$queryString.$searchPostfix;
-        //echo $searchURL;
-        $response = $sutil->just_curl_get($searchURL);
+        
+        
+        
+        
+        
+        //$response = $sutil->just_curl_get($searchURL);
+        $response = $sutil->curl_get($searchURL);
+        
         echo $response;
         $data['test'] = 'test';
         $this->load->view('templates/cil_header4', $data);
@@ -29,7 +40,7 @@ class Search  extends CI_Controller
     
 }
 
-http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7/data/_search?q=purkinje+CIL_CCDB.Status.Is_public:true+CIL_CCDB.Status.Deleted:false&default_operator=AND
+
 ?>
 
 

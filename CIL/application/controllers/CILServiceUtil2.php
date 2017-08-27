@@ -83,7 +83,7 @@ class CILServiceUtil2
      * @return type
      * 
      */
-    private function curl_get($url)
+    public function curl_get($url)
     {
         
         $ch = curl_init();
@@ -98,6 +98,24 @@ class CILServiceUtil2
         curl_close($ch);
         return $response;
     }
+    
+    
+    public function curl_get_data($url,$data)
+    {
+ 
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+        curl_setopt($ch, CURLOPT_POSTFIELDS,$data);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); //On dev server only
+        $response  = curl_exec($ch);
+        curl_close($ch);
+        return $response;
+
+    }
+    
     
     public function just_curl_get($url)
     {
@@ -140,9 +158,11 @@ class CILServiceUtil2
         $CI = CI_Controller::get_instance();
         //var_dump($CI->config);
         $homepage_settings = $CI->config->item('homepage_settings');
-        
+        //echo "<br/>".$homepage_settings;
         //echo $homepage_settings;
-        $response = $this->just_curl_get($homepage_settings);
+        //$response = $this->just_curl_get($homepage_settings);
+        $response = $this->curl_get($homepage_settings);
+        
         return $response;
     }
     
@@ -152,7 +172,7 @@ class CILServiceUtil2
         $apiDocPrefix = $CI->config->item('apiDocPrefix');
         
         //$url = $this->apiDocPrefix.$imageID;
-        $url = $apiDocPrefix.$imageID;
+        $url = $apiDocPrefix."/".$imageID;
         //echo "<br/>".$url;
         $response = $this->curl_get($url);
         return $response;

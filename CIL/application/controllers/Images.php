@@ -31,13 +31,20 @@ class Images  extends CI_Controller
         //echo $simple_search."<br/>";
         if(!is_null($keywords) && strcmp("$simple_search", "Search")==0)
         {
-            $searchPrefix = $this->config->item('data_search_url');
-            $searchPostfix = "+CIL_CCDB.Status.Is_public:true+CIL_CCDB.Status.Deleted:false&default_operator=AND&from=".$from."&size=".$size;
-            $searchURL = $searchPrefix."?q=".$queryString.$searchPostfix;
+            /*$searchPrefix2 = $this->config->item('data_search_url');
+            $searchPostfix2 = "+CIL_CCDB.Status.Is_public:true+CIL_CCDB.Status.Deleted:false&default_operator=AND&from=".$from."&size=".$size;
+            $searchURL2 = $searchPrefix2."?q=".$queryString.$searchPostfix2;
+            echo "<br/>".$searchURL2;
+            $response = $sutil->just_curl_get($searchURL2);*/
             
-            //echo $searchURL;
-            $response = $sutil->just_curl_get($searchURL);
-            //echo $response;
+            $searchPrefix = $this->config->item('apiDocPrefix');
+            $searchPostfix = "+CIL_CCDB.Status.Is_public:true+CIL_CCDB.Status.Deleted:false&default_operator=AND&from=".$from."&size=".$size;
+            $searchURL = $searchPrefix."?search=".$queryString.$searchPostfix;
+            //echo "<br/>".$searchURL;
+            $response = $sutil->curl_get($searchURL);
+            
+            
+            //echo "<br/><br/>".$response;
             $result = json_decode($response);
             
             $data['page_num'] = $page;

@@ -68,9 +68,14 @@ class Browse  extends CI_Controller
            $queryFileName = $this->getQueryFileName($configJson, $input);
            $query = file_get_contents(getcwd()."/application/json_config/cell_processes/".$queryFileName);
            //echo $query;
-           $query_url =  $this->config->item('data_search_url')."?from=".$from."&size=".$size;
-           //echo $query_url;
-           $response = $sutil->just_curl_get_data($query_url,$query);
+           /*
+            $query_url =  $this->config->item('data_search_url')."?from=".$from."&size=".$size;
+            $response = $sutil->just_curl_get_data($query_url,$query);
+            */
+           
+           $query_url =  $this->config->item('advanced_search')."?from=".$from."&size=".$size;
+           $response = $sutil->curl_get_data($query_url,$query);
+           
            //echo $response;
            $result = json_decode($response);
            if($result->hits->total > 0)
@@ -121,9 +126,13 @@ class Browse  extends CI_Controller
            $queryFileName = $this->getQueryFileName2($configJson, $input, "Cell_component");
            $query = file_get_contents(getcwd()."/application/json_config/cell_component/".$queryFileName);
            //echo $query;
-           $query_url =  $this->config->item('data_search_url')."?from=".$from."&size=".$size;
+           //$query_url =  $this->config->item('data_search_url')."?from=".$from."&size=".$size;
+           //$response = $sutil->just_curl_get_data($query_url,$query);
            //echo $query_url;
-           $response = $sutil->just_curl_get_data($query_url,$query);
+           
+           $query_url =  $this->config->item('advanced_search')."?from=".$from."&size=".$size;
+           $response = $sutil->curl_get_data($query_url,$query);
+          
            //echo $response;
            $result = json_decode($response);
            if($result->hits->total > 0)
@@ -173,9 +182,13 @@ class Browse  extends CI_Controller
            $queryFileName = $this->getQueryFileName2($configJson, $input, "Cell_type");
            $query = file_get_contents(getcwd()."/application/json_config/cell_type/".$queryFileName);
            //echo $query;
-           $query_url =  $this->config->item('data_search_url')."?from=".$from."&size=".$size;
+           //$query_url =  $this->config->item('data_search_url')."?from=".$from."&size=".$size;
+           //$response = $sutil->just_curl_get_data($query_url,$query);
            //echo $query_url;
-           $response = $sutil->just_curl_get_data($query_url,$query);
+           
+           $query_url =  $this->config->item('advanced_search')."?from=".$from."&size=".$size;
+           $response = $sutil->curl_get_data($query_url,$query);
+           
            //echo $response;
            $result = json_decode($response);
            if($result->hits->total > 0)
@@ -226,9 +239,14 @@ class Browse  extends CI_Controller
                $queryFileName = $this->getQueryFileName2($configJson, $input, "Organism");
                $query = file_get_contents(getcwd()."/application/json_config/organism/".$queryFileName);
                //echo $query;
-               $query_url =  $this->config->item('data_search_url')."?from=".$from."&size=".$size;
+               //$query_url =  $this->config->item('data_search_url')."?from=".$from."&size=".$size;
+               //$response = $sutil->just_curl_get_data($query_url,$query);
                //echo $query_url;
-               $response = $sutil->just_curl_get_data($query_url,$query);
+               
+               $query_url =  $this->config->item('advanced_search')."?from=".$from."&size=".$size;
+               $response = $sutil->curl_get_data($query_url,$query);
+               //echo $query_url;
+               
                //echo $response;
                $result = json_decode($response);
                if($result->hits->total > 0)
