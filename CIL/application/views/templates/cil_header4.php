@@ -174,6 +174,7 @@
                                                                                 <li><a href="/images/advanced_search">Advanced search</a></li>
 										<li><a href="/contributors">Contributors</a></li>
 										<li><a href="column2.html">Help</a></li>
+                                                                                <li><a href="/pages/contribute">Submit</a></li>
 										<li><a href="column2.html">Login</a></li>
 									</ul>
 								</div>
@@ -197,8 +198,10 @@
 									<span class="input-group-btn">
                                                                             <button class="btn btn-default" type="submit">Search</button>
 									</span>
+                                                                        
 								</div>
                                                                 </form>
+                                                                
 								<!-- END CONTENT ITEM -->
 
 							</div>
@@ -206,13 +209,11 @@
 						<br>
 					</div>
 					<div class="hidden-xs hidden-sm col-md-3 col-lg-4">
-
-						<!-- START CONTENT ITEM -->
-                                                <a href="http://crbs.ucsd.edu/" target="_blank">
-                                                <img src="/pix/CRBS_LOGO.png" alt="CRBS" class="img-responsive" width="150px">
-                                                </a>
-                                                <!-- END CONTENT ITEM -->
-
+                                            
+                                                    <a href="http://crbs.ucsd.edu/" target="_blank">
+                                                    <img src="/pix/CRBS_LOGO.png" alt="CRBS" class="img-responsive" width="150px">
+                                                    </a>
+                
 					</div>
 				</div>
 			</header>

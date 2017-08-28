@@ -59,4 +59,12 @@ class Pages  extends CI_Controller
         $this->load->view('pages/notification_display', $data);
         $this->load->view('templates/cil_footer2', $data);
     }
+    
+    public function Contribute()
+    {
+        $data['test']="test";
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('pages/contribute_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+    }
 }
