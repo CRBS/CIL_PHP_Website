@@ -267,7 +267,7 @@
                                                                             {
                                                                                 echo "class=\"active\"";
                                                                             }
-                                                                            ?>><a href="/pages/datasets">Data Set</a></li>
+                                                                            ?>><a href="/pages/datasets">Data Sets</a></li>
                                                                         <!-- <li><a href="order.html">Pivot View</a></li> -->
                                     
                                 </ul>

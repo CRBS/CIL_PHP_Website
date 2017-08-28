@@ -48,7 +48,7 @@
             <div class="org">National Center for Microscopy and Imaging Research</div>
             </div>
             <div class="vcard" id="hcard-Chris-Churus">
-            <div class="fn">Chris Churus</div>
+            <div class="fn">Chris Churas</div>
             <div class="role">Software Engineer</div>
             <div class="org">National Center for Microscopy and Imaging Research</div>
             </div>
