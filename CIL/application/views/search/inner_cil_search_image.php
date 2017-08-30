@@ -24,22 +24,40 @@
                             </div>
                              <div class="col-md-12 pull-left">
                                <?php
+                                 $hasIcon = false;
                                  if(isset($image->_source->CIL_CCDB->Data_type->Time_series) &&
                                          $image->_source->CIL_CCDB->Data_type->Time_series)
                                  {
-                                     echo "<img alt=\"time-series\" title=\"time-series\"   src=\"/pix/clock.jpg\">";
+                                     
+                                     echo "<img alt=\"time-series\" title=\"time-series\" class=\"image_type_icon\"  width=\"24px\" src=\"/pix/clock.jpg\">";
+                                     $hasIcon = true;
                                  }
                                  
                                  if(isset($image->_source->CIL_CCDB->Data_type->Z_stack) &&
                                          $image->_source->CIL_CCDB->Data_type->Z_stack)
                                  {
-                                     echo "<img alt=\"3-D (z-stack)\" title=\"3-D (z-stack)\" src=\"/pix/zstack.jpg\">";
+                                     if($hasIcon)
+                                         echo "&nbsp;";
+                                     echo "<img alt=\"3-D (z-stack)\" class=\"image_type_icon\" title=\"3-D (z-stack)\" width=\"24px\" src=\"/pix/zstack.jpg\">";
+                                     $hasIcon = true;
                                  }
                                  
                                  if(isset($image->_source->CIL_CCDB->Data_type->Video) &&
                                          $image->_source->CIL_CCDB->Data_type->Video)
                                  {
-                                     echo "<img  alt=\"video or animation\" title=\"video or animation\" src=\"/pix/movie.jpg\">";
+                                     if($hasIcon)
+                                         echo "&nbsp;";
+                                     echo "<img  alt=\"video or animation\" class=\"image_type_icon\" title=\"video or animation\" width=\"24px\" src=\"/pix/movie.jpg\">";
+                                     $hasIcon = true;
+                                 }
+                                 
+                                 if(isset($image->_source->CIL_CCDB->CIL->CORE->GROUP_ID))
+                                 {
+                                     if($hasIcon)
+                                         echo "&nbsp;";
+                                     //echo "<img alt=\"image is part of a group\" class=\"image_type_icon\" src=\"/pix/group.jpg\" title=\"image is part of a group\" width=\"24px\">";
+                                     echo "<img alt=\"image is part of a group\" class=\"image_type_icon\" src=\"/pix/group.jpg\" title=\"image is part of a group\" width=\"24px\">";
+                                     $hasIcon = true;
                                  }
 
                               ?>

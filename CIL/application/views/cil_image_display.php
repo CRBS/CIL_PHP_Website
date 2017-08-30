@@ -1,5 +1,7 @@
 <?php 
-   
+    require_once 'CILUtil.php';
+    $cutil = new CILUtil();
+
 ?>
 <div class="container">
     <div class="row">

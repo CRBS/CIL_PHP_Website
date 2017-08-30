@@ -379,6 +379,95 @@
     }
 ?>
 <!------------------End Processing History---------------------->
+
+
+
+
+<!------------------DATAQUALIFICATION---------------------->
+<?php
+    if(isset($json->CIL_CCDB->CIL->CORE->DATAQUALIFICATION))
+    {
+        $dataquali = $json->CIL_CCDB->CIL->CORE->DATAQUALIFICATION;
+        if(!is_array($dataquali))
+        {
+?>
+            <dt><b>Data Qualifiers</b></dt>
+            <dd class='eol_dd'>
+            <?php
+                if(isset($dataquali->free_text))
+                {
+             
+                    $dq_text =  $dataquali->free_text;
+                    if($cutil->startsWith($dq_text,"RAW"))
+                    {
+                        echo "raw, unprocessed data";
+                        if (strpos($dq_text, "spatialmeasurements") !== false)
+                            echo "<dd class=\"data_qualifier_attrs\">suitable for spatial measurements</dd>";
+                        
+                    }
+                    else if($cutil->startsWith($dq_text,"PROCESSED"))
+                    {
+                        echo "processed data";
+                        if (strpos($dq_text, "spatialmeasurements") !== false)
+                            echo "<dd class=\"data_qualifier_attrs\">suitable for spatial measurements</dd>";
+                    }
+                    else if($cutil->startsWith($dq_text,"ANIMATIONS"))
+                    {
+                        echo "animation";
+                        
+                    }
+
+                }
+             ?>
+            </dd>
+
+<?php
+        }
+        else
+        {
+            echo "<dt><b>Data Qualifiers</b></dt>";
+            foreach ($dataquali as $dq) 
+            {
+?>
+                
+                <dd class='eol_dd'>
+                <?php
+                     if(isset($dq->free_text))
+                    {
+                        $dq_text =  $dp->free_text;
+                        if($cutil->startsWith($dq_text,"RAW"))
+                        {
+                            echo "raw, unprocessed data";
+                            if (strpos($dq_text, "spatialmeasurements") !== false)
+                                echo "<dd class=\"data_qualifier_attrs\">suitable for spatial measurements</dd>";
+
+                        }
+                        else if($cutil->startsWith($dq_text,"PROCESSED"))
+                        {
+                            echo "processed data";
+                            if (strpos($dq_text, "spatialmeasurements") !== false)
+                                echo "<dd class=\"data_qualifier_attrs\">suitable for spatial measurements</dd>";
+                        }
+                        else if($cutil->startsWith($dq_text,"ANIMATIONS"))
+                        {
+                            echo "animation";
+
+                        }
+                    }
+                ?>
+                </dd>       
+        
+<?php
+                
+            }
+        }
+
+    }
+?>
+<!------------------End DATAQUALIFICATION---------------------->
+
+
+
 </dl>
 </div>
 
