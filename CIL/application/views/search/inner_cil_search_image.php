@@ -3,16 +3,56 @@
 
 ?>
 <div class="row search_result_row">
-    <div class="col-md-5">
+    <div class="col-md-1">
+        
+    </div>
+    <div class="col-md-4">
+       
 <?php
      $nid = str_replace("CIL_", "", $id);
      //echo "id:".$nid."<br/>";
      $imageURL = $cil_image_prefix."/".$nid."/display_".$nid.".png";
 ?>
-        <center><div class="thumbnail-kenburn">
-                <a href="/images/<?php echo $nid; ?>"><img width="140" src="<?php echo $imageURL; ?>"/></a>
-            </div>
-        </center>
+          
+                <!-- <center> -->
+               
+                        <div class="row">
+                            <div class="col-md-12">
+                               <div class="thumbnail-kenburn">
+                                   <a href="/images/<?php echo $nid; ?>"><img width="140" src="<?php echo $imageURL; ?>"/></a>
+                               </div>
+                            </div>
+                             <div class="col-md-12 pull-left">
+                               <?php
+                                 if(isset($image->_source->CIL_CCDB->Data_type->Time_series) &&
+                                         $image->_source->CIL_CCDB->Data_type->Time_series)
+                                 {
+                                     echo "<img alt=\"time-series\" title=\"time-series\"   src=\"/pix/clock.jpg\">";
+                                 }
+                                 
+                                 if(isset($image->_source->CIL_CCDB->Data_type->Z_stack) &&
+                                         $image->_source->CIL_CCDB->Data_type->Z_stack)
+                                 {
+                                     echo "<img alt=\"3-D (z-stack)\" title=\"3-D (z-stack)\" src=\"/pix/zstack.jpg\">";
+                                 }
+                                 
+                                 if(isset($image->_source->CIL_CCDB->Data_type->Video) &&
+                                         $image->_source->CIL_CCDB->Data_type->Video)
+                                 {
+                                     echo "<img  alt=\"video or animation\" title=\"video or animation\" src=\"/pix/movie.jpg\">";
+                                 }
+
+                              ?>
+                           </div>
+
+                        </div>
+                    
+                
+                <!-- </center> -->
+          
+         
+                
+        
     </div>
     <div class="col-md-5">
         <!---------------testing--------------->
