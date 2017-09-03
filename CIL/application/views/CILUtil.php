@@ -174,6 +174,59 @@ class CILUtil {
         }
         
     }
+    
+    
+    /**
+     * Calling from search result display page
+     * @param type $image
+     * @return boolean
+     */
+    public function hasReconstructionFromSearchResults($image)
+    {
+        if(!isset($image->_source))
+            return false;
+        
+        $result = $image->_source;
+        if(isset($result->CIL_CCDB->CCDB->Reconstruction->Recon_Downloadable_data) ||
+            (isset($result->CIL_CCDB->CCDB->Reconstruction->Recon_Display_image->URL) &&
+             isset($result->CIL_CCDB->CCDB->Reconstruction->Recon_Display_image->Description)))
+        {
+            return true;
+        }
+        
+        return false;
+    }
+    
+    public function hasImage2dFromSearchResults($image)
+    {
+        if(!isset($image->_source))
+            return false;
+        
+        $result = $image->_source;
+        if(isset($result->CIL_CCDB->CCDB->Image2d->Image2D_Downloadable_data) ||
+           (isset($result->CIL_CCDB->CCDB->Image2d->Image2D_Display_image->URL) &&
+            isset($result->CIL_CCDB->CCDB->Image2d->Image2D_Display_image->Description) ))
+        {
+            return true;
+        }
+        
+        return false;
+    }
+    
+    public function hasSegFromSearchResults($image)
+    {
+        if(!isset($image->_source))
+            return false;
+        
+        $result = $image->_source;
+        if(isset($result->CIL_CCDB->CCDB->Segmentation->Seg_Downloadable_data) ||
+            (isset($result->CIL_CCDB->CCDB->Segmentation->Seg_Display_image->URL) &&
+             isset($result->CIL_CCDB->CCDB->Segmentation->Seg_Display_image->Description)))
+        {
+            return true;
+        }
+        return false;
+    }
 }
 
 ?>

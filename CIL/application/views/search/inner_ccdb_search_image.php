@@ -3,7 +3,10 @@
     $nid = str_replace("CCDB_", "", $id);
 ?>
 <div class="row search_result_row">
-    <div class="col-md-5">
+    <div class="col-md-1">
+        
+    </div>
+    <div class="col-md-4">
 <?php
      
      $imageURL = "";
@@ -16,10 +19,41 @@
      
      //echo "---ImageURL:".$imageURL."<br/>";
 ?>
-        <center><div class="thumbnail-kenburn">
+        <!-- <center><div class="thumbnail-kenburn">
                 <a href="/images/<?php echo $id; ?>"><img width="140" src="<?php echo $imageURL; ?>"/></a>
             </div>
-        </center>
+        </center> -->
+        <div class="row">
+           <div class="col-md-12">
+               <div class="thumbnail-kenburn">
+                   <a href="/images/<?php echo $id; ?>"><img width="140" src="<?php echo $imageURL; ?>"/></a>
+               </div>
+           </div>
+            <div class="col-md-12 pull-left">
+                <?php
+                
+                    if($cutil->hasImage2dFromSearchResults($image))
+                    {
+                        echo "<img alt=\"Image 2D\" title=\"Image 2D\" class=\"image_type_icon\"  width=\"24px\" src=\"/pix/raw3.png\">";
+                        //echo "<span>Reonstruction</span>";
+                    }
+                    
+                
+                    if($cutil->hasReconstructionFromSearchResults($image))
+                    {
+                        echo "<img alt=\"Reconstruction\" title=\"Reconstruction\" class=\"image_type_icon\"  width=\"24px\" src=\"/pix/puzzle2.png\">";
+                        //echo "<span>Reonstruction</span>";
+                    }
+                    
+                    
+                    
+                    if($cutil->hasSegFromSearchResults($image))
+                    {
+                        echo "<img alt=\"Segmentation\" title=\"Segmentation\" class=\"image_type_icon\"  width=\"24px\" src=\"/pix/seg.png\">";
+                    }
+                ?>
+            </div>
+        </div>
     </div>
     <div class="col-md-5">
         <!---------------testing--------------->

@@ -59,6 +59,17 @@
                                      echo "<img alt=\"image is part of a group\" class=\"image_type_icon\" src=\"/pix/group.jpg\" title=\"image is part of a group\" width=\"24px\">";
                                      $hasIcon = true;
                                  }
+                                 
+                                 if(isset($image->_source->CIL_CCDB->CIL->CORE->DATAQUALIFICATION->free_text))
+                                 {
+                                     $dq_text = $image->_source->CIL_CCDB->CIL->CORE->DATAQUALIFICATION->free_text;
+                                     if (strpos($dq_text, "spatialmeasurements") !== false)
+                                     {
+                                         //echo "yes";
+                                         echo "<img alt=\"image is suitable for quantitation\" class=\"image_type_icon\" src=\"/pix/calculator.jpg\" title=\"image is suitable for quantitation\" width=\"24px\">";
+                                         $hasIcon = true;
+                                     }
+                                 }
 
                               ?>
                            </div>

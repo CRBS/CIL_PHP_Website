@@ -1,3 +1,9 @@
+<?php 
+    //echo getcwd()."/application/views/CILUtil.php";
+    require_once getcwd()."/application/views/CILUtil.php";
+    $cutil = new CILUtil();
+    
+?>
 <div class="container">
     <div class="row" id="browse_header">
         
