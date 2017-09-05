@@ -11,14 +11,7 @@ class Pages  extends CI_Controller
         $this->load->view('templates/cil_footer2', $data);
     }
     
-    public function Datasets()
-    {
-        $data['test']="test";
-        $data['category'] = "datasets";
-        $this->load->view('templates/cil_header4', $data);
-        $this->load->view('pages/dataset_display', $data);
-        $this->load->view('templates/cil_footer2', $data);
-    }
+
     
     public function Project_20269()
     {
@@ -65,6 +58,22 @@ class Pages  extends CI_Controller
         $data['test']="test";
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('pages/contribute_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+    }
+    
+    
+    public function Datasets()
+    {
+        $data['test']="test";
+        $data['category'] = "datasets";
+        
+         $sdatasets = file_get_contents(getcwd()."/application/json_config/datasets.json");
+         $datasets = json_decode($sdatasets);
+         
+         $data['datasets'] = $datasets;
+        
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('pages/dataset_display', $data);
         $this->load->view('templates/cil_footer2', $data);
     }
 }

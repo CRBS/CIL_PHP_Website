@@ -1,0 +1,313 @@
+{"Projects": [
+    {
+        "Description": "NCMIR test data for Mouse BIRN",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/1_512v.jpg",
+        "ID": "P0000",
+        "Name": "Mouse BIRN test data"
+    },
+    {
+        "Description": "Neurolucida tracing of filled Purkinje neurons",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/2_512v.jpg",
+        "ID": "P0001",
+        "Name": "Compartmental models of Purkinje neurons"
+    },
+    {
+        "Description": "Investigation of morphological alterations of post-synaptic densities following an episode of transient ischemia",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/21_512v.jpg",
+        "ID": "P1110",
+        "Name": "Synaptic alterations in transient ischemia"
+    },
+    {
+        "Description": "Investigation of astrocyte morphology and the establishment of unique astrocytic domains",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/28_512v.jpg",
+        "ID": "P1114",
+        "Name": "Astrocyte Domains"
+    },
+    {
+        "Description": "Measurements of spine parameters using light microscopy and electron tomography",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/12_512v.jpg",
+        "ID": "P1119",
+        "Name": "Correlated Microscopy of Dendritic Spines"
+    },
+    {
+        "Description": "Confocal images",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/1132_512v.jpg",
+        "ID": "P1123",
+        "Name": "CCDB rat test data"
+    },
+    {
+        "Description": "Actin localization in spines of CNS using eosin phalloidin photooxidation",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/22_512v.jpg",
+        "ID": "P1134",
+        "Name": "Actin in dendritic spines"
+    },
+    {
+        "Description": "Serial tomogram of a conventionally prepared peripheral nerve Node of Ranvier",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/48_512v.jpg",
+        "ID": "P1136",
+        "Name": "Dynamics of membrane organization at the node of Ranvier"
+    },
+    {
+        "Description": "Neurolucida tracing of filled Purkinje neurons",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/16_512v.jpg",
+        "ID": "P1170",
+        "Name": "Mouse BIRN test data"
+    },
+    {
+        "Description": "tests for most probable loss tomography on the 3200",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/51_512v.jpg",
+        "ID": "P1172",
+        "Name": "MPL pilot data"
+    },
+    {
+        "Description": "Confocal images",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/18_512v.jpg",
+        "ID": "P1173",
+        "Name": "CCDB rat test data pt. 2"
+    },
+    {
+        "Description": "characterization of a mouse model of  human alpha synuclein overexpressor",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/29_512v.jpg",
+        "ID": "P1187",
+        "Name": "Correlated Imaging Approaches and Multiscale Databases for Research in Parkinson's Disease"
+    },
+    {
+        "Description": "Creation of high resolution large scale brain maps of protein expression",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/23_512v.jpg",
+        "ID": "P1188",
+        "Name": "Brain Maps"
+    },
+    {
+        "Description": "Novel specimen preparation techniques were combined with electron tomography to provide new views of synaptic structure in the cortex of the adult rat",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/8483_512v.jpg",
+        "ID": "P1194",
+        "Name": "Electron tomographic analysis of synaptic structure in the adult rat cortex"
+    },
+    {
+        "Description": "Multiscale characterization of DAT KO transgenic mouse",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/31_512v.jpg",
+        "ID": "P1207",
+        "Name": "Correlative microscopic characterization of dendritic spines in a transgenic mouse model of hyperdopaminergia: The dopamine transporter knockout mouse"
+    },
+    {
+        "Description": "In situ structures of mitochondria in rods and cones",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/54_512v.jpg",
+        "ID": "P1209",
+        "Name": "Cone and Rod mitochondria"
+    },
+    {
+        "Description": "Tomography of Caulobacter crescentus",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3548_512v.jpg",
+        "ID": "P1220",
+        "Name": "Caulobacter"
+    },
+    {
+        "Description": "Reconstruction of mitochondrial associated adherens complex in the Calyx of Held synapse using electron tomography.  The adherens complex is an elaborate cytoskeletal superstructure connecting a subset of mitochondria to the presynaptic membrane near active zones.  Note:  several additional reconstructions from this project are available from Dr. George Spirou upon request.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3487_512v.jpg",
+        "ID": "P1223",
+        "Name": "Electron tomography of mitochondrial adherens complex in the Calyx of Held"
+    },
+    {
+        "Description": "Examination of isolated mitochondria from Drosophila following infection with flock house virus (FHV-1).",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/6659_512v.jpg",
+        "ID": "P1226",
+        "Name": "3D analysis of mitochondria infected with flock house virus"
+    },
+    {
+        "Description": "Postnatal development of protoplasmic astrocytes",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/10_512v.jpg",
+        "ID": "P1230",
+        "Name": "Astrocyte Development"
+    },
+    {
+        "Description": "Relationship between astrocyte distribution & morpholgy and laminar boundaries in the dentate gyrus",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3572_512v.jpg",
+        "ID": "P1231",
+        "Name": "Laminar Boundaries"
+    },
+    {
+        "Description": "3D investigation of T tubule structure using confocal and electron tomography from the MLP knock out mouse and human heart tissue",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3603_512v.jpg",
+        "ID": "P1233",
+        "Name": "Structural investigation of T-tubule structure in heart failure"
+    },
+    {
+        "Description": "This project is designed to achieve ultimate ultrastructure of animal tissues.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3649_512v.jpg",
+        "ID": "P1243",
+        "Name": "High Pressure Freezing and Freeze Substitution"
+    },
+    {
+        "Description": "The three-dimensional morphological rearrangements for two conditions that mimic light conditions for the Antarctic summer and winter were studied in Phaeocystis antarctica Karsten",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3406_512v.jpg",
+        "ID": "P1576",
+        "Name": "Chloroplast Ultrastructure of Phaeocystis antarctica in High and Low Light Conditions"
+    },
+    {
+        "Description": "Detailed structural investigation of the structure and distribution of synaptic densities on the spine mats from adult and embryonic ciliary ganglion neurons.  Reconstructions were derived from serial electron tomography of in vivo neurons.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3629_512v.jpg",
+        "ID": "P1692",
+        "Name": "Reconstruction of ciliary ganglion spine mats in adult and embryonic chick"
+    },
+    {
+        "Description": "Tomogram of the immunological synapse between a human cytotoxic T lymphocyte (CTL) and a target cell",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3632_512v.jpg",
+        "ID": "P1694",
+        "Name": "Electron Tomography of the CTL Immunological Synapse"
+    },
+    {
+        "Description": "Reconstruction of cortical neurons from biopsy material obtained from Alzheimers disease patients",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3716_512v.jpg",
+        "ID": "P1700",
+        "Name": "Alzheimer neuron reconstructions"
+    },
+    {
+        "Description": "Electron tomography was used to examine cytoskeletal-cytoskeletal, membrane-cytoskeletal, and heterologous cell connections in the paranodal region of the node of Ranvier in peripheral nerves.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3696_512v.jpg",
+        "ID": "P1704",
+        "Name": "Analysis of the Cross Bridges in the Paranodal Region of the Node of Ranvier"
+    },
+    {
+        "Description": "Proapoptotic BH3-only proteins induce Bax/Bak-dependent mitochondrial cristae remodeling independent of cytochrome c release and Bak oligomerization",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3864_512v.jpg",
+        "ID": "P1714",
+        "Name": "Remodeling of Crista During Cytochrome C Release"
+    },
+    {
+        "Description": "Tomography of the virological synapse formed between an HTLV-1 infected cells and target cells.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3946_512v.jpg",
+        "ID": "P1720",
+        "Name": "Electron tomography of the HTLV-1 virological synapse"
+    },
+    {
+        "Description": "To characterize glial morphology and molecular markers in a mouse model of glioblastoma",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/7857_512v.jpg",
+        "ID": "P1721",
+        "Name": "Glial markers in mouse model of glioblastoma"
+    },
+    {
+        "Description": "Characterization of staining for mGluR5 glutamate receptor in animal model of Parkinsonian disorders",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/4043_512v.jpg",
+        "ID": "P1723",
+        "Name": "Localization of Metabotropic Glutamate Receptors in Alpha Synuclein Overexpressing Mouse"
+    },
+    {
+        "Description": "Electron tomography of African Green Monkey epithelial cells infected with SARS-coronavirus",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/6020_512v.jpg",
+        "ID": "P2005",
+        "Name": "Membrane Modifications Induced by Corona Virus"
+    },
+    {
+        "Description": "Investigation of pannexins expression and distribution in the adult mouse brain.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/48720_512v.jpg",
+        "ID": "P2010",
+        "Name": "Pannexin Distribution in the Adult Mouse Brain"
+    },
+    {
+        "Description": "Mutant connexins have been linked to hereditary congenital cataracts. One such mutant causes a proline-to-serine substitution at position 88 in human connexin 50 (CX50P88S). In transfected cells, CX50P88S does not form gap junctions, but localizes in cytoplasmic multilamellar structures. We studied\nthe dynamics of formation and the stability of these structures in HeLa cells stably transfected with\nCX50P88S containing a tetracysteine motif appended to its C-terminus (HeLa-CX50P88S(Cys)4 cells) using a combination of light and electron microscopy.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/6347_512v.jpg",
+        "ID": "P2020",
+        "Name": "Trafficking of cataract-associated mutant connexins"
+    },
+    {
+        "Description": "The Whole Brain Catalog&trade; is a ground-breaking, open-source, 3-D virtual environment developed by a team of researchers from UC San Diego under the Whole Brain Project&trade;. The Catalog aims to connect members of the international neuroscience community to facilitate solutions for today's intractable challenges in brain research through cooperation and crowd sourcing.  CCDB provides the backend services for very large scale image data sets on mouse brain derived from high resolution light and electron microscopy",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/6541_512v.jpg",
+        "ID": "P2023",
+        "Name": "Whole Brain Catalog Project"
+    },
+    {
+        "Description": "A neuroinformatics approach to pannexin expression, localization, and interaction with other brain proteins.  This research aims to examine brain tissue at high resolution and, in combination with developing neuronformatics tools, to probe for binding partners and signalling partners to investigate the pannexin \"interactome\".  Data submissions for this project will consist of wide-scale high resolution confocal mosaic images of triple-labeled whole mouse brain sections.  Pannexin 1 expression will be compared to that of pannexin 2 as well as the connexins.  Other putative interaction partners of interest include the P2 purinergic receptors and components of the cytoskeleton.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/6624_512v.jpg",
+        "ID": "P2029",
+        "Name": "Pannexin protein expression in mouse brain tissue"
+    },
+    {
+        "Description": "To develop automated algorithms for analysis of neurite outgrowth in high content screens of cultured neurons.  This data set consists of wide field epifluorescent images of cultured neurons with both cytoplasmic (phalloidin) and nuclear stains (DAPI) and a set of manual segmentations of neuronal and nuclear boundaries that can be used as benchmarking data sets for the development of segmentation algorithms.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/6843_512v.jpg",
+        "ID": "P2043",
+        "Name": "Autosegmentation of cultured neurons"
+    },
+    {
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/7742_512v.jpg",
+        "ID": "P2044",
+        "Name": "Study of the fine structure of the visual system"
+    },
+    {
+        "Description": "Use of large scale imaging of the optic nerve and chiasm to characterize development of optic gliomas from neurofibromatosis-1 (Nf1) genetically-engineered mice",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/7732_512v.jpg",
+        "ID": "P2054",
+        "Name": "Characterization of optic gliomas from neurofibromatosis-1 (Nf1) genetically-engineered mice"
+    },
+    {
+        "Description": "Regulation of cytoplasmic calcium is crucial both for proper neuronal function and cell survival. The concentration of Ca2+ in cytoplasm of a neuron at rest is >10,000 times lower than in the extracellular space, pointing to the importance of the transporters that extrude intracellular Ca2+. The family of plasma membrane calcium-dependent ATPases (PMCAs) represent a major component of the Ca2+ regulatory system. However, little information is available on the regional and cellular distribution of these calcium pumps. We used immunohistochemistry to investigate the distribution of each of the four PMCA isoforms in the rat brain.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/7266_512v.jpg",
+        "ID": "P2061",
+        "Name": "Localization of plasma membrane Ca2+ ATPases (PMCAs) in the rat brain"
+    },
+    {
+        "Description": "During the cell cycle, gap junction communication, morphology and distribution of connexin43 (Cx43)-containing structures change dramatically. As cells round up in mitosis, the majority of Cx43 labeling is intracellular and intercellular coupling is reduced. We are interested in investigating Cx43 distributions during mitosis in exogenous expressing cells using in vivo time-lapse imaging.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/7769_512v.jpg",
+        "ID": "P2076",
+        "Name": "The fate of Connexin43 gap junction protein during mitosis"
+    },
+    {
+        "Description": "3D reconstruction using serial section scanning electron microscopy of the optic nerve head in mouse.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/8093_512v.jpg",
+        "ID": "P2078",
+        "Name": "Morphology of Optic Nerve Head"
+    },
+    {
+        "Description": "Various volumes generated on the 3View during testing or as preliminary data for other projects",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/8192_512v.jpg",
+        "ID": "P2080",
+        "Name": "3View volumes"
+    },
+    {
+        "Description": "Study of morphology of quantitative morphology of mitochondria in the peripheral nerve of the adult rat using 3D electron microscopy",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/8139_512v.jpg",
+        "ID": "P2083",
+        "Name": "Morphology of mitochondria in peripheral nerves"
+    },
+    {
+        "Description": "Large scale serial section electron microscopic reconstruction was used to reconstruct a portion of visual cortex in mouse that had been functionally characterized for preferred stimulus orientation using two photon calcium imaging.  Reconstructions showed that that inhibitory interneurons receive convergent anatomical input from nearby excitatory neurons with a broad range of\npreferred orientations",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/8448_512v.jpg",
+        "ID": "P2097",
+        "Name": "Large scale serial electron microscopic reconstruction of functionally characterized networks in mouse visual cortex"
+    },
+    {
+        "Description": "High-resolution diffusion tensor MRI experiments of control and hypertenstive rats to determine fiber and sheet orientations on 17T scanner at Gainesville, Florida.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/9449_512v.jpg",
+        "ID": "P2128",
+        "Name": "UCSD Virtual Rat Project"
+    },
+    {
+        "Description": "Determine the role of the endothelial glycocalyx in the glomerular filtration barrier.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/9523_512v.jpg",
+        "ID": "P2133",
+        "Name": "Role of the endothelial glycocalyx in renal glomerular and tubular function"
+    },
+    {
+        "Description": "A neuroinformatics approach to pannexin expression, localization, and interaction with other brain proteins. This research aims to examine brain tissue at high resolution and, in combination with developing neuronformatics tools, to probe for binding partners and signalling partners to investigate the pannexin interactome . Data submissions for this project will consist of wide-scale high resolution confocal mosaic images of triple-labeled whole mouse brain sections. Pannexin 1 expression will be compared to that of pannexin 2 as well as the connexins. Other putative interaction partners of interest include the P2 purinergic receptors and components of the cytoskeleton.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/44959_512v.jpg",
+        "ID": "P20002",
+        "Name": "Pannexin expression in the rodent brain"
+    },
+    {
+        "Description": "Dominant missense mutations in leucine-rich repeat kinase 2 (LRRK2) are the most common genetic cause of Parkinson disease (PD) and genome wide association studies identify LRRK2 sequence variants as risk factors for sporadic PD. Intact kinase function appears critical for the toxicity of LRRK2 PD mutants, yet our understanding of how LRRK2 causes neurodegeneration is limited. We will examine how LRRK2 mutations affect the ultrastructure of cells using electron tomography.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/86704_512v.jpg",
+        "ID": "P20090",
+        "Name": "Multiple Parkinson disease mutations cause LRRK2 to interact closely with microtubules."
+    },
+    {
+        "Description": "The goal of this project is to better understand the role of alpha-synuclein in the progression of PD by applying labeling systems developed at NCMIR to track, at multiple resolution scales, the distribution and trafficking of these proteins associated with Parkinson's disease.",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/61937_512v.jpg",
+        "ID": "P20094",
+        "Name": "Molecular and cellular investigations of alpha-synuclein in Parkinson pathogenesis"
+    },
+    {
+        "Description": "Tomograms of specifically labeled connexin 43 (Cx43) gap junctions expressed in HEK293T. Cx43 was genetically tagged with GPF and APEX, an engineered plant peroxidase that reacts with hydrogen peroxide and diaminobenzidine to create a protein specific stain. Sections are cut perpendicular to the membrane plane (cross-section view).",
+        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/83884_512v.jpg",
+        "ID": "P20196",
+        "Name": "Connexin43 APX"
+    }
+]}

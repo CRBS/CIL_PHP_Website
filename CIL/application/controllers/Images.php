@@ -22,6 +22,8 @@ class Images  extends CI_Controller
             $page = intval($temp);
             $page = $page-1;
             //echo "---------page after:".$page."<br/>";
+            if($page < 0)
+                $page = 0;
         }
         
         $from = $page*$size;

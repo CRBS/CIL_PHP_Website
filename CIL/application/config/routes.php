@@ -55,3 +55,5 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 $route['images/(:any)'] = 'Images/view/$1';
+
+$route['project/(:any)'] = 'Project/view/$1';
