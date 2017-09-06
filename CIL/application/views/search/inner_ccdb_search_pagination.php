@@ -8,6 +8,10 @@
     //echo "Number of pages:".$num_of_pages;
 
 ?>
+<?php 
+    if($total > 10)
+    {
+?>
 <ul class="pagination">
     
     <li <?php 
@@ -31,4 +35,7 @@
     
     ?>
     <li><a href="#">»</a></li>
-</ul>   
+</ul>
+<?php
+    }
+?>
