@@ -1,11 +1,18 @@
 <div class="container">
 <div class="row">
     <div class="col-md-12">
-        <h1>
+        <!-- <h1> -->
+        <div class="cil_title">
         Images of
         <span class="category">:</span>
-        <span class="sub_category"><?php echo $category_title ?></span>
-        </h1>
+        <span class="sub_category"><?php echo $category_title ?> (<?php echo $total; 
+        if($total == 1)
+            echo " result";
+        else
+            echo " results";
+        ?>)</span>
+        </div>
+        <!-- </h1> -->
     </div>
 </div>
     <form action="" id="" method="get">

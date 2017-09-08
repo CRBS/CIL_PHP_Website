@@ -1,8 +1,6 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            
-            
+    <!-- <div class="row">
+        <div class="col-md-6"> 
         <div class="grid_12" id="browse_header">
         <div class="grid_6" id="browse_header_text">
         Explore the Cell Image Library by
@@ -23,7 +21,30 @@
             </div>
         </div>
         
+    </div> -->
+    <div class="row" id="browse_header">
+            <div class="col-md-6">
+
+            <div class="grid_12">
+            <div class="grid_6" id="browse_header_text">
+            Explore the Cell Image Library by
+            <span class="category">Organism</span>
+            </div> 
+            </div>
+
+            </div>
+            <div class="col-md-6 pull-left">
+
+                <a href="/pages/search_help#basic_search" class="not_expected_results">(Not the results you were expecting?)</a>
+                <a href="/pages/search_help#submit_search_comments" class="not_expected_results">(Comments)</a>
+
+            </div>
     </div>
+    
+    
+    
+    
+    
     <br/>
     <?php
     

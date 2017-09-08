@@ -319,7 +319,7 @@ class Browse  extends CI_Controller
     
     
     
-    
+    /*
     public function celltype($input="None",$page_num=0,$size=10)
     {
         $from = $page_num*$size;
@@ -375,10 +375,96 @@ class Browse  extends CI_Controller
            $this->load->view('templates/cil_footer2', $data);
        }
     }
-    
-    
-     public function organism($input="None",$page_num=0,$size=10)
+    */
+    public function celltype($input="None")
+    {
+        //$from = $page_num*$size;
+        $sutil = new CILServiceUtil2();
+        $gutil = new GeneralUtil();
+        
+        $page = 0;
+        $size = 10;
+        
+        $temp = $this->input->get('page',TRUE);
+        if(!is_null($temp))
+        {
+            $page = intval($temp);
+            $page = $page-1;
+            //echo "---------page after:".$page."<br/>";
+            if($page < 0)
+                $page = 0;
+        }
+        $from = $page*$size;
+        
+       $sconfig = file_get_contents(getcwd()."/application/json_config/cell_type/cell_type_summary.json");
+       $configJson = json_decode($sconfig);
+       if(strcmp($input,"None")==0)
        {
+        
+        $data['summary'] = $configJson;
+        $data['category'] = "celltype";
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('categories/cell_type_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+       }
+       else
+       {
+           $category = $input;
+           $input = str_replace("%20", " ", $input);
+           $context_name = "celltype";
+           $data['category_title'] = $input;
+           $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
+           
+           $this->load->view('templates/cil_header4', $data);
+           
+           
+           $queryFileName = $this->getQueryFileName2($configJson, $input, "Cell_type");
+           $query = file_get_contents(getcwd()."/application/json_config/cell_type/".$queryFileName);
+           //echo $query;
+           //$query_url =  $this->config->item('data_search_url')."?from=".$from."&size=".$size;
+           //$response = $sutil->just_curl_get_data($query_url,$query);
+           //echo $query_url;
+           
+           $query_url =  $this->config->item('advanced_search')."?from=".$from."&size=".$size;
+           $response = $sutil->curl_get_data($query_url,$query);
+           
+           //echo $response;
+           $result = json_decode($response);
+           if($result->hits->total > 0)
+           {
+                $data['result'] = $result;
+                $data['total'] = $result->hits->total;
+                $data['size'] = $size;
+                
+                $data['category'] = $category;
+                $data['context_name'] = $context_name;
+                //echo "<br/>Category".$category;
+                $data['page_num'] = $page;//$page_num;
+                ///////////////////////////pagination/////////////////////////////////
+                //echo $size;
+                $currentPage = $page+1;
+                $data['currentPage'] = $currentPage;
+                //echo $currentPage;
+
+                $urlPattern = $this->config->item('base_url').
+                        "/browse/celltype/".$input."?page=";
+                $data['urlPattern'] = $urlPattern;
+                $paginator = new Paginator($result->hits->total, $size, $currentPage, $urlPattern);
+
+                $data['paginator'] = $paginator;
+                ////////////////////////////End pagination/////////////////////////////////////
+                
+                
+                $this->load->view('categories/category_search_result_page', $data);
+           }
+           $this->load->view('templates/cil_footer2', $data);
+       }
+    }
+    
+    
+    /*
+     public function organism($input="None",$page_num=0,$size=10)
+     {
             $from = $page_num*$size;
             $sutil = new CILServiceUtil2();
             $gutil = new GeneralUtil();
@@ -428,6 +514,92 @@ class Browse  extends CI_Controller
                     $data['context_name'] = $context_name;
                     //echo "<br/>Category".$category;
                     $data['page_num'] = $page_num;
+                    $this->load->view('categories/category_search_result_page', $data);
+               }
+               $this->load->view('templates/cil_footer2', $data);
+            }
+           
+       }
+     
+     */
+     public function organism($input="None")
+     {
+            //$from = $page_num*$size;
+            $sutil = new CILServiceUtil2();
+            $gutil = new GeneralUtil();
+            
+            $page = 0;
+            $size = 10;
+
+            $temp = $this->input->get('page',TRUE);
+            if(!is_null($temp))
+            {
+                $page = intval($temp);
+                $page = $page-1;
+                //echo "---------page after:".$page."<br/>";
+                if($page < 0)
+                    $page = 0;
+            }
+            $from = $page*$size;
+
+           $sconfig = file_get_contents(getcwd()."/application/json_config/organism/organism_summary.json");
+           $configJson = json_decode($sconfig);
+           if(strcmp($input,"None")==0)
+           {
+
+            $data['summary'] = $configJson;
+            $data['category'] = "organism";
+            $this->load->view('templates/cil_header4', $data);
+            $this->load->view('categories/organism_display', $data);
+            $this->load->view('templates/cil_footer2', $data);
+           }
+           else
+            {
+               $category = $input;
+               $input = str_replace("%20", " ", $input);
+               $context_name = "organism";
+               $data['category_title'] = $input;
+               $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
+
+               $this->load->view('templates/cil_header4', $data);
+
+
+               $queryFileName = $this->getQueryFileName2($configJson, $input, "Organism");
+               $query = file_get_contents(getcwd()."/application/json_config/organism/".$queryFileName);
+               //echo $query;
+               //$query_url =  $this->config->item('data_search_url')."?from=".$from."&size=".$size;
+               //$response = $sutil->just_curl_get_data($query_url,$query);
+               //echo $query_url;
+               
+               $query_url =  $this->config->item('advanced_search')."?from=".$from."&size=".$size;
+               $response = $sutil->curl_get_data($query_url,$query);
+               //echo $query_url;
+               
+               //echo $response;
+               $result = json_decode($response);
+               if($result->hits->total > 0)
+               {
+                    $data['result'] = $result;
+                    $data['total'] = $result->hits->total;
+                    $data['size'] = $size;
+
+                    $data['category'] = $category;
+                    $data['context_name'] = $context_name;
+                    //echo "<br/>Category".$category;
+                    $data['page_num'] = $page; //$page_num;
+                    ///////////////////////////pagination/////////////////////////////////
+                    //echo $size;
+                    $currentPage = $page+1;
+                    $data['currentPage'] = $currentPage;
+                    //echo $currentPage;
+
+                    $urlPattern = $this->config->item('base_url').
+                            "/browse/organism/".$input."?page=";
+                    $data['urlPattern'] = $urlPattern;
+                    $paginator = new Paginator($result->hits->total, $size, $currentPage, $urlPattern);
+
+                    $data['paginator'] = $paginator;
+                    ////////////////////////////End pagination/////////////////////////////////////
                     $this->load->view('categories/category_search_result_page', $data);
                }
                $this->load->view('templates/cil_footer2', $data);
