@@ -20,6 +20,7 @@
         ?>><a href="#">«</a></li>
         
     <?php
+        
         for($i=0;$i<$num_of_pages;$i++)
         {
             if($i == $page_num)

@@ -30,8 +30,11 @@
     <div class="col-md-12"> 
 <?php
 
-        include 'inner_search_pagination.php';
-       
+        //include 'inner_search_pagination.php';
+        
+       $paginationFile = getcwd()."/application/views/search/inner_ccdb_search_pagination2.php";
+       //echo $paginationFile;
+       include $paginationFile;
 ?>
         </div>
 </div>

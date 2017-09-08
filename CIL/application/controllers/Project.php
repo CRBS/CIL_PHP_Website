@@ -2,6 +2,7 @@
 
 require_once 'CILServiceUtil2.php';
 require_once 'GeneralUtil.php';
+require_once 'Paginator.php';
 class Project  extends CI_Controller 
 {
     public function view($project_id)
@@ -40,6 +41,25 @@ class Project  extends CI_Controller
         $data['total']=$result->hits->total;
         $data['result']=$result;
         $data['project_id']=$project_id;
+        
+        ///////////////////////////pagination/////////////////////////////////
+            //echo $size;
+            $currentPage = $page+1;
+            $data['currentPage'] = $currentPage;
+            //echo $currentPage;
+            
+            $urlPattern = $this->config->item('base_url').
+                    "/project/".$project_id."?page=";
+            $data['urlPattern'] = $urlPattern;
+            $paginator = new Paginator($result->hits->total, $size, $currentPage, $urlPattern);
+            
+            $data['paginator'] = $paginator;
+            
+            
+            
+         ////////////////////////////End pagination/////////////////////////////////
+        
+        
         
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('search/project_search_results', $data);

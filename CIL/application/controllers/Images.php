@@ -1,6 +1,7 @@
 <?php
 require_once 'CILServiceUtil2.php';
 require_once 'GeneralUtil.php';
+require_once 'Paginator.php';
 class Images  extends CI_Controller 
 {
     
@@ -54,8 +55,33 @@ class Images  extends CI_Controller
             $data['total']=$result->hits->total;
             $data['result']=$result;
             $data['keywords']=$keywords;
+            ///////////////////////////pagination/////////////////////////////////
+            //echo $size;
+            $currentPage = $page+1;
+            $data['currentPage'] = $currentPage;
+            //echo $currentPage;
+            
+            $urlPattern = $this->config->item('base_url').
+                    "/images?k=".$queryString."&simple_search=Search&page=";
+            $data['urlPattern'] = $urlPattern;
+            $paginator = new Paginator($result->hits->total, $size, $currentPage, $urlPattern);
+            
+            $data['paginator'] = $paginator;
+            
+            
+            
+            ////////////////////////////End pagination/////////////////////////////////////
+            
+            
+            
+            
+            
             $this->load->view('templates/cil_header4', $data);
             $this->load->view('search/search_results', $data);
+            
+
+            
+            
             $this->load->view('templates/cil_footer2', $data);
              
         }

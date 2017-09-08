@@ -88,7 +88,7 @@
                 <dt><b>Image Mode</b></dt>
                 <dd class='eol_dd'>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $imagemode->onto_id;   ?>' title=''><?php echo $imagemode->onto_name ?></a>
+                <a class='eol_onto_term_link' href='<?php  echo $imagemode->onto_id;   ?>' title=''><?php if(isset($imagemode->onto_name)) echo $imagemode->onto_name ?></a>
                 </span>
                 </dd>
 

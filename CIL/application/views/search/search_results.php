@@ -49,8 +49,10 @@
         <div class="col-md-12">
         <?php
 
-        include 'inner_ccdb_search_pagination.php';
-       
+        //echo $paginator;
+        //echo $pagination;
+        //include 'inner_ccdb_search_pagination.php';
+        include 'inner_ccdb_search_pagination2.php';
         ?>
         </div>
     </div>    
