@@ -27,6 +27,16 @@ class Images  extends CI_Controller
                 $page = 0;
         }
         
+        $temp = $this->input->get('per_page',TRUE);
+        if(!is_null($temp))
+        {
+            $size = intval($temp);
+            if($size < 0)
+                $size = 10;
+        }
+        
+        
+        
         $from = $page*$size;
         $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
         
@@ -55,6 +65,7 @@ class Images  extends CI_Controller
             $data['total']=$result->hits->total;
             $data['result']=$result;
             $data['keywords']=$keywords;
+            $data['queryString']=$queryString;
             ///////////////////////////pagination/////////////////////////////////
             //echo $size;
             $currentPage = $page+1;
@@ -62,7 +73,7 @@ class Images  extends CI_Controller
             //echo $currentPage;
             
             $urlPattern = $this->config->item('base_url').
-                    "/images?k=".$queryString."&simple_search=Search&page=";
+                    "/images?k=".$queryString."&simple_search=Search&per_page=".$size."&page=";
             $data['urlPattern'] = $urlPattern;
             $paginator = new Paginator($result->hits->total, $size, $currentPage, $urlPattern);
             
@@ -78,10 +89,6 @@ class Images  extends CI_Controller
             
             $this->load->view('templates/cil_header4', $data);
             $this->load->view('search/search_results', $data);
-            
-
-            
-            
             $this->load->view('templates/cil_footer2', $data);
              
         }

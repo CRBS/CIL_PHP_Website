@@ -43,7 +43,7 @@
         </div>
         </div>
         <div class="refresh_button_div">
-        <input name="commit" type="submit" value="Refresh">
+        <input onclick="$('#basic_search_button').click();;" type="button" value="Refresh Results">
         </div>
     </div>
 

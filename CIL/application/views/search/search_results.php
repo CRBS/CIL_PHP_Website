@@ -55,5 +55,10 @@
         include 'inner_ccdb_search_pagination2.php';
         ?>
         </div>
+        <!-- <div class="col-md-6">
+            <?php
+                //include 'inner_search_per_page.php';
+            ?>
+        </div> -->
     </div>    
 </div>
