@@ -6,9 +6,9 @@
   //]]>
 </script>
 <object id="cellMap" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" height="345" width="620">
-  <param name="movie" value="/pix/paramecium.swf">
+  <param name="movie" value="/pix/paramecium_rel.swf<?php echo "?id=".uniqid();  ?>">
   <!--[if !IE]>-->
-  <object type="application/x-shockwave-flash" data="/pix/paramecium.swf" height="345" width="620">
+  <object type="application/x-shockwave-flash" data="/pix/paramecium_rel.swf<?php echo "?id=".uniqid();  ?>" height="345" width="620">
   <!--<![endif]-->
     <p>Alternative content</p>
   <!--[if !IE]>-->

@@ -8,9 +8,9 @@
           //]]>
         </script>
         <object id="cellMap" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" height="345" width="620" style="visibility: visible;">
-          <param name="movie" value="/pix/cell_map2.swf">
+            <param name="movie" value="/pix/eukaryotic_rel.swf<?php echo "?id=".uniqid();  ?>">
           <!--[if !IE]>-->
-          <object type="application/x-shockwave-flash" data="/pix/cell_map2.swf" height="345" width="620">
+          <object type="application/x-shockwave-flash" data="/pix/eukaryotic_rel.swf<?php echo "?id=".uniqid();  ?>" height="345" width="620">
           <!--<![endif]-->
             <p>Alternative content</p>
           <!--[if !IE]>-->
@@ -29,9 +29,9 @@
           //]]>
         </script>
         <object id="ecoli" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000 height=" 345"="" width="620" style="visibility: visible;">
-          <param name="movie" value="/pix/ecoli.swf">
+          <param name="movie" value="/pix/ecoli_rel.swf<?php echo "?id=".uniqid();  ?>">
           <!--[if !IE]>-->
-          <object type="application/x-shockwave-flash" data="/pix/ecoli.swf" height="345" width="620">
+          <object type="application/x-shockwave-flash" data="/pix/ecoli_rel.swf<?php echo "?id=".uniqid();  ?>" height="345" width="620">
           <!--<![endif]-->
             <p>Alternative content</p>
           <!--[if !IE]>-->
@@ -50,9 +50,9 @@
           //]]>
         </script>
         <object id="paramecium" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000 height=" 345"="" width="620" style="visibility: visible;">
-          <param name="movie" value="/pix/paramecium.swf">
+          <param name="movie" value="/pix/paramecium_rel.swf<?php echo "?id=".uniqid();  ?>">
           <!--[if !IE]>-->
-          <object type="application/x-shockwave-flash" data="/pix/paramecium.swf" height="345" width="620">
+          <object type="application/x-shockwave-flash" data="/pix/paramecium_rel.swf<?php echo "?id=".uniqid();  ?>" height="345" width="620">
           <!--<![endif]-->
             <p>Alternative content</p>
           <!--[if !IE]>-->
