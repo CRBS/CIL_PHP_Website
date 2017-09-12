@@ -49,7 +49,14 @@
                 
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $itype->onto_id;   ?>' title=''><?php echo $itype->onto_name ?></a>
+                    <a class='eol_onto_term_link' href='<?php  echo $itype->onto_id;   ?>' title=''><?php 
+                    
+                        if(isset($itype->onto_name))
+                            echo $itype->onto_name; 
+                        else
+                            $itype->onto_id;
+                    
+                    ?></a>
                     </span>
                     </dd>       
         
@@ -88,7 +95,13 @@
                 <dt><b>Image Mode</b></dt>
                 <dd class='eol_dd'>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $imagemode->onto_id;   ?>' title=''><?php if(isset($imagemode->onto_name)) echo $imagemode->onto_name ?></a>
+                <a class='eol_onto_term_link' href='<?php  echo $imagemode->onto_id;   ?>' title=''><?php 
+                    if(isset($imagemode->onto_name)) 
+                        echo $imagemode->onto_name;
+                    else
+                        $imagemode->onto_id;
+                        
+                ?></a>
                 </span>
                 </dd>
 
@@ -156,7 +169,13 @@
             <dt><b>Parameters Imaged</b></dt>
             <dd class='eol_dd'>
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $paramimage->onto_id;   ?>' title=''><?php echo $paramimage->onto_name ?></a>
+            <a class='eol_onto_term_link' href='<?php  echo $paramimage->onto_id;   ?>' title=''><?php 
+                if(isset($paramimage->onto_name))
+                    echo $paramimage->onto_name;
+                else
+                    echo $paramimage->onto_id;
+                        
+             ?></a>
             </span>
             </dd>
 
@@ -171,7 +190,14 @@
                 
                 <dd class='eol_dd'>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $pimage->onto_id;   ?>' title=''><?php echo $pimage->onto_name ?></a>
+                <a class='eol_onto_term_link' href='<?php  echo $pimage->onto_id;   ?>' title=''><?php 
+                
+                   if(isset($pimage->onto_name))
+                    echo $pimage->onto_name;
+                   else
+                     echo $pimage->onto_id;
+                
+                ?></a>
                 </span>
                 </dd>       
         
@@ -200,7 +226,14 @@
              ?>    
              
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $paramimage->onto_id;   ?>' title=''><?php echo $paramimage->onto_name ?></a>
+            <a class='eol_onto_term_link' href='<?php  echo $scontrast->onto_id;   ?>' title=''><?php 
+                if(isset($scontrast->onto_name))
+                    echo $scontrast->onto_name;
+                else
+                    echo $scontrast->onto_id;
+                    
+                        
+            ?></a>
             </span>
             <?php
                 }
@@ -228,7 +261,14 @@
                     {
                 ?>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $sc->onto_id;   ?>' title=''><?php echo $sc->onto_name ?></a>
+                <a class='eol_onto_term_link' href='<?php  echo $sc->onto_id;   ?>' title=''><?php 
+                
+                    if(isset($sc->onto_id))
+                        echo $sc->onto_name;
+                    else
+                        echo $sc->onto_id;
+                                
+                ?></a>
                 </span>
                 <?php
                     }
@@ -267,7 +307,14 @@
              ?>    
              
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $visual->onto_id;   ?>' title=''><?php echo $visual->onto_name ?></a>
+            <a class='eol_onto_term_link' href='<?php  echo $visual->onto_id;   ?>' title=''><?php 
+                
+                if(isset($visual->onto_name))
+                    echo $visual->onto_name;
+                else
+                    echo $visual->onto_id;
+                            
+            ?></a>
             </span>
             <?php
                 }
@@ -295,7 +342,14 @@
                     {
                 ?>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $vs->onto_id;   ?>' title=''><?php echo $vs->onto_name ?></a>
+                <a class='eol_onto_term_link' href='<?php  echo $vs->onto_id;   ?>' title=''><?php 
+                
+                    if(isset($vs->onto_name))
+                        echo $vs->onto_name;
+                    else
+                        echo $vs->onto_id;
+                
+                ?></a>
                 </span>
                 <?php
                     }
@@ -332,7 +386,13 @@
              ?>    
              
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $phistory->onto_id;   ?>' title=''><?php echo $phistory->onto_name ?></a>
+            <a class='eol_onto_term_link' href='<?php  echo $phistory->onto_id;   ?>' title=''><?php 
+                if(isset($phistory->onto_name))
+                    echo $phistory->onto_name; 
+                else
+                    echo $phistory->onto_id;
+                        
+            ?></a>
             </span>
             <?php
                 }
@@ -360,7 +420,15 @@
                     {
                 ?>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $ph->onto_id;   ?>' title=''><?php echo $ph->onto_name ?></a>
+                <a class='eol_onto_term_link' href='<?php  echo $ph->onto_id;   ?>' title=''><?php 
+                
+                    if(isset($ph->onto_name))
+                        echo $ph->onto_name;
+                    else
+                        echo $ph->onto_id;
+                        
+                            
+                ?></a>
                 </span>
                 <?php
                     }

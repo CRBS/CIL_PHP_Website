@@ -23,6 +23,18 @@ class Project  extends CI_Controller
             if($page < 0)
                 $page = 0;
         }
+        
+        $temp = $this->input->get('per_page',TRUE);
+        if(!is_null($temp))
+        {
+            $size = intval($temp);
+            
+            if($size < 0)
+                $size = 10;
+        }
+        
+        
+        
         $from = $page*$size;
         
         $searchPrefix = $this->config->item('apiDocPrefix');
@@ -49,7 +61,12 @@ class Project  extends CI_Controller
             //echo $currentPage;
             
             $urlPattern = $this->config->item('base_url').
+                    "/project/".$project_id."?per_page=".$size."&page=";
+            
+            $results_per_pageURL = $this->config->item('base_url').
                     "/project/".$project_id."?page=";
+            $data['results_per_pageURL'] = $results_per_pageURL;
+            
             $data['urlPattern'] = $urlPattern;
             $paginator = new Paginator($result->hits->total, $size, $currentPage, $urlPattern);
             

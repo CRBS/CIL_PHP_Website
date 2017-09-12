@@ -55,6 +55,15 @@ class Browse  extends CI_Controller
             if($page < 0)
                 $page = 0;
         }
+        
+        $temp = $this->input->get('per_page',TRUE);
+        if(!is_null($temp))
+        {
+            $size = intval($temp);
+            if($size < 0)
+                $size = 10;
+        }
+        
         $from = $page*$size;
         
         
@@ -105,9 +114,13 @@ class Browse  extends CI_Controller
             //echo $currentPage;
             
             $urlPattern = $this->config->item('base_url').
-                    "/browse/cellprocess/".$input."?page=";
+                    "/browse/cellprocess/".$input."?per_page=".$size."&page=";
             $data['urlPattern'] = $urlPattern;
             $paginator = new Paginator($result->hits->total, $size, $currentPage, $urlPattern);
+            
+            $results_per_pageURL = $this->config->item('base_url').
+                     "/browse/cellprocess/".$input."?page=";
+            $data['results_per_pageURL'] = $results_per_pageURL;
             
             $data['paginator'] = $paginator;
             ////////////////////////////End pagination/////////////////////////////////////
@@ -252,6 +265,16 @@ class Browse  extends CI_Controller
             if($page < 0)
                 $page = 0;
         }
+        
+        $temp = $this->input->get('per_page',TRUE);
+        if(!is_null($temp))
+        {
+            $size = intval($temp);
+            if($size < 0)
+                $size = 10;
+        }
+        
+        
         $from = $page*$size;
         
        $sconfig = file_get_contents(getcwd()."/application/json_config/cell_component/cell_component_summary.json");
@@ -305,8 +328,14 @@ class Browse  extends CI_Controller
                 //echo $currentPage;
 
                 $urlPattern = $this->config->item('base_url').
-                        "/browse/cellcomponent/".$input."?page=";
+                        "/browse/cellcomponent/".$input."?per_page=".$size."&page=";
                 $data['urlPattern'] = $urlPattern;
+                
+                $results_per_pageURL = $this->config->item('base_url').
+                     "/browse/cellcomponent/".$input."?page=";
+                $data['results_per_pageURL'] = $results_per_pageURL;
+                
+                
                 $paginator = new Paginator($result->hits->total, $size, $currentPage, $urlPattern);
 
                 $data['paginator'] = $paginator;
@@ -394,6 +423,15 @@ class Browse  extends CI_Controller
             if($page < 0)
                 $page = 0;
         }
+        
+        $temp = $this->input->get('per_page',TRUE);
+        if(!is_null($temp))
+        {
+            $size = intval($temp);
+            if($size < 0)
+                $size = 10;
+        }
+        
         $from = $page*$size;
         
        $sconfig = file_get_contents(getcwd()."/application/json_config/cell_type/cell_type_summary.json");
@@ -447,8 +485,15 @@ class Browse  extends CI_Controller
                 //echo $currentPage;
 
                 $urlPattern = $this->config->item('base_url').
-                        "/browse/celltype/".$input."?page=";
+                        "/browse/celltype/".$input."?per_page=".$size."&page=";
                 $data['urlPattern'] = $urlPattern;
+                
+                
+                $results_per_pageURL = $this->config->item('base_url').
+                     "/browse/celltype/".$input."?page=";
+                $data['results_per_pageURL'] = $results_per_pageURL;
+                
+                
                 $paginator = new Paginator($result->hits->total, $size, $currentPage, $urlPattern);
 
                 $data['paginator'] = $paginator;
@@ -540,6 +585,15 @@ class Browse  extends CI_Controller
                 if($page < 0)
                     $page = 0;
             }
+            
+            $temp = $this->input->get('per_page',TRUE);
+            if(!is_null($temp))
+            {
+                $size = intval($temp);
+                if($size < 0)
+                    $size = 10;
+            }
+            
             $from = $page*$size;
 
            $sconfig = file_get_contents(getcwd()."/application/json_config/organism/organism_summary.json");
@@ -594,8 +648,14 @@ class Browse  extends CI_Controller
                     //echo $currentPage;
 
                     $urlPattern = $this->config->item('base_url').
-                            "/browse/organism/".$input."?page=";
+                            "/browse/organism/".$input."?per_page=".$size."&page=";
                     $data['urlPattern'] = $urlPattern;
+                    
+                    $results_per_pageURL = $this->config->item('base_url').
+                     "/browse/organism/".$input."?page=";
+                    $data['results_per_pageURL'] = $results_per_pageURL;
+                    
+                    
                     $paginator = new Paginator($result->hits->total, $size, $currentPage, $urlPattern);
 
                     $data['paginator'] = $paginator;

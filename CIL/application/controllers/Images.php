@@ -75,6 +75,13 @@ class Images  extends CI_Controller
             $urlPattern = $this->config->item('base_url').
                     "/images?k=".$queryString."&simple_search=Search&per_page=".$size."&page=";
             $data['urlPattern'] = $urlPattern;
+            
+            
+            $results_per_pageURL = $this->config->item('base_url').
+                     "/images?k=".$queryString."&simple_search=Search&&page=";
+            $data['results_per_pageURL'] = $results_per_pageURL;
+            
+            
             $paginator = new Paginator($result->hits->total, $size, $currentPage, $urlPattern);
             
             $data['paginator'] = $paginator;
