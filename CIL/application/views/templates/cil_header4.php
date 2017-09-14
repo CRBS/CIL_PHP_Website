@@ -85,7 +85,10 @@
         <script src="/old_cil/javascripts/all.js?<?php echo rand(100000,99999999);   ?>" type="text/javascript"></script>
         <script src="/old_cil/javascripts/jquery.jstree.js?<?php echo rand(100000,99999999);   ?>" type="text/javascript"></script>
         
-        
+        <!-----------Willy's customized js------------------------------>
+        <script src="/js/search_results.js?<?php echo uniqid();   ?>" type="text/javascript"></script>
+
+        <!-----------End Willy's customized js------------------------------>
         
         
                 <link rel="stylesheet" href="/css/cil.css?<?php echo rand(100000,99999999);   ?>"> 
