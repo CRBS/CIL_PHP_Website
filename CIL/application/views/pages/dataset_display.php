@@ -26,7 +26,7 @@
                 
               </div>
               <div class="col-md-12">
-                <a href="/pages/project_20269" target="_self"><h3>Human U2OS cells - compound cell-painting experiment</h3></a><br/>
+                <a href="/pages/project_20269" target="_self"><h3>Human U2OS cells - compound cell-painting experiment (375)</h3></a><br/>
               </div>
               <div class="col-md-12">
                         <b>Project ID:</b> P20269
@@ -63,7 +63,7 @@
                 //echo $project->Description;  ?></span>  -->
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="<?php echo "/project/".$project->ID; ?>" target="_self"><h3><?php echo $project->Name;  ?></h3></a>
+                        <a href="<?php echo "/project/".$project->ID; ?>" target="_self"><h3><?php echo $project->Name." (".$project->size.")";  ?></h3></a>
                     </div>
                     <div class="col-md-12">
                         <br/>
