@@ -1,13 +1,21 @@
 <div class="images">
 <div class="description">
 <!-- <h2 class='detailed_description'>Project -->
-<span class="cil_title2">Project
-<?php
+<span class="cil_title2">Project: <?php
     if(isset($result->CIL_CCDB->CCDB->Project->ID))
-        echo "(".$result->CIL_CCDB->CCDB->Project->ID.")";
-
+    {
+        //echo "(".$result->CIL_CCDB->CCDB->Project->ID.")";
+ ?>
+        <a href="<?php echo "/project/".$result->CIL_CCDB->CCDB->Project->ID; ?>" target="_self"><?php
+            echo $result->CIL_CCDB->CCDB->Project->ID;
+        ?></a>
+<?php
+    }
 ?>
 </span>
+
+
+
 <!-- </h2> -->
 <?php
 
