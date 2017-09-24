@@ -545,3 +545,5 @@ $config['advanced_search'] = "https://cilia.crbs.ucsd.edu/CIL_RS/index.php/rest/
 
 /* Elasticsearch prefix */
 $config['elasticsearchPrefix'] = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv8";
+
+$config['esOntoSuggest'] = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ontology/_suggest";

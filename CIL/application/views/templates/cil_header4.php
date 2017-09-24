@@ -55,20 +55,10 @@
 		<script src="/template/js/script.js"></script>
 
                 
-        <!--        
-        <link href="http://www.cellimagelibrary.org/stylesheets/all.css?1395102362" media="screen" rel="stylesheet" type="text/css" />
-        <link href="http://www.cellimagelibrary.org/stylesheets/reset.css?1325775274" media="print" rel="stylesheet" type="text/css" />
-        <link href="http://www.cellimagelibrary.org/stylesheets/960.css?1395102369" media="print" rel="stylesheet" type="text/css" />
-        <link href="http://www.cellimagelibrary.org/stylesheets/jquery.autocomplete.css?1325775274" media="print" rel="stylesheet" type="text/css" />
-        <link href="http://www.cellimagelibrary.org/stylesheets/grid.css?1325775274" media="print" rel="stylesheet" type="text/css" />
-        <link href="http://www.cellimagelibrary.org/stylesheets/typography.css?1325775274" media="print" rel="stylesheet" type="text/css" />
-        <link href="http://www.cellimagelibrary.org/stylesheets/buttons.css?1325775274" media="print" rel="stylesheet" type="text/css" />
-        <link href="http://www.cellimagelibrary.org/stylesheets/application.css?1325775274" media="print" rel="stylesheet" type="text/css" /> 
-        -->
         <link href="/old_cil/stylesheets/all.css?<?php echo rand(100000,99999999);   ?>" media="screen" rel="stylesheet" type="text/css" />
         <link href="/old_cil/stylesheets/reset.css?<?php echo rand(100000,99999999);   ?>" media="print" rel="stylesheet" type="text/css" />
         <link href="/old_cil/stylesheets/960.css?<?php echo rand(100000,99999999);   ?>" media="print" rel="stylesheet" type="text/css" />
-        <link href="/old_cil/stylesheets/jquery.autocomplete.css?<?php echo rand(100000,99999999);   ?>" media="print" rel="stylesheet" type="text/css" />
+        <!-- <link href="/old_cil/stylesheets/jquery.autocomplete.css?<?php  //echo rand(100000,99999999);   ?>" media="print" rel="stylesheet" type="text/css" /> -->
         <link href="/old_cil/stylesheets/grid.css?<?php echo rand(100000,99999999);   ?>" media="print" rel="stylesheet" type="text/css" />
         <link href="/old_cil/stylesheets/typography.css?<?php echo rand(100000,99999999);   ?>" media="print" rel="stylesheet" type="text/css" />
         <link href="/old_cil/stylesheets/buttons.css?<?php echo rand(100000,99999999);   ?>" media="print" rel="stylesheet" type="text/css" />
@@ -76,10 +66,6 @@
         
         
        
-        <!-- <script src="http://www.cellimagelibrary.org/javascripts/jquery-ui-1.8.16.custom.min.js?1325775274" type="text/javascript"></script>
-        <link href="http://www.cellimagelibrary.org/stylesheets/jquery-ui-1.8.16.custom.css?1325775274" media="screen" rel="stylesheet" type="text/css" />
-        <script src="http://www.cellimagelibrary.org/javascripts/all.js?1374879263" type="text/javascript"></script>
-        <script src="http://www.cellimagelibrary.org/javascripts/jquery.jstree.js?1325775274" type="text/javascript"></script>  -->
         <script src="/old_cil/javascripts/jquery-ui-1.8.16.custom.min.js?<?php echo rand(100000,99999999);   ?>" type="text/javascript"></script>
         <link href="/old_cil/stylesheets/jquery-ui-1.8.16.custom.css?<?php echo rand(100000,99999999);   ?>" media="screen" rel="stylesheet" type="text/css" />
         <script src="/old_cil/javascripts/all.js?<?php echo rand(100000,99999999);   ?>" type="text/javascript"></script>
@@ -87,7 +73,10 @@
         
         <!-----------Willy's customized js------------------------------>
         <script src="/js/search_results.js?<?php echo uniqid();   ?>" type="text/javascript"></script>
-
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <!-----------End Willy's customized js------------------------------>
         
         
@@ -98,7 +87,11 @@
                 <link rel="icon" href="/pix/favicon.ico" type="image/x-icon" />
                 <link rel="shortcut icon" href="/pix/favicon.ico" type="image/x-icon" />
 	</head>
-
+        
+ 
+        
+        
+        
 	<body>
 
 		<div class="row visible-print">
@@ -191,8 +184,42 @@
 
 								<!-- START CONTENT ITEM -->
                                                                 <form action="/images" method="get">
+                                                               <!-------------------------Autocomplete--------------------------------->
+    <script type="text/javascript">
+$( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#k" ).autocomplete({
+      source: availableTags
+    });
+  } );
+    </script>
+                                                               <!-------------------------End Autocomplete--------------------------------->
 								<div class="input-group form-search header-search">
-									<input name="k" id="k" class="form-control search-query" 
+									<input name="k" id="k" class="form-control search-query"  
+                                                                             
                                                                                type="text" placeholder="Search all images..." value="<?php   
                                                                                     if(isset($keywords))
                                                                                         echo $keywords;

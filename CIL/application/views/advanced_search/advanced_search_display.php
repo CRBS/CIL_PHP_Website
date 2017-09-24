@@ -67,18 +67,73 @@
                     </div>
                     
                 </div>
-                <div class="row" id="browse_header">
+                
+                <!-------------------------License---------------------------------------->
+                <div class="row top-buffer" id="browse_header">
         
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <span class="general_text">License </span>&nbsp;&nbsp;<a href="/pages/license">?</a>
 
                     </div>
-                    <div class="col-md-6 pull-right">
-
-                        
-                    </div>
 
                 </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        Public Domain&nbsp;&nbsp;<input id="public_domain" name="public_domain" type="checkbox" value="true">
+                    </div>
+                    <div class="col-md-3">
+                        Attribution By&nbsp;&nbsp;<input id="attribution_cc" name="attribution_cc" type="checkbox" value="true">
+                    </div>
+                    <div class="col-md-4">
+                        Attribution Non-Commercial&nbsp;&nbsp;<input id="attribution_nc_sa" name="attribution_nc_sa" type="checkbox" value="true">
+                    </div>
+                    <div class="col-md-2">
+                        Copyright&nbsp;&nbsp;<input id="copyright" name="copyright" type="checkbox" value="true">
+                    </div>
+                </div>
+                <!-------------------------End License---------------------------------------->
+                
+                
+                <!-------------------------Biology---------------------------------------->
+                <div class="row top-buffer" id="browse_header">
+                    <div class="col-md-12">
+                        <span class="general_text">Biology </span>
+                    </div>
+                </div>
+                <div class="row top-buffer">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                Biological Process
+                            </div>
+                            <div class="col-md-5">
+                                <input id="image_search_parms_biological_process" name="image_search_parms[biological_process]" style="width: 100%" type="text" value="" />
+                            </div>
+                            <div class="col-md-4">
+                                <a class='toggle' href='#biological_process_ontology_terms' id='biological_process_toggle'>Browse Terms</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+                <div class="row top-buffer">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                Cell Type
+                            </div>
+                            <div class="col-md-5">
+                                <input id="image_search_parms_cell_type" name="image_search_parms[cell_type]" style="width: 100%" type="text" value="" />
+                            </div>
+                            <div class="col-md-4">
+                                <a class='toggle' href='#cell_type_ontology_terms' id='cell_type_toggle'>Browse Terms</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row"><br/><br/><br/></div>
+                
         </div>
         <div class="col-md-6">
             
