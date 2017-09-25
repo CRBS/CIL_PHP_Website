@@ -58,7 +58,7 @@ class Autocomplete extends REST_Controller
          foreach($options as $option)
          {
              if(isset($option->text))
-                array_push($auto_results, $option->text);
+                array_push($auto_results, "\"".$option->text."\"");
          }
          $this->response($auto_results);
        }

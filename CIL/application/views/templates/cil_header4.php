@@ -186,35 +186,27 @@
                                                                 <form action="/images" method="get">
                                                                <!-------------------------Autocomplete--------------------------------->
     <script type="text/javascript">
-$( function() {
+/* $( function() {
     var availableTags = [
       "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
+      "AppleScript"
     ];
     $( "#k" ).autocomplete({
       source: availableTags
     });
-  } );
+  } ); */
+$( function() {
+$('#k').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/celltype/" + request.term, function (data) {
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
+ } );
+    
     </script>
                                                                <!-------------------------End Autocomplete--------------------------------->
 								<div class="input-group form-search header-search">
