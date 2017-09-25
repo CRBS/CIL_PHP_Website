@@ -130,8 +130,82 @@
                         </div>
                     </div>
                 </div>
-                
-                
+                <div class="row top-buffer">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                Cell Line
+                            </div>
+                            <div class="col-md-5">
+                                <input id="image_search_parms_cell_line" name="image_search_parms[cell_line]" style="width: 100%" type="text" value="" >
+                            </div>
+                            <div class="col-md-4">
+                                <a class="toggle" href="#cell_line_ontology_terms" id="cell_line_toggle">Browse Terms</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row top-buffer">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                Anatomical Entity
+                            </div>
+                            <div class="col-md-5">
+                                <input id="image_search_parms_foundational_model_anatomy" name="image_search_parms[foundational_model_anatomy]" style="width: 100%" type="text" value="">
+                            </div>
+                            <div class="col-md-4">
+                                <a class="toggle" href="#anatomical_entity_ontology_terms" id="anatomical_entity_toggle">Browse Terms</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row top-buffer">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                Cellular Component
+                            </div>
+                            <div class="col-md-5">
+                                <input id="image_search_parms_cellular_component" name="image_search_parms[cellular_component]" style="width: 100%" type="text" value="">
+                            </div>
+                            <div class="col-md-4">
+                                <a class="toggle" href="#cellular_component_ontology_terms" id="cellular_component_toggle">Browse Terms</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row top-buffer">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                Molecular Function
+                            </div>
+                            <div class="col-md-5">
+                                <input id="image_search_parms_molecular_function" name="image_search_parms[molecular_function]" style="width: 100%" type="text" value="">
+                            </div>
+                            <div class="col-md-4">
+                                <a class="toggle" href="#molecular_function_ontology_terms" id="molecular_function_toggle">Browse Terms</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row top-buffer">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3">
+                                NCBI Organism
+                            </div>
+                            <div class="col-md-5">
+                                <input id="image_search_parms_ncbi" name="image_search_parms[ncbi]" style="width: 100%" type="text" value="">
+                            </div>
+                            <div class="col-md-4">
+                                <a class="toggle" href="#ncbi_organism_ontology_terms" id="ncbi_organism_toggle">Browse Terms</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-------------------------End Biology---------------------------------------->
                 <div class="row"><br/><br/><br/></div>
                 
         </div>
