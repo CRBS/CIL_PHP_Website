@@ -199,6 +199,7 @@ $( function() {
 $('#k').autocomplete({
     source: function (request, response) {
         $.getJSON("/autocomplete/celltype/" + request.term, function (data) {
+           if(data.length > 0)
             response(data);
         });
     },
