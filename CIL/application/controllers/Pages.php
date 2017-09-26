@@ -29,6 +29,14 @@ class Pages  extends CI_Controller
         $this->load->view('templates/cil_footer2', $data);
     }
     
+    public function Help()
+    {
+        $data['test']="test";
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('pages/help_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+    }
+    
     public function Press()
     {
         $data['test']="test";

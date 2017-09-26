@@ -161,3 +161,23 @@
     -webkit-margin-end: 0px;
 }
 
+.faq_bold_font
+{
+    font-family: "DroidSansBold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: #000000;
+}
+
+
+.faq_regular_font
+{
+    font-family: "DroidSerifRegular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: #000000;
+}

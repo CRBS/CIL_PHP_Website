@@ -169,7 +169,7 @@
 									<ul class="nav navbar-nav">
                                                                                 <li><a href="/images/advanced_search">Advanced search</a></li>
 										<li><a href="/contributors">Contributors</a></li>
-										<li><a href="column2.html">Help</a></li>
+										<li><a href="/pages/help">Help</a></li>
                                                                                 <li><a href="/pages/contribute">Submit</a></li>
 										<li><a href="column2.html">Login</a></li>
 									</ul>
