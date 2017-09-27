@@ -23,6 +23,7 @@
         <div class="col-md-12">
             <span class="cil_title">Uploading Your Images</span>
             <span class="faq_regular_font">Please e-mail David Orloff at <a href="mailto: dorloff@ncmir.ucsd.edu">dorloff@ncmir.ucsd.edu</a> for assistance</span>
+            <p>&nbsp;</p>
         </div>
     </div>
     <div class="row top-buffer">
@@ -38,12 +39,14 @@
             <li class="faq_regular_font">Magnification of image (either a scale bar or a note with microns/pixel)</li>
             </ol>
             <p class="faq_regular_font">Please include your contact information to allow the annotators to get in touch with you if they have any further questions about the image. This contact information will not be made public.</p>
+            <p>&nbsp;</p>
         </div>
     </div>
     <div class="row top-buffer">
         <div class="col-md-12">
             <span class="cil_title">Submitting Your Images</span>
             <p class="faq_regular_font">Please visit our <a href="/pages/license">Licensing Page</a> for more information on submitting both published and unpublished images.</p>
+            <p>&nbsp;</p>
         </div>
     </div>
     <div class="row top-buffer">
@@ -52,6 +55,7 @@
             <p class="faq_regular_font">To cite original images, videos, and animations published in The Cell we suggest the following format:</p>
             <p>&nbsp;</p>
             <p class="faq_regular_font">Brandner, D. and Withers, G. (2010) Images of &lt;<em>description&nbsp;</em>&gt;.&nbsp;&nbsp;The Cell Image Library, <a href="/pages/contribute?href=www.cellimagelibrary.org">www.cellimagelibrary.org</a>, CIL numbers 10106, 10107, and 10108,&nbsp;ASCB.</p>
+            <p>&nbsp;</p>
         </div>
     </div>
     <div class="row top-buffer">

@@ -192,3 +192,19 @@
     line-height: 14px;
     color: #000000;
 }
+
+.cil_14_bold_font
+{
+    font-family: "DroidSansBold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+}
+
+
+.cil_black_border
+{
+    border:1px solid black;
+}

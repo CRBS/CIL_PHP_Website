@@ -53,7 +53,13 @@ class Pages  extends CI_Controller
         $this->load->view('templates/cil_footer2', $data);
     }
     
-
+    public function Assist()
+    {
+        $data['test']="test";
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('pages/assist_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+    }
     
     
     public function Notification()
