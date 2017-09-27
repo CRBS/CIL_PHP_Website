@@ -46,13 +46,6 @@
        <div class="col-md-1">
         </div>
         <div class="col-md-5 pull-left">
-            <!-- <div class="assist_power_point_div">
-            <div class="assist_image_title_div">
-            <span class="assist_title_span">PowerPoint™ Slide</span>
-            <div class="assist_download_anchor"><a class="assist_download_anchor" href="/docs/TheCellAnImageLibrary.ppt" target="_blank">(Download PowerPoint™ slide)</a></div>
-            </div>
-            <img height="300px" src="/pix/cell_image_powerpoint_slide.jpg" width="400px">
-            </div> -->
             <div class="row cil_black_border">
                 <div class="col-md-12">
                     <br/>
