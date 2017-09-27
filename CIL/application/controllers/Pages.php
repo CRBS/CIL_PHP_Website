@@ -53,6 +53,9 @@ class Pages  extends CI_Controller
         $this->load->view('templates/cil_footer2', $data);
     }
     
+
+    
+    
     public function Notification()
     {
         $data['test']="test";
