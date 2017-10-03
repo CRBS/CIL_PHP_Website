@@ -101,4 +101,12 @@ class Pages  extends CI_Controller
         $this->load->view('pages/search_help_display', $data);
         $this->load->view('templates/cil_footer2', $data);
     }
+    
+    public function Guest()
+    {
+        $data['test']="test";
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('pages/guest_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+    }
 }

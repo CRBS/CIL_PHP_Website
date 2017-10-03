@@ -124,7 +124,15 @@ class Images  extends CI_Controller
             
             //echo "<br/><br/>".$response;
             $result = json_decode($response);
-            
+            if(isset($result->error))
+            {
+                $data['result'] = $result;
+                $data['keywords']=$keywords;
+                $this->load->view('templates/cil_header4', $data);
+                $this->load->view('search/search_error_display', $data);
+                $this->load->view('templates/cil_footer2', $data);
+                return;
+            }
             
             
             $data['page_num'] = $page;
