@@ -3,11 +3,11 @@
         <div class="col-md-2">
             
             <ol>
-            <li><a class="survey_plain" href="#licensing_policy">Licensing Policy</a></li>
-            <li><a class="survey_plain" href="#published_images">Published Images</a></li>
-            <li><a class="survey_plain" href="#unpublished_images">Unpublished Images</a></li>
-            <li><a class="survey_plain" href="#licenses">Licenses</a></li>
-            <li><a class="survey_plain" href="#disclaimer">Disclaimer</a></li>
+            <li><a class="survey_plain faq_regular_font" href="#licensing_policy">Licensing Policy</a></li>
+            <li><a class="survey_plain faq_regular_font" href="#published_images">Published Images</a></li>
+            <li><a class="survey_plain faq_regular_font" href="#unpublished_images">Unpublished Images</a></li>
+            <li><a class="survey_plain faq_regular_font" href="#licenses">Licenses</a></li>
+            <li><a class="survey_plain faq_regular_font" href="#disclaimer">Disclaimer</a></li>
             </ol>
             
         </div>

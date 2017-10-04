@@ -185,14 +185,20 @@ class Autocomplete extends REST_Controller
        else
        {
          $auto_results = array();
+         $uniqueKeys = array();
          foreach($options as $option)
          {
              if(isset($option->text))
              {
                 if($advanced)
                    array_push($auto_results, $option->text." [".$option->_source->Onto_id."]");
-                else
+                else if(!array_key_exists($option->text,$uniqueKeys))
+                {
                    array_push($auto_results, $option->text);
+                   $uniqueKeys[$option->text] = $option->text;
+                           
+                           
+                }
                     
                 
              }

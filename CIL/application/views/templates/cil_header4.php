@@ -185,16 +185,7 @@
 								<!-- START CONTENT ITEM -->
                                                                 <form action="/images" method="get">
                                                                <!-------------------------Autocomplete--------------------------------->
-    <script type="text/javascript">
-/* $( function() {
-    var availableTags = [
-      "ActionScript",
-      "AppleScript"
-    ];
-    $( "#k" ).autocomplete({
-      source: availableTags
-    });
-  } ); */
+<script type="text/javascript">
 $( function() {
 $('#k').autocomplete({
     source: function (request, response) {
@@ -207,8 +198,7 @@ $('#k').autocomplete({
     
 });
  } );
-    
-    </script>
+</script>
                                                                <!-------------------------End Autocomplete--------------------------------->
 								<div class="input-group form-search header-search">
 									<input name="k" id="k" class="form-control search-query"  

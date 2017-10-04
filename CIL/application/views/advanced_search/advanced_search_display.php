@@ -1,5 +1,11 @@
 <div class="container">
     <div class="row">
+        <div class="col-md-12">
+            <!-- <div class="alert alert-warning"><button type="button" class="close" data-dismiss="alert">×</button>Now special <strong> only € 5,- </strong> express delivery!</div> -->
+            <div class="alert alert-warning">The advanced search is not functional yet!</div>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-6">
             
                 <div class="row" id="browse_header">
@@ -17,11 +23,12 @@
 
                 </div>
                 <div class="row top-buffer">
-                    <div class="col-md-3">General Keywords</div>
-                    <div class="col-md-6 pull-left">
-                        <input id="k_adv" name="k" style="width:100%" type="text" >
-                    </div>
-                    <div class="col-md-3"></div>
+                    
+                            <div class="col-md-3">General Keywords</div>
+                            <div class="col-md-6 pull-left">
+                                <input id="k_adv" name="k" style="width: 100%" type="text" value="">
+                            </div>
+                            <div class="col-md-3"></div>
                 </div>
                 <div class="row" id="browse_header">
                     <div class="col-md-12">
