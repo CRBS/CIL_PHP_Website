@@ -5,7 +5,7 @@ require_once 'CILServiceUtil2.php';
 require_once 'GeneralUtil.php';
 class Autocomplete extends REST_Controller
 {
-   public function celltype_get($prefix="") 
+   public function cell_types_get($prefix="") 
    {
         $query = "{\n".
                     "\"term_suggest\":{"."\n".
@@ -39,6 +39,19 @@ class Autocomplete extends REST_Controller
                         "\"text\":\"".$prefix."\","."\n".
                         "\"completion\": {"."\n".
                         "\"field\" : \"Biological_processes_suggest\""."\n".
+                        "}".
+                    "}\n".
+                "}";
+        $this->handleAutoComplete($prefix, $query);
+   }
+   
+   public function anatomical_entities_get($prefix="")
+   {
+       $query = "{\n".
+                    "\"term_suggest\":{"."\n".
+                        "\"text\":\"".$prefix."\","."\n".
+                        "\"completion\": {"."\n".
+                        "\"field\" : \"Anatomical_entities_suggest\""."\n".
                         "}".
                     "}\n".
                 "}";

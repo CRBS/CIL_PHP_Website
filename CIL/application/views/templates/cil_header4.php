@@ -16,8 +16,8 @@
                         echo "The Cell Image Library";
                 
                 ?></title>
-		<meta name="description" content="Page description here">
-		<meta name="author" content="BigBase - D. Tiems">
+		<meta name="description" content="The Cell Image Library">
+		<meta name="author" content="Willy W. Wong">
 		<meta name="viewport" content="width=device-width">
                 
                 	<!-- CSS Global Compulsory -->
@@ -73,6 +73,7 @@
         
         <!-----------Willy's customized js------------------------------>
         <script src="/js/search_results.js?<?php echo uniqid();   ?>" type="text/javascript"></script>
+        <script src="/js/cil_autocomplete.js?<?php echo uniqid();   ?>" type="text/javascript"></script>
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
