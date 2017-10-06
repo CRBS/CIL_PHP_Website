@@ -23,6 +23,11 @@ $(function() {
       }
     }
   });
+    $('#biological_tree_container').on("changed.jstree", function (e, data) {
+    console.log(data.instance.get_selected(true)[0].text);
+    //console.log(data.instance.get_node(data.selected[0]).text);
+        document.getElementById('image_search_parms_biological_process').value = data.instance.get_selected(true)[0].text;
+  });
 });
 </script>
 
