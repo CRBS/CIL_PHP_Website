@@ -549,3 +549,12 @@ $config['elasticsearchPrefix'] = "http://stretch.crbs.ucsd.edu:9200/ccdbv8";
 
 //$config['esOntoSuggest'] = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ontology/_suggest";
 $config['esOntoSuggest'] = "http://stretch.crbs.ucsd.edu:9200/ontology/_suggest";
+
+
+
+/***********Ontology related**********************/
+$config["ontology_prefix"] = "http://stretch.crbs.ucsd.edu:9200/ontology";
+$config["biological_process_root"] = "GO_0008150";
+$config["biological_processes_type"] = "biological_processes";
+
+/***********End ontology related*****************/

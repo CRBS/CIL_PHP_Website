@@ -117,7 +117,7 @@
                                 <input id="image_search_parms_biological_process" name="image_search_parms[biological_process]" style="width: 100%" type="text" value="" />
                             </div>
                             <div class="col-md-4">
-                                <a class='toggle' href='#biological_process_ontology_terms' id='biological_process_toggle'>Browse Terms</a>
+                                <a  data-toggle="modal" data-target="#biological_process_modal" class='toggle' href='#biological_process_ontology_terms' id='biological_process_toggle'>Browse Terms</a>
                             </div>
                         </div>
                     </div>
@@ -221,5 +221,6 @@
             
         </div>
     </div>
+    <?php include_once 'biological_process_modal.php' ?>
 </div>
 
