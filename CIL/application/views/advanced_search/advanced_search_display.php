@@ -132,7 +132,7 @@
                                 <input id="image_search_parms_cell_type" name="image_search_parms[cell_type]" style="width: 100%" type="text" value="" />
                             </div>
                             <div class="col-md-4">
-                                <a class='toggle' href='#cell_type_ontology_terms' id='cell_type_toggle'>Browse Terms</a>
+                                <a data-toggle="modal" data-target="#cell_type_modal" class='toggle' href='#cell_type_ontology_terms' id='cell_type_toggle'>Browse Terms</a>
                             </div>
                         </div>
                     </div>
@@ -222,5 +222,6 @@
         </div>
     </div>
     <?php include_once 'biological_process_modal.php' ?>
+    <?php include_once 'cell_type_modal.php' ?>
 </div>
 

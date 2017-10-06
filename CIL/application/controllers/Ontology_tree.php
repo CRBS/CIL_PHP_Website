@@ -14,7 +14,6 @@ class Ontology_tree extends REST_Controller
         {
             $id = $temp;
         }
-       
        $urlPrefix = $this->config->item("ontology_prefix");
        $type = $this->config->item("biological_processes_type");
        if(strcmp($id, "")==0 || strcmp($id, "#")==0)
@@ -24,11 +23,29 @@ class Ontology_tree extends REST_Controller
        //echo $url;
         $json = $this->handleTreeRequest($url);
         $result = $this->convertJSON($json);
-       
-       //$result = $this->debug_input($url);
+        //$result = $this->debug_input($url);
         $this->response($result);
+   }
+   
+   public function cell_types_get()
+   {
+              $id="";
+       $temp = $this->input->get('id',TRUE);
+        if(!is_null($temp) && strlen($temp) > 0)
+        {
+            $id = $temp;
+        }
+       $urlPrefix = $this->config->item("ontology_prefix");
+       $type = $this->config->item("cell_types_type");
+       if(strcmp($id, "")==0 || strcmp($id, "#")==0)
+         $id = $this->config->item("cell_type_root");
        
-       
+       $url = $urlPrefix."/".$type."/".$id;
+       //echo $url;
+        $json = $this->handleTreeRequest($url);
+        $result = $this->convertJSON($json);
+        //$result = $this->debug_input($url);
+        $this->response($result);
    }
    
    private function debug_input($url)

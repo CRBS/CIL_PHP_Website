@@ -557,4 +557,6 @@ $config["ontology_prefix"] = "http://stretch.crbs.ucsd.edu:9200/ontology";
 $config["biological_process_root"] = "GO_0008150";
 $config["biological_processes_type"] = "biological_processes";
 
+$config['cell_type_root'] = "CL_0000000";
+$config['cell_types_type'] = "cell_types";
 /***********End ontology related*****************/

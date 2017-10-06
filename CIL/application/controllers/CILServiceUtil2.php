@@ -205,14 +205,14 @@ class CILServiceUtil2
        return $status;
     }
     
-    
-    function get_ontology_term($type,$onto_id)
+    //Unused
+    /*function get_ontology_term($type,$onto_id)
     {
         $CI = CI_Controller::get_instance();
         $url = $CI->config->item('ontology_prefix')."/".$type."/".$onto_id;
         return $this->just_curl_get($url);
         
-    }
+    }*/
     
     
 }
