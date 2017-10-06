@@ -29,7 +29,7 @@ class Ontology_tree extends REST_Controller
    
    public function cell_types_get()
    {
-              $id="";
+       $id="";
        $temp = $this->input->get('id',TRUE);
         if(!is_null($temp) && strlen($temp) > 0)
         {
@@ -44,7 +44,26 @@ class Ontology_tree extends REST_Controller
        //echo $url;
         $json = $this->handleTreeRequest($url);
         $result = $this->convertJSON($json);
-        //$result = $this->debug_input($url);
+        $this->response($result);
+   }
+   
+   public function cellular_components_get()
+   {
+       $id="";
+       $temp = $this->input->get('id',TRUE);
+        if(!is_null($temp) && strlen($temp) > 0)
+        {
+            $id = $temp;
+        }
+       $urlPrefix = $this->config->item("ontology_prefix");
+       $type = $this->config->item("cellular_components_type");
+       if(strcmp($id, "")==0 || strcmp($id, "#")==0)
+         $id = $this->config->item("cellular_component_root");
+       
+       $url = $urlPrefix."/".$type."/".$id;
+       //echo $url;
+        $json = $this->handleTreeRequest($url);
+        $result = $this->convertJSON($json);
         $this->response($result);
    }
    

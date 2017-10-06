@@ -554,9 +554,15 @@ $config['esOntoSuggest'] = "http://stretch.crbs.ucsd.edu:9200/ontology/_suggest"
 
 /***********Ontology related**********************/
 $config["ontology_prefix"] = "http://stretch.crbs.ucsd.edu:9200/ontology";
-$config["biological_process_root"] = "GO_0008150";
+$config['biological_process_root'] = "GO_0008150";
 $config["biological_processes_type"] = "biological_processes";
 
 $config['cell_type_root'] = "CL_0000000";
 $config['cell_types_type'] = "cell_types";
+
+$config['cellular_component_root'] = "GO_0005575";
+$config['cellular_components_type'] = "cellular_components";
+
+$config['anatomical_entity_root'] = "FMA_61775";
+$config['anatomical_entities_type'] = "anatomical_entities";
 /***********End ontology related*****************/

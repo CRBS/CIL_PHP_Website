@@ -177,7 +177,7 @@
                                 <input id="image_search_parms_cellular_component" name="image_search_parms[cellular_component]" style="width: 100%" type="text" value="">
                             </div>
                             <div class="col-md-4">
-                                <a class="toggle" href="#cellular_component_ontology_terms" id="cellular_component_toggle">Browse Terms</a>
+                                <a data-toggle="modal" data-target="#cellular_component_modal" class="toggle" href="#cellular_component_ontology_terms" id="cellular_component_toggle">Browse Terms</a>
                             </div>
                         </div>
                     </div>
@@ -223,5 +223,6 @@
     </div>
     <?php include_once 'biological_process_modal.php' ?>
     <?php include_once 'cell_type_modal.php' ?>
+    <?php include_once 'cellular_component_modal.php' ?>
 </div>
 
