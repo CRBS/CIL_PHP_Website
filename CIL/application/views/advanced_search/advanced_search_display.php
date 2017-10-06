@@ -162,7 +162,7 @@
                                 <input id="image_search_parms_foundational_model_anatomy" name="image_search_parms[foundational_model_anatomy]" style="width: 100%" type="text" value="">
                             </div>
                             <div class="col-md-4">
-                                <a class="toggle" href="#anatomical_entity_ontology_terms" id="anatomical_entity_toggle">Browse Terms</a>
+                                <a data-toggle="modal" data-target="#anatomical_entity_modal" class="toggle" href="#anatomical_entity_ontology_terms" id="anatomical_entity_toggle">Browse Terms</a>
                             </div>
                         </div>
                     </div>
@@ -224,5 +224,6 @@
     <?php include_once 'biological_process_modal.php' ?>
     <?php include_once 'cell_type_modal.php' ?>
     <?php include_once 'cellular_component_modal.php' ?>
+    <?php include_once 'anatomical_entity_modal.php' ?>
 </div>
 

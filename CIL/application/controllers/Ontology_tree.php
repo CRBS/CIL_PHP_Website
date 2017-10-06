@@ -67,6 +67,26 @@ class Ontology_tree extends REST_Controller
         $this->response($result);
    }
    
+   public function anatomical_entities_get()
+   {
+       $id="";
+       $temp = $this->input->get('id',TRUE);
+        if(!is_null($temp) && strlen($temp) > 0)
+        {
+            $id = $temp;
+        }
+       $urlPrefix = $this->config->item("ontology_prefix");
+       $type = $this->config->item("anatomical_entities_type");
+       if(strcmp($id, "")==0 || strcmp($id, "#")==0)
+         $id = $this->config->item("anatomical_entity_root");
+       
+       $url = $urlPrefix."/".$type."/".$id;
+       //echo $url;
+        $json = $this->handleTreeRequest($url);
+        $result = $this->convertJSON($json);
+        $this->response($result);
+   }
+   
    private function debug_input($url)
    {
       $main = array();
