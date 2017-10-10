@@ -7,3 +7,33 @@ function setCookie(cname, cvalue, exdays)
 }
 
 
+function openOrCloseImagingMethods() 
+{
+    var x = document.getElementById("ImagingMethods");
+    if (x.style.display === "none") 
+    {
+        x.style.display = "block";
+        document.getElementById("ImagingMethodsShowOptionsLink").innerHTML = "Hide options";
+    } 
+    else 
+    {
+        x.style.display = "none";
+        document.getElementById("ImagingMethodsShowOptionsLink").innerHTML = "Show options";
+    }
+}
+
+function openOrCloseAnatomy()
+{
+    var x = document.getElementById("Anatomy");
+    if (x.style.display === "none") 
+    {
+        x.style.display = "block";
+        document.getElementById("anatomyShowOptionsLink").innerHTML = "Hide options";
+    } 
+    else 
+    {
+        x.style.display = "none";
+        document.getElementById("anatomyShowOptionsLink").innerHTML = "Show options";
+    }
+    
+}

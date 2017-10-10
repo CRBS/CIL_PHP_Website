@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-12">
             <!-- <div class="alert alert-warning"><button type="button" class="close" data-dismiss="alert">×</button>Now special <strong> only € 5,- </strong> express delivery!</div> -->
-            <div class="alert alert-warning">The advanced search is not functional yet!</div>
+            <div class="alert alert-warning">The advanced search is not fully functional yet!</div>
         </div>
     </div>
     <div class="row">
@@ -79,7 +79,7 @@
                 <div class="row top-buffer" id="browse_header">
         
                     <div class="col-md-12">
-                        <span class="general_text">License </span>&nbsp;&nbsp;<a href="/pages/license">?</a>
+                        <span class="cil_18_regular_font">License </span>&nbsp;&nbsp;<a href="/pages/license">?</a>
 
                     </div>
 
@@ -100,11 +100,16 @@
                 </div>
                 <!-------------------------End License---------------------------------------->
                 
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
                 
                 <!-------------------------Biology---------------------------------------->
                 <div class="row top-buffer" id="browse_header">
                     <div class="col-md-12">
-                        <span class="general_text">Biology </span>
+                        <span class="cil_18_regular_font">Biology </span>
                     </div>
                 </div>
                 <div class="row top-buffer">
@@ -213,6 +218,22 @@
                     </div>
                 </div>
                 <!-------------------------End Biology---------------------------------------->
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+                <?php include_once 'imaging_methods.php' ?>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+                <?php include_once 'anatomy.php' ?>
+                
+                
                 <div class="row"><br/><br/><br/></div>
                 
         </div>
