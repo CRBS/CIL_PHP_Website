@@ -19,6 +19,7 @@ class Images  extends CI_Controller
         $data['keywords'] = $keywords;
         $queryString = urlencode($keywords);
         $simple_search = $this->input->get('simple_search',TRUE);
+        $adv_search = $this->input->get('advanced_search',TRUE);
         $page = 0;
         $size = 10;
         
@@ -210,6 +211,38 @@ class Images  extends CI_Controller
             $this->load->view('templates/cil_footer2', $data);
              
         }
+        else if(!is_null($adv_search))
+        {
+            $array = $this->handleAdvSearchInputs($this->input);
+            var_dump($array);
+            $this->load->view('templates/cil_header4', $data);
+            $this->load->view('advanced_search/results/adv_search_results', $data);
+            $this->load->view('templates/cil_footer2', $data);
+        }
+    }
+    
+
+    private function handleAdvSearchInputs($input)
+    {
+        $array = array();
+        $temp = $input->get('k',TRUE);
+        if(!is_null($temp))
+        {
+            $array['k'] = trim($temp);
+        }
+        
+        
+        $temp = $input->get('basic_still',TRUE);
+        if(!is_null($temp))
+        {
+            if(strcmp($temp, strtolower("true"))==0)
+            {
+                $basic_still = true;
+                $data['basic_still'] = true;
+            }
+        }
+        
+        return $array;
     }
     
     public function view($imageID)

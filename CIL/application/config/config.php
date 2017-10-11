@@ -566,4 +566,8 @@ $config['cellular_components_type'] = "cellular_components";
 
 $config['anatomical_entity_root'] = "FMA_61775";
 $config['anatomical_entities_type'] = "anatomical_entities";
+
+$config['ncbi_organism_root'] =  "NCBITaxon_131567";
+$config['ncbi_organism_type'] = "ncbi_organism";
+
 /***********End ontology related*****************/

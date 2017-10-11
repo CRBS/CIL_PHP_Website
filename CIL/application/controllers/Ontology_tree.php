@@ -87,6 +87,27 @@ class Ontology_tree extends REST_Controller
         $this->response($result);
    }
    
+   public function ncbi_organism_get()
+   {
+       $id="";
+       $temp = $this->input->get('id',TRUE);
+        if(!is_null($temp) && strlen($temp) > 0)
+        {
+            $id = $temp;
+        }
+       $urlPrefix = $this->config->item("ontology_prefix");
+       $type = $this->config->item("ncbi_organism_type");
+       if(strcmp($id, "")==0 || strcmp($id, "#")==0)
+         $id = $this->config->item("ncbi_organism_root");
+       
+       $url = $urlPrefix."/".$type."/".$id;
+        
+        $json = $this->handleTreeRequest($url);
+        $result = $this->convertJSON($json);
+        //$result = $this->debug_input($url);
+        $this->response($result);
+   }
+   
    private function debug_input($url)
    {
       $main = array();

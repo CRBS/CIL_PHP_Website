@@ -59,6 +59,19 @@ class Autocomplete extends REST_Controller
    }
    
    
+   public function ncbi_organism_get($prefix="")
+   {
+       $query = "{\n".
+                    "\"term_suggest\":{"."\n".
+                        "\"text\":\"".$prefix."\","."\n".
+                        "\"completion\": {"."\n".
+                        "\"field\" : \"NCBI_organism_suggest\""."\n".
+                        "}".
+                    "}\n".
+                "}";
+        $this->handleAutoComplete($prefix, $query);
+   }
+   
    
    public function general_terms_get($prefix="")
    {
