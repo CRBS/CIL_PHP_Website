@@ -570,4 +570,6 @@ $config['anatomical_entities_type'] = "anatomical_entities";
 $config['ncbi_organism_root'] =  "NCBITaxon_131567";
 $config['ncbi_organism_type'] = "ncbi_organism";
 
+$config['molecular_function_root'] = "GO_0003674";
+$config['molecular_functions_type'] = "molecular_functions";
 /***********End ontology related*****************/

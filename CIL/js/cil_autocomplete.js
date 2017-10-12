@@ -65,6 +65,17 @@ $('#image_search_parms_ncbi').autocomplete({
     
 });
 
+$('#image_search_parms_molecular_function').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/molecular_functions/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
+
 
 } );
 

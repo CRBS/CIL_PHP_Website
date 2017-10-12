@@ -89,7 +89,7 @@
                                 <input id="image_search_parms_molecular_function" name="image_search_parms[molecular_function]" style="width: 100%" type="text" value="">
                             </div>
                             <div class="col-md-4">
-                                <a class="toggle" href="#molecular_function_ontology_terms" id="molecular_function_toggle">Browse Terms</a>
+                                <a data-toggle="modal" data-target="#molecular_function_modal" class="toggle" href="#molecular_function_ontology_terms" id="molecular_function_toggle">Browse Terms</a>
                             </div>
                         </div>
                     </div>
