@@ -129,6 +129,26 @@ class Ontology_tree extends REST_Controller
         $this->response($result);
    }
    
+   public function cell_lines_get()
+   {
+       $id="";
+       $temp = $this->input->get('id',TRUE);
+        if(!is_null($temp) && strlen($temp) > 0)
+        {
+            $id = $temp;
+        }
+       $urlPrefix = $this->config->item("ontology_prefix");
+       $type = $this->config->item("cell_lines_type");
+       if(strcmp($id, "")==0 || strcmp($id, "#")==0)
+         $id = $this->config->item("cell_line_root");
+       
+       $url = $urlPrefix."/".$type."/".$id;
+        
+        $json = $this->handleTreeRequest($url);
+        $result = $this->convertJSON($json);
+        //$result = $this->debug_input($url);
+        $this->response($result);
+   }
    
    
    private function debug_input($url)

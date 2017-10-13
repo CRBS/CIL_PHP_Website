@@ -76,6 +76,18 @@ $('#image_search_parms_molecular_function').autocomplete({
     
 });
 
+$('#image_search_parms_cell_line').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/cell_lines/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
+
+
 
 } );
 

@@ -572,4 +572,7 @@ $config['ncbi_organism_type'] = "ncbi_organism";
 
 $config['molecular_function_root'] = "GO_0003674";
 $config['molecular_functions_type'] = "molecular_functions";
+
+$config['cell_line_root'] = "MCC_A";
+$config['cell_lines_type'] = "cell_lines";
 /***********End ontology related*****************/

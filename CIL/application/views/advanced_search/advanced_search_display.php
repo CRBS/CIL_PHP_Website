@@ -127,6 +127,7 @@
     <?php include_once 'anatomical_entity_modal.php'; ?>
     <?php include_once 'ncbi_organism_modal.php'; ?>
     <?php include_once 'molecular_function_modal.php'; ?>
+    <?php include_once 'cell_line_modal.php'; ?>
 </div>
 </form>
 

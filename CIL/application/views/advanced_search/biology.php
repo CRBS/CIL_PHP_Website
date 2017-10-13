@@ -44,7 +44,7 @@
                                 <input id="image_search_parms_cell_line" name="image_search_parms[cell_line]" style="width: 100%" type="text" value="" >
                             </div>
                             <div class="col-md-4">
-                                <a class="toggle" href="#cell_line_ontology_terms" id="cell_line_toggle">Browse Terms</a>
+                                <a data-toggle="modal" data-target="#cell_line_modal" class="toggle" href="#cell_line_ontology_terms" id="cell_line_toggle">Browse Terms</a>
                             </div>
                         </div>
                     </div>
