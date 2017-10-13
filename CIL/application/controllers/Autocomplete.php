@@ -99,6 +99,20 @@ class Autocomplete extends REST_Controller
    }
    
    
+   public function imaging_methods_get($prefix="")
+   {
+       $query = "{\n".
+                    "\"term_suggest\":{"."\n".
+                        "\"text\":\"".$prefix."\","."\n".
+                        "\"completion\": {"."\n".
+                        "\"field\" : \"Imaging_method_suggest\""."\n".
+                        "}".
+                    "}\n".
+                "}";
+        $this->handleAutoComplete($prefix, $query);
+   }
+   
+   
    public function general_terms_get($prefix="")
    {
        $query = "{\n".

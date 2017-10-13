@@ -575,4 +575,13 @@ $config['molecular_functions_type'] = "molecular_functions";
 
 $config['cell_line_root'] = "MCC_A";
 $config['cell_lines_type'] = "cell_lines";
+
+$config['item_type_root'] = "FBbi_00000222";
+$config['item_types_type'] = "imaging_methods";
+
+$image_mode_roots = array();
+array_push($image_mode_roots, "FBbi_00000222");
+array_push($image_mode_roots, "FBbi_00000001");
+$config['image_mode_root'] = $image_mode_roots;
+$config['image_modes_type']= "imaging_methods";
 /***********End ontology related*****************/

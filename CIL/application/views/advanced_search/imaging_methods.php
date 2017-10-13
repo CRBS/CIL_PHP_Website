@@ -23,7 +23,7 @@
                                 <input id="image_search_parms_item_type_bim" name="image_search_parms[item_type_bim]" style="width: 100%" type="text" value="" class="acInput">
                             </div>
                             <div class="col-md-4">
-                                <a class="toggle" href="#item_type_ontology_terms" id="item_type_toggle">Browse Terms</a>
+                                <a data-toggle="modal" data-target="#item_type_modal" class="toggle" href="#item_type_ontology_terms" id="item_type_toggle">Browse Terms</a>
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@
                                 <input id="image_search_parms_image_mode_bim" name="image_search_parms[image_mode_bim]" style="width: 100%" type="text" value="" class="acInput">
                             </div>
                             <div class="col-md-4">
-                                <a class="toggle" href="#image_mode_ontology_terms" id="image_mode_toggle">Browse Terms</a>
+                                <a data-toggle="modal" data-target="#image_mode_modal" class="toggle" href="#image_mode_ontology_terms" id="image_mode_toggle">Browse Terms</a>
                             </div>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <!-- <div class="col-md-12">
                         <div class="row top-buffer">
                             <div class="col-md-3">
                                 Identity
@@ -130,7 +130,7 @@
                                 <a class="toggle" href="#identity_ontology_terms" id="identity_toggle">Browse Terms</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     
                 </div>
                 

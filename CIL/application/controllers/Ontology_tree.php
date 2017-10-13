@@ -150,6 +150,64 @@ class Ontology_tree extends REST_Controller
         $this->response($result);
    }
    
+   public function item_types_get()
+   {
+       $id="";
+       $temp = $this->input->get('id',TRUE);
+        if(!is_null($temp) && strlen($temp) > 0)
+        {
+            $id = $temp;
+        }
+       $urlPrefix = $this->config->item("ontology_prefix");
+       $type = $this->config->item("item_types_type");
+       if(strcmp($id, "")==0 || strcmp($id, "#")==0)
+         $id = $this->config->item("item_type_root");
+       
+       $url = $urlPrefix."/".$type."/".$id;
+        
+        $json = $this->handleTreeRequest($url);
+        $result = $this->convertJSON($json);
+        //$result = $this->debug_input($url);
+        $this->response($result);
+   }
+   
+   
+   public function image_modes_get()
+   {
+       $id="";
+       $result = NULL;
+       $temp = $this->input->get('id',TRUE);
+        if(!is_null($temp) && strlen($temp) > 0)
+        {
+            $id = $temp;
+        }
+       $urlPrefix = $this->config->item("ontology_prefix");
+       $type = $this->config->item("image_modes_type");
+       if(strcmp($id, "")==0 || strcmp($id, "#")==0)
+       {
+          $roots = $this->config->item("image_mode_root");
+          $main = array();
+          foreach($roots as $id)
+          {
+              $url = $urlPrefix."/".$type."/".$id;
+              $json = $this->handleTreeRequest($url);
+              $element = $this->convertElementArray($json);
+              array_push($main, $element);
+              $string_result = json_encode($main);
+              $result = json_decode($string_result);
+          }
+       }
+       else 
+       {
+            $url = $urlPrefix."/".$type."/".$id;
+        
+            $json = $this->handleTreeRequest($url);
+            $result = $this->convertJSON($json);
+       }
+        $this->response($result);
+   }
+   
+   
    
    private function debug_input($url)
    {
@@ -173,6 +231,39 @@ class Ontology_tree extends REST_Controller
   ]
 }]
     */
+   private function convertElementArray($json)
+   {
+      
+      $array = array();
+      
+      
+      $id = $json->_source->Onto_id;
+      $id = str_replace(":","_",$id);
+      $name =  $json->_source->Name;
+      $array["id"] = $id;
+      $array["text"]= $name;
+      
+      $ochildren = array();
+      if(isset($json->_source->Onto_children))
+        $ochildren = $json->_source->Onto_children;
+      
+      $childrenArray = array();
+      foreach($ochildren as $ochild)
+      {
+         $node = array();
+         $node['id'] =  str_replace(":","_",$ochild->Onto_id);
+         $node['text'] = $ochild->Onto_name;
+         $node['children'] = true;
+         array_push($childrenArray,$node);
+      }
+      $array['children'] =$childrenArray;
+      
+      
+      return $array;
+      //;
+   }
+   
+   
    
    private function convertJSON($json)
    {

@@ -121,6 +121,8 @@
             
         </div>
     </div>
+    
+    <!------biology modal-------------->
     <?php include_once 'biological_process_modal.php'; ?>
     <?php include_once 'cell_type_modal.php'; ?>
     <?php include_once 'cellular_component_modal.php'; ?>
@@ -128,6 +130,13 @@
     <?php include_once 'ncbi_organism_modal.php'; ?>
     <?php include_once 'molecular_function_modal.php'; ?>
     <?php include_once 'cell_line_modal.php'; ?>
+    <!------End biology modal-------------->
+    
+    <!------Imaging method modal-------------->
+    <?php include_once 'item_type_modal.php'; ?>
+    <?php include_once 'image_mode_modal.php'; ?>
+    <!------End imaging method modal-------------->
+    
 </div>
 </form>
 

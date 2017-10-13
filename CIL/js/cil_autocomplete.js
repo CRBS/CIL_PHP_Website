@@ -87,7 +87,96 @@ $('#image_search_parms_cell_line').autocomplete({
     
 });
 
+$('#image_search_parms_item_type_bim').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/imaging_methods/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
 
+
+$('#image_search_parms_image_mode_bim').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/imaging_methods/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
+
+$('#image_search_parms_visualization_methods_bim').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/imaging_methods/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
+
+$('#image_search_parms_source_of_contrast_bim').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/imaging_methods/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
+
+
+$('#image_search_parms_relation_to_intact_cell_bim').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/imaging_methods/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
+
+$('#image_search_parms_processing_history_bim').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/imaging_methods/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
+
+
+$('#image_search_parms_preparation_bim').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/imaging_methods/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
+
+$('#image_search_parms_parameter_imaged_bim').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/imaging_methods/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
 
 } );
 
