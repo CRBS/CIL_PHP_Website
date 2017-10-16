@@ -207,6 +207,43 @@ class Ontology_tree extends REST_Controller
         $this->response($result);
    }
    
+   public function visualization_methods_get()
+   {
+       $id="";
+       $result = NULL;
+       $temp = $this->input->get('id',TRUE);
+        if(!is_null($temp) && strlen($temp) > 0)
+        {
+            $id = $temp;
+        }
+       $urlPrefix = $this->config->item("ontology_prefix");
+       $type = $this->config->item("visualization_methods_type");
+       if(strcmp($id, "")==0 || strcmp($id, "#")==0)
+       {
+          $roots = $this->config->item("visualization_method_roots");
+          $main = array();
+          foreach($roots as $id)
+          {
+              $url = $urlPrefix."/".$type."/".$id;
+              $json = $this->handleTreeRequest($url);
+              $element = $this->convertElementArray($json);
+              array_push($main, $element);
+              $string_result = json_encode($main);
+              $result = json_decode($string_result);
+          }
+       }
+       else 
+       {
+            $url = $urlPrefix."/".$type."/".$id;
+        
+            $json = $this->handleTreeRequest($url);
+            $result = $this->convertJSON($json);
+       }
+        $this->response($result);
+   }
+   
+   
+   
    
    public function human_development_anatomies_get()
    {

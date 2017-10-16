@@ -585,6 +585,13 @@ array_push($image_mode_roots, "FBbi_00000001");
 $config['image_mode_root'] = $image_mode_roots;
 $config['image_modes_type']= "imaging_methods";
 
+$visualization_method_roots = array();
+array_push($visualization_method_roots, "FBbi_00000222");
+array_push($visualization_method_roots, "FBbi_00000001");
+array_push($visualization_method_roots,"FBbi_00000031");
+$config['visualization_method_roots'] = $visualization_method_roots;
+$config['visualization_methods_type'] = "imaging_methods";
+
 
 
 $config['human_dev_anatomy_root'] = "EHDAA_38";

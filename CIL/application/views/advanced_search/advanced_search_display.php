@@ -135,6 +135,7 @@
     <!------Imaging method modal-------------->
     <?php include_once 'item_type_modal.php'; ?>
     <?php include_once 'image_mode_modal.php'; ?>
+    <?php include_once 'visualization_method_modal.php'; ?>
     <!------End imaging method modal-------------->
     
     

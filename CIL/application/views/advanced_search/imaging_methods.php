@@ -49,7 +49,7 @@
                                 <input id="image_search_parms_visualization_methods_bim" name="image_search_parms[visualization_methods_bim]" style="width: 100%" type="text" value="" class="acInput">
                             </div>
                             <div class="col-md-4">
-                                <a class="toggle" href="#visualization_method_ontology_terms" id="visualization_method_toggle">Browse Terms</a>
+                                <a data-toggle="modal" data-target="#visualization_method_modal" class="toggle" href="#visualization_method_ontology_terms" id="visualization_method_toggle">Browse Terms</a>
                             </div>
                         </div>
                     </div>
