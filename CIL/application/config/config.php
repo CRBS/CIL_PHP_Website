@@ -584,4 +584,10 @@ array_push($image_mode_roots, "FBbi_00000222");
 array_push($image_mode_roots, "FBbi_00000001");
 $config['image_mode_root'] = $image_mode_roots;
 $config['image_modes_type']= "imaging_methods";
+
+
+
+$config['human_dev_anatomy_root'] = "EHDAA_38";
+$config['human_dev_anatomies_type'] = "human_development_anatomies";
+
 /***********End ontology related*****************/

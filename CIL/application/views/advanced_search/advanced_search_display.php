@@ -137,6 +137,11 @@
     <?php include_once 'image_mode_modal.php'; ?>
     <!------End imaging method modal-------------->
     
+    
+    <!------Anatomy modal---------------------->
+    <?php include_once 'human_development_anatomy_modal.php'; ?>
+    <!------End Anatomy modal---------------------->
+    
 </div>
 </form>
 

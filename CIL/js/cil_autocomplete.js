@@ -178,5 +178,17 @@ $('#image_search_parms_parameter_imaged_bim').autocomplete({
     
 });
 
+
+$('#image_search_parms_human_dev_anatomy').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/human_development_anatomies/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
+
 } );
 

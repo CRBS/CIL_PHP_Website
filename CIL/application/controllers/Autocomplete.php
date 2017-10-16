@@ -112,6 +112,21 @@ class Autocomplete extends REST_Controller
         $this->handleAutoComplete($prefix, $query);
    }
    
+   public function human_development_anatomies_get($prefix="")
+   {
+       $query = "{\n".
+                    "\"term_suggest\":{"."\n".
+                        "\"text\":\"".$prefix."\","."\n".
+                        "\"completion\": {"."\n".
+                        "\"field\" : \"Human_development_anatomy_suggest\""."\n".
+                        "}".
+                    "}\n".
+                "}";
+        $this->handleAutoComplete($prefix, $query);
+   }
+   
+   
+   
    
    public function general_terms_get($prefix="")
    {
@@ -228,7 +243,12 @@ class Autocomplete extends REST_Controller
        
        
        $esOntoSuggestURL = $this->config->item('esOntoSuggest');
+       //echo $esOntoSuggestURL."<br/>";
+       //echo $query."<br/>";
        $response = $sutil->just_curl_get_data($esOntoSuggestURL,$query);
+       
+       
+       
        $array = json_decode($response);
        
        if($raw)

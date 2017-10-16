@@ -208,6 +208,27 @@ class Ontology_tree extends REST_Controller
    }
    
    
+   public function human_development_anatomies_get()
+   {
+       $id="";
+       $temp = $this->input->get('id',TRUE);
+        if(!is_null($temp) && strlen($temp) > 0)
+        {
+            $id = $temp;
+        }
+       $urlPrefix = $this->config->item("ontology_prefix");
+       $type = $this->config->item("human_dev_anatomies_type");
+       if(strcmp($id, "")==0 || strcmp($id, "#")==0)
+         $id = $this->config->item("human_dev_anatomy_root");
+       
+       $url = $urlPrefix."/".$type."/".$id;
+        
+        $json = $this->handleTreeRequest($url);
+        $result = $this->convertJSON($json);
+        //$result = $this->debug_input($url);
+        $this->response($result);
+   }
+   
    
    private function debug_input($url)
    {

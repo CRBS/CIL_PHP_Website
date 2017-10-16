@@ -20,7 +20,7 @@
                     <input id="image_search_parms_human_dev_anatomy" name="image_search_parms[human_dev_anatomy]" style="width: 100%" type="text" value="" class="acInput">
                 </div>
                 <div class="col-md-4">
-                    <a class="toggle" href="#human_development_anatomy_ontology_terms" id="human_development_anatomy_toggle">Browse Terms</a>
+                    <a data-toggle="modal" data-target="#human_development_anatomy_modal" class="toggle" href="#human_development_anatomy_ontology_terms" id="human_development_anatomy_toggle">Browse Terms</a>
                 </div>
             </div>
         </div>
