@@ -605,6 +605,13 @@ $config['rel_to_intact_cell_roots'] = $rel_to_intact_cell_roots;
 $config['rel_to_intact_cells_type'] = "imaging_methods";
 
 
+$processing_history_roots = array();
+array_push($processing_history_roots, "FBbi_00000222");
+array_push($processing_history_roots, "FBbi_00000001");
+array_push($processing_history_roots,"FBbi_00000031");
+$config['processing_history_roots'] = $processing_history_roots;
+$config['processing_history_type'] = "imaging_methods";
+
 
 $config['human_dev_anatomy_root'] = "EHDAA_38";
 $config['human_dev_anatomies_type'] = "human_development_anatomies";

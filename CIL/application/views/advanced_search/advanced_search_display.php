@@ -138,6 +138,7 @@
     <?php include_once 'visualization_method_modal.php'; ?>
     <?php include_once 'source_of_contrast_modal.php'; ?>
     <?php include_once 'relation_to_intact_cell_modal.php'; ?>
+    <?php include_once 'processing_history_modal.php'; ?>
     <!------End imaging method modal-------------->
     
     

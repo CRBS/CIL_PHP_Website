@@ -88,7 +88,7 @@
                                 <input id="image_search_parms_processing_history_bim" name="image_search_parms[processing_history_bim]" style="width: 100%" type="text" value="" class="acInput">
                             </div>
                             <div class="col-md-4">
-                                <a class="toggle" href="#processing_history_ontology_terms" id="processing_history_toggle">Browse Terms</a>
+                                <a data-toggle="modal" data-target="#processing_history_modal" class="toggle" href="#processing_history_ontology_terms" id="processing_history_toggle">Browse Terms</a>
                             </div>
                         </div>
                     </div>
