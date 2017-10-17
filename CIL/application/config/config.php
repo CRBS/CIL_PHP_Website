@@ -592,7 +592,11 @@ array_push($visualization_method_roots,"FBbi_00000031");
 $config['visualization_method_roots'] = $visualization_method_roots;
 $config['visualization_methods_type'] = "imaging_methods";
 
-
+$source_of_contrast_roots = array();
+array_push($source_of_contrast_roots, "FBbi_00000222");
+array_push($source_of_contrast_roots,"FBbi_00000031");
+$config['source_of_contrast_roots'] = $source_of_contrast_roots;
+$config['source_of_contrasts_type'] = "imaging_methods";
 
 $config['human_dev_anatomy_root'] = "EHDAA_38";
 $config['human_dev_anatomies_type'] = "human_development_anatomies";

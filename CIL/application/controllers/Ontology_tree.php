@@ -207,6 +207,7 @@ class Ontology_tree extends REST_Controller
         $this->response($result);
    }
    
+   /*
    public function visualization_methods_get()
    {
        $id="";
@@ -241,9 +242,63 @@ class Ontology_tree extends REST_Controller
        }
         $this->response($result);
    }
+    
+    */
+   public function visualization_methods_get()
+   {
+       $id="";
+       $result = NULL;
+       $temp = $this->input->get('id',TRUE);
+        if(!is_null($temp) && strlen($temp) > 0)
+        {
+            $id = $temp;
+        }
+       $urlPrefix = $this->config->item("ontology_prefix");
+       $type = $this->config->item("visualization_methods_type");
+       $root_config_name = "visualization_method_roots";
+       $this->handle_multiple_roots($urlPrefix,$type,$id,$root_config_name);      
+   }
+                   
+   public function source_of_contrasts_get()
+   {
+       $id="";
+       $result = NULL;
+       $temp = $this->input->get('id',TRUE);
+        if(!is_null($temp) && strlen($temp) > 0)
+        {
+            $id = $temp;
+        }
+       $urlPrefix = $this->config->item("ontology_prefix");
+       $type = $this->config->item("source_of_contrasts_type");
+       $root_config_name = "source_of_contrast_roots";
+       $this->handle_multiple_roots($urlPrefix,$type,$id,$root_config_name);      
+   }
    
-   
-   
+   private function handle_multiple_roots($urlPrefix,$type,$id,$root_config_name)
+   {
+       if(strcmp($id, "")==0 || strcmp($id, "#")==0)
+       {
+          $roots = $this->config->item($root_config_name);
+          $main = array();
+          foreach($roots as $id)
+          {
+              $url = $urlPrefix."/".$type."/".$id;
+              $json = $this->handleTreeRequest($url);
+              $element = $this->convertElementArray($json);
+              array_push($main, $element);
+              $string_result = json_encode($main);
+              $result = json_decode($string_result);
+          }
+       }
+       else 
+       {
+            $url = $urlPrefix."/".$type."/".$id;
+        
+            $json = $this->handleTreeRequest($url);
+            $result = $this->convertJSON($json);
+       }
+       $this->response($result);
+   }
    
    public function human_development_anatomies_get()
    {

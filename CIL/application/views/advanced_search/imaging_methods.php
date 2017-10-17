@@ -62,7 +62,7 @@
                                 <input id="image_search_parms_source_of_contrast_bim" name="image_search_parms[source_of_contrast_bim]" style="width: 100%" type="text" value="" class="acInput">
                             </div>
                             <div class="col-md-4">
-                                <a class="toggle" href="#source_of_contrast_ontology_terms" id="source_of_contrast_toggle">Browse Terms</a>
+                                <a data-toggle="modal" data-target="#source_of_contrast_modal" class="toggle" href="#source_of_contrast_ontology_terms" id="source_of_contrast_toggle">Browse Terms</a>
                             </div>
                         </div>
                     </div>
