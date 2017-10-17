@@ -75,7 +75,7 @@
                                 <input id="image_search_parms_relation_to_intact_cell_bim" name="image_search_parms[relation_to_intact_cell_bim]" style="width: 100%" type="text" value="" class="acInput">
                             </div>
                             <div class="col-md-4">
-                                <a class="toggle" href="#relation_to_intact_cell_ontology_terms" id="relation_to_intact_cell_toggle">Browse Terms</a>
+                                <a data-toggle="modal" data-target="#rel_to_intact_cell_modal" class="toggle" href="#relation_to_intact_cell_ontology_terms" id="relation_to_intact_cell_toggle">Browse Terms</a>
                             </div>
                         </div>
                     </div>

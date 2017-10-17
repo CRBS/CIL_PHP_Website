@@ -598,6 +598,14 @@ array_push($source_of_contrast_roots,"FBbi_00000031");
 $config['source_of_contrast_roots'] = $source_of_contrast_roots;
 $config['source_of_contrasts_type'] = "imaging_methods";
 
+$rel_to_intact_cell_roots = array();
+array_push($rel_to_intact_cell_roots, "FBbi_00000001");
+array_push($rel_to_intact_cell_roots,"FBbi_00000031");
+$config['rel_to_intact_cell_roots'] = $rel_to_intact_cell_roots;
+$config['rel_to_intact_cells_type'] = "imaging_methods";
+
+
+
 $config['human_dev_anatomy_root'] = "EHDAA_38";
 $config['human_dev_anatomies_type'] = "human_development_anatomies";
 

@@ -274,6 +274,24 @@ class Ontology_tree extends REST_Controller
        $this->handle_multiple_roots($urlPrefix,$type,$id,$root_config_name);      
    }
    
+   public function relation_to_intact_cells_get()
+   {
+       $id="";
+       $result = NULL;
+       $temp = $this->input->get('id',TRUE);
+        if(!is_null($temp) && strlen($temp) > 0)
+        {
+            $id = $temp;
+        }
+       $urlPrefix = $this->config->item("ontology_prefix");
+       $type = $this->config->item("rel_to_intact_cells_type");
+       $root_config_name = "rel_to_intact_cell_roots";
+       $this->handle_multiple_roots($urlPrefix,$type,$id,$root_config_name);      
+       
+       
+   }
+   
+   
    private function handle_multiple_roots($urlPrefix,$type,$id,$root_config_name)
    {
        if(strcmp($id, "")==0 || strcmp($id, "#")==0)
