@@ -124,7 +124,20 @@ class Autocomplete extends REST_Controller
                 "}";
         $this->handleAutoComplete($prefix, $query);
    }
-   
+    
+   public function human_diseases_get($prefix="")
+   {
+       $query = "{\n".
+                    "\"term_suggest\":{"."\n".
+                        "\"text\":\"".$prefix."\","."\n".
+                        "\"completion\": {"."\n".
+                        "\"field\" : \"Human_disease_suggest\""."\n".
+                        "}".
+                    "}\n".
+                "}";
+        $this->handleAutoComplete($prefix, $query);
+   }
+    
    
    
    

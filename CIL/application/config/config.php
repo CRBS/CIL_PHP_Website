@@ -627,4 +627,11 @@ $config['parameter_imaged_type'] = "imaging_methods";
 $config['human_dev_anatomy_root'] = "EHDAA_38";
 $config['human_dev_anatomies_type'] = "human_development_anatomies";
 
+
+$human_disease_roots = array();
+array_push($human_disease_roots, "DOID_4");
+$config['human_disease_roots'] = $human_disease_roots;
+$config['human_diseases_type'] = "human_diseases";
+
+
 /***********End ontology related*****************/

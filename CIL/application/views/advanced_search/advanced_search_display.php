@@ -146,6 +146,7 @@
     
     <!------Anatomy modal---------------------->
     <?php include_once 'human_development_anatomy_modal.php'; ?>
+    <?php include_once 'human_disease_modal.php'; ?>
     <!------End Anatomy modal---------------------->
     
 </div>

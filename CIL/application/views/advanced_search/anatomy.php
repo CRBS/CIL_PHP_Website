@@ -33,7 +33,7 @@
                     <input id="image_search_parms_human_disease" name="image_search_parms[human_disease]" style="width: 100%" type="text" value="" class="acInput">
                 </div>
                 <div class="col-md-4">
-                    <a class="toggle" href="#human_disease_ontology_terms" id="human_disease_toggle">Browse Terms</a>
+                    <a data-toggle="modal" data-target="#human_disease_modal" class="toggle" href="#human_disease_ontology_terms" id="human_disease_toggle">Browse Terms</a>
                 </div>
             </div>
         </div>

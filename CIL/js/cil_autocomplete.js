@@ -190,5 +190,17 @@ $('#image_search_parms_human_dev_anatomy').autocomplete({
     
 });
 
+$('#image_search_parms_human_disease').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/human_diseases/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
+
+
 } );
 
