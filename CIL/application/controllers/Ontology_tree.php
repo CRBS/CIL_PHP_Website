@@ -320,6 +320,21 @@ class Ontology_tree extends REST_Controller
        $this->handle_multiple_roots($urlPrefix,$type,$id,$root_config_name);      
    }
    
+   public function parameter_imaged_get()
+   {
+       $id="";
+       $result = NULL;
+       $temp = $this->input->get('id',TRUE);
+        if(!is_null($temp) && strlen($temp) > 0)
+        {
+            $id = $temp;
+        }
+       $urlPrefix = $this->config->item("ontology_prefix");
+       $type = $this->config->item("parameter_imaged_type");
+       $root_config_name = "parameter_imaged_roots";
+       $this->handle_multiple_roots($urlPrefix,$type,$id,$root_config_name);   
+   }
+   
    
    private function handle_multiple_roots($urlPrefix,$type,$id,$root_config_name)
    {

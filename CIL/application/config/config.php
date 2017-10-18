@@ -618,6 +618,11 @@ array_push($preparation_roots,"FBbi_00000031");
 $config['preparation_roots'] = $preparation_roots;
 $config['preparation_type'] = "imaging_methods";
 
+$parameter_imaged_roots = array();
+array_push($parameter_imaged_roots, "FBbi_00000222");
+$config['parameter_imaged_roots'] = $parameter_imaged_roots;
+$config['parameter_imaged_type'] = "imaging_methods";
+
 
 $config['human_dev_anatomy_root'] = "EHDAA_38";
 $config['human_dev_anatomies_type'] = "human_development_anatomies";

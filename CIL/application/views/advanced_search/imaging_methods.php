@@ -114,7 +114,7 @@
                                 <input id="image_search_parms_parameter_imaged_bim" name="image_search_parms[parameter_imaged_bim]" style="width: 100%" type="text" value="" class="acInput">
                             </div>
                             <div class="col-md-4">
-                                <a class="toggle" href="#parameter_imaged_ontology_terms" id="parameter_imaged_toggle">Browse Terms</a>
+                                <a data-toggle="modal" data-target="#parameter_imaged_modal" class="toggle" href="#parameter_imaged_ontology_terms" id="parameter_imaged_toggle">Browse Terms</a>
                             </div>
                         </div>
                     </div>
