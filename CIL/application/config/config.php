@@ -612,6 +612,12 @@ array_push($processing_history_roots,"FBbi_00000031");
 $config['processing_history_roots'] = $processing_history_roots;
 $config['processing_history_type'] = "imaging_methods";
 
+$preparation_roots = array();
+array_push($preparation_roots, "FBbi_00000001");
+array_push($preparation_roots,"FBbi_00000031");
+$config['preparation_roots'] = $preparation_roots;
+$config['preparation_type'] = "imaging_methods";
+
 
 $config['human_dev_anatomy_root'] = "EHDAA_38";
 $config['human_dev_anatomies_type'] = "human_development_anatomies";

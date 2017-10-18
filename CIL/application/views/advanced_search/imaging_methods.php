@@ -101,7 +101,7 @@
                                 <input id="image_search_parms_preparation_bim" name="image_search_parms[preparation_bim]" style="width: 100%" type="text" value="" class="acInput">
                             </div>
                             <div class="col-md-4">
-                                <a class="toggle" href="#preparation_ontology_terms" id="preparation_toggle">Browse Terms</a>
+                                <a data-toggle="modal" data-target="#preparation_modal" class="toggle" href="#preparation_ontology_terms" id="preparation_toggle">Browse Terms</a>
                             </div>
                         </div>
                     </div>
