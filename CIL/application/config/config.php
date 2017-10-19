@@ -663,4 +663,9 @@ array_push($xenopus_anatomy_roots, "XAO_1000000");
 $config['xenopus_anatomy_roots'] = $xenopus_anatomy_roots;
 $config['xenopus_anatomies_type'] = "xenopus_anatomies";
 
+$zebrafish_anatomy_roots = array();
+array_push($zebrafish_anatomy_roots, "ZFU_root");
+$config['zebrafish_anatomy_roots'] = $zebrafish_anatomy_roots;
+$config['zebrafish_anatomies_type'] = "zebrafish_anatomies";
+
 /***********End ontology related*****************/

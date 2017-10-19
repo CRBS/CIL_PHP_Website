@@ -152,6 +152,7 @@
     <?php include_once 'plant_growth_modal.php'; ?>
     <?php include_once 'teleost_anatomy_modal.php'; ?>
     <?php include_once 'xenopus_anatomy_modal.php'; ?>
+    <?php include_once 'zebrafish_anatomy_modal.php'; ?>
     <!------End Anatomy modal---------------------->
     
 </div>

@@ -257,6 +257,17 @@ $('#image_search_parms_xenopus_anatomy').autocomplete({
     
 });
 
+$('#image_search_parms_zebrafish_anatomy').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/zebrafish_anatomies/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
+
 
 } );
 

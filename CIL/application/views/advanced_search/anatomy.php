@@ -14,7 +14,7 @@
         <div class="col-md-12">
             <div class="row top-buffer">
                 <div class="col-md-3">
-                    Human Development Anatomy
+                    Human Dev. Anatomy
                 </div>
                 <div class="col-md-5">
                     <input id="image_search_parms_human_dev_anatomy" name="image_search_parms[human_dev_anatomy]" style="width: 100%" type="text" value="" class="acInput">
@@ -111,7 +111,7 @@
                     <input id="image_search_parms_zebrafish_anatomy" name="image_search_parms[zebrafish_anatomy]" style="width: 100%" type="text" value="" class="acInput">
                 </div>
                 <div class="col-md-4">
-                    <a class="toggle" href="#zebrafish_anatomy_ontology_terms" id="zebrafish_anatomy_toggle">Browse Terms</a>
+                    <a data-toggle="modal" data-target="#zebrafish_anatomy_modal" class="toggle" href="#zebrafish_anatomy_ontology_terms" id="zebrafish_anatomy_toggle">Browse Terms</a>
                 </div>
             </div>
         </div>
