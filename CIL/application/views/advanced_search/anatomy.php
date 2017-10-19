@@ -59,7 +59,7 @@
                     <input id="image_search_parms_mouse_pathology" name="image_search_parms[mouse_pathology]" style="width: 100%" type="text" value="" class="acInput">
                 </div>
                 <div class="col-md-4">
-                    <a class="toggle" href="#mouse_pathology_ontology_terms" id="mouse_pathology_toggle">Browse Terms</a>
+                    <a data-toggle="modal" data-target="#mouse_pathology_modal" class="toggle" href="#mouse_pathology_ontology_terms" id="mouse_pathology_toggle">Browse Terms</a>
                 </div>
             </div>
         </div>

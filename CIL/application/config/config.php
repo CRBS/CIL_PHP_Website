@@ -639,4 +639,9 @@ array_push($mouse_gross_anatomy_roots, "EMAP_0");
 $config['mouse_gross_anatomy_roots'] = $mouse_gross_anatomy_roots;
 $config['mouse_gross_anatomies_type'] = "mouse_gross_anatomies";
 
+
+$mouse_pathology_roots = array();
+array_push($mouse_pathology_roots, "MPATH_0");
+$config['mouse_pathology_roots'] = $mouse_pathology_roots;
+$config['mouse_pathologies_type'] = "mouse_pathologies";
 /***********End ontology related*****************/

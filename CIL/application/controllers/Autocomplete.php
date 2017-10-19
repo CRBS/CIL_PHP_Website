@@ -152,6 +152,19 @@ class Autocomplete extends REST_Controller
         $this->handleAutoComplete($prefix, $query);
    }
    
+   public function mouse_pathologies_get($prefix="")
+   {
+       $query = "{\n".
+                    "\"term_suggest\":{"."\n".
+                        "\"text\":\"".$prefix."\","."\n".
+                        "\"completion\": {"."\n".
+                        "\"field\" : \"Mouse_pathology_suggest\""."\n".
+                        "}".
+                    "}\n".
+                "}";
+       //echo $query;
+        $this->handleAutoComplete($prefix, $query);
+   }
    
    
    public function general_terms_get($prefix="")

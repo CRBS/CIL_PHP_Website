@@ -213,6 +213,17 @@ $('#image_search_parms_mouse_gross_anatomy').autocomplete({
 });
 
 
+$('#image_search_parms_mouse_pathology').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/mouse_pathologies/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
+
 
 
 } );

@@ -413,6 +413,21 @@ class Ontology_tree extends REST_Controller
        $this->handle_multiple_roots($urlPrefix,$type,$id,$root_config_name); 
    }
    
+   public function mouse_pathologies_get()
+   {
+       $id="";
+       $result = NULL;
+       $temp = $this->input->get('id',TRUE);
+        if(!is_null($temp) && strlen($temp) > 0)
+        {
+            $id = $temp;
+        }
+       $urlPrefix = $this->config->item("ontology_prefix");
+       $type = $this->config->item("mouse_pathologies_type");
+       $root_config_name = "mouse_pathology_roots";
+       $this->handle_multiple_roots($urlPrefix,$type,$id,$root_config_name); 
+   }
+   
    
    
    private function debug_input($url)
