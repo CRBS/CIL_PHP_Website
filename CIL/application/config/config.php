@@ -650,4 +650,10 @@ $plant_growth_roots = array();
 array_push($plant_growth_roots, "PO_0009012");
 $config['plant_growth_roots'] = $plant_growth_roots;
 $config['plant_growths_type'] = "plant_growths";
+
+$teleost_anatomy_roots = array();
+array_push($teleost_anatomy_roots, "TAO_0100000");
+$config['teleost_anatomy_roots'] = $teleost_anatomy_roots;
+$config['teleost_anatomies_type'] = "teleost_anatomies";
+
 /***********End ontology related*****************/

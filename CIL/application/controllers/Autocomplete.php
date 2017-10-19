@@ -180,6 +180,20 @@ class Autocomplete extends REST_Controller
         $this->handleAutoComplete($prefix, $query);
    }
    
+   public function teleost_anatomies_get($prefix="")
+   {
+       $query = "{\n".
+                    "\"term_suggest\":{"."\n".
+                        "\"text\":\"".$prefix."\","."\n".
+                        "\"completion\": {"."\n".
+                        "\"field\" : \"Teleost_anatomy_suggest\""."\n".
+                        "}".
+                    "}\n".
+                "}";
+       //echo $query;
+        $this->handleAutoComplete($prefix, $query);
+   }
+   
    
    
    public function general_terms_get($prefix="")

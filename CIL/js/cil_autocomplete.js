@@ -235,5 +235,16 @@ $('#image_search_parms_plant_growth').autocomplete({
     
 });
 
+$('#image_search_parms_teleost_anatomy').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/teleost_anatomies/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
+
 } );
 
