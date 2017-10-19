@@ -46,7 +46,7 @@
                     <input id="image_search_parms_mouse_gross_anatomy" name="image_search_parms[mouse_gross_anatomy]" style="width: 100%" type="text" value="" class="acInput">
                 </div>
                 <div class="col-md-4">
-                    <a class="toggle" href="#mouse_gross_anatomy_ontology_terms" id="mouse_gross_anatomy_toggle">Browse Terms</a>
+                    <a data-toggle="modal" data-target="#mouse_gross_anatomy_modal" class="toggle" href="#mouse_gross_anatomy_ontology_terms" id="mouse_gross_anatomy_toggle">Browse Terms</a>
                 </div>
             </div>
         </div>

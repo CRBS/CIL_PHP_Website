@@ -634,4 +634,9 @@ $config['human_disease_roots'] = $human_disease_roots;
 $config['human_diseases_type'] = "human_diseases";
 
 
+$mouse_gross_anatomy_roots = array();
+array_push($mouse_gross_anatomy_roots, "EMAP_0");
+$config['mouse_gross_anatomy_roots'] = $mouse_gross_anatomy_roots;
+$config['mouse_gross_anatomies_type'] = "mouse_gross_anatomies";
+
 /***********End ontology related*****************/
