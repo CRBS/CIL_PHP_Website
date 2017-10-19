@@ -85,7 +85,7 @@
                     <input id="image_search_parms_teleost_anatomy" name="image_search_parms[teleost_anatomy]" style="width: 100%" type="text" value="" class="acInput">
                 </div>
                 <div class="col-md-4">
-                    <a data-toggle="modal" data-target="#plant_growth_modal" class="toggle" href="#teleost_anatomy_ontology_terms" id="teleost_anatomy_toggle">Browse Terms</a>
+                    <a data-toggle="modal" data-target="#teleost_anatomy_modal" class="toggle" href="#teleost_anatomy_ontology_terms" id="teleost_anatomy_toggle">Browse Terms</a>
                 </div>
             </div>
         </div>
@@ -98,7 +98,7 @@
                     <input id="image_search_parms_xenopus_anatomy" name="image_search_parms[xenopus_anatomy]" style="width: 100%" type="text" value="" class="acInput">
                 </div>
                 <div class="col-md-4">
-                    <a class="toggle" href="#teleost_anatomy_ontology_terms" id="teleost_anatomy_toggle">Browse Terms</a>
+                    <a data-toggle="modal" data-target="#xenopus_anatomy_modal" class="toggle" href="#teleost_anatomy_ontology_terms" id="teleost_anatomy_toggle">Browse Terms</a>
                 </div>
             </div>
         </div>

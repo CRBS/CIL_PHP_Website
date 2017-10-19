@@ -246,5 +246,17 @@ $('#image_search_parms_teleost_anatomy').autocomplete({
     
 });
 
+$('#image_search_parms_xenopus_anatomy').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/xenopus_anatomies/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
+
+
 } );
 

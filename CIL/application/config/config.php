@@ -656,4 +656,11 @@ array_push($teleost_anatomy_roots, "TAO_0100000");
 $config['teleost_anatomy_roots'] = $teleost_anatomy_roots;
 $config['teleost_anatomies_type'] = "teleost_anatomies";
 
+
+$xenopus_anatomy_roots = array();
+array_push($xenopus_anatomy_roots, "XAO_0000000");
+array_push($xenopus_anatomy_roots, "XAO_1000000");
+$config['xenopus_anatomy_roots'] = $xenopus_anatomy_roots;
+$config['xenopus_anatomies_type'] = "xenopus_anatomies";
+
 /***********End ontology related*****************/
