@@ -224,7 +224,16 @@ $('#image_search_parms_mouse_pathology').autocomplete({
     
 });
 
-
+$('#image_search_parms_plant_growth').autocomplete({
+    source: function (request, response) {
+        $.getJSON("/autocomplete/plant_growths/" + request.term, function (data) {
+           if(data.length > 0)
+            response(data);
+        });
+    },
+    minLength: 2
+    
+});
 
 } );
 

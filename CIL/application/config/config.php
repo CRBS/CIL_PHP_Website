@@ -644,4 +644,10 @@ $mouse_pathology_roots = array();
 array_push($mouse_pathology_roots, "MPATH_0");
 $config['mouse_pathology_roots'] = $mouse_pathology_roots;
 $config['mouse_pathologies_type'] = "mouse_pathologies";
+
+
+$plant_growth_roots = array();
+array_push($plant_growth_roots, "PO_0009012");
+$config['plant_growth_roots'] = $plant_growth_roots;
+$config['plant_growths_type'] = "plant_growths";
 /***********End ontology related*****************/

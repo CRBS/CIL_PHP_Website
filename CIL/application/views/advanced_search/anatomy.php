@@ -72,7 +72,7 @@
                     <input id="image_search_parms_plant_growth" name="image_search_parms[plant_growth]" style="width: 100%" type="text" value="" class="acInput">
                 </div>
                 <div class="col-md-4">
-                    <a class="toggle" href="#plant_growth_ontology_terms" id="plant_growth_toggle">Browse Terms</a>
+                    <a data-toggle="modal" data-target="#plant_growth_modal" class="toggle" href="#plant_growth_ontology_terms" id="plant_growth_toggle">Browse Terms</a>
                 </div>
             </div>
         </div>

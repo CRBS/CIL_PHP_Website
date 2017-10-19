@@ -149,6 +149,7 @@
     <?php include_once 'human_disease_modal.php'; ?>
     <?php include_once 'mouse_gross_anatomy_modal.php'; ?>
     <?php include_once 'mouse_pathology_modal.php'; ?>
+    <?php include_once 'plant_growth_modal.php'; ?>
     <!------End Anatomy modal---------------------->
     
 </div>
