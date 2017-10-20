@@ -156,16 +156,16 @@
 				</div>-->
 
 				<div class="row header-top hidden-print">
-					<div class="col-xs-12 col-sm-5 col-md-3 col-lg-3">
+					<div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
 
 						<!-- START CONTENT ITEM -->
                                                 <a href="/home" target="_self">
-						<img src="/pix/logo.jpg?<?php echo rand();  ?>" alt="Logo" class="img-responsive">
+						<img src="/pix/CIL_logo_final_75H.jpg?<?php echo rand();  ?>" alt="Logo" class="img-responsive">
                                                 </a>
 						<!-- END CONTENT ITEM -->
 
 					</div>
-					<div class="col-xs-12 col-sm-7 col-md-6 col-lg-5">
+					<div class="col-xs-12 col-sm-9 col-md-6 col-lg-6">
 						<div class="row hidden-print">
 
 							<!-- START CONTENT ITEM -->
