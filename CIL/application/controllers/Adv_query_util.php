@@ -51,9 +51,14 @@ class Adv_query_util
             $qstring = $qstring." AND (CIL_CCDB.Data_type.Video:true)";
         }
         
-        if(!is_null($model->video))
+        if(!is_null($model->zstack))
         {
-            $qstring = $qstring." AND (CIL_CCDB.Data_type.Video:true)";
+            $qstring = $qstring." AND (CIL_CCDB.Data_type.Z_stack:true)";
+        }
+        
+        if(!is_null($model->time))
+        {
+            $qstring = $qstring." AND (CIL_CCDB.Data_type.Time_series:true)";
         }
         
         
