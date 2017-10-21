@@ -2,6 +2,7 @@
 require_once 'CILServiceUtil2.php';
 require_once 'GeneralUtil.php';
 require_once 'Paginator.php';
+require_once 'Adv_query_util.php';
 class Images  extends CI_Controller 
 {
     
@@ -9,6 +10,7 @@ class Images  extends CI_Controller
     {
         $sutil = new CILServiceUtil2();
         $gutil = new GeneralUtil();
+        
         
         $basic_still = null;
         $basic_video = null;
@@ -224,8 +226,25 @@ class Images  extends CI_Controller
 
     private function handleAdvSearchInputs($input)
     {
+        $autil = new Adv_query_util();
+        $this->load->model('Adv_search_query_model');
+        //$this->Adv_search_query_model->k = "test";
+        //echo "<br/>k:".$this->Adv_search_query_model->k."<br/>";
         $array = array();
-        $temp = $input->get('k',TRUE);
+        $amodel = $this->Adv_search_query_model;
+        
+        $autil->handleText($amodel, $input, 'k');
+        $autil->handleBoolean($amodel, $input, 'still');
+        $autil->handleBoolean($amodel, $input, 'video');
+        $autil->handleBoolean($amodel, $input, 'zstack');
+        $autil->handleBoolean($amodel, $input, 'time');
+        
+        $amodel->print_model();
+        $query_str = $autil->generateEsQuery($amodel);
+        echo "<br/>".$query_str."<br/>";
+        //echo "<br/>k:".$this->Adv_search_query_model->k."<br/>";
+        
+        /*$temp = $input->get('k',TRUE);
         if(!is_null($temp))
         {
             $array['k'] = trim($temp);
@@ -240,10 +259,11 @@ class Images  extends CI_Controller
                 $basic_still = true;
                 $data['basic_still'] = true;
             }
-        }
+        }*/
         
         return $array;
     }
+    
     
     public function view($imageID)
     {
