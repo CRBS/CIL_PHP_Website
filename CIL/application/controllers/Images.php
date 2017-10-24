@@ -238,10 +238,23 @@ class Images  extends CI_Controller
         $autil->handleBoolean($amodel, $input, 'video');
         $autil->handleBoolean($amodel, $input, 'zstack');
         $autil->handleBoolean($amodel, $input, 'time');
+        $autil->handleYesOrNo($amodel, $input, 'grouped', 'ungrouped');
+        $autil->handleYesOrNo($amodel, $input, 'computable', 'uncomputable');
+        $autil->handleBoolean($amodel, $input, 'public_domain');
+        $autil->handleBoolean($amodel, $input,'attribution_cc');
+        $autil->handleBoolean($amodel, $input,'attribution_nc_sa');
+        $autil->handleBoolean($amodel, $input,'copyright');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_biological_process', 'image_search_parms[biological_process]');
+        
         
         $amodel->print_model();
         $query_str = $autil->generateEsQuery($amodel);
         echo "<br/>".$query_str."<br/>";
+        
+        echo "<br/><br/>";
+        echo "<br/>curl -XGET \"http://stretch.crbs.ucsd.edu:9200/ccdbv8/data/_search\" -d '".
+                $query_str."' > test.json";
+        echo "<br/><br/>";
         //echo "<br/>k:".$this->Adv_search_query_model->k."<br/>";
         
         /*$temp = $input->get('k',TRUE);
