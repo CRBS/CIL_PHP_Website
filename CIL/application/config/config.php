@@ -552,6 +552,9 @@ $config['elasticsearchPrefix'] = "http://stretch.crbs.ucsd.edu:9200/ccdbv8";
 $config['esOntoSuggest'] = "http://stretch.crbs.ucsd.edu:9200/ontology/_suggest";
 
 
+$config['simple_ontology_expansion_prefix'] = "http://localhost:8080/CIL_RS/index.php/rest/simple_ontology_expansion";
+
+
 
 /***********Ontology related**********************/
 $config["ontology_prefix"] = "http://stretch.crbs.ucsd.edu:9200/ontology";

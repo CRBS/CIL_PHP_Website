@@ -1,5 +1,5 @@
 <?php
-
+require_once 'CILServiceUtil2.php';
 class Adv_query_util
 {
     function handleText($model,$input,$key)
@@ -135,13 +135,102 @@ class Adv_query_util
             $qstring = $qstring." AND (CIL_CCDB.CIL.CORE.TERMSANDCONDITIONS.free_text:copyright*)";
         }
         
+        if(!is_null($model->image_search_parms_biological_process) && 
+                strlen(trim($model->image_search_parms_biological_process))> 0)
+        {
+            $array = $this->handleExpansion('biological_processes',$model->image_search_parms_biological_process);
+            $qstring = $this->handleResultArray($qstring, $array, $model->image_search_parms_biological_process);
+
+        }
+        
         
         $query_string['query'] = $qstring;
         $queryOuter['query_string'] = $query_string;
         $main['query'] = $queryOuter;
         return json_encode($main);
     }
-
     
+    private function handleResultArray($qstring,$array,$value)
+    {
+        if(count($array) > 0)
+        {
+                $qstring = $qstring." AND (";
+                $conditions = "";
+                $count = count($array);
+                for($i=0;$i<$count;$i++)
+                {
+                    $conditions = $conditions." \"".$array[$i]."\" ";
+                    if($i+1 < $count)
+                        $conditions = $conditions." OR ";
+                }
+                $qstring = $qstring.$conditions;
+                $qstring = $qstring.")";
+        }
+        else 
+        {
+            $qstring = $qstring." AND (".$value.")";
+        }
+        
+        return $qstring;
+    }
+
+    private function handleExpansion($type, $value)
+    {
+        $array = array();
+        //$json = $this->simpleOntologyExpansion('biological_processes', 'Name', $value,1);
+        $json = $this->simpleOntologyExpansion($type, 'Name', $value,1);
+        if(!is_null($json) && $json->hits->total > 0)
+        {
+            $result = $json->hits->hits[0];
+            if(!isset($result->_source->Expansion->Terms))
+                return $array();
+            $terms = $result->_source->Expansion->Terms;
+            
+            foreach($terms as $term)
+            {
+                if(isset($term->Onto_id))
+                    array_push($array, $term->Onto_id);
+            }
+            
+        }
+        else if(!is_null($json) && $json->hits->total == 0)
+        {
+            $json2 = $this->simpleOntologyExpansion($type, 'Synonyms', $value,10);
+            if(!is_null($json2) && $json2->hits->total > 0)
+            {
+                $hits = $json2->hits->hits;
+                echo "<br/>Synonyms total:".$json2->hits->total;
+                foreach($hits as $result)
+                {
+                    echo "<br/>Synonyms result!!";
+                    if(!isset($result->_source->Expansion->Terms))
+                        continue;
+                    $terms = $result->_source->Expansion->Terms;
+                    foreach($terms as $term)
+                    {
+                        if(isset($term->Onto_id))
+                            array_push($array, $term->Onto_id);
+                    }
+                }
+            }
+        }
+        
+        
+        return $array;
+    }
+    
+    
+    private function simpleOntologyExpansion($type,$field,$search_value,$size)
+    {
+        $search_value = str_replace(" ", "%20", $search_value);
+        $sutil = new CILServiceUtil2();
+        $CI = CI_Controller::get_instance();
+        $url = $CI->config->item('simple_ontology_expansion_prefix')."/".$type."/".$field."/".$search_value."?size=".$size;
+        echo "<br/>".$url;
+        
+        $response = $sutil->curl_get($url);
+        $json = json_decode($response);
+        return $json;
+    }
 }
 
