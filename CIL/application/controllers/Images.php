@@ -192,7 +192,7 @@ class Images  extends CI_Controller
                 if(!is_null($basic_time))
                     $results_per_pageURL = $results_per_pageURL."&basic_time=true";
             }
-            $results_per_pageURL = $results_per_pageURL."&simple_search=Search&&page=";
+            $results_per_pageURL = $results_per_pageURL."&simple_search=Search&page=";
             $data['results_per_pageURL'] = $results_per_pageURL;
             
             
@@ -215,8 +215,38 @@ class Images  extends CI_Controller
         }
         else if(!is_null($adv_search))
         {
-            $array = $this->handleAdvSearchInputs($this->input);
-            var_dump($array);
+            
+            $query_url =  $this->config->item('advanced_search')."?from=".$from."&size=".$size;
+            $query = $this->handleAdvSearchInputs($this->input);
+            $response = $sutil->curl_get_data($query_url,$query);
+            $result = json_decode($response);
+        
+            
+            $queryString = $this->input->server('QUERY_STRING');
+            echo "<br/>queryString:".$queryString;
+            $data['page_num'] = $page;
+            $data['size']=$size;
+            $data['total']=$result->hits->total;
+            $data['result']=$result;
+            $data['keywords']=$keywords;
+            
+            $currentPage = $page+1;
+            $data['currentPage'] = $currentPage;
+            $urlPattern = $this->config->item('base_url').
+                    "/images?".$queryString."&per_page=".$size."&page=";;
+            $data['urlPattern'] = $urlPattern;
+            
+            
+            $results_per_pageURL = $urlPattern = $this->config->item('base_url').
+                    "/images?".$queryString."&page=";
+            $data['results_per_pageURL'] = $results_per_pageURL;
+            
+            
+            $paginator = new Paginator($result->hits->total, $size, $currentPage, $urlPattern);
+            $data['paginator'] = $paginator;
+            
+            $data['queryString'] = $queryString;
+            $data['result'] = $result;
             $this->load->view('templates/cil_header4', $data);
             $this->load->view('advanced_search/results/adv_search_results', $data);
             $this->load->view('templates/cil_footer2', $data);
@@ -226,6 +256,8 @@ class Images  extends CI_Controller
 
     private function handleAdvSearchInputs($input)
     {
+        
+        
         $autil = new Adv_query_util();
         $this->load->model('Adv_search_query_model');
         //$this->Adv_search_query_model->k = "test";
@@ -249,32 +281,15 @@ class Images  extends CI_Controller
         
         $amodel->print_model();
         $query_str = $autil->generateEsQuery($amodel);
-        echo "<br/>".$query_str."<br/>";
+        //echo "<br/>".$query_str."<br/>";
         
         echo "<br/><br/>";
         echo "<br/>curl -XGET \"http://stretch.crbs.ucsd.edu:9200/ccdbv8/data/_search\" -d '".
                 $query_str."' > test.json";
         echo "<br/><br/>";
-        //echo "<br/>k:".$this->Adv_search_query_model->k."<br/>";
-        
-        /*$temp = $input->get('k',TRUE);
-        if(!is_null($temp))
-        {
-            $array['k'] = trim($temp);
-        }
         
         
-        $temp = $input->get('basic_still',TRUE);
-        if(!is_null($temp))
-        {
-            if(strcmp($temp, strtolower("true"))==0)
-            {
-                $basic_still = true;
-                $data['basic_still'] = true;
-            }
-        }*/
-        
-        return $array;
+        return $query_str;
     }
     
     
@@ -357,10 +372,7 @@ class Images  extends CI_Controller
     }
     
     
-    public function Advanced_search()
-    {
-        
-    }
+
     
 }
 
