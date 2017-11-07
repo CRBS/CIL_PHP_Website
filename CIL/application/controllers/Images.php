@@ -219,6 +219,9 @@ class Images  extends CI_Controller
             $query_url =  $this->config->item('advanced_search')."?from=".$from."&size=".$size;
             $query = $this->handleAdvSearchInputs($this->input);
             $response = $sutil->curl_get_data($query_url,$query);
+            //echo "<br/>curl -XGET '".$query_url."' -d '".$query." '";
+            //echo "<hr><br/><br/>Response:".$response;
+            
             $result = json_decode($response);
         
             
@@ -277,6 +280,11 @@ class Images  extends CI_Controller
         $autil->handleBoolean($amodel, $input,'attribution_nc_sa');
         $autil->handleBoolean($amodel, $input,'copyright');
         $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_biological_process', 'image_search_parms[biological_process]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_cell_type', 'image_search_parms[cell_type]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_cell_line', 'image_search_parms[cell_line]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_foundational_model_anatomy', 'image_search_parms[foundational_model_anatomy]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_cellular_component', 'image_search_parms[cellular_component]');
+        
         
         
         $amodel->print_model();

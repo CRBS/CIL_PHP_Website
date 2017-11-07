@@ -554,7 +554,7 @@ $config['esOntoSuggest'] = "http://stretch.crbs.ucsd.edu:9200/ontology/_suggest"
 
 $config['simple_ontology_expansion_prefix'] = "http://localhost:8080/CIL_RS/index.php/rest/simple_ontology_expansion";
 
-
+$config['max_number_of_query_conditions'] = 1024;
 
 /***********Ontology related**********************/
 $config["ontology_prefix"] = "http://stretch.crbs.ucsd.edu:9200/ontology";

@@ -66,6 +66,10 @@ class Adv_query_util
     
     function generateEsQuery($model)
     {
+        $CI = CI_Controller::get_instance();
+        $qmax = $CI->config->item('max_number_of_query_conditions');
+        $count = 0;
+        
         $main = array();
         $queryOuter = array();
         
@@ -75,74 +79,133 @@ class Adv_query_util
         if(!is_null($model->k))
         {
             $qstring = $qstring." AND (".$model->k.")";
+            $count++;
         }
         
         if(!is_null($model->still))
         {
             $qstring = $qstring." AND (CIL_CCDB.Data_type.Still_image:true)";
+            $count++;
         }
         
         if(!is_null($model->video))
         {
             $qstring = $qstring." AND (CIL_CCDB.Data_type.Video:true)";
+            $count++;
         }
         
         if(!is_null($model->zstack))
         {
             $qstring = $qstring." AND (CIL_CCDB.Data_type.Z_stack:true)";
+            $count++;
         }
         
         if(!is_null($model->time))
         {
             $qstring = $qstring." AND (CIL_CCDB.Data_type.Time_series:true)";
+            $count++;
         }
         
         if(!is_null($model->grouped) && $model->grouped)
         {
             $qstring = $qstring." AND (CIL_CCDB.CIL.CORE.GROUP_ID:*)";
+            $count++;
         }
         else if(!is_null($model->grouped) && !$model->grouped)
         {
             $qstring = $qstring." AND !(CIL_CCDB.CIL.CORE.GROUP_ID:*)";
+            $count++;
         }
         
         if(!is_null($model->computable) && $model->computable)
         {
             $qstring = $qstring. "AND (CIL_CCDB.CIL.CORE.DATAQUALIFICATION.free_text:PROCESSED*)";
+            $count++;
         }
         else if(!is_null($model->computable) && !$model->computable)
         {
             $qstring = $qstring. "AND !(CIL_CCDB.CIL.CORE.DATAQUALIFICATION.free_text:PROCESSED*)";
+            $count++;
         }
         
         if(!is_null($model->public_domain))
         {
             $qstring = $qstring." AND (CIL_CCDB.CIL.CORE.TERMSANDCONDITIONS.free_text:public_domain)";
+            $count++;
         }
         
         if(!is_null($model->attribution_cc))
         {
             $qstring = $qstring." AND (CIL_CCDB.CIL.CORE.TERMSANDCONDITIONS.free_text:attribution_cc*)";
+            $count++;
         }
         
         if(!is_null($model->attribution_nc_sa))
         {
             $qstring = $qstring." AND (CIL_CCDB.CIL.CORE.TERMSANDCONDITIONS.free_text:attribution_nc*)";
+            $count++;
         }
         
         if(!is_null($model->copyright))
         {
             $qstring = $qstring." AND (CIL_CCDB.CIL.CORE.TERMSANDCONDITIONS.free_text:copyright*)";
+            $count++;
         }
         
         if(!is_null($model->image_search_parms_biological_process) && 
                 strlen(trim($model->image_search_parms_biological_process))> 0)
         {
             $array = $this->handleExpansion('biological_processes',$model->image_search_parms_biological_process);
-            $qstring = $this->handleResultArray($qstring, $array, $model->image_search_parms_biological_process);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_biological_process,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
 
         }
         
+        if(!is_null($model->image_search_parms_cell_type) && 
+                strlen(trim($model->image_search_parms_cell_type))> 0)
+        {
+            $array = $this->handleExpansion('cell_types',$model->image_search_parms_cell_type);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_cell_type,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        } 
+        
+        if(!is_null($model->image_search_parms_cell_line) && 
+                strlen(trim($model->image_search_parms_cell_line))> 0)
+        {
+            $array = $this->handleExpansion('cell_lines',$model->image_search_parms_cell_line);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_cell_line,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        } 
+        
+        if(!is_null($model->image_search_parms_foundational_model_anatomy) && 
+                strlen(trim($model->image_search_parms_foundational_model_anatomy))> 0)
+        {
+            $array = $this->handleExpansion('anatomical_entities',$model->image_search_parms_foundational_model_anatomy);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_foundational_model_anatomy,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        } 
+        
+        if(!is_null($model->image_search_parms_cellular_component) && 
+                strlen(trim($model->image_search_parms_cellular_component))> 0)
+        {
+            $array = $this->handleExpansion('cellular_components',$model->image_search_parms_cellular_component);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_cellular_component,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        } 
         
         $query_string['query'] = $qstring;
         $queryOuter['query_string'] = $query_string;
@@ -150,7 +213,7 @@ class Adv_query_util
         return json_encode($main);
     }
     
-    private function handleResultArray($qstring,$array,$value)
+    private function handleResultArray($qstring,$array,$value,$rcount,$qmax)
     {
         if(count($array) > 0)
         {
@@ -159,9 +222,16 @@ class Adv_query_util
                 $count = count($array);
                 for($i=0;$i<$count;$i++)
                 {
+
                     $conditions = $conditions." \"".$array[$i]."\" ";
+                    
+                    $rcount++;
+                    if($rcount >= $qmax)
+                        break;
+                    
                     if($i+1 < $count)
-                        $conditions = $conditions." OR ";
+                      $conditions = $conditions." OR ";
+                    
                 }
                 $qstring = $qstring.$conditions;
                 $qstring = $qstring.")";
@@ -170,8 +240,13 @@ class Adv_query_util
         {
             $qstring = $qstring." AND (".$value.")";
         }
+        $array = array();
+        $array['count'] = $rcount;
+        $array['qstring'] = $qstring;
         
-        return $qstring;
+        //return $qstring;
+        return $array;
+        
     }
 
     private function handleExpansion($type, $value)

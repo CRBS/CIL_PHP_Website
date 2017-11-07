@@ -14,6 +14,10 @@ class Adv_search_query_model extends CI_Model {
     public $attribution_nc_sa;
     public $copyright;
     public $image_search_parms_biological_process;
+    public $image_search_parms_cell_type;
+    public $image_search_parms_cell_line;
+    public $image_search_parms_foundational_model_anatomy;
+    public $image_search_parms_cellular_component;
         
     public function print_model()
     {
@@ -30,6 +34,7 @@ class Adv_search_query_model extends CI_Model {
         echo "<br/>attribution_nc_sa:".$this->attribution_nc_sa;
         echo "<br/>copyright:".$this->copyright;
         echo "<br/>image_search_parms_biological_process:".$this->image_search_parms_biological_process;
+        echo "<br/>image_search_parms_cell_type:".$this->image_search_parms_cell_type;
         echo "<br/>-----------------End Params----------------------";
     }
     
