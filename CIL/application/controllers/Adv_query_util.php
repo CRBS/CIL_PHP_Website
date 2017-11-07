@@ -207,6 +207,76 @@ class Adv_query_util
 
         } 
         
+        
+        if(!is_null($model->image_search_parms_molecular_function) && 
+                strlen(trim($model->image_search_parms_molecular_function))> 0)
+        {
+            $array = $this->handleExpansion('molecular_functions',$model->image_search_parms_molecular_function);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_molecular_function,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        } 
+        
+        if(!is_null($model->image_search_parms_ncbi) && 
+                strlen(trim($model->image_search_parms_ncbi))> 0)
+        {
+            $array = $this->handleExpansion('ncbi_organism',$model->image_search_parms_ncbi);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_ncbi,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        } 
+        
+        if(!is_null($model->image_search_parms_item_type_bim) && 
+                strlen(trim($model->image_search_parms_item_type_bim))> 0)
+        {
+            $array = $this->handleExpansion('imaging_methods',$model->image_search_parms_item_type_bim);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_item_type_bim,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        } 
+        
+        if(!is_null($model->image_search_parms_image_mode_bim) && 
+                strlen(trim($model->image_search_parms_image_mode_bim))> 0)
+        {
+            $array = $this->handleExpansion('imaging_methods',$model->image_search_parms_image_mode_bim);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_image_mode_bim,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        }
+        
+        
+        if(!is_null($model->image_search_parms_visualization_methods_bim) && 
+                strlen(trim($model->image_search_parms_visualization_methods_bim))> 0)
+        {
+            $array = $this->handleExpansion('imaging_methods',$model->image_search_parms_visualization_methods_bim);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_visualization_methods_bim,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        }
+        
+        
+        if(!is_null($model->image_search_parms_source_of_contrast_bim) && 
+                strlen(trim($model->image_search_parms_source_of_contrast_bim))> 0)
+        {
+            $array = $this->handleExpansion('imaging_methods',$model->image_search_parms_source_of_contrast_bim);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_source_of_contrast_bim,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        }
+        
+        
         $query_string['query'] = $qstring;
         $queryOuter['query_string'] = $query_string;
         $main['query'] = $queryOuter;

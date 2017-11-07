@@ -284,7 +284,12 @@ class Images  extends CI_Controller
         $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_cell_line', 'image_search_parms[cell_line]');
         $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_foundational_model_anatomy', 'image_search_parms[foundational_model_anatomy]');
         $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_cellular_component', 'image_search_parms[cellular_component]');
-        
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_molecular_function', 'image_search_parms[molecular_function]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_ncbi', 'image_search_parms[ncbi]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_item_type_bim', 'image_search_parms[item_type_bim]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_image_mode_bim', 'image_search_parms[image_mode_bim]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_visualization_methods_bim', 'image_search_parms[visualization_methods_bim]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_source_of_contrast_bim', 'image_search_parms[source_of_contrast_bim]');
         
         
         $amodel->print_model();

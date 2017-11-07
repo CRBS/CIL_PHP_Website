@@ -18,6 +18,12 @@ class Adv_search_query_model extends CI_Model {
     public $image_search_parms_cell_line;
     public $image_search_parms_foundational_model_anatomy;
     public $image_search_parms_cellular_component;
+    public $image_search_parms_molecular_function;
+    public $image_search_parms_ncbi;
+    public $image_search_parms_item_type_bim;
+    public $image_search_parms_image_mode_bim;
+    public $image_search_parms_visualization_methods_bim;
+    public $image_search_parms_source_of_contrast_bim;
         
     public function print_model()
     {
@@ -35,7 +41,14 @@ class Adv_search_query_model extends CI_Model {
         echo "<br/>copyright:".$this->copyright;
         echo "<br/>image_search_parms_biological_process:".$this->image_search_parms_biological_process;
         echo "<br/>image_search_parms_cell_type:".$this->image_search_parms_cell_type;
+        echo "<br/>image_search_parms_molecular_function:".$this->image_search_parms_molecular_function;
+        echo "<br/>image_search_parms_ncbi:".$this->image_search_parms_ncbi;
+        echo "<br/>image_search_parms_item_type_bim:".$this->image_search_parms_item_type_bim;
+        echo "<br/>image_search_parms_image_mode_bim:".$this->image_search_parms_image_mode_bim;
+        echo "<br/>image_search_parms_visualization_methods_bim:".$this->image_search_parms_visualization_methods_bim;
+        echo "<br/>image_search_parms_source_of_contrast_bim:".$this->image_search_parms_source_of_contrast_bim;
         echo "<br/>-----------------End Params----------------------";
+        
     }
     
     
