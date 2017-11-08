@@ -276,6 +276,55 @@ class Adv_query_util
 
         }
         
+        if(!is_null($model->image_search_parms_relation_to_intact_cell_bim) && 
+                strlen(trim($model->image_search_parms_relation_to_intact_cell_bim))> 0)
+        {
+            $array = $this->handleExpansion('imaging_methods',$model->image_search_parms_relation_to_intact_cell_bim);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_relation_to_intact_cell_bim,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        }
+        
+        
+        if(!is_null($model->image_search_parms_processing_history_bim) && 
+                strlen(trim($model->image_search_parms_processing_history_bim))> 0)
+        {
+            $array = $this->handleExpansion('imaging_methods',$model->image_search_parms_processing_history_bim);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_processing_history_bim,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        }
+        
+        if(!is_null($model->image_search_parms_preparation_bim) && 
+                strlen(trim($model->image_search_parms_preparation_bim))> 0)
+        {
+            $array = $this->handleExpansion('imaging_methods',$model->image_search_parms_preparation_bim);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_preparation_bim,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        }
+        
+        if(!is_null($model->image_search_parms_parameter_imaged_bim) && 
+                strlen(trim($model->image_search_parms_parameter_imaged_bim))> 0)
+        {
+            $array = $this->handleExpansion('imaging_methods',$model->image_search_parms_parameter_imaged_bim);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_parameter_imaged_bim,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        }
+        
+        
+        
+        
+        
         
         $query_string['query'] = $qstring;
         $queryOuter['query_string'] = $query_string;

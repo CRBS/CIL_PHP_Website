@@ -290,7 +290,10 @@ class Images  extends CI_Controller
         $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_image_mode_bim', 'image_search_parms[image_mode_bim]');
         $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_visualization_methods_bim', 'image_search_parms[visualization_methods_bim]');
         $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_source_of_contrast_bim', 'image_search_parms[source_of_contrast_bim]');
-        
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_relation_to_intact_cell_bim', 'image_search_parms[relation_to_intact_cell_bim]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_processing_history_bim', 'image_search_parms[processing_history_bim]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_preparation_bim', 'image_search_parms[preparation_bim]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_parameter_imaged_bim', 'image_search_parms[parameter_imaged_bim]');
         
         $amodel->print_model();
         $query_str = $autil->generateEsQuery($amodel);

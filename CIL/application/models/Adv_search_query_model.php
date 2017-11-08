@@ -24,6 +24,10 @@ class Adv_search_query_model extends CI_Model {
     public $image_search_parms_image_mode_bim;
     public $image_search_parms_visualization_methods_bim;
     public $image_search_parms_source_of_contrast_bim;
+    public $image_search_parms_relation_to_intact_cell_bim;
+    public $image_search_parms_processing_history_bim;
+    public $image_search_parms_preparation_bim;
+    public $image_search_parms_parameter_imaged_bim;
         
     public function print_model()
     {
@@ -47,6 +51,10 @@ class Adv_search_query_model extends CI_Model {
         echo "<br/>image_search_parms_image_mode_bim:".$this->image_search_parms_image_mode_bim;
         echo "<br/>image_search_parms_visualization_methods_bim:".$this->image_search_parms_visualization_methods_bim;
         echo "<br/>image_search_parms_source_of_contrast_bim:".$this->image_search_parms_source_of_contrast_bim;
+        echo "<br/>image_search_parms_relation_to_intact_cell_bim:".$this->image_search_parms_relation_to_intact_cell_bim;
+        echo "<br/>image_search_parms_processing_history_bim:".$this->image_search_parms_processing_history_bim;
+        echo "<br/>image_search_parms_preparation_bim:".$this->image_search_parms_preparation_bim;
+        echo "<br/>image_search_parms_parameter_imaged_bim:".$this->image_search_parms_parameter_imaged_bim;
         echo "<br/>-----------------End Params----------------------";
         
     }
