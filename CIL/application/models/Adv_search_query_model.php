@@ -28,6 +28,14 @@ class Adv_search_query_model extends CI_Model {
     public $image_search_parms_processing_history_bim;
     public $image_search_parms_preparation_bim;
     public $image_search_parms_parameter_imaged_bim;
+    public $image_search_parms_human_dev_anatomy;
+    public $image_search_parms_human_disease;
+    public $image_search_parms_mouse_gross_anatomy;
+    public $image_search_parms_mouse_pathology;
+    public $image_search_parms_plant_growth;
+    public $image_search_parms_teleost_anatomy;
+    public $image_search_parms_xenopus_anatomy;
+    public $image_search_parms_zebrafish_anatomy;
         
     public function print_model()
     {
@@ -55,6 +63,14 @@ class Adv_search_query_model extends CI_Model {
         echo "<br/>image_search_parms_processing_history_bim:".$this->image_search_parms_processing_history_bim;
         echo "<br/>image_search_parms_preparation_bim:".$this->image_search_parms_preparation_bim;
         echo "<br/>image_search_parms_parameter_imaged_bim:".$this->image_search_parms_parameter_imaged_bim;
+        echo "<br/>image_search_parms_human_dev_anatomy:".$this->image_search_parms_human_dev_anatomy;
+        echo "<br/>image_search_parms_human_disease:".$this->image_search_parms_human_disease;
+        echo "<br/>image_search_parms_mouse_gross_anatomy:".$this->image_search_parms_mouse_gross_anatomy;
+        echo "<br/>image_search_parms_mouse_pathology:".$this->image_search_parms_mouse_pathology;
+        echo "<br/>image_search_parms_plant_growth:".$this->image_search_parms_plant_growth;
+        echo "<br/>image_search_parms_teleost_anatomy:".$this->image_search_parms_teleost_anatomy;
+        echo "<br/>image_search_parms_xenopus_anatomy:".$this->image_search_parms_xenopus_anatomy;
+        echo "<br/>image_search_parms_zebrafish_anatomy:".$this->image_search_parms_zebrafish_anatomy;
         echo "<br/>-----------------End Params----------------------";
         
     }

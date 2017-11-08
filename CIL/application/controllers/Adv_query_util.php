@@ -322,8 +322,98 @@ class Adv_query_util
         }
         
         
+        if(!is_null($model->image_search_parms_human_dev_anatomy) && 
+                strlen(trim($model->image_search_parms_human_dev_anatomy))> 0)
+        {
+            $array = $this->handleExpansion('human_development_anatomies',$model->image_search_parms_human_dev_anatomy);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_human_dev_anatomy,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        }
         
         
+        if(!is_null($model->image_search_parms_human_disease) && 
+                strlen(trim($model->image_search_parms_human_disease))> 0)
+        {
+            $array = $this->handleExpansion('human_diseases',$model->image_search_parms_human_disease);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_human_disease,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        }
+        
+        
+        if(!is_null($model->image_search_parms_mouse_gross_anatomy) && 
+                strlen(trim($model->image_search_parms_mouse_gross_anatomy))> 0)
+        {
+            $array = $this->handleExpansion('mouse_gross_anatomies',$model->image_search_parms_mouse_gross_anatomy);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_mouse_gross_anatomy,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        }
+        
+        if(!is_null($model->image_search_parms_mouse_pathology) && 
+                strlen(trim($model->image_search_parms_mouse_pathology))> 0)
+        {
+            $array = $this->handleExpansion('mouse_pathologies',$model->image_search_parms_mouse_pathology);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_mouse_pathology,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        }
+        
+        
+        if(!is_null($model->image_search_parms_plant_growth) && 
+                strlen(trim($model->image_search_parms_plant_growth))> 0)
+        {
+            $array = $this->handleExpansion('plant_growths',$model->image_search_parms_plant_growth);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_plant_growth,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        }
+        
+        if(!is_null($model->image_search_parms_teleost_anatomy) && 
+                strlen(trim($model->image_search_parms_teleost_anatomy))> 0)
+        {
+            $array = $this->handleExpansion('teleost_anatomies',$model->image_search_parms_teleost_anatomy);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_teleost_anatomy,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        }
+        
+        
+        if(!is_null($model->image_search_parms_xenopus_anatomy) && 
+                strlen(trim($model->image_search_parms_xenopus_anatomy))> 0)
+        {
+            $array = $this->handleExpansion('xenopus_anatomies',$model->image_search_parms_xenopus_anatomy);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_xenopus_anatomy,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        }
+        
+        
+        if(!is_null($model->image_search_parms_zebrafish_anatomy) && 
+                strlen(trim($model->image_search_parms_zebrafish_anatomy))> 0)
+        {
+            $array = $this->handleExpansion('zebrafish_anatomies',$model->image_search_parms_zebrafish_anatomy);
+            $rarray = $this->handleResultArray($qstring, $array, 
+                    $model->image_search_parms_zebrafish_anatomy,$count,$qmax);
+            $count = $rarray['count'];
+            $qstring = $rarray['qstring'];
+
+        }
         
         
         $query_string['query'] = $qstring;

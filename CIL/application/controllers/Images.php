@@ -294,6 +294,15 @@ class Images  extends CI_Controller
         $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_processing_history_bim', 'image_search_parms[processing_history_bim]');
         $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_preparation_bim', 'image_search_parms[preparation_bim]');
         $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_parameter_imaged_bim', 'image_search_parms[parameter_imaged_bim]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_human_dev_anatomy', 'image_search_parms[human_dev_anatomy]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_human_disease', 'image_search_parms[human_disease]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_mouse_gross_anatomy', 'image_search_parms[mouse_gross_anatomy]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_mouse_pathology', 'image_search_parms[mouse_pathology]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_plant_growth', 'image_search_parms[plant_growth]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_teleost_anatomy', 'image_search_parms[teleost_anatomy]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_xenopus_anatomy', 'image_search_parms[xenopus_anatomy]');
+        $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_zebrafish_anatomy', 'image_search_parms[zebrafish_anatomy]');
+        
         
         $amodel->print_model();
         $query_str = $autil->generateEsQuery($amodel);
