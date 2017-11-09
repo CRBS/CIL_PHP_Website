@@ -407,7 +407,7 @@ class Adv_query_util
         if(!is_null($model->image_search_parms_zebrafish_anatomy) && 
                 strlen(trim($model->image_search_parms_zebrafish_anatomy))> 0)
         {
-            $array = $this->handleExpansion('zebrafish_anatomies',$model->image_search_parms_zebrafish_anatomy);
+            $array = $this->handleExpansion('zebrafish_anatomies  ',$model->image_search_parms_zebrafish_anatomy);
             $rarray = $this->handleResultArray($qstring, $array, 
                     $model->image_search_parms_zebrafish_anatomy,$count,$qmax);
             $count = $rarray['count'];
@@ -483,10 +483,10 @@ class Adv_query_util
             if(!is_null($json2) && $json2->hits->total > 0)
             {
                 $hits = $json2->hits->hits;
-                echo "<br/>Synonyms total:".$json2->hits->total;
+                //echo "<br/>Synonyms total:".$json2->hits->total;
                 foreach($hits as $result)
                 {
-                    echo "<br/>Synonyms result!!";
+                    //echo "<br/>Synonyms result!!";
                     if(!isset($result->_source->Expansion->Terms))
                         continue;
                     $terms = $result->_source->Expansion->Terms;
@@ -510,7 +510,12 @@ class Adv_query_util
         $sutil = new CILServiceUtil2();
         $CI = CI_Controller::get_instance();
         $url = $CI->config->item('simple_ontology_expansion_prefix')."/".$type."/".$field."/".$search_value."?size=".$size;
-        echo "<br/>".$url;
+        
+        $adv_debug = $CI->config->item('adv_debug');
+        if($adv_debug)
+        {
+            echo "<br/>".$url;
+        }
         
         $response = $sutil->curl_get($url);
         $json = json_decode($response);

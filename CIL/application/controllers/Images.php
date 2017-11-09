@@ -8,9 +8,10 @@ class Images  extends CI_Controller
     
     public function Index()
     {
+        
         $sutil = new CILServiceUtil2();
         $gutil = new GeneralUtil();
-        
+        $adv_debug = $this->config->item('adv_debug');
         
         $basic_still = null;
         $basic_video = null;
@@ -226,7 +227,12 @@ class Images  extends CI_Controller
         
             
             $queryString = $this->input->server('QUERY_STRING');
-            echo "<br/>queryString:".$queryString;
+            
+            if($adv_debug)
+            {
+                echo "<br/>queryString:".$queryString;
+            }
+            
             $data['page_num'] = $page;
             $data['size']=$size;
             $data['total']=$result->hits->total;
@@ -259,7 +265,7 @@ class Images  extends CI_Controller
 
     private function handleAdvSearchInputs($input)
     {
-        
+        $CI = CI_Controller::get_instance();
         
         $autil = new Adv_query_util();
         $this->load->model('Adv_search_query_model');
@@ -304,15 +310,21 @@ class Images  extends CI_Controller
         $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_zebrafish_anatomy', 'image_search_parms[zebrafish_anatomy]');
         
         
-        $amodel->print_model();
+        
         $query_str = $autil->generateEsQuery($amodel);
         //echo "<br/>".$query_str."<br/>";
         
-        echo "<br/><br/>";
-        echo "<br/>curl -XGET \"http://stretch.crbs.ucsd.edu:9200/ccdbv8/data/_search\" -d '".
-                $query_str."' > test.json";
-        echo "<br/><br/>";
         
+       
+        $adv_debug = $CI->config->item('adv_debug');
+        if($adv_debug)
+        {
+            $amodel->print_model();
+            echo "<br/><br/>";
+            echo "<br/>curl -XGET \"http://stretch.crbs.ucsd.edu:9200/ccdbv8/data/_search\" -d '".
+                    $query_str."' > test.json";
+            echo "<br/><br/>";
+        }
         
         return $query_str;
     }

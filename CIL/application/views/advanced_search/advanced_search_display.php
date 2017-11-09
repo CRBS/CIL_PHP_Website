@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-12">
             <!-- <div class="alert alert-warning"><button type="button" class="close" data-dismiss="alert">×</button>Now special <strong> only € 5,- </strong> express delivery!</div> -->
-            <div class="alert alert-warning">The advanced search is not fully functional yet!</div>
+            <!-- <div class="alert alert-warning">The advanced search is not fully functional yet!</div> -->
         </div>
     </div>
     <div class="row">
