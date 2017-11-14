@@ -552,7 +552,8 @@ $config['elasticsearchPrefix'] = "http://stretch.crbs.ucsd.edu:9200/ccdbv8";
 $config['esOntoSuggest'] = "http://stretch.crbs.ucsd.edu:9200/ontology/_suggest";
 
 
-$config['simple_ontology_expansion_prefix'] = "http://localhost:8080/CIL_RS/index.php/rest/simple_ontology_expansion";
+//$config['simple_ontology_expansion_prefix'] = "http://localhost:8080/CIL_RS/index.php/rest/simple_ontology_expansion";
+$config['simple_ontology_expansion_prefix'] = "https://cilia.crbs.ucsd.edu/CIL_RS/index.php/rest/simple_ontology_expansion";
 
 $config['max_number_of_query_conditions'] = 1024;
 
@@ -680,3 +681,10 @@ $config['adv_debug'] = false;
 
 
 /********End Debug params***************/
+
+
+
+/***********Data download config***************/
+$config['download_server_prefix'] = "https://iruka.crbs.ucsd.edu";
+
+/***********End data download config***********/

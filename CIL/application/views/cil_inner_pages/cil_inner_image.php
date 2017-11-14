@@ -29,21 +29,57 @@
     }
 ?>
 
-<div class="row">
+
+<?php
+    if(isset($json->CIL_CCDB->Data_type->Video) && !$json->CIL_CCDB->Data_type->Video)
+    {
+        
+        $jpeg = $cutil->findImageFileJSON($json,'Jpeg');
+        $zip = $cutil->findImageFileJSON($json,'Zip');
+        $tif = $cutil->findImageFileJSON($json,'OME_tif');
+        
+?>
+<div class="row top-buffer">
     <div class="col-md-6">
         <div class='download'>
         <div class='download_menu_div' onmouseout="document.getElementById('ITEMS').style.display='none'" onmouseover="document.getElementById('ITEMS').style.display='block'">
         <a class='dropdown_button mini' href='#download_options_button' name='download_options_button'>Image Data Download Options...</a>
         <div class='download_options_container' id='ITEMS' onmouseout="this.style.display='none'" onmouseover="this.style.display='block'">
+        
+        <?php 
+        if(!is_null($jpeg))
+        {
+        ?>
+            <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
+            <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/images/".$numeric_id."/".$jpeg->File_path;  ?>' download>Download in JPEG format</a>
+            
+            </div>
+        <?php
+        }
+        ?>
+        
+        <?php 
+        if(!is_null($tif))
+        {
+        ?>
         <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-        <a class='download_menu_anchor' href='download_jpeg/2.jpg'>Download in JPEG format</a>
+        <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/images/".$numeric_id."/".$tif->File_path;  ?>'>Download in OME-TIF format (<?php echo $cutil->convertFileSize($tif->Size);   ?>)</a>
         </div>
+        <?php
+        }
+        ?>    
+            
+        <?php 
+        if(!is_null($zip))
+        {
+        ?>    
         <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-        <a class='download_menu_anchor' href='http://grackle.crbs.ucsd.edu:8080/OmeroWebService/images/2.tif'>Download in OME-TIF format</a>
+        <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/images/".$numeric_id."/".$zip->File_path;  ?>'>Download Submitted Data (<?php echo $cutil->convertFileSize($zip->Size);   ?>)</a>
         </div>
-        <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-        <a class='download_menu_anchor' href='http://grackle.crbs.ucsd.edu:8080/OmeroWebService/images/2.raw'>Download Submitted Data (3.8 MB)</a>
-        </div>
+        <?php
+        }
+        ?>
+            
         </div>
         </div>
         </div>
@@ -52,3 +88,70 @@
         <span class="pull-right"><a class="button mini" href="#" onclick="openPopup('http://am.celllibrary.org/ascb_il/full_viewer/<?php echo $numeric_id ?>'); return false;">Open Detailed Viewer</a></span>
     </div>
 </div>
+<?php
+    }   
+?>
+
+
+
+<?php
+    if(isset($json->CIL_CCDB->Data_type->Video) && $json->CIL_CCDB->Data_type->Video)
+    {
+        
+        $jpeg = $cutil->findImageFileJSON($json,'Jpeg');
+        $zip = $cutil->findImageFileJSON($json,'Zip');
+        $flv = $cutil->findImageFileJSON($json,'Flv');
+        
+?>
+<div class="row top-buffer">
+    <div class="col-md-6">
+        <div class='download'>
+        <div class='download_menu_div' onmouseout="document.getElementById('ITEMS').style.display='none'" onmouseover="document.getElementById('ITEMS').style.display='block'">
+        <a class='dropdown_button mini' href='#download_options_button' name='download_options_button'>Image Data Download Options...</a>
+        <div class='download_options_container' id='ITEMS' onmouseout="this.style.display='none'" onmouseover="this.style.display='block'">
+        
+        <?php 
+        if(!is_null($jpeg))
+        {
+        ?>
+            <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
+            <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/videos/".$numeric_id."/".$jpeg->File_path;  ?>' download>Download in JPEG format</a>
+            
+            </div>
+        <?php
+        }
+        ?>
+        
+        <?php 
+        if(!is_null($flv))
+        {
+        ?>
+        <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
+        <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/videos/".$numeric_id."/".$flv->File_path;  ?>'>Download Flash Video (<?php echo $cutil->convertFileSize($flv->Size);   ?>)</a>
+        </div>
+        <?php
+        }
+        ?>    
+            
+        <?php 
+        if(!is_null($zip))
+        {
+        ?>    
+        <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
+        <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/videos/".$numeric_id."/".$zip->File_path;  ?>'>Download Submitted Data (<?php echo $cutil->convertFileSize($zip->Size);   ?>)</a>
+        </div>
+        <?php
+        }
+        ?>
+            
+        </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-6 ">
+        <!-- <span class="pull-right"><a class="button mini" href="#" onclick="openPopup('http://am.celllibrary.org/ascb_il/full_viewer/<?php echo $numeric_id ?>'); return false;">Open Detailed Viewer</a></span> -->
+    </div>
+</div>
+<?php
+    }   
+?>

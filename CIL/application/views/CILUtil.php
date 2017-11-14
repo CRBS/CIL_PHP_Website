@@ -227,6 +227,34 @@ class CILUtil {
         }
         return false;
     }
+    
+    
+    public function findImageFileJSON($json, $type)
+    {
+        if(!isset($json->CIL_CCDB->CIL->Image_files))
+            return null;
+        
+        $imageFiles = $json->CIL_CCDB->CIL->Image_files;
+        foreach($imageFiles as $imageFile)
+        {
+            if(isset($imageFile->File_type) && strcmp($imageFile->File_type, $type) == 0)
+            {
+                return $imageFile;
+            }
+        }
+        
+        return null;
+    } 
+    
+    function convertFileSize($size,$unit="") {
+        if( (!$unit && $size >= 1<<30) || $unit == "GB")
+          return number_format($size/(1<<30),2)."GB";
+        if( (!$unit && $size >= 1<<20) || $unit == "MB")
+          return number_format($size/(1<<20),2)."MB";
+        if( (!$unit && $size >= 1<<10) || $unit == "KB")
+          return number_format($size/(1<<10),2)."KB";
+        return number_format($size)." bytes";
+    }
 }
 
 ?>

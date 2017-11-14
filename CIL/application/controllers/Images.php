@@ -13,6 +13,8 @@ class Images  extends CI_Controller
         $gutil = new GeneralUtil();
         $adv_debug = $this->config->item('adv_debug');
         
+        
+        
         $basic_still = null;
         $basic_video = null;
         $basic_zstack = null;
@@ -332,6 +334,8 @@ class Images  extends CI_Controller
     
     public function view($imageID)
     {
+        $data['download_prefix'] = $this->config->item('download_server_prefix');
+        
         if(strcmp($imageID,"advanced_search")==0)
         {
             $data['test'] = "test";
