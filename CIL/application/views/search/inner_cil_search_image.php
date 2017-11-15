@@ -84,8 +84,14 @@
         
     </div>
     <div class="col-md-5">
-        <!---------------testing--------------->
-<div class="container_6  ">
+<!-----------------Description------------------------------------------->
+<?php
+    $display_description = true;
+    $debug_error = false;
+    if($display_description)
+    {
+?>
+<div class="container_6">
 <a href="/images/<?php echo $nid; ?>" class="pull-left">
 
 <dl class="cil_info">
@@ -102,17 +108,17 @@
         if(!is_array($core->NCBIORGANISMALCLASSIFICATION))
         {
             if(isset($core->NCBIORGANISMALCLASSIFICATION->onto_name))
-                echo $core->NCBIORGANISMALCLASSIFICATION->onto_name;
+                echo htmlspecialchars($core->NCBIORGANISMALCLASSIFICATION->onto_name);
             else if(isset($core->NCBIORGANISMALCLASSIFICATION->free_text))
-                echo $core->NCBIORGANISMALCLASSIFICATION->free_text;
+                echo htmlspecialchars($core->NCBIORGANISMALCLASSIFICATION->free_text);
         }
         else if(is_array($core->NCBIORGANISMALCLASSIFICATION) && count($core->NCBIORGANISMALCLASSIFICATION)> 0)
         {
             $ncbio = $core->NCBIORGANISMALCLASSIFICATION[0];
             if(isset($ncbio->onto_name))
-                echo $ncbio->onto_name;
+                echo htmlspecialchars($ncbio->onto_name);
             else if(isset($ncbio->free_text))
-                echo $ncbio->free_text;
+                echo htmlspecialchars($ncbio->free_text);
         }
         else 
         {
@@ -136,17 +142,17 @@
         if(!is_array($core->BIOLOGICALPROCESS))
         {
             if(isset($core->BIOLOGICALPROCESS->onto_name))
-                echo $core->BIOLOGICALPROCESS->onto_name;
+                echo htmlspecialchars($core->BIOLOGICALPROCESS->onto_name);
             else if(isset($core->BIOLOGICALPROCESS->free_text))
-                echo $core->BIOLOGICALPROCESS->free_text;
+                echo htmlspecialchars($core->BIOLOGICALPROCESS->free_text);
         }
         else if(is_array($core->BIOLOGICALPROCESS) && count($core->BIOLOGICALPROCESS)> 0)
         {
             $bio = $core->BIOLOGICALPROCESS[0];
             if(isset($bio->onto_name))
-                echo $bio->onto_name;
+                echo htmlspecialchars($bio->onto_name);
             else if(isset($bio->free_text))
-                echo $bio->free_text;
+                echo htmlspecialchars($bio->free_text);
         }
         else 
         {
@@ -170,17 +176,17 @@
         if(!is_array($core->CELLULARCOMPONENT))
         {
             if(isset($core->CELLULARCOMPONENT->onto_name))
-                echo $core->CELLULARCOMPONENT->onto_name;
+                echo htmlspecialchars($core->CELLULARCOMPONENT->onto_name);
             else if(isset($core->CELLULARCOMPONENT->free_text))
-                echo $core->CELLULARCOMPONENT->free_text;
+                echo htmlspecialchars($core->CELLULARCOMPONENT->free_text);
         }
         else if(is_array($core->CELLULARCOMPONENT) && count($core->CELLULARCOMPONENT)> 0)
         {
             $cellc = $core->CELLULARCOMPONENT[0];
             if(isset($cellc->onto_name))
-                echo $cellc->onto_name;
+                echo htmlspecialchars($cellc->onto_name);
             else if(isset($cellc->free_text))
-                echo $cellc->free_text;
+                echo htmlspecialchars($cellc->free_text);
         }
         else 
         {
@@ -211,7 +217,7 @@
         {
             $desc = $core->IMAGEDESCRIPTION->free_text;
         }
-        echo $desc;
+        echo htmlspecialchars($desc);
     }
     else 
     {
@@ -224,7 +230,10 @@
 
 </a>
 </div>
-
+<?php
+    }
+?>
+<!--------------------End description---------------------------->
     </div>
     <div class="col-md-2">
         

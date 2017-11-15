@@ -255,6 +255,9 @@ class CILUtil {
           return number_format($size/(1<<10),2)."KB";
         return number_format($size)." bytes";
     }
+    
+    
+    
 }
 
 ?>
