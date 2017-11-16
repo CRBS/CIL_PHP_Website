@@ -56,7 +56,8 @@
                     {
                 ?>    
                 <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-                <a class='download_menu_anchor' href='http://ccdb.ucsd.edu/ccdbdata/<?php echo $result->CIL_CCDB->CCDB->Segmentation->Seg_Downloadable_data->Full_resolution->URL;  ?>'  download="<?php echo $image_id."_s_full_resolution"; ?>">Download segmentation file</a>
+                <!-- <a class='download_menu_anchor' href='http://ccdb.ucsd.edu/ccdbdata/<?php //echo $result->CIL_CCDB->CCDB->Segmentation->Seg_Downloadable_data->Full_resolution->URL;  ?>'  download="<?php //echo $image_id."_s_full_resolution"; ?>">Download segmentation file</a> -->
+                <a class='download_menu_anchor' href='<?php echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Segmentation->Seg_Downloadable_data->Full_resolution->URL;  ?>'  download="<?php echo $image_id."_s_full_resolution"; ?>">Download segmentation file</a>
                 </div>
                 <?php
                     }

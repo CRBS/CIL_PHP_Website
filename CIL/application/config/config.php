@@ -528,7 +528,10 @@ $config['video_folder'] = 'C:/Users/Willy/Documents/apache/Apache24/CIL_PHP_Webs
 
 $config['cil_image_prefix'] = 'http://www.cellimagelibrary.org/cil_ccdb/display_images/';
 
-$config['ccdb_direct_data_prefix'] = 'http://ccdb.ucsd.edu/ccdbdata';
+//$config['ccdb_direct_data_prefix'] = 'http://ccdb.ucsd.edu/ccdbdata';
+$config['ccdb_direct_data_prefix'] = 'https://iruka.crbs.ucsd.edu/ccdb';
+
+
 
 /* JSON URL containting the homepage settings */
 //$config['homepage_settings'] = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv8/website_settings/homepage";

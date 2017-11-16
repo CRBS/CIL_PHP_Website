@@ -335,6 +335,7 @@ class Images  extends CI_Controller
     public function view($imageID)
     {
         $data['download_prefix'] = $this->config->item('download_server_prefix');
+        $data['ccdb_direct_data_prefix'] = $this->config->item('ccdb_direct_data_prefix');
         
         if(strcmp($imageID,"advanced_search")==0)
         {
