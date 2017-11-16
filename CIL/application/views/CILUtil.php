@@ -257,7 +257,15 @@ class CILUtil {
     }
     
     
-    
+    function shortenUrlLabel($url_label)
+    {
+        if(strlen($url_label) > 45)
+        {
+            $url_label = substr($url_label, 0, 45)."...";
+        }
+        
+        return $url_label;
+    }
 }
 
 ?>

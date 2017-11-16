@@ -93,10 +93,14 @@
                 <a href="<?php echo $url->Href; ?>" target="_blank">
                 <?php 
                     
+                    $url_label = "";
                     if(isset($url->Label))
-                        echo $url->Label; 
-                    else
-                        echo $url->Href;
+                        $url_label = $url->Label;
+                    else if(isset($url->Href))
+                        $url_label = $url->Href;
+                    
+                    $url_label = $cutil->shortenUrlLabel($url_label);
+                    echo $url_label;    
                 
                 ?>
                 </a>
