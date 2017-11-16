@@ -176,7 +176,7 @@
 										<li><a href="/contributors">Contributors</a></li>
 										<li><a href="/pages/help">Help</a></li>
                                                                                 <li><a href="/pages/contribute">Submit</a></li>
-										<li><a href="column2.html">Login</a></li>
+										<!-- <li><a href="column2.html">Login</a></li> -->
 									</ul>
 								</div>
 							</div>

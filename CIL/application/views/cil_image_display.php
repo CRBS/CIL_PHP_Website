@@ -38,7 +38,7 @@
                     <br/>
                     <!-- <button class="btn-u btn-u-xs rounded-4x btn-u-green" type="button">Add to photobox</button> -->
                     
-                    <a href="/accounts/login_prompt_required" class="mini button" id="toggle_img_favorites_2_logged_out">Add to Photobox</a>
+                    <!-- <a href="/accounts/login_prompt_required" class="mini button" id="toggle_img_favorites_2_logged_out">Add to Photobox</a> -->
                     <span class="cil pull-right">CIL:<?php 
                         if(!is_null($numeric_id))
                         {
