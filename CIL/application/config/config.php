@@ -528,35 +528,39 @@ $config['video_folder'] = 'C:/Users/Willy/Documents/apache/Apache24/CIL_PHP_Webs
 
 $config['cil_image_prefix'] = 'http://www.cellimagelibrary.org/cil_ccdb/display_images/';
 
-//$config['ccdb_direct_data_prefix'] = 'http://ccdb.ucsd.edu/ccdbdata';
-$config['ccdb_direct_data_prefix'] = 'https://iruka.crbs.ucsd.edu/ccdb';
 
 
 
-/* JSON URL containting the homepage settings */
-//$config['homepage_settings'] = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv8/website_settings/homepage";
+
+/* ----------------------------Service API---------------------------------- */
+//$service_api_host = "http://localhost:8080";
+$service_api_host = "https://cilia.crbs.ucsd.edu";
+
 //$config['homepage_settings'] = "http://localhost:8080/CIL_RS/index.php/rest/website_settings/homepage";
-$config['homepage_settings'] = "https://cilia.crbs.ucsd.edu/CIL_RS/index.php/rest/website_settings/homepage";
+//$config['homepage_settings'] = "https://cilia.crbs.ucsd.edu/CIL_RS/index.php/rest/website_settings/homepage";
+$config['homepage_settings'] = $service_api_host."/rest/website_settings/homepage";
 
 /* CIL REST Document API URL */
-//$config['apiDocPrefix'] = "http://ec2-35-165-216-15.us-west-2.compute.amazonaws.com/CIL_RS/index.php/rest/documents/";
-$config['apiDocPrefix'] = "https://cilia.crbs.ucsd.edu/CIL_RS/index.php/rest/documents/";
+//$config['apiDocPrefix'] = "https://cilia.crbs.ucsd.edu/CIL_RS/index.php/rest/documents/";
 //$config['apiDocPrefix'] = "http://localhost:8080/CIL_RS/index.php/rest/documents";
+$config['apiDocPrefix'] = $service_api_host."/rest/documents";
 
 /* Advanced search API URL */
 //$config['advanced_search'] = "http://localhost:8080/CIL_RS/index.php/rest/advanced_document_search";
-$config['advanced_search'] = "https://cilia.crbs.ucsd.edu/CIL_RS/index.php/rest/advanced_document_search";
-
-/* Elasticsearch prefix */
-//$config['elasticsearchPrefix'] = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv8";
-$config['elasticsearchPrefix'] = "http://stretch.crbs.ucsd.edu:9200/ccdbv8";
-
-//$config['esOntoSuggest'] = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ontology/_suggest";
-$config['esOntoSuggest'] = "http://stretch.crbs.ucsd.edu:9200/ontology/_suggest";
-
+//$config['advanced_search'] = "https://cilia.crbs.ucsd.edu/CIL_RS/index.php/rest/advanced_document_search";
+$config['advanced_search'] = $service_api_host."/rest/advanced_document_search";
 
 //$config['simple_ontology_expansion_prefix'] = "http://localhost:8080/CIL_RS/index.php/rest/simple_ontology_expansion";
-$config['simple_ontology_expansion_prefix'] = "https://cilia.crbs.ucsd.edu/CIL_RS/index.php/rest/simple_ontology_expansion";
+//$config['simple_ontology_expansion_prefix'] = "https://cilia.crbs.ucsd.edu/CIL_RS/index.php/rest/simple_ontology_expansion";
+$config['simple_ontology_expansion_prefix'] = $service_api_host."/rest/simple_ontology_expansion";
+
+/* ---------------------------- End Service API---------------------------------- */
+
+/* Elasticsearch prefix */
+$config['elasticsearchPrefix'] = "http://stretch.crbs.ucsd.edu:9200/ccdbv8";
+
+$config['esOntoSuggest'] = "http://stretch.crbs.ucsd.edu:9200/ontology/_suggest";
+
 
 $config['max_number_of_query_conditions'] = 1024;
 
@@ -688,6 +692,8 @@ $config['adv_debug'] = false;
 
 
 /***********Data download config***************/
-$config['download_server_prefix'] = "https://iruka.crbs.ucsd.edu";
+$config['download_server_prefix'] = "https://cildata.crbs.ucsd.edu";
 
+//$config['ccdb_direct_data_prefix'] = 'http://ccdb.ucsd.edu/ccdbdata';
+$config['ccdb_direct_data_prefix'] = 'https://cildata.crbs.ucsd.edu/ccdb';
 /***********End data download config***********/
