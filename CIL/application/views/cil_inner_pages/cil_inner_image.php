@@ -7,7 +7,8 @@
         <div class="row">
             <div class="col-md-12">
                 <center>
-                <img src="http://www.cellimagelibrary.org/cil_ccdb/display_images/<?php echo $numeric_id;   ?>/<?php echo "display_".$numeric_id;   ?>.png" width="100%" class="img-thumbnail pull-right"/>
+                <!-- <img src="http://www.cellimagelibrary.org/cil_ccdb/display_images/<?php //echo $numeric_id;   ?>/<?php //echo "display_".$numeric_id;   ?>.png" width="100%" class="img-thumbnail pull-right"/> -->
+                <img src="<?php echo $cil_image_prefix.$numeric_id;   ?>/<?php echo "display_".$numeric_id;   ?>.png" width="100%" class="img-thumbnail pull-right"/>
                 </center>
             </div>
         </div>

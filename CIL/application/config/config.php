@@ -526,10 +526,10 @@ $config['video_folder'] = 'C:/Users/Willy/Documents/apache/Apache24/CIL_PHP_Webs
 
 //$config['data_search_url'] = 'http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv8/_search';
 
-$config['cil_image_prefix'] = 'http://www.cellimagelibrary.org/cil_ccdb/display_images/';
+//$config['cil_image_prefix'] = 'http://www.cellimagelibrary.org/cil_ccdb/display_images/';
+$config['cil_image_prefix'] = 'https://cildata.crbs.ucsd.edu/display_images/cil/';
 
-
-
+$config['ccdb_image_prefix'] = 'https://cildata.crbs.ucsd.edu/display_images/ccdb/';
 
 
 /* ----------------------------Service API---------------------------------- */

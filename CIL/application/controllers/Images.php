@@ -13,7 +13,8 @@ class Images  extends CI_Controller
         $gutil = new GeneralUtil();
         $adv_debug = $this->config->item('adv_debug');
         
-        
+        $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
+        $data['ccdb_image_prefix'] = $this->config->item('ccdb_image_prefix');
         
         $basic_still = null;
         $basic_video = null;
@@ -336,6 +337,8 @@ class Images  extends CI_Controller
     {
         $data['download_prefix'] = $this->config->item('download_server_prefix');
         $data['ccdb_direct_data_prefix'] = $this->config->item('ccdb_direct_data_prefix');
+        $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
+        $data['ccdb_image_prefix'] = $this->config->item('ccdb_image_prefix');
         
         if(strcmp($imageID,"advanced_search")==0)
         {
