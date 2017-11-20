@@ -529,7 +529,7 @@ $config['video_folder'] = 'C:/Users/Willy/Documents/apache/Apache24/CIL_PHP_Webs
 //$config['cil_image_prefix'] = 'http://www.cellimagelibrary.org/cil_ccdb/display_images/';
 $config['cil_image_prefix'] = 'https://cildata.crbs.ucsd.edu/display_images/cil/';
 
-$config['ccdb_image_prefix'] = 'https://cildata.crbs.ucsd.edu/display_images/ccdb/';
+$config['ccdb_image_prefix'] = 'https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdb_512/';
 
 
 /* ----------------------------Service API---------------------------------- */
