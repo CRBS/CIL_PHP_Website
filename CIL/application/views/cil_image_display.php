@@ -1,6 +1,8 @@
 <?php 
     require_once 'CILUtil.php';
+    require_once 'CILHtmlPrinter.php';
     $cutil = new CILUtil();
+    $hprinter = new CILHtmlPrinter();
 
 ?>
 <div class="container">

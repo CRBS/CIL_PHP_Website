@@ -128,6 +128,21 @@
     }
 ?>
 <!------------------End Biological process---------------------->     
+
+
+
+<!------------------Human Development Anatomy---------------------->
+<?php
+    if(isset($json->CIL_CCDB->CIL->CORE->HUMAN_DEV_ANATOMY))
+    {
+       $json_items = $json->CIL_CCDB->CIL->CORE->HUMAN_DEV_ANATOMY;
+       $hprinter->printOntologyBlock($json_items,"Human Development Anatomy");
+
+    }
+?>
+<!------------------Human Development Anatomy---------------------->
+
+
     
     
     
