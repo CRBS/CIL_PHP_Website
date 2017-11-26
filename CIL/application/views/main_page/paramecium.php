@@ -5,11 +5,13 @@
     </div>
     <div class="col-md-3">
          <ul class="list-group">
-             <li id="cilia" class="list-group-item "><a href="#cilia" class="anchor_blue">Cilia</a></li>
-        <li class="list-group-item">Second item</li>
-        <li class="list-group-item">Third item</li>
+            <li id="cilia" class="list-group-item "><a href="#cilia" class="anchor_blue">Cilia</a></li>
+            <li id="contractile_vacuole" class="list-group-item"><a href="#contractile_vacuole " class="anchor_blue">Contractile vacuole </a></li>
+            <li id="cytoplasm" class="list-group-item"><a href="#cytoplasm " class="anchor_blue">Cytoplasm </a></li>
+
       </ul>
         
     </div>
     <div class="col-md-2"></div>
 </div>
+cytoplasm
