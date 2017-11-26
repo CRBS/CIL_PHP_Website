@@ -1,6 +1,6 @@
 <br/>
-<h2>Images of Note</h2>
-
+<!-- <h2>Images of Note</h2> -->
+<span class="cil_title">Images of Note</span>
 <?php
     //var_dump($settings->_source);
     //echo "<br/>--------------Summary--------------";

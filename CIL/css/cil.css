@@ -106,7 +106,7 @@
 
 .cil_title
 {
-
+        color: #000000;
 	font-size: 18px;
 	line-height: 18px;
 	padding-bottom: 3px;
@@ -226,4 +226,9 @@
 .cil_black_border
 {
     border:1px solid black;
+}
+
+.cil_black_font
+{
+    color: #000000;
 }

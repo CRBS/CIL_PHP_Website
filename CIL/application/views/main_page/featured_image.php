@@ -1,6 +1,6 @@
 
-<h2>Featured Image</h2>
-
+<!-- <h2>Featured Image</h2> -->
+<span class="cil_title">Featured Image</span>
 <?php
 
     if($featured_has_video)
@@ -48,8 +48,8 @@
 <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.cellimagelibrary.org&amp;layout=button_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowtransparency="true"></iframe>
 </div>
 </div>
-<div class="featured_image_description">
-<p><?php   
+<div class="featured_image_description ">
+<p class="cil_black_font"><?php   
     if(!is_null($featured_info))
     {
         if(isset($featured_info->CIL_CCDB->CIL->CORE->IMAGEDESCRIPTION->free_text))
@@ -68,7 +68,7 @@
 
 ?><a href="/images/<?php echo $featured_id; ?>" id="featured_image_more">more</a></p>
 <br/>
-<p>
+<p class="cil_black_font">
 <em>
  <!-- Brad J. Marsh; Kathryn E. Howell -->
 <?php

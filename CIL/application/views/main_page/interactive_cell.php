@@ -1,5 +1,6 @@
 
-<h2>Explore <i>Paramecium</i></h2>
+<!-- <h2>Explore <i>Paramecium</i></h2> -->
+<span class="cil_title">Explore <i>Paramecium</i></span>
 <script type="text/javascript">
   //<![CDATA[
     swfobject.registerObject("paramecium", "9.0.115", "/pix/expressInstall.swf");
