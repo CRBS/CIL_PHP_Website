@@ -11,7 +11,10 @@
         <div class="col-md-8">
             <div class="row">
              <div class="col-md-12">
-                <?php include_once 'interactive_cell.php' ?>
+                <?php 
+                    //include_once 'interactive_cell.php';
+                    include_once 'new_interactive_cell.php';
+                ?>
              </div>
              <div class="col-md-12">
                 <?php include_once 'image_of_note.php' ?>

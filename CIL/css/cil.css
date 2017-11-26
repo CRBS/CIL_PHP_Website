@@ -232,3 +232,21 @@
 {
     color: #000000;
 }
+
+
+.interactive_cell_width
+{
+    width:100%;
+    max-width:450px;
+}
+
+.selected_blue
+{
+    background-color: #92d4f0; 
+}
+
+.anchor_blue
+{
+    color: #1899ce;
+    text-decoration: underline;
+}
