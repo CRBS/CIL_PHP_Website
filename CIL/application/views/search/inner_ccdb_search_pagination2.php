@@ -1,5 +1,5 @@
 <!-- Some modification in the code from https://github.com/jasongrimes/php-paginator -->
-
+<?php //echo "<br/>URL pattern in pagination:".$urlPattern; ?>
 <?php if ($paginator->getNumPages() > 1): ?>
     <ul class="pagination">
         <?php if ($paginator->getPrevUrl()): ?>

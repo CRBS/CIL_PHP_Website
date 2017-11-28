@@ -154,8 +154,11 @@ class Images  extends CI_Controller
             $data['currentPage'] = $currentPage;
             //echo $currentPage;
             
-            $urlPattern = $this->config->item('base_url').
-                    "/images?k=".$queryString."&simple_search=Search&per_page=".$size."&page=";
+            //$urlPattern = $this->config->item('base_url').
+            //        "/images?k=".$queryString."&simple_search=Search&per_page=".$size."&page=";
+            $urlPattern = $this->config->item('base_url')."/images?k=".$queryString;
+            //echo "<br/>URL pattern in Images:".$urlPattern;
+            
             if(!is_null($basic_still) || !is_null($basic_video)
                     || !is_null($basic_zstack) || !is_null($basic_time))
             {
