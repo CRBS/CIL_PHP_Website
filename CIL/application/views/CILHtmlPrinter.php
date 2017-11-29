@@ -26,7 +26,7 @@ class CILHtmlPrinter
             else if(isset($json_items->free_text))
             {
 
-                echo "\n<dt><b>".title."</b></dt>";
+                echo "\n<dt><b>".$title."</b></dt>";
                 echo "\n<dd class='eol_dd'>";
                 echo "\n".$json_items->free_text; 
                 echo "\n</dd>";

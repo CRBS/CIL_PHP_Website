@@ -165,19 +165,23 @@
         $paramimage = $json->CIL_CCDB->CIL->CORE->PARAMETERIMAGED;
         if(!is_array($paramimage))
         {
+           $json_items = $json->CIL_CCDB->CIL->CORE->PARAMETERIMAGED;
+           $hprinter->printOntologyBlock($json_items,"Parameters Imaged");
 ?>
+
+<!--
             <dt><b>Parameters Imaged</b></dt>
             <dd class='eol_dd'>
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $paramimage->onto_id;   ?>' title=''><?php 
-                if(isset($paramimage->onto_name))
+            <a class='eol_onto_term_link' href='<?php  //echo $paramimage->onto_id;   ?>' title=''><?php 
+                /* if(isset($paramimage->onto_name))
                     echo $paramimage->onto_name;
                 else
-                    echo $paramimage->onto_id;
+                    echo $paramimage->onto_id; */
                         
              ?></a>
             </span>
-            </dd>
+            </dd>  -->
 
 <?php
         }
