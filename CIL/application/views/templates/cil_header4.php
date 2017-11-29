@@ -255,13 +255,14 @@ $('#k').autocomplete({
                             </div>
                             <div class="collapse navbar-collapse ">
                                 <ul class="nav navbar-nav navbar-left">
-                                                                    <li><a href="/home"><span class="glyphicon glyphicon-home"></span></a></li>
-                                      <li <?php 
+                                      <!--    <li><a href="/home"><span class="glyphicon glyphicon-home"></span></a></li> -->
+                                      <!-------------------CIL left menu items----------------------------------------------------------->
+                                      <li  <?php 
                                                                             if(isset($category) && strcmp($category, "cellprocess")== 0)
                                                                             {
                                                                                 echo "class=\"active\"";
                                                                             }
-                                                                            ?>><a href="/browse/cellprocess">Cell Process</a></li>
+                                                                            ?>><a  href="/browse/cellprocess">Cell Process</a></li>
                 
                                     <li <?php 
                                                                             if(isset($category) && strcmp($category, "cellcomponent")== 0)
@@ -288,7 +289,7 @@ $('#k').autocomplete({
                                                                             }
                                                                             ?>><a href="/pages/datasets">Data Sets</a></li>
                                                                         <!-- <li><a href="order.html">Pivot View</a></li> -->
-                                    
+                                    <!-------------------End CIL left menu items----------------------------------------------------------->
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right">
                                     <!-- <li class="dropdown">

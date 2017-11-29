@@ -266,3 +266,14 @@
 .list-group-item {
     padding: 5px 10px
 }
+
+.top_menu_font
+{
+    color: #ffffff;
+    font-family: "DroidSerifRegular";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    
+}
