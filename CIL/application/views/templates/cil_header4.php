@@ -173,10 +173,10 @@
 							<div class="col-xs-12">
 								<div class="navbar header-search-nav">
 									<ul class="nav navbar-nav">
-                                                                                <li><a href="/images/advanced_search">Advanced search</a></li>
-										<li><a href="/contributors">Contributors</a></li>
-										<li><a href="/pages/help">Help</a></li>
-                                                                                <li><a href="/pages/contribute">Submit</a></li>
+                                                                            <li><a href="/images/advanced_search"><span class="cil_black_font">Advanced search</span></a></li>
+										<li><a href="/contributors"><span class="cil_black_font">Contributors</span></a></li>
+										<li><a href="/pages/help"><span class="cil_black_font">Help</span></a></li>
+                                                                                <li><a href="/pages/contribute"><span class="cil_black_font">Submit</span></a></li>
 										<!-- <li><a href="column2.html">Login</a></li> -->
 									</ul>
 								</div>
