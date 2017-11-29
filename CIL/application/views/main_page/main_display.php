@@ -5,11 +5,11 @@
          </div>
     </div>
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 top-buffer">
             <?php include_once 'featured_image.php' ?>
         </div>
-        <div class="col-md-8">
-            <div class="row">
+        <div class="col-md-8 top-buffer">
+            <div class="row ">
              <div class="col-md-12">
                 <?php 
                     //include_once 'interactive_cell.php';

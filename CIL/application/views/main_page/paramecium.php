@@ -16,8 +16,6 @@
             <li id="oral_groove" class="list-group-item"><a href="/images?k=paramecium+oral+apparatus&simple_search=Search" class="anchor_blue">Oral groove</a></li>
             <li id="pellicle" class="list-group-item"><a href="/images?k=paramecium+pellicle&simple_search=Search" class="anchor_blue">Pellicle</a></li>
             <li id="trichocysts" class="list-group-item"><a href="/images?k=trichocyst+paramecium&simple_search=Search" class="anchor_blue">trichocysts</a></li>
-
-         
          </ul>
         
     </div>

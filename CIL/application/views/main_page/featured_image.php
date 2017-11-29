@@ -1,6 +1,6 @@
 
 <!-- <h2>Featured Image</h2> -->
-<span class="cil_title">Featured Image</span>
+<span class="cil_title2">Featured Image</span>
 <?php
 
     if($featured_has_video)
