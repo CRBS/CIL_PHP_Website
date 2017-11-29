@@ -17,12 +17,12 @@
                 <dd>
                 <span>
                 <a class='onto_term_link' href='<?php  echo $imagetype->onto_id;   ?>' title=''><?php 
-                                                                                                        if(isset($imagetype->onto_name))
-                                                                                                            echo $imagetype->onto_name; 
-                                                                                                        else 
-                                                                                                            echo $imagetype->onto_id;
+                    if(isset($imagetype->onto_name))
+                        echo $imagetype->onto_name; 
+                    else 
+                        echo $imagetype->onto_id;
                                                                                                                 
-                                                                                                            ?></a>
+                ?></a>
                 </span>
                 </dd>
 
@@ -263,7 +263,7 @@
                 <span>
                 <a class='eol_onto_term_link' href='<?php  echo $sc->onto_id;   ?>' title=''><?php 
                 
-                    if(isset($sc->onto_id))
+                    if(isset($sc->onto_name))
                         echo $sc->onto_name;
                     else
                         echo $sc->onto_id;

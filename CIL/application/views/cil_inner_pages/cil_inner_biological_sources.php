@@ -19,7 +19,12 @@
                     <dt><b>NCBI Organism Classification</b></dt>
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $ncbi->onto_id;   ?>' title=''><em><?php echo $ncbi->onto_name ?></em></a>
+                    <a class='eol_onto_term_link' href='<?php  echo $ncbi->onto_id;   ?>' title=''><em><?php 
+                        if(isset($ncbi->onto_name))
+                            echo $ncbi->onto_name; 
+                        else
+                            echo $ncbi->onto_id;
+                    ?></em></a>
                     </span>
                     </dd>
                     
@@ -47,7 +52,13 @@
                      
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $nc->onto_id;   ?>' title=''><em><?php echo $nc->onto_name ?></em></a>
+                    <a class='eol_onto_term_link' href='<?php  echo $nc->onto_id;   ?>' title=''><em><?php 
+                        if(isset($nc->onto_name))
+                            echo $nc->onto_name;
+                        else
+                            echo $nc->onto_id;
+                        
+                    ?></em></a>
                     </span>
                     </dd>
 <?php
@@ -85,7 +96,14 @@
             <dt><b>Cell Type</b></dt>
             <dd class='eol_dd'>
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $celltype->onto_id;   ?>' title=''><?php echo $celltype->onto_name ?></a>
+            <a class='eol_onto_term_link' href='<?php  echo $celltype->onto_id;   ?>' title=''><?php 
+            
+                if(isset($celltype->onto_name))
+                    echo $celltype->onto_name;
+                else
+                    echo $celltype->onto_id;
+                        
+            ?></a>
             </span>
             </dd>
 
@@ -114,7 +132,14 @@
                    
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $ct->onto_id;   ?>' title=''><?php echo $ct->onto_name ?></a>
+                    <a class='eol_onto_term_link' href='<?php  echo $ct->onto_id;   ?>' title=''><?php 
+                        
+                        if(isset($ct->onto_name))
+                            echo $ct->onto_name;
+                        else
+                            echo $ct->onto_id;
+                                
+                    ?></a>
                     </span>
                     </dd>
                 
@@ -154,7 +179,14 @@
             <dt><b>Cell Line</b></dt>
             <dd class='eol_dd'>
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $cellline->onto_id;   ?>' title=''><?php echo $cellline->onto_name ?></a>
+            <a class='eol_onto_term_link' href='<?php  echo $cellline->onto_id;   ?>' title=''><?php 
+                
+                if(isset($cellline->onto_name))
+                    echo $cellline->onto_name;
+                else
+                    echo $cellline->onto_id;
+                        
+            ?></a>
             </span>
             </dd>
 
@@ -183,7 +215,14 @@
                    
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $cl->onto_id;   ?>' title=''><?php echo $cl->onto_name ?></a>
+                    <a class='eol_onto_term_link' href='<?php  echo $cl->onto_id;   ?>' title=''><?php 
+                        
+                        if(isset($cl->onto_name))
+                            echo $cl->onto_name;
+                        else
+                            echo $cl->onto_id;
+                                
+                    ?></a>
                     </span>
                     </dd>
                 
@@ -225,7 +264,13 @@
                 <dt><b>Cell Type</b></dt>
                 <dd class='eol_dd'>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $ccomponent->onto_id;   ?>' title=''><?php echo $ccomponent->onto_name ?></a>
+                <a class='eol_onto_term_link' href='<?php  echo $ccomponent->onto_id;   ?>' title=''><?php 
+                    if(isset($ccomponent->onto_name))
+                        echo $ccomponent->onto_name;
+                    else
+                        echo $ccomponent->onto_id;
+                            
+                ?></a>
                 </span>
                 </dd>
 
@@ -252,7 +297,15 @@
                 
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $comp->onto_id;   ?>' title=''><?php echo $comp->onto_name ?></a>
+                    <a class='eol_onto_term_link' href='<?php  echo $comp->onto_id;   ?>' title=''><?php 
+                    
+                        if(isset($comp->onto_name))
+                            echo $comp->onto_name;
+                        else 
+                            $comp->onto_id;
+                         
+                                
+                    ?></a>
                     </span>
                     </dd>       
         
