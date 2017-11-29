@@ -19,7 +19,14 @@
              ?>    
              
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $method->onto_id;   ?>' title=''><?php echo $method->onto_name ?></a>
+            <a class='eol_onto_term_link' href='<?php  echo $method->onto_id;   ?>' title=''><?php 
+                if(isset($method->onto_name ))
+                    echo $method->onto_name;
+                else
+                    echo $method->onto_id; 
+                        
+            ?>
+            </a>
             </span>
             <?php
                 }
@@ -47,7 +54,13 @@
                     {
                 ?>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $mh->onto_id;   ?>' title=''><?php echo $mh->onto_name ?></a>
+                <a class='eol_onto_term_link' href='<?php  echo $mh->onto_id;   ?>' title=''><?php
+                    if(isset($mh->onto_name))
+                        echo  $mh->onto_name;
+                    else
+                        echo $mh->onto_id;
+                
+                ?></a>
                 </span>
                 <?php
                     }
@@ -84,7 +97,12 @@
              ?>    
              
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $intacell->onto_id;   ?>' title=''><?php echo $intacell->onto_name ?></a>
+            <a class='eol_onto_term_link' href='<?php  echo $intacell->onto_id;   ?>' title=''><?php 
+                if(isset($intacell->onto_name))
+                    echo $intacell->onto_name; 
+                else
+                    echo $intacell->onto_id;
+            ?></a>
             </span>
             <?php
                 }
@@ -112,7 +130,13 @@
                     {
                 ?>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $ic->onto_id;   ?>' title=''><?php echo $ic->onto_name ?></a>
+                <a class='eol_onto_term_link' href='<?php  echo $ic->onto_id;   ?>' title=''><?php 
+                    if(isset($ic->onto_name))
+                        echo $ic->onto_name;
+                    else
+                        echo $ic->onto_id;
+                            
+                ?></a>
                 </span>
                 <?php
                     }

@@ -17,7 +17,13 @@
                 <dt><b>Biological Process</b></dt>
                 <dd class='eol_dd'>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $bprocess->onto_id;   ?>' title=''><?php echo $bprocess->onto_name ?></a>
+                <a class='eol_onto_term_link' href='<?php  echo $bprocess->onto_id;   ?>' title=''><?php 
+                    if(isset($bprocess->onto_name))
+                       echo $bprocess->onto_name;
+                    else
+                       echo  $bprocess->onto_id;
+                            
+                ?></a>
                 </span>
                 </dd>
 
@@ -44,7 +50,13 @@
                 
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $bp->onto_id;   ?>' title=''><?php echo $bp->onto_name ?></a>
+                    <a class='eol_onto_term_link' href='<?php  echo $bp->onto_id;   ?>' title=''><?php 
+                        if(isset($bp->onto_name))
+                            echo $bp->onto_name;
+                        else
+                            echo $bp->onto_id;
+                                
+                    ?></a>
                     </span>
                     </dd>       
         
@@ -80,7 +92,14 @@
                 <dt><b>Molecular Function</b></dt>
                 <dd class='eol_dd'>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $mfunction->onto_id;   ?>' title=''><?php echo $mfunction->onto_name ?></a>
+                <a class='eol_onto_term_link' href='<?php  echo $mfunction->onto_id;   ?>' title=''><?php 
+                    
+                    if(isset($mfunction->onto_name))
+                        echo $mfunction->onto_name;
+                    else
+                        echo $mfunction->onto_id;
+                            
+                ?></a>
                 </span>
                 </dd>
 
@@ -107,7 +126,14 @@
 ?>
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $mf->onto_id;   ?>' title=''><?php echo $mf->onto_name ?></a>
+                    <a class='eol_onto_term_link' href='<?php  echo $mf->onto_id;   ?>' title=''><?php 
+                    
+                        if(isset($mf->onto_name))
+                            echo $mf->onto_name;
+                        else
+                            echo $mf->onto_id; 
+                                
+                    ?></a>
                     </span>
                     </dd>       
         

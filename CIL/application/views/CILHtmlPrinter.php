@@ -13,7 +13,11 @@ class CILHtmlPrinter
                 echo "\n<dt><b>".$title."</b></dt>";
                 echo "\n<dd class='eol_dd'>";
                 echo "\n<span>";
-                echo "\n<a class='eol_onto_term_link' href='".$json_items->onto_id."' title=''>".$json_items->onto_name."</a>";
+                if(isset($json_items->onto_name))
+                    echo "\n<a class='eol_onto_term_link' href='".$json_items->onto_id."' title=''>".$json_items->onto_name."</a>";
+                else 
+                    echo "\n<a class='eol_onto_term_link' href='".$json_items->onto_id."' title=''>".$json_items->onto_id."</a>";
+                
                 echo "\n</span>";
                 echo "\n</dd>";
 
