@@ -20,6 +20,13 @@
     float: left;                     /* so BS grid doesn't break */
     opacity: 0.7;                    /* optional */
 }
+
+
+.menu_item_width
+{
+    width:150px;
+    text-align: center;
+}
 /*.navbar .navbar-nav{
   display: inline-block;
   float: none;
@@ -296,3 +303,5 @@
     text-align: center;
     
 }
+
+

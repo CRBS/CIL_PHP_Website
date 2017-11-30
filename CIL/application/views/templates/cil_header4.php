@@ -257,7 +257,8 @@ $('#k').autocomplete({
                                 <ul class="nav navbar-nav navbar-left">
                                       <!--    <li><a href="/home"><span class="glyphicon glyphicon-home"></span></a></li> -->
                                       <!-------------------CIL left menu items----------------------------------------------------------->
-                                      <li  <?php 
+                                      <li class="divider-vertical"></li>
+                                      <li class="menu_item_width" <?php 
                                                                             if(isset($category) && strcmp($category, "cellprocess")== 0)
                                                                             {
                                                                                 echo "class=\"active\"";
@@ -265,33 +266,34 @@ $('#k').autocomplete({
                                                                             ?>><a  href="/browse/cellprocess">Cell Process</a></li>
                                                                         <li class="divider-vertical"></li>
 
-                                    <li <?php 
+                                    <li class="menu_item_width" <?php 
                                                                             if(isset($category) && strcmp($category, "cellcomponent")== 0)
                                                                             {
                                                                                 echo "class=\"active\"";
                                                                             }
                                                                             ?>><a href="/browse/cellcomponent">Cell Component</a></li>
                                                                         <li class="divider-vertical"></li>
-                                    <li <?php 
+                                    <li class="menu_item_width" <?php 
                                                                             if(isset($category) && strcmp($category, "celltype")== 0)
                                                                             {
                                                                                 echo "class=\"active\"";
                                                                             }
                                                                             ?>><a href="/browse/celltype">Cell Type</a></li>
                                                                         <li class="divider-vertical"></li>
-                                    <li <?php 
+                                    <li class="menu_item_width" <?php 
                                                                             if(isset($category) && strcmp($category, "organism")== 0)
                                                                             {
                                                                                 echo "class=\"active\"";
                                                                             }
                                                                             ?>><a href="/browse/organism">Organism</a></li>
                                                                         <li class="divider-vertical"></li>
-                                                                        <li <?php 
+                                                                        <li class="menu_item_width"<?php 
                                                                             if(isset($category) && strcmp($category, "datasets")== 0)
                                                                             {
                                                                                 echo "class=\"active\"";
                                                                             }
                                                                             ?>><a href="/pages/datasets">Data Sets</a></li>
+                                                                        <li class="divider-vertical"></li>
                                                                         <!-- <li><a href="order.html">Pivot View</a></li> -->
                                     <!-------------------End CIL left menu items----------------------------------------------------------->
                                 </ul>
