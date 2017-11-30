@@ -305,6 +305,43 @@ $( "#endoplasmic_reticulum" ).click(function() {
 
 
 
+$( "#endosome" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('endosome').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/endosome.png';
+});
+$( "#endosome" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('endosome').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+$( "#endosome" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Endosome', '_self');
+    win.focus();
+    
+});
+
+
+$( "#extracellular_matrix" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('extracellular_matrix').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/extracellular_matrix.png';
+});
+$( "#extracellular_matrix" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('extracellular_matrix').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+$( "#extracellular_matrix" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Extracellular%20Matrix', '_self');
+    win.focus();
+    
+});
+
 /**********************End Eukaryotic***************************************************/
 
 
