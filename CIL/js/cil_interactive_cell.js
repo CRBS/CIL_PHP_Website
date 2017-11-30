@@ -1,4 +1,5 @@
 $( function() {
+/**********************Paramecium***********************************************/
 $( "#cilia" ).mouseover(function() {
     console.log('cilia in');
     document.getElementById('cilia').className  = 'list-group-item selected_blue';
@@ -235,6 +236,76 @@ $( "#trichocysts" ).click(function() {
     win.focus();
     
 });
+/**********************End Paramecium***********************************************/
+
+/**********************Eukaryotic***************************************************/
+$( "#action_cytoskeleton" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('action_cytoskeleton').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/action_cytoskeleton.png';
+});
+
+$( "#action_cytoskeleton" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('action_cytoskeleton').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+
+$( "#action_cytoskeleton" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Actin%20Cytoskeleton', '_self');
+    win.focus();
+    
+});
+
+
+
+$( "#chromosome" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('chromosome').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/chromosome.png';
+});
+
+$( "#chromosome" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('chromosome').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+
+$( "#chromosome" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Chromosome', '_self');
+    win.focus();
+    
+});
+
+
+
+$( "#endoplasmic_reticulum" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('endoplasmic_reticulum').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/endoplasmic_reticulum.png';
+});
+
+$( "#endoplasmic_reticulum" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('endoplasmic_reticulum').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+
+$( "#endoplasmic_reticulum" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Endoplasmic%20Reticulum', '_self');
+    win.focus();
+    
+});
+
+
+
+/**********************End Eukaryotic***************************************************/
 
 
 } );
