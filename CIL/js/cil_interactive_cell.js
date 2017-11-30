@@ -342,6 +342,257 @@ $( "#extracellular_matrix" ).click(function() {
     
 });
 
+
+$( "#golgi_apparatus" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('golgi_apparatus').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/golgi_apparatus.png';
+});
+$( "#golgi_apparatus" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('golgi_apparatus').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+$( "#golgi_apparatus" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Golgi%20Apparatus', '_self');
+    win.focus();
+    
+});
+
+
+$( "#intermediate_filament_cytoskeleton" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('intermediate_filament_cytoskeleton').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/intermediate_filament_cytoskeleton.png';
+});
+$( "#intermediate_filament_cytoskeleton" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('intermediate_filament_cytoskeleton').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+$( "#intermediate_filament_cytoskeleton" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Intermediate%20Filament%20Cytoskeleton', '_self');
+    win.focus();
+    
+});
+
+
+
+$( "#lysosome" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('lysosome').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/lysosome.png';
+});
+$( "#lysosome" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('lysosome').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+$( "#lysosome" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Lysosome%20and%20Related%20Organelles', '_self');
+    win.focus();
+    
+});
+
+
+
+$( "#microtubule_cytoskeleton" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('microtubule_cytoskeleton').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/microtubule_cytoskeleton.png';
+});
+$( "#microtubule_cytoskeleton" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('microtubule_cytoskeleton').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+$( "#microtubule_cytoskeleton" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Microtubule%20Cytoskeleton', '_self');
+    win.focus();
+    
+});
+
+
+
+$( "#microtubule_organizing_centers" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('microtubule_organizing_centers').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/microtubule_organizing_centers.png';
+});
+$( "#microtubule_organizing_centers" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('microtubule_organizing_centers').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+$( "#microtubule_organizing_centers" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Microtubule%20Organizing%20Centers', '_self');
+    win.focus();
+    
+});
+
+
+$( "#mitochondrion" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('mitochondrion').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/mitochondrion.png';
+});
+$( "#mitochondrion" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('mitochondrion').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+$( "#mitochondrion" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Mitochondrion', '_self');
+    win.focus();
+    
+});
+
+
+$( "#nuclear_envelope" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('nuclear_envelope').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/nuclear_envelope.png';
+});
+$( "#nuclear_envelope" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('nuclear_envelope').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+$( "#nuclear_envelope" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Nuclear%20Envelope', '_self');
+    win.focus();
+    
+});
+
+
+$( "#nucleolus" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('nucleolus').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/nucleolus.png';
+});
+$( "#nucleolus" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('nucleolus').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+$( "#nucleolus" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Nucleolus', '_self');
+    win.focus();
+    
+});
+
+
+$( "#plasma_membrane" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('plasma_membrane').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/plasma_membrane.png';
+});
+$( "#plasma_membrane" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('plasma_membrane').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+$( "#plasma_membrane" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Plasma%20Membrane', '_self');
+    win.focus();
+    
+});
+
+
+
+$( "#ribosome" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('ribosome').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/ribosome.png';
+});
+$( "#ribosome" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('ribosome').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+$( "#ribosome" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Molecular%20Machinery', '_self');
+    win.focus();
+    
+});
+
+
+$( "#vacuole" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('vacuole').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/vacuole.png';
+});
+$( "#vacuole" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('vacuole').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+$( "#vacuole" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Vacuole', '_self');
+    win.focus();
+    
+});
+
+
+
+$( "#vacuole" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('vacuole').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/vacuole.png';
+});
+$( "#vacuole" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('vacuole').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+$( "#vacuole" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Vacuole', '_self');
+    win.focus();
+    
+});
+
+
+$( "#vesicle" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('vesicle').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/vesicle.png';
+});
+$( "#vesicle" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('vesicle').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+$( "#vesicle" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Vesicle', '_self');
+    win.focus();
+    
+});
 /**********************End Eukaryotic***************************************************/
 
 
