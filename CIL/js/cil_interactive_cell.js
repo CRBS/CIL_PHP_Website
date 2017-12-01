@@ -1,20 +1,20 @@
 $( function() {
 /**********************Paramecium***********************************************/
 $( "#cilia" ).mouseover(function() {
-    console.log('cilia in');
+    //console.log('cilia in');
     document.getElementById('cilia').className  = 'list-group-item selected_blue';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/cilia.png';
 });
 
 $( "#cilia" ).mouseout(function() {
-    console.log('cilia out');
+   // console.log('cilia out');
     document.getElementById('cilia').className  = 'list-group-item';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/default.png';
     
 });
 
 $( "#cilia" ).click(function() {
-    console.log('cilia click');
+   // console.log('cilia click');
     var win = window.open('/images?k=paramecium+cilia&simple_search=Search', '_self');
     win.focus();
     
@@ -22,20 +22,20 @@ $( "#cilia" ).click(function() {
 
 
 $( "#contractile_vacuole" ).mouseover(function() {
-    console.log('contractile_vacuole in');
+   // console.log('contractile_vacuole in');
     document.getElementById('contractile_vacuole').className  = 'list-group-item selected_blue';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/contractile_vacuole.png';
 });
 
 $( "#contractile_vacuole" ).mouseout(function() {
-    console.log('contractile_vacuole out');
+    //console.log('contractile_vacuole out');
     document.getElementById('contractile_vacuole').className  = 'list-group-item';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/default.png';
     
 });
 
 $( "#contractile_vacuole" ).click(function() {
-    console.log('contractile_vacuole click');
+    //console.log('contractile_vacuole click');
     var win = window.open('/images?k=paramecium+contractile+vacuole&simple_search=Search', '_self');
     win.focus();
     
@@ -44,20 +44,20 @@ $( "#contractile_vacuole" ).click(function() {
 
 
 $( "#cytoplasm" ).mouseover(function() {
-    console.log('cytoplasm in');
+    //console.log('cytoplasm in');
     document.getElementById('cytoplasm').className  = 'list-group-item selected_blue';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/cytoplasm.png';
 });
 
 $( "#cytoplasm" ).mouseout(function() {
-    console.log('cytoplasm out');
+   // console.log('cytoplasm out');
     document.getElementById('cytoplasm').className  = 'list-group-item';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/default.png';
     
 });
 
 $( "#cytoplasm" ).click(function() {
-    console.log('cytoplasm click');
+    //console.log('cytoplasm click');
     var win = window.open('/images?k=paramecium+cytoplasm&simple_search=Search', '_self');
     win.focus();
     
@@ -65,20 +65,20 @@ $( "#cytoplasm" ).click(function() {
 
 
 $( "#cytoproct" ).mouseover(function() {
-    console.log('cytoproct in');
+   // console.log('cytoproct in');
     document.getElementById('cytoproct').className  = 'list-group-item selected_blue';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/cytoproct.png';
 });
 
 $( "#cytoproct" ).mouseout(function() {
-    console.log('cytoproct out');
+   // console.log('cytoproct out');
     document.getElementById('cytoproct').className  = 'list-group-item';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/default.png';
     
 });
 
 $( "#cytoproct" ).click(function() {
-    console.log('cytoproct click');
+    //console.log('cytoproct click');
     var win = window.open('/images?k=paramecium+cytoproct&simple_search=Search', '_self');
     win.focus();
     
@@ -86,20 +86,20 @@ $( "#cytoproct" ).click(function() {
 
 
 $( "#food_vacuoles" ).mouseover(function() {
-    console.log('food_vacuoles in');
+    //console.log('food_vacuoles in');
     document.getElementById('food_vacuoles').className  = 'list-group-item selected_blue';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/food_vacuoles.png';
 });
 
 $( "#food_vacuoles" ).mouseout(function() {
-    console.log('food_vacuoles out');
+   // console.log('food_vacuoles out');
     document.getElementById('food_vacuoles').className  = 'list-group-item';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/default.png';
     
 });
 
 $( "#food_vacuoles" ).click(function() {
-    console.log('food_vacuoles click');
+    //console.log('food_vacuoles click');
     var win = window.open('/images?k=paramecium+food+vacuole&simple_search=Search', '_self');
     win.focus();
     
@@ -108,20 +108,20 @@ $( "#food_vacuoles" ).click(function() {
 
 
 $( "#cytopharynx" ).mouseover(function() {
-    console.log('cytopharynx in');
+   // console.log('cytopharynx in');
     document.getElementById('cytopharynx').className  = 'list-group-item selected_blue';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/cytopharynx.png';
 });
 
 $( "#cytopharynx" ).mouseout(function() {
-    console.log('cytopharynx out');
+   // console.log('cytopharynx out');
     document.getElementById('cytopharynx').className  = 'list-group-item';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/default.png';
     
 });
 
 $( "#cytopharynx" ).click(function() {
-    console.log('cytopharynx click');
+   // console.log('cytopharynx click');
     var win = window.open('/images?k=paramecium+cytopharynx&simple_search=Search', '_self');
     win.focus();
     
@@ -130,20 +130,20 @@ $( "#cytopharynx" ).click(function() {
 
 
 $( "#micronucleus" ).mouseover(function() {
-    console.log('micronucleus in');
+   // console.log('micronucleus in');
     document.getElementById('micronucleus').className  = 'list-group-item selected_blue';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/micronucleus.png';
 });
 
 $( "#micronucleus" ).mouseout(function() {
-    console.log('cytopharynx out');
+    //console.log('cytopharynx out');
     document.getElementById('micronucleus').className  = 'list-group-item';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/default.png';
     
 });
 
 $( "#micronucleus" ).click(function() {
-    console.log('micronucleus click');
+   // console.log('micronucleus click');
     var win = window.open('/images?k=paramecium+micronucleus&simple_search=Search', '_self');
     win.focus();
     
@@ -152,20 +152,20 @@ $( "#micronucleus" ).click(function() {
 
 
 $( "#macronucleus" ).mouseover(function() {
-    console.log('macronucleus in');
+   // console.log('macronucleus in');
     document.getElementById('macronucleus').className  = 'list-group-item selected_blue';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/macronucleus.png';
 });
 
 $( "#macronucleus" ).mouseout(function() {
-    console.log('macronucleus out');
+   // console.log('macronucleus out');
     document.getElementById('macronucleus').className  = 'list-group-item';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/default.png';
     
 });
 
 $( "#macronucleus" ).click(function() {
-    console.log('macronucleus click');
+   // console.log('macronucleus click');
     var win = window.open('/images?k=paramecium+macronucleus&simple_search=Search', '_self');
     win.focus();
     
@@ -174,20 +174,20 @@ $( "#macronucleus" ).click(function() {
 
 
 $( "#oral_groove" ).mouseover(function() {
-    console.log('oral_groove in');
+   // console.log('oral_groove in');
     document.getElementById('oral_groove').className  = 'list-group-item selected_blue';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/oral_groove.png';
 });
 
 $( "#oral_groove" ).mouseout(function() {
-    console.log('oral_groove out');
+  //  console.log('oral_groove out');
     document.getElementById('oral_groove').className  = 'list-group-item';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/default.png';
     
 });
 
 $( "#oral_groove" ).click(function() {
-    console.log('oral_groove click');
+  //  console.log('oral_groove click');
     var win = window.open('/images?k=paramecium+oral+apparatus&simple_search=Search', '_self');
     win.focus();
     
@@ -197,20 +197,20 @@ $( "#oral_groove" ).click(function() {
 
 
 $( "#pellicle" ).mouseover(function() {
-    console.log('pellicle in');
+   // console.log('pellicle in');
     document.getElementById('pellicle').className  = 'list-group-item selected_blue';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/pellicle.png';
 });
 
 $( "#pellicle" ).mouseout(function() {
-    console.log('pellicle out');
+   // console.log('pellicle out');
     document.getElementById('pellicle').className  = 'list-group-item';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/default.png';
     
 });
 
 $( "#pellicle" ).click(function() {
-    console.log('pellicle click');
+   // console.log('pellicle click');
     var win = window.open('/images?k=paramecium+pellicle&simple_search=Search', '_self');
     win.focus();
     
@@ -218,20 +218,20 @@ $( "#pellicle" ).click(function() {
 
 
 $( "#trichocysts" ).mouseover(function() {
-    console.log('trichocysts in');
+   // console.log('trichocysts in');
     document.getElementById('trichocysts').className  = 'list-group-item selected_blue';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/trichocysts.png';
 });
 
 $( "#trichocysts" ).mouseout(function() {
-    console.log('trichocysts out');
+    //console.log('trichocysts out');
     document.getElementById('trichocysts').className  = 'list-group-item';
     document.getElementById('paramecium_img').src = '/pic/interactive_cells/paramecium/default.png';
     
 });
 
 $( "#trichocysts" ).click(function() {
-    console.log('trichocysts click');
+   // console.log('trichocysts click');
     var win = window.open('/images?k=trichocyst+paramecium&simple_search=Search', '_self');
     win.focus();
     
@@ -595,5 +595,197 @@ $( "#vesicle" ).click(function() {
 });
 /**********************End Eukaryotic***************************************************/
 
+/*********************Escherichia coli*************************************************/
+$( "#cell_wall" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('cell_wall').className  = 'list-group-item selected_blue';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/cell_wall.png';
+});
+$( "#cell_wall" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('cell_wall').className  = 'list-group-item';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/default.png';
+    
+});
+$( "#cell_wall" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?image_search_parms[cellular_component]=cell+wall&advanced_search=Advanced+Search', '_self');
+    win.focus();
+    
+});
+
+
+$( "#inner_membrane" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('inner_membrane').className  = 'list-group-item selected_blue';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/inner_membrane.png';
+});
+$( "#inner_membrane" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('inner_membrane').className  = 'list-group-item';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/default.png';
+    
+});
+$( "#inner_membrane" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=membrane&image_search_parms[cell_type]=prokaryotic+cell&advanced_search=Advanced+Search', '_self');
+    win.focus();
+    
+});
+
+
+$( "#outer_membrane" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('outer_membrane').className  = 'list-group-item selected_blue';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/outer_membrane.png';
+});
+$( "#outer_membrane" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('outer_membrane').className  = 'list-group-item';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/default.png';
+    
+});
+$( "#outer_membrane" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=membrane&image_search_parms[cell_type]=prokaryotic+cell&advanced_search=Advanced+Search', '_self');
+    win.focus();
+    
+});
+
+
+
+$( "#peptidoglycan_layer" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('peptidoglycan_layer').className  = 'list-group-item selected_blue';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/peptidoglycan_layer.png';
+});
+$( "#peptidoglycan_layer" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('peptidoglycan_layer').className  = 'list-group-item';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/default.png';
+    
+});
+$( "#peptidoglycan_layer" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?image_search_parms[cellular_component]=cell+wall&advanced_search=Advanced+Search', '_self');
+    win.focus();
+    
+});
+
+
+
+$( "#Cytoplasm" ).mouseover(function() {
+    //console.log('cytoplasm in');
+    document.getElementById('Cytoplasm').className  = 'list-group-item selected_blue';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/cytoplasm.png';
+});
+$( "#Cytoplasm" ).mouseout(function() {
+   //console.log('cytoplasm out');
+    document.getElementById('Cytoplasm').className  = 'list-group-item';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/default.png';
+    
+});
+$( "#Cytoplasm" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?image_search_parms[cellular_component]=cell+wall&advanced_search=Advanced+Search', '_self');
+    win.focus();
+    
+});
+
+
+$( "#Flagella" ).mouseover(function() {
+    //console.log('cytoplasm in');
+    document.getElementById('Flagella').className  = 'list-group-item selected_blue';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/flagella.png';
+});
+$( "#Flagella" ).mouseout(function() {
+   //console.log('cytoplasm out');
+    document.getElementById('Flagella').className  = 'list-group-item';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/default.png';
+    
+});
+$( "#Flagella" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=flagella&simple_search=Search', '_self');
+    win.focus();
+    
+});
+
+
+$( "#nucleoid" ).mouseover(function() {
+    //console.log('cytoplasm in');
+    document.getElementById('nucleoid').className  = 'list-group-item selected_blue';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/nucleoid.png';
+});
+$( "#nucleoid" ).mouseout(function() {
+   //console.log('cytoplasm out');
+    document.getElementById('nucleoid').className  = 'list-group-item';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/default.png';
+    
+});
+$( "#nucleoid" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?image_search_parms[cellular_component]=nucleoid&advanced_search=Advanced+Search', '_self');
+    win.focus();
+    
+});
+
+
+$( "#lipopolysaccharide" ).mouseover(function() {
+    //console.log('cytoplasm in');
+    document.getElementById('lipopolysaccharide').className  = 'list-group-item selected_blue';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/lipopolysaccharide.png';
+});
+$( "#lipopolysaccharide" ).mouseout(function() {
+   //console.log('cytoplasm out');
+    document.getElementById('lipopolysaccharide').className  = 'list-group-item';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/default.png';
+    
+});
+$( "#lipopolysaccharide" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=lipopolysaccharide&simple_search=Search', '_self');
+    win.focus();
+    
+});
+
+
+$( "#Pili" ).mouseover(function() {
+    //console.log('cytoplasm in');
+    document.getElementById('Pili').className  = 'list-group-item selected_blue';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/pili.png';
+});
+$( "#Pili" ).mouseout(function() {
+   //console.log('cytoplasm out');
+    document.getElementById('Pili').className  = 'list-group-item';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/default.png';
+    
+});
+$( "#Pili" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=pilus&simple_search=Search', '_self');
+    win.focus();
+    
+});
+
+
+$( "#Plasmid" ).mouseover(function() {
+    //console.log('cytoplasm in');
+    document.getElementById('Plasmid').className  = 'list-group-item selected_blue';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/plasmid.png';
+});
+$( "#Plasmid" ).mouseout(function() {
+   //console.log('cytoplasm out');
+    document.getElementById('Plasmid').className  = 'list-group-item';
+    document.getElementById('escherichia_coli_img').src = '/pic/interactive_cells/escherichia_coli/default.png';
+    
+});
+$( "#Plasmid" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=plasmid&simple_search=Search', '_self');
+    win.focus();
+    
+});
+/**********************End Escherichia coli***************************************************/
 
 } );

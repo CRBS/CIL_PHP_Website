@@ -7,7 +7,8 @@ class Pages  extends CI_Controller
     {
         $data['test']="test";
         $this->load->view('templates/cil_header4', $data);
-        $this->load->view('pages/cell_illustration_display', $data);
+        //$this->load->view('pages/cell_illustration_display', $data); //using the flash
+        $this->load->view('pages/cell_illustration_display2', $data);
         $this->load->view('templates/cil_footer2', $data);
     }
     
