@@ -16,7 +16,8 @@
             {
 ?>
 
-                    <dt><b>NCBI Organism Classification</b></dt>
+                    <!-- <dt><b>NCBI Organism Classification</b></dt> -->
+                    <dt><span class="cil_small_title">NCBI Organism Classification</span></dt>
                     <dd class='eol_dd'>
                     <span>
                     <a class='eol_onto_term_link' href='<?php  echo $ncbi->onto_id;   ?>' title=''><em><?php 
@@ -34,16 +35,18 @@
             else if(isset($ncbi->free_text))
             {
 ?>
-                    <dt><b>NCBI Organism Classification</b></dt>
-                    <dd class='eol_dd'>
-                    <?php echo $ncbi->free_text ?>
-                    </dd>
+                <!-- <dt><b>NCBI Organism Classification</b></dt> -->
+                <dt><span class="cil_small_title">NCBI Organism Classification</span></dt>
+                <dd class='eol_dd'>
+                <?php echo $ncbi->free_text ?>
+                </dd>
 <?php
             }
         }
         else //if it is an array 
         {
-            echo "<dt><b>NCBI Organism Classification</b></dt>";
+            //echo "<dt><b>NCBI Organism Classification</b></dt>";
+            echo "<dt><span class=\"cil_small_title\">NCBI Organism Classification</span></dt>";
             foreach($ncbi as $nc)
             {
                 if(isset($nc->onto_id))
@@ -93,7 +96,8 @@
             if(isset($celltype->onto_id))
             {
 ?>
-            <dt><b>Cell Type</b></dt>
+            <!-- <dt><b>Cell Type</b></dt> -->
+            <dt><span class="cil_small_title">Cell Type</span></dt>
             <dd class='eol_dd'>
             <span>
             <a class='eol_onto_term_link' href='<?php  echo $celltype->onto_id;   ?>' title=''><?php 
@@ -112,10 +116,12 @@
             else if(isset($celltype->free_text))
             {
 ?>
-            <dt><b>Cell Type</b></dt>
-            <dd class='eol_dd'>
-                <?php echo $celltype->free_text ?>
-            </dd>
+                
+                <!-- <dt><b>Cell Type</b></dt> -->
+                <dt><span class="cil_small_title">Cell Type</span></dt>
+                <dd class='eol_dd'>
+                    <?php echo $celltype->free_text ?>
+                </dd>
             
 <?php    
             }
@@ -123,7 +129,8 @@
         }
         else
         {
-            echo "<dt><b>Cell Type</b></dt>";
+            //echo "<dt><b>Cell Type</b></dt>";
+            echo "<dt><span class=\"cil_small_title\">Cell Type</span></dt>";
             foreach($celltype as $ct)
             {
                 if(isset($ct->onto_id))
@@ -176,7 +183,8 @@
             if(isset($cellline->onto_id))
             {
 ?>
-            <dt><b>Cell Line</b></dt>
+            <!-- <dt><b>Cell Line</b></dt> -->
+            <dt><span class="cil_small_title">Cell Line</span></dt>
             <dd class='eol_dd'>
             <span>
             <a class='eol_onto_term_link' href='<?php  echo $cellline->onto_id;   ?>' title=''><?php 
@@ -195,10 +203,11 @@
             else if(isset($cellline->free_text))
             {
 ?>
-            <dt><b>Cell Line</b></dt>
-            <dd class='eol_dd'>
-                <?php echo $cellline->free_text ?>
-            </dd>
+                <!-- <dt><b>Cell Line</b></dt> -->
+                <dt><span class="cil_small_title">Cell Line</span></dt>
+                <dd class='eol_dd'>
+                    <?php echo $cellline->free_text ?>
+                </dd>
             
 <?php    
             }
@@ -206,7 +215,8 @@
         }
         else
         {
-            echo "<dt><b>Cell Line</b></dt>";
+            //echo "<dt><b>Cell Line</b></dt>";
+            echo "<dt><span class=\"cil_small_title\">Cell Line</span></dt>";
             foreach($cellline as $cl)
             {
                 if(isset($cl->onto_id))
@@ -261,7 +271,8 @@
             if(isset($ccomponent->onto_id))
             {
 ?>
-                <dt><b>Cell Type</b></dt>
+                <!-- <dt><b>Cellular Component</b></dt> -->
+                <dt><span class="cil_small_title">Cellular Component</span></dt>
                 <dd class='eol_dd'>
                 <span>
                 <a class='eol_onto_term_link' href='<?php  echo $ccomponent->onto_id;   ?>' title=''><?php 
@@ -278,8 +289,9 @@
             }
             else if(isset($ccomponent->free_text))
             {
-?>                
-                <dt><b>Cell Type</b></dt>
+?>                 
+                <!-- <dt><b>Cell Type</b></dt> -->
+                <dt><span class="cil_small_title">Cellular Component</span></dt>
                 <dd class='eol_dd'>
                 <?php echo $ccomponent->free_text; ?>
                 </dd>
@@ -288,7 +300,8 @@
         }
         else
         {
-            echo "<dt><b>Cellular Component</b></dt>";
+            //echo "<dt><b>Cellular Component</b></dt>";
+            echo "<dt><span class=\"cil_small_title\">Cellular Component</span></dt>";
             foreach ($ccomponent as $comp) 
             {
                 if(isset($comp->onto_id))

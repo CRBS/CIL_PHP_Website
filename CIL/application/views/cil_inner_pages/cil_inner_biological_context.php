@@ -14,7 +14,8 @@
             if(isset($bprocess->onto_id))
             {
 ?>
-                <dt><b>Biological Process</b></dt>
+                <!-- <dt><b>Biological Process</b></dt> -->
+                <dt><span class="cil_small_title">Biological Process</span></dt>
                 <dd class='eol_dd'>
                 <span>
                 <a class='eol_onto_term_link' href='<?php  echo $bprocess->onto_id;   ?>' title=''><?php 
@@ -32,7 +33,8 @@
             else if(isset($bprocess->free_text))
             {
 ?>
-                <dt><b>Biological Process</b></dt>
+                <!-- <dt><b>Biological Process</b></dt> -->
+                <dt><span class="cil_small_title">Biological Process</span></dt>
                 <?php echo $bprocess->free_text ?>
                 </dd>
 
@@ -41,7 +43,8 @@
         }
         else
         {
-            echo "<dt><b>Biological Process</b></dt>";
+            //echo "<dt><b>Biological Process</b></dt>";
+            echo "<dt><span class=\"cil_small_title\">Biological Process</span></dt>";
             foreach ($bprocess as $bp) 
             {
                 if(isset($bp->onto_id))
@@ -89,7 +92,8 @@
             if(isset($mfunction->onto_id))
             {
 ?>
-                <dt><b>Molecular Function</b></dt>
+                <!-- <dt><b>Molecular Function</b></dt> -->
+                <dt><span class="cil_small_title">Molecular Function</span></dt>
                 <dd class='eol_dd'>
                 <span>
                 <a class='eol_onto_term_link' href='<?php  echo $mfunction->onto_id;   ?>' title=''><?php 
@@ -108,7 +112,8 @@
             else if(isset($mfunction->free_text))
             {
 ?>
-                <dt><b>Molecular Function</b></dt>
+                <!-- <dt><b>Molecular Function</b></dt> -->
+                <dt><span class="cil_small_title">Molecular Function</span></dt>
                 <dd class='eol_dd'>
                 <?php echo $mfunction->free_text; ?>
                 </dd>
@@ -118,7 +123,8 @@
         }
         else
         {
-            echo "<dt><b>Molecular Function</b></dt>";
+            //echo "<dt><b>Molecular Function</b></dt>";
+            echo "<dt><span class=\"cil_small_title\">Molecular Function</span></dt>";
             foreach ($mfunction as $mf) 
             {
                 if(isset($mf->onto_id))

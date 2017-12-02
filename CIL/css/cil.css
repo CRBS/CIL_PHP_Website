@@ -140,6 +140,43 @@
 }
 
 
+.cil_description
+{
+    color: #000000;
+    font-family: "DroidSansRegular";
+    font-size: 13px;
+    line-height: 21px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: none;
+    text-align: start;
+    text-indent: 0px;
+}
+
+
+.cil_small_title
+{
+    color: #000000;
+    font-family: "DroidSansBold";
+    font-size: 11px;
+    line-height: 14px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: none;
+    text-align: start;
+    text-indent: 0px;
+}
+
 .cil_title2
 {
 
