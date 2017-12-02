@@ -13,7 +13,8 @@
             {
 ?>
             
-                <dt><b>Image Type</b></dt>
+                <!-- <dt><b>Image Type</b></dt> -->
+                <dt><span class="cil_small_title">Image Type</span></dt>
                 <dd>
                 <span>
                 <a class='onto_term_link' href='<?php  echo $imagetype->onto_id;   ?>' title=''><?php 
@@ -31,7 +32,8 @@
             else if(isset($imagetype->free_text))
             {
 ?>
-                <dt><b>Image Type</b></dt>
+                <!-- <dt><b>Image Type</b></dt> -->
+                <dt><span class="cil_small_title">Image Type</span></dt>
                 <dd>
                 <?php echo  $imagetype->free_text; ?>
                 </dd>
@@ -40,7 +42,8 @@
         }
         else
         {
-            echo "<dt><b>Image Type</b></dt>";
+            //echo "<dt><b>Image Type</b></dt>";
+            echo "<dt><span class=\"cil_small_title\">Image Type</span></dt>";
             foreach ($imagetype as $itype) 
             {
                 if(isset($itype->onto_id))
@@ -92,7 +95,8 @@
             if(isset($imagemode->onto_id))
             {
 ?>
-                <dt><b>Image Mode</b></dt>
+                <!-- <dt><b>Image Mode</b></dt> -->
+                <dt><span class="cil_small_title">Image Mode</span></dt>
                 <dd class='eol_dd'>
                 <span>
                 <a class='eol_onto_term_link' href='<?php  echo $imagemode->onto_id;   ?>' title=''><?php 
@@ -110,16 +114,19 @@
             else if(isset($imagemode->free_text))
             {
 ?>
-               <dt><b>Image Mode</b></dt>
+               <!-- <dt><b>Image Mode</b></dt> -->
+               <dt><span class="cil_small_title">Image Mode</span></dt>
+               <dd class='eol_dd'>
                 <?php echo $imagemode->free_text; ?>
-                </dd>
+               </dd>
 
 <?php                
             }
         }
         else
         {
-            echo "<dt><b>Image Mode</b></dt>";
+            //echo "<dt><b>Image Mode</b></dt>";
+            echo "<dt><span class=\"cil_small_title\">Image Mode</span></dt>";
             foreach ($imagemode as $imode) 
             {
                 if(isset($imode->onto_id))
@@ -187,7 +194,8 @@
         }
         else
         {
-            echo "<dt><b>Parameters Imaged</b></dt>";
+            //echo "<dt><b>Parameters Imaged</b></dt>";
+            echo "<dt><span class=\"cil_small_title\">Parameters Imaged</span></dt>";
             foreach ($paramimage as $pimage) 
             {
 ?>
@@ -222,7 +230,8 @@
         if(!is_array($scontrast))
         {
 ?>
-            <dt><b>Source of Contrast</b></dt>
+            <!-- <dt><b>Source of Contrast</b></dt> -->
+            <dt><span class="cil_small_title">Source of Contrast</span></dt>
             <dd class='eol_dd'>
             <?php
                 if(isset($scontrast->onto_id))
@@ -254,7 +263,8 @@
         }
         else
         {
-            echo "<dt><b>Source of Contrast</b></dt>";
+            //echo "<dt><b>Source of Contrast</b></dt>";
+            echo "<dt><span class=\"cil_small_title\">Source of Contrast</span></dt>";
             foreach ($scontrast as $sc) 
             {
 ?>
@@ -303,7 +313,8 @@
         if(!is_array($visual))
         {
 ?>
-            <dt><b>Visualization Methods</b></dt>
+            <!-- <dt><b>Visualization Methods</b></dt> -->
+            <dt><span class="cil_small_title">Visualization Methods</span></dt>
             <dd class='eol_dd'>
             <?php
                 if(isset($visual->onto_id))
@@ -335,7 +346,8 @@
         }
         else
         {
-            echo "<dt><b>Visualization Methods</b></dt>";
+            //echo "<dt><b>Visualization Methods</b></dt>";
+            echo "<dt><span class=\"cil_small_title\">Visualization Methods</span></dt>";
             foreach ($visual as $vs) 
             {
 ?>
@@ -382,7 +394,8 @@
         if(!is_array($phistory))
         {
 ?>
-            <dt><b>Processing History</b></dt>
+            <!-- <dt><b>Processing History</b></dt> -->
+            <dt><span class="cil_small_title">Processing History</span></dt>
             <dd class='eol_dd'>
             <?php
                 if(isset($phistory->onto_id))
@@ -413,7 +426,8 @@
         }
         else
         {
-            echo "<dt><b>Processing History</b></dt>";
+            //echo "<dt><b>Processing History</b></dt>";
+            echo "<dt><span class=\"cil_small_title\">Processing History</span></dt>";
             foreach ($phistory as $ph) 
             {
 ?>
@@ -463,7 +477,8 @@
         if(!is_array($dataquali))
         {
 ?>
-            <dt><b>Data Qualifiers</b></dt>
+            <!-- <dt><b>Data Qualifiers</b></dt> -->
+            <dt><span class="cil_small_title">Data Qualifiers</span></dt>
             <dd class='eol_dd'>
             <?php
                 if(isset($dataquali->free_text))
@@ -497,7 +512,8 @@
         }
         else
         {
-            echo "<dt><b>Data Qualifiers</b></dt>";
+            //echo "<dt><b>Data Qualifiers</b></dt>";
+            echo "<dt><span class=\"cil_small_title\">Data Qualifiers</span></dt>";
             foreach ($dataquali as $dq) 
             {
 ?>

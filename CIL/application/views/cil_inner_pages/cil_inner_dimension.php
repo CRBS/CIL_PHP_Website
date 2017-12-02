@@ -50,9 +50,9 @@
             <tbody>
             <tr class="even">
 
-            <th>Spatial Axis</th>
-            <th>Image Size</th>
-            <th>Pixel Size</th>
+            <th class="cil_black_font">Spatial Axis</th>
+            <th class="cil_black_font">Image Size</th>
+            <th class="cil_black_font">Pixel Size</th>
             </tr>
             
 <?php
@@ -64,7 +64,7 @@
                 
 ?>
                     <tr class="<?php echo $nextColor; ?>">
-                    <th scope="row">
+                    <th scope="row" class="cil_black_font">
                     <?php
                         if(isset($dim->Space->axis))
                             echo $dim->Space->axis;
@@ -72,7 +72,7 @@
                             echo "——";
                     ?>
                     </th>
-                    <td>
+                    <td class="cil_black_font">
                     <?php
                         if(isset($dim->Space->Image_size))
                         {

@@ -10,7 +10,8 @@
         if(!is_array($contributors))
         {
 ?>
-            <dt><b>Names</b></dt>
+            <!-- <dt><b>Names</b></dt> -->
+            <dt><span class="cil_small_title">Names</span></dt>
             <dd class='eol_dd'>
             <?php echo $contributors ?>
             </dd>
@@ -19,7 +20,8 @@
         }
         else
         {
-            echo "<dt><b>Names</b></dt>";
+            //echo "<dt><b>Names</b></dt>";
+            echo "<dt><span class=\"cil_small_title\">Names</span></dt>";
             foreach ($contributors as $contributor) 
             {
 ?>
@@ -46,7 +48,8 @@
         foreach($published as $pub)
         {
 ?>
-            <dt><b>Published</b></dt>
+            <!-- <dt><b>Published</b></dt> -->
+            <dt><span class="cil_small_title">Published</span></dt>
             <dd class='eol_dd'>
             <?php echo $pub; ?>
             </dd>
@@ -65,7 +68,8 @@
         foreach($pubmed as $pub)
         {
 ?>
-            <dt><b>Pubmed</b></dt>
+            <!-- <dt><b>Pubmed</b></dt> -->
+            <dt><span class="cil_small_title">Pubmed</span></dt>
             <dd class='eol_dd'>
                 <a href="https://www.ncbi.nlm.nih.gov/pubmed/<?php echo $pub; ?>" target="_blank">
                 <?php echo $pub; ?>
@@ -84,7 +88,8 @@
     if(isset($json->CIL_CCDB->CIL->CORE->ATTRIBUTION->URLs))
     {
         $urls = $json->CIL_CCDB->CIL->CORE->ATTRIBUTION->URLs;
-        echo "<dt><b>Link</b></dt>";
+        //echo "<dt><b>Link</b></dt>";
+        echo "<dt><span class=\"cil_small_title\">Link</span></dt>";
         foreach($urls as $url)
         {
 ?>
@@ -119,7 +124,8 @@
     if(isset($json->CIL_CCDB->CIL->CORE->ATTRIBUTION->OTHER))
     {
         $others = $json->CIL_CCDB->CIL->CORE->ATTRIBUTION->OTHER;
-        echo "<dt><b>OTHER</b></dt>";
+        //echo "<dt><b>OTHER</b></dt>";
+        echo "<dt><span class=\"cil_small_title\">OTHER</span></dt>";
         foreach($others as $other)
         {
 ?>
