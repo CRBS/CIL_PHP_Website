@@ -132,9 +132,9 @@
             <thead></thead>
             <tbody>
             <tr class="even">
-            <th class="wave_header_cell">Channel</th>
-            <th class="wave_header_cell">Wavelength</th>
-            <th class="wave_header_cell"></th>
+            <th class="wave_header_cell cil_black_font">Channel</th>
+            <th class="wave_header_cell cil_black_font">Wavelength</th>
+            <th class="wave_header_cell cil_black_font"></th>
             </tr>
             
 <?php
@@ -212,7 +212,7 @@
 ?>
             <tr class="<?php echo $nextColor ?>">
 
-                <th><b>Time</b></th>
+                <th><span class="cil_black_font"><b>Time</b></span></th>
             <th><?php  echo $dim->Time->value." ".$dim->Time->unit;  ?> </th>
             <th><?php echo $dim->Time->frame; ?></th>
             </tr>
