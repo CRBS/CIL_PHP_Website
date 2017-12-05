@@ -73,7 +73,7 @@
                 
                 <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
                 <!-- <a class='download_menu_anchor' href='<?php  //echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Reconstruction->Recon_Downloadable_data->Full_resolution->URL;  ?>'  download="<?php //echo $image_id."_full_resolution"; ?>">Download full resolution image</a> -->
-                <a class='download_menu_anchor' href='<?php  echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Reconstruction->Recon_Downloadable_data->Full_resolution->URL;  ?>'  download>">Download full resolution image</a>
+                <a class='download_menu_anchor' href='<?php  echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Reconstruction->Recon_Downloadable_data->Full_resolution->URL;  ?>'  download>Download full resolution image</a>
                 
                 </div>
                 
@@ -87,7 +87,7 @@
                 ?>     
                 <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
                 <!-- <a class='download_menu_anchor' href='<?php //echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Reconstruction->Recon_Downsampled->URL;  ?>'  download="<?php //echo $image_id."_downsampled"; ?>">Download downsampled image</a>  -->
-                <a class='download_menu_anchor' href='<?php echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Reconstruction->Recon_Downsampled->URL;  ?>'  download="<?php echo $image_id."_downsampled"; ?>">Download downsampled image</a> 
+                <a class='download_menu_anchor' href='<?php echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Reconstruction->Recon_Downsampled->URL;  ?>'  download>Download downsampled image</a> 
                 </div>
                 <?php
                     }
