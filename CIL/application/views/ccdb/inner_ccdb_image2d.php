@@ -38,13 +38,24 @@
                 <a class='dropdown_button mini' href='#download_options_button' name='download_options_button'>Image Data Download Options...</a>
                 <div class='download_options_container' id='ITEMS2' onmouseout="this.style.display='none'" onmouseover="this.style.display='block'">
                 <?php
-                    if(isset($numeric_id))
-                    {
+                    //if(isset($numeric_id))
+                    //{
                         
                  ?>
-                <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-                <a class='download_menu_anchor' href='<?php echo $result->CIL_CCDB->CCDB->Image2d->Image2D_Display_image->URL; ?>' download="<?php echo $numeric_id; ?>_512r.jpg">Download in JPEG format</a>
-                </div>
+                <!-- <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
+                <a class='download_menu_anchor' href='<?php //echo $result->CIL_CCDB->CCDB->Image2d->Image2D_Display_image->URL; ?>' download="<?php //echo $numeric_id; ?>_512r.jpg">Download in JPEG format</a>
+                </div> -->
+                <?php
+                    //}
+                ?>
+                
+                <?php
+                    if(isset($result->CIL_CCDB->CCDB->Image2d->Image2D_Display_image->URL))
+                    {
+                ?>
+                        <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
+                            <a class='download_menu_anchor' href='<?php echo $result->CIL_CCDB->CCDB->Image2d->Image2D_Display_image->URL; ?>' download>Download in JPEG format</a>
+                        </div>
                 <?php
                     }
                 ?>
@@ -54,8 +65,8 @@
                     {
                 ?>    
                 <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-                <!-- <a class='download_menu_anchor' href='http://ccdb.ucsd.edu/ccdbdata/<?php //echo $result->CIL_CCDB->CCDB->Image2d->Image2D_Downloadable_data->Full_resolution->URL;  ?>'  download="<?php //echo $image_id."_r_full_resolution"; ?>">Download full resolution image</a> -->
-                <a class='download_menu_anchor' href='<?php echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Image2d->Image2D_Downloadable_data->Full_resolution->URL;  ?>'  download="<?php echo $image_id."_r_full_resolution"; ?>">Download full resolution image</a>
+                    <!-- <a class='download_menu_anchor' href='<?php //echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Image2d->Image2D_Downloadable_data->Full_resolution->URL;  ?>'  download="<?php //echo $image_id."_r_full_resolution"; ?>">Download full resolution image</a> -->
+                     <a class='download_menu_anchor' href='<?php echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Image2d->Image2D_Downloadable_data->Full_resolution->URL;  ?>'  download>Download full resolution image</a> 
                 </div>
                 <?php
                     }
@@ -66,8 +77,8 @@
                     {
                 ?>    
                 <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-                <!-- <a class='download_menu_anchor' href='http://ccdb.ucsd.edu/ccdbdata/<?php //echo $result->CIL_CCDB->CCDB->Image2d->Image2D_Animation->URL;  ?>'  download="<?php //echo $image_id."_r_animation"; ?>">Download animation file</a> -->
-                <a class='download_menu_anchor' href='<?php echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Image2d->Image2D_Animation->URL;  ?>'  download="<?php echo $image_id."_r_animation"; ?>">Download animation file</a>
+                    <!-- <a class='download_menu_anchor' href='<?php //echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Image2d->Image2D_Animation->URL;  ?>'  download="<?php //echo $image_id."_r_animation"; ?>">Download animation file</a> -->
+                    <a class='download_menu_anchor' href='<?php echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Image2d->Image2D_Animation->URL;  ?>'  download>Download animation file</a>
                 </div>
                 <?php
                     }
