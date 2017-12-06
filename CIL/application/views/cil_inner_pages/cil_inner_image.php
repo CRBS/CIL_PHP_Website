@@ -1,13 +1,17 @@
 <?php 
 
-    if(!$has_video)
+    
+    $is_video = false;
+    if(isset($json->CIL_CCDB->Data_type->Video) && $json->CIL_CCDB->Data_type->Video)
+        $is_video = true;
+    //if(!$has_video)
+    if(!$is_video)
     {
 ?>
 
         <div class="row">
             <div class="col-md-12">
                 <center>
-                <!-- <img src="http://www.cellimagelibrary.org/cil_ccdb/display_images/<?php //echo $numeric_id;   ?>/<?php //echo "display_".$numeric_id;   ?>.png" width="100%" class="img-thumbnail pull-right"/> -->
                 <img src="<?php echo $cil_image_prefix.$numeric_id;   ?>/<?php echo "display_".$numeric_id;   ?>.png" width="100%" class="img-thumbnail pull-right"/>
                 </center>
             </div>
@@ -17,15 +21,25 @@
     else
     {
 ?>
-        <div id='detailed_page_flowplayer'>
+        <!-- <div id='detailed_page_flowplayer'>
         <center>
-        <a href="<?php echo $video_url ?>" id="player" style="display:block;width:460px;height:330px"></a>
+        <a href="<?php //echo $video_url ?>" id="player" style="display:block;width:460px;height:330px"></a>
         </center>
         <script type="text/javascript" language="javascript" >
             flowplayer("player", "/swf/flowplayer-3.2.5.swf", { clip:{scaling: "orig", onBeforeFinish: function() { return false; }, autoPlay:true, autoBuffering:true}});
         </script>
+        </div> -->
+        <!-- <video  width="100%" height="100%" controls autoplay loop>  -->
+        <div class="row">
+            <!-- <div class="col-md-12" style="background-color: black"> -->
+            <div class="col-md-12">
+                <center>
+                <video width="100%" height="100%" controls autoplay loop>
+                <source src="<?php  echo $cil_data_host."/media/videos/".$numeric_id."/".$numeric_id."_web.mp4"; ?>" type="video/mp4">
+                </video>
+                </center>
+            </div>
         </div>
-
 <?php
     }
 ?>

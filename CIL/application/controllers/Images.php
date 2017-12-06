@@ -342,7 +342,7 @@ class Images  extends CI_Controller
         $data['ccdb_direct_data_prefix'] = $this->config->item('ccdb_direct_data_prefix');
         $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
         $data['ccdb_image_prefix'] = $this->config->item('ccdb_image_prefix');
-        
+        $data['cil_data_host'] = $this->config->item('cil_data_host');
         if(strcmp($imageID,"advanced_search")==0)
         {
             $data['test'] = "test";
