@@ -20,7 +20,16 @@
                     <dt><span class="cil_small_title">NCBI Organism Classification</span></dt>
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $ncbi->onto_id;   ?>' title=''><em><?php 
+                    <a class='eol_onto_term_link' href='<?php  
+                    
+                      if(isset($ncbi->onto_name))
+                          echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bncbi%5D=".$ncbi->onto_name;
+                          //echo $base_url."/images?advanced_search=Advanced+Search&image_search_parms%5Bncbi%5D=".$onto_name;
+                      else
+                        echo $base_url."/images?advanced_search=Advanced+Search&image_search_parms%5Bncbi%5D=".$ncbi->onto_id;   
+                    
+                    
+                    ?>' title=''><em><?php 
                         if(isset($ncbi->onto_name))
                             echo $ncbi->onto_name; 
                         else

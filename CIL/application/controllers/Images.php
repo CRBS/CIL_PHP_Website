@@ -26,6 +26,9 @@ class Images  extends CI_Controller
         $queryString = urlencode($keywords);
         $simple_search = $this->input->get('simple_search',TRUE);
         $adv_search = $this->input->get('advanced_search',TRUE);
+        
+
+        
         $page = 0;
         $size = 10;
         
@@ -93,7 +96,28 @@ class Images  extends CI_Controller
         $data['base_url'] = $this->config->item('base_url');
         //echo $keywords."<br/>";
         //echo $simple_search."<br/>";
-        if(!is_null($keywords) && strcmp("$simple_search", "Search")==0)
+        
+        
+        //////////Trying to implement the di_onto_term but it might not be worth////////////////
+        /*
+        $di_onto_term = $this->input->get('di_onto_term',TRUE);
+        $di_onto_cat = $this->input->get('di_onto_cat',TRUE);
+        if(!is_null($di_onto_cat) && !is_null($di_onto_term))
+        {
+            $queryString = $this->input->server('QUERY_STRING');
+            
+            $autil = new Adv_query_util();
+            $this->load->model('Adv_search_query_model');
+            $array = array();
+            $amodel = $this->Adv_search_query_model;
+            
+            $autil->handleTextWithAltName($amodel, $input, 'image_search_parms_ncbi', 'image_search_parms[ncbi]');
+        }
+        else 
+        */
+        //////////END Trying to implement the di_onto_term but it might not be worth////////////////
+        
+        if(!is_null($keywords) && strcmp($simple_search, "Search")==0)
         {
             /*$searchPrefix2 = $this->config->item('data_search_url');
             $searchPostfix2 = "+CIL_CCDB.Status.Is_public:true+CIL_CCDB.Status.Deleted:false&default_operator=AND&from=".$from."&size=".$size;
