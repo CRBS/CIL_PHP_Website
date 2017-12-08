@@ -15,6 +15,14 @@
         <em><?php 
                 if(isset($keywords))
                     echo $keywords;
+
+                if(isset($search_for))
+                {
+                    //echo $amodel->search_for;
+                    echo $search_for;
+                }
+                
+                
             
             ?></em>
         </div> <?php echo "(".$result->hits->total. " results)" ?>

@@ -36,6 +36,7 @@ class Adv_search_query_model extends CI_Model {
     public $image_search_parms_teleost_anatomy;
     public $image_search_parms_xenopus_anatomy;
     public $image_search_parms_zebrafish_anatomy;
+    public $search_for;
         
     public function print_model()
     {
@@ -71,6 +72,7 @@ class Adv_search_query_model extends CI_Model {
         echo "<br/>image_search_parms_teleost_anatomy:".$this->image_search_parms_teleost_anatomy;
         echo "<br/>image_search_parms_xenopus_anatomy:".$this->image_search_parms_xenopus_anatomy;
         echo "<br/>image_search_parms_zebrafish_anatomy:".$this->image_search_parms_zebrafish_anatomy;
+        echo "<br/>search_for:".$search_for;
         echo "<br/>-----------------End Params----------------------";
         
     }

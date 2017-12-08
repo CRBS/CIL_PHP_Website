@@ -24,6 +24,11 @@ class Adv_query_util
             if(strlen($temp) > 0)
             {
                 $model->{$model_name} = $temp;
+                
+                if(is_null($model->search_for))
+                    $model->search_for = $temp;
+                else
+                    $model->search_for = $model->search_for." & ".$temp;
             }
         }
     }
@@ -37,6 +42,32 @@ class Adv_query_util
             if(strcmp($temp, strtolower("true"))==0)
             {
                 $model->{$key} = true;
+                
+                if(is_null($model->search_for))
+                    $model->search_for = "";
+                if(strlen($model->search_for) > 0)
+                      $model->search_for = $model->search_for." & ";
+                
+                if(strcmp($key,"still")==0)
+                  $model->search_for = $model->search_for."still images";
+                else if(strcmp($key,"video")==0)
+                  $model->search_for = $model->search_for."videos";
+                else if(strcmp($key,"zstack")==0)
+                  $model->search_for = $model->search_for."zstack images";
+                else if(strcmp($key,"time")==0)
+                  $model->search_for = $model->search_for."time series images";
+                else if(strcmp($key, 'public_domain') == 0)
+                   $model->search_for = $model->search_for."public domain images";
+                else if(strcmp($key, 'attribution_cc') == 0)
+                   $model->search_for = $model->search_for."attribution cc images";
+                else if(strcmp($key, 'attribution_nc_sa') == 0)
+                   $model->search_for = $model->search_for."attribution nc images";
+                else if(strcmp($key, 'copyright') == 0)
+                   $model->search_for = $model->search_for."copyrighted images";
+                else
+                    $model->search_for = $model->search_for.$key;     
+              
+                
             }
         }
     }
@@ -49,6 +80,18 @@ class Adv_query_util
             if(strcmp($temp, strtolower("true"))==0)
             {
                 $model->{$yes_key} = true;
+                
+                if(is_null($model->search_for))
+                    $model->search_for = "";
+                if(strlen($model->search_for) > 0)
+                      $model->search_for = $model->search_for." & ";
+               
+                if(strcmp($yes_key, 'grouped') == 0)
+                   $model->search_for = $model->search_for."grouped images";
+                if(strcmp($yes_key, 'computable') == 0)
+                   $model->search_for = $model->search_for."quantitative images"; 
+                else
+                   $model->search_for = $model->search_for.$yes_key;   
             }
         }
         

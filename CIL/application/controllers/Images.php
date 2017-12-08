@@ -248,8 +248,28 @@ class Images  extends CI_Controller
         {
             
             $query_url =  $this->config->item('advanced_search')."?from=".$from."&size=".$size;
-            $query = $this->handleAdvSearchInputs($this->input);
+            //$query = $this->handleAdvSearchInputs($this->input);
+            $rarray = $this->handleAdvSearchInputs($this->input);
+            $query = $rarray['query_str'];
+            $amodel = $rarray['amodel'];
+            $data['amodel'] = $amodel;
+            
+            if($amodel->search_for)
+            {
+               $length = 35;
+               $search_for = $amodel->search_for;
+               $count = strlen($amodel->search_for);
+               //echo "<br/>Count:".$count;
+               if($count > $length)
+                   $search_for = substr ($search_for, 0, $length)."...";
+               $data ['search_for'] = $search_for;
+               
+            }
+
+            
             $response = $sutil->curl_get_data($query_url,$query);
+            
+
             //echo "<br/>curl -XGET '".$query_url."' -d '".$query." '";
             //echo "<hr><br/><br/>Response:".$response;
             
@@ -286,6 +306,13 @@ class Images  extends CI_Controller
             
             $data['queryString'] = $queryString;
             $data['result'] = $result;
+            
+            
+            //echo "-----------amodel-----------";
+            //var_dump($amodel);
+            //echo  $data['search_for'];
+            //echo "-----------End amodel-----------";
+            
             $this->load->view('templates/cil_header4', $data);
             $this->load->view('advanced_search/results/adv_search_results', $data);
             $this->load->view('templates/cil_footer2', $data);
@@ -356,7 +383,13 @@ class Images  extends CI_Controller
             echo "<br/><br/>";
         }
         
-        return $query_str;
+        //New return type
+        $array = array();
+        $array['query_str'] = $query_str;
+        $array['amodel'] = $amodel;
+        
+        //return $query_str;
+        return $array;
     }
     
     
