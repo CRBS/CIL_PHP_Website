@@ -117,7 +117,15 @@
             <dt><span class="cil_small_title">Cell Type</span></dt>
             <dd class='eol_dd'>
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $celltype->onto_id;   ?>' title=''><?php 
+            <a class='eol_onto_term_link' href='<?php  
+            
+                if(isset($celltype->onto_name))
+                    echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bcell_type%5D=".$celltype->onto_name;
+                else
+                    echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bcell_type%5D=". $celltype->onto_id;   
+                
+                
+                ?>' title=''><?php 
             
                 if(isset($celltype->onto_name))
                     echo $celltype->onto_name;
@@ -156,7 +164,16 @@
                    
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $ct->onto_id;   ?>' title=''><?php 
+                    <a class='eol_onto_term_link' href='<?php  
+                    
+                        if(isset($ct->onto_name))
+                            echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bcell_type%5D=".$ct->onto_name;
+                        else
+                            echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bcell_type%5D=". $ct->onto_id;   
+                        //echo $ct->onto_id;   
+                        
+                        
+                        ?>' title=''><?php 
                         
                         if(isset($ct->onto_name))
                             echo $ct->onto_name;
