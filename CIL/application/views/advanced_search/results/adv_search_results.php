@@ -18,6 +18,8 @@
 
                 if(isset($search_for))
                 {
+                    if(isset($keywords) && strlen($keywords) > 0)
+                        echo " & ";
                     //echo $amodel->search_for;
                     echo $search_for;
                 }
