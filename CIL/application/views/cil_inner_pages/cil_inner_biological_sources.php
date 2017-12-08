@@ -24,9 +24,8 @@
                     
                       if(isset($ncbi->onto_name))
                           echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bncbi%5D=".$ncbi->onto_name;
-                          //echo $base_url."/images?advanced_search=Advanced+Search&image_search_parms%5Bncbi%5D=".$onto_name;
                       else
-                        echo $base_url."/images?advanced_search=Advanced+Search&image_search_parms%5Bncbi%5D=".$ncbi->onto_id;   
+                        echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bncbi%5D=".$ncbi->onto_id;   
                     
                     
                     ?>' title=''><em><?php 
@@ -64,7 +63,16 @@
                      
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $nc->onto_id;   ?>' title=''><em><?php 
+                    <a class='eol_onto_term_link' href='<?php  
+                    
+                        //echo $nc->onto_id;   
+                        if(isset($nc->onto_name))
+                          echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bncbi%5D=".$nc->onto_name;
+                        else
+                            echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bncbi%5D=".$nc->onto_id;   
+                        
+                        
+                    ?>' title=''><em><?php 
                         if(isset($nc->onto_name))
                             echo $nc->onto_name;
                         else
