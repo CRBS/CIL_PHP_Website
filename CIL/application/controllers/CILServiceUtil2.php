@@ -181,14 +181,23 @@ class CILServiceUtil2
     public function getImges($data)
     {
         $CI = CI_Controller::get_instance();
+        $url = $CI->config->item('service_api_host')."/rest/adv_data_search";
+        $response = $this->curl_get_data($url, $data);
+        return $response;
+    }
+    
+    /*public function getImges($data)
+    {
+        $CI = CI_Controller::get_instance();
         $url = $CI->config->item('elasticsearchPrefix')."/data/_search";
-        
+        echo "<br/>-----".$url;
+        //$url = $CI->config->item('advanced_search');
         //$url = $this->config->item('elasticsearchPrefix');
         //$url = $this->elasticsearchPrefix."/data/_search";
         //echo $url."<br/>";
         $response = $this->just_curl_get_data($url, $data);
         return $response;
-    }
+    }*/
     
     function is_url_exist($url){
         $ch = curl_init($url);    

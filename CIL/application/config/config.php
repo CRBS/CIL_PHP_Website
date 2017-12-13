@@ -534,25 +534,19 @@ $config['ccdb_image_prefix'] = 'https://cildata.crbs.ucsd.edu/display_images/ccd
 
 
 /* ----------------------------Service API---------------------------------- */
-//$service_api_host = "http://localhost:8080";
-$service_api_host = "https://cilia.crbs.ucsd.edu";
+$service_api_host = "http://localhost:8080";
+//$service_api_host = "https://cilia.crbs.ucsd.edu";
 
-//$config['homepage_settings'] = "http://localhost:8080/CIL_RS/index.php/rest/website_settings/homepage";
-//$config['homepage_settings'] = "https://cilia.crbs.ucsd.edu/CIL_RS/index.php/rest/website_settings/homepage";
+$config['service_api_host'] = $service_api_host;
+
 $config['homepage_settings'] = $service_api_host."/rest/website_settings/homepage";
 
 /* CIL REST Document API URL */
-//$config['apiDocPrefix'] = "https://cilia.crbs.ucsd.edu/CIL_RS/index.php/rest/documents/";
-//$config['apiDocPrefix'] = "http://localhost:8080/CIL_RS/index.php/rest/documents";
 $config['apiDocPrefix'] = $service_api_host."/rest/documents";
 
 /* Advanced search API URL */
-//$config['advanced_search'] = "http://localhost:8080/CIL_RS/index.php/rest/advanced_document_search";
-//$config['advanced_search'] = "https://cilia.crbs.ucsd.edu/CIL_RS/index.php/rest/advanced_document_search";
 $config['advanced_search'] = $service_api_host."/rest/advanced_document_search";
 
-//$config['simple_ontology_expansion_prefix'] = "http://localhost:8080/CIL_RS/index.php/rest/simple_ontology_expansion";
-//$config['simple_ontology_expansion_prefix'] = "https://cilia.crbs.ucsd.edu/CIL_RS/index.php/rest/simple_ontology_expansion";
 $config['simple_ontology_expansion_prefix'] = $service_api_host."/rest/simple_ontology_expansion";
 
 /* ---------------------------- End Service API---------------------------------- */

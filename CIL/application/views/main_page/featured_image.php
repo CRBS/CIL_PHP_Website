@@ -3,42 +3,41 @@
 <span class="cil_title2">Featured Image</span>
 <?php
 
-    if($featured_has_video)
+    //if($featured_has_video)
+    
+    if(isset($featured_image))
     {
+        if(isset($featured_image->CIL_CCDB->Data_type->Video) 
+                && $featured_image->CIL_CCDB->Data_type->Video
+                && isset($cil_data_host)
+                && isset($featured_id))
+        {
 ?>
-
-<div id="featured_image_flowplayer">
-<!--    <center>
-<a href="<?php echo $featured_video_url;  ?>" id="player" style="display:block;width:300px;height:200px">
-    <object width="100%" height="100%" id="player_api" name="player_api" data="/swf/flowplayer-3.2.5.swf?0.9740970324198512" type="application/x-shockwave-flash">
-        <param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always">
-        <param name="quality" value="high"><param name="cachebusting" value="true">
-        <param name="bgcolor" value="#000000">
-        <param name="flashvars" value="config={&quot;clip&quot;:{&quot;scaling&quot;:&quot;orig&quot;,&quot;autoPlay&quot;:true,&quot;autoBuffering&quot;:true,&quot;url&quot;:&quot;/videos/8062.flv&quot;},&quot;playerId&quot;:&quot;player&quot;,&quot;playlist&quot;:[{&quot;scaling&quot;:&quot;orig&quot;,&quot;autoPlay&quot;:true,&quot;autoBuffering&quot;:true,&quot;url&quot;:&quot;/videos/<?php //echo $featured_id; ?>.flv&quot;}]}"></object> 
-</a></center>
-    <script type="text/javascript" language="javascript">flowplayer("player", "/swf/flowplayer-3.2.5.swf", { clip:{scaling: "orig", onBeforeFinish: function() { return false; }, autoPlay:true, autoBuffering:true}});</script> -->
-    <video  width="300px" height="200px" controls autoplay loop>
-        <!-- <source src="/videos/8062.mp4" type="video/mp4"> -->
-        <source src="https://cildata.crbs.ucsd.edu/videos/8062.mp4" type="video/mp4">
-    </video>
-</div>
-
-
-<!-- <div id="featured_image_flowplayer">
-    <center>
-<a href="http://www.cellimagelibrary.org/videos/8062.flv" id="player" style="display:block;width:300px;height:200px">
-    <object width="100%" height="100%" id="player_api" name="player_api" data="http://www.cellimagelibrary.org/flowplayer-3.2.5.swf?0.9740970324198512" type="application/x-shockwave-flash">
-        <param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always">
-        <param name="quality" value="high"><param name="cachebusting" value="true">
-        <param name="bgcolor" value="#000000">
-        <param name="flashvars" value="config={&quot;clip&quot;:{&quot;scaling&quot;:&quot;orig&quot;,&quot;autoPlay&quot;:true,&quot;autoBuffering&quot;:true,&quot;url&quot;:&quot;/videos/8062.flv&quot;},&quot;playerId&quot;:&quot;player&quot;,&quot;playlist&quot;:[{&quot;scaling&quot;:&quot;orig&quot;,&quot;autoPlay&quot;:true,&quot;autoBuffering&quot;:true,&quot;url&quot;:&quot;/videos/8062.flv&quot;}]}"></object>
-</a></center>
-    <script type="text/javascript" language="javascript">flowplayer("player", "http://www.cellimagelibrary.org/flowplayer-3.2.5.swf", { clip:{scaling: "orig", onBeforeFinish: function() { return false; }, autoPlay:true, autoBuffering:true}});</script>
-</div> -->
+           <video  width="300px" height="200px" controls autoplay loop>
+                <source src="<?php echo $cil_data_host; ?>/media/videos/<?php echo $featured_id; ?>/<?php echo $featured_id; ?>_web.mp4" type="video/mp4">
+           </video>
 
 <?php
-    }
+        }
+        else if(isset($featured_image->CIL_CCDB->Data_type->Video) 
+                && !$featured_image->CIL_CCDB->Data_type->Video
+                && isset($cil_data_host)
+                && isset($featured_id)
+                && isset($cil_image_prefix))
+        {
 ?>
+            <center>
+                <a href="/images/<?php echo $featured_id; ?>" target="_self">
+                <img width="200px" height="200px" src="<?php echo $cil_image_prefix."/".$featured_id; ?>/display_<?php echo $featured_id; ?>.png"  />
+                </a>
+            </center>
+<?php
+        }
+    }
+
+    
+?>
+
 
 
 
@@ -50,7 +49,7 @@
 </div>
 <div class="featured_image_description ">
 <p class="cil_black_font"><?php   
-    if(!is_null($featured_info))
+    /*if(!is_null($featured_info))
     {
         if(isset($featured_info->CIL_CCDB->CIL->CORE->IMAGEDESCRIPTION->free_text))
         {
@@ -64,18 +63,33 @@
         }
         
         
+    } */
+    if(isset($featured_image))
+    {
+        if(isset($featured_image->CIL_CCDB->CIL->CORE->IMAGEDESCRIPTION->free_text))
+        {
+            $desc =  $featured_image->CIL_CCDB->CIL->CORE->IMAGEDESCRIPTION->free_text;
+            $length = strlen($desc);
+            if($length > 300)
+            {
+                $desc = substr($desc, 0, 300)."...";
+            }
+            echo $desc;
+        }
+        
+        
     }
 
-?><a href="/images/<?php echo $featured_id; ?>" id="featured_image_more">more</a></p>
+?><a href="/images/<?php if(isset($featured_id)) echo $featured_id; ?>" id="featured_image_more">more</a></p>
 <br/>
 <p class="cil_black_font">
 <em>
  <!-- Brad J. Marsh; Kathryn E. Howell -->
 <?php
-    if(isset($featured_info->CIL_CCDB->CIL->CORE->ATTRIBUTION->Contributors))
+    if(isset($featured_image->CIL_CCDB->CIL->CORE->ATTRIBUTION->Contributors))
     {
         echo "Image contributed by ";
-        $cont = $featured_info->CIL_CCDB->CIL->CORE->ATTRIBUTION->Contributors;
+        $cont = $featured_image->CIL_CCDB->CIL->CORE->ATTRIBUTION->Contributors;
         foreach ($cont as $con)
         {
             echo $con.";";

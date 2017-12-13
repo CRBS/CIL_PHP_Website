@@ -18,15 +18,27 @@ class Home  extends CI_Controller
          $summary = array();
          $data['title'] = 'The Cell Image Library';
          $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
-         
+         $data['cil_data_host'] = $this->config->item('cil_data_host');
+         $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
          if($settings_json->_source->Home_page->Featured_image)
          {
              $video_folder =  $this->config->item('video_folder');
              $featured_id = $settings_json->_source->Home_page->Featured_image[0];
              //echo "<br/>Featured image:".$featured_id;
+             //$featured_id = 2;
+             $data['featured_id'] = $featured_id;
+             $response = $sutil->getImage("CIL_".$featured_id);
+             //echo $response;
+             if(!is_null($response))
+             {
+                 $fjson = json_decode($response);
+                 if(!is_null($fjson))
+                    $data['featured_image'] = $fjson;
+             }
+             /* 
+               
              $base_url = $this->config->base_url();
              $data['featured_id']  = $featured_id;
-             //$data['featured_has_video'] = $sutil->is_url_exist($base_url."/videos/".$featured_id .".flv");
              $data['featured_has_video'] = file_exists($video_folder."/".$featured_id .".flv");
              $data['featured_video_url'] = $base_url."/videos/".$featured_id .".flv";
              $image_id = $featured_id;
@@ -41,7 +53,7 @@ class Home  extends CI_Controller
              $data['featured_info'] = null;
              if(!is_null($json))
                  $data['featured_info'] = $json;
-             //var_dump($json);
+             //var_dump($json); */
          }
          
          
@@ -57,16 +69,22 @@ class Home  extends CI_Controller
              }
             
             $squery = $qutil->get_ids_query($images);
+            //echo "<br/>------".$squery;
             $response = $sutil->getImges($squery);
+            //echo "<br/>-----Response:".$response;
             $json = json_decode($response);
             
             
             
-            if($json->hits->total > 0)
+            if(!is_null($json) && $json->hits->total > 0)
             {
                 //echo "<br/>Hit total:".$json->hits->total;
                 $this->setSummary($json,$summary);
                
+            }
+            else
+            {
+                //echo "<br/>Summary JSON is null";
             }
             
          }
