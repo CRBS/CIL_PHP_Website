@@ -519,7 +519,7 @@ $config['proxy_ips'] = '';
  * Videos_folder 
  * 
  */
-$config['video_folder'] = 'C:/Users/Willy/Documents/apache/Apache24/CIL_PHP_Website/CIL_PHP_Website/CIL/videos';
+//$config['video_folder'] = 'C:/Users/Willy/Documents/apache/Apache24/CIL_PHP_Website/CIL_PHP_Website/CIL/videos';
 //$config['video_folder'] = '/var/www/html/videos';
 
 
@@ -534,8 +534,8 @@ $config['ccdb_image_prefix'] = 'https://cildata.crbs.ucsd.edu/display_images/ccd
 
 
 /* ----------------------------Service API---------------------------------- */
-$service_api_host = "http://localhost:8080";
-//$service_api_host = "https://cilia.crbs.ucsd.edu";
+//$service_api_host = "http://localhost:8080";
+$service_api_host = "https://cilia.crbs.ucsd.edu";
 
 $config['service_api_host'] = $service_api_host;
 

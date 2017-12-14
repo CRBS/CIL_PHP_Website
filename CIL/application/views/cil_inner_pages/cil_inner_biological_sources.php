@@ -221,7 +221,15 @@
             <dt><span class="cil_small_title">Cell Line</span></dt>
             <dd class='eol_dd'>
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $cellline->onto_id;   ?>' title=''><?php 
+            <a class='eol_onto_term_link' href='<?php  
+                
+                if(isset($cellline->onto_name))
+                    echo "/images?image_search_parms[cell_line]=".$cellline->onto_name."&advanced_search=Advanced+Search";   
+                else 
+                    echo "/images?k=".$cellline->onto_name."&simple_search=Search";
+                
+                
+                ?>' title=''><?php 
                 
                 if(isset($cellline->onto_name))
                     echo $cellline->onto_name;
@@ -261,10 +269,15 @@
                     <span>
                     <a class='eol_onto_term_link' href='<?php  echo $cl->onto_id;   ?>' title=''><?php 
                         
-                        if(isset($cl->onto_name))
+                        /*if(isset($cl->onto_name))
                             echo $cl->onto_name;
                         else
-                            echo $cl->onto_id;
+                            echo $cl->onto_id;*/
+                        if(isset($cl->onto_name))
+                            echo "/images?image_search_parms[cell_line]=".$cl->onto_name."&advanced_search=Advanced+Search";   
+                        else 
+                            echo "/images?k=".$cl->onto_name."&simple_search=Search";
+                
                                 
                     ?></a>
                     </span>
