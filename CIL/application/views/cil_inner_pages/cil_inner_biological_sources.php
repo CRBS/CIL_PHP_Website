@@ -322,7 +322,16 @@
                 <dt><span class="cil_small_title">Cellular Component</span></dt>
                 <dd class='eol_dd'>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $ccomponent->onto_id;   ?>' title=''><?php 
+                <a class='eol_onto_term_link' href='<?php  
+                
+                //echo $ccomponent->onto_id;
+                    if(isset($ccomponent->onto_name))
+                        echo "/images?image_search_parms%5Bcellular_component%5D=".$ccomponent->onto_name."&advanced_search=Advanced+Search";
+                    else
+                        echo "/images?k=".$ccomponent->onto_id."&simple_search=Search";
+  
+                
+                ?>' title=''><?php 
                     if(isset($ccomponent->onto_name))
                         echo $ccomponent->onto_name;
                     else
@@ -357,7 +366,16 @@
                 
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $comp->onto_id;   ?>' title=''><?php 
+                    <a class='eol_onto_term_link' href='<?php  
+                    
+                        //echo $comp->onto_id;   
+                        if(isset($comp->onto_name))
+                            echo "/images?image_search_parms%5Bcellular_component%5D=".$comp->onto_name."&advanced_search=Advanced+Search";
+                        else
+                            echo "/images?k=".$comp->onto_id."&simple_search=Search";
+  
+                    
+                    ?>' title=''><?php 
                     
                         if(isset($comp->onto_name))
                             echo $comp->onto_name;
