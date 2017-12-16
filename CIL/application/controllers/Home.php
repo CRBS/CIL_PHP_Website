@@ -92,7 +92,8 @@ class Home  extends CI_Controller
          $data['test'] = "test";
          $data['settings'] = $settings_json;
          $this->load->view('templates/cil_header4', $data);
-         $this->load->view('main_page/main_display.php', $data);
+         //$this->load->view('main_page/main_display.php', $data);
+         $this->load->view('main_page2/main_display.php', $data);
          $this->load->view('templates/cil_footer2', $data);
      }
     

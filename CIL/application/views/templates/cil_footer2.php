@@ -2,14 +2,14 @@
 <br/>
 <div class="row">
     <div class="col-md-12">
-        <center>
+       <!-- <center>
         <ul class="footer_nav">
         <li><a class="survey_plain" href="/pages/about">About</a></li>
         <li><a class="survey_plain" href="/pages/press">In the News</a></li>
         <li><a class="survey_plain"href="/pages/license">Licensing</a></li>
         <li><a class="survey_plain" href="/pages/notification">Notification of Use</a></li>
         </ul>
-        </center>
+        </center> -->
     </div>
 </div>
 <br/>
