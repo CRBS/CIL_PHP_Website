@@ -18,7 +18,16 @@
                 <dt><span class="cil_small_title">Biological Process</span></dt>
                 <dd class='eol_dd'>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $bprocess->onto_id;   ?>' title=''><?php 
+                <a class='eol_onto_term_link' href='<?php  
+                
+                //echo $bprocess->onto_id;
+                    if(isset($bprocess->onto_name))
+                        echo "/images?image_search_parms%5Bbiological_process%5D=".$bprocess->onto_name."&advanced_search=Advanced+Search";
+                    else 
+                        echo "/images?k=".$bprocess->onto_id."&simple_search=Search";
+                        
+                    
+                ?>' title=''><?php 
                     if(isset($bprocess->onto_name))
                        echo $bprocess->onto_name;
                     else
@@ -53,7 +62,17 @@
                 
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $bp->onto_id;   ?>' title=''><?php 
+                    <a class='eol_onto_term_link' href='<?php  
+                    
+                        //echo $bp->onto_id;
+                                        //echo $bprocess->onto_id;
+                    if(isset($bp->onto_name))
+                        echo "/images?image_search_parms%5Bbiological_process%5D=".$bp->onto_name."&advanced_search=Advanced+Search";
+                    else 
+                        echo "/images?k=".$bp->onto_id."&simple_search=Search";
+                      
+                    
+                    ?>' title=''><?php 
                         if(isset($bp->onto_name))
                             echo $bp->onto_name;
                         else
@@ -96,7 +115,13 @@
                 <dt><span class="cil_small_title">Molecular Function</span></dt>
                 <dd class='eol_dd'>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $mfunction->onto_id;   ?>' title=''><?php 
+                <a class='eol_onto_term_link' href='<?php  
+                    if(isset($mfunction->onto_name))
+                        echo "/images?image_search_parms%5Bmolecular_function%5D=".$mfunction->onto_name."&advanced_search=Advanced+Search";
+                    else 
+                        echo "/images?k=".$mfunction->onto_id."&simple_search=Search";
+                    
+                ?>' title=''><?php 
                     
                     if(isset($mfunction->onto_name))
                         echo $mfunction->onto_name;
@@ -132,13 +157,20 @@
 ?>
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $mf->onto_id;   ?>' title=''><?php 
+                    <a class='eol_onto_term_link' href='<?php  
+                    
+                        if(isset($mf->onto_name))
+                            echo "/images?image_search_parms%5Bmolecular_function%5D=".$mf->onto_name."&advanced_search=Advanced+Search";
+                        else 
+                            echo "/images?k=".$mf->onto_id."&simple_search=Search";
+                        
+                    ?>' title=''><?php 
                     
                         if(isset($mf->onto_name))
                             echo $mf->onto_name;
                         else
                             echo $mf->onto_id; 
-                                
+      
                     ?></a>
                     </span>
                     </dd>       
