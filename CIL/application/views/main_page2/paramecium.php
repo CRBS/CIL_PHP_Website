@@ -1,5 +1,8 @@
-<span class="cil_title">Explore <i>Paramecium</i></span>
+
 <div class="row">
+    <div class="col-md-12">
+        <span class="cil_title">Explore <i>Paramecium</i></span>
+    </div>
     <div class="col-md-7">
         <img id="paramecium_img" class="interactive_cell_width" src="/pic/interactive_cells/paramecium/default.png">
     </div>
