@@ -17,7 +17,14 @@
                 <dt><span class="cil_small_title">Image Type</span></dt>
                 <dd>
                 <span>
-                <a class='onto_term_link' href='<?php  echo $imagetype->onto_id;   ?>' title=''><?php 
+                <a class='onto_term_link' href='<?php  
+                    
+                    if(isset($imagetype->onto_name))
+                        echo "/images?image_search_parms%5Bitem_type_bim%5D=".$imagetype->onto_name."&advanced_search=Advanced+Search";
+                    else
+                        echo "/images?k=".$imagetype->onto_id."&simple_search=Search";
+                
+                ?>' title=''><?php 
                     if(isset($imagetype->onto_name))
                         echo $imagetype->onto_name; 
                     else 
@@ -52,7 +59,13 @@
                 
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $itype->onto_id;   ?>' title=''><?php 
+                    <a class='eol_onto_term_link' href='<?php  
+                        
+                        if(isset($imagetype->onto_name))
+                            echo "/images?image_search_parms%5Bitem_type_bim%5D=".$itype->onto_name."&advanced_search=Advanced+Search";
+                        else
+                            echo "/images?k=".$itype->onto_id."&simple_search=Search";
+                    ?>' title=''><?php 
                     
                         if(isset($itype->onto_name))
                             echo $itype->onto_name; 
@@ -99,7 +112,14 @@
                 <dt><span class="cil_small_title">Image Mode</span></dt>
                 <dd class='eol_dd'>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $imagemode->onto_id;   ?>' title=''><?php 
+                <a class='eol_onto_term_link' href='<?php  
+       
+                    if(isset($imagemode->onto_name)) 
+                        echo "/images?image_search_parms%5Bimage_mode_bim%5D=".$imagemode->onto_name."&advanced_search=Advanced+Search";
+                    else 
+                        echo "/images?k=".$imagemode->onto_id."&simple_search=Search";
+                    
+                ?>' title=''><?php 
                     if(isset($imagemode->onto_name)) 
                         echo $imagemode->onto_name;
                     else
@@ -135,7 +155,13 @@
                 
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $imode->onto_id;   ?>' title=''><?php 
+                    <a class='eol_onto_term_link' href='<?php  
+                          
+                        if(isset($imode->onto_name)) 
+                            echo "/images?image_search_parms%5Bimage_mode_bim%5D=".$imode->onto_name."&advanced_search=Advanced+Search";
+                        else 
+                            echo "/images?k=".$imode->onto_id."&simple_search=Search";
+                    ?>' title=''><?php 
                         if(isset($imode->onto_name))
                             echo $imode->onto_name;
                         else
@@ -162,7 +188,7 @@
 
     }
 ?>
-<!------------------End Imaging type---------------------->      
+<!------------------End Imaging mode---------------------->      
     
 
 <!------------------Parameters Imaged---------------------->
@@ -176,19 +202,6 @@
            $hprinter->printOntologyBlock($json_items,"Parameters Imaged");
 ?>
 
-<!--
-            <dt><b>Parameters Imaged</b></dt>
-            <dd class='eol_dd'>
-            <span>
-            <a class='eol_onto_term_link' href='<?php  //echo $paramimage->onto_id;   ?>' title=''><?php 
-                /* if(isset($paramimage->onto_name))
-                    echo $paramimage->onto_name;
-                else
-                    echo $paramimage->onto_id; */
-                        
-             ?></a>
-            </span>
-            </dd>  -->
 
 <?php
         }
@@ -202,7 +215,13 @@
                 
                 <dd class='eol_dd'>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $pimage->onto_id;   ?>' title=''><?php 
+                <a class='eol_onto_term_link' href='<?php  
+                    if(isset($pimage->onto_name))
+                      echo "/images?image_search_parms%5Bparameter_imaged_bim%5D=".$pimage->onto_name."&advanced_search=Advanced+Search";
+                    else
+                      echo "/images?k=".$pimage->onto_id."&simple_search=Search";
+                    
+                ?>' title=''><?php 
                 
                    if(isset($pimage->onto_name))
                     echo $pimage->onto_name;
@@ -239,7 +258,14 @@
              ?>    
              
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $scontrast->onto_id;   ?>' title=''><?php 
+            <a class='eol_onto_term_link' href='<?php  
+                if(isset($scontrast->onto_name))
+                    echo "/images?image_search_parms%5Bsource_of_contrast_bim%5D=".$scontrast->onto_name."&advanced_search=Advanced+Search";   
+                else 
+                    echo "/images?k=".$scontrast->onto_id."&simple_search=Search";
+                    
+                
+                ?>' title=''><?php 
                 if(isset($scontrast->onto_name))
                     echo $scontrast->onto_name;
                 else
@@ -275,7 +301,14 @@
                     {
                 ?>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $sc->onto_id;   ?>' title=''><?php 
+                <a class='eol_onto_term_link' href='<?php  
+                  
+                    if(isset($sc->onto_name))
+                        echo "/images?image_search_parms%5Bsource_of_contrast_bim%5D=".$sc->onto_name."&advanced_search=Advanced+Search";   
+                    else 
+                        echo "/images?k=".$sc->onto_id."&simple_search=Search";
+                
+                ?>' title=''><?php 
                 
                     if(isset($sc->onto_name))
                         echo $sc->onto_name;
@@ -322,7 +355,14 @@
              ?>    
              
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $visual->onto_id;   ?>' title=''><?php 
+            <a class='eol_onto_term_link' href='<?php  
+                if(isset($visual->onto_name))
+                    echo "/images?image_search_parms%5Bvisualization_methods_bim%5D=".$visual->onto_name."&advanced_search=Advanced+Search";
+                else
+                    echo "/images?k=".$visual->onto_id."&simple_search=Search"
+                 
+                
+            ?>' title=''><?php 
                 
                 if(isset($visual->onto_name))
                     echo $visual->onto_name;
@@ -358,7 +398,14 @@
                     {
                 ?>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $vs->onto_id;   ?>' title=''><?php 
+                <a class='eol_onto_term_link' href='<?php  
+                
+                    if(isset($vs->onto_name))
+                        echo "/images?image_search_parms%5Bvisualization_methods_bim%5D=".$vs->onto_name."&advanced_search=Advanced+Search";
+                    else
+                        echo "/images?k=".$vs->onto_id."&simple_search=Search"
+                 
+                    ?>' title=''><?php 
                 
                     if(isset($vs->onto_name))
                         echo $vs->onto_name;
@@ -403,7 +450,14 @@
              ?>    
              
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $phistory->onto_id;   ?>' title=''><?php 
+            <a class='eol_onto_term_link' href='<?php  
+                
+                if(isset($phistory->onto_name))
+                    echo "/images?image_search_parms%5Bprocessing_history_bim%5D=".$phistory->onto_name."&advanced_search=Advanced+Search"; 
+                else
+                    echo "/images?k=".$phistory->onto_id."&simple_search=Search";
+                
+            ?>' title=''><?php 
                 if(isset($phistory->onto_name))
                     echo $phistory->onto_name; 
                 else
@@ -438,7 +492,13 @@
                     {
                 ?>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $ph->onto_id;   ?>' title=''><?php 
+                <a class='eol_onto_term_link' href='<?php  
+
+                    if(isset($phistory->onto_name))
+                        echo "/images?image_search_parms%5Bprocessing_history_bim%5D=".$ph->onto_name."&advanced_search=Advanced+Search"; 
+                    else
+                        echo "/images?k=".$ph->onto_id."&simple_search=Search";
+                    ?>' title=''><?php 
                 
                     if(isset($ph->onto_name))
                         echo $ph->onto_name;

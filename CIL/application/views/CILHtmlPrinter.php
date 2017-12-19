@@ -15,10 +15,16 @@ class CILHtmlPrinter
                 echo "\n<dd class='eol_dd'>";
                 echo "\n<span>";
                 if(isset($json_items->onto_name))
-                    echo "\n<a class='eol_onto_term_link' href='".$json_items->onto_id."' title=''>".$json_items->onto_name."</a>";
+                {
+                    if(strcmp($title,"Parameters Imaged")==0)
+                        echo "\n<a class='eol_onto_term_link' href='/images?image_search_parms%5Bparameter_imaged_bim%5D=".$json_items->onto_name."&advanced_search=Advanced+Search' title=''>".$json_items->onto_name."</a>";    
+                    else
+                        echo "\n<a class='eol_onto_term_link' href='/images?k=".$json_items->onto_name."&simple_search=Search' title=''>".$json_items->onto_name."</a>";
+                }
                 else 
-                    echo "\n<a class='eol_onto_term_link' href='".$json_items->onto_id."' title=''>".$json_items->onto_id."</a>";
-                
+                {
+                    echo "\n<a class='eol_onto_term_link' href='/images?k=".$json_items->onto_id."&simple_search=Search' title=''>".$json_items->onto_id."</a>";
+                }
                 echo "\n</span>";
                 echo "\n</dd>";
 
@@ -46,7 +52,18 @@ class CILHtmlPrinter
 
                     echo "\n<dd class='eol_dd'>";
                     echo "\n<span>";
-                    echo "\n<a class='eol_onto_term_link' href='".$mf->onto_id."' title=''>";
+                    //if(strcmp($title,"Parameters Imaged")==0)
+                    if(isset($mf->onto_name))
+                    {
+                        if(strcmp($title,"Parameters Imaged")==0)
+                           echo "\n<a class='eol_onto_term_link' href='/images?image_search_parms%5Bparameter_imaged_bim%5D=".$mf->onto_name."&advanced_search=Advanced+Search' title=''>".$mf->onto_name."</a>";    
+                        else
+                           echo "\n<a class='eol_onto_term_link' href='/images?k=".$mf->onto_name."&simple_search=Search' title=''>".$mf->onto_name."</a>";
+                    }
+                    else
+                    {
+                        echo "\n<a class='eol_onto_term_link' href='/images?k=".$mf->onto_id."&simple_search=Search' title=''>".$mf->onto_id."</a>";
+                    }
                     if(isset($mf->onto_name))
                       echo $mf->onto_name;
                     else
