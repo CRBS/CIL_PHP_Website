@@ -19,7 +19,14 @@
              ?>    
              
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $method->onto_id;   ?>' title=''><?php 
+            <a class='eol_onto_term_link' href='<?php  
+            
+                if(isset($method->onto_name ))
+                    echo "/images?image_search_parms%5Bvisualization_methods_bim%5D=".$method->onto_name."&advanced_search=Advanced+Search";
+                else
+                    echo "/images?k=".$method->onto_id."&simple_search=Search";    
+                
+            ?>' title=''><?php 
                 if(isset($method->onto_name ))
                     echo $method->onto_name;
                 else
@@ -54,7 +61,13 @@
                     {
                 ?>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $mh->onto_id;   ?>' title=''><?php
+                <a class='eol_onto_term_link' href='<?php  
+                       
+                    if(isset($method->onto_name ))
+                        echo "/images?image_search_parms%5Bvisualization_methods_bim%5D=".$mh->onto_name."&advanced_search=Advanced+Search";
+                    else
+                        echo "/images?k=".$mh->onto_id."&simple_search=Search"; 
+                ?>' title=''><?php
                     if(isset($mh->onto_name))
                         echo  $mh->onto_name;
                     else
@@ -97,7 +110,14 @@
              ?>    
              
             <span>
-            <a class='eol_onto_term_link' href='<?php  echo $intacell->onto_id;   ?>' title=''><?php 
+            <a class='eol_onto_term_link' href='<?php  
+            
+                if(isset($intacell->onto_name))
+                    echo "/images?image_search_parms%5Brelation_to_intact_cell_bim%5D=".$intacell->onto_name."&advanced_search=Advanced+Search"; 
+                else
+                    echo "/images?k=".$intacell->onto_id."&simple_search=Search";   
+                
+            ?>' title=''><?php 
                 if(isset($intacell->onto_name))
                     echo $intacell->onto_name; 
                 else
@@ -130,7 +150,14 @@
                     {
                 ?>
                 <span>
-                <a class='eol_onto_term_link' href='<?php  echo $ic->onto_id;   ?>' title=''><?php 
+                <a class='eol_onto_term_link' href='<?php  
+                 
+                    if(isset($ic->onto_name))
+                        echo "/images?image_search_parms%5Brelation_to_intact_cell_bim%5D=".$ic->onto_name."&advanced_search=Advanced+Search"; 
+                    else
+                        echo "/images?k=".$ic->onto_id."&simple_search=Search";   
+                
+                ?>' title=''><?php 
                     if(isset($ic->onto_name))
                         echo $ic->onto_name;
                     else
