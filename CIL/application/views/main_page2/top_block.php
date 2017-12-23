@@ -36,12 +36,12 @@
 
         <div class="top-buffer"></div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-5">
         <p class="cil_16_font_black">
-            Welcome to our newly redesigned website. Please let us know how you like it! Visit our <a class="cil_16_font" href="/pages/guest">Guest Book</a> and leave a message
+            Welcome to our newly redesigned website.<br><br/> Please let us know how you like it!<br/><br/> Visit our <a class="cil_16_font" href="/pages/guest">Guest Book</a> and leave a message.
         </p>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
         <div class="row">
             <div class="col-md-12">
                 <div class="pull-right">
