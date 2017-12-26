@@ -324,8 +324,8 @@ $('#k').autocomplete({
                                                         <strong>Center for Research in Biological Systems</strong><br>
                                                         Basic Science Building, Room 1000 <br/>
                                                         University of California, San Diego<br/>
-                                                                                                                9500 Gilman Drive<br/>
-                                                                                                                La Jolla, CA 92093-0608, USA<br/>
+                                                        9500 Gilman Drive<br/>
+                                                        La Jolla, CA 92093-0608, USA<br/>
                                                     </address>
                                                 </div>
                                             </li>
@@ -346,8 +346,9 @@ $('#k').autocomplete({
                                             <li><a href="contact.html"><strong>E-mail</strong>: info@example.com</a></li>
                                         </ul>
                                     </li>
-                                    
+                                    <li class="divider-vertical"></li>
                                 </ul>
+                                
                             </div>
                             </div>
                         </nav>

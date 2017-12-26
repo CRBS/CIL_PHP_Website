@@ -64,10 +64,7 @@ class CILHtmlPrinter
                     {
                         echo "\n<a class='eol_onto_term_link' href='/images?k=".$mf->onto_id."&simple_search=Search' title=''>".$mf->onto_id."</a>";
                     }
-                    if(isset($mf->onto_name))
-                      echo $mf->onto_name;
-                    else
-                      echo $mf->onto_id;
+
                     echo "</a>";
                     echo "\n</span>";
                     echo "\n</dd>";       
