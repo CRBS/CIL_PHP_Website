@@ -186,6 +186,23 @@ class CILServiceUtil2
         return $response;
     }
     
+    public function getImagesByIDs($data,$from,$size)
+    {
+        $CI = CI_Controller::get_instance();
+        $url = $CI->config->item('service_api_host').
+                "/rest/adv_data_search?from=".$from."&size=".$size;
+        $response = $this->curl_get_data($url, $data);
+        return $response;
+    }
+    
+    public function getGroupInfo($imageID)
+    {
+        $CI = CI_Controller::get_instance();
+        $url = $CI->config->item('service_api_host')."/rest/groups/".$imageID;
+        $response = $this->curl_get($url);
+        return $response;
+    }
+    
     /*public function getImges($data)
     {
         $CI = CI_Controller::get_instance();

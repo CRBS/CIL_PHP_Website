@@ -18,5 +18,16 @@ class GeneralUtil
         return (substr($haystack, -$length) === $needle);
     }
     
+    public function handleResponse($response)
+    {
+        if(is_null($response))
+            return null;
+        
+        $response = trim($response);
+        if(strlen($response) == 0)
+            return null;
+        
+        return $response;
+    }
 }
 
