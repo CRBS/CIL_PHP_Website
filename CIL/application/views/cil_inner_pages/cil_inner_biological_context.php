@@ -206,7 +206,16 @@
 ?>
 <!------------------Human Development Anatomy---------------------->
 
+<!------------------Human Disease---------------------->
+<?php
+    if(isset($json->CIL_CCDB->CIL->CORE->HUMAN_DISEASE))
+    {
+       $json_items = $json->CIL_CCDB->CIL->CORE->HUMAN_DISEASE;
+       $hprinter->printOntologyBlock($json_items,"Human Disease");
 
+    }
+?>
+<!------------------Human Disease---------------------->
     
     
     
