@@ -215,9 +215,18 @@
 
     }
 ?>
-<!------------------Human Disease---------------------->
+<!------------------End Human Disease---------------------->
     
-    
+<!------------------Mouse Gross Anatomy---------------------->
+<?php
+    if(isset($json->CIL_CCDB->CIL->CORE->MOUSE_GROSS_ANATOMY))
+    {
+       $json_items = $json->CIL_CCDB->CIL->CORE->MOUSE_GROSS_ANATOMY;
+       $hprinter->printOntologyBlock($json_items,"Mouse Gross Anatomy");
+
+    }
+?>
+<!------------------End Mouse Gross Anatomy---------------------->   
     
 </dl>
 </div>
