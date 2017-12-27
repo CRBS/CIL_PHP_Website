@@ -239,6 +239,16 @@
 ?>
 <!------------------End Mouse Gross Anatomy----------------------> 
 
+<!------------------Xenopus Anatomy---------------------->
+<?php
+    if(isset($json->CIL_CCDB->CIL->CORE->XENOPUS_ANATOMY))
+    {
+       $json_items = $json->CIL_CCDB->CIL->CORE->XENOPUS_ANATOMY;
+       $hprinter->printOntologyBlock($json_items,"Xenopus Anatomy");
+
+    }
+?>
+<!------------------End Xenopus Anatomy----------------------> 
     
 </dl>
 </div>
