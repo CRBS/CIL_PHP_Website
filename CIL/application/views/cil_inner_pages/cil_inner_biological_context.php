@@ -227,6 +227,18 @@
     }
 ?>
 <!------------------End Mouse Gross Anatomy---------------------->   
+
+<!------------------Mouse Gross Anatomy---------------------->
+<?php
+    if(isset($json->CIL_CCDB->CIL->CORE->PLANT_GROWTH))
+    {
+       $json_items = $json->CIL_CCDB->CIL->CORE->PLANT_GROWTH;
+       $hprinter->printOntologyBlock($json_items,"Plant Growth");
+
+    }
+?>
+<!------------------End Mouse Gross Anatomy----------------------> 
+
     
 </dl>
 </div>
