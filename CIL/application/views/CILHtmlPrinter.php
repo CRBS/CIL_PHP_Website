@@ -28,6 +28,8 @@ class CILHtmlPrinter
                         echo "\n<a class='eol_onto_term_link' href='/images?image_search_parms%5Bplant_growth%5D=".$json_items->onto_name."&advanced_search=Advanced+Search' title='".$json_items->onto_id."'>".$json_items->onto_name."</a>"; 
                     else if(strcmp($title,"Xenopus Anatomy")==0)
                         echo "\n<a class='eol_onto_term_link' href='/images?image_search_parms[xenopus_anatomy]=".$json_items->onto_name."&advanced_search=Advanced+Search' title='".$json_items->onto_id."'>".$json_items->onto_name."</a>"; 
+                    else if(strcmp($title,"Zebrafish Anatomy")==0)
+                        echo "\n<a class='eol_onto_term_link' href='/images?image_search_parms%5Bzebrafish_anatomy%5D=".$json_items->onto_name."&advanced_search=Advanced+Search' title='".$json_items->onto_id."'>".$json_items->onto_name."</a>"; 
                     else
                         echo "\n<a class='eol_onto_term_link' href='/images?k=".$json_items->onto_name."&simple_search=Search' title=''>".$json_items->onto_name."</a>";
                 }
@@ -77,6 +79,8 @@ class CILHtmlPrinter
                             echo "\n<a class='eol_onto_term_link' href='/images?image_search_parms%5Bplant_growth%5D=".$mf->onto_name."&advanced_search=Advanced+Search' title='".$mf->onto_id."'>".$mf->onto_name."</a>"; 
                         else if(strcmp($title,"Xenopus Anatomy")==0)
                             echo "\n<a class='eol_onto_term_link' href='/images?image_search_parms[xenopus_anatomy]=".$mf->onto_name."&advanced_search=Advanced+Search' title='".$mf->onto_id."'>".$mf->onto_name."</a>"; 
+                        else if(strcmp($title,"Zebrafish Anatomy")==0)
+                            echo "\n<a class='eol_onto_term_link' href='/images?image_search_parms%5Bzebrafish_anatomy%5D=".$mf->onto_name."&advanced_search=Advanced+Search' title='".$mf->onto_id."'>".$mf->onto_name."</a>"; 
                         else
                            echo "\n<a class='eol_onto_term_link' href='/images?k=".$mf->onto_name."&simple_search=Search' title=''>".$mf->onto_name."</a>";
                     }

@@ -248,7 +248,18 @@
 
     }
 ?>
-<!------------------End Xenopus Anatomy----------------------> 
+<!------------------End Xenopus Anatomy---------------------->
+
+<!------------------Zebrafish Anatomy---------------------->
+<?php
+    if(isset($json->CIL_CCDB->CIL->CORE->ZEBRAFISH_ANATOMY))
+    {
+       $json_items = $json->CIL_CCDB->CIL->CORE->ZEBRAFISH_ANATOMY;
+       $hprinter->printOntologyBlock($json_items,"Zebrafish Anatomy");
+
+    }
+?>
+<!------------------End Zebrafish Anatomy----------------------> 
     
 </dl>
 </div>
