@@ -504,9 +504,10 @@ class Adv_query_util
     private function handleExpansion($type, $value)
     {
         $array = array();
-        //$json = $this->simpleOntologyExpansion('biological_processes', 'Name', $value,1);
-        $json = $this->simpleOntologyExpansion($type, 'Name', $value,1);
-        if(!is_null($json) && $json->hits->total > 0)
+        //$json = $this->simpleOntologyExpansion($type, 'Name', $value,1);
+        $json = $this->ontologyExpansion($type, 'Name', $value);
+        if(!is_null($json) && isset($json->hits->total) 
+                && $json->hits->total > 0)
         {
             $result = $json->hits->hits[0];
             if(!isset($result->_source->Expansion->Terms))
@@ -520,9 +521,11 @@ class Adv_query_util
             }
             
         }
-        else if(!is_null($json) && $json->hits->total == 0)
+        else if(!is_null($json) && isset($json->hits->total) &&
+                $json->hits->total == 0)
         {
-            $json2 = $this->simpleOntologyExpansion($type, 'Synonyms', $value,10);
+            //$json2 = $this->simpleOntologyExpansion($type, 'Synonyms', $value,10);
+            $json2 = $this->ontologyExpansion($type, 'Synonyms', $value);
             if(!is_null($json2) && $json2->hits->total > 0)
             {
                 $hits = $json2->hits->hits;
@@ -561,6 +564,32 @@ class Adv_query_util
         }
         
         $response = $sutil->curl_get($url);
+        $json = json_decode($response);
+        return $json;
+    }
+    
+    /**
+     * Expand the ontology terms. It's slighly different from
+     * simpleOntologyExpansion because the search value is sent 
+     * by doPost fields.
+     * 
+     * @param type $type
+     * @param type $field
+     * @param type $search_value
+     * @return type
+     */
+    private function ontologyExpansion($type,$field,$search_value)
+    {
+        $sutil = new CILServiceUtil2();
+        $CI = CI_Controller::get_instance();
+        $service_host = $CI->config->item("service_api_host");
+        $url = $service_host."/rest/ontology_expansion/".$type."/".$field;
+        //echo "\nURL:".$url;
+        $array = array();
+        $array['Search_value'] = $search_value;
+        $json_str = json_encode($array);
+        $response = $sutil->curl_get_data($url, $json_str);
+        //echo "\nOntology expansion response:".$response."----";
         $json = json_decode($response);
         return $json;
     }
