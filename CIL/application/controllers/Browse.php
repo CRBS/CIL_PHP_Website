@@ -197,8 +197,8 @@ class Browse  extends CI_Controller
 
 
                              //$this->load->view('categories/category_search_result_page', $data);
-                             $this->load->view('search/search_results', $data);
-                         
+                             //$this->load->view('search/search_results', $data);
+                             $this->load->view('categories2/category_search_result_page', $data);
                         }
                         $this->load->view('templates/cil_footer2', $data);
                         
@@ -505,6 +505,8 @@ class Browse  extends CI_Controller
                 $data['paginator'] = $paginator;
                 ////////////////////////////End pagination/////////////////////////////////////
                 $this->load->view('categories/category_search_result_page', $data);
+                
+                
            }
            $this->load->view('templates/cil_footer2', $data);
        }
