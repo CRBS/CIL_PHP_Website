@@ -203,6 +203,17 @@ class CILServiceUtil2
         return $response;
     }
     
+    public function searchCategoryByName($category_name,$name)
+    {
+        $CI = CI_Controller::get_instance();
+        $url = $CI->config->item('service_api_host')."/rest/category_search";
+        $query = "{\"query\": { ".
+                "\"term\" : { \"Name\" : \"".$name."\" } ". 
+                "}}";
+        $response = $this->curl_get_data($url, $query);
+        return $response;
+    }
+    
     /*public function getImges($data)
     {
         $CI = CI_Controller::get_instance();

@@ -85,6 +85,10 @@ class Browse  extends CI_Controller
            $input = str_replace("%20", " ", $input);
            $context_name = "cellprocess";
            $data['category_title'] = $input;
+           //echo "<br/>Name:".$input."---";
+           $response = $sutil->searchCategoryByName("cell_process", $input);
+           echo "<br/>Response:".$response;
+           /*
            $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
            
            $this->load->view('templates/cil_header4', $data);
@@ -129,6 +133,8 @@ class Browse  extends CI_Controller
                 $this->load->view('categories/category_search_result_page', $data);
            }
            $this->load->view('templates/cil_footer2', $data);
+            
+            */
        }
     }
     
