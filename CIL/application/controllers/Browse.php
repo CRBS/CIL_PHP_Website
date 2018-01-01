@@ -73,10 +73,10 @@ class Browse  extends CI_Controller
        if(strcmp($input,"None")==0)
        {
         
-        $data['summary'] = $configJson;
+        $data['result'] = $result;
         $data['category'] = "cellprocess";
         $this->load->view('templates/cil_header4', $data);
-        $this->load->view('categories/cell_processes_display', $data);
+        $this->load->view('categories2/cell_processes_display', $data);
         $this->load->view('templates/cil_footer2', $data);
        }
        else //if(strcmp($input,"Actin%20Based%20Processes")==0)
