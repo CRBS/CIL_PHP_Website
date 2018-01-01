@@ -38,7 +38,101 @@ class Browse  extends CI_Controller
     
     
     
-   
+    public function cellprocess($input="None")
+    {
+        
+        $sutil = new CILServiceUtil2();
+        $gutil = new GeneralUtil();
+        
+       $api_host = $this->config->item('service_api_host');
+       $url = $api_host."/rest/category/cell_process/Name/asc/0/10000";
+       $response = $sutil->curl_get($url); 
+       $response = $gutil->handleResponse($response);
+       
+       //Error handling
+       if(is_null($response))
+       {
+           $data['category'] = "cellprocess";
+           $this->load->view('templates/cil_header4', $data);
+           $this->load->view('cil_errors/empty_response_error', $data);
+           $this->load->view('templates/cil_footer2', $data);
+           return;
+       }
+       
+       $result = json_decode($response);
+       if(is_null($result))
+       {
+           $data['category'] = "cellprocess";
+           $this->load->view('templates/cil_header4', $data);
+           $this->load->view('cil_errors/empty_response_error', $data);
+           $this->load->view('templates/cil_footer2', $data);
+           return;
+       }
+       
+       
+       if(strcmp($input,"None")==0)
+       {
+        
+        $data['summary'] = $configJson;
+        $data['category'] = "cellprocess";
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('categories/cell_processes_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+       }
+       else //if(strcmp($input,"Actin%20Based%20Processes")==0)
+       {
+           $category = $input;
+           $input = str_replace("%20", " ", $input);
+           $context_name = "cellprocess";
+           $data['category_title'] = $input;
+           $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
+           
+           $this->load->view('templates/cil_header4', $data);
+           
+           
+           $queryFileName = $this->getQueryFileName($configJson, $input);
+           $query = file_get_contents(getcwd()."/application/json_config/cell_processes/".$queryFileName);
+             
+           $query_url =  $this->config->item('advanced_search')."?from=".$from."&size=".$size;
+           $response = $sutil->curl_get_data($query_url,$query);
+           
+           //echo $response;
+           $result = json_decode($response);
+           if($result->hits->total > 0)
+           {
+                $data['result'] = $result;
+                $data['total'] = $result->hits->total;
+                $data['size'] = $size;
+                $data['category'] = $category;
+                $data['context_name'] = $context_name;
+                $data['page_num'] = $page;//$page_num;
+                
+            ///////////////////////////pagination/////////////////////////////////
+            //echo $size;
+            $currentPage = $page+1;
+            $data['currentPage'] = $currentPage;
+            //echo $currentPage;
+            
+            $urlPattern = $this->config->item('base_url').
+                    "/browse/cellprocess/".$input."?per_page=".$size."&page=";
+            $data['urlPattern'] = $urlPattern;
+            $paginator = new Paginator($result->hits->total, $size, $currentPage, $urlPattern);
+            
+            $results_per_pageURL = $this->config->item('base_url').
+                     "/browse/cellprocess/".$input."?page=";
+            $data['results_per_pageURL'] = $results_per_pageURL;
+            
+            $data['paginator'] = $paginator;
+            ////////////////////////////End pagination/////////////////////////////////////
+                
+                
+                $this->load->view('categories/category_search_result_page', $data);
+           }
+           $this->load->view('templates/cil_footer2', $data);
+       }
+    }
+    
+    /*
     public function cellprocess($input="None")
     {
         
@@ -131,7 +225,7 @@ class Browse  extends CI_Controller
            $this->load->view('templates/cil_footer2', $data);
        }
     }
-    
+    */
     
     
     
