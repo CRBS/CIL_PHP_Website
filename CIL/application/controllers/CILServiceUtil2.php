@@ -210,6 +210,7 @@ class CILServiceUtil2
         $query = "{\"query\": { ".
                 "\"term\" : { \"Name\" : \"".$name."\" } ". 
                 "}}";
+        
         $response = $this->curl_get_data($url, $query);
         return $response;
     }

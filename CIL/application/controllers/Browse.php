@@ -44,7 +44,35 @@ class Browse  extends CI_Controller
         $sutil = new CILServiceUtil2();
         $gutil = new GeneralUtil();
         
+        
+        ////////Handle page and size////////////
+        $page = 0;
+        $size = 10;
+        
+        $temp = $this->input->get('page',TRUE);
+        if(!is_null($temp))
+        {
+            $page = intval($temp);
+            $page = $page-1;
+            if($page < 0)
+                $page = 0;
+        }
+        
+        $temp = $this->input->get('per_page',TRUE);
+        if(!is_null($temp))
+        {
+            $size = intval($temp);
+            if($size < 0)
+                $size = 10;
+        }
+        $from = $page*$size;
+        ////////End handle page and size////////////
+        
        $api_host = $this->config->item('service_api_host');
+       $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
+       $data['queryString'] = $this->input->server('QUERY_STRING');
+       $data['base_url'] = $this->config->item('base_url');
+       
        $url = $api_host."/rest/category/cell_process/Name/asc/0/10000";
        $response = $sutil->curl_get($url); 
        $response = $gutil->handleResponse($response);
@@ -87,7 +115,97 @@ class Browse  extends CI_Controller
            $data['category_title'] = $input;
            //echo "<br/>Name:".$input."---";
            $response = $sutil->searchCategoryByName("cell_process", $input);
-           echo "<br/>Response:".$response;
+           //echo "<br/>Response:".$response;
+           $response = $gutil->handleResponse($response);
+           if(is_null($response))
+           {
+                $data['category'] = "cellprocess";
+                $this->load->view('templates/cil_header4', $data);
+                $this->load->view('cil_errors/empty_response_error', $data);
+                $this->load->view('templates/cil_footer2', $data);
+                return;
+           }
+           $result = json_decode($response);
+            if(is_null($result))
+            {
+                $data['category'] = "cellprocess";
+                $this->load->view('templates/cil_header4', $data);
+                $this->load->view('cil_errors/empty_response_error', $data);
+                $this->load->view('templates/cil_footer2', $data);
+                return;
+            }
+            
+            if(!isset($result->hits->total) || 
+                    $result->hits->total == 0)
+            {
+                $data['category'] = "cellprocess";
+                $this->load->view('templates/cil_header4', $data);
+                $this->load->view('cil_errors/empty_results', $data);
+                $this->load->view('templates/cil_footer2', $data);
+                return;
+            }
+           
+            if(isset($result->hits->hits))
+            {
+                $count = count($result->hits->hits);
+                if($count > 0)
+                {
+                    $hit = $result->hits->hits[0];
+                    if(isset($hit->_source->Query_string))
+                    {
+                        //header('Content-Type: application/json');
+                        $query = $hit->_source->Query_string;
+                        //echo "\nQuery:".$query."----";
+                        $json_query = json_decode($query);
+                        //$json_query->size = $size;
+                        //$json_query->from = $from;
+                        $query = json_encode($json_query);
+                        //echo $query;
+                        $query_url =  $this->config->item('advanced_search')."?from=".$from."&size=".$size;;
+                        $response = $sutil->curl_get_data($query_url,$query);
+                        //echo $response;
+                        $result = json_decode($response);
+                                   
+           
+                        $this->load->view('templates/cil_header4', $data);
+                        if($result->hits->total > 0)
+                        {
+                             $data['result'] = $result;
+                             $data['total'] = $result->hits->total;
+                             $data['size'] = $size;
+                             $data['category'] = $category;
+                             $data['context_name'] = $context_name;
+                             $data['page_num'] = $page;//$page_num;
+
+                         ///////////////////////////pagination/////////////////////////////////
+                         //echo $size;
+                         $currentPage = $page+1;
+                         $data['currentPage'] = $currentPage;
+                         //echo $currentPage;
+
+                         $urlPattern = $this->config->item('base_url').
+                                 "/browse/cellprocess/".$input."?per_page=".$size."&page=";
+                         $data['urlPattern'] = $urlPattern;
+                         $paginator = new Paginator($result->hits->total, $size, $currentPage, $urlPattern);
+
+                         $results_per_pageURL = $this->config->item('base_url').
+                                  "/browse/cellprocess/".$input."?page=";
+                         $data['results_per_pageURL'] = $results_per_pageURL;
+
+                         $data['paginator'] = $paginator;
+                         ////////////////////////////End pagination/////////////////////////////////////
+
+
+                             //$this->load->view('categories/category_search_result_page', $data);
+                             $this->load->view('search/search_results', $data);
+                         
+                        }
+                        $this->load->view('templates/cil_footer2', $data);
+                        
+                    }
+                }
+            }
+            
            /*
            $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
            
