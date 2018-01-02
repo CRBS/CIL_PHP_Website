@@ -68,6 +68,25 @@ class Browse  extends CI_Controller
         $from = $page*$size;
         ////////End handle page and size////////////
         
+        
+        ///////Handle the image filter/////////////
+        $basic_still = null;
+        $basic_video = null;
+        $basic_zstack = null;
+        $basic_time = null;
+        
+        $temp = $this->input->get('refresh_still',TRUE);
+        if(!is_null($temp))
+        {
+            if(strcmp($temp, strtolower("true"))==0)
+            {
+                $basic_still = true;
+                $data['refresh_still'] = true;
+            }
+        }
+        
+        ///////End handle the image filter/////////
+        
        $api_host = $this->config->item('service_api_host');
        $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
        $data['queryString'] = $this->input->server('QUERY_STRING');
