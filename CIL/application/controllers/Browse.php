@@ -40,7 +40,7 @@ class Browse  extends CI_Controller
     
     public function cellprocess($input="None")
     {
-        
+        $adv_debug = $this->config->item('adv_debug');
         $sutil = new CILServiceUtil2();
         $gutil = new GeneralUtil();
         
@@ -70,10 +70,11 @@ class Browse  extends CI_Controller
         
         
         ///////Handle the image filter/////////////
-        $basic_still = null;
-        $basic_video = null;
-        $basic_zstack = null;
-        $basic_time = null;
+        $basic_still = false;
+        $basic_video = false;
+        $basic_zstack = false;
+        $basic_time = false;
+        $filter_query_str = "";
         
         $temp = $this->input->get('refresh_still',TRUE);
         if(!is_null($temp))
@@ -85,11 +86,41 @@ class Browse  extends CI_Controller
             }
         }
         
+        $temp = $this->input->get('refresh_video',TRUE);
+        if(!is_null($temp))
+        {
+            if(strcmp($temp, strtolower("true"))==0)
+            {
+                $basic_video = true;
+                $data['refresh_video'] = true;
+            }
+        }
+        
+        $temp = $this->input->get('refresh_zstack',TRUE);
+        if(!is_null($temp))
+        {
+            if(strcmp($temp, strtolower("true"))==0)
+            {
+                $basic_zstack = true;
+                $data['refresh_zstack'] = true;
+            }
+        }
+        
+        $temp = $this->input->get('refresh_time',TRUE);
+        if(!is_null($temp))
+        {
+            if(strcmp($temp, strtolower("true"))==0)
+            {
+                $basic_time = true;
+                $data['refresh_time'] = true;
+            }
+        }
         ///////End handle the image filter/////////
         
        $api_host = $this->config->item('service_api_host');
        $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
        $data['queryString'] = $this->input->server('QUERY_STRING');
+       //echo "<br/>".$data['queryString'];
        $data['base_url'] = $this->config->item('base_url');
        
        $url = $api_host."/rest/category/cell_process/Name/asc/0/10000";
@@ -176,10 +207,53 @@ class Browse  extends CI_Controller
                         $query = $hit->_source->Query_string;
                         //echo "\nQuery:".$query."----";
                         $json_query = json_decode($query);
-                        //$json_query->size = $size;
-                        //$json_query->from = $from;
+                        $query_str = $json_query->query->query_string->query;
+                        $query_str = trim($query_str);
+                        
+                        
+                        //////////////Filter query params/////////////////////
+                        if($basic_still)
+                        {
+                            if(strlen($filter_query_str) > 0)
+                                $filter_query_str = $filter_query_str." AND ";
+                            $filter_query_str = $filter_query_str." CIL_CCDB.Data_type.Still_image:true ";
+                        }
+                        
+                        if($basic_video)
+                        {
+                            if(strlen($filter_query_str) > 0)
+                                $filter_query_str = $filter_query_str." AND ";
+                            $filter_query_str = $filter_query_str." CIL_CCDB.Data_type.Video:true ";
+                        }
+                        
+                        if($basic_zstack)
+                        {
+                            if(strlen($filter_query_str) > 0)
+                                $filter_query_str = $filter_query_str." AND ";
+                            $filter_query_str = $filter_query_str." CIL_CCDB.Data_type.Z_stack:true ";
+                        }
+                        
+                        if($basic_time)
+                        {
+                            if(strlen($filter_query_str) > 0)
+                                $filter_query_str = $filter_query_str." AND ";
+                            $filter_query_str = $filter_query_str." CIL_CCDB.Data_type.Time_series:true ";
+                        }
+                        
+                        if(strlen($filter_query_str)>0)
+                            $query_str = "(".$filter_query_str.") AND ".$query_str;
+                        
+                        if($adv_debug)
+                            echo "<br/>".$query_str;
+                        //////////////End filter query params/////////////////////
+                        
+                        
+                        $json_query->query->query_string->query = $query_str;
                         $query = json_encode($json_query);
                         //echo $query;
+                        
+                        
+                        
                         $query_url =  $this->config->item('advanced_search')."?from=".$from."&size=".$size;;
                         $response = $sutil->curl_get_data($query_url,$query);
                         //echo $response;
@@ -187,7 +261,8 @@ class Browse  extends CI_Controller
                                    
            
                         $this->load->view('templates/cil_header4', $data);
-                        if($result->hits->total > 0)
+                        //if($result->hits->total > 0)
+                        if(isset($result->hits->total))
                         {
                              $data['result'] = $result;
                              $data['total'] = $result->hits->total;
@@ -201,14 +276,58 @@ class Browse  extends CI_Controller
                          $currentPage = $page+1;
                          $data['currentPage'] = $currentPage;
                          //echo $currentPage;
-
-                         $urlPattern = $this->config->item('base_url').
+                         
+                         /////////Filter params for the pagination/////////
+                         $additional_params = "";
+                         if($basic_still)
+                         {
+                            if(strlen($additional_params)>0)
+                                $additional_params=$additional_params."&";
+                            $additional_params="refresh_still=true";
+                         }
+                         
+                         if($basic_video)
+                         {
+                            if(strlen($additional_params)>0)
+                                $additional_params=$additional_params."&";
+                            $additional_params="refresh_video=true";
+                         }
+                         
+                         if($basic_zstack)
+                         {
+                            if(strlen($additional_params)>0)
+                                $additional_params=$additional_params."&";
+                            $additional_params="refresh_zstack=true";
+                         }
+                         
+                         if($basic_time)
+                         {
+                            if(strlen($additional_params)>0)
+                                $additional_params=$additional_params."&";
+                            $additional_params="refresh_time=true";
+                         }
+                         /////////End filter params for the pagination/////////
+                         
+                         $urlPattern = "";
+                         if(strlen($additional_params)==0)
+                            $urlPattern = $this->config->item('base_url').
                                  "/browse/cellprocess/".$input."?per_page=".$size."&page=";
+                         else 
+                            $urlPattern = $this->config->item('base_url').
+                                 "/browse/cellprocess/".$input."?".$additional_params."&per_page=".$size."&page=";
+                     
                          $data['urlPattern'] = $urlPattern;
                          $paginator = new Paginator($result->hits->total, $size, $currentPage, $urlPattern);
 
-                         $results_per_pageURL = $this->config->item('base_url').
+
+                         $results_per_pageURL ="";
+                         if(strlen($additional_params)==0)
+                            $results_per_pageURL = $this->config->item('base_url').
                                   "/browse/cellprocess/".$input."?page=";
+                        else 
+                            $results_per_pageURL = $this->config->item('base_url').
+                                  "/browse/cellprocess/".$input."?".$additional_params."&page=";
+                      
                          $data['results_per_pageURL'] = $results_per_pageURL;
 
                          $data['paginator'] = $paginator;

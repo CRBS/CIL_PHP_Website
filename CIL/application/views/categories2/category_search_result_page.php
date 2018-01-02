@@ -6,7 +6,7 @@
         Images of
         <span class="category">:</span>
         <span class="sub_category"><?php echo $category_title ?> (<?php echo $total; 
-        if($total == 1)
+        if($total == 1 || $total == 0)
             echo " result";
         else
             echo " results";
