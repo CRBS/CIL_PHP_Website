@@ -21,7 +21,8 @@
                         "&sort=".$reversed_sort."\" class=\"not_expected_results\" target=\"_self\">".$reversed_sort_name."</a>";
             }        
  ?>
-            <a href="/pages/search_help#submit_search_comments" class="not_expected_results">Hide Thumbnails</a>
+            <!-- <a href="/pages/search_help#submit_search_comments" class="not_expected_results">Hide Thumbnails</a> -->
+            <a href="/browse/cellprocess?direction=desc&amp;sort=name&amp;view_type=column" class="not_expected_results">Hide Thumbnails</a>
            </div>
         </div>
         

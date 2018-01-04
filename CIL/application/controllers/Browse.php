@@ -87,7 +87,7 @@ class Browse  extends CI_Controller
         $temp = $this->input->get('sort',TRUE);
         if(!is_null($temp))
         {
-            if(strcmp($temp,"name") || strcmp($temp,"image_count"))
+            if(strcmp($temp,"name") ==0 || strcmp($temp,"image_count")==0)
             {
                 $sort = $temp;
                 if(strcmp($sort,"name")==0)
@@ -108,6 +108,24 @@ class Browse  extends CI_Controller
         $data['reversed_sort'] = $reversed_sort;
         $data['reversed_sort_name'] = $reversed_sort_name;
         ////////End handle the direction and sorting/////
+        
+        
+        ///////Handle view type////////
+        $view_type="grid";
+        
+        $temp = $this->input->get('view_type',TRUE);
+        //echo "<br/>view_type-temp:".$temp."---";
+        if(!is_null($temp))
+        {
+            if(strcmp($temp,"grid")==0 || strcmp($temp,"column")==0)
+            {
+                $view_type = $temp;
+                
+            }
+        }
+        //echo "<br/>view_type:".$view_type;
+        ///////End handle view type////////
+        
         
         ///////Handle the image filter/////////////
         $basic_still = false;
@@ -166,10 +184,13 @@ class Browse  extends CI_Controller
        if(strcmp($sort,"name") == 0)
        {
           //$url = $api_host."/rest/category/cell_process/Name/asc/0/10000";
-           if(strcmp($direction,"asc")==0)
+           //The current website reserves the direction for some reason
+           if(strcmp($direction,"asc")==0) 
               $direction = "desc";
            else
               $direction = "asc";
+           
+           
            $url = $api_host."/rest/category/cell_process/Name/".$direction."/0/10000";
        }
        else if(strcmp($sort,"image_count") == 0)
@@ -207,7 +228,12 @@ class Browse  extends CI_Controller
         $data['result'] = $result;
         $data['category'] = "cellprocess";
         $this->load->view('templates/cil_header4', $data);
-        $this->load->view('categories2/cell_processes_display', $data);
+        if(strcmp($view_type,"grid")==0)
+           $this->load->view('categories2/cell_processes_display', $data);
+       else 
+           $this->load->view('categories2/cell_processes_display_col', $data);
+       
+        
         $this->load->view('templates/cil_footer2', $data);
        }
        else //if(strcmp($input,"Actin%20Based%20Processes")==0)
