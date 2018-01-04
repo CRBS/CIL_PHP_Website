@@ -71,6 +71,7 @@ class Browse  extends CI_Controller
         
         ////////Handle the direction and sorting/////
         $direction = "desc";
+        $reversed_direction = "asc";
         $sort = "name";
         $reversed_sort = "image_count";
         $reversed_sort_name = "Sort by Image Count";
@@ -80,7 +81,11 @@ class Browse  extends CI_Controller
             if(strcmp($temp,"desc") || strcmp($temp,"asc"))
             {
                 $direction = $temp;
-                
+                if(strcmp($direction,"desc")==0)
+                  $reversed_direction = "asc";
+              else 
+                  $reversed_direction = "desc";
+              
             }
         }
         
@@ -104,6 +109,7 @@ class Browse  extends CI_Controller
             }
         }
         $data['direction'] = $direction;
+        $data['reversed_direction'] = $reversed_direction;
         $data['sort'] = $sort;
         $data['reversed_sort'] = $reversed_sort;
         $data['reversed_sort_name'] = $reversed_sort_name;

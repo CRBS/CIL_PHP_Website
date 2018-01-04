@@ -24,8 +24,24 @@
   <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Images</th>
+        <th scope="col">
+          <a class="cil_16_font_no_color_bold" target="_self" href="<?php
+             if(isset($reversed_direction))
+                echo "/browse/cellprocess?direction=".$reversed_direction."&sort=name&view_type=column";
+             else
+                echo "#";
+             ?>">Name</a></th>
+        <th scope="col">
+            <a class="cil_16_font_no_color_bold" target="_self" href="
+           <?php
+             if(isset($sort) && strcmp($sort,"name")==0)
+                echo "/browse/cellprocess?direction=desc&sort=image_count&view_type=column";   
+             else if(isset($reversed_direction))
+                echo "/browse/cellprocess?direction=".$reversed_direction."&sort=image_count&view_type=column";
+             else
+                echo "#";
+             ?>">Images</a>
+        </th>
     </tr>
   </thead>
   <tbody>
