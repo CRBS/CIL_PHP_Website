@@ -44,7 +44,7 @@ class Browse  extends CI_Controller
         $sutil = new CILServiceUtil2();
         $gutil = new GeneralUtil();
         
-        
+        $data['test'] = "test"; //Just to initialize $data
         ////////Handle page and size////////////
         $page = 0;
         $size = 10;
@@ -68,6 +68,46 @@ class Browse  extends CI_Controller
         $from = $page*$size;
         ////////End handle page and size////////////
         
+        
+        ////////Handle the direction and sorting/////
+        $direction = "desc";
+        $sort = "name";
+        $reversed_sort = "image_count";
+        $reversed_sort_name = "Sort by Image Count";
+        $temp = $this->input->get('direction',TRUE);
+        if(!is_null($temp))
+        {
+            if(strcmp($temp,"desc") || strcmp($temp,"asc"))
+            {
+                $direction = $temp;
+                
+            }
+        }
+        
+        $temp = $this->input->get('sort',TRUE);
+        if(!is_null($temp))
+        {
+            if(strcmp($temp,"name") || strcmp($temp,"image_count"))
+            {
+                $sort = $temp;
+                if(strcmp($sort,"name")==0)
+                {
+                   $reversed_sort = "image_count";
+                   $reversed_sort_name = "Sort by Image Count";
+                }
+                else if(strcmp($sort,"image_count")==0)
+                {
+                   $reversed_sort = "name";
+                   $reversed_sort_name = "Sort by Name";
+                }
+                
+            }
+        }
+        $data['direction'] = $direction;
+        $data['sort'] = $sort;
+        $data['reversed_sort'] = $reversed_sort;
+        $data['reversed_sort_name'] = $reversed_sort_name;
+        ////////End handle the direction and sorting/////
         
         ///////Handle the image filter/////////////
         $basic_still = false;
@@ -123,7 +163,20 @@ class Browse  extends CI_Controller
        //echo "<br/>".$data['queryString'];
        $data['base_url'] = $this->config->item('base_url');
        
-       $url = $api_host."/rest/category/cell_process/Name/asc/0/10000";
+       if(strcmp($sort,"name") == 0)
+       {
+          //$url = $api_host."/rest/category/cell_process/Name/asc/0/10000";
+           if(strcmp($direction,"asc")==0)
+              $direction = "desc";
+           else
+              $direction = "asc";
+           $url = $api_host."/rest/category/cell_process/Name/".$direction."/0/10000";
+       }
+       else if(strcmp($sort,"image_count") == 0)
+       {
+          $url = $api_host."/rest/category/cell_process/Total/".$direction."/0/10000";
+       }
+          
        $response = $sutil->curl_get($url); 
        $response = $gutil->handleResponse($response);
        

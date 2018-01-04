@@ -11,11 +11,18 @@
         </div>
             
         </div>
-        <div class="col-md-6 pull-left">
-           
-            <a href="/pages/search_help#basic_search" class="not_expected_results">(Not the results you were expecting?)</a>
-            <a href="/pages/search_help#submit_search_comments" class="not_expected_results">(Comments)</a>
-            
+        <div class="col-md-6">
+           <div class="pull-right">
+<?php
+            if(isset($direction) && isset($reversed_sort) 
+                    && isset($reversed_sort_name))
+            {
+                echo "<a href=\"/browse/cellprocess?direction=".$direction.
+                        "&sort=".$reversed_sort."\" class=\"not_expected_results\" target=\"_self\">".$reversed_sort_name."</a>";
+            }        
+ ?>
+            <a href="/pages/search_help#submit_search_comments" class="not_expected_results">Hide Thumbnails</a>
+           </div>
         </div>
         
     </div>
@@ -101,7 +108,7 @@ if(isset($result->hits->hits))
             {
                 include 'inner_cell_processes_image.php';
             }
-            $i++;
+            
         }
 ?>
         </div>
