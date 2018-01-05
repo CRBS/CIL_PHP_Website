@@ -58,11 +58,13 @@
             <div class="org">National Center for Microscopy and Imaging Research</div>
             </div>
             <div class="vcard" id="hcard-Vicky-Rowley">
-            <div class="fn">Vicky Rowley</div>
+            <div class="fn">Sean Penticoff</div>
             <div class="role">IT Manager</div>
             <div class="org">National Center for Microscopy and Imaging Research</div>
             </div>
-           
+            <div class="vcard">
+                <div class="fn"><a href="/pages/past_contributors" target="_self">Past Contributors</a></div>
+            </div>
         </div>
     </div>
     
