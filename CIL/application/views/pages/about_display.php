@@ -70,7 +70,8 @@
         <div class="col-md-12">
            
             <span class="cil_title">Contact</span>
-            <span class="about_page_font">We welcome and value comments. Please submit your comments online <a href="/pages/guest">here</a> or email them to David  Orloff, Manager, Image Library, at <a href="mailto:dorloff@ncmir.ucsd.edu">dorloff@ncmir.ucsd.edu</a>.</span>
+            <!-- <span class="about_page_font">We welcome and value comments. Please submit your comments online <a href="/pages/guest">here</a> or email them to David  Orloff, Manager, Image Library, at <a href="mailto:dorloff@ncmir.ucsd.edu">dorloff@ncmir.ucsd.edu</a>.</span> -->
+            <span class="about_page_font">We welcome and value comments. Please submit your comments to David Orloff, Director, Image Library, at <a href="mailto:dorloff@ncmir.ucsd.edu">dorloff@ncmir.ucsd.edu</a>.</span>
             
         </div>
         

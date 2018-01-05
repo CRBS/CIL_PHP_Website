@@ -29,16 +29,16 @@
             <div class="col-md-12">
                 <a class="cil_16_font" href="https://giveto.ucsd.edu/?sk=459">Donate</a>
             </div>
-            <div class="col-md-12">
+            <!-- <div class="col-md-12">
                 <a class="cil_16_font" href="/pages/guest">Guest Book</a>
-            </div>
+            </div> -->
         </div>
 
         <div class="top-buffer"></div>
     </div>
     <div class="col-md-5">
         <p class="cil_16_font_black">
-            Welcome to our newly redesigned website.<br><br/> Please let us know how you like it!<br/><br/> Visit our <a class="cil_16_font" href="/pages/guest">Guest Book</a> and leave a message.
+            Welcome to our newly redesigned website.<br><br/> David will put a sentence #1 here.<br/><br/> David will put a sentence #2 here.
         </p>
     </div>
     <div class="col-md-3">

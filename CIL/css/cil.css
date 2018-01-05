@@ -216,6 +216,7 @@
     font-size: 13px;
     line-height: 22px;
     margin-bottom: 12px;
+    color: black;
     
     display: block;
     -webkit-margin-before: 1em;
@@ -377,3 +378,4 @@
     line-height: 24px;
     font-style: normal;
 }
+
