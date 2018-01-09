@@ -23,9 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost'; //Development
+//$config['base_url'] = 'http://localhost'; //Development
 //$config['base_url'] = 'http://flagella.crbs.ucsd.edu'; //Staging
-//$config['base_url'] = 'http://fibril.crbs.ucsd.edu'; //Production
+$config['base_url'] = 'http://fibril.crbs.ucsd.edu'; //Production
 
 /*
 |--------------------------------------------------------------------------
@@ -513,15 +513,6 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
-
-
-
-/*
- * Videos_folder 
- * 
- */
-//$config['video_folder'] = 'C:/Users/Willy/Documents/apache/Apache24/CIL_PHP_Website/CIL_PHP_Website/CIL/videos';
-//$config['video_folder'] = '/var/www/html/videos';
 
 
 
