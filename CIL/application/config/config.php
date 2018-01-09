@@ -23,8 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost';
-//$config['base_url'] = 'http://flagella.crbs.ucsd.edu';
+$config['base_url'] = 'http://localhost'; //Development
+//$config['base_url'] = 'http://flagella.crbs.ucsd.edu'; //Staging
+//$config['base_url'] = 'http://fibril.crbs.ucsd.edu'; //Production
 
 /*
 |--------------------------------------------------------------------------
@@ -534,8 +535,9 @@ $config['ccdb_image_prefix'] = 'https://cildata.crbs.ucsd.edu/display_images/ccd
 
 
 /* ----------------------------Service API---------------------------------- */
-//$service_api_host = "http://localhost:8080";
-$service_api_host = "https://cilia.crbs.ucsd.edu";
+//$service_api_host = "http://localhost:8080"; //Development
+//$service_api_host = "https://cilia.crbs.ucsd.edu"; //Staging
+$service_api_host = "https://tendril.crbs.ucsd.edu"; //Production
 
 $config['service_api_host'] = $service_api_host;
 
@@ -552,15 +554,22 @@ $config['simple_ontology_expansion_prefix'] = $service_api_host."/rest/simple_on
 /* ---------------------------- End Service API---------------------------------- */
 
 /* Elasticsearch prefix */
-$config['elasticsearchPrefix'] = "http://stretch.crbs.ucsd.edu:9200/ccdbv8";
+//$config['elasticsearchHost'] = "http://stretch.crbs.ucsd.edu:9200"; //Staging
+$config['elasticsearchHost'] = "http://cil-es.crbs.ucsd.edu:9200"; //Production
 
-$config['esOntoSuggest'] = "http://stretch.crbs.ucsd.edu:9200/ontology/_suggest";
 
+
+//$config['elasticsearchPrefix'] = "http://stretch.crbs.ucsd.edu:9200/ccdbv8";
+$config['elasticsearchPrefix'] = $config['elasticsearchHost']."/ccdbv8";
+//$config['esOntoSuggest'] = "http://stretch.crbs.ucsd.edu:9200/ontology/_suggest";
+$config['esOntoSuggest'] = $config['elasticsearchHost']."/ontology/_suggest";
 
 $config['max_number_of_query_conditions'] = 1024;
 
 /***********Ontology related**********************/
-$config["ontology_prefix"] = "http://stretch.crbs.ucsd.edu:9200/ontology";
+//$config["ontology_prefix"] = "http://stretch.crbs.ucsd.edu:9200/ontology";
+$config["ontology_prefix"] = $config['elasticsearchHost']."/ontology";
+
 $config['biological_process_root'] = "GO_0008150";
 $config["biological_processes_type"] = "biological_processes";
 
@@ -680,8 +689,6 @@ $config['zebrafish_anatomies_type'] = "zebrafish_anatomies";
 
 /********Debug params***********************/
 $config['adv_debug'] = false;
-
-
 /********End Debug params***************/
 
 
