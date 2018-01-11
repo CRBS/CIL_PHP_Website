@@ -12,7 +12,8 @@
         <div class="row">
             <div class="col-md-12">
                 <center>
-                <img src="<?php echo $cil_image_prefix.$numeric_id;   ?>/<?php echo "display_".$numeric_id;   ?>.png" width="100%" class="img-thumbnail pull-right"/>
+                <!-- <img src="<?php //echo $cil_image_prefix.$numeric_id;   ?>/<?php echo "display_".$numeric_id;   ?>.png" width="100%" class="img-thumbnail pull-right"/> -->
+                <img src="<?php echo $cil_image_prefix.$numeric_id."/".$numeric_id."_thumbnailx512.jpg";   ?>" width="100%" class="img-thumbnail pull-right"/>
                 </center>
             </div>
         </div>
