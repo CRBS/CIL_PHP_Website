@@ -520,15 +520,16 @@ $config['proxy_ips'] = '';
 
 //$config['cil_image_prefix'] = 'http://www.cellimagelibrary.org/cil_ccdb/display_images/';
 $config['cil_data_host'] =  'https://cildata.crbs.ucsd.edu';
-$config['cil_image_prefix'] = 'https://cildata.crbs.ucsd.edu/display_images/cil/';
+//$config['cil_image_prefix'] = 'https://cildata.crbs.ucsd.edu/display_images/cil/';
+$config['cil_image_prefix'] = 'https://cildata.crbs.ucsd.edu/media/thumbnail_display/';
 
 $config['ccdb_image_prefix'] = 'https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdb_512/';
 
 
 /* ----------------------------Service API---------------------------------- */
 //$service_api_host = "http://localhost:8080"; //Development
-//$service_api_host = "https://cilia.crbs.ucsd.edu"; //Staging
-$service_api_host = "https://tendril.crbs.ucsd.edu"; //Production
+$service_api_host = "https://cilia.crbs.ucsd.edu"; //Staging
+//$service_api_host = "https://tendril.crbs.ucsd.edu"; //Production
 
 $config['service_api_host'] = $service_api_host;
 
@@ -545,8 +546,8 @@ $config['simple_ontology_expansion_prefix'] = $service_api_host."/rest/simple_on
 /* ---------------------------- End Service API---------------------------------- */
 
 /* Elasticsearch prefix */
-//$config['elasticsearchHost'] = "http://stretch.crbs.ucsd.edu:9200"; //Staging
-$config['elasticsearchHost'] = "http://cil-es.crbs.ucsd.edu:9200"; //Production
+$config['elasticsearchHost'] = "http://stretch.crbs.ucsd.edu:9200"; //Staging
+//$config['elasticsearchHost'] = "http://cil-es.crbs.ucsd.edu:9200"; //Production
 
 
 
