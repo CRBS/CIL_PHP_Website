@@ -7,7 +7,8 @@
 <?php
      $nid = str_replace("CIL_", "", $id);
      //echo "id:".$nid."<br/>";
-     $imageURL = $cil_image_prefix."/".$nid."/display_".$nid.".png";
+     //$imageURL = $cil_image_prefix."/".$nid."/display_".$nid.".png";
+     $imageURL = $cil_image_prefix."/".$nid."/".$nid."_thumbnailx140.jpg";
 ?>
         <center><div class="thumbnail-kenburn">
                 <a href="/images/<?php echo $nid; ?>"><img width="140" src="<?php echo $imageURL; ?>"/></a>
