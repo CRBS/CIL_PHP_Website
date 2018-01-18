@@ -9,6 +9,12 @@
 ?>
 <?php
 
+    if(!isset($result))
+    {
+        echo "No data can be fount!";
+        return;
+    }
+
     $hits = $result->hits->hits;
     $count = count($hits);
     //echo "COUNT:".$count;
