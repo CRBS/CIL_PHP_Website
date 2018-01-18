@@ -582,7 +582,7 @@
                 <?php
                      if(isset($dq->free_text))
                     {
-                        $dq_text =  $dp->free_text;
+                        $dq_text =  $dq->free_text;
                         if($cutil->startsWith($dq_text,"RAW"))
                         {
                             echo "raw, unprocessed data";
