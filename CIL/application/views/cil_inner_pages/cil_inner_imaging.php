@@ -83,7 +83,7 @@
                 {
 ?>
                     <dd class='eol_dd'>
-                    <?php echo $itype->free_text ?>
+                    <?php echo $itype->free_text; ?>
                     </dd> 
 
 <?php                    

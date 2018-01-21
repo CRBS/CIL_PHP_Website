@@ -118,6 +118,13 @@
                                         ?>
 
                                 </div>
+                                <div class="col-md-12">
+                                        <?php
+                                        if(isset($json->CIL_CCDB->CIL->CORE->CHEMICAL_COMPOUNDS) &&
+                                             count($json->CIL_CCDB->CIL->CORE->CHEMICAL_COMPOUNDS) > 0)
+                                            include_once 'cil_inner_pages/cil_inner_chemical_compounds.php';
+                                        ?>
+                                </div>
                             </div>
                         </div>
                         
