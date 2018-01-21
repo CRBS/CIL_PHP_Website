@@ -38,7 +38,7 @@
     </div>
     <div class="col-md-5">
         <p class="cil_16_font_black">
-            Welcome to our newly redesigned website.<br><br/> David will put a sentence #1 here.<br/><br/> David will put a sentence #2 here.
+            Welcome to our newly redesigned website.<br/><br/> We welcome all feedback and suggestions.<br/><br/> Please send all comments to <a class="cil_16_font_no_color" href="mailto:dorloff@ncmir.ucsd.edu?Subject=suggestions" target="_top">dorloff@ncmir.ucsd.edu</a>.<br/>
         </p>
     </div>
     <div class="col-md-3">

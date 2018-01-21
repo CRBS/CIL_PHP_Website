@@ -63,7 +63,7 @@
             <div class="org">National Center for Microscopy and Imaging Research</div>
             </div>
             <div class="vcard">
-                <div class="fn"><a href="/pages/past_contributors" target="_self">Past Contributors</a></div>
+                <div class="fn"><a class="cil_16_font_no_color" href="/pages/past_contributors" target="_self">Past Contributors</a></div>
             </div>
         </div>
     </div>
