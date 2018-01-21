@@ -16,6 +16,13 @@
                         echo "The Cell Image Library";
                 
                 ?></title>
+                <!----AddThis Widget------->
+    <meta property="og:title" content="AddThis Tour" /> 
+    <meta property="og:description" content="Watch the AddThis Tour video." />
+    <meta property="og:image" content="https://cildata.crbs.ucsd.edu/media/thumbnail_display/12607/12607_thumbnailx512.jpg" />
+
+                <!----End AddThis----------->
+                
 		<meta name="description" content="The Cell Image Library">
 		<meta name="author" content="Willy W. Wong">
 		<meta name="viewport" content="width=device-width">
