@@ -75,7 +75,8 @@
         ?>
         
         <?php 
-        if(!is_null($tif))
+        if(!is_null($tif) 
+                && !isset($json->CIL_CCDB->CIL->Alternative_image_files))
         {
         ?>
         <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
@@ -86,7 +87,8 @@
         ?>    
             
         <?php 
-        if(!is_null($zip))
+        if(!is_null($zip)
+                && !isset($json->CIL_CCDB->CIL->Alternative_image_files))
         {
         ?>    
         <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
@@ -96,6 +98,30 @@
         }
         ?>
             
+        <!---------Adding the alternative download links-------->
+         <?php
+         if(isset($json->CIL_CCDB->CIL->Alternative_image_files)
+            && count($json->CIL_CCDB->CIL->Alternative_image_files) > 0)
+         {
+             $alt_images = $json->CIL_CCDB->CIL->Alternative_image_files;
+             foreach($alt_images as $altimage)
+             {
+                 if(isset($altimage->URL_postfix) 
+                         && isset($altimage->Size)
+                         && $altimage->Size > 0
+                         && isset($altimage->File_path))
+                 {
+         ?>
+                    <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
+                    <a class='download_menu_anchor' href='<?php echo $download_prefix.$altimage->URL_postfix;  ?>'><?php echo $altimage->File_path; ?> (<?php echo $cutil->convertFileSize($altimage->Size);   ?>)</a>
+                    </div>
+         <?php
+                 }
+             }
+         }
+            
+         ?>
+        <!---------End adding the alternative download links-------->
         </div>
         </div>
         </div>
