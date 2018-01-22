@@ -4,7 +4,7 @@
             <img src="/pix/Cy5.png" width="100%">
         </div>
         <div class="col-md-7">
-            <h2>Human U2OS cells - compound cell-painting experiment</h2>
+            <span class="cil_title">Human U2OS cells - compound cell-painting experiment</span>
             <span style="font-size:12px;font-weight: normal;"><br><b>Description of biological application</b><br>
 Phenotypic profiling attempts to summarize multiparametric, feature-based analysis of cellular phenotypes of each sample so that similarities between profiles reflect similarities between samples. This image set provides a basis for testing image-based profiling methods wrt. to their ability to distinguish the effects of small molecules. The images are of U2OS cells treated with each of over 30,000  known bioactive compounds and labeled with six labels that characterize seven organelles (the cell-painting assay). This experiment consists of 375 plates in 384-well format, for a data set comprised of 988,994 fields of view. Each field was imaged in five channels (detection wavelengths), and each channel is stored as a separate, grayscale image file, so there are approximately 5 million image files in 16-bit TIFF format.
 <br><br><b>Technical details</b><br>

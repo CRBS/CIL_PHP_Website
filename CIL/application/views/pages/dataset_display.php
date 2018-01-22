@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2>Datasets</h2>
+            <span class="cil_title">Datasets</span>
         </div>
     </div>
     <div class="row top-buffer">
