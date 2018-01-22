@@ -395,6 +395,7 @@ class Images  extends CI_Controller
     
     public function view($imageID)
     {
+        $data['base_url'] = $this->config->base_url();
         $data['download_prefix'] = $this->config->item('download_server_prefix');
         $data['ccdb_direct_data_prefix'] = $this->config->item('ccdb_direct_data_prefix');
         $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
@@ -448,7 +449,7 @@ class Images  extends CI_Controller
              if($gutil->startsWith($imageID,"CIL_"))
              {
                // echo "<br/>Host name:".$this->config->base_url();;
-                 $base_url = $this->config->base_url();
+                $base_url = $this->config->base_url();
                 $numeric_id = str_replace("CIL_", "", $imageID); 
                 $data['numeric_id'] =$numeric_id;
                 //$data['has_video'] = $sutil->is_url_exist("http://www.cellimagelibrary.org/videos/".$numeric_id.".flv");

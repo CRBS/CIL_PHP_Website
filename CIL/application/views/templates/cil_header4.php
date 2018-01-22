@@ -16,11 +16,61 @@
                         echo "The Cell Image Library";
                 
                 ?></title>
-                <!----AddThis Widget------->
-    <meta property="og:title" content="AddThis Tour" /> 
-    <meta property="og:description" content="Watch the AddThis Tour video." />
-    <meta property="og:image" content="https://cildata.crbs.ucsd.edu/media/thumbnail_display/12607/12607_thumbnailx512.jpg" />
+                <!----AddThis Widget: Facebook Open Graph Meta Tags------->
+    <?php
+        $og_title = null;
+        $og_desc = null;
+        $og_image = null;
+        $og_url = null;
+        if(isset($json->CIL_CCDB->CIL) && isset($numeric_id))
+        {
+            $og_title = "The Cell: An Image Library - Image CIL:".$numeric_id;
+            echo "\n<meta property=\"og:title\" content=\"".$og_title."\" />";
+        
+            if(isset($json->CIL_CCDB->CIL->CORE->IMAGEDESCRIPTION->free_text))
+            {
+                $og_desc = json_encode($json->CIL_CCDB->CIL->CORE->IMAGEDESCRIPTION->free_text);
+                $og_desc = htmlspecialchars($og_desc);
+                if(strlen($og_desc) > 240)
+                {
+                    $og_desc = substr ($og_desc, 0,240)."...";
 
+                }
+                echo "\n<meta property=\"og:description\" content=\"".$og_desc."\" />";  
+            }
+            if(isset($cil_data_host) &&
+               isset($json->CIL_CCDB->Data_type->Video))
+            {
+                if($json->CIL_CCDB->Data_type->Video)
+                {
+                    //$og_image = $cil_data_host."/media/videos/".$numeric_id."/".$numeric_id.".jpg";
+                    $og_image = $cil_data_host."/media/thumbnail_display/".$numeric_id."/".$numeric_id."_thumbnailx512.jpg";
+                }
+                else
+                {
+                    //$og_image = $cil_data_host."/media/images/".$numeric_id."/".$numeric_id.".jpg";
+                    $og_image = $cil_data_host."/media/thumbnail_display/".$numeric_id."/".$numeric_id."_thumbnailx512.jpg";
+                }
+                echo "\n<meta property=\"og:image\" content=\"".$og_image."\" />";
+                echo "\n<meta property=\"og:image:width\" content=\"512\" />";
+                echo "\n<meta property=\"og:image:height\" content=\"512\" />";
+                
+            }
+            
+            if(isset($base_url))
+            {
+                $og_url = $base_url."images/".$numeric_id;
+                //echo "\n---base_url:".$base_url;
+                echo "\n<meta property=\"og:url\" content=\"".$og_url."\"/>";
+            }
+        }
+        
+        
+    ?>
+     
+    
+    
+    
                 <!----End AddThis----------->
                 
 		<meta name="description" content="The Cell Image Library">
