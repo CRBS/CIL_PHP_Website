@@ -149,7 +149,23 @@
                 
                 <link rel="icon" href="/pix/favicon.ico" type="image/x-icon" />
                 <link rel="shortcut icon" href="/pix/favicon.ico" type="image/x-icon" />
-	</head>
+        
+                
+        <!----------Google analytics-------------------->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112923916-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-112923916-1'); //New tracker ID
+          gtag('config', 'UA-6979852-4'); //The original tracker ID
+        </script>
+        <!----------End Google analytics---------------->
+        
+        
+        </head>
         
  
         
