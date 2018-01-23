@@ -49,6 +49,7 @@
     <br/>
 <?php
     $cell_component = $summary->Cell_component;
+
     $count = count($cell_component);
     
         $newRow = false;
@@ -61,6 +62,14 @@
             <div class="col-md-4">
 <?php
         $cc = $cell_component[$i];
+        
+        //Debug
+        /*if($i==0)
+        {
+          $cell_component_jstr = json_encode($cc, JSON_PRETTY_PRINT);
+          echo $cell_component_jstr;
+        }*/
+        
         //echo $cp->Name;
         include 'inner_cell_component_image.php';
         $i++;
