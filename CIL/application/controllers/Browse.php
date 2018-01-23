@@ -962,6 +962,7 @@ class Browse  extends CI_Controller
      public function organism($input="None")
      {
             //$from = $page_num*$size;
+            $data['cil_data_host'] = $this->config->item('cil_data_host');
             $sutil = new CILServiceUtil2();
             $gutil = new GeneralUtil();
             
