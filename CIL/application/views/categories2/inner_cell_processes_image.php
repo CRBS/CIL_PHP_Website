@@ -5,7 +5,13 @@
                 <a href="/browse/cellprocess/<?php echo $item->_source->Name; ?>" class="survey_plain" target="_self">
                     <img width="220" src="<?php 
                     $rid = $item->_source->Rep_id;
-                    $url = "http://www.cellimagelibrary.org/cil_ccdb/display_images/".$rid."/display_".$rid.".png";
+                    $url ="";
+                    if(isset($cil_data_host))
+                    {
+                       echo $cil_data_host."/media/thumbnail_display/".$rid."/".$rid."_thumbnailx220.jpg";
+                    }
+                    //else
+                    //    $url = "http://www.cellimagelibrary.org/cil_ccdb/display_images/".$rid."/display_".$rid.".png";
                     echo $url;
                     
                     ?>">

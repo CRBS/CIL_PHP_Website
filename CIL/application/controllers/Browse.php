@@ -40,6 +40,7 @@ class Browse  extends CI_Controller
     
     public function cellprocess($input="None")
     {
+        $data['cil_data_host'] = $this->config->item('cil_data_host');
         $adv_debug = $this->config->item('adv_debug');
         $sutil = new CILServiceUtil2();
         $gutil = new GeneralUtil();
