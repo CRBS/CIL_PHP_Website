@@ -7,7 +7,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2>Image Contributors to The Cell</h2>
+            <span class="cil_title2">Image Contributors to The Cell</span>
         </div>
     </div>
     <!-- <div class="row">
