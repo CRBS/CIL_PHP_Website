@@ -206,7 +206,7 @@ class CILServiceUtil2
     public function searchCategoryByName($category_name,$name)
     {
         $CI = CI_Controller::get_instance();
-        $url = $CI->config->item('service_api_host')."/rest/category_search";
+        $url = $CI->config->item('service_api_host')."/rest/category_search/".$category_name;
         $query = "{\"query\": { ".
                 "\"term\" : { \"Name\" : \"".$name."\" } ". 
                 "}}";
