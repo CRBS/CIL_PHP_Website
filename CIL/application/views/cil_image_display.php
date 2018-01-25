@@ -76,12 +76,18 @@
                                 </div>
                                 <div class="col-md-12">
                                         <?php 
-                                        if(isset($json->CIL_CCDB->CIL->CORE->BIOLOGICALPROCESS))
+                                        if(isset($json->CIL_CCDB->CIL->CORE->BIOLOGICALPROCESS)
+                                            || isset($json->CIL_CCDB->CIL->CORE->MOLECULARFUNCTION)
+                                            || isset($json->CIL_CCDB->CIL->CORE->HUMAN_DEV_ANATOMY)
+                                            || isset($json->CIL_CCDB->CIL->CORE->HUMAN_DISEASE)
+                                            || isset($json->CIL_CCDB->CIL->CORE->MOUSE_GROSS_ANATOMY)
+                                            || isset($json->CIL_CCDB->CIL->CORE->XENOPUS_ANATOMY)
+                                            || isset($json->CIL_CCDB->CIL->CORE->ZEBRAFISH_ANATOMY))
                                             include_once 'cil_inner_pages/cil_inner_biological_context.php' 
                                         ?>
 
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-12 top-buffer">
                                         <?php 
                                             if(isset($json->CIL_CCDB->CIL->CORE->ATTRIBUTION))
                                                 include_once 'cil_inner_pages/cil_inner_attribution.php' 
@@ -102,7 +108,13 @@
                                 <div class="col-md-12">
                                         
                                      <?php 
-                                          if(isset($json->CIL_CCDB->CIL->CORE->ITEMTYPE) || isset($json->CIL_CCDB->CIL->CORE->IMAGINGMODE))
+                                          if(isset($json->CIL_CCDB->CIL->CORE->ITEMTYPE) 
+                                            || isset($json->CIL_CCDB->CIL->CORE->IMAGINGMODE)
+                                            || isset($json->CIL_CCDB->CIL->CORE->PARAMETERIMAGED)
+                                            || isset($json->CIL_CCDB->CIL->CORE->SOURCEOFCONTRAST)
+                                            || isset($json->CIL_CCDB->CIL->CORE->VISUALIZATIONMETHODS)
+                                            || isset($json->CIL_CCDB->CIL->CORE->PROCESSINGHISTORY)
+                                            || isset($json->CIL_CCDB->CIL->CORE->DATAQUALIFICATION))
                                             include_once 'cil_inner_pages/cil_inner_imaging.php' 
                                      
                                        ?>
@@ -110,7 +122,8 @@
                                 </div>
                                 <div class="col-md-12">
                                         <?php 
-                                        if(isset($json->CIL_CCDB->CIL->CORE->PREPARATION))
+                                        if(isset($json->CIL_CCDB->CIL->CORE->PREPARATION)
+                                           || isset($json->CIL_CCDB->CIL->CORE->RELATIONTOINTACTCELL))
                                             include_once 'cil_inner_pages/cil_inner_sample_prep.php'; 
                                         ?>
 
