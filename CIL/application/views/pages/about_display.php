@@ -4,8 +4,10 @@
             
             <span class="cil_title">Project title</span>
             <span class="about_page_font">Support of and Extensions to the Cell Image Library</span>
-            <span class="cil_title">Grant Number</span>
-            <span class="about_page_font">2R01GM082949</span>
+            <!-- <span class="cil_title">Grant Number</span>
+            <span class="about_page_font">2R01GM082949</span> -->
+            <span class="cil_title">Funding</span>
+            <span class="about_page_font">Funded by a grant from the National Institute of General Medical Sciences of the National Institutes of Health under award number 2R01GM082949</span>
             <span class="cil_title">About The Cell</span>
             <span class="about_page_font">This library is a public and easily accessible resource database of images, videos, and animations of cells, capturing a wide diversity of organisms, cell types, and cellular processes. The purpose of this database is to advance research on cellular activity, with the ultimate goal of improving human health.</span>
             
