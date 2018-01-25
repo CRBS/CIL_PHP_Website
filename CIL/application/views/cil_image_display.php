@@ -65,7 +65,11 @@
                             <div class="row">
                                 <div class="col-md-12">
                                         <?php
-                                            if(isset($json->CIL_CCDB->CIL->CORE->NCBIORGANISMALCLASSIFICATION))
+                                            if(isset($json->CIL_CCDB->CIL->CORE->NCBIORGANISMALCLASSIFICATION)
+                                               || isset($json->CIL_CCDB->CIL->CORE->CELLTYPE)
+                                               || isset($json->CIL_CCDB->CIL->CORE->CELLLINE)
+                                               || isset($json->CIL_CCDB->CIL->CORE->CELLULARCOMPONENT)
+                                                )
                                                 include_once 'cil_inner_pages/cil_inner_biological_sources.php' 
                                         ?>
                                     
