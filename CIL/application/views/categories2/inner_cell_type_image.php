@@ -20,7 +20,7 @@
         </center>
     </div>
     <div class="col-md-12">
-        <center><a href="/browse/cellcomponent/<?php echo $item->_source->Name; ?>" class="survey_plain" target="_self"><?php echo $item->_source->Name."<br/>(".$item->_source->Total.")"; ?></a></center>
+        <center><a href="/browse/celltype/<?php echo $item->_source->Name; ?>" class="survey_plain" target="_self"><?php echo $item->_source->Name."<br/>(".$item->_source->Total.")"; ?></a></center>
     </div>
 
     

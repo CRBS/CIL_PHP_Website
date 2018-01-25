@@ -2,7 +2,7 @@
     <div class="col-md-12">
         <center>
             <div class="thumbnail-kenburn">
-                <a href="/browse/celltype/<?php echo $item->_source->Name; ?>" class="survey_plain" target="_self">
+                <a href="/browse/cellcomponent/<?php echo $item->_source->Name; ?>" class="survey_plain" target="_self">
                     <img width="220" src="<?php 
                     $rid = $item->_source->Rep_id;
                     $url ="";
