@@ -276,7 +276,9 @@ $( "#chromosome" ).mouseout(function() {
 
 $( "#chromosome" ).click(function() {
     //console.log('action_cytoskeleton click');
-    var win = window.open('/browse/cellcomponent/Chromosome', '_self');
+    //var win = window.open('/browse/cellcomponent/Chromosome', '_self');
+    //Patch 1-25-2018 by Willy
+    var win = window.open('/images?k=Chromosome&simple_search=Search', '_self');
     win.focus();
     
 });
@@ -395,7 +397,9 @@ $( "#lysosome" ).mouseout(function() {
 });
 $( "#lysosome" ).click(function() {
     //console.log('action_cytoskeleton click');
-    var win = window.open('/browse/cellcomponent/Lysosome%20and%20Related%20Organelles', '_self');
+    //var win = window.open('/browse/cellcomponent/Lysosome%20and%20Related%20Organelles', '_self');
+    //Patch 1-25-2018 by Willy
+    var win = window.open('/images?k=Lysosome&simple_search=Search', '_self');
     win.focus();
     
 });

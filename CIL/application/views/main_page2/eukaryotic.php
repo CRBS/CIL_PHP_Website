@@ -6,13 +6,15 @@
     <div class="col-md-3 row_no_gap_right">
          <ul class="list-group">
             <li id="action_cytoskeleton" class="list-group-item "><a href="/browse/cellcomponent/Actin%20Cytoskeleton" class="anchor_blue">Action Cytoskeleton</a></li>
-            <li id="chromosome" class="list-group-item "><a href="/browse/cellcomponent/Chromosome" class="anchor_blue">Chromosome</a></li>
+            <!-- <li id="chromosome" class="list-group-item "><a href="/browse/cellcomponent/Chromosome" class="anchor_blue">Chromosome</a></li> -->
+            <li id="chromosome" class="list-group-item "><a href="/images?k=Chromosome&simple_search=Search" class="anchor_blue">Chromosome</a></li>
             <li id="endoplasmic_reticulum" class="list-group-item"><a href="/browse/cellcomponent/Endoplasmic%20Reticulum" class="anchor_blue">Endoplasmic Reticulum</a></li>
             <li id="endosome" class="list-group-item"><a href="/browse/cellcomponent/Endosome" class="anchor_blue">Endosome</a></li>
             <li id="extracellular_matrix" class="list-group-item"><a href="/browse/cellcomponent/Extracellular%20Matrix" class="anchor_blue">Extracellular Matrix</a></li>
             <li id="golgi_apparatus" class="list-group-item"><a href="/images?k=paramecium+cytopharynx&simple_search=Search" class="anchor_blue">Golgi Apparatus</a></li>
             <li id="intermediate_filament_cytoskeleton" class="list-group-item"><a href="/browse/cellcomponent/Intermediate%20Filament%20Cytoskeleton" class="anchor_blue">Intermediate Filament Cytoskeleton</a></li>
-            <li id="lysosome" class="list-group-item"><a href="/browse/cellcomponent/Lysosome%20and%20Related%20Organelles" class="anchor_blue">Lysosome</a></li>
+            <!-- <li id="lysosome" class="list-group-item"><a href="/browse/cellcomponent/Lysosome%20and%20Related%20Organelles" class="anchor_blue">Lysosome</a></li> -->
+            <li id="lysosome" class="list-group-item"><a href="/images?k=Lysosome&simple_search=Search" class="anchor_blue">Lysosome</a></li>
             <li id="microtubule_cytoskeleton" class="list-group-item"><a href="/browse/cellcomponent/Microtubule%20Cytoskeleton" class="anchor_blue">Microtubule Cytoskeleton</a></li>
             <li id="microtubule_organizing_centers" class="list-group-item"><a href="/browse/cellcomponent/Microtubule%20Organizing%20Centers" class="anchor_blue">Microtubule Organizing Centers</a></li> 
             <li id="mitochondrion" class="list-group-item"><a href="/browse/cellcomponent/Mitochondrion" class="anchor_blue">Mitochondrion</a></li>
