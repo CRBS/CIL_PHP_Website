@@ -12,7 +12,7 @@
             <li id="extracellular_matrix" class="list-group-item"><a href="/browse/cellcomponent/Extracellular%20Matrix" class="anchor_blue">Extracellular Matrix</a></li>
             <li id="golgi_apparatus" class="list-group-item"><a href="/images?k=paramecium+cytopharynx&simple_search=Search" class="anchor_blue">Golgi Apparatus</a></li>
             <li id="intermediate_filament_cytoskeleton" class="list-group-item"><a href="/browse/cellcomponent/Intermediate%20Filament%20Cytoskeleton" class="anchor_blue">Intermediate Filament Cytoskeleton</a></li>
-            <li id="lysosome" class="list-group-item"><a href="/browse/cellcomponent/Lysosome%20and%20Related%20Organelles" class="anchor_blue">Lysosome</a></li>
+            <li id="lysosome" class="list-group-item"><a href="/browse/cellcomponent/Lysosome%20And%20Related%20Organelles" class="anchor_blue">Lysosome</a></li>
             <li id="microtubule_cytoskeleton" class="list-group-item"><a href="/browse/cellcomponent/Microtubule%20Cytoskeleton" class="anchor_blue">Microtubule Cytoskeleton</a></li>
             <li id="microtubule_organizing_centers" class="list-group-item"><a href="/browse/cellcomponent/Microtubule%20Organizing%20Centers" class="anchor_blue">Microtubule Organizing Centers</a></li> 
             <li id="mitochondrion" class="list-group-item"><a href="/browse/cellcomponent/Mitochondrion" class="anchor_blue">Mitochondrion</a></li>
