@@ -19,11 +19,11 @@
                 <dt class="faq_bold_font">What Is the Goal of The Cell Image Library™?</dt>
                 <dd class="faq_regular_font">To create a valuable research tool to promote analysis and new discoveries</dd>
                 <dt class="faq_bold_font">What Kind of Images Are Sought?</dt>
-                <dd class="faq_regular_font">The Cell seeks images from all organisms, cell types, and processes, normal and pathological. Image quality should be as high as possible, within the limitations imposed by the then current state of readily available imaging technology and constraints imposed by the biological specimen.  We accept images in any of the 99 file types found at  http://www.openmicroscopy.org/site/products/bio-formats. We can also work with your negatives. If you have images on negatives that you would like to submit, please contact David Orloff, Manager of the Library, at <a href="mailto:dorloff@ncmir.ucsd.edu">dorloff@ncmir.ucsd.edu</a> .</dd>
+                <dd class="faq_regular_font">The Cell seeks images from all organisms, cell types, and processes, normal and pathological. Image quality should be as high as possible, within the limitations imposed by the then current state of readily available imaging technology and constraints imposed by the biological specimen.  We accept images in any of the 99 file types found at  http://www.openmicroscopy.org/site/products/bio-formats. We can also work with your negatives. If you have images on negatives that you would like to submit, please contact David Orloff, Director of the Library, at <a href="mailto:dorloff@ncmir.ucsd.edu">dorloff@ncmir.ucsd.edu</a> .</dd>
                 <dt class="faq_bold_font">Why Can’t I Save my Advanced Search?</dt>
                 <dd class="faq_regular_font">The ability to save a search would require individuals to login. To simplify access, we have decided against this approach. However, we are developing a system enabling users to subscribe to a search and be emailed when images matching your search parameters are added to the Library.</dd>
                 </dl>
-                <p class="faq_regular_font">Have a question not on the FAQ list? Email David Orloff, Manager of the Library, at <a href="mailto:dorloff@ncmir.ucsd.edu">dorloff@ncmir.ucsd.edu</a>.</p>
+                <p class="faq_regular_font">Have a question not on the FAQ list? Email David Orloff, Director of the Library, at <a href="mailto:dorloff@ncmir.ucsd.edu">dorloff@ncmir.ucsd.edu</a>.</p>
             </div>
             <!-----------------End FAQ----------------------->
               
@@ -103,7 +103,7 @@
                 <dd class="faq_regular_font">Image analysis tools include options to turn channels on/off, to change channel colors, and to adjust brightness and contrast</dd>
                 </dl>
 
-                <p  class="faq_regular_font">What new features/tools will support your research use of this resource? How would you like to use The Cell? Please email suggestions and comments to David Orloff, Manager of the Library, at <a href="mailto:dorloff@ncmir.ucsd.edu">dorloff@ncmir.ucsd.edu</a>.</p>
+                <p  class="faq_regular_font">What new features/tools will support your research use of this resource? How would you like to use The Cell? Please email suggestions and comments to David Orloff, Director of the Library, at <a href="mailto:dorloff@ncmir.ucsd.edu">dorloff@ncmir.ucsd.edu</a>.</p>
             </div>
                
             <!--------------------------Tips------------------------------->
@@ -119,7 +119,8 @@
             </dl>
             
             
-            <p class="faq_regular_font">Have additional tips you would like to share? Email David Orloff, Manager of the Library, at <a href="mailto:dorloff@ncmir.ucsd.edu">dorloff@ncmir.ucsd.edu</a>.</p>
+            <p class="faq_regular_font">Have additional tips you would like to share? Email David Orloff, Director
+                of the Library, at <a href="mailto:dorloff@ncmir.ucsd.edu">dorloff@ncmir.ucsd.edu</a>.</p>
             </div>
             <!--------------------------End tips----------------------------->
             

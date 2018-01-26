@@ -24,11 +24,11 @@
                 <a class="cil_16_font" href="/pages/notification">Notification of Use</a>
             </div>
             <div class="col-md-12">
-                <a class="cil_16_font" href="/pages/cell_illustration">Interactive Cell</a>
+                <a class="cil_16_font" href="/pages/cell_illustration">Interactive Cells</a>
             </div>
-            <div class="col-md-12">
+            <!-- <div class="col-md-12">
                 <a class="cil_16_font" href="https://giveto.ucsd.edu/?sk=459">Donate</a>
-            </div>
+            </div> -->
             <!-- <div class="col-md-12">
                 <a class="cil_16_font" href="/pages/guest">Guest Book</a>
             </div> -->
@@ -38,7 +38,7 @@
     </div>
     <div class="col-md-5">
         <p class="cil_16_font_black">
-            Welcome to our newly redesigned website.<br/><br/> We welcome all feedback and suggestions.<br/><br/> Please send all comments to <a class="cil_16_font_no_color" href="mailto:dorloff@ncmir.ucsd.edu?Subject=suggestions" target="_top">dorloff@ncmir.ucsd.edu</a>.<br/>
+            Welcome to our newly redesigned website.<br/><br/> Enjoy exploring our over 10,000 unique datasets and 20 TB of data.<br/><br/> Please send all feedback and suggestions to <a class="cil_16_font_no_color" href="mailto:dorloff@ncmir.ucsd.edu?Subject=suggestions" target="_top">dorloff@ncmir.ucsd.edu</a>.<br/>
         </p>
     </div>
     <div class="col-md-3">
