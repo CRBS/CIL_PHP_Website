@@ -1,20 +1,35 @@
-<div class="images">
-<div class="description">
-<!-- <h2 class='detailed_description'>Project -->
+<!-- <div class="images">
+<div class="description"> -->
+<div class="row">
+<div class="col-md-12">
+<span class=" pull-right cil_id_font" >CCDB:<?php 
+    if(!is_null($numeric_id))
+    {
+        echo $numeric_id;
+    }
+    ?><sup class="detailed_cil_asterisk">*</sup>
+</span> 
+</div> 
+</div>
+
+<div class="row">
+<div class="col-md-12">
 <span class="cil_title2">Project: <?php
     if(isset($result->CIL_CCDB->CCDB->Project->ID))
     {
-        //echo "(".$result->CIL_CCDB->CCDB->Project->ID.")";
+        
  ?>
         <a href="<?php echo "/project/".$result->CIL_CCDB->CCDB->Project->ID; ?>" target="_self"><?php
             echo $result->CIL_CCDB->CCDB->Project->ID;
-        ?></a>
+        ?></a> 
 <?php
     }
 ?>
 </span>
+</div>
 
-
+</div>
+    
 
 <!-- </h2> -->
 <?php
@@ -194,6 +209,6 @@
 
 
     
-</p>
+<!--
 </div>
-</div>
+</div> -->

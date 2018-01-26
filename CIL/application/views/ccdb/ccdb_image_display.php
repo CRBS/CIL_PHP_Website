@@ -76,16 +76,11 @@
             <div class="row">
                  
                 <div class="col-md-12">
-                    <br/>
-                    <!-- <button class="btn-u btn-u-xs rounded-4x btn-u-green" type="button">Add to photobox</button> -->
+                     <br/> 
+                    <!-- <a href="/accounts/login_prompt_required" class="mini button" id="toggle_img_favorites_2_logged_out">Add to Photobox</a> -->
                     
-                    <a href="/accounts/login_prompt_required" class="mini button" id="toggle_img_favorites_2_logged_out">Add to Photobox</a>
-                    <span class="cil pull-right">CCDB:<?php 
-                        if(!is_null($numeric_id))
-                        {
-                            echo $numeric_id;
-                        }
-                    ?><sup class="detailed_cil_asterisk">*</sup></span> 
+
+
                     <?php 
                         
                         if(isset($result->CIL_CCDB->CCDB->Project))

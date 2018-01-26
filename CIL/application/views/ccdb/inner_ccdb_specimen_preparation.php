@@ -1,4 +1,4 @@
-<h2 class='detailed_description'>Specimen preparation</h2>
+<span class="cil_title2">Specimen preparation</span>
 <!--------------------Protocol_used------------------------->
 <?php
 

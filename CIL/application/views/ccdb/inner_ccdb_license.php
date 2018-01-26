@@ -1,5 +1,5 @@
 <hr>
-<h2>License</h2>            
+<span class="cil_title2">License</span>            
             <div class="row">
                 <div class="col-md-2">
                     <img src="/pic/attribution_cc_by.png">

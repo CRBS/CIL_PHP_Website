@@ -379,3 +379,13 @@
     font-style: normal;
 }
 
+
+.cil_id_font
+{
+    font-family: "Roboto, sans-serif";
+    font-size: 14px;
+    font-weight: 700;
+    /* line-height: 0px; */
+    font-style: normal;
+    /* color: #333333; */
+}

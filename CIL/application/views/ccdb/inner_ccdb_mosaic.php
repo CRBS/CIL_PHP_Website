@@ -1,4 +1,4 @@
-<h2 class='detailed_description'>Imaging product type</h2>
+<span class="cil_title2">Imaging product type</span>
 <div class="row">
             <div class="col-md-12">
                 <dl>
