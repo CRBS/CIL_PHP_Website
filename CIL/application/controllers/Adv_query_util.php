@@ -462,6 +462,9 @@ class Adv_query_util
         $query_string['query'] = $qstring;
         $queryOuter['query_string'] = $query_string;
         $main['query'] = $queryOuter;
+        
+        //echo "----Query:".json_encode($main)."---";
+        
         return json_encode($main);
     }
     
@@ -513,6 +516,11 @@ class Adv_query_util
             if(!isset($result->_source->Expansion->Terms))
                 return $array();
             $terms = $result->_source->Expansion->Terms;
+            
+            if(isset($result->_source->Expansion->Onto_id))
+            {
+                array_push($array, $result->_source->Expansion->Onto_id);
+            }
             
             foreach($terms as $term)
             {
@@ -582,6 +590,7 @@ class Adv_query_util
     {
         $sutil = new CILServiceUtil2();
         $CI = CI_Controller::get_instance();
+        //echo "<br/>ontologyExpansion search_value:".$search_value;
         $service_host = $CI->config->item("service_api_host");
         $url = $service_host."/rest/ontology_expansion/".$type."/".$field;
         //echo "\nURL:".$url;
@@ -589,7 +598,7 @@ class Adv_query_util
         $array['Search_value'] = $search_value;
         $json_str = json_encode($array);
         $response = $sutil->curl_get_data($url, $json_str);
-        //echo "\nOntology expansion response:".$response."----";
+        //file_put_contents("C:/CIL_GIT/test.json", $response);
         $json = json_decode($response);
         return $json;
     }

@@ -786,7 +786,8 @@ $( "#Plasmid" ).mouseout(function() {
 });
 $( "#Plasmid" ).click(function() {
     //console.log('action_cytoskeleton click');
-    var win = window.open('/images?k=plasmid&simple_search=Search', '_self');
+    //var win = window.open('/images?k=plasmid&simple_search=Search', '_self');
+    var win = window.open('/images?k=plasmid&image_search_parms%5Bcellular_component%5D=pilus&advanced_search=Advanced+Search', '_self');
     win.focus();
     
 });

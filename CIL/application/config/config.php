@@ -557,7 +557,7 @@ $config['elasticsearchPrefix'] = $config['elasticsearchHost']."/ccdbv8";
 //$config['esOntoSuggest'] = "http://stretch.crbs.ucsd.edu:9200/ontology/_suggest";
 $config['esOntoSuggest'] = $config['elasticsearchHost']."/ontology/_suggest";
 
-$config['max_number_of_query_conditions'] = 1024;
+$config['max_number_of_query_conditions'] = 1000;
 
 /***********Ontology related**********************/
 //$config["ontology_prefix"] = "http://stretch.crbs.ucsd.edu:9200/ontology";

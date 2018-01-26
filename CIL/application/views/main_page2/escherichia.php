@@ -14,7 +14,9 @@
             <li id="nucleoid" class="list-group-item"><a href="/images?image_search_parms[cellular_component]=nucleoid&advanced_search=Advanced+Search" class="anchor_blue">Nucleoid</a></li>
             <li id="lipopolysaccharide" class="list-group-item"><a href="/images?k=lipopolysaccharide&simple_search=Search" class="anchor_blue">Lipopolysaccharide</a></li>
             <li id="Pili" class="list-group-item"><a href="/images?k=pilus&simple_search=Search" class="anchor_blue">Pili</a></li>
-            <li id="Plasmid" class="list-group-item"><a href="/images?k=plasmid&simple_search=Search" class="anchor_blue">Plasmid</a></li> 
+            <!-- <li id="Plasmid" class="list-group-item"><a href="/images?k=plasmid&simple_search=Search" class="anchor_blue">Plasmid</a></li> -->
+            <li id="Plasmid" class="list-group-item"><a class="anchor_blue" href="/images?k=plasmid&image_search_parms%5Bcellular_component%5D=pilus&advanced_search=Advanced+Search">Plasmid</a></li>
+         
          </ul>
         
     </div>
