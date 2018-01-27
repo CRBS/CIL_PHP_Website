@@ -20,19 +20,24 @@
             <!-- <div class="alert alert-warning">Featured Image</div> -->
             <div class="row">
               <div class="col-md-12">
-                  <span style="font-size:12px;"><b>Featured data set:</b></span>
+                    <!-- <span style="font-size:12px;"><b>Featured data set:</b></span> -->
+                  <span class="cil_14_bold_no_color">Featured data set:</span>
               </div>
               <div class="col-md-12">
                 
               </div>
               <div class="col-md-12">
-                <a href="/pages/project_20269" target="_self"><h3>Human U2OS cells - compound cell-painting experiment (375)</h3></a><br/>
+                <!-- <a href="/pages/project_20269" target="_self"><h3>Human U2OS cells - compound cell-painting experiment (375)</h3></a><br/> -->
+                <a href="/pages/project_20269" target="_self"><span class="cil_12_bold_no_color">Human U2OS cells - compound cell-painting experiment (375)</span></a><br/>
               </div>
               <div class="col-md-12">
-                        <b>Project ID:</b> P20269
+                  <br/>
+              </div>
+              <div class="col-md-12">
+                  <span class="cil_12_bold_no_color">Project ID:</span><span class="cil_12_no_color"> P20269 </span>
               </div>
               <div class="col-md-12 top-buffer">
-                <b>Description: </b><span style="font-size:12px;font-weight: normal;">Phenotypic profiling attempts to summarize multiparametric, feature-based analysis of cellular phenotypes of each sample so that similarities between profiles reflect similarities between samples. This image set provides a basis for testing image-based profiling methods wrt. to their ability to distinguish the effects of small molecules.</span>
+                <span class="cil_12_bold_no_color">Description: </span><span class="cil_12_no_color">Phenotypic profiling attempts to summarize multiparametric, feature-based analysis of cellular phenotypes of each sample so that similarities between profiles reflect similarities between samples. This image set provides a basis for testing image-based profiling methods wrt. to their ability to distinguish the effects of small molecules.</span>
               </div>
                 
             </div>
@@ -63,28 +68,28 @@
                 //echo $project->Description;  ?></span>  -->
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="<?php echo "/project/".$project->ID; ?>" target="_self"><h3><?php echo $project->Name." (".$project->size.")";  ?></h3></a>
+                        <a href="<?php echo "/project/".$project->ID; ?>" target="_self"><span class="cil_12_bold_no_color"><?php echo $project->Name." (".$project->size.")";  ?></span></a>
                     </div>
                     <div class="col-md-12">
                         <br/>
                     </div>
                     <div class="col-md-12">
-                        <b>Project ID:</b> <?php echo $project->ID  ?></b>
+                        <span class="cil_12_bold_no_color">Project ID:</span> <span class="cil_12_no_color"><?php echo $project->ID  ?></span>
                     </div>
                     <div class="col-md-12 top-buffer">
                         <span style="font-size:12px;font-weight: normal;"><?php 
                             if(isset($project->Description))
-                                echo "<b>Description:</b> ".$project->Description;  ?></span>
+                                echo "<span class=\"cil_12_bold_no_color\">Description:</span> <span class=\"cil_12_no_color\">".$project->Description."</span>";  ?>
                     </div>
                     <div class="col-md-12 top-buffer">
                         <span style="font-size:12px;font-weight: normal;"><?php 
                             if(isset($project->Funding_agency))
-                                echo "<b>Funding agency:</b> ".$project->Funding_agency;  ?></span>
+                                echo "<span class=\"cil_12_bold_no_color\">Funding agency:</span> <span class=\"cil_12_no_color\">".$project->Funding_agency."</span>";  ?>
                     </div>
                     <div class="col-md-12 top-buffer">
                         <span style="font-size:12px;font-weight: normal;"><?php 
                             if(isset($project->Publication))
-                                echo "<b>Publication:</b> ".$project->Publication;  ?></span>
+                                echo "<span class=\"cil_12_bold_no_color\">Publication:</span> <span class=\"cil_12_no_color\">".$project->Publication."</span>";  ?>
                     </div>
                 </div>
                 
