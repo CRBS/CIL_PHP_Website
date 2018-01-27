@@ -25,8 +25,10 @@
                       if(isset($ncbi->onto_name))
                           echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bncbi%5D=".$ncbi->onto_name;
                       else
-                        echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bncbi%5D=".$ncbi->onto_id;   
-                    
+                      {
+                        echo "/images?k=\"".$ncbi->onto_id."\"&simple_search=Search";
+                        //echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bncbi%5D=".$ncbi->onto_id;   
+                      }
                     
                     ?>' title=''><em><?php 
                         if(isset($ncbi->onto_name))
@@ -69,8 +71,10 @@
                         if(isset($nc->onto_name))
                           echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bncbi%5D=".$nc->onto_name;
                         else
-                            echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bncbi%5D=".$nc->onto_id;   
-                        
+                        {
+                            echo "/images?k=\"".$nc->onto_id."\"&simple_search=Search";
+                           //echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bncbi%5D=".$nc->onto_id;   
+                        }
                         
                     ?>' title=''><em><?php 
                         if(isset($nc->onto_name))
@@ -122,8 +126,10 @@
                 if(isset($celltype->onto_name))
                     echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bcell_type%5D=".$celltype->onto_name;
                 else
-                    echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bcell_type%5D=". $celltype->onto_id;   
-                
+                {
+                    echo "/images?k=\"".$celltype->onto_id."\"&simple_search=Search";
+                    //echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bcell_type%5D=". $celltype->onto_id;   
+                }
                 
                 ?>' title=''><?php 
             
@@ -169,9 +175,11 @@
                         if(isset($ct->onto_name))
                             echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bcell_type%5D=".$ct->onto_name;
                         else
-                            echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bcell_type%5D=". $ct->onto_id;   
-                        //echo $ct->onto_id;   
-                        
+                        {
+                            echo "/images?k=\"".$ct->onto_id."\"&simple_search=Search";
+                            //echo "/images?advanced_search=Advanced+Search&image_search_parms%5Bcell_type%5D=". $ct->onto_id;   
+                            //echo $ct->onto_id;   
+                        }
                         
                         ?>' title=''><?php 
                         
@@ -225,9 +233,11 @@
                 
                 if(isset($cellline->onto_name))
                     echo "/images?image_search_parms[cell_line]=".$cellline->onto_name."&advanced_search=Advanced+Search";   
-                else 
-                    echo "/images?k=".$cellline->onto_name."&simple_search=Search";
-                
+                else
+                {
+                    
+                   echo "/images?k=".$cellline->onto_name."&simple_search=Search";
+                }
                 
                 ?>' title=''><?php 
                 
