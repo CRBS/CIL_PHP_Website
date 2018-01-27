@@ -285,6 +285,24 @@
     line-height: 12px;
 }
 
+.cil_13_bold_no_color
+{
+    font-family: "DroidSansBold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.cil_13_no_color
+{
+    font-family: "DroidSerifRegular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+}
+
 .cil_12_no_color
 {
     font-family: "DroidSerifRegular";
