@@ -232,11 +232,26 @@
             <a class='eol_onto_term_link' href='<?php  
                 
                 if(isset($cellline->onto_name))
-                    echo "/images?image_search_parms[cell_line]=".$cellline->onto_name."&advanced_search=Advanced+Search";   
+                {
+                    /*
+                    $clink = "<a class='eol_onto_term_link' href='";
+                    $clink = $clink . "/images?image_search_parms[cell_line]=".$cellline->onto_name."&advanced_search=Advanced+Search";
+                    $clink = $clink."' title=''>";
+                    $clink = $clink . $cellline->onto_name;
+                    $clink = $clink . "</a>";
+                    echo $clink;
+                     */
+                    echo "/images?image_search_parms[cell_line]=".$cellline->onto_name."&advanced_search=Advanced+Search";
+                }    
                 else
                 {
-                    
-                   echo "/images?k=".$cellline->onto_name."&simple_search=Search";
+                    /*$clink = "<a class='eol_onto_term_link' href='";
+                    $clink = $clink . "/images?k=\"".$cellline->onto_id."\"&simple_search=Search";
+                    $clink = $clink."' title=''>";
+                    $clink = $clink . $cellline->onto_id;
+                    $clink = $clink . "</a>";
+                    echo $clink;*/
+                    echo "/images?k=\"".$cellline->onto_id."\"&simple_search=Search";
                 }
                 
                 ?>' title=''><?php 
@@ -277,16 +292,22 @@
                    
                     <dd class='eol_dd'>
                     <span>
-                    <a class='eol_onto_term_link' href='<?php  echo $cl->onto_id;   ?>' title=''><?php 
-                        
-                        /*if(isset($cl->onto_name))
-                            echo $cl->onto_name;
-                        else
-                            echo $cl->onto_id;*/
+                    <a class='eol_onto_term_link' href='<?php  
+                    
+                        //echo $cl->onto_id;   
                         if(isset($cl->onto_name))
                             echo "/images?image_search_parms[cell_line]=".$cl->onto_name."&advanced_search=Advanced+Search";   
                         else 
-                            echo "/images?k=".$cl->onto_name."&simple_search=Search";
+                            echo "/images?k=\"".$cl->onto_id."\"&simple_search=Search";
+                        
+                        
+                     ?>' title=''><?php 
+                        
+                        if(isset($cl->onto_name))
+                            echo $cl->onto_name;
+                        else
+                            echo $cl->onto_id;
+
                 
                                 
                     ?></a>
@@ -382,7 +403,7 @@
                         if(isset($comp->onto_name))
                             echo "/images?image_search_parms%5Bcellular_component%5D=".$comp->onto_name."&advanced_search=Advanced+Search";
                         else
-                            echo "/images?k=".$comp->onto_id."&simple_search=Search";
+                            echo "/images?k=\"".$comp->onto_id."\"&simple_search=Search";
   
                     
                     ?>' title=''><?php 
@@ -412,7 +433,7 @@
 
     }
 ?>
-<!------------------End Cell type----------------------> 
+<!------------------End Cellular Component----------------------> 
         
 
 </dl>
