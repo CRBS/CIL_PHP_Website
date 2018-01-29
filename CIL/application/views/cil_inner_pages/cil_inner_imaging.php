@@ -212,28 +212,40 @@
             echo "<dt><span class=\"cil_small_title\">Parameters Imaged</span></dt>";
             foreach ($paramimage as $pimage) 
             {
+                if(isset($pimage->onto_id))
+                {
 ?>
                 
-                <dd class='eol_dd'>
-                <span>
-                <a class='eol_onto_term_link' href='<?php  
-                    if(isset($pimage->onto_name))
-                      echo "/images?image_search_parms%5Bparameter_imaged_bim%5D=".$pimage->onto_name."&advanced_search=Advanced+Search";
-                    else
-                      echo "/images?k=\"".$pimage->onto_id."\"&simple_search=Search";
-                    
-                ?>' title=''><?php 
-                
-                   if(isset($pimage->onto_name))
-                    echo $pimage->onto_name;
-                   else
-                     echo $pimage->onto_id;
-                
-                ?></a>
-                </span>
-                </dd>       
+                    <dd class='eol_dd'>
+                    <span>
+                    <a class='eol_onto_term_link' href='<?php  
+                        if(isset($pimage->onto_name))
+                          echo "/images?image_search_parms%5Bparameter_imaged_bim%5D=".$pimage->onto_name."&advanced_search=Advanced+Search";
+                        else
+                          echo "/images?k=\"".$pimage->onto_id."\"&simple_search=Search";
+
+                    ?>' title=''><?php 
+
+                       if(isset($pimage->onto_name))
+                        echo $pimage->onto_name;
+                       else
+                         echo $pimage->onto_id;
+
+                    ?></a>
+                    </span>
+                    </dd>       
         
 <?php
+                }
+                else if(isset($pimage->free_text))
+                {
+                    echo "\n<dd class='eol_dd'>";
+                    echo "\n<span>";
+                    echo "\n".$pimage->free_text;
+                    echo "\n</span>";
+                    echo "\n</dd>";
+                    
+                }
                 
             }
         }
