@@ -11,7 +11,7 @@
             <center>
             <div class="thumbnail-kenburn">
             <a href="/pages/project_20269" target="_self">
-                <img src="http://www.cellimagelibrary.org/Cy5.png" width="100px" height="100px">
+                <img src="/pix/Cy5.png" width="100px" height="100px">
             </a>
             </div>
             </center>

@@ -3,7 +3,7 @@
         "Description": "NCMIR test data for Mouse BIRN",
         "Funding_agency": "NIH",
         "size": 2,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/1_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/1_512v.jpg",
         "ID": "P0000",
         "Name": "Mouse BIRN test data"
     },
@@ -11,7 +11,7 @@
         "Description": "Neurolucida tracing of filled Purkinje neurons",
         "Funding_agency": "NIH",
         "size": 1,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/2_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/2_512v.jpg",
         "ID": "P0001",
         "Name": "Compartmental models of Purkinje neurons"
     },
@@ -19,7 +19,7 @@
         "Description": "Investigation of morphological alterations of post-synaptic densities following an episode of transient ischemia",
         "Funding_agency": "NIH",
         "size": 1,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/21_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/21_512v.jpg",
         "Publication": "Martone M. E.; Jones Y. Z.; Young S. J. Ellisman; M. H. Zivin; J. A. and Hu B. R. Modification of postsynaptic densities following transient cerebral ischemia:a quantitative and three dimensional ultrastructural study. J. Neurosci.19:1988-1997.1999",
         "ID": "P1110",
         "Name": "Synaptic alterations in transient ischemia"
@@ -28,7 +28,7 @@
         "Description": "Investigation of astrocyte morphology and the establishment of unique astrocytic domains",
         "Funding_agency": "NIH",
         "size": 1,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/28_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/28_512v.jpg",
         "Publication": "Eric A. Bushong; Maryann E. Martone; Ying Z. Jones; and Mark H. Ellisman. Protoplasmic Astrocytes in CA1 Stratum Radiatum Occupy Separate Anatomical Domains. J. Neurosci. 2002 22: 183-192.",
         "ID": "P1114",
         "Name": "Astrocyte Domains"
@@ -37,7 +37,7 @@
         "Description": "Measurements of spine parameters using light microscopy and electron tomography",
         "Funding_agency": "NIH",
         "size": 6,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/12_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/12_512v.jpg",
         "ID": "P1119",
         "Name": "Correlated Microscopy of Dendritic Spines"
     },
@@ -45,7 +45,7 @@
         "Description": "Confocal images",
         "Funding_agency": "NIH",
         "size": 3,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/1132_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/1132_512v.jpg",
         "ID": "P1123",
         "Name": "CCDB rat test data"
     },
@@ -53,7 +53,7 @@
         "Description": "Actin localization in spines of CNS using eosin phalloidin photooxidation",
         "Funding_agency": "NIH",
         "size": 1,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/22_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/22_512v.jpg",
         "Publication": "Capani F; Martone ME; Deerinck TJ; Ellisman MH.Selective localization of high concentrations of F-actin in subpopulations of dendritic spines in rat central nervous system:a three-dimensional electron microscopic study.J Comp Neurol.2001 435(2):156-70.",
         "ID": "P1134",
         "Name": "Actin in dendritic spines"
@@ -62,7 +62,7 @@
         "Description": "Serial tomogram of a conventionally prepared peripheral nerve Node of Ranvier",
         "Funding_agency": "NIH NINDS",
         "size": 3,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/48_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/48_512v.jpg",
         "Publication": "Gina E.Sosinsky;Thomas J.Deerinck;Rocco Greco;Casey H. Buitenhuys;Thomas M.Bartol and Mark H. Ellisman.Development of a model for microphysiological simulations: small nodes of ranvier from peripheral nerves of mice reconstructed by electron tomography. Neuroinformatics. 2005;3(2):133-62.  PMID: 15988042",
         "ID": "P1136",
         "Name": "Dynamics of membrane organization at the node of Ranvier"
@@ -71,7 +71,7 @@
         "Description": "Neurolucida tracing of filled Purkinje neurons",
         "Funding_agency": "NIH",
         "size": 7,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/16_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/16_512v.jpg",
         "ID": "P1170",
         "Name": "Mouse BIRN test data"
     },
@@ -79,7 +79,7 @@
         "Description": "tests for most probable loss tomography on the 3200",
         "Funding_agency": "NIH IVEM",
         "size": 1,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/51_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/51_512v.jpg",
         "Publication": "Bouwer JC, Mackey MR, Lawrence A, Deerinck TJ, Jones YZ, Terada M, Martone ME, Peltier S, Ellisman MH.  Automated most-probable loss tomography of thick selectively stained biological specimens with quantitative measurement of resolution improvement. J Struct Biol. 2004 Dec;148(3):297-306.",
         "ID": "P1172",
         "Name": "MPL pilot data"
@@ -88,7 +88,7 @@
         "Description": "Confocal images",
         "Funding_agency": "NIH",
         "size": 3,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/18_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/18_512v.jpg",
         "ID": "P1173",
         "Name": "CCDB rat test data pt. 2"
     },
@@ -96,7 +96,7 @@
         "Description": "characterization of a mouse model of  human alpha synuclein overexpressor",
         "Funding_agency": "The Branfman Family Foundation",
         "size": 8,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/29_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/29_512v.jpg",
         "Publication": "Price DL;Martone ME; Masliah MH; Ellisman MH (2003) High-resolution Large-Scale 3-D Mapping Studies of Alpha-Synuclein Immunoreactivity in Transgenic Mice Overexpressing Human Alpha-Synuclein.  Society for Neuroscience Abstract.",
         "ID": "P1187",
         "Name": "Correlated Imaging Approaches and Multiscale Databases for Research in Parkinson's Disease"
@@ -105,14 +105,14 @@
         "Description": "Creation of high resolution large scale brain maps of protein expression",
         "Funding_agency": "NIH",
         "size": 2,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/23_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/23_512v.jpg",
         "ID": "P1188",
         "Name": "Brain Maps"
     },
     {
         "Description": "Novel specimen preparation techniques were combined with electron tomography to provide new views of synaptic structure in the cortex of the adult rat",
         "size": 4,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/8483_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/8483_512v.jpg",
         "Publication": "Burette, A. C., Lesperance, T., Crum, J., Martone, M. E., Volkmann, N., Ellisman, M. and Weinberg, R. Electron tomographic analysis of synaptic ultrastructure, Journal of Comparative Neurology, in press.",
         "ID": "P1194",
         "Name": "Electron tomographic analysis of synaptic structure in the adult rat cortex"
@@ -121,14 +121,14 @@
         "Description": "Multiscale characterization of DAT KO transgenic mouse",
         "Funding_agency": "NIH",
         "size": 20,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/31_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/31_512v.jpg",
         "ID": "P1207",
         "Name": "Correlative microscopic characterization of dendritic spines in a transgenic mouse model of hyperdopaminergia: The dopamine transporter knockout mouse"
     },
     {
         "Description": "In situ structures of mitochondria in rods and cones",
         "size": 4,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/54_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/54_512v.jpg",
         "Publication": "Perkins, G.A., Ellisman, M.H. and Fox, D.A. Three-dimensional analysis of mouse rod and cone mitochondrial cristae architecture: bioenergetic and functional implications. Mol Vis. 2003 Mar 11;9:60-73.",
         "ID": "P1209",
         "Name": "Cone and Rod mitochondria"
@@ -137,7 +137,7 @@
         "Description": "Tomography of Caulobacter crescentus",
         "Funding_agency": "Department of Energy",
         "size": 11,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3548_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/3548_512v.jpg",
         "ID": "P1220",
         "Name": "Caulobacter"
     },
@@ -145,7 +145,7 @@
         "Description": "Reconstruction of mitochondrial associated adherens complex in the Calyx of Held synapse using electron tomography.  The adherens complex is an elaborate cytoskeletal superstructure connecting a subset of mitochondria to the presynaptic membrane near active zones.  Note:  several additional reconstructions from this project are available from Dr. George Spirou upon request.",
         "Funding_agency": "National Institutes of Health",
         "size": 2,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3487_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/3487_512v.jpg",
         "Publication": "Perkins GA, Tjong J, Brown JM, Poquiz PH, Scott RT, Kolson DR, Ellisman MH, Spirou GA. The micro-architecture of mitochondria at active zones: electron tomography reveals novel anchoring scaffolds and cristae structured for high-rate metabolism.  J Neurosci. 2010 Jan 20;30(3):1015-26.  PMID: 20089910",
         "ID": "P1223",
         "Name": "Electron tomography of mitochondrial adherens complex in the Calyx of Held"
@@ -154,7 +154,7 @@
         "Description": "Examination of isolated mitochondria from Drosophila following infection with flock house virus (FHV-1).",
         "Funding_agency": "National Institutes of Health",
         "size": 1,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/6659_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/6659_512v.jpg",
         "Publication": "Kopek BG, Perkins G, Miller DJ, Ellisman MH, Ahlquist P. Three-dimensional analysis of a viral RNA replication complex reveals a virus-induced mini-organelle.  PLoS Biol. 2007 Sep;5(9):e220. PMID: 17696647",
         "ID": "P1226",
         "Name": "3D analysis of mitochondria infected with flock house virus"
@@ -163,7 +163,7 @@
         "Description": "Postnatal development of protoplasmic astrocytes",
         "Funding_agency": "NIH",
         "size": 120,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/10_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/10_512v.jpg",
         "Publication": "Bushong EA, Martone ME, Ellisman MH. Maturation of astrocyte morphology and the establishment of astrocyte domains during postnatal hippocampal development. Int J Dev Neurosci. 2004 Apr;22(2):73-86.",
         "ID": "P1230",
         "Name": "Astrocyte Development"
@@ -172,7 +172,7 @@
         "Description": "Relationship between astrocyte distribution & morpholgy and laminar boundaries in the dentate gyrus",
         "Funding_agency": "National Institutes of Health",
         "size": 93,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3572_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/3572_512v.jpg",
         "Publication": "Bushong EA, Martone ME, Ellisman MH. Examination of the relationship between astrocyte morphology and laminar boundaries in the molecular layer of adult dentate gyrus.  J Comp Neurol. 2003 Jul 21;462(2):241-51.   PMID: 12794746",
         "ID": "P1231",
         "Name": "Laminar Boundaries"
@@ -180,7 +180,7 @@
     {
         "Description": "3D investigation of T tubule structure using confocal and electron tomography from the MLP knock out mouse and human heart tissue",
         "size": 2,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3603_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/3603_512v.jpg",
         "Publication": "Hayashi, T., Martone, M. E., Yu, Z., Thor, A., Doi, M., Holst, M., Ellisman, M. H. and Hoshijima, M., Three-dimensional electron microscopy reveals new details of membrane systems for calcium signaling in the heart.  J. Cell Science, 2009 Apr 1;122(Pt 7):1005-13. PMID: 19295127",
         "ID": "P1233",
         "Name": "Structural investigation of T-tubule structure in heart failure"
@@ -189,7 +189,7 @@
         "Description": "This project is designed to achieve ultimate ultrastructure of animal tissues.",
         "Funding_agency": "NIH",
         "size": 6,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3649_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/3649_512v.jpg",
         "Publication": "Sosinsky GE, Crum J, Jones YZ, Lanman J, Smarr B, Terada M, Martone ME, Deerinck TJ, Johnson JE, Ellisman MH.  The combination of chemical fixation procedures with high pressure freezing and freeze substitution preserves highly labile tissue ultrastructure for electron tomography applications.  J Struct Biol. 2007 Sep 14; PMID:  17962040",
         "ID": "P1243",
         "Name": "High Pressure Freezing and Freeze Substitution"
@@ -198,7 +198,7 @@
         "Description": "The three-dimensional morphological rearrangements for two conditions that mimic light conditions for the Antarctic summer and winter were studied in Phaeocystis antarctica Karsten",
         "Funding_agency": "National Aeronautics and Space Administration",
         "size": 13,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3406_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/3406_512v.jpg",
         "Publication": "Moisan, T., Ellisman, M. H., Buitenhuys, C.W., Sosinsky, G. E., (2006)  Differences in Chloroplast Ultrastructure of Phaeocystis antarctica in High and Low Light Conditions, Marine BIology, 149 (6) 1281-1290",
         "ID": "P1576",
         "Name": "Chloroplast Ultrastructure of Phaeocystis antarctica in High and Low Light Conditions"
@@ -207,7 +207,7 @@
         "Description": "Detailed structural investigation of the structure and distribution of synaptic densities on the spine mats from adult and embryonic ciliary ganglion neurons.  Reconstructions were derived from serial electron tomography of in vivo neurons.",
         "Funding_agency": "NIH",
         "size": 1,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3629_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/3629_512v.jpg",
         "Publication": "Shoop RD, Esquenazi E, Yamada N, Ellisman MH, Berg DK. Ultrastructure of a somatic spine mat for nicotinic signaling in neurons. J Neurosci. 2002 Feb 1;22(3):748-56. PMID: 11826104",
         "ID": "P1692",
         "Name": "Reconstruction of ciliary ganglion spine mats in adult and embryonic chick"
@@ -216,7 +216,7 @@
         "Description": "Tomogram of the immunological synapse between a human cytotoxic T lymphocyte (CTL) and a target cell",
         "Funding_agency": "Wellcome Trust",
         "size": 1,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3632_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/3632_512v.jpg",
         "Publication": "Jane C. Stinchcombe, Endre Majorovits, Giovanna Bossi, Stephen Fuller, Gillian M. Griffiths. Centrosome polarization delivers secretory granules to the immunological synapse. Nature 443 (2006) 462-465",
         "ID": "P1694",
         "Name": "Electron Tomography of the CTL Immunological Synapse"
@@ -225,7 +225,7 @@
         "Description": "Reconstruction of cortical neurons from biopsy material obtained from Alzheimers disease patients",
         "Funding_agency": "National Institutes of Health",
         "size": 10,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3716_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/3716_512v.jpg",
         "Publication": "Ellisman MH, R, Ranganathan, Deerinck TJ, Young SJ, Terry R, and Mirra S: Neuronal fibrillar cytoskeleton and endomembrane system organization in Alzheimers disease, In Alteration of the Neuronal Cytoskeleton in Aging and Dementia, GP Perry (Ed,).pp, 61-73, Plenum Publ, Corp, New York, 1988.",
         "ID": "P1700",
         "Name": "Alzheimer neuron reconstructions"
@@ -234,7 +234,7 @@
         "Description": "Electron tomography was used to examine cytoskeletal-cytoskeletal, membrane-cytoskeletal, and heterologous cell connections in the paranodal region of the node of Ranvier in peripheral nerves.",
         "Funding_agency": "National Institutes of Health",
         "size": 1,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3696_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/3696_512v.jpg",
         "Publication": "Perkins GA, Sosinsky GE, Ghassemzadeh S, Perez A, Jones Y, Ellisman MH. (2008) Electron tomographic analysis of cytoskeletal cross-bridges in the paranodal region of the node of Ranvier in peripheral nerves. J Struct Biol. 2008 Mar;161(3):469-80. Epub 2007 Oct 22  PMID: 18096402",
         "ID": "P1704",
         "Name": "Analysis of the Cross Bridges in the Paranodal Region of the Node of Ranvier"
@@ -242,7 +242,7 @@
     {
         "Description": "Proapoptotic BH3-only proteins induce Bax/Bak-dependent mitochondrial cristae remodeling independent of cytochrome c release and Bak oligomerization",
         "size": 4,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3864_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/3864_512v.jpg",
         "Publication": "Yamaguchi, R.; Lartigue, L.; Perkins, G.; Scott, R. T.; Dixit, A.; Kushnareva, Y.; Kuwana, T.; Ellisman, M. H.; Newmeyer, D. D. Opa1-mediated cristae opening is Bax/Bak and BH3 dependent, required for apoptosis, and independent of Bak oligomerization. Molecular cell 2008, 31, 557-569. (<a href=\"http://openccdb.org/wiki/index.php/Project_1714_changes#Publication\" target=\"_blank\">modified<\/a>)",
         "ID": "P1714",
         "Name": "Remodeling of Crista During Cytochrome C Release"
@@ -251,7 +251,7 @@
         "Description": "Tomography of the virological synapse formed between an HTLV-1 infected cells and target cells.",
         "Funding_agency": "Wellcome Trust",
         "size": 5,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/3946_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/3946_512v.jpg",
         "Publication": "E. Majorovits, M. Nejmeddine, Y. Tanaka, G.P. Taylor, S.D. Fuller, C.R.M. Bangham: Human T-Lymphotropic Virus-1 visualized at the virological synapse by electron tomography.  PLoS ONE 3: e2251, doi:10.1371/journal.pone.0002251, 2008 PMID 18509526",
         "ID": "P1720",
         "Name": "Electron tomography of the HTLV-1 virological synapse"
@@ -260,7 +260,7 @@
         "Description": "To characterize glial morphology and molecular markers in a mouse model of glioblastoma",
         "Funding_agency": "NIH",
         "size": 6,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/7857_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/7857_512v.jpg",
         "Publication": "Friedmann-Morvinski D, Bushong EA, Ke E, Soda Y, Marumoto T, Singer O, Ellisman MH, Verma IM, Dedifferentiation of neurons and astrocytes by oncogenes can induce gliomas in mice.  Science. 2012 Nov 23;338(6110):1080-4. doi: 10.1126/science.1226929. [PMID:23087000]",
         "ID": "P1721",
         "Name": "Glial markers in mouse model of glioblastoma"
@@ -269,7 +269,7 @@
         "Description": "Characterization of staining for mGluR5 glutamate receptor in animal model of Parkinsonian disorders",
         "Funding_agency": "Branfman Family Foundation",
         "size": 33,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/4043_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/4043_512v.jpg",
         "ID": "P1723",
         "Name": "Localization of Metabotropic Glutamate Receptors in Alpha Synuclein Overexpressing Mouse"
     },
@@ -277,7 +277,7 @@
         "Description": "Electron tomography of African Green Monkey epithelial cells infected with SARS-coronavirus",
         "Funding_agency": "Leiden University Medical Center (LUMC, the Netherlands), Council for Chemical Sciences of the Netherlands Organization for Scientific Research (NOW-CW grants 700.52.306 and 700.55.002), European Commission under context of Euro-Asian SARS-DTV Network (SP22-CT-2004-511064)",
         "size": 4,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/6020_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/6020_512v.jpg",
         "Publication": "Knoops K, Kikkert M, Worm SH, Zevenhoven-Dobbe JC, van der Meer Y, Koster AJ, Mommaas AM, Snijder EJ. SARS-coronavirus replication is supported by a reticulovesicular network of modified endoplasmic reticulum. PLoS Biol. 2008 6(9):e226.  PMID: 18798692",
         "ID": "P2005",
         "Name": "Membrane Modifications Induced by Corona Virus"
@@ -285,7 +285,7 @@
     {
         "Description": "Investigation of pannexins expression and distribution in the adult mouse brain.",
         "size": 1,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/48720_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/48720_512v.jpg",
         "Publication": "Daniela Boassa, Phuong Nguyen, Junru Hu, Mark H. Ellisman and Gina E. Sosinsky. Pannexin2 oligomers localize in the membranes of endosomal vesicles in mammalian cells while Pannexin1 channels traffic to the plasma membrane. Frontiers in Cellular Neuroscience. fncel.2014.00468",
         "ID": "P2010",
         "Name": "Pannexin Distribution in the Adult Mouse Brain"
@@ -294,7 +294,7 @@
         "Description": "Mutant connexins have been linked to hereditary congenital cataracts. One such mutant causes a proline-to-serine substitution at position 88 in human connexin 50 (CX50P88S). In transfected cells, CX50P88S does not form gap junctions, but localizes in cytoplasmic multilamellar structures. We studied\nthe dynamics of formation and the stability of these structures in HeLa cells stably transfected with\nCX50P88S containing a tetracysteine motif appended to its C-terminus (HeLa-CX50P88S(Cys)4 cells) using a combination of light and electron microscopy.",
         "Funding_agency": "National Eye Institute, National Institutes of Health",
         "size": 2,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/6347_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/6347_512v.jpg",
         "Publication": "Lichtenstein A, Gaietta GM, Deerinck TJ, Crum J, Sosinsky GE, Beyer EC, Berthoud VM.  The cytoplasmic accumulations of the cataract-associated mutant, Connexin50P88S, are long-lived and form in the endoplasmic reticulum  Exp Eye Res. 2009 Mar;88(3):600-9.  PMID: 19073179 (<a href=\"http://openccdb.org/wiki/index.php/Project_2020_changes#Publication\" target=\"_blank\">modified<\/a>)",
         "ID": "P2020",
         "Name": "Trafficking of cataract-associated mutant connexins"
@@ -303,28 +303,28 @@
         "Description": "The Whole Brain Catalog&trade; is a ground-breaking, open-source, 3-D virtual environment developed by a team of researchers from UC San Diego under the Whole Brain Project&trade;. The Catalog aims to connect members of the international neuroscience community to facilitate solutions for today's intractable challenges in brain research through cooperation and crowd sourcing.  CCDB provides the backend services for very large scale image data sets on mouse brain derived from high resolution light and electron microscopy",
         "Funding_agency": "Ted Waitt Family Foundation",
         "size": 33,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/6541_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/6541_512v.jpg",
         "ID": "P2023",
         "Name": "Whole Brain Catalog Project"
     },
     {
         "Description": "A neuroinformatics approach to pannexin expression, localization, and interaction with other brain proteins.  This research aims to examine brain tissue at high resolution and, in combination with developing neuronformatics tools, to probe for binding partners and signalling partners to investigate the pannexin \"interactome\".  Data submissions for this project will consist of wide-scale high resolution confocal mosaic images of triple-labeled whole mouse brain sections.  Pannexin 1 expression will be compared to that of pannexin 2 as well as the connexins.  Other putative interaction partners of interest include the P2 purinergic receptors and components of the cytoskeleton.",
         "size": 2,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/6624_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/6624_512v.jpg",
         "ID": "P2029",
         "Name": "Pannexin protein expression in mouse brain tissue"
     },
     {
         "Description": "To develop automated algorithms for analysis of neurite outgrowth in high content screens of cultured neurons.  This data set consists of wide field epifluorescent images of cultured neurons with both cytoplasmic (phalloidin) and nuclear stains (DAPI) and a set of manual segmentations of neuronal and nuclear boundaries that can be used as benchmarking data sets for the development of segmentation algorithms.",
         "size": 1,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/6843_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/6843_512v.jpg",
         "Publication": "Weimiao Yu, Hwee Kuan LEE, Srivats HARIHARAN, Wen Yu BU and Sohail AHMED. Evolving\nGeneralized Voronoi Diagrams of Active Contours for Accurate Cellular Image Segmentation.\nCytometry Part A 77A pg. 379~386, 2010.",
         "ID": "P2043",
         "Name": "Autosegmentation of cultured neurons"
     },
     {
         "size": 1,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/7742_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/7742_512v.jpg",
         "ID": "P2044",
         "Name": "Study of the fine structure of the visual system"
     },
@@ -332,7 +332,7 @@
         "Description": "Use of large scale imaging of the optic nerve and chiasm to characterize development of optic gliomas from neurofibromatosis-1 (Nf1) genetically-engineered mice",
         "Funding_agency": "NCI and NCRR",
         "size": 4,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/7732_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/7732_512v.jpg",
         "Publication": "Optic nerve dysfunction in a mouse model of neurofibromatosis-1 optic glioma.\nHegedus B, Hughes FW, Garbow JR, Gianino S, Banerjee D, Kim KY, Ellisman MH, Brantley MA Jr, Gutmann DH.\nJ Neuropathol Exp Neurol. 2009 May;68(5):542-51.",
         "ID": "P2054",
         "Name": "Characterization of optic gliomas from neurofibromatosis-1 (Nf1) genetically-engineered mice"
@@ -341,7 +341,7 @@
         "Description": "Regulation of cytoplasmic calcium is crucial both for proper neuronal function and cell survival. The concentration of Ca2+ in cytoplasm of a neuron at rest is >10,000 times lower than in the extracellular space, pointing to the importance of the transporters that extrude intracellular Ca2+. The family of plasma membrane calcium-dependent ATPases (PMCAs) represent a major component of the Ca2+ regulatory system. However, little information is available on the regional and cellular distribution of these calcium pumps. We used immunohistochemistry to investigate the distribution of each of the four PMCA isoforms in the rat brain.",
         "Funding_agency": "National Institutes of Health (NS51769 EES)",
         "size": 3,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/7266_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/7266_512v.jpg",
         "Publication": "Kenyon, K. A., Filoteo, A. D., Bushong, E. A., Martone, M. E., Stehler, E. E., Weinberg, R. J. and Burette, A. C. Cellular and subcellular localization of PMCA1a in the rat brain.  J. Comp. Neurol. in press",
         "ID": "P2061",
         "Name": "Localization of plasma membrane Ca2+ ATPases (PMCAs) in the rat brain"
@@ -350,7 +350,7 @@
         "Description": "During the cell cycle, gap junction communication, morphology and distribution of connexin43 (Cx43)-containing structures change dramatically. As cells round up in mitosis, the majority of Cx43 labeling is intracellular and intercellular coupling is reduced. We are interested in investigating Cx43 distributions during mitosis in exogenous expressing cells using in vivo time-lapse imaging.",
         "Funding_agency": "NIH GM072881  and GM065937 awarded to Gina Sosinky, NIH GM55632 awarded to Paul Lampe",
         "size": 2,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/7769_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/7769_512v.jpg",
         "Publication": "Boassa D, Solan JL, Papas A, Thornton P, Lampe PD, Sosinsky G.  Trafficking and Recycling of the Connexin43 Gap Junction Protein during Mitosis. Traffic. 2010 Aug 12. in press [Epub ahead of print] PMID 20716111",
         "ID": "P2076",
         "Name": "The fate of Connexin43 gap junction protein during mitosis"
@@ -359,7 +359,7 @@
         "Description": "3D reconstruction using serial section scanning electron microscopy of the optic nerve head in mouse.",
         "Funding_agency": "International Retina Research Foundation, and the Lasker Foundation",
         "size": 2,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/8093_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/8093_512v.jpg",
         "Publication": "Nguyen JV, Soto I, Kim KY, Bushong EA, Oglesby E, Valiente-Soriano FJ, Yang Z, Davis CH, Bedont JL, Son JL, Wei JO, Buchman VL, Zack DJ, Vidal-Sanz M, Ellisman MH, Marsh-Armstrong N. Myelination transition zone astrocytes are constitutively phagocytic and have synuclein dependent reactivity in glaucoma. Proc Natl Acad Sci U S A. 2011 Jan 3. [Epub ahead of print] PubMedID:21199938",
         "ID": "P2078",
         "Name": "Morphology of Optic Nerve Head"
@@ -367,7 +367,7 @@
     {
         "Description": "Various volumes generated on the 3View during testing or as preliminary data for other projects",
         "size": 2,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/8192_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/8192_512v.jpg",
         "ID": "P2080",
         "Name": "3View volumes"
     },
@@ -375,7 +375,7 @@
         "Description": "Study of morphology of quantitative morphology of mitochondria in the peripheral nerve of the adult rat using 3D electron microscopy",
         "Funding_agency": "National Institute of Neurological Disorders and Stroke, National Center for Research Resources, National Institute of Diabetes and Kidney Diseases, National Library of Medicine",
         "size": 4,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/8139_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/8139_512v.jpg",
         "Publication": "Perkins, G.A., Ellisman, M.H. Mitochondrial configurations in peripheral nerve suggest differential ATP production. J.\nStruct. Biol. (2010), doi:10.1016/j.jsb.2010.06.017\nhttp://www.ncbi.nlm.nih.gov/pubmed/20600951",
         "ID": "P2083",
         "Name": "Morphology of mitochondria in peripheral nerves"
@@ -384,7 +384,7 @@
         "Description": "Large scale serial section electron microscopic reconstruction was used to reconstruct a portion of visual cortex in mouse that had been functionally characterized for preferred stimulus orientation using two photon calcium imaging.  Reconstructions showed that that inhibitory interneurons receive convergent anatomical input from nearby excitatory neurons with a broad range of\npreferred orientations",
         "Funding_agency": "National Eye Institute",
         "size": 1,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/8448_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/8448_512v.jpg",
         "Publication": "Bock DD, Lee WC, Kerlin AM, Andermann ML, Hood G, Wetzel AW, Yurgenson S, Soucy ER, Kim HS, Reid RC.  <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/21390124\" target=\"_blank\">Network anatomy and in vivo physiology of visual cortical neurons<\/a>.  Nature. 2011 Mar 10;471(7337):177-82.  PMID:  21390124",
         "ID": "P2097",
         "Name": "Large scale serial electron microscopic reconstruction of functionally characterized networks in mouse visual cortex"
@@ -392,7 +392,7 @@
     {
         "Description": "High-resolution diffusion tensor MRI experiments of control and hypertenstive rats to determine fiber and sheet orientations on 17T scanner at Gainesville, Florida.",
         "size": 1,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/9449_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/9449_512v.jpg",
         "ID": "P2128",
         "Name": "UCSD Virtual Rat Project"
     },
@@ -400,7 +400,7 @@
         "Description": "Determine the role of the endothelial glycocalyx in the glomerular filtration barrier.",
         "Funding_agency": "Dutch Kidney Foundation",
         "size": 4,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/9523_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/9523_512v.jpg",
         "Publication": "Martijn J.C. Dane, Bernard M. van den Berg, M. Cristina Avramut, Frank G.A. Faas, Johan van der Vlag, Angelique L.W.M.M. Rops, Raimond B.G. Ravelli, A.J. Koster, Anton Jan van Zonneveld, Hans Vink, Ton J. Rabelink. Glomerular endothelial surface layer acts as a barrier against albumin filtration.  Am J Pathol, in press",
         "ID": "P2133",
         "Name": "Role of the endothelial glycocalyx in renal glomerular and tubular function"
@@ -409,7 +409,7 @@
         "Description": "A neuroinformatics approach to pannexin expression, localization, and interaction with other brain proteins. This research aims to examine brain tissue at high resolution and, in combination with developing neuronformatics tools, to probe for binding partners and signalling partners to investigate the pannexin interactome . Data submissions for this project will consist of wide-scale high resolution confocal mosaic images of triple-labeled whole mouse brain sections. Pannexin 1 expression will be compared to that of pannexin 2 as well as the connexins. Other putative interaction partners of interest include the P2 purinergic receptors and components of the cytoskeleton.",
         "Funding_agency": "NIH F32GM092457",
         "size": 18,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/44959_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/44959_512v.jpg",
         "Publication": "Multi-Channel Transfer Function with Dimensionality Reduction. Proc SPIE. 2010 Jan 18;7530:75300A. Kim HS, Schulze JP, Cone AC, Sosinsky GE, Martone ME. Department of Computer Science and Engineering, University of California San Diego, 9500 Gilman Drive, La Jolla, CA, USA. PMID: 20582228",
         "ID": "P20002",
         "Name": "Pannexin expression in the rodent brain"
@@ -418,7 +418,7 @@
         "Description": "Dominant missense mutations in leucine-rich repeat kinase 2 (LRRK2) are the most common genetic cause of Parkinson disease (PD) and genome wide association studies identify LRRK2 sequence variants as risk factors for sporadic PD. Intact kinase function appears critical for the toxicity of LRRK2 PD mutants, yet our understanding of how LRRK2 causes neurodegeneration is limited. We will examine how LRRK2 mutations affect the ultrastructure of cells using electron tomography.",
         "Funding_agency": "NIH, Branfman Family Foundation, and Parkinson Disease Foundation.",
         "size": 2,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/86704_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/86704_512v.jpg",
         "Publication": "Kett LR, Boassa D, Ho CC, Rideout HJ, Hu J, Terada M, Ellisman M, Dauer WT. LRRK2 Parkinson disease mutations enhance its microtubule association. Hum Mol Genet. 2012 Feb 15;21(4):890-9. Epub 2011 Nov 11.   PMID:22080837",
         "ID": "P20090",
         "Name": "Multiple Parkinson disease mutations cause LRRK2 to interact closely with microtubules."
@@ -426,7 +426,7 @@
     {
         "Description": "The goal of this project is to better understand the role of alpha-synuclein in the progression of PD by applying labeling systems developed at NCMIR to track, at multiple resolution scales, the distribution and trafficking of these proteins associated with Parkinson's disease.",
         "size": 7,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/61937_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/61937_512v.jpg",
         "Publication": "Boassa D, Berlanga ML, Yang MA, Terada M, Hu J, Bushong EA, Hwang M, Masliah E, George JM, Ellisman MH. Mapping the subcellular distribution of alpha-synuclein in neurons using genetically encoded probes for correlated light and electron microscopy: Implications for Parkinson's disease pathogenesis.  J Neurosci. 2013 Feb 6;33(6):2605-15. doi:10.1523/JNEUROSCI.2898-12.2013. PMID:23392688",
         "ID": "P20094",
         "Name": "Molecular and cellular investigations of alpha-synuclein in Parkinson pathogenesis"
@@ -435,7 +435,7 @@
         "Description": "Tomograms of specifically labeled connexin 43 (Cx43) gap junctions expressed in HEK293T. Cx43 was genetically tagged with GPF and APEX, an engineered plant peroxidase that reacts with hydrogen peroxide and diaminobenzidine to create a protein specific stain. Sections are cut perpendicular to the membrane plane (cross-section view).",
         "Funding_agency": "NIH",
         "size": 1,
-        "Image_url": "http://www.cellimagelibrary.org/ccdbimages/83884_512v.jpg",
+        "Image_url": "https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdbimages/83884_512v.jpg",
         "ID": "P20196",
         "Name": "Connexin43 APX"
     }
