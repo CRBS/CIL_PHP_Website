@@ -23,10 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-//$config['base_url'] = 'http://localhost'; //Development
-//$config['base_url'] = "http://132.239.16.10"; //Development
-$config['base_url'] = 'http://flagella.crbs.ucsd.edu'; //Staging
-//$config['base_url'] = 'http://fibril.crbs.ucsd.edu'; //Production
+$config['base_url'] = 'http://localhost'; //Development
+//$config['base_url'] = 'http://flagella.crbs.ucsd.edu'; //Staging
+//$config['base_url'] = 'http://cellimagelibrary.org'; //Production
 
 /*
 |--------------------------------------------------------------------------

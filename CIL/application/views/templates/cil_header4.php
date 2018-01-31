@@ -131,15 +131,23 @@
         <!-----------Willy's customized js------------------------------>
         <script src="/js/search_results.js?<?php echo uniqid();   ?>" type="text/javascript"></script>
         <script src="/js/cil_autocomplete.js?<?php echo uniqid();   ?>" type="text/javascript"></script>
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+        <link rel="stylesheet" href="/css/jquery/jquery-1.12.1/themes/base/jquery-ui.css"> 
+        
+        <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+        <script src="/js/jquery/jquery-1.12.4/jquery-1.12.4.js"></script>
+        
+        <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+        <script src="/js/jquery/jquery-1.12.1/jquery-ui.js"></script>
         
         <script src="/js/cil_js_util.js"></script>
         <script src="/js/cil_interactive_cell.js<?php echo "?".uniqid(); ?>"></script>
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.3/themes/default/style.min.css" />
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.3/jstree.min.js"></script>
+        
+        <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.3/themes/default/style.min.css" /> -->
+        <link rel="stylesheet" href="/css/ajax/libs/jstree/3.3.3/themes/default/style.min.css" />
+        
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.3/jstree.min.js"></script> -->
+        <script src="/js/ajax/libs/jstree/3.3.3/jstree.min.js"></script> 
         <!-----------End Willy's customized js------------------------------>
         
         
