@@ -58,13 +58,13 @@
             </div>
             
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-12">
                 <div class="pull-right">
                     <a href="https://itunes.apple.com/us/app/cell-library/id917504395?mt=8" target="_blank"><img alt="Applebadge" src="/pic/AppleBadge.png?1413241214"></a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 
