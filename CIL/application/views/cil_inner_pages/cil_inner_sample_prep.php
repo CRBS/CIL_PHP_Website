@@ -63,7 +63,7 @@
                 <span>
                 <a class='eol_onto_term_link' href='<?php  
                        
-                    if(isset($method->onto_name ))
+                    if(isset($mh->onto_name ))
                         echo "/images?image_search_parms%5Bvisualization_methods_bim%5D=".$mh->onto_name."&advanced_search=Advanced+Search";
                     else
                         echo "/images?k=".$mh->onto_id."&simple_search=Search"; 
