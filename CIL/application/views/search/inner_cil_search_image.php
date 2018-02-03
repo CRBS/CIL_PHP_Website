@@ -212,13 +212,15 @@
         $desc_count = strlen($core->IMAGEDESCRIPTION->free_text);
         if($desc_count > $length)
         {
-            $desc = substr($core->IMAGEDESCRIPTION->free_text, 0, $length)."...";
+            $desc = $core->IMAGEDESCRIPTION->free_text;
+            $desc = substr($desc, 0, $length)."...";
         }
         else 
         {
             $desc = $core->IMAGEDESCRIPTION->free_text;
         }
         echo htmlspecialchars($desc);
+        
     }
     else 
     {
