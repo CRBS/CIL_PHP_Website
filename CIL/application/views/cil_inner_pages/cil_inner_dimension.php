@@ -10,7 +10,9 @@
         //Checking whether image size exists
         foreach($dimension as $dim)
         {
-            if(isset($dim->Space) && isset($dim->Space->Image_size))
+            if(isset($dim->Space) && 
+                    (isset($dim->Space->Image_size) ||
+                     isset($dim->Space->Pixel_size)))
             {
                 $hasImageSize = true;
                 break;
