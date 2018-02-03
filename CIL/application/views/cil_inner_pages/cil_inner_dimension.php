@@ -12,7 +12,7 @@
         {
             if(isset($dim->Space) && 
                     (isset($dim->Space->Image_size) ||
-                     isset($dim->Space->Pixel_sizecd)))
+                     isset($dim->Space->Pixel_size)))
             {
                 $hasImageSize = true;
                 break;
