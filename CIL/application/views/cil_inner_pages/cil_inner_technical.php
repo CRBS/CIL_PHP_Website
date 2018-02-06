@@ -8,7 +8,17 @@
 
     if(isset($json->CIL_CCDB->CIL->CORE->TECHNICALDETAILS->free_text))
     {
-        echo $json->CIL_CCDB->CIL->CORE->TECHNICALDETAILS->free_text;
+        $tech = $json->CIL_CCDB->CIL->CORE->TECHNICALDETAILS->free_text;
+        $image = "http://www.cellimagelibrary.org/bioscapeslogo.png";
+        if(strpos($tech, $image)
+                === FALSE)
+        {
+            echo $json->CIL_CCDB->CIL->CORE->TECHNICALDETAILS->free_text;
+        }
+        else
+        {
+            echo str_replace($image, "/pic/bioscapeslogo.png", $tech);
+        }
     }
 
 
