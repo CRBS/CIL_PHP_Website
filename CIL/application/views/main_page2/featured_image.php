@@ -90,9 +90,16 @@
     {
         echo "Image contributed by ";
         $cont = $featured_image->CIL_CCDB->CIL->CORE->ATTRIBUTION->Contributors;
-        foreach ($cont as $con)
+        /*foreach ($cont as $con)
         {
             echo $con.";";
+        }*/
+        $ccount = count($cont);
+        for($i=0;$i<$ccount;$i++)
+        {
+            echo $cont[$i];
+            if($i+1<$ccount)
+                echo ", ";
         }
     }
 
