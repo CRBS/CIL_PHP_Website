@@ -392,10 +392,27 @@ class Images  extends CI_Controller
         return $array;
     }
     
+    private function getRealIpAddr()
+    {
+        if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
+        {
+          $ip=$_SERVER['HTTP_CLIENT_IP'];
+        }
+        elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))   //to check ip is pass from proxy
+        {
+          $ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
+        }
+        else
+        {
+          $ip=$_SERVER['REMOTE_ADDR'];
+        }
+        return $ip;
+    }
     
     public function view($imageID)
     {
         $data['base_url'] = $this->config->base_url();
+        $data['ip_address'] = $this->getRealIpAddr();
         $data['download_prefix'] = $this->config->item('download_server_prefix');
         $data['ccdb_direct_data_prefix'] = $this->config->item('ccdb_direct_data_prefix');
         $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');

@@ -43,7 +43,7 @@ function trackDownload(obj,id,size)
     //alert("ID:"+id);
     //alert('trackDownload size:'+size);
     //alert(obj.href);
-    var data = "{\"ID\":\""+id+"\",\"URL\":\""+obj.href+"\",\"Size\":\""+size+"\"}";
+    var data = "{\"Ip_address\":\""+ip_address+"\",\"ID\":\""+id+"\",\"URL\":\""+obj.href+"\",\"Size\":\""+size+"\"}";
     
     $.post('/CIL_Download_Service/track_download', data, function(returnedData) {
     // do something here with the returnedData

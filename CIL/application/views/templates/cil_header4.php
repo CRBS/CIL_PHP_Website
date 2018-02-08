@@ -285,6 +285,17 @@ $('#k').autocomplete({
     
 });
  } );
+ 
+ var ip_address = "<?php 
+    if(isset($ip_address))
+    {
+        echo $ip_address;
+    }
+    else
+    {
+        echo "unknown";
+    }
+ ?>";
 </script>
                                                                <!-------------------------End Autocomplete--------------------------------->
 								<div class="input-group form-search header-search">
