@@ -67,7 +67,7 @@
         {
         ?>
             <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-            <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/images/".$numeric_id."/".$jpeg->File_path;  ?>' download>Download in JPEG format</a>
+                <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/images/".$numeric_id."/".$jpeg->File_path;  ?>'  download>Download in JPEG format</a>
             
             </div>
         <?php
@@ -80,7 +80,7 @@
         {
         ?>
         <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-        <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/images/".$numeric_id."/".$tif->File_path;  ?>'>Download in OME-TIF format (<?php echo $cutil->convertFileSize($tif->Size);   ?>)</a>
+            <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/images/".$numeric_id."/".$tif->File_path;  ?>' onclick='trackDownload(this,<?php echo $numeric_id; ?>,<?php echo $tif->Size;  ?>)'>Download in OME-TIF format (<?php echo $cutil->convertFileSize($tif->Size);   ?>)</a>
         </div>
         <?php
         }
@@ -158,7 +158,6 @@
         ?>
             <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
             <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/videos/".$numeric_id."/".$jpeg->File_path;  ?>' download>Download in JPEG format</a>
-            
             </div>
         <?php
         }
