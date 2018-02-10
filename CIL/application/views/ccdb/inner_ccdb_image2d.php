@@ -65,8 +65,7 @@
                     {
                 ?>    
                 <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-                    <!-- <a class='download_menu_anchor' href='<?php //echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Image2d->Image2D_Downloadable_data->Full_resolution->URL;  ?>'  download="<?php //echo $image_id."_r_full_resolution"; ?>">Download full resolution image</a> -->
-                     <a class='download_menu_anchor' href='<?php echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Image2d->Image2D_Downloadable_data->Full_resolution->URL;  ?>'  download>Download full resolution image</a> 
+                     <a class='download_menu_anchor' href='<?php echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Image2d->Image2D_Downloadable_data->Full_resolution->URL;  ?>' onclick='trackDownload(this,"<?php echo "CCDB_".$numeric_id; ?>",-1)' download>Download full resolution image</a>
                 </div>
                 <?php
                     }
@@ -78,7 +77,7 @@
                 ?>    
                 <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
                     <!-- <a class='download_menu_anchor' href='<?php //echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Image2d->Image2D_Animation->URL;  ?>'  download="<?php //echo $image_id."_r_animation"; ?>">Download animation file</a> -->
-                    <a class='download_menu_anchor' href='<?php echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Image2d->Image2D_Animation->URL;  ?>'  download>Download animation file</a>
+                    <a class='download_menu_anchor' href='<?php echo $ccdb_direct_data_prefix."/".$result->CIL_CCDB->CCDB->Image2d->Image2D_Animation->URL;  ?>' onclick='trackDownload(this,"<?php echo "CCDB_".$numeric_id; ?>",-1)' download>Download animation file</a>
                 </div>
                 <?php
                     }
