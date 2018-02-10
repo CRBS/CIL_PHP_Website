@@ -92,7 +92,7 @@
         {
         ?>    
         <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-        <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/images/".$numeric_id."/".$zip->File_path;  ?>'>Download Submitted Data (<?php echo $cutil->convertFileSize($zip->Size);   ?>)</a>
+        <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/images/".$numeric_id."/".$zip->File_path;  ?>' onclick='trackDownload(this,<?php echo $numeric_id; ?>,<?php echo $zip->Size;  ?>)'>Download Submitted Data (<?php echo $cutil->convertFileSize($zip->Size);   ?>)</a>
         </div>
         <?php
         }
@@ -113,7 +113,7 @@
                  {
          ?>
                     <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-                    <a class='download_menu_anchor' href='<?php echo $download_prefix.$altimage->URL_postfix;  ?>'><?php echo $altimage->File_path; ?> (<?php echo $cutil->convertFileSize($altimage->Size);   ?>)</a>
+                    <a class='download_menu_anchor' href='<?php echo $download_prefix.$altimage->URL_postfix;  ?>' onclick='trackDownload(this,<?php echo $numeric_id; ?>,<?php echo $altimage->Size;  ?>)'><?php echo $altimage->File_path; ?> (<?php echo $cutil->convertFileSize($altimage->Size);   ?>)</a>
                     </div>
          <?php
                  }
@@ -168,7 +168,7 @@
         {
         ?>
         <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-        <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/videos/".$numeric_id."/".$flv->File_path;  ?>'>Download Flash Video (<?php echo $cutil->convertFileSize($flv->Size);   ?>)</a>
+        <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/videos/".$numeric_id."/".$flv->File_path;  ?>' onclick='trackDownload(this,<?php echo $numeric_id; ?>,<?php echo $flv->Size;  ?>)'>Download Flash Video (<?php echo $cutil->convertFileSize($flv->Size);   ?>)</a>
         </div>
         <?php
         }
@@ -179,7 +179,7 @@
         {
         ?>    
         <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-        <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/videos/".$numeric_id."/".$zip->File_path;  ?>'>Download Submitted Data (<?php echo $cutil->convertFileSize($zip->Size);   ?>)</a>
+        <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/videos/".$numeric_id."/".$zip->File_path;  ?>' onclick='trackDownload(this,<?php echo $numeric_id; ?>,<?php echo $zip->Size;  ?>)'>Download Submitted Data (<?php echo $cutil->convertFileSize($zip->Size);   ?>)</a>
         </div>
         <?php
         }

@@ -61,7 +61,7 @@ class CILServiceUtil2
      * @return type
      * 
      */
-    private function curl_post($url, $data)
+    public function curl_post($url, $data)
     {
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
