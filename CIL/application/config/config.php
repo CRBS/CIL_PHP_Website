@@ -527,8 +527,8 @@ $config['ccdb_image_prefix'] = 'https://cildata.crbs.ucsd.edu/display_images/ccd
 
 
 /* ----------------------------Service API---------------------------------- */
-$service_api_host = "http://localhost:8080"; //Development
-//$service_api_host = "https://cilia.crbs.ucsd.edu"; //Staging
+//$service_api_host = "http://localhost:8080"; //Development
+$service_api_host = "https://cilia.crbs.ucsd.edu"; //Staging
 //$service_api_host = "https://cil-api.crbs.ucsd.edu"; //Production
 
 $config['service_api_host'] = $service_api_host;
