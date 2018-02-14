@@ -11,7 +11,7 @@
 
     if(!isset($result))
     {
-        echo "No data can be fount!";
+        echo "No data can be found!";
         return;
     }
 
