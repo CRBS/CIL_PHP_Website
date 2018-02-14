@@ -75,7 +75,7 @@
         ?>
         
         <?php 
-        if(!is_null($tif) 
+        if(!is_null($tif) && isset($tif->File_path) && isset($tif->Size)
                 && !isset($json->CIL_CCDB->CIL->Alternative_image_files))
         {
         ?>
@@ -87,7 +87,7 @@
         ?>    
             
         <?php 
-        if(!is_null($zip)
+        if(!is_null($zip) && isset($zip->File_path) && isset($zip->Size)
                 && !isset($json->CIL_CCDB->CIL->Alternative_image_files))
         {
         ?>    
@@ -164,7 +164,7 @@
         ?>
         
         <?php 
-        if(!is_null($flv))
+        if(!is_null($flv) && isset($flv->File_path) && isset($flv->Size))
         {
         ?>
         <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
@@ -175,7 +175,7 @@
         ?>    
             
         <?php 
-        if(!is_null($zip))
+        if(!is_null($zip) && isset($zip->File_path) && isset($zip->Size))
         {
         ?>    
         <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
