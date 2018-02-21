@@ -64,7 +64,7 @@
                 },
                 "SecurityGroups": [
                     {
-                        "Ref": "InstanceSecurityGroup"
+                        "Ref": "InstanceSSHSecurityGroup"
                     }
                 ],
                 "KeyName": {
@@ -94,9 +94,12 @@
                      "echo 'Running yum update'\n",
                      "yum update -y\n",
                      "echo 'Done running update'\n",
-                     "yum install python -y\n",
+                     "yum install python httpd php -y\n",
                      "easy_install pip\n",
                      "pip install https://s3.amazonaws.com/cloudformation-examples/aws-cfn-bootstrap-latest.tar.gz\n",
+                     "systemctl enable httpd\n",
+                     "systemctl start httpd\n",
+                     "sudo -u centos echo 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAgEAkbzo21Kkyb54EDvKsry1ffOP1JxbGAYwjg/xKmYLVeBGKaCQ02f05TE84yMGz3PQJ5oKQnm5GjpxdYk4vCjvtEQ4ssJg+cF6sH37D318zdoEV57BhnbPiIvoGk1QFLwJV7HXUcyEq6DmTJYTNuEI2h9ApgYAr+++d0c50PX2THSc7sBvlOrgmT95pLCI9t543Lj2kzuTBFuJ9UMhOHaRJcgMOFS+khW+LMdxT20mjHqJ69cCLZBAYq3PthgighZVvrIwx7uqdGiiBya4C4NyVR63TSXbVcNVdRpJ6sw3f+tgGmLrlbeSw5e9yVv5rtTmCgKmWstQX/zKK4mRBC4KHkfetLfOzEFUyLXYE9bemg+0+/kBgdSXUBstPOIhqNVDQcTkZKZpN8u8cmVi+Zhpd7X8aNiqBBkoqBJlKp4hlrKMGYqb1DpVqjZXpityEUl2V/Y36ecjDQqo1krRCw+iKzfXiS3fqZTqbDkXQq8lrTCMD9etr7vOHgIidiLuLB2Oq6NAIvCLEJLngfKPXWJisi4lNDBiKfSm1tmlCo2O+rE5CZhjpm6xytZtDuvL6+hV3p2i7pYOgQCUoeXGcUA8TFUj6/PWdUWrEa3j603sjqJtVLDof5o0C9yt3sl6fk3RK8+okZt9XjVqUPR1gbvyAvzLI9ik3Nafx/XYci/WkRM= wawong-key' >> /home/centos/.ssh/authorized_keys\n",
                      "echo 'Done with update'\n",
                      "/bin/cfn-signal --exit-code 0 -i service1 '", { "Ref" : "WaitHandle" }, "'\n"
                        ]]}}
@@ -107,10 +110,10 @@
                 }
             }
         },
-        "InstanceSecurityGroup": {
+        "InstanceSSHSecurityGroup": {
             "Type": "AWS::EC2::SecurityGroup",
             "Properties": {
-                "GroupDescription": "Enable SSH access via port 22",
+                "GroupDescription": "Enable SSH access via port 22 from ucsd campus ip addresses",
                 "SecurityGroupIngress": [
                     {
                         "IpProtocol": "tcp",
@@ -119,6 +122,30 @@
                         "CidrIp": {
                             "Ref": "SSHLocation"
                         }
+                    },
+                    {
+                      "IpProtocol": "tcp",
+                        "FromPort": "22",
+                        "ToPort": "22",
+                        "CidrIp": "128.54.0.0/16"
+                    },
+                    {
+                      "IpProtocol": "tcp",
+                        "FromPort": "22",
+                        "ToPort": "22",
+                        "CidrIp": "132.239.0.0/16"
+                    },
+                    {
+                      "IpProtocol": "tcp",
+                        "FromPort": "22",
+                        "ToPort": "22",
+                        "CidrIp": "137.110.0.0/16"
+                    },
+                    {
+                      "IpProtocol": "tcp",
+                        "FromPort": "22",
+                        "ToPort": "22",
+                        "CidrIp": "169.228.0.0/16"
                     }
                 ]
             },
