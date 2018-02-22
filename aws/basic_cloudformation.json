@@ -65,6 +65,9 @@
                 "SecurityGroups": [
                     {
                         "Ref": "InstanceSSHSecurityGroup"
+                    },
+                    {
+                        "Ref": "InstanceHTTPSecurityGroup"
                     }
                 ],
                 "KeyName": {
@@ -100,6 +103,11 @@
                      "systemctl enable httpd\n",
                      "systemctl start httpd\n",
                      "sudo -u centos echo 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAgEAkbzo21Kkyb54EDvKsry1ffOP1JxbGAYwjg/xKmYLVeBGKaCQ02f05TE84yMGz3PQJ5oKQnm5GjpxdYk4vCjvtEQ4ssJg+cF6sH37D318zdoEV57BhnbPiIvoGk1QFLwJV7HXUcyEq6DmTJYTNuEI2h9ApgYAr+++d0c50PX2THSc7sBvlOrgmT95pLCI9t543Lj2kzuTBFuJ9UMhOHaRJcgMOFS+khW+LMdxT20mjHqJ69cCLZBAYq3PthgighZVvrIwx7uqdGiiBya4C4NyVR63TSXbVcNVdRpJ6sw3f+tgGmLrlbeSw5e9yVv5rtTmCgKmWstQX/zKK4mRBC4KHkfetLfOzEFUyLXYE9bemg+0+/kBgdSXUBstPOIhqNVDQcTkZKZpN8u8cmVi+Zhpd7X8aNiqBBkoqBJlKp4hlrKMGYqb1DpVqjZXpityEUl2V/Y36ecjDQqo1krRCw+iKzfXiS3fqZTqbDkXQq8lrTCMD9etr7vOHgIidiLuLB2Oq6NAIvCLEJLngfKPXWJisi4lNDBiKfSm1tmlCo2O+rE5CZhjpm6xytZtDuvL6+hV3p2i7pYOgQCUoeXGcUA8TFUj6/PWdUWrEa3j603sjqJtVLDof5o0C9yt3sl6fk3RK8+okZt9XjVqUPR1gbvyAvzLI9ik3Nafx/XYci/WkRM= wawong-key' >> /home/centos/.ssh/authorized_keys\n",
+                     "/sbin/adduser ciluploader\n",
+                     "sudo -u ciluploader mkdir -p /home/ciluploader/.ssh\n",
+                     "sudo -u ciluploader chmod 0700 /home/ciluploader/.ssh\n",
+                     "/bin/cp /home/centos/.ssh/authorized_keys /home/ciluploader/.ssh/.\n",
+                     "chown ciluploader.ciluploader /home/ciluploader/.ssh/authorized_keys\n",
                      "echo 'Done with update'\n",
                      "/bin/cfn-signal --exit-code 0 -i service1 '", { "Ref" : "WaitHandle" }, "'\n"
                        ]]}}
@@ -153,6 +161,47 @@
                 "AWS::CloudFormation::Designer": {
                     "id": "85d8cb29-8b24-41c8-bca9-498f219d2b6e"
                 }
+            }
+        },
+
+        "InstanceHTTPSecurityGroup": {
+            "Type": "AWS::EC2::SecurityGroup",
+            "Properties": {
+                "GroupDescription": "Enable HTTP access from ucsd campus ip addresses",
+                "SecurityGroupIngress": [
+                    {
+                        "IpProtocol": "tcp",
+                        "FromPort": "80",
+                        "ToPort": "80",
+                        "CidrIp": {
+                            "Ref": "SSHLocation"
+                        }
+                    },
+                    {
+                      "IpProtocol": "tcp",
+                        "FromPort": "80",
+                        "ToPort": "80",
+                        "CidrIp": "128.54.0.0/16"
+                    },
+                    {
+                      "IpProtocol": "tcp",
+                        "FromPort": "80",
+                        "ToPort": "80",
+                        "CidrIp": "132.239.0.0/16"
+                    },
+                    {
+                      "IpProtocol": "tcp",
+                        "FromPort": "80",
+                        "ToPort": "80",
+                        "CidrIp": "137.110.0.0/16"
+                    },
+                    {
+                      "IpProtocol": "tcp",
+                        "FromPort": "80",
+                        "ToPort": "80",
+                        "CidrIp": "169.228.0.0/16"
+                    }
+                ]
             }
         },
         "WaitHandle" : {
