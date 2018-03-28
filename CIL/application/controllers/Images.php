@@ -466,6 +466,7 @@ class Images  extends CI_Controller
            }
            else if(isset($json->CIL_CCDB->CIL))
            {
+             $data['summary'] = $this->getSummary($json->CIL_CCDB->CIL);
              if($gutil->startsWith($imageID,"CIL_"))
              {
                // echo "<br/>Host name:".$this->config->base_url();;
@@ -497,8 +498,134 @@ class Images  extends CI_Controller
         
     }
     
-    
+    private function getSummary($cil)
+    {
+        $summary = "";
+        if(isset($cil->CORE->NCBIORGANISMALCLASSIFICATION))
+        {
+            if(!is_array($cil->CORE->NCBIORGANISMALCLASSIFICATION))
+            {
+                if(isset($cil->CORE->NCBIORGANISMALCLASSIFICATION->onto_name))
+                    $summary .= " NCBI Organism:".$cil->CORE->NCBIORGANISMALCLASSIFICATION->onto_name.";";
+            }
+            else
+            {
+                $count = count($cil->CORE->NCBIORGANISMALCLASSIFICATION);
+                $i = 0;
+                $summary .= " NCBI Organism:";
+                foreach($$cil->CORE->NCBIORGANISMALCLASSIFICATION as $ncbi)
+                {
+                    if(isset($ncbi->onto_name))
+                    {
+                        $summary .=$ncbi->onto_name;
+                    }
+                            
+                    if($i != $count)
+                        $summary .= ", ";
+                }
+                $summary[$id] .= ";";
+            }
+        }
+                 
+                 
+        //------------------Cell type--------------------------
+        if(isset($cil->CORE->CELLTYPE))
+        {
+                     
+            if(!is_array($cil->CORE->CELLTYPE))
+            {
+                        
+                if(isset($cil->CORE->CELLTYPE->onto_name))
+                {         
+                    $summary .= " Cell Types:".$cil->CORE->CELLTYPE->onto_name;
+                }
+                                 
+            }
+            else
+            {
+                $count = count($cil->CORE->CELLTYPE);
+                $i = 0;
+                $summary .= " Cell Types:";
+                foreach($cil->CORE->CELLTYPE as $cell)
+                {
+                    if(isset($cell->onto_name))
+                        $summary .= $cell->onto_name;
+                             
+                    $i++;
+                             
+                    if($i != $count)
+                        $summary .=  ", ";
+                }
+                $summary .= ";";
+            }
+        }
+        //------------------End Cell type--------------------------
+                 
+                 
+        //---------------Cell components--------------------
+        if(isset($cil->CORE->CELLULARCOMPONENT))
+        {
+            if(!is_array($cil->CORE->CELLULARCOMPONENT))
+            {
+                if(isset($cil->CORE->CELLULARCOMPONENT->onto_name))
+                {          
+                    $summary .= " Cell Components:".$cil->CORE->CELLULARCOMPONENT->onto_name;
+                }                     
+            }
+            else
+            {
+                $count = count($cil->CORE->CELLULARCOMPONENT);
+                $i = 0;
+                $summary .= " Cell Components:";
+                foreach($cil->CORE->CELLULARCOMPONENT as $cell)
+                {
+                    if(isset($cell->onto_name))
+                        $summary .= $cell->onto_name;
+                             
+                    $i++;
+                             
+                    if($i != $count)
+                        $summary .=  ", ";
+                }
+                $summary .= ";";
+            }            
+        }
+        //--------------------End cell component----------------------
+                 
+                 
+        //--------------------Biological process------------------------
+                 
+        if(isset($cil->CORE->BIOLOGICALPROCESS))
+        {
+            if(!is_array($cil->CORE->BIOLOGICALPROCESS))
+            {
+                if(isset($cil->CORE->BIOLOGICALPROCESS->onto_name))
+                {
+                    $summary .= " Biological process:".$cil->CORE->BIOLOGICALPROCESS->onto_name;
+                }
+                                 
+            }
+            else
+            {
+                $count = count($cil->CORE->BIOLOGICALPROCESS);
+                $i = 0;
+                $summary .= " Biological process:";
+                foreach($cil->CORE->BIOLOGICALPROCESS as $bio)
+                {
+                    if(isset($bio->onto_name))
+                        $summary .= $bio->onto_name;
+                             
+                    $i++;
+                             
+                    if($i != $count)
+                        $summary .=  ", ";
+                }
+                $summary .= ";";
+            }
+                 
+        }
+        return htmlspecialchars($summary);
+    }
 
-    
 }
 

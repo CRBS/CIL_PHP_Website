@@ -407,6 +407,16 @@
     color: black;
 }
 
+.cil_16_font_white
+{
+    font-family: "DroidSansRegular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: normal;
+    color: white;
+}
+
 .cil_16_font_no_color
 {
     font-family: "DroidSansRegular";

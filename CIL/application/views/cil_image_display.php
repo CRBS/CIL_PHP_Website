@@ -53,7 +53,7 @@
                                     if(isset($json->CIL_CCDB->Citation->Title) &&
                                         isset($json->CIL_CCDB->Citation->DOI))
                                     {
-                                ?>&nbsp;<a href="#citation" id="citation_btn_id" name="citation_btn_id" class="btn btn-info semi-circle btn-xs">&nbsp;Cite&nbsp;</a></span><?php
+                                ?>&nbsp;<a href="#cite" id="citation_btn_id" name="citation_btn_id" class="btn btn-info semi-circle btn-xs">&nbsp;Cite&nbsp;</a></span><?php
                                     }
                                 ?>
                                 
@@ -108,13 +108,26 @@
                                         ?>
 
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-12 top-buffer">
                                         <?php 
-                                            if(isset($json->CIL_CCDB->CIL->CORE->GROUP_ID))
-                                                include_once 'cil_inner_pages/cil_inner_grouping.php' 
+                                           
+                                            if(isset($json->CIL_CCDB->Citation->Title) &&
+                                                isset($json->CIL_CCDB->Citation->DOI))
+                                            {
+                                                include_once 'cil_inner_pages/cil_inner_citation.php';
+                                                
+                                            }
                                         ?>
 
                                 </div>
+                                <div class="col-md-12 top-buffer">
+                                        <?php 
+                                            if(isset($json->CIL_CCDB->CIL->CORE->GROUP_ID))
+                                                include_once 'cil_inner_pages/cil_inner_grouping.php';
+                                        ?>
+
+                                </div>
+                                
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -179,7 +192,7 @@
                   <div class="modal-content">
                       <div class="modal-header" style="background-color: #92d4f0" >
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <span class="cil_16_font_black">Citation Information</span>
+                      <span class="cil_16_font_white">Citation Information</span>
                       </div>
                     <div class="modal-body" id="modal-body-id">
                     <?php
