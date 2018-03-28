@@ -418,6 +418,7 @@ class Images  extends CI_Controller
         $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
         $data['ccdb_image_prefix'] = $this->config->item('ccdb_image_prefix');
         $data['cil_data_host'] = $this->config->item('cil_data_host');
+        
         if(strcmp($imageID,"advanced_search")==0)
         {
             $data['test'] = "test";
@@ -426,6 +427,8 @@ class Images  extends CI_Controller
             $this->load->view('templates/cil_footer2', $data);
             return;
         }
+        
+        $data['turn_off_jquery_1_12'] = true;
         
         $sutil = new CILServiceUtil2();
         $gutil = new GeneralUtil();

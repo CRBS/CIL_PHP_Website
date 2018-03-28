@@ -95,7 +95,8 @@
 		<script src="https://apps.bigbase.nl/templates/data/web/5001-6/js/jquery.colorbox-1.6.4.min.js"></script>
 		<script src="https://apps.bigbase.nl/templates/data/web/5001-6/js/respond.min.js"></script>
 		<script src="https://apps.bigbase.nl/templates/data/web/5001-6/js/script.js"></script> -->
-               
+                 
+                
 		<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" href="/template/css/style.css">
 		<link rel="stylesheet" href="/template/css/nivo-slider.css">
@@ -104,7 +105,7 @@
 		<link rel="stylesheet" href="/template/nivo-themes/light/light.css" type="text/css" media="screen" />
 		<script src="/template/js/config.js"></script>
 		<script src="/template/js/modernizr-3.3.1.min.js"></script>
-		<script src="/template/js/jquery-1.12.4.min.js"></script>
+	        <script src="/template/js/jquery-1.12.4.min.js"></script> 
 		<script src="/template/bootstrap/js/bootstrap.min.js"></script>
 		<script src="/template/js/jquery.nivo.slider.pack.js"></script>
 		<script src="/template/js/jquery.colorbox-1.6.4.min.js"></script>
@@ -125,6 +126,7 @@
        
         <script src="/old_cil/javascripts/jquery-ui-1.8.16.custom.min.js?<?php echo rand(100000,99999999);   ?>" type="text/javascript"></script>
         <link href="/old_cil/stylesheets/jquery-ui-1.8.16.custom.css?<?php echo rand(100000,99999999);   ?>" media="screen" rel="stylesheet" type="text/css" />
+        
         <script src="/old_cil/javascripts/all.js?<?php echo rand(100000,99999999);   ?>" type="text/javascript"></script>
         <script src="/old_cil/javascripts/jquery.jstree.js?<?php echo rand(100000,99999999);   ?>" type="text/javascript"></script>
         
@@ -135,7 +137,15 @@
         <link rel="stylesheet" href="/css/jquery/jquery-1.12.1/themes/base/jquery-ui.css"> 
         
         <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
-        <script src="/js/jquery/jquery-1.12.4/jquery-1.12.4.js"></script>
+        <!-- Willy jquery 1.12.4 -->
+        <?php 
+            if(!isset($turn_off_jquery_1_12))
+            {    
+        ?>
+        <script src="/js/jquery/jquery-1.12.4/jquery-1.12.4.js"></script> 
+        <?php
+            }
+        ?>
         
         <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
         <script src="/js/jquery/jquery-1.12.1/jquery-ui.js"></script>
