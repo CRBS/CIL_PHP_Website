@@ -513,7 +513,7 @@ class Images  extends CI_Controller
                 $count = count($cil->CORE->NCBIORGANISMALCLASSIFICATION);
                 $i = 0;
                 $summary .= " NCBI Organism:";
-                foreach($$cil->CORE->NCBIORGANISMALCLASSIFICATION as $ncbi)
+                foreach($cil->CORE->NCBIORGANISMALCLASSIFICATION as $ncbi)
                 {
                     if(isset($ncbi->onto_name))
                     {
@@ -523,7 +523,7 @@ class Images  extends CI_Controller
                     if($i != $count)
                         $summary .= ", ";
                 }
-                $summary[$id] .= ";";
+                $summary .= ";";
             }
         }
                  
