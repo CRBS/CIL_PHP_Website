@@ -44,7 +44,7 @@
                         <div class="row">
                         
                         <div class="col-md-12">
-                            <span class="cil_14_regular_font pull-right">CIL:<?php 
+                            <span class="cil_14_san_regular_font pull-right">CIL:<?php 
                                 if(!is_null($numeric_id))
                                 {
                                     echo $numeric_id;
