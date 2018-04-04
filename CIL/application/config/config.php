@@ -2,6 +2,8 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $cil_config_file = "C:/data/cil_config.json";
+//$cil_config_file = "/var/www/cil_config.json";
+
 $content = file_get_contents($cil_config_file);
 $cil_config_json = json_decode($content);
 
