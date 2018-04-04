@@ -5,6 +5,8 @@ $cil_config_file = "C:/data/cil_config.json";
 $content = file_get_contents($cil_config_file);
 $cil_config_json = json_decode($content);
 
+
+
 $config['cil_auth'] = $cil_config_json->cil_auth;
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +30,7 @@ $config['cil_auth'] = $cil_config_json->cil_auth;
 | a PHP script and you can easily do that on your own.
 |
 */
+
 $config['base_url'] = $cil_config_json->base_url_dev; //Development
 //$config['base_url'] = $cil_config_json->base_url_stage; //Staging
 //$config['base_url'] = $cil_config_json->base_url_prod; //Production
