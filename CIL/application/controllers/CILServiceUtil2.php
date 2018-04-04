@@ -1,14 +1,7 @@
 <?php
-//require_once './application/config/config.php';
+
 class CILServiceUtil2
-{
-    //public $apiDocPrefix = "http://ec2-35-165-216-15.us-west-2.compute.amazonaws.com/CIL_RS/index.php/rest/documents/";
-    
-    //public $homepage_settings = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7/website_settings/homepage";
-    
-    //public $elasticsearchPrefix = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7";
-    
-    
+{    
     /**
      * This is a helpping method to call CURL PUT request with the username and key
      * 
@@ -18,14 +11,16 @@ class CILServiceUtil2
      */
     private function curl_put($url, $data)
     {
+        $CI = CI_Controller::get_instance();
+        $cil_auth = $CI->config->item('cil_auth');
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
-        //curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json','Content-Length: ' . strlen($doc)));
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
         curl_setopt($ch, CURLOPT_POSTFIELDS,$data);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); //On dev server only
+        //curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        curl_setopt($ch, CURLOPT_USERPWD, $cil_auth);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         $response  = curl_exec($ch);
         curl_close($ch);
         return $response;
@@ -43,12 +38,15 @@ class CILServiceUtil2
      */
     private function curl_delete($url)
     {
+        $CI = CI_Controller::get_instance();
+        $cil_auth = $CI->config->item('cil_auth');
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL,$url);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); //On dev server only
+        //curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        curl_setopt($ch, CURLOPT_USERPWD, $cil_auth);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         $response  = curl_exec($ch);
         curl_close($ch);
         return $response;
@@ -63,13 +61,16 @@ class CILServiceUtil2
      */
     public function curl_post($url, $data)
     {
+        $CI = CI_Controller::get_instance();
+        $cil_auth = $CI->config->item('cil_auth');
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         //curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json','Content-Length: ' . strlen($doc)));
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
         curl_setopt($ch, CURLOPT_POSTFIELDS,$data);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        //curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        curl_setopt($ch, CURLOPT_USERPWD, $cil_auth);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); //On dev server only
         $response  = curl_exec($ch);
         curl_close($ch);
@@ -85,14 +86,17 @@ class CILServiceUtil2
      */
     public function curl_get($url)
     {
-        
+       
+        $CI = CI_Controller::get_instance();
+        $cil_auth = $CI->config->item('cil_auth');
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         //curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json','Content-Length: ' . strlen($doc)));
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
         
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        //curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        curl_setopt($ch, CURLOPT_USERPWD, $cil_auth);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); //On dev server only
         $response  = curl_exec($ch);
         curl_close($ch);
@@ -102,13 +106,15 @@ class CILServiceUtil2
     
     public function curl_get_data($url,$data)
     {
- 
+        $CI = CI_Controller::get_instance();
+        $cil_auth = $CI->config->item('cil_auth');
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
         curl_setopt($ch, CURLOPT_POSTFIELDS,$data);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        //curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        curl_setopt($ch, CURLOPT_USERPWD, $cil_auth);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); //On dev server only
         $response  = curl_exec($ch);
         curl_close($ch);

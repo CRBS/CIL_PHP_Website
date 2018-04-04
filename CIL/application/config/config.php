@@ -1,6 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+$cil_config_file = "C:/data/cil_config.json";
+$content = file_get_contents($cil_config_file);
+$cil_config_json = json_decode($content);
+
+$config['cil_auth'] = $cil_config_json->cil_auth;
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -23,9 +28,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost'; //Development
-//$config['base_url'] = 'http://flagella.crbs.ucsd.edu'; //Staging
-//$config['base_url'] = 'http://cellimagelibrary.org'; //Production
+$config['base_url'] = $cil_config_json->base_url_dev; //Development
+//$config['base_url'] = $cil_config_json->base_url_stage; //Staging
+//$config['base_url'] = $cil_config_json->base_url_prod; //Production
 
 /*
 |--------------------------------------------------------------------------
@@ -516,20 +521,18 @@ $config['proxy_ips'] = '';
 
 
 
-//$config['data_search_url'] = 'http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv8/_search';
 
-//$config['cil_image_prefix'] = 'http://www.cellimagelibrary.org/cil_ccdb/display_images/';
-$config['cil_data_host'] =  'https://cildata.crbs.ucsd.edu';
-//$config['cil_image_prefix'] = 'https://cildata.crbs.ucsd.edu/display_images/cil/';
-$config['cil_image_prefix'] = 'https://cildata.crbs.ucsd.edu/media/thumbnail_display/';
+$config['cil_data_host'] =  $cil_config_json->cil_data_host;
 
-$config['ccdb_image_prefix'] = 'https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdb_512/';
+$config['cil_image_prefix'] = $cil_config_json->cil_data_host."/media/thumbnail_display/";
+
+$config['ccdb_image_prefix'] = $cil_config_json->cil_data_host."/display_images/ccdb/ccdb_512/";
 
 
 /* ----------------------------Service API---------------------------------- */
-//$service_api_host = "http://localhost:8080"; //Development
-$service_api_host = "https://cilia.crbs.ucsd.edu"; //Staging
-//$service_api_host = "https://cil-api.crbs.ucsd.edu"; //Production
+//$service_api_host = $cil_config_json->service_api_host_dev; //Development
+$service_api_host = $cil_config_json->service_api_host_stage; //Staging
+//$service_api_host = $cil_config_json->service_api_host_prod; //Production
 
 $config['service_api_host'] = $service_api_host;
 
@@ -546,16 +549,13 @@ $config['simple_ontology_expansion_prefix'] = $service_api_host."/rest/simple_on
 /* ---------------------------- End Service API---------------------------------- */
 
 /* Elasticsearch prefix */
-$config['elasticsearchHost'] = "http://stretch.crbs.ucsd.edu:9200"; //Staging
-//$config['elasticsearchHost'] = "http://cil-es.crbs.ucsd.edu:9200"; //Production
+$config['elasticsearchHost'] = $cil_config_json->elasticsearchHost_stage; //Staging
+//$config['elasticsearchHost'] = $cil_config_json->elasticsearchHost_prod; //Production
 
 
 
-//$config['elasticsearchPrefix'] = "http://stretch.crbs.ucsd.edu:9200/ccdbv8";
 $config['elasticsearchPrefix'] = $config['elasticsearchHost']."/ccdbv8";
-//$config['esOntoSuggest'] = "http://stretch.crbs.ucsd.edu:9200/ontology/_suggest";
 $config['esOntoSuggest'] = $config['elasticsearchHost']."/ontology/_suggest";
-
 $config['max_number_of_query_conditions'] = 1000;
 
 /***********Ontology related**********************/
@@ -686,8 +686,10 @@ $config['adv_debug'] = false;
 
 
 /***********Data download config***************/
-$config['download_server_prefix'] = "https://cildata.crbs.ucsd.edu";
+$config['download_server_prefix'] = $cil_config_json->cil_data_host;
 
-//$config['ccdb_direct_data_prefix'] = 'http://ccdb.ucsd.edu/ccdbdata';
-$config['ccdb_direct_data_prefix'] = 'https://cildata.crbs.ucsd.edu/ccdb';
+$config['ccdb_direct_data_prefix'] = $cil_config_json->cil_data_host."/ccdb";
 /***********End data download config***********/
+
+
+
