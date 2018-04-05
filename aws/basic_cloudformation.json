@@ -97,7 +97,9 @@
                      "echo 'Running yum update'\n",
                      "yum update -y\n",
                      "echo 'Done running update'\n",
-                     "yum install python httpd php php-pgsql zip unzip -y\n",
+                     "yum -y install epel-release\n",
+                     "yum -y install python httpd php php-pgsql zip unzip\n",
+                     "yum -y proftpd proftpd-postgresql\n",
                      "easy_install pip\n",
                      "pip install https://s3.amazonaws.com/cloudformation-examples/aws-cfn-bootstrap-latest.tar.gz\n",
                      "systemctl enable httpd\n",
@@ -109,6 +111,10 @@
                      "sudo -u ciluploader chmod 0700 /home/ciluploader/.ssh\n",
                      "/bin/cp /home/centos/.ssh/authorized_keys /home/ciluploader/.ssh/.\n",
                      "chown ciluploader.ciluploader /home/ciluploader/.ssh/authorized_keys\n",
+                     "mkdir -p /export2/upload\n",
+                     "chown apache.apache /export2/upload\n",
+                     "usermod -a -G apache ciluploader\n",
+                     "usermod -a -G ciluploader apache\n",
                      "echo 'Done with update'\n",
                      "/bin/cfn-signal --exit-code 0 -i service1 '", { "Ref" : "WaitHandle" }, "'\n"
                        ]]}}
