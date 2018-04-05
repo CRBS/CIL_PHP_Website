@@ -92,6 +92,7 @@
                       "Key" : "Name", "Value" : { "Ref": "AWS::StackName" } 
                     }
                 ],
+
                 "UserData"    : { "Fn::Base64" : { "Fn::Join" : [ "", [
                      "#!/bin/bash\n\n",
                      "echo 'Running yum update'\n",
@@ -99,7 +100,7 @@
                      "echo 'Done running update'\n",
                      "yum -y install epel-release\n",
                      "yum -y install python httpd php php-pgsql zip unzip\n",
-                     "yum -y proftpd proftpd-postgresql\n",
+                     "yum -y proftpd proftpd-postgresql ImageMagick\n",
                      "easy_install pip\n",
                      "pip install https://s3.amazonaws.com/cloudformation-examples/aws-cfn-bootstrap-latest.tar.gz\n",
                      "systemctl enable httpd\n",
