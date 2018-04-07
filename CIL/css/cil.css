@@ -333,6 +333,18 @@
     color: #000000;
 }
 
+.cil_13_san_regular_font
+{
+    font-family: "DroidSansRegular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+
+}
+
+
+
 
 .cil_18_regular_font
 {
@@ -458,3 +470,8 @@
     /* color: #333333; */
 }
 
+.cil_text_box_align {
+  height: 30px;
+  display : flex;
+  align-items : center;
+}

@@ -8,37 +8,33 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8">
-
+        <div class="col-md-6">
             
                 <div class="row" id="browse_header">
         
                     <div class="col-md-6">
-                        <span class="general_text cil_black_font">General</span>
+                        <span class="general_text">General</span>
 
                     </div>
                     <div class="col-md-6">
                         <div class="pull-right">
                             <a href="/pages/search_help" class="button search_help" id="advanced_help" title="Search Help">?</a>
-                            <input class=" btn btn-xs btn-default" name="advanced_search" type="submit" value="Advanced Search" />
+                            <input class="advanced_search" name="advanced_search" type="submit" value="Advanced Search" /> 
                         </div>
                     </div>
-                    
-                </div>
 
+                </div>
                 <div class="row top-buffer">
                     
-                            <div class="col-md-3 cil_13_san_regular_font cil_text_box_align"> 
-                            General keywords
-                            </div>
+                            <div class="col-md-3">General Keywords</div>
                             <div class="col-md-6 pull-left">
-                                <input id="k_adv" name="k" style="width: 100%" type="text" value="" class="form-control">
+                                <input id="k_adv" name="k" style="width: 100%" type="text" value="">
                             </div>
                             <div class="col-md-3"></div>
                 </div>
                 <div class="row" id="browse_header">
                     <div class="col-md-12">
-                        <span class="general_text cil_black_font">Image Attributes</span>
+                        <span class="general_text">Image Attributes</span>
                     </div>
                 </div>
                 <div class="row top-buffer">
@@ -112,7 +108,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="pull-right">
-                            <input class="btn btn-default" name="advanced_search" type="submit" value="Advanced Search" />
+                            <input class="advanced_search" name="advanced_search" type="submit" value="Advanced Search" />
                         </div>
                     </div>
                 </div>
@@ -120,7 +116,7 @@
                 <div class="row"><br/><br/><br/></div>
                 
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             
             
         </div>
