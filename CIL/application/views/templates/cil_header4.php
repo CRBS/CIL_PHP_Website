@@ -97,7 +97,8 @@
 		<script src="/template/js/jquery.colorbox-1.6.4.min.js"></script>
 		<script src="/template/js/respond.min.js"></script>
 		<script src="/template/js/script.js"></script> -->
-
+        <script src="/template/js/jquery-1.12.4.min.js"></script> 
+	<script src="/template/bootstrap/js/bootstrap.min.js"></script>
                 
         <link href="/old_cil/stylesheets/all.css?<?php echo rand(100000,99999999);   ?>" media="screen" rel="stylesheet" type="text/css" />
         <link href="/old_cil/stylesheets/reset.css?<?php echo rand(100000,99999999);   ?>" media="print" rel="stylesheet" type="text/css" />
