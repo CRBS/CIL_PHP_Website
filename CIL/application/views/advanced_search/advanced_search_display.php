@@ -14,13 +14,13 @@
                 <div class="row" id="browse_header">
         
                     <div class="col-md-6">
-                        <span class="general_text cil_black_font">General</span>
+                        <span class="cil_18_san_regular_font">General</span>
 
                     </div>
-                    <div class="col-md-6">
-                        <div class="pull-right">
+                    <div class="col-md-6"  style="height: 24px">
+                        <div class="pull-right" >
                             <a href="/pages/search_help" class="button search_help" id="advanced_help" title="Search Help">?</a>
-                            <input class=" btn btn-xs btn-default" name="advanced_search" type="submit" value="Advanced Search" />
+                            <input class=" btn btn-xs btn-default" style="font-family: DroidSansRegular" name="advanced_search" type="submit" value="Advanced Search" />
                         </div>
                     </div>
                     
@@ -28,26 +28,26 @@
 
                 <div class="row top-buffer">
                     
-                            <div class="col-md-3 cil_13_san_regular_font cil_text_box_align"> 
+                            <div class="col-md-3 cil_13_san_regular_font cil_black_font cil_text_box_align"> 
                             General keywords
                             </div>
                             <div class="col-md-6 pull-left">
-                                <input id="k_adv" name="k" style="width: 100%" type="text" value="" class="form-control">
+                                <input id="k_adv" name="k" style="width: 100%" type="text" value="" class="form-control cil_san_regular_font">
                             </div>
                             <div class="col-md-3"></div>
                 </div>
-                <div class="row" id="browse_header">
+                <div class="row top-buffer" id="browse_header">
                     <div class="col-md-12">
-                        <span class="general_text cil_black_font">Image Attributes</span>
+                        <span class="cil_18_san_regular_font">Image Attributes</span>
                     </div>
                 </div>
                 <div class="row top-buffer">
-                    <div class="col-md-4">
+                    <div class="col-md-4 cil_san_regular_font cil_black_font">
                         
                         Still&nbsp;<input id="still" name="still"  type="checkbox" value="true">
                        
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 cil_san_regular_font cil_black_font">
                         <img src="/pix/movie.jpg">&nbsp;Video/Animation&nbsp;<input id="video" name="video" type="checkbox" value="true">
                     </div>
                     <div class="col-md-4">
@@ -56,26 +56,26 @@
                 </div>
                 <div class="image_attributes_spacer_div"></div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 cil_san_regular_font cil_black_font">
                         
                         <img src="/pix/zstack.jpg">&nbsp;Z-Stack&nbsp;<input id="zstack" name="zstack" type="checkbox"  value="true">
                        
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 cil_san_regular_font cil_black_font">
                         <img src="/pix/clock.jpg">&nbsp;Time Series&nbsp;<input id="time" name="time"  type="checkbox" value="true">
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 cil_san_regular_font cil_black_font">
                         
                     </div>
                 </div>
                 <div class="image_attributes_spacer_div"></div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 cil_san_regular_font cil_black_font">
                         
                         <img src="/pix/group.jpg">&nbsp;Grouped: Yes &nbsp;<input id="grouped" name="grouped" type="checkbox" value="true">&nbsp;No&nbsp;<input id="ungrouped" name="ungrouped"  type="checkbox" value="true">
                        
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 cil_san_regular_font cil_black_font">
                         <img src="/pix/calculator.jpg">&nbsp;Suitable for Quantitation: Yes &nbsp;<input id="computable" name="computable" type="checkbox" value="true">&nbsp;No&nbsp;<input id="uncomputable" name="uncomputable"  type="checkbox" value="true">
                     </div>
                     
@@ -112,7 +112,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="pull-right">
-                            <input class="btn btn-default" name="advanced_search" type="submit" value="Advanced Search" />
+                            <input class="btn btn-default cil_san_regular_font" name="advanced_search" type="submit" value="Advanced Search" />
                         </div>
                     </div>
                 </div>

@@ -333,6 +333,12 @@
     color: #000000;
 }
 
+.cil_san_regular_font
+{
+    font-family: "DroidSansRegular";
+    font-style: normal;
+}
+
 .cil_13_san_regular_font
 {
     font-family: "DroidSansRegular";
@@ -344,7 +350,15 @@
 }
 
 
-
+.cil_18_san_regular_font
+{
+    font-family: "DroidSerifRegular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+}
 
 .cil_18_regular_font
 {
