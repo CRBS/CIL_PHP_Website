@@ -14,7 +14,7 @@
                 <div class="row" id="browse_header">
         
                     <div class="col-md-6">
-                        <span class="cil_18_san_regular_font">General</span>
+                        <span class="cil_18_san_regular_font700">General</span>
 
                     </div>
                     <div class="col-md-6"  style="height: 24px">
@@ -38,7 +38,7 @@
                 </div>
                 <div class="row top-buffer" id="browse_header">
                     <div class="col-md-12">
-                        <span class="cil_18_san_regular_font">Image Attributes</span>
+                        <span class="cil_18_san_regular_font700">Image Attributes</span>
                     </div>
                 </div>
                 <div class="row top-buffer">

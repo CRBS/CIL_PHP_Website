@@ -1,7 +1,7 @@
 <!-------------------------Anatomy------------------------------------>
     <div class="row top-buffer" id="browse_header">
         <div class="col-md-4">
-            <span class="cil_18_san_regular_font">Anatomy</span>
+            <span class="cil_18_san_regular_font700">Anatomy</span>
         </div>
         <div class="col-md-4">
         </div>

@@ -350,9 +350,19 @@
 }
 
 
+.cil_18_san_regular_font700
+{
+    font-family: "DroidSansRegular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+}
+
 .cil_18_san_regular_font
 {
-    font-family: "DroidSerifRegular";
+    font-family: "DroidSansRegular";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;

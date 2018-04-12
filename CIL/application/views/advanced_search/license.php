@@ -2,7 +2,7 @@
                 <div class="row top-buffer" id="browse_header">
         
                     <div class="col-md-12">
-                        <span class="cil_18_san_regular_font">License </span>&nbsp;&nbsp;<a href="/pages/license">?</a>
+                        <span class="cil_18_san_regular_font700">License </span>&nbsp;&nbsp;<a href="/pages/license">?</a>
 
                     </div>
 

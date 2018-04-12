@@ -2,7 +2,7 @@
                 <div class="row top-buffer" id="browse_header">
         
                     <div class="col-md-4">
-                    <span class="cil_18_san_regular_font">Imaging Methods</span>
+                    <span class="cil_18_san_regular_font700">Imaging Methods</span>
                     </div>
                     <div class="col-md-4">
                     </div>

@@ -1,7 +1,7 @@
                 <!-------------------------Biology---------------------------------------->
                 <div class="row top-buffer" id="browse_header">
                     <div class="col-md-12">
-                        <span class="cil_18_san_regular_font">Biology </span>
+                        <span class="cil_18_san_regular_font700">Biology </span>
                     </div>
                 </div>
                 <div class="row top-buffer">
