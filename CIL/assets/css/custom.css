@@ -1,1 +1,7 @@
 /* Add here all your css styles (customizations) */
+.main-nav.navbar > .navbar-inner > .container > a.btn-navbar {
+  background-image:none;
+	background-color:#16c8c8;
+	padding:4px 13px 4px 13px;
+	margin-bottom:5px;
+}
