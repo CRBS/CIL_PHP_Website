@@ -80,7 +80,7 @@
                 	<!-- CSS Global Compulsory -->
                 <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
                 <link rel="stylesheet" href="/assets/css/style.css"> 
-                
+                <link rel="stylesheet" href="/assets/css/custom.css">                 
                 <!-- 
                 /* Delete the template for open source */
 		<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.css">
