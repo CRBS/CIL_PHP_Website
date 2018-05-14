@@ -1,4 +1,3 @@
-/* Add here all your css styles (customizations) */
 
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900';
 @import 'https://fonts.googleapis.com/css?family=Handlee';
@@ -62,6 +61,12 @@
 .header-search-nav.navbar .nav > li > a {
 	color:#777;
 	padding: 10px 20px 10px 0;
+}
+
+.header-search-nav.navbar .nav > li > a:hover,
+.header-search-nav.navbar .nav > li > a:focus {
+	background-color:transparent;
+	color:#000;
 }
 
 .navbar.main-nav {
