@@ -408,31 +408,28 @@ $('#k').autocomplete({
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-envelope"></span></a>
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <div class="dropdown-content">
+                                                <div class="dropdown-content" style="margin-left: 1em; margin-right: 1em">
                                                     <address>
                                                         <strong>Center for Research in Biological Systems</strong><br>
                                                         Basic Science Building, Room 1000 <br/>
                                                         University of California, San Diego<br/>
                                                         9500 Gilman Drive<br/>
                                                         La Jolla, CA 92093-0608, USA<br/>
-                                                    </address>
+                                                    </address> 
+                                                    
                                                 </div>
                                             </li>
                                             <li class="divider"></li>
                                             <li>
-                                                <div class="dropdown-content">
+                                                <div class="dropdown-content" style="margin-left: 1em; margin-right: 1em">
                                                     <strong>Voice</strong>: (858) 534-0276<br/>
-                                                                                                        <strong>Fax</strong>: (858) 534-7497<br/>
+                                                    <strong>Fax</strong>: (858) 534-7497<br/>
+                                                    <strong>Email</strong>: dorloff@ncmir.ucsd.edu
                                                 </div>
                                             </li>
-                                                                                        <li>
-                                                <div class="dropdown-content">
-                                                    <strong>Email</strong>: dorloff@ncmir.ucsd.edu<br/>
-                                                                                                        
-                                                </div>
-                                            </li>
+                                             
                                             <li class="divider"></li>
-                                            <li><a href="contact.html"><strong>E-mail</strong>: info@example.com</a></li>
+                                            <li><br/></li>
                                         </ul>
                                     </li>
                                     <li class="divider-vertical"></li>
