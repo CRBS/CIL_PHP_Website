@@ -164,6 +164,7 @@ class CILServiceUtil2
         $CI = CI_Controller::get_instance();
         //var_dump($CI->config);
         $homepage_settings = $CI->config->item('homepage_settings');
+        //echo $homepage_settings;
         //echo "<br/>".$homepage_settings;
         //echo $homepage_settings;
         //$response = $this->just_curl_get($homepage_settings);

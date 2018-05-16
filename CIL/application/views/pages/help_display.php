@@ -127,18 +127,9 @@
             <!----------------------------Citing----------------------------->
             <div id="citing_the_library">
             <span class="cil_title top-buffer">Citing the Library</span>
-            <span class="faq_bold_font">Resumes/CVs</span>
-            <p class="faq_regular_font">To cite original images, videos, and animations published in The Cell we suggest the following format:</p>
-            <p class="faq_regular_font">Brandner, D. and Withers, G. (2010) Images of &lt;<em>description&nbsp;</em>&gt;.&nbsp;&nbsp;The Cell Image Library, <a href="/pages/help?href=www.cellimagelibrary.org">www.cellimagelibrary.org</a>, CIL numbers 10106, 10107, and 10108,&nbsp;ASCB.</p>
-            <span class="faq_bold_font">Reference Citations</span>
-            <p class="faq_regular_font">When citing an image, video or animation in The Cell previously published in a journal, you should cite the journal article according to the publisher’s style. If you wish to call attention to the image data not available through the journal, you might add the text noted below for such citations.</p>
-            <p class="faq_regular_font">When citing an image, video, or animation originally published in The Cell, we recommend the following format:</p>
-            <p class="faq_regular_font">Brandner, D.  and Withers, G. The Cell Image Library, CIL: 10106, 10107, and 10108. Available at http://www.cellimagelibrary.org. Accessed December 08, 2010.</p>
-            <span class="faq_bold_font">Reference Callouts in Text</span>
-            <p class="faq_regular_font">Textual references should be by name and CIL number:</p>
-            <p class="faq_regular_font">(Woodcock, CIL: 685)</p>
-            <p class="faq_regular_font">(Brandner and Withers, CIL: 10108)</p>
-            <p class="faq_regular_font">(Iwasa  et al., CIL: 9776)</p>
+            
+            <p class="faq_regular_font">Please use the Cite button next to the CIL:.</p>
+
             </div>
             <!----------------------------End Citing----------------------------->
             
