@@ -15,6 +15,17 @@ class Home  extends CI_Controller
          
          //echo $settings_response;
          $settings_json = json_decode($settings_response);
+         if(is_null($settings_json))
+         {
+            $data['title'] = 'The Cell Image Library';
+            $this->load->view('templates/cil_header4', $data);
+            $this->load->view('cil_errors/empty_response_error', $data);
+            $this->load->view('templates/cil_footer2', $data); 
+            return;
+         }
+         
+         
+         
          $summary = array();
          $data['title'] = 'The Cell Image Library';
          $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
@@ -35,25 +46,7 @@ class Home  extends CI_Controller
                  if(!is_null($fjson))
                     $data['featured_image'] = $fjson;
              }
-             /* 
-               
-             $base_url = $this->config->base_url();
-             $data['featured_id']  = $featured_id;
-             $data['featured_has_video'] = file_exists($video_folder."/".$featured_id .".flv");
-             $data['featured_video_url'] = $base_url."/videos/".$featured_id .".flv";
-             $image_id = $featured_id;
-             if(is_numeric($featured_id))
-             {
-                 $image_id = "CIL_".$image_id;
-             }
-             $response = $sutil->getImage($image_id);
-             //echo $response;
-             $json = json_decode($response);
              
-             $data['featured_info'] = null;
-             if(!is_null($json))
-                 $data['featured_info'] = $json;
-             //var_dump($json); */
          }
          
          

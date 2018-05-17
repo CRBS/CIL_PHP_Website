@@ -47,7 +47,15 @@ class Project  extends CI_Controller
         $response = $sutil->curl_get($searchURL);
 
         $result = json_decode($response);
-            
+        if(is_null($result))
+        {
+            $data['title'] = 'The Cell Image Library';
+            $this->load->view('templates/cil_header4', $data);
+            $this->load->view('cil_errors/empty_response_error', $data);
+            $this->load->view('templates/cil_footer2', $data); 
+            return;
+        }    
+        
         $data['page_num'] = $page;
         $data['size']=$size;
         $data['total']=$result->hits->total;

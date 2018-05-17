@@ -155,6 +155,15 @@ class Images  extends CI_Controller
             
             //echo "<br/><br/>".$response;
             $result = json_decode($response);
+            if(is_null($result))
+            {
+                $data['title'] = 'The Cell Image Library';
+                $this->load->view('templates/cil_header4', $data);
+                $this->load->view('cil_errors/empty_response_error', $data);
+                $this->load->view('templates/cil_footer2', $data); 
+                return;
+            }
+            
             if(isset($result->error))
             {
                 $data['result'] = $result;
@@ -274,7 +283,15 @@ class Images  extends CI_Controller
             //echo "<hr><br/><br/>Response:".$response;
             
             $result = json_decode($response);
-        
+            if(is_null($result))
+            {
+                $data['title'] = 'The Cell Image Library';
+                $this->load->view('templates/cil_header4', $data);
+                $this->load->view('cil_errors/empty_response_error', $data);
+                $this->load->view('templates/cil_footer2', $data); 
+                return;
+            }
+            
             
             $queryString = $this->input->server('QUERY_STRING');
             
