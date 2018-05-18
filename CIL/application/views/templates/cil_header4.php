@@ -80,38 +80,25 @@
                 	<!-- CSS Global Compulsory -->
                 <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
                 <link rel="stylesheet" href="/assets/css/style.css"> 
-                
-		<!--<link rel="stylesheet" href="https://apps.bigbase.nl/templates/data/web/5001-6/bootstrap/css/bootstrap.css">
-		<link rel="stylesheet" href="https://apps.bigbase.nl/templates/data/web/5001-6/css/style.css">
-		<link rel="stylesheet" href="https://apps.bigbase.nl/templates/data/web/5001-6/css/nivo-slider.css">
-		<link rel="stylesheet" href="https://apps.bigbase.nl/templates/data/web/5001-6/css/colorbox.css">
-		<link rel="stylesheet" href="https://apps.bigbase.nl/templates/data/web/5001-6/nivo-themes/bar/bar.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="https://apps.bigbase.nl/templates/data/web/5001-6/nivo-themes/light/light.css" type="text/css" media="screen" />
-		<script src="https://apps.bigbase.nl/templates/data/web/5001-6/js/config.js"></script>
-		<script src="https://apps.bigbase.nl/templates/data/web/5001-6/js/modernizr-3.3.1.min.js"></script>
-		<script src="https://apps.bigbase.nl/templates/data/web/5001-6/js/jquery-1.12.4.min.js"></script>
-		<script src="https://apps.bigbase.nl/templates/data/web/5001-6/bootstrap/js/bootstrap.min.js"></script>
-		<script src="https://apps.bigbase.nl/templates/data/web/5001-6/js/jquery.nivo.slider.pack.js"></script>
-		<script src="https://apps.bigbase.nl/templates/data/web/5001-6/js/jquery.colorbox-1.6.4.min.js"></script>
-		<script src="https://apps.bigbase.nl/templates/data/web/5001-6/js/respond.min.js"></script>
-		<script src="https://apps.bigbase.nl/templates/data/web/5001-6/js/script.js"></script> -->
-                 
-                
+                <link rel="stylesheet" href="/assets/css/custom.css">                 
+                <!-- 
+                /* Delete the template for open source */
 		<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" href="/template/css/style.css">
 		<link rel="stylesheet" href="/template/css/nivo-slider.css">
 		<link rel="stylesheet" href="/template/css/colorbox.css">
 		<link rel="stylesheet" href="/template/nivo-themes/bar/bar.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="/template/nivo-themes/light/light.css" type="text/css" media="screen" />
-		<script src="/template/js/config.js"></script>
+		<script src="/template/js/config.js"></script> 
 		<script src="/template/js/modernizr-3.3.1.min.js"></script>
 	        <script src="/template/js/jquery-1.12.4.min.js"></script> 
 		<script src="/template/bootstrap/js/bootstrap.min.js"></script>
 		<script src="/template/js/jquery.nivo.slider.pack.js"></script>
 		<script src="/template/js/jquery.colorbox-1.6.4.min.js"></script>
 		<script src="/template/js/respond.min.js"></script>
-		<script src="/template/js/script.js"></script>
-
+		<script src="/template/js/script.js"></script> -->
+        <script src="/template/js/jquery-1.12.4.min.js"></script> 
+	<script src="/template/bootstrap/js/bootstrap.min.js"></script>
                 
         <link href="/old_cil/stylesheets/all.css?<?php echo rand(100000,99999999);   ?>" media="screen" rel="stylesheet" type="text/css" />
         <link href="/old_cil/stylesheets/reset.css?<?php echo rand(100000,99999999);   ?>" media="print" rel="stylesheet" type="text/css" />
@@ -421,31 +408,28 @@ $('#k').autocomplete({
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-envelope"></span></a>
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <div class="dropdown-content">
+                                                <div class="dropdown-content" style="margin-left: 1em; margin-right: 1em">
                                                     <address>
                                                         <strong>Center for Research in Biological Systems</strong><br>
                                                         Basic Science Building, Room 1000 <br/>
                                                         University of California, San Diego<br/>
                                                         9500 Gilman Drive<br/>
                                                         La Jolla, CA 92093-0608, USA<br/>
-                                                    </address>
+                                                    </address> 
+                                                    
                                                 </div>
                                             </li>
                                             <li class="divider"></li>
                                             <li>
-                                                <div class="dropdown-content">
+                                                <div class="dropdown-content" style="margin-left: 1em; margin-right: 1em">
                                                     <strong>Voice</strong>: (858) 534-0276<br/>
-                                                                                                        <strong>Fax</strong>: (858) 534-7497<br/>
+                                                    <strong>Fax</strong>: (858) 534-7497<br/>
+                                                    <strong>Email</strong>: dorloff@ncmir.ucsd.edu
                                                 </div>
                                             </li>
-                                                                                        <li>
-                                                <div class="dropdown-content">
-                                                    <strong>Email</strong>: dorloff@ncmir.ucsd.edu<br/>
-                                                                                                        
-                                                </div>
-                                            </li>
+                                             
                                             <li class="divider"></li>
-                                            <li><a href="contact.html"><strong>E-mail</strong>: info@example.com</a></li>
+                                            <li><br/></li>
                                         </ul>
                                     </li>
                                     <li class="divider-vertical"></li>

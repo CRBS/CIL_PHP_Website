@@ -1,1 +1,87 @@
-/* Add here all your css styles (customizations) */
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900';
+@import 'https://fonts.googleapis.com/css?family=Handlee';
+
+
+* {
+	font-family:'Roboto', sans-serif;
+}
+
+
+.header-top {
+	margin-top:10px;
+}
+
+
+.navbar .nav.navbar-left {
+	margin-left:-15px;
+}
+
+.header-nav {
+	margin:0;
+	border:0;
+}
+@media (max-width: 768px) {
+  .header-nav li {
+    display: inline-block;
+  }
+	.header-search-nav li { 
+    display: inline-block;
+		margin-left:15px;
+	}
+}
+.header-nav .nav li {
+	font-size:12px;
+}
+.header-nav.navbar .nav > li > a {
+	padding:10px 0 10px 20px;
+	color:#777;
+}
+.header-nav.navbar .nav > li > a:hover,
+.header-nav.navbar .nav > li > a:focus {
+	background-color:transparent;
+	color:#000;
+}
+.header-nav.navbar .nav > .active > a, 
+.header-nav.navbar .nav > .active > a:hover, 
+.header-nav.navbar .nav > .active > a:focus {
+	background-color:transparent;
+	color:#000;
+  -webkit-box-shadow:none;
+     -moz-box-shadow:none;
+          box-shadow:none;
+}
+.header-search-nav {
+	margin-bottom:0;
+	min-height:20px;
+}
+.header-search-nav .nav li {
+	font-size:12px;
+}
+.header-search-nav.navbar .nav > li > a {
+	color:#777;
+	padding: 10px 20px 10px 0;
+}
+
+.header-search-nav.navbar .nav > li > a:hover,
+.header-search-nav.navbar .nav > li > a:focus {
+	background-color:transparent;
+	color:#000;
+}
+
+.navbar.main-nav {
+	border-radius:0;
+}
+.main-nav.navbar {
+	min-height:20px;
+}
+.main-nav.navbar .nav > li > a {
+  text-shadow:none;
+	padding:10px 15px;
+}
+.main-nav.navbar > .navbar-inner > .container > a.btn-navbar {
+  background-image:none;
+	background-color:#16c8c8;
+	padding:4px 13px 4px 13px;
+	margin-bottom:5px;
+}
