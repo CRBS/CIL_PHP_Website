@@ -29,3 +29,16 @@ view template to load under the application/views folder. The Pages class extend
 in the MVC structure. 
 
 The PHP file at application/controllers/CILServiceUtil2.php contains all utility functions for accessing the data through the REST API.
+
+## Installation and configuration
+See the [installation instructions](https://github.com/slash-segmentation/CIL_PHP_Website/wiki/CIL_website_deployment)
+
+
+## License
+See [license.txt](https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt)
+
+## Bugs
+Please report them [here](https://github.com/slash-segmentation/CIL_PHP_Website/issues)
+
+## Contributing
+If you would like to contribute to the CIL, please fork the repository and submit pull requests or contact us: wawong@ucsd.edu with the subject, CIL Contribution.
