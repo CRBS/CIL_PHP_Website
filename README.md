@@ -13,7 +13,7 @@ the Model View Controller (MVC) programming structure.
 
 ## Dependencies
 * PHP 5.4.40+
-* CodeIgniter 3.0.4
+* [CodeIgniter 3.0.4](https://www.codeigniter.com/)
 * Apache server 2.4
 
 
@@ -22,9 +22,10 @@ the Model View Controller (MVC) programming structure.
 * [codeigniter-restserver](https://github.com/chriskacerguis/codeigniter-restserver)
 
 
-CodeIgniter https://www.codeigniter.com/
+## Technical details
+The CIL website utilizes the CodeIgniter to the maintain the Model View Controller(MVC) structure. For example, 
+the URL such as /images/18042 will first access the application/controllers/Images.php and then it will determine which
+view template to load under the application/views folder. The Pages class extends CI_Controller, which is the controller 
+in the MVC structure. 
 
-codeigniter-restserver https://github.com/chriskacerguis/codeigniter-restserver
-
-#### Sample URL:
-http://localhost/images/2
+The PHP file at application/controllers/CILServiceUtil2.php contains all utility functions for accessing the data through the REST API.
