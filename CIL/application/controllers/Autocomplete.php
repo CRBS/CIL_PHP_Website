@@ -3,6 +3,19 @@
 require_once './application/libraries/REST_Controller.php';
 require_once 'CILServiceUtil2.php';
 require_once 'GeneralUtil.php';
+
+
+/**
+ * This class is a REST service that handles the autocomplete requests
+ * from the website input boxes.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class Autocomplete extends REST_Controller
 {
    public function cell_types_get($prefix="") 

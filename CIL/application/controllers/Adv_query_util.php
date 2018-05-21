@@ -1,5 +1,17 @@
 <?php
 require_once 'CILServiceUtil2.php';
+
+
+/**
+ * This class handles the ontology expansion queries.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class Adv_query_util
 {
     function handleText($model,$input,$key)

@@ -1,5 +1,15 @@
 <?php
 
+/**
+ * This class provides all helper functions to access the REST API.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class CILServiceUtil2
 {    
     /**

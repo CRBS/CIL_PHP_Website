@@ -2,6 +2,20 @@
 require_once 'CILServiceUtil2.php';
 require_once 'GeneralUtil.php';
 require_once 'Paginator.php';
+
+
+/**
+ * This class is a CodeIgniter controller which handles the  
+ * category queries such as the cell type, cell component, cell process,
+ * and organism.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class Browse  extends CI_Controller 
 {
     private function getQueryFileName(&$summary,$input)

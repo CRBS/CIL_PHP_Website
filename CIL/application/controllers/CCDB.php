@@ -1,20 +1,27 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-spl_autoload_register(function($class){
+/*spl_autoload_register(function($class){
     $path = str_replace("\\", "/", $class);
-    //echo "<br/>Path---".$path;
-    
     $folder = "C:/Users/Willy/Documents/php-lib/Elastica/lib/";
-    //$folder = '/var/www/Elastica/lib/';
-   if (file_exists($folder . $path . '.php')) {
-       
-       //echo '/var/www/Elastica/lib/' . $path . '.php -- Found!';
+    if (file_exists($folder . $path . '.php')) 
+    {   
         require_once($folder . $path . '.php');
     }
     else
-         echo $folder . $path . '.php -- NOT Found!';
+        echo $folder . $path . '.php -- NOT Found!';
+});*/
 
-});
 
+/**
+ * This class is a CodeIgniter controller which handles the old CCDB
+ * URL redirection.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class CCDB  extends CI_Controller 
 {
     public function view($ccdbID)
