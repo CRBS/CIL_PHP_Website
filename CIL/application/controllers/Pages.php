@@ -1,6 +1,19 @@
 <?php
 require_once 'CILServiceUtil2.php';
 require_once 'GeneralUtil.php';
+
+
+/**
+ * This class is a CodeIgniter controller and its main function is
+ * to display the static pages.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class Pages  extends CI_Controller 
 {
     public function Cell_illustration()

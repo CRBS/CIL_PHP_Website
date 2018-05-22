@@ -5,6 +5,20 @@ require_once 'GeneralUtil.php';
 require_once 'Paginator.php';
 require_once 'Adv_query_util.php';
 require_once 'QueryUtil.php';
+
+
+/**
+ * This class is a CodeIgniter controller which retrieves a list of images
+ * in a particular group. The input parameter is any image ID that belongs
+ * to a group.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class Groups extends CI_Controller 
 {
     public function view($imageID)

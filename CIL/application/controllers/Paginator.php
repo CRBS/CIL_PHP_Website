@@ -1,9 +1,17 @@
 <?php
 
-
-//Using https://github.com/jasongrimes/php-paginator
-
-
+/**
+ * This class provides the helper function. The source code is from
+ * the other open source project: 
+ * https://github.com/jasongrimes/php-paginator.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author https://github.com/jasongrimes/php-paginator
+ * @license MIT
+ * @version 1.0
+ * 
+ */
 class Paginator
 {
     const NUM_PLACEHOLDER = '(:num)';

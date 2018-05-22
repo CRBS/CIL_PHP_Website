@@ -3,6 +3,17 @@ require_once 'CILServiceUtil2.php';
 require_once 'QueryUtil.php';
 require_once 'GeneralUtil.php';
 
+
+/**
+ * This class is a CodeIgniter controller displays the home page.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class Home  extends CI_Controller 
 {
      public function index()

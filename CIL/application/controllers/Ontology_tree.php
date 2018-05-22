@@ -4,6 +4,19 @@ require_once './application/libraries/REST_Controller.php';
 require_once 'CILServiceUtil2.php';
 require_once 'GeneralUtil.php';
 
+
+/**
+ * This class is a CodeIgniter controller which supports the ontology
+ * tree browsing functions. See the advanced search page at 
+ * /images/advanced_search
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class Ontology_tree extends REST_Controller
 {
    public function biological_processes_get($test="") 

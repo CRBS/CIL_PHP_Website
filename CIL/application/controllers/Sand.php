@@ -2,6 +2,12 @@
 /**
  * This class is for redirecting all old ccdb urls to the new CIL urls
  * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
  */
 class Sand  extends CI_Controller 
 {

@@ -3,9 +3,30 @@ require_once 'CILServiceUtil2.php';
 require_once 'GeneralUtil.php';
 require_once 'Paginator.php';
 require_once 'Adv_query_util.php';
+
+/**
+ * This class is a CodeIgniter controller has two functions. The first
+ * one is to display the image information. The second one is to query
+ * for images. 
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class Images  extends CI_Controller 
 {
-    
+    /*
+     * This function is used for the general keyword search and
+     * the advanced ontology search. If simple_search is set in URL
+     * parameter, it will search by keyword. If advanced_search is set
+     * in the URL parameter, it will perform the advanced search. In 
+     * addition, this function also filters the image types and manages
+     * the number of displayable results on a page.
+     * 
+     */
     public function Index()
     {
         
@@ -426,6 +447,16 @@ class Images  extends CI_Controller
         return $ip;
     }
     
+    
+    /**
+     * This function retrieve metadata based on the image ID. Then,
+     * it packages all information and display them in a single image.
+     * The URL pattern is /images/$imageID . The function name, "view"
+     * is skipped due to the configuration on routes.php
+     * 
+     * @param string $imageID
+     * 
+     */
     public function view($imageID)
     {
         $data['base_url'] = $this->config->base_url();

@@ -3,6 +3,18 @@
 require_once 'CILServiceUtil2.php';
 require_once 'GeneralUtil.php';
 require_once 'Paginator.php';
+
+/**
+ * This class is a CodeIgniter controller and its main function is
+ * to list the CCDB images under a project ID.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class Project  extends CI_Controller 
 {
     public function view($project_id)
