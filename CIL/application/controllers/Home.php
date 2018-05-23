@@ -42,7 +42,7 @@ class Home  extends CI_Controller
          $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
          $data['cil_data_host'] = $this->config->item('cil_data_host');
          $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
-         if($settings_json->_source->Home_page->Featured_image)
+         if(isset($settings_json->_source->Home_page->Featured_image))
          {
              $video_folder =  $this->config->item('video_folder');
              $featured_id = $settings_json->_source->Home_page->Featured_image[0];
@@ -58,6 +58,14 @@ class Home  extends CI_Controller
                     $data['featured_image'] = $fjson;
              }
              
+         }
+         else 
+         {
+            $data['title'] = 'The Cell Image Library';
+            $this->load->view('templates/cil_header4', $data);
+            $this->load->view('cil_errors/empty_response_error', $data);
+            $this->load->view('templates/cil_footer2', $data); 
+            return;
          }
          
          
@@ -92,6 +100,15 @@ class Home  extends CI_Controller
             }
             
          }
+         else 
+         {
+            $data['title'] = 'The Cell Image Library';
+            $this->load->view('templates/cil_header4', $data);
+            $this->load->view('cil_errors/empty_response_error', $data);
+            $this->load->view('templates/cil_footer2', $data); 
+            return;
+         }
+         
          $data['summary'] = $summary;
          $data['test'] = "test";
          $data['settings'] = $settings_json;
