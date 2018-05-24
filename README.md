@@ -5,11 +5,11 @@ to promote analysis and new discoveries. The CIL seeks images from all organisms
 and pathological. Image quality should be as high as possible, within the limitations imposed by the then current state of readily available imaging technology 
 and constraints imposed by the biological specimen.
 
-This repository contains the source code that implements the CIL website. The CIL website contains the features
-such as the general keyword search, the advanced ontology search, the interactive cells, and the image display. The CIL
-utilizes Elasticsearch as the NoSQL JSON search engine.  The CIL website communicates with the internal REST service API,
-for the queries and tracking the statistics. The CIL is implemented in PHP. It relies on the CodeIgniter to maintain 
-the Model View Controller (MVC) programming structure.
+This program implements the CIL website. The CIL website contains the features such as the general keyword search, the 
+advanced ontology search, the interactive cells, and the image display. The CIL utilizes Elasticsearch as the NoSQL 
+JSON search engine.  The CIL website communicates with the internal REST service API, for querying the datastore and 
+tracking the statistics. The CIL is implemented in PHP. This program relies on the CodeIgniter to maintain the Model View Controller (MVC) 
+programming structure.
 
 ## Dependencies
 * PHP 5.4.40+
