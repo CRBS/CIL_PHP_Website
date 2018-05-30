@@ -31,7 +31,7 @@ in the MVC structure.
 The PHP file at application/controllers/CILServiceUtil2.php contains all utility functions for accessing the data through the REST API.
 
 ## Installation and configuration
-See the [installation instructions](https://github.com/slash-segmentation/CIL_PHP_Website/wiki/CIL_website_deployment)
+See the [installation instructions](https://github.com/slash-segmentation/CIL_PHP_Website/wiki/Installation_Instruction)
 
 
 ## License
