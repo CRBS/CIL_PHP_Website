@@ -25,7 +25,7 @@ programming structure.
 ## Technical details
 The CIL website utilizes the CodeIgniter to the maintain the Model View Controller(MVC) structure. For example, 
 the URL such as /images/18042 will first access the application/controllers/Images.php and then it will determine which
-view template to load under the application/views folder. The Pages class extends CI_Controller, which is the controller 
+view template to load under the application/views folder. The Images class extends CI_Controller, which is the controller 
 in the MVC structure. 
 
 The PHP file at application/controllers/CILServiceUtil2.php contains all utility functions for accessing the data through the REST API.
