@@ -13,6 +13,9 @@
             <div class="col-md-12">
                 <a class="cil_16_font" href="/pages/cell_illustration">Interactive Cells</a>
             </div>
+            <div class="col-md-12">
+                <a class="cil_16_font" href="https://github.com/slash-segmentation/CIL_PHP_Website" target="_blank">Open source</a>
+            </div>
         </div>
 
         <div class="top-buffer"></div>
