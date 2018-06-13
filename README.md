@@ -31,14 +31,14 @@ in the MVC structure.
 The PHP file at application/controllers/CILServiceUtil2.php contains all utility functions for accessing the data through the REST API.
 
 ## Installation and configuration
-See the [installation instructions](https://github.com/slash-segmentation/CIL_PHP_Website/wiki/Installation_Instruction)
+See the [installation instructions](https://github.com/CRBS/CIL_PHP_Website/wiki/Installation_Instruction)
 
 
 ## License
-See [license.txt](https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt)
+See [license.txt](https://github.com/CRBS/CIL_PHP_Website/blob/master/license.txt)
 
 ## Bugs
-Please report them [here](https://github.com/slash-segmentation/CIL_PHP_Website/issues)
+Please report them [here](https://github.com/CRBS/CIL_PHP_Website/issues)
 
 ## Contributing
 If you would like to contribute to the CIL, please fork the repository and submit pull requests or contact us: wawong@ucsd.edu with the subject, CIL Contribution.
