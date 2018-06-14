@@ -499,3 +499,40 @@
   display : flex;
   align-items : center;
 }
+
+/********* footer **************/
+.footer {
+  position: relative;
+  margin-top: -100px; /* negative value of footer height */
+  clear:both;
+  padding-top:10px;
+} 
+
+.footer_background
+{
+    background-color: #e6e6e6;
+}
+
+
+.footer_background2
+{
+    background-color: #a6a6a6;
+}
+
+
+.footer-row{
+  
+  display: flex;
+  justify-content: space-between;
+  /* Adding for cross browser support */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/*********End footer **************/
+
