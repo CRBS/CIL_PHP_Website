@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="footer footer_background">
+
 <div class="container footer_background">
 <div class="row">
     <div class="col-md-12">
@@ -7,10 +7,13 @@
        <br/>
     </div>
 </div>
-
+<?php
+if(!isset($disable_footer_links))
+{
+?>
 <div class="row footer_background">
     <div class="col-md-12">
-        <div class="row footer-row">
+        <div class="row ">
             <div class="col-md-2">
                 <a class="cil_16_font" href="/pages/about">About</a>
             </div>
@@ -30,6 +33,10 @@
         </div>
     </div>
 </div>
+<?php
+}
+?>
+    
 <div class="row footer_background top-buffer">
     <div class="col-md-3">
         <center>
@@ -74,9 +81,9 @@
 
     
 </div>
-</footer>
+
 <!-- Footer -->
-<footer class="footer footer_background2">
+
 <div class="container footer_background2">
 <div class="row">
     <div class="col-md-12">
@@ -89,7 +96,7 @@
     </div>
 </div>
 </div>
-</footer>
+
 
 </body>
 </html>
