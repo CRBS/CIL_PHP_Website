@@ -1,17 +1,17 @@
 <!-- Footer -->
-
-<div class="container footer_background">
-<div class="row">
-    <div class="col-md-12">
-       <br/>
-       <br/>
-    </div>
-</div>
+<footer>
+<div class="container">
+<br/>
 <?php
 if(!isset($disable_footer_links))
 {
 ?>
-<div class="row footer_background">
+<div class="row footer_background0">
+    <div class="col-md-12">
+       <br/>
+    </div>
+</div>
+<div class="row footer_background0">
     <div class="col-md-12">
         <div class="row ">
             <div class="col-md-2">
@@ -33,11 +33,19 @@ if(!isset($disable_footer_links))
         </div>
     </div>
 </div>
+<div class="row footer_background0">
+    <div class="col-md-12">
+       <br/>
+    </div>
+</div>
 <?php
 }
 ?>
     
-<div class="row footer_background top-buffer">
+<div class="row footer_background">
+    <div class="row">
+        <div class="col-md-12"><br/></div>
+    </div>  
     <div class="col-md-3">
         <center>
             <a href="http://ascb.org/" class="grid_3 suffix_1" target="_blank"><img alt="Ascb_logo" src="/pix/ascb_logo.gif?<?php echo uniqid(); ?>"></a>
@@ -74,8 +82,10 @@ if(!isset($disable_footer_links))
             
         </address>
     </div>
+    
 </div>
-    <div class="row footer_background top-buffer">
+    
+    <div class="row footer_background">
         <div class="col-md-12"><br/></div>
     </div>
 
@@ -85,6 +95,9 @@ if(!isset($disable_footer_links))
 <!-- Footer -->
 
 <div class="container footer_background2">
+    <div class="row">
+        <div class="col-md-12"><br/></div>
+    </div>    
 <div class="row">
     <div class="col-md-12">
         <center>
@@ -95,8 +108,11 @@ if(!isset($disable_footer_links))
         </center>
     </div>
 </div>
+    <div class="row">
+        <div class="col-md-12"><br/></div>
+    </div>  
 </div>
-
+</footer>
 
 </body>
 </html>

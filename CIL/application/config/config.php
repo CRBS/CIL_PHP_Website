@@ -581,6 +581,11 @@ $config['anatomical_entities_type'] = "anatomical_entities";
 
 $config['ncbi_organism_root'] =  "NCBITaxon_131567";
 $config['ncbi_organism_type'] = "ncbi_organism";
+$ncbi_organism_roots = array();
+array_push($ncbi_organism_roots, "NCBITaxon_131567"); //Cellular components
+//array_push($ncbi_organism_roots, "NCBITaxon_10239"); //Virus
+$config['ncbi_organism_roots'] = $ncbi_organism_roots;
+
 
 $config['molecular_function_root'] = "GO_0003674";
 $config['molecular_functions_type'] = "molecular_functions";

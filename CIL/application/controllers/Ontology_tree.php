@@ -100,6 +100,24 @@ class Ontology_tree extends REST_Controller
         $this->response($result);
    }
    
+  
+   public function ncbi_organism_get()
+   {
+       $id="";
+       $result = NULL;
+       $temp = $this->input->get('id',TRUE);
+        if(!is_null($temp) && strlen($temp) > 0)
+        {
+            $id = $temp;
+        }
+       $urlPrefix = $this->config->item("ontology_prefix");
+       $type = $this->config->item("ncbi_organism_type");
+       $root_config_name = "ncbi_organism_roots";
+       $this->handle_multiple_roots($urlPrefix,$type,$id,$root_config_name); 
+   }
+ 
+   
+   /*
    public function ncbi_organism_get()
    {
        $id="";
@@ -120,6 +138,7 @@ class Ontology_tree extends REST_Controller
         //$result = $this->debug_input($url);
         $this->response($result);
    }
+   */
    
    public function molecular_functions_get()
    {
