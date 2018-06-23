@@ -1,8 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$cil_config_file = "C:/data/cil_config.json";
-//$cil_config_file = "/var/www/cil_config.json";
+$cil_config_file = "C:/data/microbial_config.json";
+//$cil_config_file = "/var/www/microbial_config.json";
 
 $content = file_get_contents($cil_config_file);
 $cil_config_json = json_decode($content);
@@ -559,7 +559,7 @@ $config['elasticsearchHost'] = $cil_config_json->elasticsearchHost_stage; //Stag
 
 
 
-$config['elasticsearchPrefix'] = $config['elasticsearchHost']."/ccdbv8";
+$config['elasticsearchPrefix'] = $config['elasticsearchHost']."/microbial_cil";
 $config['esOntoSuggest'] = $config['elasticsearchHost']."/ontology/_suggest";
 $config['max_number_of_query_conditions'] = 1000;
 

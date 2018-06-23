@@ -142,20 +142,26 @@ class Home  extends CI_Controller
                     }
                     else
                     {
-                        $count = count($cil->CORE->NCBIORGANISMALCLASSIFICATION);
-                        $i = 0;
-                        $summary[$id] .= " NCBI Organism:";
-                        foreach($$cil->CORE->NCBIORGANISMALCLASSIFICATION as $ncbi)
+                        if(isset($cil->CORE->NCBIORGANISMALCLASSIFICATION) && 
+                                is_array($cil->CORE->NCBIORGANISMALCLASSIFICATION))
                         {
-                            if(isset($ncbi->onto_name))
-                            {
-                                $summary[$id] .=$ncbi->onto_name;
-                            }
                             
-                            if($i != $count)
-                                 $summary[$id] .= ", ";
+                            $count = count($cil->CORE->NCBIORGANISMALCLASSIFICATION);
+                            $i = 0;
+                            $summary[$id] .= " NCBI Organism:";
+                            foreach($cil->CORE->NCBIORGANISMALCLASSIFICATION as $ncbi)
+                            {
+                                if(isset($ncbi->onto_name))
+                                {
+                                    $summary[$id] .=$ncbi->onto_name;
+                                }
+
+                                if($i != $count)
+                                    $summary[$id] .= ", ";
+                            }
+                            $summary[$id] .= ";";
+                            
                         }
-                        $summary[$id] .= ";";
                     }
                  }
                  
