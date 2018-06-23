@@ -13,7 +13,7 @@
                     if(isset($title))
                         echo $title;
                     else
-                        echo "The Cell Image Library";
+                        echo "The Microbial Library";
                 
                 ?></title>
                 <!----AddThis Widget: Facebook Open Graph Meta Tags------->

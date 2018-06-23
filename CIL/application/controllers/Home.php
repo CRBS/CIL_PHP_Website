@@ -28,7 +28,7 @@ class Home  extends CI_Controller
          $settings_json = json_decode($settings_response);
          if(is_null($settings_json))
          {
-            $data['title'] = 'The Cell Image Library';
+            $data['title'] = 'The Microbial Library';
             $this->load->view('templates/cil_header4', $data);
             $this->load->view('cil_errors/empty_response_error', $data);
             $this->load->view('templates/cil_footer2', $data); 
@@ -38,7 +38,7 @@ class Home  extends CI_Controller
          
          
          $summary = array();
-         $data['title'] = 'The Cell Image Library';
+         $data['title'] = 'The Microbial Library';
          $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
          $data['cil_data_host'] = $this->config->item('cil_data_host');
          $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
