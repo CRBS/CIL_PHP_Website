@@ -1,8 +1,13 @@
 /* navbar */
-.navbar-default {
+/*.navbar-default {
     background-color: #1899ce;
     border-top: 5px solid #92d4f0;
     border-bottom: 5px solid #92d4f0;
+}*/
+.navbar-default {
+    background-color: #00b300;
+    border-top: 5px solid #b3ffb3;
+    border-bottom: 5px solid #b3ffb3;
 }
 
 .nav.navbar-nav.navbar-left li a {
