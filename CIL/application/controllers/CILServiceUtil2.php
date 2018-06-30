@@ -96,7 +96,7 @@ class CILServiceUtil2
      */
     public function curl_get($url)
     {
-        //echo $url;
+        echo "<br/>".$url;
         $CI = CI_Controller::get_instance();
         $cil_auth = $CI->config->item('cil_auth');
         $ch = curl_init();
@@ -116,6 +116,9 @@ class CILServiceUtil2
     
     public function curl_get_data($url,$data)
     {
+        echo "<br/>URL:".$url;
+        echo "<br/>Data:".$data;
+        
         $CI = CI_Controller::get_instance();
         $cil_auth = $CI->config->item('cil_auth');
         $ch = curl_init();

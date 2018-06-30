@@ -50,6 +50,40 @@ class Browse  extends CI_Controller
         
     }
     
+    public function microbial($input="None")
+    {
+        $data['cil_data_host'] = $this->config->item('cil_data_host');
+        $adv_debug = $this->config->item('adv_debug');
+        $sutil = new CILServiceUtil2();
+        $gutil = new GeneralUtil();
+        
+        $data['test'] = "test"; //Just to initialize $data
+        ////////Handle page and size////////////
+        $page = 0;
+        $size = 10;
+        
+        $temp = $this->input->get('page',TRUE);
+        if(!is_null($temp))
+        {
+            $page = intval($temp);
+            $page = $page-1;
+            if($page < 0)
+                $page = 0;
+        }
+        
+        $temp = $this->input->get('per_page',TRUE);
+        if(!is_null($temp))
+        {
+            $size = intval($temp);
+            if($size < 0)
+                $size = 10;
+        }
+        $from = $page*$size;
+        ////////End handle page and size////////////
+        
+        $api_host = $this->config->item('service_api_host');
+        
+    }
     
     
     public function cellprocess($input="None")

@@ -355,7 +355,7 @@ $('#k').autocomplete({
                                                                             ?>><a  href="/browse/cellprocess">Cell Process</a></li>
                                                                         <li class="divider-vertical"></li>
 
-                                    <li class="menu_item_width" <?php 
+                                                                            <li class="menu_item_width2" <?php 
                                                                             if(isset($category) && strcmp($category, "cellcomponent")== 0)
                                                                             {
                                                                                 echo "class=\"active\"";
@@ -375,6 +375,14 @@ $('#k').autocomplete({
                                                                                 echo "class=\"active\"";
                                                                             }
                                                                             ?>><a href="/browse/organism">Organism</a></li>
+                                                                        <li class="divider-vertical"></li>
+                                                                        <li class="divider-vertical"></li>
+                                                                            <li class="menu_item_width" <?php 
+                                                                            if(isset($category) && strcmp($category, "microbial")== 0)
+                                                                            {
+                                                                                echo "class=\"active\"";
+                                                                            }
+                                                                            ?>><a href="/browse/microbial">Microbial</a></li>
                                                                         <li class="divider-vertical"></li>
                                                                         <li class="menu_item_width"<?php 
                                                                             if(isset($category) && strcmp($category, "datasets")== 0)

@@ -24,6 +24,12 @@
 
 .menu_item_width
 {
+    width:130px;
+    text-align: center;
+}
+
+.menu_item_width2
+{
     width:170px;
     text-align: center;
 }
