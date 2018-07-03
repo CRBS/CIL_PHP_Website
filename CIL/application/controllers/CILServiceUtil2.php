@@ -172,7 +172,7 @@ class CILServiceUtil2
         $CI = CI_Controller::get_instance();
         $microbialPrefix = $CI->config->item('microbialPrefix');
         $url = $microbialPrefix."/".$name."?from=".$from."&size=".$size;
-        //echo "<br/>".$url;
+        echo "<br/>".$url;
         $response = $this->curl_get($url);
         return $response;
     }

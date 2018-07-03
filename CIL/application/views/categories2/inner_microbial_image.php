@@ -2,7 +2,7 @@
     <div class="col-md-12">
         <center>
             <div class="thumbnail-kenburn">
-                <a href="/browse/micorbial/<?php if(isset($microbialType)) echo $microbialType; ?>" class="survey_plain" target="_self">
+                <a href="/browse/microbial/<?php if(isset($microbialType)) echo ($microbialType); ?>" class="survey_plain" target="_self">
                     <img width="220" src="<?php 
                     
                     if(isset($item->_id))
@@ -23,7 +23,7 @@
         </center>
     </div>
     <div class="col-md-12">
-        <center><a href="/browse/microbial/<?php echo $microbialType; ?>" class="survey_plain" target="_self"><?php echo $microbialType."<br/>(".$total.")"; ?></a></center>
+        <center><a href="/browse/microbial/<?php if(isset($microbialType)) echo ($microbialType); ?>" class="survey_plain" target="_self"><?php echo $microbialType."<br/>(".$total.")"; ?></a></center>
     </div>
 
     
