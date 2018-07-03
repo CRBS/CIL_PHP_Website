@@ -535,13 +535,15 @@ $config['ccdb_image_prefix'] = $cil_config_json->cil_data_host."/display_images/
 
 
 /* ----------------------------Service API---------------------------------- */
-//$service_api_host = $cil_config_json->service_api_host_dev; //Development
-$service_api_host = $cil_config_json->service_api_host_stage; //Staging
+$service_api_host = $cil_config_json->service_api_host_dev; //Development
+//$service_api_host = $cil_config_json->service_api_host_stage; //Staging
 //$service_api_host = $cil_config_json->service_api_host_prod; //Production
 
 $config['service_api_host'] = $service_api_host;
 
 $config['homepage_settings'] = $service_api_host."/rest/website_settings/homepage";
+
+$config['microbialPrefix'] = $service_api_host."/rest/microbial";
 
 /* CIL REST Document API URL */
 $config['apiDocPrefix'] = $service_api_host."/rest/documents";

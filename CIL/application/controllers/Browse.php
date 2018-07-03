@@ -54,7 +54,7 @@ class Browse  extends CI_Controller
     {
         $data['cil_data_host'] = $this->config->item('cil_data_host');
         $adv_debug = $this->config->item('adv_debug');
-        $sutil = new CILServiceUtil2();
+        $cutil = new CILServiceUtil2();
         $gutil = new GeneralUtil();
         
         $data['test'] = "test"; //Just to initialize $data
@@ -81,7 +81,22 @@ class Browse  extends CI_Controller
         $from = $page*$size;
         ////////End handle page and size////////////
         
-        $api_host = $this->config->item('service_api_host');
+        if(strcmp($input,"None")==0)
+        {
+            $algaeResults = $cutil->getMicrobial("microbial", 0, 1);
+            $fungiResults = $cutil->getMicrobial("fungi", 0, 1);
+            $bacteriaResults = $cutil->getMicrobial("bacteria", 0, 1);
+            $protozoaResults = $cutil->getMicrobial("protozoa", 0, 1);
+
+            $data['algaeResults'] = $algaeResults;
+            $data['fungiResults'] = $fungiResults;
+            $data['bacteriaResults'] = $bacteriaResults;
+            $data['protozoaResults'] = $protozoaResults;
+            
+            $this->load->view('templates/cil_header4', $data);
+            $this->load->view('categories2/microbial_display', $data);
+            $this->load->view('templates/cil_footer2', $data);
+        }
         
     }
     
