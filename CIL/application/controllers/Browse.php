@@ -83,15 +83,26 @@ class Browse  extends CI_Controller
         
         if(strcmp($input,"None")==0)
         {
-            $algaeResults = $cutil->getMicrobial("microbial", 0, 1);
+            $algaeResults = $cutil->getMicrobial("algae", 0, 1);
             $fungiResults = $cutil->getMicrobial("fungi", 0, 1);
             $bacteriaResults = $cutil->getMicrobial("bacteria", 0, 1);
             $protozoaResults = $cutil->getMicrobial("protozoa", 0, 1);
+            $virusResults = $cutil->getMicrobial("virus", 0, 1);
 
-            $data['algaeResults'] = $algaeResults;
-            $data['fungiResults'] = $fungiResults;
-            $data['bacteriaResults'] = $bacteriaResults;
-            $data['protozoaResults'] = $protozoaResults;
+            if(!is_null($algaeResults))
+                $data['algaeResults'] = json_decode($algaeResults);
+            
+            if(!is_null($fungiResults))
+                $data['fungiResults'] = json_decode($fungiResults);
+            
+            if(!is_null($bacteriaResults))
+                $data['bacteriaResults'] = json_decode($bacteriaResults);
+            
+            if(!is_null($protozoaResults))
+                $data['protozoaResults'] = json_decode($protozoaResults);
+            
+            if(!is_null($virusResults))
+                $data['virusResults'] = json_decode($virusResults);
             
             $this->load->view('templates/cil_header4', $data);
             $this->load->view('categories2/microbial_display', $data);
