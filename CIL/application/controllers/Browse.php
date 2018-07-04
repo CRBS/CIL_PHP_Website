@@ -54,7 +54,7 @@ class Browse  extends CI_Controller
     {
         $data['cil_data_host'] = $this->config->item('cil_data_host');
         $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
-        $data['category_title'] = "Test category";
+        $data['category_title'] = $input;
         
         $adv_debug = $this->config->item('adv_debug');
         $cutil = new CILServiceUtil2();
@@ -135,11 +135,11 @@ class Browse  extends CI_Controller
         
         if(strcmp($input,"None")==0)
         {
-            $algaeResults = $cutil->getMicrobial("algae", 0, 1);
-            $fungiResults = $cutil->getMicrobial("fungi", 0, 1);
-            $bacteriaResults = $cutil->getMicrobial("bacteria", 0, 1);
-            $protozoaResults = $cutil->getMicrobial("protozoa", 0, 1);
-            $virusResults = $cutil->getMicrobial("virus", 0, 1);
+            $algaeResults = $cutil->getMicrobial("algae", 0, 1,false,false,false,false);
+            $fungiResults = $cutil->getMicrobial("fungi", 0, 1,false,false,false,false);
+            $bacteriaResults = $cutil->getMicrobial("bacteria", 0, 1,false,false,false,false);
+            $protozoaResults = $cutil->getMicrobial("protozoa", 0, 1,false,false,false,false);
+            $virusResults = $cutil->getMicrobial("virus", 0, 1,false,false,false,false);
 
             if(!is_null($algaeResults))
                 $data['algaeResults'] = json_decode($algaeResults);
@@ -162,9 +162,10 @@ class Browse  extends CI_Controller
         }
         else 
         {
-            echo "<br/>Input:".$input;
+            //echo "<br/>Input:".$input;
             $input = strtolower($input);
-            $response = $cutil->getMicrobial($input, $from, $size);
+            $response = $cutil->getMicrobial($input, $from, $size,
+                $basic_time,$basic_still,$basic_zstack,$basic_video);
             $result = json_decode($response);
             $category = $input;
             $this->load->view('templates/cil_header4', $data);
@@ -172,7 +173,7 @@ class Browse  extends CI_Controller
             //Non-empty results
             if(isset($result->hits->total))
             {
-                echo "<br/>---------Results hit";
+                //echo "<br/>---------Results hit";
                 $data['result'] = $result;
                 $data['total'] = $result->hits->total;
                 $data['size'] = $size;

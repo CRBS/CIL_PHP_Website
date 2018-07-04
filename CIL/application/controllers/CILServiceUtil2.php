@@ -167,12 +167,22 @@ class CILServiceUtil2
 
     }
     
-    public function getMicrobial($name,$from,$size)
+    public function getMicrobial($name,$from,$size,
+            $time_series, $still_image, $z_stack, $video)
     {
         $CI = CI_Controller::get_instance();
         $microbialPrefix = $CI->config->item('microbialPrefix');
         $url = $microbialPrefix."/".$name."?from=".$from."&size=".$size;
-        echo "<br/>".$url;
+        if($time_series)
+            $url = $url."&time_series=true";
+        if($still_image)
+            $url = $url."&still_image=true";
+        if($z_stack)
+            $url = $url."&z_stack=true";
+        if($video)
+            $url = $url."&video=true";
+        
+        //echo "<br/>".$url;
         $response = $this->curl_get($url);
         return $response;
     }
