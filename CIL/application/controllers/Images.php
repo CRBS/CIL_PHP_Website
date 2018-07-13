@@ -459,6 +459,7 @@ class Images  extends CI_Controller
      */
     public function view($imageID)
     {
+        
         $data['base_url'] = $this->config->base_url();
         $data['ip_address'] = $this->getRealIpAddr();
         $data['download_prefix'] = $this->config->item('download_server_prefix');
@@ -487,6 +488,8 @@ class Images  extends CI_Controller
             $imageID = "CIL_".$imageID;
         
         }
+        
+        
         
         $data['ccdb_direct_data_prefix'] = $this->config->item('ccdb_direct_data_prefix');
         
@@ -521,6 +524,7 @@ class Images  extends CI_Controller
                 $base_url = $this->config->base_url();
                 $numeric_id = str_replace("CIL_", "", $imageID); 
                 $data['numeric_id'] =$numeric_id;
+                
                 //$data['has_video'] = $sutil->is_url_exist("http://www.cellimagelibrary.org/videos/".$numeric_id.".flv");
                 //$data['video_url'] = "http://www.cellimagelibrary.org/videos/".$numeric_id.".flv";
                 

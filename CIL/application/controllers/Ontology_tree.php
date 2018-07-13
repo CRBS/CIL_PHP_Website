@@ -387,7 +387,6 @@ class Ontology_tree extends REST_Controller
        else 
        {
             $url = $urlPrefix."/".$type."/".$id;
-        
             $json = $this->handleTreeRequest($url);
             $result = $this->convertJSON($json);
        }

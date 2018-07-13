@@ -535,8 +535,8 @@ $config['ccdb_image_prefix'] = $cil_config_json->cil_data_host."/display_images/
 
 
 /* ----------------------------Service API---------------------------------- */
-$service_api_host = $cil_config_json->service_api_host_dev; //Development
-//$service_api_host = $cil_config_json->service_api_host_stage; //Staging
+//$service_api_host = $cil_config_json->service_api_host_dev; //Development
+$service_api_host = $cil_config_json->service_api_host_stage; //Staging
 //$service_api_host = $cil_config_json->service_api_host_prod; //Production
 
 $config['service_api_host'] = $service_api_host;
@@ -562,12 +562,12 @@ $config['elasticsearchHost'] = $cil_config_json->elasticsearchHost_stage; //Stag
 
 
 $config['elasticsearchPrefix'] = $config['elasticsearchHost']."/ccdbv8";
-$config['esOntoSuggest'] = $config['elasticsearchHost']."/ontology/_suggest";
+$config['esOntoSuggest'] = $config['elasticsearchHost']."/ontology2/_suggest";
 $config['max_number_of_query_conditions'] = 1000;
 
 /***********Ontology related**********************/
 //$config["ontology_prefix"] = "http://stretch.crbs.ucsd.edu:9200/ontology";
-$config["ontology_prefix"] = $config['elasticsearchHost']."/ontology";
+$config["ontology_prefix"] = $config['elasticsearchHost']."/ontology2";
 
 $config['biological_process_root'] = "GO_0008150";
 $config["biological_processes_type"] = "biological_processes";
@@ -585,7 +585,7 @@ $config['ncbi_organism_root'] =  "NCBITaxon_131567";
 $config['ncbi_organism_type'] = "ncbi_organism";
 $ncbi_organism_roots = array();
 array_push($ncbi_organism_roots, "NCBITaxon_131567"); //Cellular components
-//array_push($ncbi_organism_roots, "NCBITaxon_10239"); //Virus
+array_push($ncbi_organism_roots, "NCBITaxon_10239"); //Virus
 $config['ncbi_organism_roots'] = $ncbi_organism_roots;
 
 
