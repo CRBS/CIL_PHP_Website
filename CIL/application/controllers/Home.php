@@ -145,7 +145,7 @@ class Home  extends CI_Controller
                         $count = count($cil->CORE->NCBIORGANISMALCLASSIFICATION);
                         $i = 0;
                         $summary[$id] .= " NCBI Organism:";
-                        foreach($$cil->CORE->NCBIORGANISMALCLASSIFICATION as $ncbi)
+                        foreach($cil->CORE->NCBIORGANISMALCLASSIFICATION as $ncbi)
                         {
                             if(isset($ncbi->onto_name))
                             {

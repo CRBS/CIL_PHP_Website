@@ -526,7 +526,7 @@ class Adv_query_util
         {
             $result = $json->hits->hits[0];
             if(!isset($result->_source->Expansion->Terms))
-                return $array();
+                return $array;
             $terms = $result->_source->Expansion->Terms;
             
             if(isset($result->_source->Expansion->Onto_id))
@@ -609,8 +609,9 @@ class Adv_query_util
         $array = array();
         $array['Search_value'] = $search_value;
         $json_str = json_encode($array);
+        //echo "<br/>".$json_str;
         $response = $sutil->curl_get_data($url, $json_str);
-        //file_put_contents("C:/CIL_GIT/test.json", $response);
+        file_put_contents("C:/CIL_GIT/test.json", $response);
         $json = json_decode($response);
         return $json;
     }

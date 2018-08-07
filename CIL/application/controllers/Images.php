@@ -299,7 +299,7 @@ class Images  extends CI_Controller
             
             $response = $sutil->curl_get_data($query_url,$query);
             
-
+            //echo "<br/>".$query_url;
             //echo "<br/>curl -XGET '".$query_url."' -d '".$query." '";
             //echo "<hr><br/><br/>Response:".$response;
             
@@ -414,7 +414,7 @@ class Images  extends CI_Controller
         $adv_debug = $CI->config->item('adv_debug');
         if($adv_debug)
         {
-            $amodel->print_model();
+            //$amodel->print_model();
             echo "<br/><br/>";
             echo "<br/>curl -XGET \"http://stretch.crbs.ucsd.edu:9200/ccdbv8/data/_search\" -d '".
                     $query_str."' > test.json";
