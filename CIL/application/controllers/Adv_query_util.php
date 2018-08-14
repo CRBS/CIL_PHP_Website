@@ -570,7 +570,7 @@ class Adv_query_util
     }
     
     
-    private function simpleOntologyExpansion($type,$field,$search_value,$size)
+    public function simpleOntologyExpansion($type,$field,$search_value,$size)
     {
         $search_value = str_replace(" ", "%20", $search_value);
         $sutil = new CILServiceUtil2();
@@ -578,7 +578,7 @@ class Adv_query_util
         $url = $CI->config->item('simple_ontology_expansion_prefix')."/".$type."/".$field."/".$search_value."?size=".$size;
         
         $adv_debug = $CI->config->item('adv_debug');
-        if($adv_debug)
+        if($true)
         {
             echo "<br/>".$url;
         }
@@ -598,20 +598,20 @@ class Adv_query_util
      * @param type $search_value
      * @return type
      */
-    private function ontologyExpansion($type,$field,$search_value)
+    public function ontologyExpansion($type,$field,$search_value)
     {
         $sutil = new CILServiceUtil2();
         $CI = CI_Controller::get_instance();
         //echo "<br/>ontologyExpansion search_value:".$search_value;
         $service_host = $CI->config->item("service_api_host");
         $url = $service_host."/rest/ontology_expansion/".$type."/".$field;
-        //echo "\nURL:".$url;
+        //echo "\nExpansion URL:".$url;
         $array = array();
         $array['Search_value'] = $search_value;
         $json_str = json_encode($array);
         //echo "<br/>".$json_str;
         $response = $sutil->curl_get_data($url, $json_str);
-        file_put_contents("C:/CIL_GIT/test.json", $response);
+        //file_put_contents("C:/CIL_GIT/test.json", $response);
         $json = json_decode($response);
         return $json;
     }

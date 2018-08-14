@@ -1,5 +1,5 @@
 <?php
-
+require_once 'Adv_query_util.php';
 /**
  * This class provides all helper functions to access the REST API.
  * 
@@ -172,6 +172,7 @@ class CILServiceUtil2
     {
         $CI = CI_Controller::get_instance();
         $microbialPrefix = $CI->config->item('microbialPrefix');
+        $service_api_host = $CI->config->item('service_api_host');
         $url = $microbialPrefix."/".$name."?from=".$from."&size=".$size;
         if($time_series)
             $url = $url."&time_series=true";
@@ -181,6 +182,62 @@ class CILServiceUtil2
             $url = $url."&z_stack=true";
         if($video)
             $url = $url."&video=true";
+        
+        //echo "<br/>Name:".$name;
+        if(strcmp($name,"virus")==0)
+        {
+            $aquery = new Adv_query_util();
+            $json = $aquery->ontologyExpansion("ncbi_organism", "Name", "Viruses");
+            //echo "<br/>Expansion json:".json_encode($json);
+            
+            if(!is_null($json) && isset($json->hits->total) && $json->hits->total > 0 &&
+                   isset($json->hits->hits[0]->_source->Expansion->Terms) )
+            {
+                $term_query = "( \\\"".$json->hits->hits[0]->_source->Expansion->Onto_id."\\\"";
+                $terms = $json->hits->hits[0]->_source->Expansion->Terms;
+                $count = count($terms);
+                $i=0;
+                foreach($terms as $term)
+                {
+                   if(isset($term->Onto_id))
+                   {
+                       if($i==0)
+                         $term_query = $term_query." OR ";
+                       //echo "<br/>Onto ID:".$term->Onto_id;
+                       $term_query = $term_query." \\\"".$term->Onto_id." \\\"";
+                       if($i+1<$count)
+                           $term_query = $term_query." OR ";
+                   }
+                   
+                   $i++;
+                }
+                $term_query = $term_query.")";
+                //echo "<br/>".$term_query;
+                
+                $vquery = "{\"query\":{\"query_string\":{\"query\":\"(CIL_CCDB.Status.Is_public:true AND CIL_CCDB.Status.Deleted:false) ";
+                if($still_image)
+                   $vquery = $vquery." AND (CIL_CCDB.Data_type.Still_image:true)";
+                if($time_series)
+                   $vquery = $vquery." AND (CIL_CCDB.Data_type.Time_series:true)";
+                if($time_series)
+                   $vquery = $vquery." AND (CIL_CCDB.Data_type.Time_series:true)";
+                if($video)
+                   $vquery = $vquery." AND (CIL_CCDB.Data_type.Video:true)";
+                if($z_stack)
+                   $vquery = $vquery." AND (CIL_CCDB.Data_type.Z_stack:true)";
+
+                $vquery = $vquery." AND ".$term_query;
+                $vquery = $vquery."\"}}}";
+                
+                //echo "<br/>".$vquery;
+                $url = $service_api_host."/rest/advanced_document_search?from=".$from."&size=".$size;
+                $response = $this->curl_get_data($url, $vquery);
+                //echo $response;
+                return $response;
+            }
+            
+        }
+
         
         //echo "<br/>".$url;
         $response = $this->curl_get($url);
