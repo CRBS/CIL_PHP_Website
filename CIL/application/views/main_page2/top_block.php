@@ -16,6 +16,9 @@
             <div class="col-md-12">
                 <a class="cil_16_font" href="https://github.com/slash-segmentation/CIL_PHP_Website" target="_blank">Open source</a>
             </div>
+            <div class="col-md-12">
+                <a class="cil_16_font" href="/cdeep3m" target="_blank">CDeep3M</a>
+            </div>
         </div>
 
         <div class="top-buffer"></div>
