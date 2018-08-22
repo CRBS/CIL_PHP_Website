@@ -37,16 +37,17 @@
             
             <br/><br/>
             </div>
-            <div class="col-md-12">
-                <span class="cil_title2">Technical Details</span>
+            
+                
+           <!------Model start-------------->      
+           <div class="col-md-12">
+                <span class="cil_title2">XRM nuclei</span>
             </div>
             <div class="col-md-12">
                <div class="biological_sources">
 
             <dl>
     
-    
-<!------------------NCBI Organism Classification---------------------->
 
                     <dt><span class="cil_small_title">Trained model</span></dt>
                     <dd class="eol_dd">
@@ -54,34 +55,11 @@
                         Nucleus segmentation
                     </span>
                     </dd>
-                    
 
-
-<!------------------End NCBI Organism Classification---------------------->    
-    
-
-<!------------------Cell type---------------------->
-                
-                <!-- <dt><b>Cell Type</b></dt> -->
                 <dt><span class="cil_small_title">Sample</span></dt>
                 <dd class="eol_dd">Hippocampus Mouse Brain Stained for SBEM</dd>
-            
-<!------------------End Cell type---------------------->        
-        
+   
 
-
-
-<!------------------Cell LINE---------------------->
-<!------------------End Cell Line---------------------->
-
-
-
-
-
-
-
-<!------------------Cell Components---------------------->
-                <!-- <dt><b>Cellular Component</b></dt> -->
                 <dt><span class="cil_small_title">Modality</span></dt>
                 <dd class="eol_dd">
                 <span>
@@ -89,10 +67,6 @@
                 </span>
                 </dd>
 
-<!------------------End Cellular Component----------------------> 
-
-<!------------------Cell Components---------------------->
-                <!-- <dt><b>Cellular Component</b></dt> -->
                 <dt><span class="cil_small_title">Objective</span></dt>
                 <dd class="eol_dd">
                 <span>
@@ -100,10 +74,6 @@
                 </span>
                 </dd>
 
-<!------------------End Cellular Component----------------------> 
-
-<!------------------Cell Components---------------------->
-                <!-- <dt><b>Cellular Component</b></dt> -->
                 <dt><span class="cil_small_title">Voxelsize</span></dt>
                 <dd class="eol_dd">
                 <span>
@@ -111,19 +81,118 @@
                 </span>
                 </dd>
 
-<!------------------End Cellular Component----------------------> 
-        
 
-</dl>
-</div>     
+            </dl>
+            </div>     
             </div>
             <br/><br/>
             
             <div class="col-md-12 cil_description">
                 <center><a class="button mini" href="https://cildata.crbs.ucsd.edu/media/cdeep3m/XRM_Nuclei_TrainedNet_062018.zip" target="_self">Download</a></center>
             </div>
-            <br/><br/> 
+            <div class="col-md-12">
+            <br/>
+            </div>
+            <!-------End model--->
+            
+            
+<!------Model start-------------->      
+           <div class="col-md-12">
+                <span class="cil_title2">Tomo Vesicles</span>
+            </div>
+            <div class="col-md-12">
+               <div class="biological_sources">
+
+            <dl>
+    
+
+                    <dt><span class="cil_small_title">Trained model</span></dt>
+                    <dd class="eol_dd">
+                    <span>
+                        Synaptic Vesicles
+                    </span>
+                    </dd>
+
+                <dt><span class="cil_small_title">Sample</span></dt>
+                <dd class="eol_dd">High-Pressure Frozen, Hippocampus Mouse Brain</dd>
+   
+
+                <dt><span class="cil_small_title">Modality</span></dt>
+                <dd class="eol_dd">
+                <span>
+                Serial section electron tomography
+                </span>
+                </dd>
+
+
+                <dt><span class="cil_small_title">Voxelsize</span></dt>
+                <dd class="eol_dd">
+                <span>
+                1.6nm
+                </span>
+                </dd>
+
+
+            </dl>
+            </div>     
+            </div>
+            <br/><br/>
+            
+            <div class="col-md-12 cil_description">
+                <center><a class="button mini" href="https://cildata.crbs.ucsd.edu/media/cdeep3m/Tomo_VesiclesTrainedNet.tar" target="_self">Download</a></center>
+            </div>
+            <div class="col-md-12">
+            <br/><br/>
+            </div>
+            <!-------End model--->            
+            
+            
+
            
+<!------Model start-------------->      
+           <div class="col-md-12">
+                <span class="cil_title2">SEMTEM membranes</span>
+            </div>
+            <div class="col-md-12">
+               <div class="biological_sources">
+
+            <dl>
+    
+
+                    <dt><span class="cil_small_title">Trained model</span></dt>
+                    <dd class="eol_dd">
+                    <span>
+                        Membranes
+                    </span>
+                    </dd>
+
+
+                <dt><span class="cil_small_title">Modality</span></dt>
+                <dd class="eol_dd">
+                <span>
+                Transmission electron microscopy, serial block-face scanning electron microscopy
+                </span>
+                </dd>
+
+
+                <dt><span class="cil_small_title">Voxelsize</span></dt>
+                <dd class="eol_dd">
+                <span>
+                ~5nm
+                </span>
+                </dd>
+
+
+            </dl>
+            </div>     
+            </div>
+            <br/><br/>
+            
+            <div class="col-md-12 cil_description">
+                <center><a class="button mini" href="https://cildata.crbs.ucsd.edu/media/cdeep3m/SEMTEM_membranes_TrainedNet.tar" target="_self">Download</a></center>
+            </div>
+            <br/><br/> 
+            <!-------End model---> 
            </div>
             </div>
         </div>
