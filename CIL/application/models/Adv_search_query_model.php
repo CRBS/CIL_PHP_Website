@@ -9,6 +9,11 @@ class Adv_search_query_model extends CI_Model {
     public $time; 
     public $grouped;
     public $computable;
+    ///CCDB related////
+    public $image2d;
+    public $reconstruction;
+    public $segmentation;
+    ///Edn CCDB related///
     public $public_domain;
     public $attribution_cc;
     public $attribution_nc_sa;

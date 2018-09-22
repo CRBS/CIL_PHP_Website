@@ -376,6 +376,11 @@ class Images  extends CI_Controller
         $autil->handleBoolean($amodel, $input, 'video');
         $autil->handleBoolean($amodel, $input, 'zstack');
         $autil->handleBoolean($amodel, $input, 'time');
+        /////CCDB related////
+        $autil->handleBoolean($amodel, $input, 'image2d');
+        $autil->handleBoolean($amodel, $input, 'reconstruction');
+        $autil->handleBoolean($amodel, $input, 'segmentation');
+        /////End CCDB related////
         $autil->handleYesOrNo($amodel, $input, 'grouped', 'ungrouped');
         $autil->handleYesOrNo($amodel, $input, 'computable', 'uncomputable');
         $autil->handleBoolean($amodel, $input, 'public_domain');

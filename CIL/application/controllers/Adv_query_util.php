@@ -76,6 +76,12 @@ class Adv_query_util
                    $model->search_for = $model->search_for."attribution nc images";
                 else if(strcmp($key, 'copyright') == 0)
                    $model->search_for = $model->search_for."copyrighted images";
+                else if(strcmp($key, 'image2d') == 0)
+                   $model->search_for = $model->search_for."Image 2D";
+                else if(strcmp($key, 'reconstruction') == 0)
+                   $model->search_for = $model->search_for."Reconstruction";
+                else if(strcmp($key, 'segmentation') == 0)
+                   $model->search_for = $model->search_for."Segmentation";
                 else
                     $model->search_for = $model->search_for.$key;     
               
@@ -160,6 +166,25 @@ class Adv_query_util
             $qstring = $qstring." AND (CIL_CCDB.Data_type.Time_series:true)";
             $count++;
         }
+        
+        /////CCDB related////
+        if(!is_null($model->image2d))
+        {
+            $qstring = $qstring." AND (CIL_CCDB.CCDB.Image2d.Image2D_Downloadable_data:*)";
+            $count++;
+        }
+        if(!is_null($model->reconstruction))
+        {
+            $qstring = $qstring." AND (CIL_CCDB.CCDB.Reconstruction.Recon_Downloadable_data:*)";
+            $count++;
+        }
+        if(!is_null($model->segmentation))
+        {
+            $qstring = $qstring." AND (CIL_CCDB.CCDB.Segmentation.Seg_Downloadable_data:*)";
+            $count++;
+        }
+        
+        ////End CCDB related///
         
         if(!is_null($model->grouped) && $model->grouped)
         {

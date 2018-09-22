@@ -80,6 +80,33 @@
                     </div>
                     
                 </div>
+                <div class="image_attributes_spacer_div"></div>
+                <div class="row">
+                    <div class="col-md-4 cil_san_regular_font cil_black_font">
+                        
+                        <img src="/pix/raw3.png" width="30px">&nbsp;Image 2D &nbsp;<input id="image2d" name="image2d" type="checkbox" value="true">
+                       
+                    </div>
+                    <div class="col-md-8 cil_san_regular_font cil_black_font">
+                        <img src="/pix/puzzle2.png" width="30px">&nbsp;Reconstruction &nbsp;<input id="reconstruction" name="reconstruction" type="checkbox" value="true">
+                    </div>
+                    
+                </div>
+                
+                <div class="image_attributes_spacer_div"></div>
+                <div class="row">
+                    <div class="col-md-4 cil_san_regular_font cil_black_font">
+                        
+                        <img src="/pix/seg.png" width="30px">&nbsp;Segmentation &nbsp;<input id="segmentation" name="segmentation" type="checkbox" value="true">
+                       
+                    </div>
+                    <div class="col-md-8 cil_san_regular_font cil_black_font">
+
+                    </div>
+                    
+                </div>
+                <br/>
+                
                 
                 <?php include_once 'license.php' ?>
                 
