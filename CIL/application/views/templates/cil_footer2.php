@@ -1,6 +1,6 @@
 <!-- Footer -->
 <footer>
-<div class="container">
+<div class="container" style="width:100%">
 <br/>
 <?php
 if(!isset($disable_footer_links))
@@ -94,7 +94,7 @@ if(!isset($disable_footer_links))
 
 <!-- Footer -->
 
-<div class="container footer_background2">
+<div class="container footer_background2" style="width:100%">
     <div class="row">
         <div class="col-md-12"><br/></div>
     </div>    
