@@ -126,6 +126,31 @@
                     }
                 ?>
                 </div>
+                    
+                <!---------Amazon Cdeep3m--------------->
+                <?php
+                    
+                    if(isset($result->CIL_CCDB->Process->Main_image_url) &&
+                        isset($result->CIL_CCDB->CCDB->Imaging_parameters->Em_microscopy_product))
+                    {
+                        $cdeep3mURL = "https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/review?stackName=cdeep3m-stack-1-6-0&templateURL=https://s3-us-west-2.amazonaws.com/cdeep3m-releases/1.6.0/cdeep3m_1.6.0_basic_cloudformation.json&param_DatasetURL=".$result->CIL_CCDB->Process->Main_image_url."&param_GPUDiskSize=500";
+                ?>
+                <div class="col-md-12"><br/></div>
+                
+                 <div class="col-md-4">
+                 
+                        <a class="btn btn-xs btn-default" href="<?php echo $cdeep3mURL; ?>" target="_blank">Launch CDeep3M</a>
+                
+                 </div>
+                 <div class="col-md-4">
+                     <a class="survey_plain faq_regular_font" href="https://github.com/CRBS/cdeep3m" target="_blank">About CDeep3M</a>
+                 </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-12"><br/></div>
+                <?php
+                    }
+                ?>
+                <!---------End Amazon Cdeep3m--------------->        
                 </div>
             </div>
         </div>

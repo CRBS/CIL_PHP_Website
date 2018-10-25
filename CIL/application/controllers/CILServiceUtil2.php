@@ -1,14 +1,17 @@
 <?php
-//require_once './application/config/config.php';
+require_once 'Adv_query_util.php';
+/**
+ * This class provides all helper functions to access the REST API.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class CILServiceUtil2
-{
-    //public $apiDocPrefix = "http://ec2-35-165-216-15.us-west-2.compute.amazonaws.com/CIL_RS/index.php/rest/documents/";
-    
-    //public $homepage_settings = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7/website_settings/homepage";
-    
-    //public $elasticsearchPrefix = "http://search-elastic-cil-tetapevux3gwwhdcbbrx4zjzhm.us-west-2.es.amazonaws.com/ccdbv7";
-    
-    
+{    
     /**
      * This is a helpping method to call CURL PUT request with the username and key
      * 
@@ -18,14 +21,16 @@ class CILServiceUtil2
      */
     private function curl_put($url, $data)
     {
+        $CI = CI_Controller::get_instance();
+        $cil_auth = $CI->config->item('cil_auth');
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
-        //curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json','Content-Length: ' . strlen($doc)));
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
         curl_setopt($ch, CURLOPT_POSTFIELDS,$data);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); //On dev server only
+        //curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        curl_setopt($ch, CURLOPT_USERPWD, $cil_auth);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         $response  = curl_exec($ch);
         curl_close($ch);
         return $response;
@@ -43,12 +48,15 @@ class CILServiceUtil2
      */
     private function curl_delete($url)
     {
+        $CI = CI_Controller::get_instance();
+        $cil_auth = $CI->config->item('cil_auth');
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL,$url);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); //On dev server only
+        //curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        curl_setopt($ch, CURLOPT_USERPWD, $cil_auth);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         $response  = curl_exec($ch);
         curl_close($ch);
         return $response;
@@ -63,13 +71,16 @@ class CILServiceUtil2
      */
     public function curl_post($url, $data)
     {
+        $CI = CI_Controller::get_instance();
+        $cil_auth = $CI->config->item('cil_auth');
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         //curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json','Content-Length: ' . strlen($doc)));
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
         curl_setopt($ch, CURLOPT_POSTFIELDS,$data);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        //curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        curl_setopt($ch, CURLOPT_USERPWD, $cil_auth);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); //On dev server only
         $response  = curl_exec($ch);
         curl_close($ch);
@@ -85,14 +96,17 @@ class CILServiceUtil2
      */
     public function curl_get($url)
     {
-        
+        //echo "<br/>".$url;
+        $CI = CI_Controller::get_instance();
+        $cil_auth = $CI->config->item('cil_auth');
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         //curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json','Content-Length: ' . strlen($doc)));
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
         
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        //curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        curl_setopt($ch, CURLOPT_USERPWD, $cil_auth);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); //On dev server only
         $response  = curl_exec($ch);
         curl_close($ch);
@@ -102,13 +116,18 @@ class CILServiceUtil2
     
     public function curl_get_data($url,$data)
     {
- 
+        //echo "<br/>URL:".$url;
+        //echo "<br/>Data:".$data;
+        
+        $CI = CI_Controller::get_instance();
+        $cil_auth = $CI->config->item('cil_auth');
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
         curl_setopt($ch, CURLOPT_POSTFIELDS,$data);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        //curl_setopt($ch, CURLOPT_USERPWD, "cil:32C7D1D31D817734B421CC346EE65");
+        curl_setopt($ch, CURLOPT_USERPWD, $cil_auth);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); //On dev server only
         $response  = curl_exec($ch);
         curl_close($ch);
@@ -148,7 +167,82 @@ class CILServiceUtil2
 
     }
     
-    
+    public function getMicrobial($name,$from,$size,
+            $time_series, $still_image, $z_stack, $video)
+    {
+        $CI = CI_Controller::get_instance();
+        $microbialPrefix = $CI->config->item('microbialPrefix');
+        $service_api_host = $CI->config->item('service_api_host');
+        $url = $microbialPrefix."/".$name."?from=".$from."&size=".$size;
+        if($time_series)
+            $url = $url."&time_series=true";
+        if($still_image)
+            $url = $url."&still_image=true";
+        if($z_stack)
+            $url = $url."&z_stack=true";
+        if($video)
+            $url = $url."&video=true";
+        
+        //echo "<br/>Name:".$name;
+        if(strcmp($name,"virus")==0)
+        {
+            $aquery = new Adv_query_util();
+            $json = $aquery->ontologyExpansion("ncbi_organism", "Name", "Viruses");
+            //echo "<br/>Expansion json:".json_encode($json);
+            
+            if(!is_null($json) && isset($json->hits->total) && $json->hits->total > 0 &&
+                   isset($json->hits->hits[0]->_source->Expansion->Terms) )
+            {
+                $term_query = "( \\\"".$json->hits->hits[0]->_source->Expansion->Onto_id."\\\"";
+                $terms = $json->hits->hits[0]->_source->Expansion->Terms;
+                $count = count($terms);
+                $i=0;
+                foreach($terms as $term)
+                {
+                   if(isset($term->Onto_id))
+                   {
+                       if($i==0)
+                         $term_query = $term_query." OR ";
+                       //echo "<br/>Onto ID:".$term->Onto_id;
+                       $term_query = $term_query." \\\"".$term->Onto_id." \\\"";
+                       if($i+1<$count)
+                           $term_query = $term_query." OR ";
+                   }
+                   
+                   $i++;
+                }
+                $term_query = $term_query.")";
+                //echo "<br/>".$term_query;
+                
+                $vquery = "{\"query\":{\"query_string\":{\"query\":\"(CIL_CCDB.Status.Is_public:true AND CIL_CCDB.Status.Deleted:false) ";
+                if($still_image)
+                   $vquery = $vquery." AND (CIL_CCDB.Data_type.Still_image:true)";
+                if($time_series)
+                   $vquery = $vquery." AND (CIL_CCDB.Data_type.Time_series:true)";
+                if($time_series)
+                   $vquery = $vquery." AND (CIL_CCDB.Data_type.Time_series:true)";
+                if($video)
+                   $vquery = $vquery." AND (CIL_CCDB.Data_type.Video:true)";
+                if($z_stack)
+                   $vquery = $vquery." AND (CIL_CCDB.Data_type.Z_stack:true)";
+
+                $vquery = $vquery." AND ".$term_query;
+                $vquery = $vquery."\"}}}";
+                
+                //echo "<br/>".$vquery;
+                $url = $service_api_host."/rest/advanced_document_search?from=".$from."&size=".$size;
+                $response = $this->curl_get_data($url, $vquery);
+                //echo $response;
+                return $response;
+            }
+            
+        }
+
+        
+        //echo "<br/>".$url;
+        $response = $this->curl_get($url);
+        return $response;
+    }
     
     public function getHomepageSettings()
     {
@@ -158,6 +252,7 @@ class CILServiceUtil2
         $CI = CI_Controller::get_instance();
         //var_dump($CI->config);
         $homepage_settings = $CI->config->item('homepage_settings');
+        //echo $homepage_settings;
         //echo "<br/>".$homepage_settings;
         //echo $homepage_settings;
         //$response = $this->just_curl_get($homepage_settings);

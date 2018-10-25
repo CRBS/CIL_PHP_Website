@@ -3,9 +3,30 @@ require_once 'CILServiceUtil2.php';
 require_once 'GeneralUtil.php';
 require_once 'Paginator.php';
 require_once 'Adv_query_util.php';
+
+/**
+ * This class is a CodeIgniter controller has two functions. The first
+ * one is to display the image information. The second one is to query
+ * for images. 
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class Images  extends CI_Controller 
 {
-    
+    /*
+     * This function is used for the general keyword search and
+     * the advanced ontology search. If simple_search is set in URL
+     * parameter, it will search by keyword. If advanced_search is set
+     * in the URL parameter, it will perform the advanced search. In 
+     * addition, this function also filters the image types and manages
+     * the number of displayable results on a page.
+     * 
+     */
     public function Index()
     {
         
@@ -155,6 +176,15 @@ class Images  extends CI_Controller
             
             //echo "<br/><br/>".$response;
             $result = json_decode($response);
+            if(is_null($result))
+            {
+                $data['title'] = 'The Cell Image Library';
+                $this->load->view('templates/cil_header4', $data);
+                $this->load->view('cil_errors/empty_response_error', $data);
+                $this->load->view('templates/cil_footer2', $data); 
+                return;
+            }
+            
             if(isset($result->error))
             {
                 $data['result'] = $result;
@@ -267,14 +297,24 @@ class Images  extends CI_Controller
             }
 
             
+            
+            
             $response = $sutil->curl_get_data($query_url,$query);
             
-
+            //echo "<br/>".$query_url;
             //echo "<br/>curl -XGET '".$query_url."' -d '".$query." '";
             //echo "<hr><br/><br/>Response:".$response;
             
             $result = json_decode($response);
-        
+            if(is_null($result))
+            {
+                $data['title'] = 'The Cell Image Library';
+                $this->load->view('templates/cil_header4', $data);
+                $this->load->view('cil_errors/empty_response_error', $data);
+                $this->load->view('templates/cil_footer2', $data); 
+                return;
+            }
+            
             
             $queryString = $this->input->server('QUERY_STRING');
             
@@ -336,6 +376,11 @@ class Images  extends CI_Controller
         $autil->handleBoolean($amodel, $input, 'video');
         $autil->handleBoolean($amodel, $input, 'zstack');
         $autil->handleBoolean($amodel, $input, 'time');
+        /////CCDB related////
+        $autil->handleBoolean($amodel, $input, 'image2d');
+        $autil->handleBoolean($amodel, $input, 'reconstruction');
+        $autil->handleBoolean($amodel, $input, 'segmentation');
+        /////End CCDB related////
         $autil->handleYesOrNo($amodel, $input, 'grouped', 'ungrouped');
         $autil->handleYesOrNo($amodel, $input, 'computable', 'uncomputable');
         $autil->handleBoolean($amodel, $input, 'public_domain');
@@ -376,7 +421,7 @@ class Images  extends CI_Controller
         $adv_debug = $CI->config->item('adv_debug');
         if($adv_debug)
         {
-            $amodel->print_model();
+            //$amodel->print_model();
             echo "<br/><br/>";
             echo "<br/>curl -XGET \"http://stretch.crbs.ucsd.edu:9200/ccdbv8/data/_search\" -d '".
                     $query_str."' > test.json";
@@ -409,8 +454,19 @@ class Images  extends CI_Controller
         return $ip;
     }
     
+    
+    /**
+     * This function retrieve metadata based on the image ID. Then,
+     * it packages all information and display them in a single image.
+     * The URL pattern is /images/$imageID . The function name, "view"
+     * is skipped due to the configuration on routes.php
+     * 
+     * @param string $imageID
+     * 
+     */
     public function view($imageID)
     {
+        
         $data['base_url'] = $this->config->base_url();
         $data['ip_address'] = $this->getRealIpAddr();
         $data['download_prefix'] = $this->config->item('download_server_prefix');
@@ -418,6 +474,7 @@ class Images  extends CI_Controller
         $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
         $data['ccdb_image_prefix'] = $this->config->item('ccdb_image_prefix');
         $data['cil_data_host'] = $this->config->item('cil_data_host');
+        
         if(strcmp($imageID,"advanced_search")==0)
         {
             $data['test'] = "test";
@@ -426,6 +483,8 @@ class Images  extends CI_Controller
             $this->load->view('templates/cil_footer2', $data);
             return;
         }
+        
+        $data['turn_off_jquery_1_12'] = true;
         
         $sutil = new CILServiceUtil2();
         $gutil = new GeneralUtil();
@@ -436,6 +495,8 @@ class Images  extends CI_Controller
             $imageID = "CIL_".$imageID;
         
         }
+        
+        
         
         $data['ccdb_direct_data_prefix'] = $this->config->item('ccdb_direct_data_prefix');
         
@@ -463,12 +524,14 @@ class Images  extends CI_Controller
            }
            else if(isset($json->CIL_CCDB->CIL))
            {
+             $data['summary'] = $this->getSummary($json->CIL_CCDB->CIL);
              if($gutil->startsWith($imageID,"CIL_"))
              {
                // echo "<br/>Host name:".$this->config->base_url();;
                 $base_url = $this->config->base_url();
                 $numeric_id = str_replace("CIL_", "", $imageID); 
                 $data['numeric_id'] =$numeric_id;
+                
                 //$data['has_video'] = $sutil->is_url_exist("http://www.cellimagelibrary.org/videos/".$numeric_id.".flv");
                 //$data['video_url'] = "http://www.cellimagelibrary.org/videos/".$numeric_id.".flv";
                 
@@ -494,8 +557,134 @@ class Images  extends CI_Controller
         
     }
     
-    
+    private function getSummary($cil)
+    {
+        $summary = "";
+        if(isset($cil->CORE->NCBIORGANISMALCLASSIFICATION))
+        {
+            if(!is_array($cil->CORE->NCBIORGANISMALCLASSIFICATION))
+            {
+                if(isset($cil->CORE->NCBIORGANISMALCLASSIFICATION->onto_name))
+                    $summary .= " NCBI Organism:".$cil->CORE->NCBIORGANISMALCLASSIFICATION->onto_name.";";
+            }
+            else
+            {
+                $count = count($cil->CORE->NCBIORGANISMALCLASSIFICATION);
+                $i = 0;
+                $summary .= " NCBI Organism:";
+                foreach($cil->CORE->NCBIORGANISMALCLASSIFICATION as $ncbi)
+                {
+                    if(isset($ncbi->onto_name))
+                    {
+                        $summary .=$ncbi->onto_name;
+                    }
+                            
+                    if($i != $count)
+                        $summary .= ", ";
+                }
+                $summary .= ";";
+            }
+        }
+                 
+                 
+        //------------------Cell type--------------------------
+        if(isset($cil->CORE->CELLTYPE))
+        {
+                     
+            if(!is_array($cil->CORE->CELLTYPE))
+            {
+                        
+                if(isset($cil->CORE->CELLTYPE->onto_name))
+                {         
+                    $summary .= " Cell Types:".$cil->CORE->CELLTYPE->onto_name;
+                }
+                                 
+            }
+            else
+            {
+                $count = count($cil->CORE->CELLTYPE);
+                $i = 0;
+                $summary .= " Cell Types:";
+                foreach($cil->CORE->CELLTYPE as $cell)
+                {
+                    if(isset($cell->onto_name))
+                        $summary .= $cell->onto_name;
+                             
+                    $i++;
+                             
+                    if($i != $count)
+                        $summary .=  ", ";
+                }
+                $summary .= ";";
+            }
+        }
+        //------------------End Cell type--------------------------
+                 
+                 
+        //---------------Cell components--------------------
+        if(isset($cil->CORE->CELLULARCOMPONENT))
+        {
+            if(!is_array($cil->CORE->CELLULARCOMPONENT))
+            {
+                if(isset($cil->CORE->CELLULARCOMPONENT->onto_name))
+                {          
+                    $summary .= " Cell Components:".$cil->CORE->CELLULARCOMPONENT->onto_name;
+                }                     
+            }
+            else
+            {
+                $count = count($cil->CORE->CELLULARCOMPONENT);
+                $i = 0;
+                $summary .= " Cell Components:";
+                foreach($cil->CORE->CELLULARCOMPONENT as $cell)
+                {
+                    if(isset($cell->onto_name))
+                        $summary .= $cell->onto_name;
+                             
+                    $i++;
+                             
+                    if($i != $count)
+                        $summary .=  ", ";
+                }
+                $summary .= ";";
+            }            
+        }
+        //--------------------End cell component----------------------
+                 
+                 
+        //--------------------Biological process------------------------
+                 
+        if(isset($cil->CORE->BIOLOGICALPROCESS))
+        {
+            if(!is_array($cil->CORE->BIOLOGICALPROCESS))
+            {
+                if(isset($cil->CORE->BIOLOGICALPROCESS->onto_name))
+                {
+                    $summary .= " Biological process:".$cil->CORE->BIOLOGICALPROCESS->onto_name;
+                }
+                                 
+            }
+            else
+            {
+                $count = count($cil->CORE->BIOLOGICALPROCESS);
+                $i = 0;
+                $summary .= " Biological process:";
+                foreach($cil->CORE->BIOLOGICALPROCESS as $bio)
+                {
+                    if(isset($bio->onto_name))
+                        $summary .= $bio->onto_name;
+                             
+                    $i++;
+                             
+                    if($i != $count)
+                        $summary .=  ", ";
+                }
+                $summary .= ";";
+            }
+                 
+        }
+        return htmlspecialchars($summary);
+    }
 
-    
 }
 

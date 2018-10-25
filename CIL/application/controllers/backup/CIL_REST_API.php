@@ -15,7 +15,7 @@ spl_autoload_register(function($class){
 
 });
 
-//require_once 'C:\Users\Willy\Documents\apache\Apache24\html\CIL\application\libraries\REST_Controller.php';
+
 require_once './application/libraries/REST_Controller.php';
 
 class CIL_REST_API extends REST_Controller

@@ -1,5 +1,17 @@
 <?php
 require_once 'CILServiceUtil2.php';
+
+
+/**
+ * This class handles the ontology expansion queries.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class Adv_query_util
 {
     function handleText($model,$input,$key)
@@ -64,6 +76,12 @@ class Adv_query_util
                    $model->search_for = $model->search_for."attribution nc images";
                 else if(strcmp($key, 'copyright') == 0)
                    $model->search_for = $model->search_for."copyrighted images";
+                else if(strcmp($key, 'image2d') == 0)
+                   $model->search_for = $model->search_for."Image 2D";
+                else if(strcmp($key, 'reconstruction') == 0)
+                   $model->search_for = $model->search_for."Reconstruction";
+                else if(strcmp($key, 'segmentation') == 0)
+                   $model->search_for = $model->search_for."Segmentation";
                 else
                     $model->search_for = $model->search_for.$key;     
               
@@ -148,6 +166,25 @@ class Adv_query_util
             $qstring = $qstring." AND (CIL_CCDB.Data_type.Time_series:true)";
             $count++;
         }
+        
+        /////CCDB related////
+        if(!is_null($model->image2d))
+        {
+            $qstring = $qstring." AND (CIL_CCDB.CCDB.Image2d.Image2D_Downloadable_data:*)";
+            $count++;
+        }
+        if(!is_null($model->reconstruction))
+        {
+            $qstring = $qstring." AND (CIL_CCDB.CCDB.Reconstruction.Recon_Downloadable_data:*)";
+            $count++;
+        }
+        if(!is_null($model->segmentation))
+        {
+            $qstring = $qstring." AND (CIL_CCDB.CCDB.Segmentation.Seg_Downloadable_data:*)";
+            $count++;
+        }
+        
+        ////End CCDB related///
         
         if(!is_null($model->grouped) && $model->grouped)
         {
@@ -514,7 +551,7 @@ class Adv_query_util
         {
             $result = $json->hits->hits[0];
             if(!isset($result->_source->Expansion->Terms))
-                return $array();
+                return $array;
             $terms = $result->_source->Expansion->Terms;
             
             if(isset($result->_source->Expansion->Onto_id))
@@ -558,7 +595,7 @@ class Adv_query_util
     }
     
     
-    private function simpleOntologyExpansion($type,$field,$search_value,$size)
+    public function simpleOntologyExpansion($type,$field,$search_value,$size)
     {
         $search_value = str_replace(" ", "%20", $search_value);
         $sutil = new CILServiceUtil2();
@@ -566,7 +603,7 @@ class Adv_query_util
         $url = $CI->config->item('simple_ontology_expansion_prefix')."/".$type."/".$field."/".$search_value."?size=".$size;
         
         $adv_debug = $CI->config->item('adv_debug');
-        if($adv_debug)
+        if($true)
         {
             echo "<br/>".$url;
         }
@@ -586,17 +623,18 @@ class Adv_query_util
      * @param type $search_value
      * @return type
      */
-    private function ontologyExpansion($type,$field,$search_value)
+    public function ontologyExpansion($type,$field,$search_value)
     {
         $sutil = new CILServiceUtil2();
         $CI = CI_Controller::get_instance();
         //echo "<br/>ontologyExpansion search_value:".$search_value;
         $service_host = $CI->config->item("service_api_host");
         $url = $service_host."/rest/ontology_expansion/".$type."/".$field;
-        //echo "\nURL:".$url;
+        //echo "\nExpansion URL:".$url;
         $array = array();
         $array['Search_value'] = $search_value;
         $json_str = json_encode($array);
+        //echo "<br/>".$json_str;
         $response = $sutil->curl_get_data($url, $json_str);
         //file_put_contents("C:/CIL_GIT/test.json", $response);
         $json = json_decode($response);

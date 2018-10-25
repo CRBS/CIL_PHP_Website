@@ -58,10 +58,8 @@
     </div>
     <div class="row top-buffer">
         <div class="col-md-12">
-            <span class="cil_title">Citing The Library in Your Resume/CV</span>
-            <p class="faq_regular_font">To cite original images, videos, and animations published in The Cell we suggest the following format:</p>
-            <p>&nbsp;</p>
-            <p class="faq_regular_font">Brandner, D. and Withers, G. (2010) Images of &lt;<em>description&nbsp;</em>&gt;.&nbsp;&nbsp;The Cell Image Library, <a href="/pages/contribute?href=www.cellimagelibrary.org">www.cellimagelibrary.org</a>, CIL numbers 10106, 10107, and 10108,&nbsp;ASCB.</p>
+            <span class="cil_title">Citing The Library</span>
+            <p class="faq_regular_font">Please use the Cite button next to the CIL:.</p>
             <p>&nbsp;</p>
         </div>
     </div>

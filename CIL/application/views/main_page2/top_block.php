@@ -1,18 +1,5 @@
 <div class="row">
     <div class="col-md-4">
-        
-        <!--
-        <ul class="footer_nav">
-            <li><a class="survey_plain" href="/pages/about">About</a></li>
-            <li><a class="survey_plain" href="/pages/license">Licensing</a></li>
-            <li><a class="survey_plain" href="/pages/notification">Notification of Use</a></li>
-        </ul>
-        <ul class="footer_nav top-buffer">
-            <li><a class="survey_plain" href="/pages/cell_illustration">Interactive Cell</a></li>
-            <li><a class="survey_plain" href="https://giveto.ucsd.edu/?sk=459">Donate</a></li>
-            <li><a class="survey_plain" href="/pages/guest">Guest Book</a></li>
-        </ul>
-        -->
         <div class="row">
             <div class="col-md-12">
                 <a class="cil_16_font" href="/pages/about">About</a>
@@ -26,19 +13,19 @@
             <div class="col-md-12">
                 <a class="cil_16_font" href="/pages/cell_illustration">Interactive Cells</a>
             </div>
-            <!-- <div class="col-md-12">
-                <a class="cil_16_font" href="https://giveto.ucsd.edu/?sk=459">Donate</a>
-            </div> -->
-            <!-- <div class="col-md-12">
-                <a class="cil_16_font" href="/pages/guest">Guest Book</a>
-            </div> -->
+            <div class="col-md-12">
+                <a class="cil_16_font" href="https://github.com/slash-segmentation/CIL_PHP_Website" target="_blank">Open source</a>
+            </div>
+            <div class="col-md-12">
+                <a class="cil_16_font" href="/cdeep3m" target="_blank">CDeep3M</a>
+            </div>
         </div>
 
         <div class="top-buffer"></div>
     </div>
     <div class="col-md-5">
         <p class="cil_16_font_black">
-            Welcome to our newly redesigned website.<br/><br/> Enjoy exploring our over 10,000 unique datasets and 20 TB of data.<br/><br/> Please send all feedback and suggestions to <a class="cil_16_font_no_color" href="mailto:dorloff@ncmir.ucsd.edu?Subject=suggestions" target="_top">dorloff@ncmir.ucsd.edu</a>.<br/>
+            Enjoy exploring our over 10,000 unique datasets and 20 TB of data.<br/><br/> Interested in submitting images? Contact <a class="cil_16_font_no_color" href="mailto:dorloff@ncmir.ucsd.edu?Subject=suggestions" target="_top">dorloff@ncmir.ucsd.edu</a>.<br/><br/>
         </p>
     </div>
     <div class="col-md-3">

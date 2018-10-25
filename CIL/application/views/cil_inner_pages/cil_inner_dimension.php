@@ -215,8 +215,16 @@
             <tr class="<?php echo $nextColor ?>">
 
                 <th><span class="cil_black_font"><b>Time</b></span></th>
-            <th><?php  echo $dim->Time->value." ".$dim->Time->unit;  ?> </th>
-            <th><?php echo $dim->Time->frame; ?></th>
+            <th><?php  
+                    if(isset($dim->Time->value) &&
+                            isset($dim->Time->unit))
+                        echo $dim->Time->value." ".$dim->Time->unit;  
+                
+                ?></th>
+            <th><?php 
+                    if(isset($dim->Time->frame))
+                        echo $dim->Time->frame; 
+                ?></th>
             </tr>
 <?php
                 }

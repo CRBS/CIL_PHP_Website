@@ -1,6 +1,18 @@
 <?php
 require_once 'CILServiceUtil2.php';
 require_once 'GeneralUtil.php';
+
+/**
+ * This class is a CodeIgniter controller which performs the keyword
+ * search and display the results.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class Search  extends CI_Controller 
 {
     public function keywords()

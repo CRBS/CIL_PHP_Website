@@ -12,13 +12,13 @@
     
 </div>
 <br/>
-<div class="row">
+<!-- <div class="row">
     <div class="col-md-12">
         <p class="cil_black_font">
         Apple, the Apple logo, iPad, and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.<br>
         </p>
     </div>
-</div>
+</div> -->
 
 
 

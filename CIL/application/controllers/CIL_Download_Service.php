@@ -1,6 +1,18 @@
 <?php
 require_once './application/libraries/REST_Controller.php';
 require_once 'CILServiceUtil2.php';
+
+/**
+ * This class is a CodeIgniter controller which tracks the download
+ * statistics.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class CIL_Download_Service extends REST_Controller
 {
     public function track_download_post()

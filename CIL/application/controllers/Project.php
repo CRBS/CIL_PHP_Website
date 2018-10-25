@@ -3,6 +3,18 @@
 require_once 'CILServiceUtil2.php';
 require_once 'GeneralUtil.php';
 require_once 'Paginator.php';
+
+/**
+ * This class is a CodeIgniter controller and its main function is
+ * to list the CCDB images under a project ID.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class Project  extends CI_Controller 
 {
     public function view($project_id)
@@ -47,7 +59,15 @@ class Project  extends CI_Controller
         $response = $sutil->curl_get($searchURL);
 
         $result = json_decode($response);
-            
+        if(is_null($result))
+        {
+            $data['title'] = 'The Cell Image Library';
+            $this->load->view('templates/cil_header4', $data);
+            $this->load->view('cil_errors/empty_response_error', $data);
+            $this->load->view('templates/cil_footer2', $data); 
+            return;
+        }    
+        
         $data['page_num'] = $page;
         $data['size']=$size;
         $data['total']=$result->hits->total;

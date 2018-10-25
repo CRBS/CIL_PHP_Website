@@ -4,9 +4,9 @@
         <img id="escherichia_coli_img" class="interactive_cell_width" src="/pic/interactive_cells/escherichia_coli/default.png">
     </div>
     <div class="col-md-3 row_no_gap_right">
-         <ul class="list-group">
-            <li id="cell_wall" class="list-group-item "><a href="/images?image_search_parms[cellular_component]=cell+wall&advanced_search=Advanced+Search" class="anchor_blue">Cell Wall</a></li>
-            <li id="inner_membrane" class="list-group-item "><a href="/images?k=membrane&image_search_parms[cell_type]=prokaryotic+cell&advanced_search=Advanced+Search" class="anchor_blue">Inner Membrane</a></li>
+         <ul class="list-group"> 
+            <li id="cell_wall" class="list-group-item"><a href="/images?image_search_parms[cellular_component]=cell+wall&advanced_search=Advanced+Search" class="anchor_blue">Cell Wall</a></li>
+            <li id="inner_membrane" class="list-group-item"><a href="/images?k=membrane&image_search_parms[cell_type]=prokaryotic+cell&advanced_search=Advanced+Search" class="anchor_blue">Inner Membrane</a></li>
             <li id="outer_membrane" class="list-group-item"><a href="/images?k=membrane&image_search_parms[cell_type]=prokaryotic+cell&advanced_search=Advanced+Search" class="anchor_blue">Outer Membrane</a></li>
             <li id="peptidoglycan_layer" class="list-group-item"><a href="/images?image_search_parms[cellular_component]=cell+wall&advanced_search=Advanced+Search" class="anchor_blue">Peptidoglycan Layer</a></li>
             <li id="Cytoplasm" class="list-group-item"><a href="/images?image_search_parms[cellular_component]=cell+wall&advanced_search=Advanced+Search" class="anchor_blue">Cytoplasm</a></li>

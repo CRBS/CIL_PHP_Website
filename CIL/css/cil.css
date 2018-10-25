@@ -24,6 +24,12 @@
 
 .menu_item_width
 {
+    width:130px;
+    text-align: center;
+}
+
+.menu_item_width2
+{
     width:170px;
     text-align: center;
 }
@@ -323,6 +329,53 @@
     color: #000000;
 }
 
+.cil_14_san_regular_font
+{
+    font-family: "DroidSansRegular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+}
+
+.cil_san_regular_font
+{
+    font-family: "DroidSansRegular";
+    font-style: normal;
+}
+
+.cil_13_san_regular_font
+{
+    font-family: "DroidSansRegular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+
+}
+
+
+.cil_18_san_regular_font700
+{
+    font-family: "DroidSansRegular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.cil_18_san_regular_font
+{
+    font-family: "DroidSansRegular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+}
+
 .cil_18_regular_font
 {
     font-family: "DroidSerifRegular";
@@ -374,7 +427,8 @@
 
 /* Overrides list-group-item from Bootstrap */ 
 .list-group-item {
-    padding: 3px 10px
+    padding: 3px 10px;
+    border: none;
 }
 
 .top_menu_font
@@ -407,6 +461,16 @@
     color: black;
 }
 
+.cil_16_font_white
+{
+    font-family: "DroidSansRegular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: normal;
+    color: white;
+}
+
 .cil_16_font_no_color
 {
     font-family: "DroidSansRegular";
@@ -435,3 +499,52 @@
     font-style: normal;
     /* color: #333333; */
 }
+
+.cil_text_box_align {
+  height: 30px;
+  display : flex;
+  align-items : center;
+}
+
+/********* footer **************/
+.footer {
+  position: relative;
+  margin-top: -100px; /* negative value of footer height */
+  clear:both;
+  padding-top:10px;
+} 
+
+
+.footer_background0
+{
+    background-color: #f2f2f2;
+}
+
+.footer_background
+{
+    background-color: #e6e6e6;
+}
+
+
+.footer_background2
+{
+    background-color: #a6a6a6;
+}
+
+
+.footer-row{
+  
+  display: flex;
+  justify-content: space-between;
+  /* Adding for cross browser support */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+/*********End footer **************/
+

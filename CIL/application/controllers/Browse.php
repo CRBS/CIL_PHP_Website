@@ -2,6 +2,20 @@
 require_once 'CILServiceUtil2.php';
 require_once 'GeneralUtil.php';
 require_once 'Paginator.php';
+
+
+/**
+ * This class is a CodeIgniter controller which handles the  
+ * category queries such as the cell type, cell component, cell process,
+ * and organism.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class Browse  extends CI_Controller 
 {
     private function getQueryFileName(&$summary,$input)
@@ -36,6 +50,205 @@ class Browse  extends CI_Controller
         
     }
     
+    public function microbial($input="None")
+    {
+        $data['cil_data_host'] = $this->config->item('cil_data_host');
+        $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
+        $data['category_title'] = $input;
+        
+        $adv_debug = $this->config->item('adv_debug');
+        $cutil = new CILServiceUtil2();
+        $gutil = new GeneralUtil();
+        
+        $data['test'] = "test"; //Just to initialize $data
+        ////////Handle page and size////////////
+        $page = 0;
+        $size = 10;
+        
+        $temp = $this->input->get('page',TRUE);
+        if(!is_null($temp))
+        {
+            $page = intval($temp);
+            $page = $page-1;
+            if($page < 0)
+                $page = 0;
+        }
+        
+        $temp = $this->input->get('per_page',TRUE);
+        if(!is_null($temp))
+        {
+            $size = intval($temp);
+            if($size < 0)
+                $size = 10;
+        }
+        $from = $page*$size;
+        ////////End handle page and size////////////
+        
+        
+        ///////Handle the image filter/////////////
+        $basic_still = false;
+        $basic_video = false;
+        $basic_zstack = false;
+        $basic_time = false;
+        $filter_query_str = "";
+        
+        $temp = $this->input->get('refresh_still',TRUE);
+        if(!is_null($temp))
+        {
+            if(strcmp($temp, strtolower("true"))==0)
+            {
+                $basic_still = true;
+                $data['refresh_still'] = true;
+            }
+        }
+        
+        $temp = $this->input->get('refresh_video',TRUE);
+        if(!is_null($temp))
+        {
+            if(strcmp($temp, strtolower("true"))==0)
+            {
+                $basic_video = true;
+                $data['refresh_video'] = true;
+            }
+        }
+        
+        $temp = $this->input->get('refresh_zstack',TRUE);
+        if(!is_null($temp))
+        {
+            if(strcmp($temp, strtolower("true"))==0)
+            {
+                $basic_zstack = true;
+                $data['refresh_zstack'] = true;
+            }
+        }
+        
+        $temp = $this->input->get('refresh_time',TRUE);
+        if(!is_null($temp))
+        {
+            if(strcmp($temp, strtolower("true"))==0)
+            {
+                $basic_time = true;
+                $data['refresh_time'] = true;
+            }
+        }
+        ///////End handle the image filter/////////
+        
+        if(strcmp($input,"None")==0)
+        {
+            $algaeResults = $cutil->getMicrobial("algae", 0, 1,false,false,false,false);
+            $fungiResults = $cutil->getMicrobial("fungi", 0, 1,false,false,false,false);
+            $bacteriaResults = $cutil->getMicrobial("bacteria", 0, 1,false,false,false,false);
+            $protozoaResults = $cutil->getMicrobial("protozoa", 0, 1,false,false,false,false);
+            $virusResults = $cutil->getMicrobial("virus", 0, 1,false,false,false,false);
+
+            if(!is_null($algaeResults))
+                $data['algaeResults'] = json_decode($algaeResults);
+            
+            if(!is_null($fungiResults))
+                $data['fungiResults'] = json_decode($fungiResults);
+            
+            if(!is_null($bacteriaResults))
+                $data['bacteriaResults'] = json_decode($bacteriaResults);
+            
+            if(!is_null($protozoaResults))
+                $data['protozoaResults'] = json_decode($protozoaResults);
+            
+            if(!is_null($virusResults))
+                $data['virusResults'] = json_decode($virusResults);
+            
+            $this->load->view('templates/cil_header4', $data);
+            $this->load->view('categories2/microbial_display', $data);
+            $this->load->view('templates/cil_footer2', $data);
+        }
+        else 
+        {
+            //echo "<br/>Input:".$input;
+            $input = strtolower($input);
+            $response = $cutil->getMicrobial($input, $from, $size,
+                $basic_time,$basic_still,$basic_zstack,$basic_video);
+            $result = json_decode($response);
+            $category = $input;
+            $this->load->view('templates/cil_header4', $data);
+            $context_name = "microbial";
+            //Non-empty results
+            if(isset($result->hits->total))
+            {
+                //echo "<br/>---------Results hit";
+                $data['result'] = $result;
+                $data['total'] = $result->hits->total;
+                $data['size'] = $size;
+                $data['category'] = $category;
+                $data['context_name'] = $context_name;
+                $data['page_num'] = $page;//$page_num;
+
+                ///////////////////////////pagination/////////////////////////////////
+                $currentPage = $page+1;
+                $data['currentPage'] = $currentPage;
+                
+                         
+                /////////Filter params for the pagination/////////
+                $additional_params = "";
+                if($basic_still)
+                {
+                    if(strlen($additional_params)>0)
+                        $additional_params=$additional_params."&";
+                    $additional_params="refresh_still=true";
+                }
+                         
+                if($basic_video)
+                {
+                    if(strlen($additional_params)>0)
+                        $additional_params=$additional_params."&";
+                    $additional_params="refresh_video=true";
+                }
+                         
+                if($basic_zstack)
+                {
+                    if(strlen($additional_params)>0)
+                        $additional_params=$additional_params."&";
+                    $additional_params="refresh_zstack=true";
+                }
+                         
+                if($basic_time)
+                {
+                    if(strlen($additional_params)>0)
+                        $additional_params=$additional_params."&";
+                    $additional_params="refresh_time=true";
+                }
+                /////////End filter params for the pagination/////////
+                         
+                $urlPattern = "";
+                if(strlen($additional_params)==0)
+                    $urlPattern = $this->config->item('base_url').
+                        "/browse/microbial/".$input."?per_page=".$size."&page=";
+                else 
+                    $urlPattern = $this->config->item('base_url').
+                        "/browse/microbial/".$input."?".$additional_params."&per_page=".$size."&page=";
+                     
+                $data['urlPattern'] = $urlPattern;
+                $paginator = new Paginator($result->hits->total, $size, $currentPage, $urlPattern);
+
+                $results_per_pageURL ="";
+                if(strlen($additional_params)==0)
+                    $results_per_pageURL = $this->config->item('base_url').
+                        "/browse/microbial/".$input."?page=";
+                else 
+                    $results_per_pageURL = $this->config->item('base_url').
+                        "/browse/microbial/".$input."?".$additional_params."&page=";
+                      
+                $data['results_per_pageURL'] = $results_per_pageURL;
+
+                $data['paginator'] = $paginator;
+                ////////////////////////////End pagination/////////////////////////////////////
+
+                $this->load->view('categories2/category_search_result_page', $data);
+            }
+            //End non empty result
+            $this->load->view('templates/cil_footer2', $data);
+                        
+        }
+        
+    }
     
     
     public function cellprocess($input="None")
@@ -348,6 +561,8 @@ class Browse  extends CI_Controller
            
                         $this->load->view('templates/cil_header4', $data);
                         //if($result->hits->total > 0)
+                        
+                        //Non-empty results
                         if(isset($result->hits->total))
                         {
                              $data['result'] = $result;
@@ -424,6 +639,7 @@ class Browse  extends CI_Controller
                              //$this->load->view('search/search_results', $data);
                              $this->load->view('categories2/category_search_result_page', $data);
                         }
+                        //End non empty result
                         $this->load->view('templates/cil_footer2', $data);
                         
                     }

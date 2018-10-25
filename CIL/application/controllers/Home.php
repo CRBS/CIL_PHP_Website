@@ -3,6 +3,17 @@ require_once 'CILServiceUtil2.php';
 require_once 'QueryUtil.php';
 require_once 'GeneralUtil.php';
 
+
+/**
+ * This class is a CodeIgniter controller displays the home page.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class Home  extends CI_Controller 
 {
      public function index()
@@ -15,12 +26,23 @@ class Home  extends CI_Controller
          
          //echo $settings_response;
          $settings_json = json_decode($settings_response);
+         if(is_null($settings_json))
+         {
+            $data['title'] = 'The Cell Image Library';
+            $this->load->view('templates/cil_header4', $data);
+            $this->load->view('cil_errors/empty_response_error', $data);
+            $this->load->view('templates/cil_footer2', $data); 
+            return;
+         }
+         
+         
+         
          $summary = array();
          $data['title'] = 'The Cell Image Library';
          $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
          $data['cil_data_host'] = $this->config->item('cil_data_host');
          $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
-         if($settings_json->_source->Home_page->Featured_image)
+         if(isset($settings_json->_source->Home_page->Featured_image))
          {
              $video_folder =  $this->config->item('video_folder');
              $featured_id = $settings_json->_source->Home_page->Featured_image[0];
@@ -35,25 +57,15 @@ class Home  extends CI_Controller
                  if(!is_null($fjson))
                     $data['featured_image'] = $fjson;
              }
-             /* 
-               
-             $base_url = $this->config->base_url();
-             $data['featured_id']  = $featured_id;
-             $data['featured_has_video'] = file_exists($video_folder."/".$featured_id .".flv");
-             $data['featured_video_url'] = $base_url."/videos/".$featured_id .".flv";
-             $image_id = $featured_id;
-             if(is_numeric($featured_id))
-             {
-                 $image_id = "CIL_".$image_id;
-             }
-             $response = $sutil->getImage($image_id);
-             //echo $response;
-             $json = json_decode($response);
              
-             $data['featured_info'] = null;
-             if(!is_null($json))
-                 $data['featured_info'] = $json;
-             //var_dump($json); */
+         }
+         else 
+         {
+            $data['title'] = 'The Cell Image Library';
+            $this->load->view('templates/cil_header4', $data);
+            $this->load->view('cil_errors/empty_response_error', $data);
+            $this->load->view('templates/cil_footer2', $data); 
+            return;
          }
          
          
@@ -88,9 +100,20 @@ class Home  extends CI_Controller
             }
             
          }
+         else 
+         {
+            $data['title'] = 'The Cell Image Library';
+            $this->load->view('templates/cil_header4', $data);
+            $this->load->view('cil_errors/empty_response_error', $data);
+            $this->load->view('templates/cil_footer2', $data); 
+            return;
+         }
+         
          $data['summary'] = $summary;
          $data['test'] = "test";
          $data['settings'] = $settings_json;
+         
+         $data['disable_footer_links'] = true;
          $this->load->view('templates/cil_header4', $data);
          //$this->load->view('main_page/main_display.php', $data);
          $this->load->view('main_page2/main_display.php', $data);
@@ -122,7 +145,7 @@ class Home  extends CI_Controller
                         $count = count($cil->CORE->NCBIORGANISMALCLASSIFICATION);
                         $i = 0;
                         $summary[$id] .= " NCBI Organism:";
-                        foreach($$cil->CORE->NCBIORGANISMALCLASSIFICATION as $ncbi)
+                        foreach($cil->CORE->NCBIORGANISMALCLASSIFICATION as $ncbi)
                         {
                             if(isset($ncbi->onto_name))
                             {

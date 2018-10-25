@@ -3,6 +3,18 @@
 require_once 'CILServiceUtil2.php';
 require_once 'GeneralUtil.php';
 
+
+/**
+ * This class is a CodeIgniter controller which displays all data
+ * contributor names.
+ * 
+ * PHP version 5.6+
+ * 
+ * @author Willy Wong
+ * @license https://github.com/slash-segmentation/CIL_PHP_Website/blob/master/license.txt
+ * @version 1.0
+ * 
+ */
 class Contributors  extends CI_Controller 
 {
     
