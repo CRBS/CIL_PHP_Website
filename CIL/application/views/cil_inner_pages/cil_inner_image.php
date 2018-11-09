@@ -156,9 +156,15 @@
         if(!is_null($jpeg))
         {
         ?>
+            <!--
             <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-            <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/videos/".$numeric_id."/".$jpeg->File_path;  ?>' download>Download in JPEG format</a>
+            <a class='download_menu_anchor' href='<?php //echo $download_prefix."/media/videos/".$numeric_id."/".$jpeg->File_path;  ?>' download>Download in JPEG format</a>
             </div>
+            -->
+            <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
+            <a class='download_menu_anchor' href='/download/web_jpeg/video/<?php echo $numeric_id;  ?>' download>Download in JPEG format</a>
+            </div>
+            
         <?php
         }
         ?>
@@ -167,12 +173,16 @@
         if(!is_null($flv) && isset($flv->File_path) && isset($flv->Size))
         {
         ?>
+        <!-- <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
+        <a class='download_menu_anchor' href='<?php //echo $download_prefix."/media/videos/".$numeric_id."/".$flv->File_path;  ?>' onclick='trackDownload(this,<?php //echo $numeric_id; ?>,<?php //echo $flv->Size;  ?>)'>Download Flash Video (<?php //echo $cutil->convertFileSize($flv->Size);   ?>)</a>
+        </div> -->
         <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-        <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/videos/".$numeric_id."/".$flv->File_path;  ?>' onclick='trackDownload(this,<?php echo $numeric_id; ?>,<?php echo $flv->Size;  ?>)'>Download Flash Video (<?php echo $cutil->convertFileSize($flv->Size);   ?>)</a>
+            <a class='download_menu_anchor' href='/download/web_mp4/<?php echo $numeric_id;  ?>' onclick='trackDownload(this,<?php echo $numeric_id; ?>,<?php echo $flv->Size;  ?>)' >Download MP4 Video (<?php echo $cutil->convertFileSize($flv->Size);   ?>)</a>
         </div>
         <?php
         }
-        ?>    
+        ?>
+
             
         <?php 
         if(!is_null($zip) && isset($zip->File_path) && isset($zip->Size))
