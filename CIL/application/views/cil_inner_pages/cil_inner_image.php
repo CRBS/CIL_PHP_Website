@@ -66,9 +66,13 @@
         if(!is_null($jpeg))
         {
         ?>
-            <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-                <a class='download_menu_anchor' href='<?php echo $download_prefix."/media/images/".$numeric_id."/".$jpeg->File_path;  ?>'  download>Download in JPEG format</a>
+            <!-- <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
+                <a class='download_menu_anchor' href='<?php //echo $download_prefix."/media/images/".$numeric_id."/".$jpeg->File_path;  ?>'  download>Download in JPEG format</a>
             
+            </div> -->
+            
+            <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
+            <a class='download_menu_anchor' href='/download/web_jpeg/video/<?php echo $numeric_id;  ?>' download>Download in JPEG format</a>
             </div>
         <?php
         }
