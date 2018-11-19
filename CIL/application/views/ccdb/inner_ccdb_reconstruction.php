@@ -130,7 +130,7 @@
                 <!---------Amazon Cdeep3m--------------->
                 <?php
                     
-                    if(isset($result->CIL_CCDB->Process->Main_image_url) &&
+                    if(isset($enable_cdeep3m) && $enable_cdeep3m && isset($result->CIL_CCDB->Process->Main_image_url) &&
                         isset($result->CIL_CCDB->CCDB->Imaging_parameters->Em_microscopy_product))
                     {
                         $cdeep3mURL = "https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/review?stackName=cdeep3m-stack-1-6-0&templateURL=https://s3-us-west-2.amazonaws.com/cdeep3m-releases/1.6.0/cdeep3m_1.6.0_basic_cloudformation.json&param_DatasetURL=".$result->CIL_CCDB->Process->Main_image_url."&param_GPUDiskSize=500";

@@ -474,6 +474,7 @@ class Images  extends CI_Controller
         $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
         $data['ccdb_image_prefix'] = $this->config->item('ccdb_image_prefix');
         $data['cil_data_host'] = $this->config->item('cil_data_host');
+        $data['enable_cdeep3m'] = $this->config->item('enable_cdeep3m');
         
         if(strcmp($imageID,"advanced_search")==0)
         {

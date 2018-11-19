@@ -704,7 +704,7 @@ $config['ccdb_direct_data_prefix'] = $cil_config_json->cil_data_host."/ccdb";
 /***********End data download config***********/
 
 
-$config['website_down'] = true;
+$config['website_down'] = false;
 
-
+$config['enable_cdeep3m'] = false;
 
