@@ -72,7 +72,7 @@
             </div> -->
             
             <div class='download_option' onmouseout="this.style.backgroundColor='#8dc63f'" onmouseover="this.style.backgroundColor='#d2ebaf'">
-            <a class='download_menu_anchor' href='/download/web_jpeg/video/<?php echo $numeric_id;  ?>' download>Download in JPEG format</a>
+            <a class='download_menu_anchor' href='/download/web_jpeg/image/<?php echo $numeric_id;  ?>' download>Download in JPEG format</a>
             </div>
         <?php
         }

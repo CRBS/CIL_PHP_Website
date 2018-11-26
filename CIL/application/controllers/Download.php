@@ -29,15 +29,20 @@ class Download extends CI_Controller
         $filename=$numeric_id.".jpg";
         $url = "";
         if(strcmp($dataType,"video")==0)
+        {
+            
             $url = $download_prefix."/media/videos/".$numeric_id."/".$numeric_id.".jpg";
+            //error_log($url,3,"C:/Test/jpeg_download.log");
+        }
         else
+        {
             $url = $download_prefix."/media/images/".$numeric_id."/".$numeric_id.".jpg";
+            //error_log($url,3,"C:/Test/jpeg_download.log");
+        }
             
         $data = $cutil->curl_get($url);
         force_download($filename, $data);
     }
 }    
-/* 
-and open the template in the editor.
- */
+
 
