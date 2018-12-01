@@ -384,6 +384,8 @@ $('#k').autocomplete({
                                                                             }
                                                                             ?>><a href="/browse/microbial">Microbial</a></li>
                                                                         <li class="divider-vertical"></li>
+                                                                        <li class="menu_item_width"><a href="/pages/alzheimers">Alzheimer's</a></li>
+                                                                        <li class="divider-vertical"></li>
                                                                         <li class="menu_item_width"<?php 
                                                                             if(isset($category) && strcmp($category, "datasets")== 0)
                                                                             {
