@@ -708,3 +708,4 @@ $config['website_down'] = false;
 
 $config['enable_cdeep3m'] = false;
 
+$config['image_viewer_prefix'] = $cil_config_json->image_viewer_stage;
