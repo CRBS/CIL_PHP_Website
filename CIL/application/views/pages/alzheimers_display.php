@@ -2,8 +2,8 @@
     <div class="row">
         <div class="col-md-6">
             <center>
-                <video controls="" autoplay="" loop="" width="100%" height="100%">
-                <source src="https://cildata.crbs.ucsd.edu/media/videos/50512/50512_web.mp4" type="video/mp4">
+                <video id="ad_animation_id" controls="" autoplay="" loop="" width="100%" height="100%">
+                <source src="https://cildata.crbs.ucsd.edu/media/videos/<?php echo $animation_id; ?>/<?php echo $animation_id; ?>_web.mp4" type="video/mp4">
                 </video>
             </center>
         </div>
@@ -680,3 +680,8 @@ We examined the structural organization of cytoskeletal components and membrane 
 </div>
     
 
+<script>
+document.getElementById('ad_animation_id').addEventListener('loadedmetadata', function() {
+  this.currentTime = 13;
+}, false);
+</script>
