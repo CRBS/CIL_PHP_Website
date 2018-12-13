@@ -166,9 +166,9 @@ echo "{
   \"base_url_stage\":\"http://localhost\",
   \"base_url_prod\":\"http://localhost\",
   \"service_api_host_dev\":\"http://localhost:8080\",
-  \"service_api_host_stage\":\"https://localhost:8080\",
-  \"service_api_host_prod\":\"https://localhost:8080\",
-  \"cil_data_host\":\"https://localhost\",
+  \"service_api_host_stage\":\"http://localhost:8080\",
+  \"service_api_host_prod\":\"http://localhost:8080\",
+  \"cil_data_host\":\"http://localhost\",
   \"elasticsearchHost_dev\":\"http://localhost:9200\",
   \"elasticsearchHost_stage\":\"http://localhost:9200\",
   \"elasticsearchHost_prod\":\"http://localhost:9200\"
