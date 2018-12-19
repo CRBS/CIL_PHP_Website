@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-md-12">
+    <!-- <div class="col-md-12">
 
         <div class='pnyxediv'>
         <span class='pnyxe_comment_label'>Comments:</span>
@@ -10,7 +10,7 @@
 
         </div>
 
-    </div>
+    </div> -->
     <div class="col-md-12">
     *CIL – Cell Image Library accession number. Please use this to reference an image.
     </div>
