@@ -96,12 +96,13 @@
                     {
                       
                 ?>
-                <span class="pull-right"><a class="button mini" href="#" onclick="openPopup('<?php 
-                   
-                    //echo $result->CIL_CCDB->CCDB->Image2d->WIB;
-                    echo $image_viewer_prefix."/".$image_id; 
+                <!-- <span class="pull-right"><a class="button mini" href="#" onclick="openPopup('<?php 
+                    //echo $image_viewer_prefix."/".$image_id; 
+                ?>'); return false;">Open Detailed Viewer</a></span> -->
                 
-                ?>'); return false;">Open Detailed Viewer</a></span>
+                <span class="pull-right"><a class="button mini" href="#" onclick="openPopupAndTrack('<?php 
+                    echo $image_viewer_prefix."/".$image_id; 
+                ?>','<?php echo $image_id; ?>'); return false;">Open Detailed Viewer</a></span>
                         
                 <?php
                     }
