@@ -54,3 +54,14 @@ function trackDownload(obj,id,size)
     });
     
 }
+
+function trackImageViewerClick(id)
+{
+    var data = "{\"Ip_address\":\""+ip_address+"\",\"ID\":\""+id+"\"}";
+    $.post('/CIL_Download_Service/track_image_viewer', data, function(returnedData) {
+    //console.log(returnedData);
+    })
+    .error(function() { 
+   //alert("error"); 
+    });
+}

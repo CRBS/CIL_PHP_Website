@@ -26,4 +26,13 @@ class CIL_Download_Service extends REST_Controller
        //$this->response("success");
        //file_put_contents("C:/Test/".uniqid().".txt", $response);
     }
+    
+    public function track_image_viewer_post()
+    {
+       $cutil = new CILServiceUtil2();
+       $input = file_get_contents('php://input', 'r');
+       $service_api_host = $this->config->item('service_api_host');
+       $url = $service_api_host."/rest/track_image_viewer";
+       $response = $cutil->curl_post($url, $input);
+    }
 }

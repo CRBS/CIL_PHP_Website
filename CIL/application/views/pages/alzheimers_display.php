@@ -14,7 +14,7 @@
             <br/>
             <p class="cil_description">We observed several interesting ultrastructural features in AD neurons. These include associations of paired helical filaments (PHF) with the membranes of the nuclear envelope and with ribosomes, differences between the distribution of the Golgi apparatus in neurons containing paired helical filament bundles as compared to neurons without these filaments, and abnormalities in the microtubules of neuronal processes in the vicinity of neuritic plaques.</p>
             <br/>
-            <a class="btn btn-default cil_san_regular_font" href='https://link.springer.com/chapter/10.1007/978-1-4613-1657-2_6' target="_blank">Full Text Link</a>
+            <a class="btn btn-default cil_san_regular_font" href='https://link.springer.com/chapter/10.1007/978-1-4613-1657-2_6' target="_blank">Read the article</a>
         </div>
     </div>
     
