@@ -131,8 +131,8 @@
         </div>
     </div>
     <div class="col-md-6 ">
-        <!-- <span class="pull-right"><a class="button mini" href="#" onclick="openPopup('http://am.celllibrary.org/ascb_il/full_viewer/<?php //echo $numeric_id ?>'); return false;">Open Detailed Viewer</a></span> -->
-        <span class="pull-right"><a class="button mini" href="#" onclick="openPopup('<?php echo $image_viewer_prefix;  ?>/CIL_<?php echo $numeric_id ?>'); return false;">Open Detailed Viewer</a></span>
+        <span class="pull-right"><a class="button mini" href="#" onclick="openPopupAndTrack('<?php echo $image_viewer_prefix;  ?>/CIL_<?php echo $numeric_id ?>','CIL_<?php echo $numeric_id ?>'); return false;">Open Detailed Viewer</a></span>
+        <!-- <span class="pull-right"><a class="button mini" href="#" onclick="openPopup('<?php //echo $image_viewer_prefix;  ?>/CIL_<?php //echo $numeric_id ?>'); return false;">Open Detailed Viewer</a></span> -->
     </div>
 </div>
 <?php
