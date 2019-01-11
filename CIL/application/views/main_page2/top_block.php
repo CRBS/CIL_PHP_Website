@@ -24,9 +24,16 @@
         <div class="top-buffer"></div>
     </div>
     <div class="col-md-5">
+        <?php 
+        if(isset($is_staging_server) && $is_staging_server)
+        {
+        ?>
         <div class="alert alert-warning cil_16_font_black" role="alert">
             You are currently visiting our staging server. For the public library please visit <a href="http://www.cellimagelibrary.org" target="_self">www.cellimagelibrary.org</a>.
         </div>
+        <?php
+        }
+        ?>
         <p class="cil_16_font_black">
             Enjoy exploring our over 10,000 unique datasets and 20 TB of data.<br/><br/> Interested in submitting images? Contact <a class="cil_16_font_no_color" href="mailto:dorloff@ncmir.ucsd.edu?Subject=suggestions" target="_top">dorloff@ncmir.ucsd.edu</a>.<br/><br/>
         </p>

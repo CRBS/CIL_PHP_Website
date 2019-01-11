@@ -708,6 +708,6 @@ $config['website_down'] = false;
 
 $config['enable_cdeep3m'] = false;
 
-$config['staging_warning_message'] = true;
+$config['is_staging_server'] = true;
 
 $config['image_viewer_prefix'] = $cil_config_json->image_viewer_stage;
