@@ -42,6 +42,7 @@ class Home  extends CI_Controller
          $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
          $data['cil_data_host'] = $this->config->item('cil_data_host');
          $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
+         $data['staging_warning_message'] = $this->config->item('staging_warning_message');
          if(isset($settings_json->_source->Home_page->Featured_image))
          {
              $video_folder =  $this->config->item('video_folder');
