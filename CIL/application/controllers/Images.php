@@ -504,6 +504,40 @@ class Images  extends CI_Controller
         
         $response = $sutil->getImage($imageID);
         $json = json_decode($response);
+        $isAccessible = false;
+        if(isset($json->CIL_CCDB->Status->Is_public) && !$json->CIL_CCDB->Status->Is_public)
+        {
+            $key = $this->input->get('key',TRUE);
+            if(is_null($key))
+            {
+                show_404();
+                return;
+            }
+            $pResponse = $sutil->getDataPermissions($key);
+            //echo $pResponse;
+            //return;
+            $pjson = json_decode($pResponse);
+            if(isset($pjson->_source->Data_permissions->Datasets))
+            {
+               
+                $tempID = str_replace("CIL_", "", $imageID);
+                $datasets = $pjson->_source->Data_permissions->Datasets;
+                foreach($datasets as $dataset)
+                {
+                    if(strcmp($dataset, $tempID)==0)
+                    {
+                        $isAccessible = true;
+                        break;
+                    }
+                }
+            }
+            if(!$isAccessible)
+            {
+                show_404();
+                return;
+            }
+        }
+        
         $data['test'] = "test";
         $data['json'] = $json;
         $data['response'] = $response;
