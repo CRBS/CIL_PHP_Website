@@ -116,18 +116,17 @@
             if(!isset($turn_off_jquery_1_12))
             {    
         ?>
-        <script src="/js/jquery/jquery-1.12.4/jquery-1.12.4.js"></script> 
+        <script src="/js/jquery/jquery-1.12.4/jquery-1.12.4.js"></script>
         <?php
             }
         ?>
         
         
-        <!-- <script src="/js/jquery/jquery-1.12.1/jquery-ui.js"></script> -->
+        <!-- <script src="/js/jquery/jquery-1.12.1/jquery-ui.js"></script> --> <!--Speed optimization -->
         
         <script src="/js/cil_js_util.js<?php echo "?".uniqid(); ?>"></script>
         <script src="/js/cil_interactive_cell.js<?php echo "?".uniqid(); ?>"></script>
         
-        <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.3/themes/default/style.min.css" /> -->
         <link rel="stylesheet" href="/css/ajax/libs/jstree/3.3.3/themes/default/style.min.css" />
         
         
