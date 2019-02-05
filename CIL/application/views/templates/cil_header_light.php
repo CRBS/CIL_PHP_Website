@@ -99,7 +99,7 @@
         
        
         <script src="/old_cil/javascripts/jquery-ui-1.8.16.custom.min.js?<?php echo rand(100000,99999999);   ?>" type="text/javascript"></script>
-        <link href="/old_cil/stylesheets/jquery-ui-1.8.16.custom.css?<?php echo rand(100000,99999999);   ?>" media="screen" rel="stylesheet" type="text/css" />
+        <!-- <link href="/old_cil/stylesheets/jquery-ui-1.8.16.custom.css?<?php //echo rand(100000,99999999);   ?>" media="screen" rel="stylesheet" type="text/css" /> --> <!--Speed optimization -->
         
         <script src="/old_cil/javascripts/all.js?<?php echo rand(100000,99999999);   ?>" type="text/javascript"></script>
         <!-- <script src="/old_cil/javascripts/jquery.jstree.js?<?php //echo rand(100000,99999999);   ?>" type="text/javascript"></script> -->
@@ -116,7 +116,7 @@
             if(!isset($turn_off_jquery_1_12))
             {    
         ?>
-        <script src="/js/jquery/jquery-1.12.4/jquery-1.12.4.js"></script>
+        <!-- <script src="/js/jquery/jquery-1.12.4/jquery-1.12.4.js"></script> --> <!--Speed optimization -->
         <?php
             }
         ?>

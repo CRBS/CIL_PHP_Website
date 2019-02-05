@@ -179,7 +179,8 @@ class Images  extends CI_Controller
             if(is_null($result))
             {
                 $data['title'] = 'The Cell Image Library';
-                $this->load->view('templates/cil_header4', $data);
+                //$this->load->view('templates/cil_header4', $data);
+                $this->load->view('templates/cil_header_light', $data);
                 $this->load->view('cil_errors/empty_response_error', $data);
                 $this->load->view('templates/cil_footer2', $data); 
                 return;
@@ -189,7 +190,8 @@ class Images  extends CI_Controller
             {
                 $data['result'] = $result;
                 $data['keywords']=$keywords;
-                $this->load->view('templates/cil_header4', $data);
+                //$this->load->view('templates/cil_header4', $data);
+                $this->load->view('templates/cil_header_light', $data);
                 $this->load->view('search/search_error_display', $data);
                 $this->load->view('templates/cil_footer2', $data);
                 return;
@@ -269,7 +271,8 @@ class Images  extends CI_Controller
             
             
             
-            $this->load->view('templates/cil_header4', $data);
+            //$this->load->view('templates/cil_header4', $data);
+            $this->load->view('templates/cil_header_light', $data);
             $this->load->view('search/search_results', $data);
             $this->load->view('templates/cil_footer2', $data);
              
