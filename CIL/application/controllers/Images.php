@@ -299,9 +299,6 @@ class Images  extends CI_Controller
                
             }
 
-            
-            
-            
             $response = $sutil->curl_get_data($query_url,$query);
             
             //echo "<br/>".$query_url;
