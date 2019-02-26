@@ -73,3 +73,52 @@ function openPopupAndTrack(url,id) {
 	if (!owindow.closed) owindow.focus();
 	return false;
 }
+
+
+function toggleLicenseBox(input)
+{
+    //alert(input);
+    if(input == 'public_domain')
+    {
+        //document.getElementById('public_domain').checked = true;
+        if(document.getElementById('public_domain').checked)
+        {
+            document.getElementById('attribution_cc').checked = false;
+            document.getElementById('attribution_nc_sa').checked = false;
+            document.getElementById('copyright').checked = false;
+        }
+    }
+    
+    if(input == 'attribution_cc')
+    {
+        //document.getElementById('public_domain').checked = true;
+        if(document.getElementById('attribution_cc').checked)
+        {
+            document.getElementById('public_domain').checked = false;
+            document.getElementById('attribution_nc_sa').checked = false;
+            document.getElementById('copyright').checked = false;
+        }
+    }
+    
+    if(input == 'attribution_nc_sa')
+    {
+        //document.getElementById('public_domain').checked = true;
+        if(document.getElementById('attribution_nc_sa').checked)
+        {
+            document.getElementById('public_domain').checked = false;
+            document.getElementById('attribution_cc').checked = false;
+            document.getElementById('copyright').checked = false;
+        }
+    }
+    
+    if(input == 'copyright')
+    {
+        //document.getElementById('public_domain').checked = true;
+        if(document.getElementById('copyright').checked)
+        {
+            document.getElementById('public_domain').checked = false;
+            document.getElementById('attribution_cc').checked = false;
+            document.getElementById('attribution_nc_sa').checked = false;
+        }
+    }
+}
