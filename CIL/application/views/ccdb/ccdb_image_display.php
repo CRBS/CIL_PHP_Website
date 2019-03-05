@@ -304,6 +304,48 @@
                     </div>
                     
                 </div>
+                <div class="col-md-12">
+                     <!----------Model--------------------->
+            <div class="modal fade" id="citation_modal2" role="dialog">
+                <div class="modal-dialog">
+
+                  
+                  <div class="modal-content">
+                      <div class="modal-header" style="background-color: #92d4f0" >
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <span class="cil_16_font_white">Citation Information</span>
+                      </div>
+                    <div class="modal-body" id="modal-body-id">
+                    <?php
+                        if(isset($json->CIL_CCDB->Citation->Title) &&
+                            isset($json->CIL_CCDB->Citation->DOI))
+                        {
+                            
+                        ?>
+                        <span class="cil_description">
+                    <?php
+                    
+                    
+                            echo $json->CIL_CCDB->Citation->Title.". ";
+                            echo "https://doi.org/".$json->CIL_CCDB->Citation->DOI;
+                            
+                    
+                    ?>
+                        </span>
+                    <?php
+                        }
+                        
+                    ?>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div> 
+            <!----------End modal----------------->
+                </div>
             </div>
     
     
@@ -311,3 +353,15 @@
         
     </div>
 </div>
+<script>
+    $( function() {
+
+        $( "#citation_btn_id" ).click(function() 
+        {
+            
+            $('#citation_modal2').modal({
+                show: true
+              })
+        });
+    });
+</script>

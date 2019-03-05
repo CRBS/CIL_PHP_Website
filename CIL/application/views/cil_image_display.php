@@ -233,7 +233,6 @@
 
         $( "#citation_btn_id" ).click(function() 
         {
-            
             $('#citation_modal2').modal({
                 show: true
               })
