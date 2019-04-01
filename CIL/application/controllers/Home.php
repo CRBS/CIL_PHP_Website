@@ -29,7 +29,8 @@ class Home  extends CI_Controller
          if(is_null($settings_json))
          {
             $data['title'] = 'The Cell Image Library';
-            $this->load->view('templates/cil_header4', $data);
+            //$this->load->view('templates/cil_header4', $data);
+            $this->load->view('templates/cil_header_light', $data);
             $this->load->view('cil_errors/empty_response_error', $data);
             $this->load->view('templates/cil_footer2', $data); 
             return;
@@ -42,6 +43,7 @@ class Home  extends CI_Controller
          $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
          $data['cil_data_host'] = $this->config->item('cil_data_host');
          $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
+         $data['is_staging_server'] = $this->config->item('is_staging_server');
          if(isset($settings_json->_source->Home_page->Featured_image))
          {
              $video_folder =  $this->config->item('video_folder');
@@ -114,8 +116,8 @@ class Home  extends CI_Controller
          $data['settings'] = $settings_json;
          
          $data['disable_footer_links'] = true;
-         $this->load->view('templates/cil_header4', $data);
-         //$this->load->view('main_page/main_display.php', $data);
+         //$this->load->view('templates/cil_header4', $data);
+         $this->load->view('templates/cil_header_light', $data);
          $this->load->view('main_page2/main_display.php', $data);
          $this->load->view('templates/cil_footer2', $data);
      }

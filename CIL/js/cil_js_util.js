@@ -54,3 +54,71 @@ function trackDownload(obj,id,size)
     });
     
 }
+
+function trackImageViewerClick(id)
+{
+    var data = "{\"Ip_address\":\""+ip_address+"\",\"ID\":\""+id+"\"}";
+    $.post('/CIL_Download_Service/track_image_viewer', data, function(returnedData) {
+    //console.log(returnedData);
+    })
+    .error(function() { 
+   //alert("error"); 
+    });
+}
+
+
+function openPopupAndTrack(url,id) {
+        trackImageViewerClick(id);
+	owindow = window.open(url, 'anew', config = 'height=600,width=1000,left=50,top=50,toolbar=no,menubar=no,scrollbars=yes,resizable=yes,location=no,directories=no,status=no');
+	if (!owindow.closed) owindow.focus();
+	return false;
+}
+
+
+function toggleLicenseBox(input)
+{
+    //alert(input);
+    if(input == 'public_domain')
+    {
+        //document.getElementById('public_domain').checked = true;
+        if(document.getElementById('public_domain').checked)
+        {
+            document.getElementById('attribution_cc').checked = false;
+            document.getElementById('attribution_nc_sa').checked = false;
+            document.getElementById('copyright').checked = false;
+        }
+    }
+    
+    if(input == 'attribution_cc')
+    {
+        //document.getElementById('public_domain').checked = true;
+        if(document.getElementById('attribution_cc').checked)
+        {
+            document.getElementById('public_domain').checked = false;
+            document.getElementById('attribution_nc_sa').checked = false;
+            document.getElementById('copyright').checked = false;
+        }
+    }
+    
+    if(input == 'attribution_nc_sa')
+    {
+        //document.getElementById('public_domain').checked = true;
+        if(document.getElementById('attribution_nc_sa').checked)
+        {
+            document.getElementById('public_domain').checked = false;
+            document.getElementById('attribution_cc').checked = false;
+            document.getElementById('copyright').checked = false;
+        }
+    }
+    
+    if(input == 'copyright')
+    {
+        //document.getElementById('public_domain').checked = true;
+        if(document.getElementById('copyright').checked)
+        {
+            document.getElementById('public_domain').checked = false;
+            document.getElementById('attribution_cc').checked = false;
+            document.getElementById('attribution_nc_sa').checked = false;
+        }
+    }
+}

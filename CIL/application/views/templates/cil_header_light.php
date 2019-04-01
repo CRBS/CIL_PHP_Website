@@ -5,6 +5,8 @@
 <!--[if IE]><html class="no-js ie" lang="nl"><![endif]-->
 <!--[if !IE]><!--><html class="no-js" lang="nl"><!--<![endif]-->
 
+    
+<!----This header optimizes the loading speed by reducing unnecessary js files --->
 	<head>
 
 		<meta charset="utf-8">
@@ -81,29 +83,14 @@
                 <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
                 <link rel="stylesheet" href="/assets/css/style.css"> 
                 <link rel="stylesheet" href="/assets/css/custom.css">                 
-                <!-- 
-                /* Delete the template for open source */
-		<link rel="stylesheet" href="/template/bootstrap/css/bootstrap.css">
-		<link rel="stylesheet" href="/template/css/style.css">
-		<link rel="stylesheet" href="/template/css/nivo-slider.css">
-		<link rel="stylesheet" href="/template/css/colorbox.css">
-		<link rel="stylesheet" href="/template/nivo-themes/bar/bar.css" type="text/css" media="screen" />
-		<link rel="stylesheet" href="/template/nivo-themes/light/light.css" type="text/css" media="screen" />
-		<script src="/template/js/config.js"></script> 
-		<script src="/template/js/modernizr-3.3.1.min.js"></script>
-	        <script src="/template/js/jquery-1.12.4.min.js"></script> 
-		<script src="/template/bootstrap/js/bootstrap.min.js"></script>
-		<script src="/template/js/jquery.nivo.slider.pack.js"></script>
-		<script src="/template/js/jquery.colorbox-1.6.4.min.js"></script>
-		<script src="/template/js/respond.min.js"></script>
-		<script src="/template/js/script.js"></script> -->
+
         <script src="/template/js/jquery-1.12.4.min.js"></script> 
 	<script src="/template/bootstrap/js/bootstrap.min.js"></script>
                 
         <link href="/old_cil/stylesheets/all.css?<?php echo rand(100000,99999999);   ?>" media="screen" rel="stylesheet" type="text/css" />
         <link href="/old_cil/stylesheets/reset.css?<?php echo rand(100000,99999999);   ?>" media="print" rel="stylesheet" type="text/css" />
         <link href="/old_cil/stylesheets/960.css?<?php echo rand(100000,99999999);   ?>" media="print" rel="stylesheet" type="text/css" />
-        <!-- <link href="/old_cil/stylesheets/jquery.autocomplete.css?<?php  //echo rand(100000,99999999);   ?>" media="print" rel="stylesheet" type="text/css" /> -->
+        
         <link href="/old_cil/stylesheets/grid.css?<?php echo rand(100000,99999999);   ?>" media="print" rel="stylesheet" type="text/css" />
         <link href="/old_cil/stylesheets/typography.css?<?php echo rand(100000,99999999);   ?>" media="print" rel="stylesheet" type="text/css" />
         <link href="/old_cil/stylesheets/buttons.css?<?php echo rand(100000,99999999);   ?>" media="print" rel="stylesheet" type="text/css" />
@@ -112,10 +99,10 @@
         
        
         <script src="/old_cil/javascripts/jquery-ui-1.8.16.custom.min.js?<?php echo rand(100000,99999999);   ?>" type="text/javascript"></script>
-        <link href="/old_cil/stylesheets/jquery-ui-1.8.16.custom.css?<?php echo rand(100000,99999999);   ?>" media="screen" rel="stylesheet" type="text/css" />
+        <!-- <link href="/old_cil/stylesheets/jquery-ui-1.8.16.custom.css?<?php //echo rand(100000,99999999);   ?>" media="screen" rel="stylesheet" type="text/css" /> --> <!--Speed optimization -->
         
         <script src="/old_cil/javascripts/all.js?<?php echo rand(100000,99999999);   ?>" type="text/javascript"></script>
-        <script src="/old_cil/javascripts/jquery.jstree.js?<?php echo rand(100000,99999999);   ?>" type="text/javascript"></script>
+        <!-- <script src="/old_cil/javascripts/jquery.jstree.js?<?php //echo rand(100000,99999999);   ?>" type="text/javascript"></script> -->
         
         <!-----------Willy's customized js------------------------------>
         <script src="/js/search_results.js?<?php echo uniqid();   ?>" type="text/javascript"></script>
@@ -129,22 +116,21 @@
             if(!isset($turn_off_jquery_1_12))
             {    
         ?>
-        <script src="/js/jquery/jquery-1.12.4/jquery-1.12.4.js"></script> 
+        <!-- <script src="/js/jquery/jquery-1.12.4/jquery-1.12.4.js"></script> --> <!--Speed optimization -->
         <?php
             }
         ?>
         
-        <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
-        <script src="/js/jquery/jquery-1.12.1/jquery-ui.js"></script>
+        
+        <!-- <script src="/js/jquery/jquery-1.12.1/jquery-ui.js"></script> --> <!--Speed optimization -->
         
         <script src="/js/cil_js_util.js<?php echo "?".uniqid(); ?>"></script>
         <script src="/js/cil_interactive_cell.js<?php echo "?".uniqid(); ?>"></script>
         
-        <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.3/themes/default/style.min.css" /> -->
         <link rel="stylesheet" href="/css/ajax/libs/jstree/3.3.3/themes/default/style.min.css" />
         
-        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.3/jstree.min.js"></script> -->
-        <script src="/js/ajax/libs/jstree/3.3.3/jstree.min.js"></script> 
+        
+        <!-- <script src="/js/ajax/libs/jstree/3.3.3/jstree.min.js"></script> -->
         <!-----------End Willy's customized js------------------------------>
         
         

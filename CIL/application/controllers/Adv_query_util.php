@@ -1,6 +1,6 @@
 <?php
 require_once 'CILServiceUtil2.php';
-
+require_once 'GeneralUtil.php';
 
 /**
  * This class handles the ontology expansion queries.
@@ -14,9 +14,28 @@ require_once 'CILServiceUtil2.php';
  */
 class Adv_query_util
 {
+    private function deleteEndingColon($temp)
+    {
+        $gutil = new GeneralUtil();
+        
+        $temp = trim($temp);
+        if($gutil->endsWith($temp, ":"))
+        {
+          $temp = substr ($temp, 0, strlen ($temp)-1);
+          return $this->deleteEndingColon($temp);
+        }
+        else 
+            return $temp;
+    }
+    
     function handleText($model,$input,$key)
     {
+        
         $temp = $input->get($key,TRUE);
+        if(strlen($temp)==0)
+            return;
+        $temp = $this->deleteEndingColon($temp);
+        
         if(!is_null($temp))
         {
             $temp = trim($temp);
@@ -30,6 +49,9 @@ class Adv_query_util
     function handleTextWithAltName($model,$input,$model_name,$key)
     {
         $temp = $input->get($key,TRUE);
+        if(strlen($temp)==0)
+            return;
+        $temp = $this->deleteEndingColon($temp);
         if(!is_null($temp))
         {
             $temp = trim($temp);

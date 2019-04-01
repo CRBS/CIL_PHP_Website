@@ -179,7 +179,8 @@ class Images  extends CI_Controller
             if(is_null($result))
             {
                 $data['title'] = 'The Cell Image Library';
-                $this->load->view('templates/cil_header4', $data);
+                //$this->load->view('templates/cil_header4', $data);
+                $this->load->view('templates/cil_header_light', $data);
                 $this->load->view('cil_errors/empty_response_error', $data);
                 $this->load->view('templates/cil_footer2', $data); 
                 return;
@@ -189,7 +190,8 @@ class Images  extends CI_Controller
             {
                 $data['result'] = $result;
                 $data['keywords']=$keywords;
-                $this->load->view('templates/cil_header4', $data);
+                //$this->load->view('templates/cil_header4', $data);
+                $this->load->view('templates/cil_header_light', $data);
                 $this->load->view('search/search_error_display', $data);
                 $this->load->view('templates/cil_footer2', $data);
                 return;
@@ -269,7 +271,8 @@ class Images  extends CI_Controller
             
             
             
-            $this->load->view('templates/cil_header4', $data);
+            //$this->load->view('templates/cil_header4', $data);
+            $this->load->view('templates/cil_header_light', $data);
             $this->load->view('search/search_results', $data);
             $this->load->view('templates/cil_footer2', $data);
              
@@ -296,9 +299,6 @@ class Images  extends CI_Controller
                
             }
 
-            
-            
-            
             $response = $sutil->curl_get_data($query_url,$query);
             
             //echo "<br/>".$query_url;
@@ -475,6 +475,7 @@ class Images  extends CI_Controller
         $data['ccdb_image_prefix'] = $this->config->item('ccdb_image_prefix');
         $data['cil_data_host'] = $this->config->item('cil_data_host');
         $data['enable_cdeep3m'] = $this->config->item('enable_cdeep3m');
+        $data['image_viewer_prefix'] = $this->config->item('image_viewer_prefix');
         
         if(strcmp($imageID,"advanced_search")==0)
         {
@@ -503,6 +504,40 @@ class Images  extends CI_Controller
         
         $response = $sutil->getImage($imageID);
         $json = json_decode($response);
+        $isAccessible = false;
+        if(isset($json->CIL_CCDB->Status->Is_public) && !$json->CIL_CCDB->Status->Is_public)
+        {
+            $key = $this->input->get('key',TRUE);
+            if(is_null($key))
+            {
+                show_404();
+                return;
+            }
+            $pResponse = $sutil->getDataPermissions($key);
+            //echo $pResponse;
+            //return;
+            $pjson = json_decode($pResponse);
+            if(isset($pjson->_source->Data_permissions->Datasets))
+            {
+               
+                $tempID = str_replace("CIL_", "", $imageID);
+                $datasets = $pjson->_source->Data_permissions->Datasets;
+                foreach($datasets as $dataset)
+                {
+                    if(strcmp($dataset, $tempID)==0)
+                    {
+                        $isAccessible = true;
+                        break;
+                    }
+                }
+            }
+            if(!$isAccessible)
+            {
+                show_404();
+                return;
+            }
+        }
+        
         $data['test'] = "test";
         $data['json'] = $json;
         $data['response'] = $response;

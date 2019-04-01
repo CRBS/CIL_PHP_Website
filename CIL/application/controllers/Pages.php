@@ -131,4 +131,17 @@ class Pages  extends CI_Controller
         $this->load->view('pages/guest_display', $data);
         $this->load->view('templates/cil_footer2', $data);
     }
+    
+    public function Alzheimers()
+    {
+        $data['test']="test";
+        
+        $id_array = ['50516','50517','50512','50519','50514','50518','50515','50513'];
+        $index = array_rand($id_array);
+        $data['animation_id'] = $id_array[$index];
+        
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('pages/alzheimers_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+    }
 }

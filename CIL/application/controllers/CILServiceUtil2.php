@@ -244,6 +244,16 @@ class CILServiceUtil2
         return $response;
     }
     
+    public function getDataPermissions($id="0")
+    {
+        $CI = CI_Controller::get_instance();
+        $service_api_host = $CI->config->item('service_api_host');
+        $url =  $service_api_host."/rest/data_permission/".$id;
+        $response = $this->curl_get($url);
+        return $response;
+    }
+    
+    
     public function getHomepageSettings()
     {
         

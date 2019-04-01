@@ -1,16 +1,39 @@
 <!-- <div class="images">
 <div class="description"> -->
+<!-- 
 <div class="row">
 <div class="col-md-12">
 <span class=" pull-right cil_id_font" >CCDB:<?php 
-    if(!is_null($numeric_id))
+    /*if(!is_null($numeric_id))
     {
         echo $numeric_id;
-    }
+    }*/
     ?><sup class="detailed_cil_asterisk">*</sup>
-</span> 
-</div> 
+</span>
 </div>
+</div>
+-->     
+    <div class="row">
+        <div class="col-md-12">
+            <span class="cil_14_san_regular_font pull-right">CCDB:<?php 
+                    if(!is_null($numeric_id))
+                    {
+                        echo $numeric_id;
+                    }
+                ?><sup class="detailed_cil_asterisk">*</sup><?php
+                    if(isset($json->CIL_CCDB->Citation->Title) && isset($json->CIL_CCDB->Citation->DOI))
+                    {
+                ?>&nbsp;<a href="#cite" id="citation_btn_id" name="citation_btn_id" class="btn btn-info semi-circle btn-xs">&nbsp;Cite&nbsp;</a></span><?php
+                    }
+                ?>
+                                
+        </div>              
+    </div>
+    
+    
+
+
+
 
 <div class="row">
 <div class="col-md-12">
