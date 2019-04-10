@@ -6,7 +6,7 @@
     <div class="col-md-3 row_no_gap_right">
          <ul class="list-group">
             <!-- <li id="action_cytoskeleton" class="list-group-item "><a href="/browse/cellcomponent/Actin%20Cytoskeleton" class="anchor_blue">Action Cytoskeleton</a></li> -->
-            <li id="chromosome" class="list-group-item "><a href="/browse/cellcomponent/Chromosome" class="anchor_blue">Chromosome</a></li>
+            <li id="action_cytoskeleton" class="list-group-item "><a href="/browse/cellcomponent/Actin%20Cytoskeleton" class="anchor_blue">Action Cytoskeleton</a></li>
             <li id="chromosome" class="list-group-item "><a href="/images?k=Chromosome&simple_search=Search" class="anchor_blue">Chromosome</a></li>
             <li id="endoplasmic_reticulum" class="list-group-item"><a href="/browse/cellcomponent/Endoplasmic%20Reticulum" class="anchor_blue">Endoplasmic Reticulum</a></li>
             <li id="endosome" class="list-group-item"><a href="/browse/cellcomponent/Endosome" class="anchor_blue">Endosome</a></li>
