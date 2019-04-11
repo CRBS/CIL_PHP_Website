@@ -6,7 +6,7 @@
             <li><a class="survey_plain faq_regular_font" href="#licensing_policy">Licensing Policy</a></li>
             <li><a class="survey_plain faq_regular_font" href="#published_images">Published Images</a></li>
             <li><a class="survey_plain faq_regular_font" href="#unpublished_images">Unpublished Images</a></li>
-            <li><a class="survey_plain faq_regular_font" href="#licenses">Licenses</a></li>
+            <li><a class="survey_plain faq_regular_font" href="#licenses">License Conditions</a></li>
             <li><a class="survey_plain faq_regular_font" href="#disclaimer">Disclaimer</a></li>
             </ol>
             
@@ -15,11 +15,13 @@
             
             <div id="licensing_policy"></div>
             <span class="cil_title">Licensing Policy</span>
-            <span class="about_page_font">Based on user and funder feedback, and to maximize library growth and usage, The Cell offers a variety of licensing options for selection by submitters. We welcome comments and feedback on these policies. Please contact David Orloff (<a href="mailto:dorloff@ncmir.ucsd.edu">dorloff@ncmir.ucsd.edu</a>), Director, Image Library, with your feedback and concerns.</span>
+            <span class="about_page_font">Based on user and funder feedback, and to maximize library growth and usage, The Cell offers a variety of licensing options for selection by submitters. We welcome comments and feedback on these policies. Please contact David Orloff (<a href="mailto:dorloff@ncmir.ucsd.edu">dorloff@ncmir.ucsd.edu</a>), Director, Cell Image Library.</span>
             <span class="about_page_font">Our goals include allowing for the most effective use of the data (without attribution, large data sets can be used easily, furthering scientific discovery), and reaching the greatest number of users.</span>
             <div id="published_images"></div>
             <span class="cil_title">Published Images</span>
             <span class="about_page_font"><em>Please note:</em> While The Cell welcomes previously published images, if you are submitting images that have previously been published, you must have the right to distribute the image or the licensing of the publishing journal must allow for it. Please check with your publisher to determine if this is the case. Many publishers, like the ASCB, which publishes the Molecular Biology of the Cell, allow authors to retain copyright. However, even these publishers may limit distribution of the work. These limitations could relate to intended use (commercial and/or educational), alteration, and attribution. Publishers may also choose to use a Creative Commons license that allows for some types of re-use without permission. Authors should confirm the rights they have related to published images before selecting the appropriate option.</span>
+            
+            <!--
             <table class="licensing_table">
             <tbody><tr>
             <th>Publication</th>
@@ -56,8 +58,8 @@
             <p>2010 and later - Author's choice.  Journal must be cited.</p>
             </td>
             </tr>
-            </tbody></table>
-            <span class="about_page_font">Please check back for additional publications. More journals will be added when licensing arrangements are clarified.</span>
+            </tbody></table> -->
+           <!--  <span class="about_page_font">Please check back for additional publications. More journals will be added when licensing arrangements are clarified.</span> -->
             <div id="unpublished_images"></div>
             <span class="cil_title">Unpublished Images</span>
             <span class="about_page_font">If you have not published the images you wish to contribute, and you hold the copyright, you may select one of the licenses described in the Licensing section below.</span>
@@ -69,7 +71,7 @@
             <div class="license_option">
             <div class="license_option_header_container">
             <div id="public_domain"></div>
-            <!-- <img alt="Pd" class="license_img" height="35" src="/pix/pd.gif?1286375725" width="35"> -->
+           
             
             <img alt="Pd" class="license_img" height="35" src="/pix/public_domain.jpg?<?php echo uniqid(); ?>" >
             <h4 class="license_option_name_public_domain">Public Domain</h4>
