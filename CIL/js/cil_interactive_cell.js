@@ -793,4 +793,53 @@ $( "#Plasmid" ).click(function() {
 });
 /**********************End Escherichia coli***************************************************/
 
+
+
+/**********************ER**********************************************************************/
+
+$( "#rough_er" ).mouseover(function() {
+    //console.log('cytoplasm in');
+    document.getElementById('rough_er').className  = 'list-group-item selected_blue';
+    document.getElementById('endoplasmic_reticulum_img').src = '/pic/interactive_cells/endoplasmic_reticulum/rough_ER.jpg';
+});
+$( "#rough_er" ).mouseout(function() {
+   //console.log('cytoplasm out');
+    document.getElementById('rough_er').className  = 'list-group-item';
+    document.getElementById('endoplasmic_reticulum_img').src = '/pic/interactive_cells/endoplasmic_reticulum/ER.jpg';
+    
+});
+
+
+$( "#rough_er" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=plasmid&simple_search=Search', '_self');
+    win.focus();
+    
+});
+
+
+$( "#smooth_er" ).mouseover(function() {
+    //console.log('cytoplasm in');
+    document.getElementById('smooth_er').className  = 'list-group-item selected_blue';
+    document.getElementById('endoplasmic_reticulum_img').src = '/pic/interactive_cells/endoplasmic_reticulum/smooth_ER.jpg';
+});
+$( "#smooth_er" ).mouseout(function() {
+   //console.log('cytoplasm out');
+    document.getElementById('smooth_er').className  = 'list-group-item';
+    document.getElementById('endoplasmic_reticulum_img').src = '/pic/interactive_cells/endoplasmic_reticulum/ER.jpg';
+    
+});
+
+
+$( "#smooth_er" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=%22smooth+endoplasmic+reticulum%22&simple_search=Search', '_self');
+    win.focus();
+    
+});
+
+/**********************End ER********************************************************************/
+
+
+
 } );
