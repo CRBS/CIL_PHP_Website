@@ -5,10 +5,10 @@
     </div>
     <div class="col-md-3 row_no_gap_right">
          <ul class="list-group"> 
-            <li id="endosomes" class="list-group-item"><a href="/images?k=%22rough+endoplasmic+reticulum%22&simple_search=Search" class="anchor_blue">Endosomes</a></li>
-            <li id="golgi_apparatus_id" class="list-group-item"><a href="/images?k=%22smooth+endoplasmic+reticulum%22&simple_search=Search" class="anchor_blue">Golgi apparatus</a></li>
-            <li id="lysosome" class="list-group-item"><a href="/images?k=%22rough+endoplasmic+reticulum%22&simple_search=Search" class="anchor_blue">Lysosome</a></li>
-            <li id="plasma_membrane" class="list-group-item"><a href="/images?k=%22smooth+endoplasmic+reticulum%22&simple_search=Search" class="anchor_blue">Plasma membrane</a></li>
+            <li id="endosomes" class="list-group-item"><a href="/images?k=endosome&simple_search=Search" class="anchor_blue">Endosomes</a></li>
+            <li id="golgi_apparatus_id" class="list-group-item"><a href="/images?k=%22golgi+apparatus%22&simple_search=Search" class="anchor_blue">Golgi apparatus</a></li>
+            <li id="lysosome_id" class="list-group-item"><a href="/images?k=lysosome&simple_search=Search" class="anchor_blue">Lysosome</a></li>
+            <li id="plasma_membrane_id" class="list-group-item"><a href="/images?k=%22plasma+membrane%22&simple_search=Search" class="anchor_blue">Plasma membrane</a></li>
          </ul>
         
     </div>

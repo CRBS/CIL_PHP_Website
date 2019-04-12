@@ -876,9 +876,48 @@ $( "#golgi_apparatus_id" ).mouseout(function() {
 
 $( "#golgi_apparatus_id" ).click(function() {
     //console.log('action_cytoskeleton click');
-    var win = window.open('/images?k=endosome&simple_search=Search', '_self');
+    var win = window.open('/images?k=%22golgi+apparatus%22&simple_search=Search', '_self');
     win.focus();
 });
 
+
+$( "#lysosome_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('lysosome_id').className  = 'list-group-item selected_blue';
+    document.getElementById('endosome_img').src = '/pic/interactive_cells/endosome/lysosome.jpg';
+});
+$( "#lysosome_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('lysosome_id').className  = 'list-group-item';
+    document.getElementById('endosome_img').src = '/pic/interactive_cells/endosome/endosome_main.jpg';
+    
+});
+
+
+$( "#lysosome_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=lysosome&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+$( "#plasma_membrane_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('plasma_membrane_id').className  = 'list-group-item selected_blue';
+    document.getElementById('endosome_img').src = '/pic/interactive_cells/endosome/plasma_membrane.jpg';
+});
+$( "#plasma_membrane_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('plasma_membrane_id').className  = 'list-group-item';
+    document.getElementById('endosome_img').src = '/pic/interactive_cells/endosome/endosome_main.jpg';
+    
+});
+
+
+$( "#plasma_membrane_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=%22plasma+membrane%22&simple_search=Search', '_self');
+    win.focus();
+});
 /**********************End Endosome*******************************************************************/
 } );
