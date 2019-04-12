@@ -840,6 +840,45 @@ $( "#smooth_er" ).click(function() {
 
 /**********************End ER********************************************************************/
 
+/**********************Endosome*******************************************************************/
+$( "#endosomes" ).mouseover(function() {
+    //console.log('endosomes in');
+    document.getElementById('endosomes').className  = 'list-group-item selected_blue';
+    document.getElementById('endosome_img').src = '/pic/interactive_cells/endosome/endosomes.jpg';
+});
+$( "#endosomes" ).mouseout(function() {
+    //console.log('endosomes out');
+    document.getElementById('endosomes').className  = 'list-group-item';
+    document.getElementById('endosome_img').src = '/pic/interactive_cells/endosome/endosome_main.jpg';
+    
+});
 
 
+$( "#endosomes" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=endosome&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+$( "#golgi_apparatus_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('golgi_apparatus_id').className  = 'list-group-item selected_blue';
+    document.getElementById('endosome_img').src = '/pic/interactive_cells/endosome/golgi_apparatus.jpg';
+});
+$( "#golgi_apparatus_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('golgi_apparatus_id').className  = 'list-group-item';
+    document.getElementById('endosome_img').src = '/pic/interactive_cells/endosome/endosome_main.jpg';
+    
+});
+
+
+$( "#golgi_apparatus_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=endosome&simple_search=Search', '_self');
+    win.focus();
+});
+
+/**********************End Endosome*******************************************************************/
 } );
