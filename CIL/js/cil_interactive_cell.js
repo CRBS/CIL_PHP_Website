@@ -919,5 +919,78 @@ $( "#plasma_membrane_id" ).click(function() {
     var win = window.open('/images?k=%22plasma+membrane%22&simple_search=Search', '_self');
     win.focus();
 });
+
+
+
+
+
+
+
 /**********************End Endosome*******************************************************************/
+
+
+
+
+/***********************Microbubule*********************************************/
+$( "#centrioles_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('centrioles_id').className  = 'list-group-item selected_blue';
+    document.getElementById('microtubule_img').src = '/pic/interactive_cells/microtubule/centrioles.jpg';
+});
+$( "#centrioles_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('centrioles_id').className  = 'list-group-item';
+    document.getElementById('microtubule_img').src = '/pic/interactive_cells/microtubule/microtubule_main.jpg';
+    
+});
+
+
+$( "#centrioles_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=centriole&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+
+$( "#pericentriolar_material_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('pericentriolar_material_id').className  = 'list-group-item selected_blue';
+    document.getElementById('microtubule_img').src = '/pic/interactive_cells/microtubule/pericentriolar_material.jpg';
+});
+$( "#pericentriolar_material_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('pericentriolar_material_id').className  = 'list-group-item';
+    document.getElementById('microtubule_img').src = '/pic/interactive_cells/microtubule/microtubule_main.jpg';
+    
+});
+
+
+$( "#pericentriolar_material_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=%22pericentriolar+material%22&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+$( "#microtubules_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('microtubules_id').className  = 'list-group-item selected_blue';
+    document.getElementById('microtubule_img').src = '/pic/interactive_cells/microtubule/microtubules.jpg';
+});
+$( "#microtubules_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('microtubules_id').className  = 'list-group-item';
+    document.getElementById('microtubule_img').src = '/pic/interactive_cells/microtubule/microtubule_main.jpg';
+    
+});
+
+
+$( "#microtubules_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=microtubule&simple_search=Search', '_self');
+    win.focus();
+});
+/***********************End Microbubule*********************************************/
+
 } );
