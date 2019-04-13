@@ -993,4 +993,105 @@ $( "#microtubules_id" ).click(function() {
 });
 /***********************End Microbubule*********************************************/
 
+
+/***********************Mitochondrion*********************************************/
+$( "#cristae_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('cristae_id').className  = 'list-group-item selected_blue';
+    document.getElementById('mitochondrion_img').src = '/pic/interactive_cells/mitochondrion/cristae.jpg';
+});
+$( "#cristae_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('cristae_id').className  = 'list-group-item';
+    document.getElementById('mitochondrion_img').src = '/pic/interactive_cells/mitochondrion/mitochondrion_main.jpg';
+    
+});
+
+$( "#cristae_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=%22mitochondrial+cristae%22&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+$( "#inner_membrane_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('inner_membrane_id').className  = 'list-group-item selected_blue';
+    document.getElementById('mitochondrion_img').src = '/pic/interactive_cells/mitochondrion/inner_membrane.jpg';
+});
+$( "#inner_membrane_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('inner_membrane_id').className  = 'list-group-item';
+    document.getElementById('mitochondrion_img').src = '/pic/interactive_cells/mitochondrion/mitochondrion_main.jpg';
+    
+});
+
+
+$( "#inner_membrane_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=%22mitochondrial+inner+membrane%22&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+$( "#intermembrane_space_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('intermembrane_space_id').className  = 'list-group-item selected_blue';
+    document.getElementById('mitochondrion_img').src = '/pic/interactive_cells/mitochondrion/intermembrane_space.jpg';
+});
+$( "#intermembrane_space_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('intermembrane_space_id').className  = 'list-group-item';
+    document.getElementById('mitochondrion_img').src = '/pic/interactive_cells/mitochondrion/mitochondrion_main.jpg';
+    
+});
+
+
+$( "#intermembrane_space_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=%22mitochondrial+inner+intermembrane+space%22&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+$( "#matrix_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('matrix_id').className  = 'list-group-item selected_blue';
+    document.getElementById('mitochondrion_img').src = '/pic/interactive_cells/mitochondrion/matrix.jpg';
+});
+$( "#matrix_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('matrix_id').className  = 'list-group-item';
+    document.getElementById('mitochondrion_img').src = '/pic/interactive_cells/mitochondrion/mitochondrion_main.jpg';
+    
+});
+
+
+$( "#matrix_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=%22mitochondrial+matrix%22&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+$( "#outer_membrane_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('outer_membrane_id').className  = 'list-group-item selected_blue';
+    document.getElementById('mitochondrion_img').src = '/pic/interactive_cells/mitochondrion/outer_membrane.jpg';
+});
+$( "#outer_membrane_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('outer_membrane_id').className  = 'list-group-item';
+    document.getElementById('mitochondrion_img').src = '/pic/interactive_cells/mitochondrion/mitochondrion_main.jpg';
+    
+});
+
+
+$( "#outer_membrane_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=%22mitochondrial+outer+membrane%22&simple_search=Search', '_self');
+    win.focus();
+});
+/**********************End *Mitochondrion*********************************************/
+
 } );
