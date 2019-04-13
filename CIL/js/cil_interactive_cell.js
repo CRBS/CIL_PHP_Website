@@ -1086,12 +1086,51 @@ $( "#outer_membrane_id" ).mouseout(function() {
     
 });
 
-
 $( "#outer_membrane_id" ).click(function() {
     //console.log('action_cytoskeleton click');
     var win = window.open('/images?k=%22mitochondrial+outer+membrane%22&simple_search=Search', '_self');
     win.focus();
 });
 /**********************End *Mitochondrion*********************************************/
+
+
+/***********************nucleolus*********************************************/
+$( "#ribosomal_rna_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('ribosomal_rna_id').className  = 'list-group-item selected_blue';
+    document.getElementById('nucleolus_img').src = '/pic/interactive_cells/nucleolus/ribosomal_rna.jpg';
+});
+$( "#ribosomal_rna_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('ribosomal_rna_id').className  = 'list-group-item';
+    document.getElementById('nucleolus_img').src = '/pic/interactive_cells/nucleolus/nucleolus_main.jpg';
+    
+});
+
+$( "#ribosomal_rna_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=%22ribosomal+RNA%22&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+$( "#chromatin_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('chromatin_id').className  = 'list-group-item selected_blue';
+    document.getElementById('nucleolus_img').src = '/pic/interactive_cells/nucleolus/chromatin.jpg';
+});
+$( "#chromatin_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('chromatin_id').className  = 'list-group-item';
+    document.getElementById('nucleolus_img').src = '/pic/interactive_cells/nucleolus/nucleolus_main.jpg';
+    
+});
+
+$( "#chromatin_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=chromatin&simple_search=Search', '_self');
+    win.focus();
+});
+/***********************nucleolus*********************************************/
 
 } );
