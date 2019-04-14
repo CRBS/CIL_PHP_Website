@@ -1212,9 +1212,44 @@ $( "#nucleus_nucleolus_id" ).click(function() {
     var win = window.open('/images?k=nucleolus&simple_search=Search', '_self');
     win.focus();
 });
-/***********************nucleus*********************************************/
+/***********************End nucleus*********************************************/
+
+/***********************vacuole*********************************************/
+$( "#vacuoles_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('vacuoles_id').className  = 'list-group-item selected_blue';
+    document.getElementById('vacuoles_img').src = '/pic/interactive_cells/vacuole/vacuoles.jpg';
+});
+$( "#vacuoles_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('vacuoles_id').className  = 'list-group-item';
+    document.getElementById('vacuoles_img').src = '/pic/interactive_cells/vacuole/vacuole_main.jpg';
+    
+});
+
+$( "#vacuoles_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=nucleolus&simple_search=Search', '_self');
+    win.focus();
+});
 
 
+$( "#transport_vesicles_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('transport_vesicles_id').className  = 'list-group-item selected_blue';
+    document.getElementById('vacuoles_img').src = '/pic/interactive_cells/vacuole/transport_vesicles.jpg';
+});
+$( "#transport_vesicles_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('transport_vesicles_id').className  = 'list-group-item';
+    document.getElementById('vacuoles_img').src = '/pic/interactive_cells/vacuole/vacuole_main.jpg';
+    
+});
 
-
+$( "#transport_vesicles_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=nucleolus&simple_search=Search', '_self');
+    win.focus();
+});
+/***********************End vacuole*********************************************/
 } );
