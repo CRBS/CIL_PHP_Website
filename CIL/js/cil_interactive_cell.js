@@ -1252,4 +1252,87 @@ $( "#transport_vesicles_id" ).click(function() {
     win.focus();
 });
 /***********************End vacuole*********************************************/
+
+
+
+/***********************Vesicle*************************************************/
+$( "#vesicle_endosome_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('vesicle_endosome_id').className  = 'list-group-item selected_blue';
+    document.getElementById('vesicle_img').src = '/pic/interactive_cells/vesicle/vesicle_endosomes.jpg';
+});
+$( "#vesicle_endosome_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('vesicle_endosome_id').className  = 'list-group-item';
+    document.getElementById('vesicle_img').src = '/pic/interactive_cells/vesicle/vesicle_main.jpg';
+    
+});
+
+$( "#vesicle_endosome_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=endosome&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+
+$( "#vesicle_lysosomes_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('vesicle_lysosomes_id').className  = 'list-group-item selected_blue';
+    document.getElementById('vesicle_img').src = '/pic/interactive_cells/vesicle/vesicle_lysosome.jpg';
+});
+$( "#vesicle_lysosomes_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('vesicle_lysosomes_id').className  = 'list-group-item';
+    document.getElementById('vesicle_img').src = '/pic/interactive_cells/vesicle/vesicle_main.jpg';
+    
+});
+
+$( "#vesicle_lysosomes_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=lysosome&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+$( "#vesicle_transport_vesicles_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('vesicle_transport_vesicles_id').className  = 'list-group-item selected_blue';
+    document.getElementById('vesicle_img').src = '/pic/interactive_cells/vesicle/transport_vesicles.jpg';
+});
+$( "#vesicle_transport_vesicles_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('vesicle_transport_vesicles_id').className  = 'list-group-item';
+    document.getElementById('vesicle_img').src = '/pic/interactive_cells/vesicle/vesicle_main.jpg';
+    
+});
+
+$( "#vesicle_transport_vesicles_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=%22transport+vesicle%22&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+
+$( "#vesicle_vacuoles_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('vesicle_vacuoles_id').className  = 'list-group-item selected_blue';
+    document.getElementById('vesicle_img').src = '/pic/interactive_cells/vesicle/vesicle_vacuoles.jpg';
+});
+$( "#vesicle_vacuoles_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('vesicle_vacuoles_id').className  = 'list-group-item';
+    document.getElementById('vesicle_img').src = '/pic/interactive_cells/vesicle/vesicle_main.jpg';
+    
+});
+
+$( "#vesicle_vacuoles_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=vacuole&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+/***********************End Vesicle*************************************************/
 } );
