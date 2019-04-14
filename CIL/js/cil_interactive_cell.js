@@ -1133,4 +1133,88 @@ $( "#chromatin_id" ).click(function() {
 });
 /***********************nucleolus*********************************************/
 
+
+
+/***********************nucleus*********************************************/
+$( "#nucleus_chromatin_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('nucleus_chromatin_id').className  = 'list-group-item selected_blue';
+    document.getElementById('nucleus_img').src = '/pic/interactive_cells/nucleus/nucleus_chromatin.jpg';
+});
+$( "#nucleus_chromatin_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('nucleus_chromatin_id').className  = 'list-group-item';
+    document.getElementById('nucleus_img').src = '/pic/interactive_cells/nucleus/nucleus_main.jpg';
+    
+});
+
+$( "#nucleus_chromatin_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=chromatin&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+
+$( "#nuclear_envelope_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('nuclear_envelope_id').className  = 'list-group-item selected_blue';
+    document.getElementById('nucleus_img').src = '/pic/interactive_cells/nucleus/nuclear_envelope.jpg';
+});
+$( "#nuclear_envelope_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('nuclear_envelope_id').className  = 'list-group-item';
+    document.getElementById('nucleus_img').src = '/pic/interactive_cells/nucleus/nucleus_main.jpg';
+    
+});
+
+$( "#nuclear_envelope_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=%22nuclear+envelope%22&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+$( "#nuclear_pore_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('nuclear_pore_id').className  = 'list-group-item selected_blue';
+    document.getElementById('nucleus_img').src = '/pic/interactive_cells/nucleus/nuclear_pore.jpg';
+});
+$( "#nuclear_pore_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('nuclear_pore_id').className  = 'list-group-item';
+    document.getElementById('nucleus_img').src = '/pic/interactive_cells/nucleus/nucleus_main.jpg';
+    
+});
+
+$( "#nuclear_pore_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=%22nuclear+pore%22&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+
+$( "#nucleus_nucleolus_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('nucleus_nucleolus_id').className  = 'list-group-item selected_blue';
+    document.getElementById('nucleus_img').src = '/pic/interactive_cells/nucleus/nucleus_nucleolus.jpg';
+});
+$( "#nucleus_nucleolus_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('nucleus_nucleolus_id').className  = 'list-group-item';
+    document.getElementById('nucleus_img').src = '/pic/interactive_cells/nucleus/nucleus_main.jpg';
+    
+});
+
+$( "#nucleus_nucleolus_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=nucleolus&simple_search=Search', '_self');
+    win.focus();
+});
+/***********************nucleus*********************************************/
+
+
+
+
 } );
