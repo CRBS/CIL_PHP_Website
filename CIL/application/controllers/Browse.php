@@ -1546,6 +1546,11 @@ class Browse  extends CI_Controller
 
                          $data['paginator'] = $paginator;
                          ////////////////////////////End pagination/////////////////////////////////////
+                         if(strcasecmp($input, "Endoplasmic Reticulum") == 0)
+                         {
+                             $data['centered_interactive_cell'] = true;
+                             $this->load->view('main_page2/endoplasmic_reticulum', $data);
+                         }
 
                          $this->load->view('categories2/category_search_result_page', $data);
                         }
