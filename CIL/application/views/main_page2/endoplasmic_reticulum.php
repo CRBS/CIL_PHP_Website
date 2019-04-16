@@ -54,7 +54,8 @@ else
                     <div class="col-md-12"><br/></div>
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="col-md-12"><span style="font-size:12px;font-weight: bold;">Related Molecular Functions</span></div>
+                            <div class="col-md-12"><span style="font-size:12px;font-weight: bold;">Related Molecular Functions</span><br/></div>
+                            <div class="col-md-12"><br/></div>
                             <div class='col-md-12'>
                                 <div style="float: left;font-size:11px;font-weight: normal;">
                                     <ul>
@@ -72,13 +73,15 @@ else
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-md-12"><span style="font-size:12px;font-weight: bold;">Related Biological Processes</span></div>
+                            <div class="col-md-12"><br/></div>
                             <div class='col-md-12'>
                                 <div style="float: left;font-size:11px;font-weight: normal;">
                                     <ul>
-                                        <li type="square"><a href="/images?k=Skeletal+muscle+contraction&simple_search=Search">Skeletal muscle contraction</a></li>
-                                        <li type="square"><a href="/images?k=Sequestering+of+calcium+ion&simple_search=Search">Sequestering of calcium ion</a></li>
-                                        <li type="square"><a href="/images?image_search_parms[biological_process]=mitochondrial%20proton-transporting%20ATP%20synthase%20complex%20assembly&amp;di_onto_cat=Biological%20Process&amp;di_onto_term=mitochondrial%20proton-transporting%20ATP%20synthase%20complex%20assembly">Mitochondrial proton-transporting ATP synthase complex assembly</a></li>
-                                        <li type="square"><a href="/images?image_search_parms[biological_process]=membrane%20depolarization&amp;di_onto_cat=Biological%20Process&amp;di_onto_term=membrane%20depolarization">Membrane depolarization</a></li><li type="square"><a href="/images?image_search_parms[biological_process]=endoplasmic%20reticulum%20organization&amp;di_onto_cat=Biological%20Process&amp;di_onto_term=endoplasmic%20reticulum%20organization">Endoplasmic reticulum organization</a></li>
+                                        <li type="square"><a class="anchor_blue" href="/images?k=Skeletal+muscle+contraction&simple_search=Search">Skeletal muscle contraction</a></li>
+                                        <li type="square"><a class="anchor_blue" href="/images?k=Sequestering+of+calcium+ion&simple_search=Search">Sequestering of calcium ion</a></li>
+                                        <li type="square"><a class="anchor_blue" href="/images?k=Mitochondrial+proton-transporting+ATP+synthase+complex+assembly&simple_search=Search">Mitochondrial proton-transporting ATP synthase complex assembly</a></li>
+                                        <li type="square"><a class="anchor_blue" href="/images?k=Membrane+depolarization&simple_search=Search">Membrane depolarization</a></li>
+                                        <li type="square"><a class="anchor_blue" href="/images?k=Endoplasmic+reticulum+organization&simple_search=Search">Endoplasmic reticulum organization</a></li>
                                     </ul>
                                 </div>
                             </div>
