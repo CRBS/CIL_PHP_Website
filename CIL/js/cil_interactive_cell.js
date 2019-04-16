@@ -1335,4 +1335,45 @@ $( "#vesicle_vacuoles_id" ).click(function() {
 
 
 /***********************End Vesicle*************************************************/
+
+
+/***********************Lysosome*************************************************/
+$( "#lysosome_lysosomes_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('lysosome_lysosomes_id').className  = 'list-group-item selected_blue';
+    document.getElementById('lysosome_img').src = '/pic/interactive_cells/lysosome/lysosomes.jpg';
+});
+$( "#lysosome_lysosomes_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('lysosome_lysosomes_id').className  = 'list-group-item';
+    document.getElementById('lysosome_img').src = '/pic/interactive_cells/lysosome/lysosome_main.jpg';
+    
+});
+
+$( "#lysosome_lysosomes_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=lysosome&simple_search=Search', '_self');
+    win.focus();
+});
+
+
+$( "#lysosome_transport_vesicle_id" ).mouseover(function() {
+    //console.log('golgi_apparatus in');
+    document.getElementById('lysosome_transport_vesicle_id').className  = 'list-group-item selected_blue';
+    document.getElementById('lysosome_img').src = '/pic/interactive_cells/lysosome/lysosome_transport_vesicles.jpg';
+});
+$( "#lysosome_transport_vesicle_id" ).mouseout(function() {
+    //console.log('golgi_apparatus out');
+    document.getElementById('lysosome_transport_vesicle_id').className  = 'list-group-item';
+    document.getElementById('lysosome_img').src = '/pic/interactive_cells/lysosome/lysosome_main.jpg';
+    
+});
+
+$( "#lysosome_transport_vesicle_id" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/images?k=%22transport+vesicle%22&simple_search=Search', '_self');
+    win.focus();
+});
+/***********************End Lysosome*************************************************/
+
 } );
