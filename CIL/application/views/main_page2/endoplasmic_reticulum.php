@@ -1,5 +1,3 @@
-
-
 <?php
 
 if(!isset($centered_interactive_cell))
