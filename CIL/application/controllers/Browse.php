@@ -1564,7 +1564,7 @@ class Browse  extends CI_Controller
                          else if(strcasecmp($input, "Lysosome And Related Organelles") == 0)
                          {
                              $data['centered_interactive_cell'] = true;
-                             $this->load->view('main_page2/microtubule', $data);
+                             $this->load->view('main_page2/lysosome', $data);
                          }
 
                          $this->load->view('categories2/category_search_result_page', $data);
