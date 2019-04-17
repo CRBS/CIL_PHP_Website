@@ -502,6 +502,26 @@ $( "#nucleolus" ).click(function() {
 });
 
 
+
+$( "#nucleus" ).mouseover(function() {
+    //console.log('action_cytoskeleton in');
+    document.getElementById('nucleus').className  = 'list-group-item selected_blue';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/nucleus.png';
+});
+$( "#nucleus" ).mouseout(function() {
+    //console.log('action_cytoskeleton out');
+    document.getElementById('nucleus').className  = 'list-group-item';
+    document.getElementById('eukaryotic_img').src = '/pic/interactive_cells/eukaryotic/default.png';
+    
+});
+$( "#nucleus" ).click(function() {
+    //console.log('action_cytoskeleton click');
+    var win = window.open('/browse/cellcomponent/Nucleus', '_self');
+    win.focus();
+    
+});
+
+
 $( "#plasma_membrane" ).mouseover(function() {
     //console.log('action_cytoskeleton in');
     document.getElementById('plasma_membrane').className  = 'list-group-item selected_blue';
