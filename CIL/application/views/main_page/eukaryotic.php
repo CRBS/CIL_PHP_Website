@@ -18,6 +18,7 @@
             <li id="mitochondrion" class="list-group-item"><a href="/browse/cellcomponent/Mitochondrion" class="anchor_blue">Mitochondrion</a></li>
             <li id="nuclear_envelope" class="list-group-item"><a href="/browse/cellcomponent/Nuclear%20Envelope" class="anchor_blue">Nuclear Envelope</a></li> 
             <li id="nucleolus" class="list-group-item"><a href="/browse/cellcomponent/Nucleolus" class="anchor_blue">Nucleolus</a></li>
+            <li id="nucleus" class="list-group-item"><a href="/browse/cellcomponent/Nucleus" class="anchor_blue">Nucleus</a></li>
             <li id="plasma_membrane" class="list-group-item"><a href="/browse/cellcomponent/Plasma%20Membrane" class="anchor_blue">Plasma Membrane</a></li>
             <li id="ribosome" class="list-group-item"><a href="/browse/cellcomponent/Molecular%20Machinery" class="anchor_blue">Ribosome</a></li> 
             <li id="vacuole" class="list-group-item"><a href="/browse/cellcomponent/Vacuole" class="anchor_blue">Vacuole</a></li>
