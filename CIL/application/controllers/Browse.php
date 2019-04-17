@@ -1581,6 +1581,11 @@ class Browse  extends CI_Controller
                              $data['centered_interactive_cell'] = true;
                              $this->load->view('main_page2/nucleus', $data);
                          }
+                         else if(strcasecmp($input, "Vacuole") == 0)
+                         {
+                             $data['centered_interactive_cell'] = true;
+                             $this->load->view('main_page2/vacuole', $data);
+                         }
 
                          $this->load->view('categories2/category_search_result_page', $data);
                         }
