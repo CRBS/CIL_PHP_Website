@@ -1586,6 +1586,11 @@ class Browse  extends CI_Controller
                              $data['centered_interactive_cell'] = true;
                              $this->load->view('main_page2/vacuole', $data);
                          }
+                         else if(strcasecmp($input, "Vesicle") == 0)
+                         {
+                             $data['centered_interactive_cell'] = true;
+                             $this->load->view('main_page2/vesicle', $data);
+                         }
 
                          $this->load->view('categories2/category_search_result_page', $data);
                         }
