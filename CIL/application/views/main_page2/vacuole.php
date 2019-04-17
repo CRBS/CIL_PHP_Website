@@ -55,11 +55,11 @@ else
                             <div class='col-md-12'>
                                 <div style="float: left; font-size:11px;font-weight: normal;">
                                     <ul>
-                                        <li type="square"><a class="anchor_blue" href="/images?image_search_parms[molecular_function]=alpha-1,2-mannosyltransferase%20activity&amp;di_onto_cat=Molecular%20Function&amp;di_onto_term=alpha-1,2-mannosyltransferase%20activity">Alpha-1,2-mannosyltransferase activity</a></li>
-                                        <li type="square"><a class="anchor_blue" href="/images?image_search_parms[molecular_function]=calcium%20ion%20binding&amp;di_onto_cat=Molecular%20Function&amp;di_onto_term=calcium%20ion%20binding">Calcium ion binding</a></li>
-                                        <li type="square"><a class="anchor_blue" href="/images?image_search_parms[molecular_function]=water%20transmembrane%20transporter%20activity&amp;di_onto_cat=Molecular%20Function&amp;di_onto_term=water%20transmembrane%20transporter%20activity">Water transmembrane transporter activity</a></li>
-                                        <li type="square"><a class="anchor_blue" href="/images?image_search_parms[molecular_function]=proton%20motive%20force%20dependent%20protein%20transmembrane%20transporter%20activity&amp;di_onto_cat=Molecular%20Function&amp;di_onto_term=proton%20motive%20force%20dependent%20protein%20transmembrane%20transporter%20activity">Proton motive force dependent protein </a></li>
-                                        <li type="square"><a class="anchor_blue" href="/images?image_search_parms[molecular_function]=1-phosphatidylinositol%204-kinase%20activity&amp;di_onto_cat=Molecular%20Function&amp;di_onto_term=1-phosphatidylinositol%204-kinase%20activity">1-phosphatidylinositol 4-kinase activity</a></li>
+                                        <li type="square"><a class="anchor_blue" href="/images?k=Alpha-1%2C2-mannosyltransferase+activity&simple_search=Search">Alpha-1,2-mannosyltransferase activity</a></li>
+                                        <li type="square"><a class="anchor_blue" href="/images?k=Calcium+ion+binding&simple_search=Search">Calcium ion binding</a></li>
+                                        <li type="square"><a class="anchor_blue" href="/images?k=Water+transmembrane+transporter+activity&simple_search=Search">Water transmembrane transporter activity</a></li>
+                                        <li type="square"><a class="anchor_blue" href="/images?k=Proton+motive+force+dependent+protein&simple_search=Search">Proton motive force dependent protein </a></li>
+                                        <li type="square"><a class="anchor_blue" href="/images?k=1-phosphatidylinositol+4-kinase+activity&simple_search=Search">1-phosphatidylinositol 4-kinase activity</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -72,11 +72,11 @@ else
                             <div class='col-md-12'>
                                 <div style="float: left; font-size:11px;font-weight: normal;">
                                     <ul>
-                                        <li type="square"><a class="anchor_blue" href="/images?image_search_parms[biological_process]=contractile%20vacuole%20organization&amp;di_onto_cat=Biological%20Process&amp;di_onto_term=contractile%20vwidth: 43%;acuole%20organization">Contractile vacuole organization</a></li>
-                                        <li type="square"><a class="anchor_blue" href="/images?image_search_parms[biological_process]=digestive%20system%20process&amp;di_onto_cat=Biological%20Process&amp;di_onto_term=digestive%20system%20process">Digestive system process</a></li>
-                                        <li type="square"><a class="anchor_blue" href="/images?image_search_parms[biological_process]=cytoplasm%20organization&amp;di_onto_cat=Biological%20Process&amp;di_onto_term=cytoplasm%20organization">Cytoplasm organisation</a></li>
-                                        <li type="square"><a class="anchor_blue" href="/images?image_search_parms[biological_process]=autophagy&amp;di_onto_cat=Biological%20Process&amp;di_onto_term=autophagy">Autophagy</a></li>
-                                        <li type="square"><a class="anchor_blue" href="/images?image_search_parms[cellular_component]=cortical%20microtubule%20cytoskeleton&amp;di_onto_cat=Cellular%20Component&amp;di_onto_term=cortical%20microtubule%20cytoskeleton">Cortical microtubule cytoskeleton</a></li>
+                                        <li type="square"><a class="anchor_blue" href="/images?k=Contractile+vacuole+organization&simple_search=Search">Contractile vacuole organization</a></li>
+                                        <li type="square"><a class="anchor_blue" href="/images?k=Digestive+system+process&simple_search=Search">Digestive system process</a></li>
+                                        <li type="square"><a class="anchor_blue" href="/images?k=Cytoplasm+organisation&simple_search=Search">Cytoplasm organisation</a></li>
+                                        <li type="square"><a class="anchor_blue" href="/images?k=Autophagy&simple_search=Search">Autophagy</a></li>
+                                        <li type="square"><a class="anchor_blue" href="/images?k=Cortical+microtubule+cytoskeleton&simple_search=Search">Cortical microtubule cytoskeleton</a></li>
                                     </ul>
                                 </div>
                             </div>
