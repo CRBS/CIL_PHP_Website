@@ -45,7 +45,7 @@ else
                     </div>
                     <div class="col-md-12">
                         <span style="font-size:12px;font-weight: bold;">Description:</span>
-                        <span style="font-size:12px;font-weight: normal;">The largest organelle in many cells, the endoplasmic reticulum (ER) is a network of interconnected membranous tubes and sacs that serve as locations for protein and lipid synthesis. The rough ER is covered with ribosomes where the information carried in messenger RNA molecules is translated into proteins. These newly-synthesized amino acid chains enter the lumen of the rough ER, where the proteins are modified by folding and the addition of molecules that can help target them for trafficking to different locations. The smooth ER does not have associated ribosomes (and thus looks .smooth. in electron micrographs) and is a site for lipid synthesis.</span>
+                        <span style="font-size:12px;font-weight: normal;">Lysosomes are membrane-bound organelles containing digestive enzymes that can break down proteins, lipids, carbohydrates and nucleic acids. Lysosomes can vary in size and shape, and function to break down food particles, destroy bacteria and viruses that enter the cell, and to recycle cellular components as organelles age. Lysosomes contain dozens of different kinds of hydrolytic enzymes, which are active at the acidic pH maintained by proton pumps found in lysosomal membranes.</span>
                     </div>
                     <div class="col-md-12"><br/></div>
                     <div class="col-md-6">
