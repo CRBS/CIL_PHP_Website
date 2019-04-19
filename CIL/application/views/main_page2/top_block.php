@@ -5,7 +5,7 @@
                 <a class="cil_16_font" href="/pages/about">About</a>
             </div>
             <div class="col-md-12">
-                <a class="cil_16_font" href="/pages/license">License Conditions</a>
+                <a class="cil_16_font" href="/pages/license">Licensing</a>
             </div>
             <div class="col-md-12">
                 <a class="cil_16_font" href="/pages/notification">Notification of Use</a>
