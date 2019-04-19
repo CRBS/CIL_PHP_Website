@@ -161,6 +161,8 @@
             </ol>
             <p>
             <div class="about_page_font">For more information please see the Creative Commons website at <a href="https://creativecommons.org" target="_blank">https://creativecommons.org</a> </div>
+             
+            <span class="cil_title">Licenses</span>
             <p class="about_page_font">
             The Cell Image Library allows for the combination of the above license conditions as noted below. These options will be available during image submission. The license you choose will then be noted in The Cell on the detailed image page.    
             </p>
