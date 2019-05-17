@@ -11,7 +11,7 @@
             <li id="endoplasmic_reticulum" class="list-group-item"><a href="/browse/cellcomponent/Endoplasmic%20Reticulum" class="anchor_blue">Endoplasmic Reticulum</a></li>
             <li id="endosome" class="list-group-item"><a href="/browse/cellcomponent/Endosome" class="anchor_blue">Endosome</a></li>
             <li id="extracellular_matrix" class="list-group-item"><a href="/browse/cellcomponent/Extracellular%20Matrix" class="anchor_blue">Extracellular Matrix</a></li>
-            <li id="golgi_apparatus" class="list-group-item"><a href="/images?k=paramecium+cytopharynx&simple_search=Search" class="anchor_blue">Golgi Apparatus</a></li>
+            <li id="golgi_apparatus" class="list-group-item"><a href="/images?k=Golgi+apparatus&simple_search=Search" class="anchor_blue">Golgi Apparatus</a></li>
             <li id="intermediate_filament_cytoskeleton" class="list-group-item"><a href="/browse/cellcomponent/Intermediate%20Filament%20Cytoskeleton" class="anchor_blue">Intermediate Filament Cytoskeleton</a></li>
             <li id="lysosome" class="list-group-item"><a href="/browse/cellcomponent/Lysosome%20And%20Related%20Organelles" class="anchor_blue">Lysosome</a></li>
             <!-- <li id="lysosome" class="list-group-item"><a href="/images?k=Lysosome&simple_search=Search" class="anchor_blue">Lysosome</a></li> -->
@@ -22,7 +22,7 @@
             <li id="nucleolus" class="list-group-item"><a href="/browse/cellcomponent/Nucleolus" class="anchor_blue">Nucleolus</a></li>
             <li id="nucleus" class="list-group-item"><a href="/browse/cellcomponent/Nucleus" class="anchor_blue">Nucleus</a></li>
             <li id="plasma_membrane" class="list-group-item"><a href="/browse/cellcomponent/Plasma%20Membrane" class="anchor_blue">Plasma Membrane</a></li>
-            <li id="ribosome" class="list-group-item"><a href="/browse/cellcomponent/Molecular%20Machinery" class="anchor_blue">Ribosome</a></li> 
+            <li id="ribosome" class="list-group-item"><a href="/images?k=ribosome&simple_search=Search" class="anchor_blue">Ribosome</a></li> 
             <li id="vacuole" class="list-group-item"><a href="/browse/cellcomponent/Vacuole" class="anchor_blue">Vacuole</a></li>
             <li id="vesicle" class="list-group-item"><a href="/browse/cellcomponent/Vesicle" class="anchor_blue">Vesicle</a></li>
          </ul>

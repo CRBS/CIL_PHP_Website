@@ -25,12 +25,14 @@ if(!isset($centered_interactive_cell))
 else
 {
 ?>
+
+
 <div class="container">
 <div class="row">
     
     <div class="col-md-12">
         <div class="row">
-            <div class="col-md-12"><span class="cil_title">Microtubule Organizing Centers</span></div>
+            <div class="col-md-12"><span class="cil_title">Mitochondrion</span></div>
             <div class="col-md-5">
                 <img id="mitochondrion_img" class="interactive_cell_width" src="/pic/interactive_cells/mitochondrion/mitochondrion_main.jpg">
             </div>
