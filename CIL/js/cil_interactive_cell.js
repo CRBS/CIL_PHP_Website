@@ -555,7 +555,7 @@ $( "#ribosome" ).mouseout(function() {
 });
 $( "#ribosome" ).click(function() {
     //console.log('action_cytoskeleton click');
-    var win = window.open('/browse/cellcomponent/Molecular%20Machinery', '_self');
+    var win = window.open('/images?k=ribosome&simple_search=Search', '_self');
     win.focus();
     
 });
