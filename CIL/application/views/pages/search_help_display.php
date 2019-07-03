@@ -3,9 +3,9 @@
         <div class="col-md-2">
 
             <ol>
-            <li><a class="survey_plain" href="#basic_search">Basic Search</a></li>
-            <li><a class="survey_plain" href="#advanced_search_help">Advanced Search</a></li>
-            <li><a class="survey_plain" href="#submit_search_comments">Comments and Suggestions</a></li>
+            <li><a class="survey_plain faq_regular_font" href="#basic_search">Basic Search</a></li>
+            <li><a class="survey_plain faq_regular_font" href="#advanced_search_help">Advanced Search</a></li>
+            <li><a class="survey_plain faq_regular_font" href="#submit_search_comments">Comments and Suggestions</a></li>
             </ol>
 
         </div>
@@ -41,7 +41,10 @@
             <!-----------Submit your comment-------------->
             <div id="submit_search_comments">
             <span class="cil_title">Submit Your Comments and Suggestions</span>
-            <p class="about_page_font">Please help us to improve the Library by completing a <a href="http://www.zoomerang.com/Survey/WEB22BSJG7JS8Q" class="survey_plain" target="_blank">survey</a>.</p>
+            <p class="about_page_font">
+                <!-- Please help us to improve the Library by completing a <a href="http://www.zoomerang.com/Survey/WEB22BSJG7JS8Q" class="survey_plain" target="_blank">survey</a>. -->
+                Contact <a class="cil_16_font_no_color" href="mailto:dorloff@ncmir.ucsd.edu?Subject=suggestions" target="_top">dorloff@ncmir.ucsd.edu</a>
+            </p>
     
             </div>
             
