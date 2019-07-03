@@ -147,7 +147,8 @@
         
         $jpeg = $cutil->findImageFileJSON($json,'Jpeg');
         $zip = $cutil->findImageFileJSON($json,'Zip');
-        $flv = $cutil->findImageFileJSON($json,'Flv');
+        //$flv = $cutil->findImageFileJSON($json,'Flv');
+        $flv = $cutil->findImageFileJSON($json,'Mp4');
         
 ?>
 <div class="row top-buffer">

@@ -536,8 +536,8 @@ $config['ccdb_image_prefix'] = $cil_config_json->cil_data_host."/display_images/
 
 /* ----------------------------Service API---------------------------------- */
 //$service_api_host = $cil_config_json->service_api_host_dev; //Development
-//$service_api_host = $cil_config_json->service_api_host_stage; //Staging
-$service_api_host = $cil_config_json->service_api_host_prod; //Production
+$service_api_host = $cil_config_json->service_api_host_stage; //Staging
+//$service_api_host = $cil_config_json->service_api_host_prod; //Production
 
 $config['service_api_host'] = $service_api_host;
 
