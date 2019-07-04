@@ -10,6 +10,9 @@
         <div class="col-md-6">
             <div class="row">
                  <br/>
+                 <?php
+                    //echo getcwd();
+                 ?>
                 <div class="col-md-12">
                      <?php include_once 'cil_inner_pages/cil_inner_image.php' ?>
                 </div>

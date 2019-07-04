@@ -13,7 +13,42 @@
             <div class="col-md-12">
                 <center>
                 <!-- <img src="<?php //echo $cil_image_prefix.$numeric_id;   ?>/<?php echo "display_".$numeric_id;   ?>.png" width="100%" class="img-thumbnail pull-right"/> -->
+                <?php
+                    $localImageJsonPath = getcwd()."/pic/thumbnail_display/".$numeric_id."/image.json";
+                    $localName = NULL;
+                    $localFile = NULL;
+                    
+                    if(isset($local_image_display) && $local_image_display && file_exists($localImageJsonPath))
+                    {
+                        $ljson_str = file_get_contents($localImageJsonPath);
+                        //echo $ljson_str;
+                        $ljson = json_decode($ljson_str);
+                        if(isset($ljson->Image_name) && isset($ljson->Name))
+                        {
+                            $imagePath = getcwd()."/pic/thumbnail_display/".$numeric_id."/".$ljson->Image_name;
+                            //echo $imagePath;
+                            if(file_exists($imagePath))
+                            {
+                                $localName = $ljson->Name;
+                                $localFile = "/pic/thumbnail_display/".$numeric_id."/".$ljson->Image_name;
+                            }
+                        }
+                    }
+                    if(isset($local_image_display) && $local_image_display && !is_null($localFile) && !is_null($localName))
+                    {
+                        
+                ?>
+                    <img  alt="<?php if(!is_null($localName)) echo $localName ?>" src="<?php echo $localFile;   ?>" width="100%" class="img-thumbnail pull-right"/>
+                <?php
+                    }
+                    else
+                    {
+                        
+                ?>
                     <img  alt="<?php if(isset($summary)) echo $summary ?>" src="<?php echo $cil_image_prefix.$numeric_id."/".$numeric_id."_thumbnailx512.jpg";   ?>" width="100%" class="img-thumbnail pull-right"/>
+                <?php
+                    }
+                ?>
                 </center>
             </div>
         </div>

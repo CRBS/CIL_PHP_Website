@@ -19,7 +19,7 @@
              }
                  
 ?>
-            <a href="/images/<?php echo $image;  ?>" alt="" class="most_popular " title="<?php echo $title; ?>"><img width="88" height="88" alt="<?php echo $image  ?>" src="<?php echo $cil_image_prefix.$image."/".$image."_thumbnailx88.jpg"; ?>"></a>
+            <a href="/images/<?php echo $image;  ?>" alt="<?php echo $title;  ?>" class="most_popular " title="<?php echo $title; ?>"><img width="88" height="88" alt="<?php echo $title;  ?>" src="<?php echo $cil_image_prefix.$image."/".$image."_thumbnailx88.jpg"; ?>"></a>
 <?php
         }
     }

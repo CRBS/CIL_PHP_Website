@@ -476,6 +476,7 @@ class Images  extends CI_Controller
         $data['cil_data_host'] = $this->config->item('cil_data_host');
         $data['enable_cdeep3m'] = $this->config->item('enable_cdeep3m');
         $data['image_viewer_prefix'] = $this->config->item('image_viewer_prefix');
+        $data['local_image_display'] = $this->config->item('local_image_display');
         
         if(strcmp($imageID,"advanced_search")==0)
         {

@@ -712,3 +712,6 @@ $config['is_staging_server'] = true;
 
 //$config['image_viewer_prefix'] = $cil_config_json->image_viewer_stage;
 $config['image_viewer_prefix'] = $cil_config_json->image_viewer_prod;
+
+
+$config['local_image_display'] = true;
