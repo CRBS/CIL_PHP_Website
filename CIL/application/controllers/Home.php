@@ -36,7 +36,15 @@ class Home  extends CI_Controller
             return;
          }
          
-         
+         $jsonLdPath = getcwd()."/json_ld/mainpage_seo.json";
+         if(file_exists($jsonLdPath))
+         {
+             $json_ld_str = file_get_contents($jsonLdPath);
+             $json_ld = json_decode($json_ld_str);
+             if(!is_null($json_ld))
+                $data['json_ld_str'] = $json_ld_str;
+                     
+         }
          
          $summary = array();
          $data['title'] = 'The Cell Image Library';

@@ -1,0 +1,26 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Cell Image Library",
+    "description": "This library is a public and easily accessible resource database of images, videos, and animations of cells, capturing a wide diversity of organisms, cell types, and cellular processes. The purpose of this database is to advance research on cellular activity, with the ultimate goal of improving human health.",
+    "image": "http://cellimagelibrary.org/pix/CIL_logo_final_75H.jpg",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "La Jolla",
+        "addressRegion": "CA",
+        "postalCode": "92093",
+        "streetAddress": "9500 Gilman Drive"
+    },
+    "sameAs":[
+    "https://www.facebook.com/CellImageLibrary",
+    "https://twitter.com/CellImageLibrar",
+    "https://cellimagelibrary.tumblr.com/",
+    "https://id.pinterest.com/CILImage/cell-image-library/",
+    "https://www.instagram.com/cell_image_library/"
+    ],
+    "potentialAction": {
+    "@type": "SearchAction",
+    "target": "http://cellimagelibrary.org/images?simple_search=Search&k={search_term_string}",
+    "query-input": "required name=search_term_string"
+    }
+}

@@ -169,6 +169,15 @@
         </script>
         <!----------End Google analytics---------------->
         
+        <!--------SEO-------------------------->
+        <script type="application/ld+json">
+        <?php
+            if(isset($json_ld_str))
+                echo $json_ld_str;
+        ?>
+        }
+        </script>    
+        <!--------End SEO--------------------->
         
         </head>
         
