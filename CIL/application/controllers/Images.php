@@ -569,6 +569,15 @@ class Images  extends CI_Controller
                 $numeric_id = str_replace("CIL_", "", $imageID); 
                 $data['numeric_id'] =$numeric_id;
                 
+                /**********SEO*******************/
+                $json_ld = $this->getDatasetJsonLd($imageID,$numeric_id, $json);
+                if(!is_null($json_ld))
+                {
+                    $data['json_ld_str'] = json_encode($json_ld,JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+                }
+                /**********End SEO*******************/
+                
+                
                 //$data['has_video'] = $sutil->is_url_exist("http://www.cellimagelibrary.org/videos/".$numeric_id.".flv");
                 //$data['video_url'] = "http://www.cellimagelibrary.org/videos/".$numeric_id.".flv";
                 
@@ -593,6 +602,106 @@ class Images  extends CI_Controller
         }
         
     }
+    
+    private function findImageFileJSON($json, $type)
+    {
+        if(!isset($json->CIL_CCDB->CIL->Image_files))
+            return null;
+        
+        $imageFiles = $json->CIL_CCDB->CIL->Image_files;
+        foreach($imageFiles as $imageFile)
+        {
+            if(isset($imageFile->File_type) && strcmp($imageFile->File_type, $type) == 0)
+            {
+                return $imageFile;
+            }
+        }
+        
+        return null;
+    } 
+    private function getDatasetJsonLd($image_id,$numeric_id, $json)
+    {
+        $download_prefix = $this->config->item('download_server_prefix');
+        $json_ld_str = "";
+        $json_ld = NULL;
+        $jsonLdPath = getcwd()."/json_ld/dataset_model.json";
+        if(file_exists($jsonLdPath))
+        {
+            $json_ld_str = file_get_contents($jsonLdPath);
+            $json_ld = json_decode($json_ld_str);
+            if(!is_null($json_ld))
+            {
+                //$data['json_ld_str'] = $json_ld_str;
+                if(isset($json->CIL_CCDB->Citation->Title))
+                    $json_ld->name =$json->CIL_CCDB->Citation->Title;
+                else
+                    $json_ld->name = $this->getSummary($json->CIL_CCDB->CIL);
+                if(isset($json->CIL_CCDB->CIL->CORE->IMAGEDESCRIPTION->free_text))
+                    $json_ld->description = $json->CIL_CCDB->CIL->CORE->IMAGEDESCRIPTION->free_text;
+                
+                if(isset($json->CIL_CCDB->Citation->DOI))
+                    $json_ld->identifier = $json->CIL_CCDB->Citation->DOI;
+                else
+                    $json_ld->identifier = $image_id;
+                
+                if(isset($json->CIL_CCDB->CIL->CORE->TERMSANDCONDITIONS->free_text))
+                {
+                    if(strcmp($json->CIL_CCDB->CIL->CORE->TERMSANDCONDITIONS->free_text, "public_domain")==0)
+                        $json_ld->license = "http://creativecommons.org/choose/publicdomain-3?title=&amp;copyright_holder=";
+                    else if(strcmp($json->CIL_CCDB->CIL->CORE->TERMSANDCONDITIONS->free_text, "attribution_cc_by")==0)
+                        $json_ld->license = "http://creativecommons.org/licenses/by/3.0/legalcode";
+                    else if(strcmp($json->CIL_CCDB->CIL->CORE->TERMSANDCONDITIONS->free_text, "attribution_nc_sa")==0)
+                        $json_ld->license = "http://creativecommons.org/licenses/by-nc-sa/3.0";
+                    else if(strcmp($json->CIL_CCDB->CIL->CORE->TERMSANDCONDITIONS->free_text, "copyright")==0)
+                        $json_ld->license = "copyright protected";
+                    else if(strcmp($json->CIL_CCDB->CIL->CORE->TERMSANDCONDITIONS->free_text, "attribution_sa")==0)
+                        $json_ld->license = "http://creativecommons.org/licenses/by-sa/3.0";
+                    else if(strcmp($json->CIL_CCDB->CIL->CORE->TERMSANDCONDITIONS->free_text, "attribution_nd")==0)
+                        $json_ld->license = "http://creativecommons.org/licenses/by-nd/3.0";
+                    else if(strcmp($json->CIL_CCDB->CIL->CORE->TERMSANDCONDITIONS->free_text, "attribution_nc")==0)
+                        $json_ld->license = "http://creativecommons.org/licenses/by-nc/3.0";
+                    else if(strcmp($json->CIL_CCDB->CIL->CORE->TERMSANDCONDITIONS->free_text, "attribution_nc_nd")==0)
+                        $json_ld->license = "http://creativecommons.org/licenses/by-nc-nd/3.0";
+                }
+                
+                if(isset($json->CIL_CCDB->Data_type->Video) && !$json->CIL_CCDB->Data_type->Video)
+                {
+                    $jpeg = $this->findImageFileJSON($json,'Jpeg');
+                    $zip = $this->findImageFileJSON($json,'Zip');
+                    $tif = $this->findImageFileJSON($json,'OME_tif');
+                    
+                    if(!is_null($zip))
+                        $json_ld->distribution->contentUrl = $download_prefix."/media/images/".$numeric_id."/".$zip->File_path;
+                    else if(!is_null($tif))
+                        $json_ld->distribution->contentUrl = $download_prefix."/media/images/".$numeric_id."/".$tif->File_path;
+                    else if(!is_null($jpeg))
+                        $json_ld->distribution->contentUrl = $download_prefix."/media/images/".$numeric_id."/".$jpeg->File_path;
+                }
+                else if(isset($json->CIL_CCDB->Data_type->Video) && $json->CIL_CCDB->Data_type->Video)
+                {
+
+                    $jpeg = $this->findImageFileJSON($json,'Jpeg');
+                    $zip = $this->findImageFileJSON($json,'Zip');
+                    $mp4 = $this->findImageFileJSON($json,'Mp4');
+                    
+                    if(!is_null($zip))
+                        $json_ld->distribution->contentUrl = $download_prefix."/media/videos/".$numeric_id."/".$zip->File_path;
+                    else if(!is_null($mp4))
+                        $json_ld->distribution->contentUrl = $download_prefix."/media/videos/".$numeric_id."/".$mp4->File_path;
+                    else if(!is_null($jpeg))
+                        $json_ld->distribution->contentUrl = $download_prefix."/media/videos/".$numeric_id."/".$jpeg->File_path;
+                }
+                
+                if(isset($json->CIL_CCDB->Status->Publish_time))
+                   $json_ld->datePublished = date('Y-m-d', $json->CIL_CCDB->Status->Publish_time);
+            }
+                     
+        }
+        
+        return $json_ld;
+    }   
+    
+   
     
     private function getSummary($cil)
     {
