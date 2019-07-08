@@ -135,6 +135,7 @@ class Browse  extends CI_Controller
         
         if(strcmp($input,"None")==0)
         {
+            $data['title'] = "Microbial";
             $algaeResults = $cutil->getMicrobial("algae", 0, 1,false,false,false,false);
             $fungiResults = $cutil->getMicrobial("fungi", 0, 1,false,false,false,false);
             $bacteriaResults = $cutil->getMicrobial("bacteria", 0, 1,false,false,false,false);
@@ -444,7 +445,7 @@ class Browse  extends CI_Controller
        
        if(strcmp($input,"None")==0)
        {
-        
+        $data['title'] = "Cell Process";
         $data['result'] = $result;
         $data['category'] = "cellprocess";
         $this->load->view('templates/cil_header4', $data);
@@ -1349,6 +1350,7 @@ class Browse  extends CI_Controller
        $result = json_decode($response);
        if(is_null($result))
        {
+           
            $data['category'] = "cellcomponent";
            $this->load->view('templates/cil_header4', $data);
            $this->load->view('cil_errors/empty_response_error', $data);
@@ -1359,7 +1361,7 @@ class Browse  extends CI_Controller
        
        if(strcmp($input,"None")==0)
        {
-        
+        $data['title'] = " Cell Component";
         $data['result'] = $result;
         $data['category'] = "cellcomponent";
         $this->load->view('templates/cil_header4', $data);
@@ -1798,17 +1800,17 @@ class Browse  extends CI_Controller
        
        if(strcmp($input,"None")==0)
        {
-        
-        $data['result'] = $result;
-        $data['category'] = "celltype";
-        $this->load->view('templates/cil_header4', $data);
-        if(strcmp($view_type,"grid")==0)
-           $this->load->view('categories2/cell_type_display', $data);
-       else 
-           $this->load->view('categories2/cell_type_display_col', $data);
-       
-        
-        $this->load->view('templates/cil_footer2', $data);
+            $data['title'] = "Cell Type";
+            $data['result'] = $result;
+            $data['category'] = "celltype";
+            $this->load->view('templates/cil_header4', $data);
+            if(strcmp($view_type,"grid")==0)
+               $this->load->view('categories2/cell_type_display', $data);
+           else 
+               $this->load->view('categories2/cell_type_display_col', $data);
+
+
+            $this->load->view('templates/cil_footer2', $data);
        }
        else 
        {
@@ -2193,7 +2195,7 @@ class Browse  extends CI_Controller
        
        if(strcmp($input,"None")==0)
        {
-        
+        $data['title'] = "Organism";
         $data['result'] = $result;
         $data['category'] = "organism";
         $this->load->view('templates/cil_header4', $data);

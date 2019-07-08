@@ -105,7 +105,7 @@ class Pages  extends CI_Controller
     {
         $data['test']="test";
         $data['category'] = "datasets";
-        
+        $data['title'] = "Datasets";
          $sdatasets = file_get_contents(getcwd()."/application/json_config/datasets.json");
          $datasets = json_decode($sdatasets);
          
@@ -135,7 +135,7 @@ class Pages  extends CI_Controller
     public function Alzheimers()
     {
         $data['test']="test";
-        
+        $data['title'] = "Alzheimer’s disease";
         $id_array = ['50516','50517','50512','50519','50514','50518','50515','50513'];
         $index = array_rand($id_array);
         $data['animation_id'] = $id_array[$index];
