@@ -481,6 +481,7 @@ class Images  extends CI_Controller
         if(strcmp($imageID,"advanced_search")==0)
         {
             $data['test'] = "test";
+            $data['title'] = "Advanced search";
             $this->load->view('templates/cil_header4', $data);
             $this->load->view('advanced_search/advanced_search_display', $data);
             $this->load->view('templates/cil_footer2', $data);

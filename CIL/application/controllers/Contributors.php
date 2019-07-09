@@ -21,6 +21,7 @@ class Contributors  extends CI_Controller
     public function Index()
     {
          $data['test'] = "test";
+         $data['title'] = "Contributors";
          $scontributors = file_get_contents(getcwd()."/application/json_config/Contributors/contributors.json");
          $contributors = json_decode($scontributors);
          $data['contributors'] = $contributors;

@@ -164,6 +164,8 @@ class Browse  extends CI_Controller
         else 
         {
             //echo "<br/>Input:".$input;
+            $data['title'] = "Microbial | ".$input;
+            
             $input = strtolower($input);
             $response = $cutil->getMicrobial($input, $from, $size,
                 $basic_time,$basic_still,$basic_zstack,$basic_video);
@@ -459,8 +461,11 @@ class Browse  extends CI_Controller
        }
        else //if(strcmp($input,"Actin%20Based%20Processes")==0)
        {
+           
            $category = $input;
            $input = str_replace("%20", " ", $input);
+           $data['title'] = "Cell Process | ".$input;
+           
            $context_name = "cellprocess";
            $data['category_title'] = $input;
            //echo "<br/>Name:".$input."---";
@@ -1361,7 +1366,7 @@ class Browse  extends CI_Controller
        
        if(strcmp($input,"None")==0)
        {
-        $data['title'] = " Cell Component";
+        $data['title'] = "Cell Component";
         $data['result'] = $result;
         $data['category'] = "cellcomponent";
         $this->load->view('templates/cil_header4', $data);
@@ -1377,6 +1382,9 @@ class Browse  extends CI_Controller
        {
            $category = $input;
            $input = str_replace("%20", " ", $input);
+           
+           $data['title'] = "Cell Component | ".$input;
+           
            $context_name = "cellcomponent";
            $data['category_title'] = $input;
            //echo "<br/>Name:".$input."---";
@@ -1816,6 +1824,9 @@ class Browse  extends CI_Controller
        {
            $category = $input;
            $input = str_replace("%20", " ", $input);
+           
+           $data['title'] = "Cell Type | ".$input;
+           
            $context_name = "celltype";
            $data['category_title'] = $input;
            //echo "<br/>Name:".$input."---";
@@ -2211,6 +2222,9 @@ class Browse  extends CI_Controller
        {
            $category = $input;
            $input = str_replace("%20", " ", $input);
+           
+           $data['title'] = "Organism | ".$input;
+           
            $context_name = "organism";
            $data['category_title'] = $input;
            //echo "<br/>Name:".$input."---";

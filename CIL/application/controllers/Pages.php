@@ -19,6 +19,7 @@ class Pages  extends CI_Controller
     public function Cell_illustration()
     {
         $data['test']="test";
+        $data['title'] = "Interactive Cells";
         $this->load->view('templates/cil_header4', $data);
         //$this->load->view('pages/cell_illustration_display', $data); //using the flash
         $this->load->view('pages/cell_illustration_display2', $data);
@@ -30,6 +31,7 @@ class Pages  extends CI_Controller
     public function Project_20269()
     {
         $data['test']="test";
+        $data['title']="Human U2OS cells";
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('pages/project_20269_display', $data);
         $this->load->view('templates/cil_footer2', $data);
@@ -38,6 +40,7 @@ class Pages  extends CI_Controller
     public function About()
     {
         $data['test']="test";
+        $data['title']="About";
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('pages/about_display', $data);
         $this->load->view('templates/cil_footer2', $data);
@@ -46,6 +49,7 @@ class Pages  extends CI_Controller
     public function Past_contributors()
     {
         $data['test']="test";
+        
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('pages/past_contributors_display', $data);
         $this->load->view('templates/cil_footer2', $data);
@@ -54,6 +58,7 @@ class Pages  extends CI_Controller
     public function Help()
     {
         $data['test']="test";
+        $data['title'] = "FAQs";
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('pages/help_display', $data);
         $this->load->view('templates/cil_footer2', $data);
@@ -70,6 +75,7 @@ class Pages  extends CI_Controller
     public function License()
     {
         $data['test']="test";
+        $data['title'] = "Licenses";
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('pages/license_display', $data);
         $this->load->view('templates/cil_footer2', $data);
@@ -87,6 +93,7 @@ class Pages  extends CI_Controller
     public function Notification()
     {
         $data['test']="test";
+        $data['title'] = "Notification of Use";
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('pages/notification_display', $data);
         $this->load->view('templates/cil_footer2', $data);
@@ -95,6 +102,7 @@ class Pages  extends CI_Controller
     public function Contribute()
     {
         $data['test']="test";
+        $data['title'] = "Share your images";
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('pages/contribute_display', $data);
         $this->load->view('templates/cil_footer2', $data);

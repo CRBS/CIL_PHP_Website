@@ -63,13 +63,13 @@
             <p>&nbsp;</p>
         </div>
     </div>
-    <div class="row top-buffer">
+    <!-- <div class="row top-buffer">
         <div class="col-md-12">
             <span class="cil_title">Survey</span>
             <p class="faq_regular_font">Please take this brief <a href="http://www.zoomerang.com/Survey/WEB22BSKGLKDZV" class="survey_plain" target="_blank">survey</a> to help us improve the upload experience. <a href="http://www.zoomerang.com/Survey/WEB22BSKGLKDZV" class="button survey" target="_blank">!</a></p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
         </div>
-    </div>
+    </div> -->
     
 </div>
