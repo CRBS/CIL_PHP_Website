@@ -146,6 +146,8 @@ class Images  extends CI_Controller
             echo "<br/>".$searchURL2;
             $response = $sutil->just_curl_get($searchURL2);*/
             
+            $data['title'] = $keywords." | CIL Search";
+            
             $searchPrefix = $this->config->item('apiDocPrefix');
             $searchPostfix = "+CIL_CCDB.Status.Is_public:true+CIL_CCDB.Status.Deleted:false&default_operator=AND&from=".$from."&size=".$size;
             $searchURL = $searchPrefix."?search=".$queryString.$searchPostfix;
@@ -352,7 +354,7 @@ class Images  extends CI_Controller
             //var_dump($amodel);
             //echo  $data['search_for'];
             //echo "-----------End amodel-----------";
-            
+            $data['title'] = "CIL advanced search";
             $this->load->view('templates/cil_header4', $data);
             $this->load->view('advanced_search/results/adv_search_results', $data);
             $this->load->view('templates/cil_footer2', $data);
@@ -578,6 +580,13 @@ class Images  extends CI_Controller
                 }
                 /**********End SEO*******************/
                 
+                if(isset($json->CIL_CCDB->Citation->Title) && !is_null($json->CIL_CCDB->Citation->Title))
+                {
+                    $tid = str_replace("_", ":", $imageID);
+                    $data['title'] = $tid." | ".$json->CIL_CCDB->Citation->Title;
+                }
+                else
+                    $data['title'] = $tid;
                 
                 //$data['has_video'] = $sutil->is_url_exist("http://www.cellimagelibrary.org/videos/".$numeric_id.".flv");
                 //$data['video_url'] = "http://www.cellimagelibrary.org/videos/".$numeric_id.".flv";
