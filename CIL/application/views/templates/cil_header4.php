@@ -24,8 +24,13 @@
         $og_url = null;
         if(isset($json->CIL_CCDB->CIL) && isset($numeric_id))
         {
-            $og_title = "The Cell: An Image Library - Image CIL:".$numeric_id;
-            echo "\n<meta property=\"og:title\" content=\"".$og_title."\" />";
+            if(isset($title))
+                echo "\n<meta property=\"og:title\" content=\"".$title."\" />";
+            else
+            {
+                $og_title = "The Cell: An Image Library - Image CIL:".$numeric_id;
+                echo "\n<meta property=\"og:title\" content=\"".$og_title."\" />";
+            }
         
             if(isset($json->CIL_CCDB->CIL->CORE->IMAGEDESCRIPTION->free_text))
             {
@@ -76,7 +81,7 @@
                     if(isset($meta_desc))
                     {
                 ?>   
-                <meta name="description" content="The Cell Image Library">
+                <meta name="description" content="<?php echo $meta_desc; ?>">
                 <?php
                     }   
                     else

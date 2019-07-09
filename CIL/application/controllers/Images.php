@@ -583,10 +583,34 @@ class Images  extends CI_Controller
                 if(isset($json->CIL_CCDB->Citation->Title) && !is_null($json->CIL_CCDB->Citation->Title))
                 {
                     $tid = str_replace("_", ":", $imageID);
-                    $data['title'] = $tid." | ".$json->CIL_CCDB->Citation->Title;
+                    $pos = strpos($json->CIL_CCDB->Citation->Title, $tid);
+                    
+                    if($pos !== FALSE)
+                    {
+                        $len = strlen($json->CIL_CCDB->Citation->Title);
+                        $tempTitle = substr($json->CIL_CCDB->Citation->Title, $pos);
+                        $data['title'] = $tempTitle;
+                    }
+                    else
+                         $data['title'] = $tid." ".$json->CIL_CCDB->Citation->Title;
                 }
                 else
                     $data['title'] = $tid;
+                
+                $data['meta_desc'] = 'Cell Image Library';
+                
+                if(isset($json->CIL_CCDB->CIL->CORE->IMAGEDESCRIPTION->free_text))
+                {
+                    $meta_desc = $json->CIL_CCDB->CIL->CORE->IMAGEDESCRIPTION->free_text;
+                   
+                    if(strlen($meta_desc) > 150)
+                    {
+                        $meta_desc = substr ($meta_desc, 0,150)."...";
+
+                    }
+                    // echo $meta_desc;
+                    $data['meta_desc'] = $meta_desc;
+                }
                 
                 //$data['has_video'] = $sutil->is_url_exist("http://www.cellimagelibrary.org/videos/".$numeric_id.".flv");
                 //$data['video_url'] = "http://www.cellimagelibrary.org/videos/".$numeric_id.".flv";
