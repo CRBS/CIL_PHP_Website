@@ -48,6 +48,7 @@ class Home  extends CI_Controller
          
          $summary = array();
          $data['title'] = 'The Cell Image Library';
+         $data['meta_desc'] = 'Accessible resource database of images, videos, and animations of cells, capturing a wide diversity of organisms, cell types, and cellular processes.';
          $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
          $data['cil_data_host'] = $this->config->item('cil_data_host');
          $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');

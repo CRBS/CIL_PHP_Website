@@ -75,7 +75,21 @@
     
                 <!----End AddThis----------->
                 
+		<?php
+                    if(isset($meta_desc))
+                    {
+                ?>   
+                <meta name="description" content="<?php echo $meta_desc; ?>">
+                <?php
+                    }   
+                    else
+                    {
+                 ?>
 		<meta name="description" content="The Cell Image Library">
+                <?php
+                
+                    }
+                ?>
 		<meta name="author" content="Willy W. Wong">
 		<meta name="viewport" content="width=device-width">
                 
