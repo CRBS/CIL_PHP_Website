@@ -579,10 +579,10 @@ class Images  extends CI_Controller
                     $data['json_ld_str'] = json_encode($json_ld,JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
                 }
                 /**********End SEO*******************/
-                
+                $tid = str_replace("_", ":", $imageID);
                 if(isset($json->CIL_CCDB->Citation->Title) && !is_null($json->CIL_CCDB->Citation->Title))
                 {
-                    $tid = str_replace("_", ":", $imageID);
+                    
                     $pos = strpos($json->CIL_CCDB->Citation->Title, $tid);
                     
                     if($pos !== FALSE)
