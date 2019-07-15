@@ -189,14 +189,25 @@
         <!----------End Google analytics---------------->
         
         <!--------SEO-------------------------->
-        <script type="application/ld+json">
         <?php
             if(isset($json_ld_str))
+            {
+                
+        ?>
+        
+        <script type="application/ld+json">
+        <?php
                 echo $json_ld_str;
         ?>
-        }
-        </script>    
+
+        </script>
+        
+        <?php
+            }
+                
+        ?>
         <!--------End SEO--------------------->
+        
         
         </head>
         
