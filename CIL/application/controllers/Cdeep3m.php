@@ -15,5 +15,11 @@ class Cdeep3m  extends CI_Controller
         $this->load->view('templates/cil_footer2', $data);    
     }
     
-    
+    public function memebranes_accuracy()
+    {
+        $data['title'] = "Memebranes | Validation accuracy";
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('cdeep3m/cdeep3m_display', $data);
+        $this->load->view('templates/cil_footer2', $data); 
+    }
 }

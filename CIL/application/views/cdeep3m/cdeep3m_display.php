@@ -153,7 +153,9 @@
            <div class="col-md-12">
                 <span class="cil_title2">SEMTEM membranes</span>
             </div>
-            <div class="col-md-12">
+            
+            <!------Model content---------------->
+            <div class="col-md-6">
                <div class="biological_sources">
 
             <dl>
@@ -186,6 +188,18 @@
             </dl>
             </div>     
             </div>
+            <!------End Model content---------------->
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="/pic/cdeep3m/membranes_accuracy.jpg" title="Validation accuracy" alt="Validation accuracy" target="_blank"><img width="100%" src="/pic/cdeep3m/membranes_accuracy.jpg" /></a>
+                    </div>
+                    <div class="col-md-12">
+                        <center><a href="/pic/cdeep3m/membranes_loss.jpg" title="Training vs Validation Loss" alt="Training vs Validation Loss" target="_blank" class="cil_16_font">View the training accuracy</a></center>
+                    </div>
+                </div>
+            </div>
+            
             <br/><br/>
             
             <div class="col-md-12 cil_description">
