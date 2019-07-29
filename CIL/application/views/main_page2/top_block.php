@@ -23,7 +23,7 @@
 
         <div class="top-buffer"></div>
     </div>
-    <div class="col-md-5">
+    <div class="col-md-6">
         <?php 
         if(isset($is_staging_server) && $is_staging_server)
         {
@@ -35,10 +35,11 @@
         }
         ?>
         <p class="cil_16_font_black">
+            Did you miss our latest presentation from the 3rd Annual Cell Congress. <a href="https://cildata.crbs.ucsd.edu/media/cil_presentation.mp4" target="_blank">Check it out here</a><br/><br/>
             Enjoy exploring our over 10,000 unique datasets and 20 TB of data.<br/><br/> Interested in submitting images? Contact <a class="cil_16_font_no_color" href="mailto:dorloff@ncmir.ucsd.edu?Subject=suggestions" target="_top">dorloff@ncmir.ucsd.edu</a>.<br/><br/>
         </p>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-2">
         <div class="row">
             <div class="col-md-12">
                 <div class="pull-right">
