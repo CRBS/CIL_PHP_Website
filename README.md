@@ -33,6 +33,9 @@ The PHP file at application/controllers/CILServiceUtil2.php contains all utility
 ## Installation and configuration
 See the [installation instructions](https://github.com/CRBS/CIL_PHP_Website/wiki/Installation_Instruction)
 
+## CIL Image Viewer
+* [github source code](https://github.com/CRBS/CIL_Image_Viewer)
+
 
 ## License
 See [license.txt](https://github.com/CRBS/CIL_PHP_Website/blob/master/license.txt)
