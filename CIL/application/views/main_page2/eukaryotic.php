@@ -11,7 +11,7 @@
             <li id="endoplasmic_reticulum" class="list-group-item"><a href="/browse/cellcomponent/Endoplasmic%20Reticulum" class="anchor_blue">Endoplasmic Reticulum</a></li>
             <li id="endosome" class="list-group-item"><a href="/browse/cellcomponent/Endosome" class="anchor_blue">Endosome</a></li>
             <li id="extracellular_matrix" class="list-group-item"><a href="/browse/cellcomponent/Extracellular%20Matrix" class="anchor_blue">Extracellular Matrix</a></li>
-            <li id="golgi_apparatus" class="list-group-item"><a href="/cellcomponent/Golgi Apparatus" class="anchor_blue">Golgi Apparatus</a></li>
+            <li id="golgi_apparatus" class="list-group-item"><a href="/browse/cellcomponent/Golgi Apparatus" class="anchor_blue">Golgi Apparatus</a></li>
             <li id="intermediate_filament_cytoskeleton" class="list-group-item"><a href="/browse/cellcomponent/Intermediate%20Filament%20Cytoskeleton" class="anchor_blue">Intermediate Filament Cytoskeleton</a></li>
             <li id="lysosome" class="list-group-item"><a href="/browse/cellcomponent/Lysosome%20And%20Related%20Organelles" class="anchor_blue">Lysosome</a></li>
             <!-- <li id="lysosome" class="list-group-item"><a href="/images?k=Lysosome&simple_search=Search" class="anchor_blue">Lysosome</a></li> -->
