@@ -28,7 +28,7 @@ class Home  extends CI_Controller
          $settings_json = json_decode($settings_response);
          if(is_null($settings_json))
          {
-            $data['title'] = 'The Cell Image Library';
+            $data['title'] = 'The Cell Image Library - Advance research on cellular activity';
             //$this->load->view('templates/cil_header4', $data);
             $this->load->view('templates/cil_header_light', $data);
             $this->load->view('cil_errors/empty_response_error', $data);
@@ -47,7 +47,7 @@ class Home  extends CI_Controller
          }
          
          $summary = array();
-         $data['title'] = 'The Cell Image Library';
+         $data['title'] = 'The Cell Image Library - Advance research on cellular activity';
          $data['meta_desc'] = 'Accessible resource database of images, videos, and animations of cells, capturing a wide diversity of organisms, cell types, and cellular processes.';
          $data['cil_image_prefix'] = $this->config->item('cil_image_prefix');
          $data['cil_data_host'] = $this->config->item('cil_data_host');
@@ -72,7 +72,7 @@ class Home  extends CI_Controller
          }
          else 
          {
-            $data['title'] = 'The Cell Image Library';
+            $data['title'] = 'The Cell Image Library - Advance research on cellular activity';
             $this->load->view('templates/cil_header4', $data);
             $this->load->view('cil_errors/empty_response_error', $data);
             $this->load->view('templates/cil_footer2', $data); 
@@ -113,7 +113,7 @@ class Home  extends CI_Controller
          }
          else 
          {
-            $data['title'] = 'The Cell Image Library';
+            $data['title'] = 'The Cell Image Library - Advance research on cellular activity';
             $this->load->view('templates/cil_header4', $data);
             $this->load->view('cil_errors/empty_response_error', $data);
             $this->load->view('templates/cil_footer2', $data); 

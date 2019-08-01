@@ -102,7 +102,8 @@ class Pages  extends CI_Controller
     public function Contribute()
     {
         $data['test']="test";
-        $data['title'] = "Share your images";
+        $data['title'] = "Share your images - We invite you to share your images";
+        $data['meta_desc'] = "We are accumulating images of all cell types from all organisms, including intracellular structures and movies or animations demonstrating functions.";
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('pages/contribute_display', $data);
         $this->load->view('templates/cil_footer2', $data);
