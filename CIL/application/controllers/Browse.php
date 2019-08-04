@@ -61,6 +61,17 @@ class Browse  extends CI_Controller
         $gutil = new GeneralUtil();
         
         $data['test'] = "test"; //Just to initialize $data
+
+        /****************Meta Description********************/
+        if(strcmp($input, "None")==0)
+            $data['meta_desc'] = "An organism that is too small to be seen by the unaided eye, especially a single-celled organism, such as a bacterium.";
+        else
+        {
+            $temp = str_replace("%20", " ", $input);
+            $data['meta_desc'] = $temp." - An organism that is too small to be seen by the unaided eye, especially a single-celled organism, such as a bacterium.";
+        }
+        /****************End Meta Description********************/
+        
         ////////Handle page and size////////////
         $page = 0;
         $size = 10;
@@ -262,6 +273,18 @@ class Browse  extends CI_Controller
         $gutil = new GeneralUtil();
         
         $data['test'] = "test"; //Just to initialize $data
+        
+        /****************Meta Description********************/
+        if(strcmp($input, "None")==0)
+            $data['meta_desc'] = "Processes that are carried out at the cellular level.";
+        else
+        {
+            $temp = str_replace("%20", " ", $input);
+            $data['meta_desc'] = $temp." - Processes that are carried out at the cellular level.";
+        }
+        /****************End Meta Description********************/
+        
+        
         ////////Handle page and size////////////
         $page = 0;
         $size = 10;
@@ -1182,6 +1205,19 @@ class Browse  extends CI_Controller
         $gutil = new GeneralUtil();
         
         $data['test'] = "test"; //Just to initialize $data
+        
+        
+        /****************Meta Description********************/
+        if(strcmp($input, "None")==0)
+            $data['meta_desc'] = "Cellular components are the complex biomolecules and structures of which cells, and thus living organisms, are composed.";
+        else
+        {
+            $temp = str_replace("%20", " ", $input);
+            $data['meta_desc'] = $temp." - Cellular components are the complex biomolecules and structures of which cells, and thus living organisms, are composed.";
+        }
+        /****************End Meta Description********************/
+        
+        
         ////////Handle page and size////////////
         $page = 0;
         $size = 10;
@@ -1625,6 +1661,19 @@ class Browse  extends CI_Controller
         $gutil = new GeneralUtil();
         
         $data['test'] = "test"; //Just to initialize $data
+        
+        /****************Meta Description********************/
+        if(strcmp($input, "None")==0)
+            $data['meta_desc'] = "A cell type is a classification used to distinguish between morphologically or phenotypically distinct cell forms within a species.";
+        else
+        {
+            $temp = str_replace("%20", " ", $input);
+            $data['meta_desc'] = $temp." - A cell type is a classification used to distinguish between morphologically or phenotypically distinct cell forms within a species.";
+        }
+        /****************End Meta Description********************/
+        
+        
+        
         ////////Handle page and size////////////
         $page = 0;
         $size = 10;
@@ -2023,6 +2072,18 @@ class Browse  extends CI_Controller
         $gutil = new GeneralUtil();
         
         $data['test'] = "test"; //Just to initialize $data
+        /****************Meta Description********************/
+        if(strcmp($input, "None")==0)
+            $data['meta_desc'] = "Organisms are classified by taxonomy into specified groups such as the multicellular animals, plants, and fungi; or unicellular microorganisms such as a protists, bacteria, and archaea.";
+        else
+        {
+            $temp = str_replace("%20", " ", $input);
+            $data['meta_desc'] = $temp." - Organisms are classified by taxonomy into specified groups such as the multicellular animals, plants, and fungi; or unicellular microorganisms such as a protists, bacteria, and archaea.";
+        }
+        /****************End Meta Description********************/
+        
+        
+        
         ////////Handle page and size////////////
         $page = 0;
         $size = 10;
