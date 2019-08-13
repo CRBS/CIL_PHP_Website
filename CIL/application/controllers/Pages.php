@@ -42,6 +42,7 @@ class Pages  extends CI_Controller
     {
         $data['test']="test";
         $data['title']="About";
+        $data['meta_desc'] = "This Image Library is a repository for images and movies of cells from a variety of organisms.";
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('pages/about_display', $data);
         $this->load->view('templates/cil_footer2', $data);
@@ -50,7 +51,7 @@ class Pages  extends CI_Controller
     public function Past_contributors()
     {
         $data['test']="test";
-        
+        $data['title'] = "Past contributors - Cell Image Library";
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('pages/past_contributors_display', $data);
         $this->load->view('templates/cil_footer2', $data);
@@ -59,7 +60,8 @@ class Pages  extends CI_Controller
     public function Help()
     {
         $data['test']="test";
-        $data['title'] = "FAQs";
+        $data['title'] = "FAQs - Cell Image Library";
+        $data['meta_desc'] = "The Cell seeks images from all organisms, cell types, and processes, normal and pathological.";
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('pages/help_display', $data);
         $this->load->view('templates/cil_footer2', $data);
@@ -68,6 +70,8 @@ class Pages  extends CI_Controller
     public function Press()
     {
         $data['test']="test";
+        $data['title'] = "Press - Cell Image Library";
+        $data['meta_desc'] = "The Cell Image Library In the News";
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('pages/press_display', $data);
         $this->load->view('templates/cil_footer2', $data);
@@ -76,7 +80,8 @@ class Pages  extends CI_Controller
     public function License()
     {
         $data['test']="test";
-        $data['title'] = "Licenses";
+        $data['title'] = "Licenses - Cell Image Library";
+        $data['meta_desc'] = "The Cell offers a variety of licensing options for selection by submitters. We welcome comments and feedback on these policies.";
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('pages/license_display', $data);
         $this->load->view('templates/cil_footer2', $data);
@@ -85,6 +90,7 @@ class Pages  extends CI_Controller
     public function Assist()
     {
         $data['test']="test";
+        $data['title'] = "Reference Us - The Cell Image Library";
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('pages/assist_display', $data);
         $this->load->view('templates/cil_footer2', $data);
@@ -94,7 +100,7 @@ class Pages  extends CI_Controller
     public function Notification()
     {
         $data['test']="test";
-        $data['title'] = "Notification of Use";
+        $data['title'] = "Notification of Use - The Cell Image Library";
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('pages/notification_display', $data);
         $this->load->view('templates/cil_footer2', $data);
@@ -115,7 +121,7 @@ class Pages  extends CI_Controller
     {
         $data['test']="test";
         $data['category'] = "datasets";
-        $data['title'] = "Datasets";
+        $data['title'] = "Datasets - Cell Image Library";
          $sdatasets = file_get_contents(getcwd()."/application/json_config/datasets.json");
          $datasets = json_decode($sdatasets);
          
@@ -145,7 +151,7 @@ class Pages  extends CI_Controller
     public function Alzheimers()
     {
         $data['test']="test";
-        $data['title'] = "Alzheimer’s disease";
+        $data['title'] = "Alzheimer’s disease - Cell Image Library";
         $id_array = ['50516','50517','50512','50519','50514','50518','50515','50513'];
         $index = array_rand($id_array);
         $data['animation_id'] = $id_array[$index];
