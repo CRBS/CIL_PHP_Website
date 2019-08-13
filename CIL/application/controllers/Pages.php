@@ -19,7 +19,8 @@ class Pages  extends CI_Controller
     public function Cell_illustration()
     {
         $data['test']="test";
-        $data['title'] = "Interactive Cells";
+        $data['title'] = "Interactive Cells - Cell Image Library";
+        $data['meta_desc'] = "The Eukaryotic Cell, Escherichia coli and Paramecium illustrations";
         $this->load->view('templates/cil_header4', $data);
         //$this->load->view('pages/cell_illustration_display', $data); //using the flash
         $this->load->view('pages/cell_illustration_display2', $data);

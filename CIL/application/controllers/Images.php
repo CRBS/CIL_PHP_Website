@@ -483,7 +483,8 @@ class Images  extends CI_Controller
         if(strcmp($imageID,"advanced_search")==0)
         {
             $data['test'] = "test";
-            $data['title'] = "Advanced search";
+            $data['title'] = "Advanced search - Cell Image Library";
+            $data['meta_desc'] = "The Advanced Search options allow specific ontology terms to be used to restrict the results to images that are annotated in a particular category with a particular ontology term.";
             $this->load->view('templates/cil_header4', $data);
             $this->load->view('advanced_search/advanced_search_display', $data);
             $this->load->view('templates/cil_footer2', $data);
