@@ -22,4 +22,18 @@ class Cdeep3m  extends CI_Controller
         $this->load->view('cdeep3m/cdeep3m_display', $data);
         $this->load->view('templates/cil_footer2', $data); 
     }
+    
+    public function prp_demo()
+    {
+        $data['title'] = "CIL | CDeep3M PRP DEMO";
+        
+        $image_array = array();
+        array_push($image_array, "CIL_50451");
+        array_push($image_array, "CIL_50068");
+        
+        $data['image_array'] = $image_array;
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('cdeep3m/prp_demo_display', $data);
+        $this->load->view('templates/cil_footer2', $data); 
+    }
 }
