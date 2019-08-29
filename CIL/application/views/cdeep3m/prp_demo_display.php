@@ -51,6 +51,18 @@
           
             <?php
                 }
+                else if(startsWith($image, "CCDB_"))
+                {
+                    $id = str_replace("CCDB_", "", $image);
+            ?>
+             <div class="thumbnail-kenburn">
+                <a alt="<?php echo $image ?>" title="<?php echo $image ?>" href="https://microbial.crbs.ucsd.edu/cdeep3m_prp/<?php echo $image; ?>" target="_blank" >
+                    <img src="https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdb_512/<?php echo $id; ?>_512v.jpg" width="140">
+                </a>
+            </div>
+            <?php
+                }
+                
             ?>
         </div>
         

@@ -29,8 +29,8 @@ class Cdeep3m  extends CI_Controller
         
         $image_array = array();
         array_push($image_array, "CIL_50451");
-        array_push($image_array, "CIL_50068");
-        
+        array_push($image_array, "CCDB_8192");
+        array_push($image_array, "CCDB_8246");
         $data['image_array'] = $image_array;
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('cdeep3m/prp_demo_display', $data);
