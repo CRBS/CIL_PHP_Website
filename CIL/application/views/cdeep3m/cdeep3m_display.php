@@ -23,7 +23,9 @@
     
     <div class="row">
         <div class="col-md-6">
-            <img src="/pix/uCT_Hippo0112.png" width="100%" />
+            <!-- <img src="/pix/uCT_Hippo0112.png" width="100%" /> -->
+            <img src="/pic/cdeep3m/CDeep3M_overview_image_v2_2-01.png" width="100%" /><br/>
+            <div class=" cil_description">Adapted from: Haberl, et al., (2018) CDeep3M: plug-and-play cloud based deep learning for image segmentation, Nat Methods 15 (2018) 677–680.</div>
         </div>
         
         <div class="col-md-6">
