@@ -192,6 +192,16 @@
                 <!------------------End Author -------------->
                 
                 
+                <dt><span class="cil_small_title">DOI</span></dt>
+                       
+                
+                <dd class="eol_dd">
+                <span>
+                <?php  echo "https://doi.org/10.7295/W9CDEEP3M".$item->_id; ?>
+                
+                </span>
+                </dd>
+                
             </dl>
             </div>
                 
