@@ -10,6 +10,11 @@ class Cdeep3m  extends CI_Controller
     public function Index()
     {
         $data['title'] = "CIL | CDeep3M";
+        
+        $client = new CILServiceUtil2();
+        $response = $client->listTrainedModels();
+        if(!is_null($response))
+            $data['models_json'] = json_decode($response);
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('cdeep3m/cdeep3m_display', $data);
         $this->load->view('templates/cil_footer2', $data);    

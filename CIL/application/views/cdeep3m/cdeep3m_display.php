@@ -42,7 +42,297 @@
             <br/><br/>
             <br/>
             </div>
+                
+    <!------Model start-------------->
+    
+    <?php
+
+        if(isset($models_json) && !is_null($models_json) && isset($models_json->hits) && $models_json->hits->total >0)
+        {
+            $hits = $models_json->hits->hits;
+            foreach($hits as $item)
+            {
+                
+    ?>        
+     
+           <div class="col-md-12">
+                <span class="cil_title2"><?php if(isset($item->_source->Cdeepdm_model->Name)) echo $item->_source->Cdeepdm_model->Name; ?> (<?php echo $item->_id ?>)</span>
+            </div>
+             <!------Model content---------------->
+            <div class="col-md-6">
+               <div class="biological_sources">
+
+            <dl>
+    
+
+                    <dt><span class="cil_small_title">Trained model</span></dt>
+                    <dd class="eol_dd">
+                    <span>
+                        <?php if(isset($item->_source->Cdeepdm_model->Name)) echo $item->_source->Cdeepdm_model->Name; ?>
+                    </span>
+                    </dd>
+
+
+                <dt><span class="cil_small_title">Description</span></dt>
+                <dd class="eol_dd">
+                <span>
+                <?php if(isset($item->_source->Cdeepdm_model->Description)) echo $item->_source->Cdeepdm_model->Description; ?>
+                </span>
+                </dd>
+
+                
+                <dt><span class="cil_small_title">X Voxelsize</span></dt>
+                <dd class="eol_dd">
+                <span>
+                <?php if(isset($item->_source->Cdeepdm_model->X_voxelsize->Value)) echo $item->_source->Cdeepdm_model->X_voxelsize->Value; ?>
+                <?php if(isset($item->_source->Cdeepdm_model->X_voxelsize->Unit)) echo $item->_source->Cdeepdm_model->X_voxelsize->Unit; ?>
+                </span>
+                </dd>
+                
+                <dt><span class="cil_small_title">Y Voxelsize</span></dt>
+                <dd class="eol_dd">
+                <span>
+                <?php if(isset($item->_source->Cdeepdm_model->Y_voxelsize->Value)) echo $item->_source->Cdeepdm_model->Y_voxelsize->Value; ?>
+                <?php if(isset($item->_source->Cdeepdm_model->Y_voxelsize->Unit)) echo $item->_source->Cdeepdm_model->Y_voxelsize->Unit; ?>
+                </span>
+                </dd>
+                
+                <dt><span class="cil_small_title">Z Voxelsize</span></dt>
+                <dd class="eol_dd">
+                <span>
+                <?php if(isset($item->_source->Cdeepdm_model->Z_voxelsize->Value)) echo $item->_source->Cdeepdm_model->Z_voxelsize->Value; ?>
+                <?php if(isset($item->_source->Cdeepdm_model->Z_voxelsize->Unit)) echo $item->_source->Cdeepdm_model->Z_voxelsize->Unit; ?>
+                </span>
+                </dd>
+
+                <?php
+                    if(isset($item->_source->Cdeepdm_model->ITEMTYPE) && is_array($item->_source->Cdeepdm_model->ITEMTYPE))
+                    {
+                ?>
+                
+                <dt><span class="cil_small_title">Microscopy type</span></dt>
+                        <?php
+                            foreach($item->_source->Cdeepdm_model->ITEMTYPE as $mp_type)
+                            {
+                                
+                                
+                        ?>
+                
+                <dd class="eol_dd">
+                <span>
+                <?php if(isset($mp_type->onto_id) && isset($mp_type->onto_name)) echo $mp_type->onto_name; ?>
+                <?php if(isset($mp_type->free_text)) echo $mp_type->free_text; ?>
+                </span>
+                </dd>
+                        <?php
+                                
+                            }
+                        ?>
+                <?php
+                    }
+                ?>
+                
+                <!------------------Cellular component -------------->
+                <?php
+                    if(isset($item->_source->Cdeepdm_model->CELLULARCOMPONENT) && is_array($item->_source->Cdeepdm_model->CELLULARCOMPONENT))
+                    {
+                ?>
+                
+                <dt><span class="cil_small_title">Cellular component</span></dt>
+                        <?php
+                            foreach($item->_source->Cdeepdm_model->CELLULARCOMPONENT as $mp_type)
+                            {
+                                
+                                
+                        ?>
+                
+                <dd class="eol_dd">
+                <span>
+                <?php if(isset($mp_type->onto_id) && isset($mp_type->onto_name)) echo $mp_type->onto_name; ?>
+                <?php if(isset($mp_type->free_text)) echo $mp_type->free_text; ?>
+                </span>
+                </dd>
+                        <?php
+                                
+                            }
+                        ?>
+                <?php
+                    }
+                ?>
+                <!------------------End Cellular component -------------->
+                
+                
+                <!------------------Author -------------->
+                <?php
+                    if(isset($item->_source->Cdeepdm_model->Contributors) && is_array($item->_source->Cdeepdm_model->Contributors))
+                    {
+                ?>
+                
+                <dt><span class="cil_small_title">Author</span></dt>
+                        <?php
+                            foreach($item->_source->Cdeepdm_model->Contributors as $author)
+                            {
+                                
+                                
+                        ?>
+                
+                <dd class="eol_dd">
+                <span>
+                <?php  echo $author; ?>
+                
+                </span>
+                </dd>
+                        <?php
+                                
+                            }
+                        ?>
+                <?php
+                    }
+                ?>
+                <!------------------End Author -------------->
+                
+                
+            </dl>
+            </div>
+                
+                
+            </div>
+             
+            <!------End Model content---------------->
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="https://cildata.crbs.ucsd.edu/media/model_display/<?php echo $item->_id ?>/<?php echo $item->_id ?>_thumbnailx512.jpg" title="<?php if(isset($item->_source->Cdeepdm_model->Name)) echo $item->_source->Cdeepdm_model->Name; ?>" alt="<?php if(isset($item->_source->Cdeepdm_model->Name)) echo $item->_source->Cdeepdm_model->Name; ?>" target="_blank"><img width="100%" src="https://cildata.crbs.ucsd.edu/media/model_display/<?php echo $item->_id ?>/<?php echo $item->_id ?>_thumbnailx220.jpg" /></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-12 cil_description">
+                <center><a class="button mini" href="https://doi.org/10.7295/W9CDEEP3M<?php echo $item->_id ?>" target="_self">Download</a></center>
+            </div>
+            <div class="col-md-12"><br/></div>
+    <?php
+                
+            }
+        }
+        
+    ?>
+    
+    
+    <!-------End model--->             
+                
+    <!------Model start-------------->      
+           <div class="col-md-12">
+                <span class="cil_title2">SEMTEM membranes</span>
+            </div>
             
+            <!------Model content---------------->
+            <div class="col-md-6">
+               <div class="biological_sources">
+
+            <dl>
+    
+
+                    <dt><span class="cil_small_title">Trained model</span></dt>
+                    <dd class="eol_dd">
+                    <span>
+                        Membranes
+                    </span>
+                    </dd>
+
+
+                <dt><span class="cil_small_title">Modality</span></dt>
+                <dd class="eol_dd">
+                <span>
+                Transmission electron microscopy, serial block-face scanning electron microscopy
+                </span>
+                </dd>
+
+
+                <dt><span class="cil_small_title">Voxelsize</span></dt>
+                <dd class="eol_dd">
+                <span>
+                ~5nm
+                </span>
+                </dd>
+
+
+            </dl>
+            </div>     
+            </div>
+            <!------End Model content---------------->
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="/pic/cdeep3m/membranes_accuracy.jpg" title="Validation accuracy" alt="Validation accuracy" target="_blank"><img width="100%" src="/pic/cdeep3m/membranes_accuracy.jpg" /></a>
+                    </div>
+                    <div class="col-md-12">
+                        <center><a href="/pic/cdeep3m/membranes_loss.jpg" title="Training vs Validation Loss" alt="Training vs Validation Loss" target="_blank" class="cil_16_font">View the training accuracy</a></center>
+                    </div>
+                </div>
+            </div>
+            
+            <br/><br/>
+            
+            <div class="col-md-12 cil_description">
+                <center><a class="button mini" href="https://cildata.crbs.ucsd.edu/media/cdeep3m/SEMTEM_membranes_TrainedNet.tar" target="_self">Download</a></center>
+            </div>
+            <br/><br/> 
+            <!-------End model--->          
+    <!------Model start-------------->      
+           <div class="col-md-12">
+                <span class="cil_title2">Tomo Vesicles</span>
+            </div>
+            <div class="col-md-12">
+               <div class="biological_sources">
+
+            <dl>
+    
+
+                    <dt><span class="cil_small_title">Trained model</span></dt>
+                    <dd class="eol_dd">
+                    <span>
+                        Synaptic Vesicles
+                    </span>
+                    </dd>
+
+                <dt><span class="cil_small_title">Sample</span></dt>
+                <dd class="eol_dd">High-Pressure Frozen, Hippocampus Mouse Brain</dd>
+   
+
+                <dt><span class="cil_small_title">Modality</span></dt>
+                <dd class="eol_dd">
+                <span>
+                Serial section electron tomography
+                </span>
+                </dd>
+
+
+                <dt><span class="cil_small_title">Voxelsize</span></dt>
+                <dd class="eol_dd">
+                <span>
+                1.6nm
+                </span>
+                </dd>
+
+
+            </dl>
+            </div>     
+            </div>
+            <br/><br/>
+            
+            <div class="col-md-12 cil_description">
+                <center><a class="button mini" href="https://cildata.crbs.ucsd.edu/media/cdeep3m/Tomo_VesiclesTrainedNet.tar" target="_self">Download</a></center>
+            </div>
+            <div class="col-md-12">
+            <br/><br/>
+            </div>
+            <!-------End model--->            
+            
+            
+
+           
+
                 
            <!------Model start-------------->      
            <div class="col-md-12">
@@ -101,117 +391,7 @@
             <!-------End model--->
             
             
-<!------Model start-------------->      
-           <div class="col-md-12">
-                <span class="cil_title2">Tomo Vesicles</span>
-            </div>
-            <div class="col-md-12">
-               <div class="biological_sources">
 
-            <dl>
-    
-
-                    <dt><span class="cil_small_title">Trained model</span></dt>
-                    <dd class="eol_dd">
-                    <span>
-                        Synaptic Vesicles
-                    </span>
-                    </dd>
-
-                <dt><span class="cil_small_title">Sample</span></dt>
-                <dd class="eol_dd">High-Pressure Frozen, Hippocampus Mouse Brain</dd>
-   
-
-                <dt><span class="cil_small_title">Modality</span></dt>
-                <dd class="eol_dd">
-                <span>
-                Serial section electron tomography
-                </span>
-                </dd>
-
-
-                <dt><span class="cil_small_title">Voxelsize</span></dt>
-                <dd class="eol_dd">
-                <span>
-                1.6nm
-                </span>
-                </dd>
-
-
-            </dl>
-            </div>     
-            </div>
-            <br/><br/>
-            
-            <div class="col-md-12 cil_description">
-                <center><a class="button mini" href="https://cildata.crbs.ucsd.edu/media/cdeep3m/Tomo_VesiclesTrainedNet.tar" target="_self">Download</a></center>
-            </div>
-            <div class="col-md-12">
-            <br/><br/>
-            </div>
-            <!-------End model--->            
-            
-            
-
-           
-<!------Model start-------------->      
-           <div class="col-md-12">
-                <span class="cil_title2">SEMTEM membranes</span>
-            </div>
-            
-            <!------Model content---------------->
-            <div class="col-md-6">
-               <div class="biological_sources">
-
-            <dl>
-    
-
-                    <dt><span class="cil_small_title">Trained model</span></dt>
-                    <dd class="eol_dd">
-                    <span>
-                        Membranes
-                    </span>
-                    </dd>
-
-
-                <dt><span class="cil_small_title">Modality</span></dt>
-                <dd class="eol_dd">
-                <span>
-                Transmission electron microscopy, serial block-face scanning electron microscopy
-                </span>
-                </dd>
-
-
-                <dt><span class="cil_small_title">Voxelsize</span></dt>
-                <dd class="eol_dd">
-                <span>
-                ~5nm
-                </span>
-                </dd>
-
-
-            </dl>
-            </div>     
-            </div>
-            <!------End Model content---------------->
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-12">
-                        <a href="/pic/cdeep3m/membranes_accuracy.jpg" title="Validation accuracy" alt="Validation accuracy" target="_blank"><img width="100%" src="/pic/cdeep3m/membranes_accuracy.jpg" /></a>
-                    </div>
-                    <div class="col-md-12">
-                        <center><a href="/pic/cdeep3m/membranes_loss.jpg" title="Training vs Validation Loss" alt="Training vs Validation Loss" target="_blank" class="cil_16_font">View the training accuracy</a></center>
-                    </div>
-                </div>
-            </div>
-            
-            <br/><br/>
-            
-            <div class="col-md-12 cil_description">
-                <center><a class="button mini" href="https://cildata.crbs.ucsd.edu/media/cdeep3m/SEMTEM_membranes_TrainedNet.tar" target="_self">Download</a></center>
-            </div>
-            <br/><br/> 
-            <!-------End model---> 
            </div>
             </div>
         </div>
