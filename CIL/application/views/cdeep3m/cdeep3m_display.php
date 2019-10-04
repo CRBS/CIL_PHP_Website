@@ -42,7 +42,10 @@
             <br/><br/> 
             <br/>
             </div>
-                
+            </div>
+        </div>
+        
+        <div class="col-md-12"><br/><br/></div>
     <!------Model start-------------->
     
     <?php
@@ -52,11 +55,36 @@
             $hits = $models_json->hits->hits;
             foreach($hits as $item)
             {
+                $title = "";
+                if(isset($item->_source->Cdeepdm_model->ITEMTYPE))
+                {
+                    foreach($item->_source->Cdeepdm_model->ITEMTYPE as $mp_type)
+                    {
+                        if(isset($mp_type->onto_id) && isset($mp_type->onto_name))
+                            $title = $title." ".$mp_type->onto_name;
+
+                        if(isset($mp_type->free_text))
+                            $title = $title." ".$mp_type->free_text;
+                    }
+                }
+                if(isset($item->_source->Cdeepdm_model->CELLULARCOMPONENT))
+                {
+                    foreach($item->_source->Cdeepdm_model->CELLULARCOMPONENT as $mp_type)
+                    {
+                        if(isset($mp_type->onto_id) && isset($mp_type->onto_name))
+                            $title = $title." ".$mp_type->onto_name;
+
+                        if(isset($mp_type->free_text))
+                            $title = $title." ".$mp_type->free_text;
+                    }
+                }
                 
+                $title = $title." (".$item->_id.")";
     ?>        
      
            <div class="col-md-12">
-                <span class="cil_title2"><?php if(isset($item->_source->Cdeepdm_model->Name)) echo $item->_source->Cdeepdm_model->Name; ?> (<?php echo $item->_id ?>)</span>
+                <!-- <span class="cil_title2"><?php //if(isset($item->_source->Cdeepdm_model->Name)) echo $item->_source->Cdeepdm_model->Name; ?> (<?php //echo $item->_id ?>)</span> -->
+               <span class="cil_title2"><?php echo $title; ?></span>
             </div>
              <!------Model content---------------->
             <div class="col-md-6">
@@ -217,6 +245,7 @@
                     
                 </div>
             </div>
+            <div class="col-md-12"><br/></div>
             <div class="col-md-12 cil_description">
                 <center><a class="button mini" href="https://doi.org/10.7295/W9CDEEP3M<?php echo $item->_id ?>" target="_self">Download</a></center>
             </div>
@@ -403,9 +432,9 @@
             
 
            </div>
-            </div>
+            
         </div>
     
 
-</div>
+
         
