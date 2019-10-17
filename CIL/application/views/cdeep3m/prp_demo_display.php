@@ -30,12 +30,16 @@
         
     </div>
     <br/>
-    <div class="row">
+    <!-- <div class="row"> -->
         <?php
             $count = count($image_array);
+            $index = 0;
             foreach($image_array as $image)
             {
+                if($index == 0)
+                   echo "<div class=\"row\">";
         ?>
+        
         <div class="col-md-4">
             <?php
                 if(startsWith($image, "CIL_"))
@@ -43,11 +47,11 @@
                     //echo $image;
                     $id = str_replace("CIL_", "", $image);
             ?>
-            <div class="thumbnail-kenburn">
+            <center><div class="thumbnail-kenburn">
                 <a alt="<?php echo $image ?>" title="<?php echo $image ?>" href="https://microbial.crbs.ucsd.edu/cdeep3m_prp/<?php echo $image; ?>" target="_blank" >
                     <img src="https://cildata.crbs.ucsd.edu/media/thumbnail_display/<?php echo $id; ?>/<?php echo $id; ?>_thumbnailx140.jpg" />
                 </a>
-            </div>
+                </div></center>
           
             <?php
                 }
@@ -55,21 +59,33 @@
                 {
                     $id = str_replace("CCDB_", "", $image);
             ?>
-             <div class="thumbnail-kenburn">
+             <center><div class="thumbnail-kenburn">
                 <a alt="<?php echo $image ?>" title="<?php echo $image ?>" href="https://microbial.crbs.ucsd.edu/cdeep3m_prp/<?php echo $image; ?>" target="_blank" >
                     <img src="https://cildata.crbs.ucsd.edu/display_images/ccdb/ccdb_512/<?php echo $id; ?>_512v.jpg" width="140">
                 </a>
-            </div>
+            </div></center>
             <?php
                 }
                 
+                
+                
             ?>
         </div>
-        
+              
         <?php
+                if($index == 2)
+                {
+                   echo "</div><!-- Closing row ".$index." -->";
+                   $index = 0;
+                }
+                $index++;
+                
+                ///if($index == 3)
+                //    $index = 0;
+        
             }
         ?>
-    </div>
+    <!-- </div> -->
     <div class="row">
         <div class="col-md-12"><br/></div>
     </div>
