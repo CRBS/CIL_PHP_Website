@@ -77,6 +77,7 @@
                 {
                    echo "</div><!-- Closing row ".$index." -->";
                    $index = 0;
+                   continue;
                 }
                 $index++;
                 

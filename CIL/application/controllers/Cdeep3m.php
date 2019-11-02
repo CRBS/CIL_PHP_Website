@@ -38,6 +38,7 @@ class Cdeep3m  extends CI_Controller
         array_push($image_array, "CCDB_8246");
         array_push($image_array, "CIL_50584");
         array_push($image_array,"CIL_50585");
+        array_push($image_array,"CIL_50582");
         
         $data['image_array'] = $image_array;
         $this->load->view('templates/cil_header4', $data);
