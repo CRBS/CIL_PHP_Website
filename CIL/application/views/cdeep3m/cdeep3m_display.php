@@ -240,7 +240,7 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="https://cildata.crbs.ucsd.edu/media/model_display/<?php echo $item->_id ?>/<?php echo $item->_id ?>_thumbnailx512.jpg" title="<?php if(isset($item->_source->Cdeepdm_model->Name)) echo $item->_source->Cdeepdm_model->Name; ?>" alt="<?php if(isset($item->_source->Cdeepdm_model->Name)) echo $item->_source->Cdeepdm_model->Name; ?>" target="_blank"><img width="100%" src="https://cildata.crbs.ucsd.edu/media/model_display/<?php echo $item->_id ?>/<?php echo $item->_id ?>_thumbnailx220.jpg" /></a>
+                        <a href="https://cildata.crbs.ucsd.edu/media/model_display/<?php echo $item->_id ?>/<?php echo $item->_id ?>_thumbnailx512.jpg" title="<?php if(isset($item->_source->Cdeepdm_model->Name)) echo $item->_source->Cdeepdm_model->Name; ?>" alt="<?php if(isset($item->_source->Cdeepdm_model->Name)) echo $item->_source->Cdeepdm_model->Name; ?>" target="_blank"><img width="512px" height="512px" src="https://cildata.crbs.ucsd.edu/media/model_display/<?php echo $item->_id ?>/<?php echo $item->_id ?>_thumbnailx512.jpg" /></a>
                     </div>
                     
                 </div>
