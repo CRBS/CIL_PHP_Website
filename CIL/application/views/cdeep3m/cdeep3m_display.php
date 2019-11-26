@@ -37,7 +37,7 @@
             
             As biological imaging datasets increase in size, deep neural networks are considered vital tools for efficient image segmentation. While a number of different network architectures have been developed for segmenting even the most challenging biological images, community access is still limited by the difficulty of setting up complex computational environments and processing pipelines, and the availability of compute resources. Here, we address these bottlenecks, providing a ready-to-use image segmentation solution for any lab, with a pre-configured, publicly available, cloud-based deep convolutional neural network on Amazon Web Services (AWS). We provide simple instructions for training and applying CDeep3M for segmentation of large and complex 2D and 3D microscopy datasets of diverse biomedical imaging modalities. <a href="https://www.biorxiv.org/content/early/2018/06/21/353425" target="_blank">Read more.</a>
             <br/><br/>
-            Email us at <a href="mailto:cdeep3m@ucsd.edu">cdeep3m@ucsd.edu</a> to set up an account for the CDeep3M PRP Demo.
+            Email us at <a href="mailto:cdeep3m@ucsd.edu">cdeep3m@ucsd.edu</a> to set up an account for the CDeep3M Preview Demo.
             <br/>
             <a class="button mini" alt="CDeep3M PRP Demo" href="/cdeep3m/prp_demo" target="_self">CDeep3M PRP Demo</a>
             <br/><br/> 
