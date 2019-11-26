@@ -31,6 +31,9 @@ class Cdeep3m  extends CI_Controller
     public function prp_demo()
     {
         $data['title'] = "CIL | CDeep3M PRP DEMO";
+        $image_viewer_prefix = $this->config->item('image_viewer_prefix');
+        $image_viewer_prefix = str_replace("/image_viewer", "", $image_viewer_prefix);
+        $data['image_viewer_prefix'] = $image_viewer_prefix;
         
         $image_array = array();
         array_push($image_array, "CIL_50451");
