@@ -304,6 +304,7 @@ class CILServiceUtil2
     {
         $CI = CI_Controller::get_instance();
         $url = $CI->config->item('service_api_host')."/rest/groups/".$imageID;
+        //echo $url;
         $response = $this->curl_get($url);
         return $response;
     }

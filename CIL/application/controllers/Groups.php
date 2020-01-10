@@ -64,6 +64,7 @@ class Groups extends CI_Controller
             if(isset($hits[0]->_source->Group->Group_members))
             {
                 $members = $hits[0]->_source->Group->Group_members;
+                //var_dump($members);
                 $images = array();
                 foreach($members as $member)
                 {
@@ -83,6 +84,7 @@ class Groups extends CI_Controller
         }
         
         $data['title'] = 'The Cell Image Library';
+        $data['members'] = $members;
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('groups/group_result_display', $data);
         $this->load->view('templates/cil_footer2', $data);

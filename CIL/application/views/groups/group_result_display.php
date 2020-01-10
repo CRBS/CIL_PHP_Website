@@ -9,6 +9,6 @@
         <span class="cil_title">Grouped images - the images shown below are related</span>
     </div>
     <div class="col-md-12">
-        <?php include 'group_inner_search_result.php'; ?>
+        <?php include 'group_inner_search_result2.php'; ?>
     </div>
 </div>
