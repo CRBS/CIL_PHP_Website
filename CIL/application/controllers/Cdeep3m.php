@@ -9,8 +9,11 @@ class Cdeep3m  extends CI_Controller
 {
     public function Index()
     {
-        $data['title'] = "CIL | CDeep3M";
         
+        $data['title'] = "CIL | CDeep3M";
+        $this->load->helper('url');
+        redirect('https://cdeep3m.crbs.ucsd.edu');
+        /*
         $client = new CILServiceUtil2();
         $response = $client->listTrainedModels();
         if(!is_null($response))
@@ -18,20 +21,29 @@ class Cdeep3m  extends CI_Controller
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('cdeep3m/cdeep3m_display', $data);
         $this->load->view('templates/cil_footer2', $data);    
+         * 
+         * 
+         */
     }
     
     public function memebranes_accuracy()
     {
         $data['title'] = "Memebranes | Validation accuracy";
-        $this->load->view('templates/cil_header4', $data);
+        $this->load->helper('url');
+        redirect('https://cdeep3m.crbs.ucsd.edu');
+        /*$this->load->view('templates/cil_header4', $data);
         $this->load->view('cdeep3m/cdeep3m_display', $data);
         $this->load->view('templates/cil_footer2', $data); 
+         * 
+         */
     }
     
     public function prp_demo()
     {
         $data['title'] = "CIL | CDeep3M PRP DEMO";
-        $image_viewer_prefix = $this->config->item('image_viewer_prefix');
+        $this->load->helper('url');
+        redirect('https://cdeep3m.crbs.ucsd.edu');
+        /*$image_viewer_prefix = $this->config->item('image_viewer_prefix');
         $image_viewer_prefix = str_replace("/image_viewer", "", $image_viewer_prefix);
         $data['image_viewer_prefix'] = $image_viewer_prefix;
         
@@ -51,6 +63,6 @@ class Cdeep3m  extends CI_Controller
         $data['image_array'] = $image_array;
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('cdeep3m/prp_demo_display', $data);
-        $this->load->view('templates/cil_footer2', $data); 
+        $this->load->view('templates/cil_footer2', $data); */
     }
 }
