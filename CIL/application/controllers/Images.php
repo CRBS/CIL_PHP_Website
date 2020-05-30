@@ -303,6 +303,8 @@ class Images  extends CI_Controller
 
             $response = $sutil->curl_get_data($query_url,$query);
             
+            //error_log($query, 3, "C:/Test3/query/query.json");
+            //echo $response;
             //echo "<br/>".$query_url;
             //echo "<br/>curl -XGET '".$query_url."' -d '".$query." '";
             //echo "<hr><br/><br/>Response:".$response;
