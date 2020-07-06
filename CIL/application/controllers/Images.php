@@ -43,6 +43,11 @@ class Images  extends CI_Controller
         $basic_time = null;
         
         $keywords = $this->input->get('k', TRUE);
+        
+        //echo "<br/>keywords:".$keywords;
+        //if(strpos(strtolower($keywords), "<script>") !== false)
+        //    show_404 ();
+        
         $data['keywords'] = $keywords;
         $queryString = urlencode($keywords);
         $simple_search = $this->input->get('simple_search',TRUE);
