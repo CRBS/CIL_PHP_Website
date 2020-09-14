@@ -57,16 +57,16 @@
             <div class="role">Software Engineer</div>
             <div class="org">National Center for Microscopy and Imaging Research</div>
             </div>
-            <div class="vcard" id="hcard-Chris-Churus">
+            <!--<div class="vcard" id="hcard-Chris-Churus">
             <div class="fn">Chris Churas</div>
             <div class="role">Software Engineer</div>
             <div class="org">National Center for Microscopy and Imaging Research</div>
-            </div>
-            <div class="vcard" id="hcard-Michael-Chiu">
+            </div>-->
+            <!--<div class="vcard" id="hcard-Michael-Chiu">
             <div class="fn">Michael Chiu</div>
             <div class="role">Software Engineer</div>
             <div class="org">National Center for Microscopy and Imaging Research</div>
-            </div>
+            </div>-->
             <div class="vcard" id="hcard-Vicky-Rowley">
             <div class="fn">Sean Penticoff</div>
             <div class="role">IT Manager</div>

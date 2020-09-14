@@ -260,6 +260,18 @@
             </div>
         </div>
         <div class="col-md-3">
+            <div class="vcard" id="hcard-Chris-Churus">
+            <div class="fn">Chris Churas</div>
+            <div class="role">Software Engineer</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="vcard" id="hcard-Michael-Chiu">
+            <div class="fn">Michael Chiu</div>
+            <div class="role">Software Engineer</div>
+            </div>
         </div>
     </div>
 </div>
