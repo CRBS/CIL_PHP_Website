@@ -151,6 +151,16 @@ class Images  extends CI_Controller
             echo "<br/>".$searchURL2;
             $response = $sutil->just_curl_get($searchURL2);*/
             
+            $base_url0 = $this->config->item('base_url');
+            $query_string0 = $this->input->server('QUERY_STRING');
+            $ip_address = $this->input->ip_address();
+            
+            //echo "<br/>".$base_url0;
+            //echo "<br/>".$query_string0;
+            //echo "<br/>".$ip_address;
+            
+            $sutil->trackUserQueryInfo($base_url0, $query_string0, $ip_address);
+            
             $data['title'] = $keywords." | CIL Search";
             
             $searchPrefix = $this->config->item('apiDocPrefix');
@@ -286,6 +296,13 @@ class Images  extends CI_Controller
         }
         else if(!is_null($adv_search))
         {
+            
+            $base_url0 = $this->config->item('base_url');
+            $query_string0 = $this->input->server('QUERY_STRING');
+            $ip_address = $this->input->ip_address();
+            $sutil->trackUserQueryInfo($base_url0, $query_string0, $ip_address);
+            
+            
             
             $query_url =  $this->config->item('advanced_search')."?from=".$from."&size=".$size;
             //$query = $this->handleAdvSearchInputs($this->input);
@@ -549,6 +566,31 @@ class Images  extends CI_Controller
                 return;
             }
         }
+        
+        
+        if(isset($json->CIL_CCDB->Status->Token) && !is_null($json->CIL_CCDB->Status->Token))
+        {
+            $token = $this->input->get('token', TRUE);
+            if(is_null($token))
+            {
+                show_404();
+                return;
+            }
+            
+            if(strcmp($token, $json->CIL_CCDB->Status->Token) != 0)
+            {
+                show_404();
+                return;
+            }
+        }
+        
+        /***************Tracking image view*********************/
+        $sutil = new CILServiceUtil2();
+        $base_url0 = $this->config->item('base_url');
+        $ip_address = $this->input->ip_address();
+        $browserAgent = $_SERVER['HTTP_USER_AGENT'];
+        $sutil->trackImageView($base_url0, $imageID, $ip_address,$browserAgent);
+        /***************End Tracking image view*********************/
         
         $data['test'] = "test";
         $data['json'] = $json;

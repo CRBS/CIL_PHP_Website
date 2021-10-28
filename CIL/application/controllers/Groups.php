@@ -33,7 +33,7 @@ class Groups extends CI_Controller
         
         //echo $response;
         $page = 0;
-        $size = 100;
+        $size = 1000;
         
         $temp = $this->input->get('page',TRUE);
         if(!is_null($temp))
@@ -57,6 +57,7 @@ class Groups extends CI_Controller
         
         $json = json_decode($response);
         $squery = "";
+        $members = array();
         if(isset($json->hits->total) && $json->hits->total > 0 &&
                 isset($json->hits->hits))
         {
@@ -81,6 +82,12 @@ class Groups extends CI_Controller
             }
             
             
+        }
+        
+        $token = $this->input->get('token', TRUE);
+        if(!is_null($token))
+        {
+            $data['token'] = $token;
         }
         
         $data['title'] = 'The Cell Image Library';

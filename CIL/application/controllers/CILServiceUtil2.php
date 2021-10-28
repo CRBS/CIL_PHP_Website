@@ -330,6 +330,40 @@ class CILServiceUtil2
         return $response;
     }
     
+    public function trackUserQueryInfo($base_url, $query_string, $ip_address)
+    {
+        $CI = CI_Controller::get_instance();
+        $url = $CI->config->item('service_api_host')."/rest/web_user_query_info";
+        
+        $array = array();
+        $array['Base_url'] = $base_url;
+        $array['Query_string'] = $query_string;
+        $array['Ip_address'] = $ip_address;
+        
+        $json_str = json_encode($array, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+        $response = $this->curl_post($url, $json_str);
+        return $response;
+    }
+    
+    
+    public function trackImageView($base_url, $image_id, $ip_address, $user_agent)
+    {
+        $CI = CI_Controller::get_instance();
+        $url = $CI->config->item('service_api_host')."/statistics_rest/web_image_access";
+        
+        $array = array();
+        $array['Base_url'] = $base_url;
+        $array['Image_id'] = $image_id;
+        $array['Ip_address'] = $ip_address;
+        $array['User_agent'] = $user_agent;
+        
+        $json_str = json_encode($array, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+        $response = $this->curl_post($url, $json_str);
+        return $response;
+    }
+    
+    
+    
     /*public function getImges($data)
     {
         $CI = CI_Controller::get_instance();

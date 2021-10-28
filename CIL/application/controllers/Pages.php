@@ -16,6 +16,51 @@ require_once 'GeneralUtil.php';
  */
 class Pages  extends CI_Controller 
 {
+    
+    public function Kinome_atlas()
+    {
+        /*******************Token auth********************************/
+        $token = $this->input->get('token', TRUE);
+        
+        $data['token'] = $token;
+        $imageID = "CIL_53464";
+        
+        $sutil = new CILServiceUtil2();
+        $response = $sutil->getImage($imageID);
+        $json = json_decode($response);
+        
+        if(is_null($json))
+        {
+            show_404();
+            return;
+        }
+        
+        
+        if(isset($json->CIL_CCDB->Status->Token) && !is_null($json->CIL_CCDB->Status->Token))
+        {
+            if(strcmp($token,$json->CIL_CCDB->Status->Token)==0)
+            {
+                $data['token'] = $json->CIL_CCDB->Status->Token;
+            }
+            else 
+            {
+                show_404();
+                return;
+            }
+            
+        }
+        
+        /*******************End token auth*****************************/
+        $data['test']="test";
+        $data['title'] = "Kinome Atlas - Cell Image Library";
+        $data['meta_desc'] = "Kinome Atlas documented representative images for 456 kinases expressed in HeLa cells, and visualized by immunofluorescence staining of the epitope tag.";
+        $this->load->view('templates/cil_header4', $data);
+        //$this->load->view('pages/cell_illustration_display', $data); //using the flash
+        $this->load->view('pages/kinome_atlas_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+    }
+    
+    
     public function Cell_illustration()
     {
         $data['test']="test";
