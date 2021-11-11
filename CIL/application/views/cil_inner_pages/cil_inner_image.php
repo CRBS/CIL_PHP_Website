@@ -20,11 +20,22 @@
                     
                     if(isset($local_image_display) && $local_image_display && file_exists($localImageJsonPath))
                     {
+                        //echo $localImageJsonPath;
                         $ljson_str = file_get_contents($localImageJsonPath);
                         //echo $ljson_str;
                         $ljson = json_decode($ljson_str);
-                        if(isset($ljson->Image_name) && isset($ljson->Name))
+                        $hasSpecialCharacters = false;
+                        
+                        if(strpos($ljson->Image_name, "(") !== false || strpos($ljson->Image_name, "%28") !== false
+                                || strpos($ljson->Image_name, "}") !== false || strpos($ljson->Image_name, "%29") !== false)
                         {
+                            $hasSpecialCharacters = true;
+                        }
+                        
+                        //echo "<br/>Name:".$ljson->Image_name;
+                        if(isset($ljson->Image_name) && isset($ljson->Name) && !$hasSpecialCharacters)
+                        {
+                            //echo "<br/>In If";
                             $imagePath = getcwd()."/pic/thumbnail_display/".$numeric_id."/".$ljson->Image_name;
                             //echo $imagePath;
                             if(file_exists($imagePath))
@@ -33,6 +44,7 @@
                                 $localFile = "/pic/thumbnail_display/".$numeric_id."/".$ljson->Image_name;
                             }
                         }
+                       
                     }
                     if(isset($local_image_display) && $local_image_display && !is_null($localFile) && !is_null($localName))
                     {
