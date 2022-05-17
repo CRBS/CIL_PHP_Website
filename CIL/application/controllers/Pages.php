@@ -61,6 +61,16 @@ class Pages  extends CI_Controller
     }
     
     
+    public function auto_chromosome_detector()
+    {
+        $data['title'] = "Automatic chromosome detector - Cell Image Library";
+        $data['meta_desc'] = "Chromosomes are intracellular aggregates carrying genetic information in genes, which are major objects of study in biological cytogenetics. Chromosome screening is an important part of prenatal care. Manual identification is time consuming and costly (each image takes at least 15 minutes). We have developed an artificial intelligence (AI) model for the automatic chromosome detector based on metaphase cell images using deep learning technology.";
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('pages/auto_chromosome_detector_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+    }
+    
+    
     public function Cell_illustration()
     {
         $data['test']="test";

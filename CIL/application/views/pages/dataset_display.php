@@ -4,6 +4,84 @@
             <span class="cil_title">Datasets</span>
         </div>
     </div>
+        <!-----------------Auto chromosome detector--------------------> 
+    <div class="row top-buffer">
+        <div class="col-md-2">
+            
+            <center>
+            <div class="thumbnail-kenburn">
+            <a href="/pages/auto_chromosome_detector" target="_self">
+                <img src="https://cildata.crbs.ucsd.edu/media/thumbnail_display//54816/54816_thumbnailx140.jpg" width="100px" height="100px">
+            </a>
+            </div>
+            </center>
+        </div>
+        <div class="col-md-10">
+            <!-- <div class="alert alert-warning">Featured Image</div> -->
+            <div class="row">
+              <div class="col-md-12">
+                    <span style="font-size:12px;"><b>Featured data set:</b></span> 
+              </div>
+              <div class="col-md-12">
+                
+              </div>
+              <div class="col-md-12">
+                <!-- <a href="/pages/project_20269" target="_self"><h3>Human U2OS cells - compound cell-painting experiment (375)</h3></a><br/> -->
+                <a href="/pages/auto_chromosome_detector" target="_self"><span class="cil_12_bold_no_color">Automatic chromosome detector</span></a><br/>
+              </div>
+              <div class="col-md-12">
+                  <br/>
+              </div>
+              <div class="col-md-12">
+                  <!-- <span class="cil_12_bold_no_color">Project ID:</span><span class="cil_12_no_color"> P20269 </span> -->
+              </div>
+              <div class="col-md-12 top-buffer">
+                <span class="cil_12_bold_no_color">Description: </span><span class="cil_12_no_color">Chromosomes are intracellular aggregates carrying genetic information in genes, which are major objects of study in biological cytogenetics. Chromosome screening is an important part of prenatal care. Manual identification is time consuming and costly (each image takes at least 15 minutes). We have developed an artificial intelligence (AI) model for the automatic chromosome detector based on metaphase cell images using deep learning technology.</span>
+              </div>
+                
+            </div>
+        </div>
+    </div>
+        <!----------------End Auto chromosome detector ---------------->
+        <div class="row top-buffer">
+        <div class="col-md-2">
+            
+            <center>
+            <div class="thumbnail-kenburn">
+            <a href="/pages/kinome_atlas" target="_self">
+                <img src="/pix/kinome_atlas.png" width="100px" height="100px">
+            </a>
+            </div>
+            </center>
+        </div>
+        <div class="col-md-10">
+            <!-- <div class="alert alert-warning">Featured Image</div> -->
+            <div class="row">
+              <!-- <div class="col-md-12">
+                    <span style="font-size:12px;"><b>Featured data set:</b></span> 
+              </div> -->
+              <div class="col-md-12">
+                
+              </div>
+              <div class="col-md-12">
+                <!-- <a href="/pages/project_20269" target="_self"><h3>Human U2OS cells - compound cell-painting experiment (375)</h3></a><br/> -->
+                <a href="/pages/kinome_atlas" target="_self"><span class="cil_12_bold_no_color">Kinome Atlas</span></a><br/>
+              </div>
+              <div class="col-md-12">
+                  <br/>
+              </div>
+              <div class="col-md-12">
+                  <!-- <span class="cil_12_bold_no_color">Project ID:</span><span class="cil_12_no_color"> P20269 </span> -->
+              </div>
+              <div class="col-md-12 top-buffer">
+                <span class="cil_12_bold_no_color">Description: </span><span class="cil_12_no_color">Kinome Atlas documented representative images for 456 kinases expressed in HeLa cells, and visualized by immunofluorescence staining of the epitope tag. Nuclei were stained with DAPI. Two representative views from confocal microscopy were collected for each kinase. Also, organelle markers were co-stained for some kinases to indicate specific localization.</span>
+              </div>
+                
+            </div>
+        </div>
+    </div>
+    <hr>
+    
     <div class="row top-buffer">
         
         <div class="col-md-2">
@@ -20,8 +98,7 @@
             <!-- <div class="alert alert-warning">Featured Image</div> -->
             <div class="row">
               <div class="col-md-12">
-                    <!-- <span style="font-size:12px;"><b>Featured data set:</b></span> -->
-                  <span class="cil_14_bold_no_color">Featured data set:</span>
+                <!--   -->
               </div>
               <div class="col-md-12">
                 
