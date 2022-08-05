@@ -92,6 +92,7 @@ class Groups extends CI_Controller
         
         $data['title'] = 'The Cell Image Library';
         $data['members'] = $members;
+	$data['gimage_id'] = $imageID;
         $this->load->view('templates/cil_header4', $data);
         $this->load->view('groups/group_result_display', $data);
         $this->load->view('templates/cil_footer2', $data);
