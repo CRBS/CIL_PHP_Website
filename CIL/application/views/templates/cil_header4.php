@@ -185,6 +185,8 @@
 
           gtag('config', 'UA-112923916-1'); //New tracker ID
           gtag('config', 'UA-6979852-4'); //The original tracker ID
+          
+          gtag('config', 'G-HNQV15QERX'); //Secondary tracker for GA4
         </script>
         <!----------End Google analytics---------------->
         
