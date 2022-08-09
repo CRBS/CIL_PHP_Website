@@ -167,7 +167,16 @@
           gtag('config', 'UA-112923916-1'); //New tracker ID
           gtag('config', 'UA-6979852-4'); //The original tracker ID
           
-          gtag('config', 'G-HNQV15QERX'); //Secondary tracker for GA4
+        </script>
+        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HNQV15QERX"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-HNQV15QERX');
         </script>
         <!----------End Google analytics---------------->
         
