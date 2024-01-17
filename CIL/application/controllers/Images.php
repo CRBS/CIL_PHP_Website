@@ -532,6 +532,7 @@ class Images  extends CI_Controller
         $data['ccdb_direct_data_prefix'] = $this->config->item('ccdb_direct_data_prefix');
         
         $response = $sutil->getImage($imageID);
+        echo "\n".$response;
         $json = json_decode($response);
         $isAccessible = false;
         if(isset($json->CIL_CCDB->Status->Is_public) && !$json->CIL_CCDB->Status->Is_public)

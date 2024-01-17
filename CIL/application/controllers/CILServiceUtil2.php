@@ -278,7 +278,8 @@ class CILServiceUtil2
         
         //$url = $this->apiDocPrefix.$imageID;
         $url = $apiDocPrefix."/".$imageID;
-        //echo "<br/>".$url;
+        
+        echo "<br/>".$url;
         $response = $this->curl_get($url);
         return $response;
     }

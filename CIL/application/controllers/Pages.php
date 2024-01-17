@@ -215,4 +215,13 @@ class Pages  extends CI_Controller
         $this->load->view('pages/alzheimers_display', $data);
         $this->load->view('templates/cil_footer2', $data);
     }
+    
+    public function Project_20483()
+    {
+        $data['test']="test";
+        $data['title']="Pediatric inflammatory bowel disease (IBD)";
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('pages/project_20483_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+    }
 }

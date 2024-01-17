@@ -4,6 +4,44 @@
             <span class="cil_title">Datasets</span>
         </div>
     </div>
+    <div class="row top-buffer">
+        <div class="col-md-2">
+            
+            <center>
+            <div class="thumbnail-kenburn">
+            <a href="/pages/Project_20483" target="_self">
+                <img src="/pix/P20483x140.jpg" width="100px" height="100px">
+            </a>
+            </div>
+            </center>
+        </div>
+        <div class="col-md-10">
+            <!-- <div class="alert alert-warning">Featured Image</div> -->
+            <div class="row">
+              <div class="col-md-12">
+                    <span style="font-size:12px;"><b>Featured data set:</b></span> 
+              </div>
+              <div class="col-md-12">
+                
+              </div>
+              <div class="col-md-12">
+                <!-- <a href="/pages/project_20269" target="_self"><h3>Human U2OS cells - compound cell-painting experiment (375)</h3></a><br/> -->
+                <a href="/pages/Project_20483" target="_self"><span class="cil_12_bold_no_color">Pediatric inflammatory bowel disease (IBD)</span></a><br/>
+              </div>
+              <div class="col-md-12">
+                  <br/>
+              </div>
+              <div class="col-md-12">
+                  <!-- <span class="cil_12_bold_no_color">Project ID:</span><span class="cil_12_no_color"> P20269 </span> -->
+              </div>
+              <div class="col-md-12 top-buffer">
+                <span class="cil_12_bold_no_color">Description: </span><span class="cil_12_no_color">The dataset consists of 951 tissue section scans taken from 167 H&E-stained whole slides from 18 pediatric inflammatory bowel disease (IBD) patients. Slide section scans are provided as-is without any initial image pre-processing, normalization, or cropping. Slide section scans are provided as-is without any initial image pre-processing, normalization, or cropping. Labels are provided at the patient, slide (anatomic site), and section (tissue slice) levels.</span>
+              </div>
+                
+            </div>
+        </div>
+    </div>
+    <hr>
         <!-----------------Auto chromosome detector--------------------> 
     <div class="row top-buffer">
         <div class="col-md-2">
@@ -19,9 +57,9 @@
         <div class="col-md-10">
             <!-- <div class="alert alert-warning">Featured Image</div> -->
             <div class="row">
-              <div class="col-md-12">
+              <!-- <div class="col-md-12">
                     <span style="font-size:12px;"><b>Featured data set:</b></span> 
-              </div>
+              </div> -->
               <div class="col-md-12">
                 
               </div>
@@ -42,6 +80,7 @@
             </div>
         </div>
     </div>
+        <hr>
         <!----------------End Auto chromosome detector ---------------->
         <div class="row top-buffer">
         <div class="col-md-2">
