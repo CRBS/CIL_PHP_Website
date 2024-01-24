@@ -14,8 +14,10 @@
 <span class="cil_13_no_color ">Scans of H&E-stained histology slides of biopsied tissue from endoscopy. Captured with MikroScan SL5 in SVS TIFF format with .tif file extension.
 <br/><br/></span>
 <!-------New link------------6-25-2017------->
-<a href="https://www.choc.org/research/" target="_blank">CHOC Research Institute - Children’s Hospital of Orange County</a>
+<span class="cil_13_no_color "><a href="https://www.choc.org/research/" target="_blank">CHOC Research Institute - Children’s Hospital of Orange County</a></span>
 <br/><br/>
+<span class="cil_13_no_color ">Dataset contact: Chloe Martin-King (<a href="mailto:chloe.martin.king@choc.org">chloe.martin.king@choc.org</a>)</span>
+<br/><br/> 
 <!---------------------------------->
 <div class="row">
 <div class="col-md-12">
@@ -56,11 +58,11 @@
     </div>
     <div class='col-md-12'>
         <br/>
-        <span class='cil_13_no_color'>2) Each image file will be downloaded to a zip file. You need to extract the images from the zip files and save to a single directory.</span>
+        <span class='cil_13_no_color'>2) Each image .tif file will be downloaded to a zip file. The .tif image files are named according to the metadata in the excel linked below. This way, once the images are extracted from the zip files, they can be linked to patient and scan attributes.</span>
     </div>
     <div class='col-md-12'>
         <br/>
-        <span class='cil_13_no_color'>3)The labels and data dictionary can be found in the excel file at <a href='https://cildata.crbs.ucsd.edu/media/images/55781/Pediatric_IBD_StructuredData.xlsx'>Pediatric_IBD_StructuredData.xlsx</a> </span>
+        <span class='cil_13_no_color'>3) The labels and data dictionary can be found in the excel file at <a href='https://cildata.crbs.ucsd.edu/media/images/55781/Pediatric_IBD_StructuredData.xlsx'>Pediatric_IBD_StructuredData.xlsx</a> </span>
     </div>
 </div>
         </div>
