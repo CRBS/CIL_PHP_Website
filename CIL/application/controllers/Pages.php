@@ -224,4 +224,20 @@ class Pages  extends CI_Controller
         $this->load->view('pages/project_20483_display', $data);
         $this->load->view('templates/cil_footer2', $data);
     }
+    
+    public function Project_20487($key)
+    {
+        $data['title']="Macrophage Depletion Protects";
+        $this->load->view('templates/cil_header4', $data);
+        if(strcmp($key,"pT2TZE9dS7Ortpm")==0)
+        {
+            $this->load->view('pages/project_20487_display', $data);
+        }
+        else 
+        {
+            show_404();
+        }
+        //$this->load->view('pages/project_20483_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+    }
 }

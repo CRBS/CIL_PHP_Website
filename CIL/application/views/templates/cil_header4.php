@@ -36,6 +36,8 @@
             {
                 $og_desc = json_encode($json->CIL_CCDB->CIL->CORE->IMAGEDESCRIPTION->free_text);
                 $og_desc = htmlspecialchars($og_desc);
+                $pattern = '/&([#0-9A-Za-z]+);/';
+                $og_desc = preg_replace($pattern, '', $og_desc);
                 if(strlen($og_desc) > 240)
                 {
                     $og_desc = substr ($og_desc, 0,240)."...";
@@ -68,6 +70,29 @@
                 //echo "\n---base_url:".$base_url;
                 echo "\n<meta property=\"og:url\" content=\"".$og_url."\"/>";
             }
+            
+            
+            echo "\n\n<script type=\"application/ld+json\">";
+            echo "\n{";
+            echo "\n\"@context\": \"http://schema.org\",";
+            echo "\n\"@type\": \"Dataset\",";
+            if(isset($title))
+              echo "\n\"name\": \"".$title."\",";
+            
+            
+            if(!is_null($og_desc) && strlen($og_desc) > 0)
+                echo "\n\"description\": \"".$og_desc."\",";
+                    
+            echo  "\n\"image\": {";
+            echo  "\n\"@type\": \"ImageObject\",";
+            echo  "\n\"url\": \"".$og_image."\",";
+            echo  "\n\"width\": \"512\",";
+            echo  "\n\"height\": \"512\"";
+            echo  "\n},";
+            echo  "\n\"url\": \"".$og_url."\"";
+            echo  "\n}";
+            echo  "\n</script>";
+
         }
         
         
