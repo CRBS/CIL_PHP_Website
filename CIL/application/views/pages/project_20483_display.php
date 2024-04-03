@@ -49,6 +49,29 @@
     <div class="col-md-3"></div>
 </div>
 <div class="row">
+    <div class="col-md-12">
+                
+                     
+<br>
+<!-- <h2>Licensing</h2> -->
+<span class="cil_title2">Licensing</span>
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="/pic/attribution_cc_by.png">
+                </div>
+                <div class="col-md-10">
+                    <div class="licensing_details_text_container">
+                    <b>Attribution Only:</b> This image is licensed under a Creative Commons Attribution License.  <a href="https://creativecommons.org/licenses/by/4.0/deed.en" class="license_view_links" target="_blank">View License Deed</a> | <a href="https://creativecommons.org/licenses/by/4.0/legalcode.en" class="license_view_links" target="_blank">View Legal Code</a>
+                    </div>
+                </div>
+            </div>
+
+       
+
+                    
+    </div>
+</div>
+<div class="row">
     <div class="col-md-12"><br/></div>
     <div class="col-md-12">
     <span class="cil_title">Instructions for downloading the CHOC IBD dataset</span>
