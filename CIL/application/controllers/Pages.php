@@ -241,18 +241,18 @@ class Pages  extends CI_Controller
         $this->load->view('templates/cil_footer2', $data);
     }
     
-    public function Project_20489($key)
+    public function Project_20489()
     {
         $data['title']="Brain and Spinal Cord Histopathological Images";
         $this->load->view('templates/cil_header4', $data);
-        if(strcmp($key,"vogZ4wcKvc8I5Fs")==0)
-        {
+        //if(strcmp($key,"vogZ4wcKvc8I5Fs")==0)
+        //{
             $this->load->view('pages/project_20489_display', $data);
-        }
-        else 
-        {
-            show_404();
-        }
+        //}
+        //else 
+        //{
+        //    show_404();
+        //}
         //$this->load->view('pages/project_20483_display', $data);
         $this->load->view('templates/cil_footer2', $data);
     }
