@@ -4,7 +4,16 @@
             <img src="/pix/P20483x512.jpg" width="100%">
         </div>
         <div class="col-md-7">
+            <div class="row">
+                                
+                <div class="col-md-12">
+ <a href="#cite" id="citation_btn_id" name="citation_btn_id" class="btn btn-info semi-circle btn-xs pull-right">&nbsp;Cite&nbsp;</a>                     
+            
+                </div>
+            </div>
             <span class="cil_title">Pediatric inflammatory bowel disease (IBD)</span>
+            
+            
             <!-- <span style="font-size:12px;font-weight: normal;"><br><b>Description of biological application</b><br> -->
             <span class="cil_14_bold_no_color">Description</span><br/>
 <span class="cil_13_no_color ">The dataset consists of 951 tissue section scans taken from 167 H&E-stained whole slides from 18 pediatric inflammatory bowel disease (IBD) patients. Slide section scans are provided as-is without any initial image pre-processing, normalization, or cropping. Labels are provided at the patient, slide (anatomic site), and section (tissue slice) levels. Each slide is labelled with biopsy site and normal or abnormal classification per the surgical pathology report. Each tissue section scan from an abnormal slide is further classified as normal or abnormal by pathologist. Files may be viewed and annotated using standard, opensource slide-viewing software, such as Aperio ImageScope, OpenSlide​​, TiffSlide, and QuPath​​.
@@ -90,6 +99,52 @@
 </div>
         </div>
     </div>
+    
+    
+
+ <!----------Model--------------------->
+            <div class="modal fade" id="citation_modal2" role="dialog">
+                <div class="modal-dialog">
+
+                  
+                  <div class="modal-content">
+                      <div class="modal-header" style="background-color: #92d4f0" >
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <span class="cil_16_font_white">Citation Information</span>
+                      </div>
+                    <div class="modal-body" id="modal-body-id">
+                                            <span class="cil_description">
+                    Chloe Martin-King;Ali Nael;Louis Ehwerhemuepha;Blake Calvo;Quinn Gates;Jamie Janchoi;Elisa Ornelas;Melissa Perez;Andrea Venderby;John Miklavcic;Peter Chang;Kenneth Grant; (2024) Pediatric inflammatory bowel disease (IBD). CIL. Dataset. https://doi.org/10.7295/W9P20483                        </span>
+                                        </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div> 
+            <!----------End modal----------------->
+
+
+
+            
+<script>
+    $( function() {
+
+        $( "#citation_btn_id" ).click(function() 
+        {
+            $('#citation_modal2').modal({
+                show: true
+              })
+        });
+    });
+</script>
+    
+
+    
+    
 </div>
 
 
+
+            

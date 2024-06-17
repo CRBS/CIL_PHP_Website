@@ -220,7 +220,8 @@ class Pages  extends CI_Controller
     {
         $data['test']="test";
         $data['title']="Pediatric inflammatory bowel disease (IBD)";
-        $this->load->view('templates/cil_header4', $data);
+        //$this->load->view('templates/cil_header4', $data);
+        $this->load->view('templates/cil_header_light', $data);
         $this->load->view('pages/project_20483_display', $data);
         $this->load->view('templates/cil_footer2', $data);
     }
@@ -247,7 +248,7 @@ class Pages  extends CI_Controller
         $this->load->view('templates/cil_header4', $data);
         //if(strcmp($key,"vogZ4wcKvc8I5Fs")==0)
         //{
-            $this->load->view('pages/project_20489_display', $data);
+            $this->load->view('pages/project_20489_display_1', $data);
         //}
         //else 
         //{
