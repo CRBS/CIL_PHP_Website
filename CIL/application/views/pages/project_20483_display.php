@@ -60,7 +60,14 @@
 <div class="row">
     <div class="col-md-12">
                 
-                     
+<br>
+<!-- <h2>Licensing</h2> -->
+<span class="cil_title2">Citing</span>
+<div class="row">
+<div class="col-md-12">
+    Martin-King, C., Nael, A., Ehwerhemuepha, L. et al. Histopathology imaging and clinical data including remission status in pediatric inflammatory bowel disease. Sci Data 11, 761 (2024). <a href='https://doi.org/10.1038/s41597-024-03592-7' target='_blank'>https://doi.org/10.1038/s41597-024-03592-7</a>
+</div>
+</div>
 <br>
 <!-- <h2>Licensing</h2> -->
 <span class="cil_title2">Licensing</span>
@@ -94,7 +101,8 @@
     </div>
     <div class='col-md-12'>
         <br/>
-        <span class='cil_13_no_color'>3) The labels and data dictionary can be found in the excel file at <a href='https://cildata.crbs.ucsd.edu/media/images/55781/Pediatric_IBD_StructuredData.xlsx'>Pediatric_IBD_StructuredData.xlsx</a> </span>
+        <span class='cil_13_no_color'>3) The labels and data dictionary can be found in the excel file at <a href='https://cildata.crbs.ucsd.edu/media/images/55781/Pediatric_IBD_StructuredData_BothRaters.xlsx'>Pediatric_IBD_StructuredData.xlsx</a> </span>
+        <!-- <span class='cil_13_no_color'>3) The labels and data dictionary can be found in the excel file at <a href='https://cildata.crbs.ucsd.edu/media/images/55781/Pediatric_IBD_StructuredData.xlsx'>Pediatric_IBD_StructuredData.xlsx</a> </span> -->
     </div>
 </div>
         </div>
@@ -113,9 +121,11 @@
                       <span class="cil_16_font_white">Citation Information</span>
                       </div>
                     <div class="modal-body" id="modal-body-id">
-                                            <span class="cil_description">
-                    Chloe Martin-King;Ali Nael;Louis Ehwerhemuepha;Blake Calvo;Quinn Gates;Jamie Janchoi;Elisa Ornelas;Melissa Perez;Andrea Venderby;John Miklavcic;Peter Chang;Kenneth Grant; (2024) Pediatric inflammatory bowel disease (IBD). CIL. Dataset. https://doi.org/10.7295/W9P20483                        </span>
-                                        </div>
+                        <span class="cil_description">
+                   <!--  Chloe Martin-King;Ali Nael;Louis Ehwerhemuepha;Blake Calvo;Quinn Gates;Jamie Janchoi;Elisa Ornelas;Melissa Perez;Andrea Venderby;John Miklavcic;Peter Chang;Kenneth Grant; (2024) Pediatric inflammatory bowel disease (IBD). CIL. Dataset. https://doi.org/10.7295/W9P20483       -->                  
+                        Martin-King, C., Nael, A., Ehwerhemuepha, L. et al. Histopathology imaging and clinical data including remission status in pediatric inflammatory bowel disease. Sci Data 11, 761 (2024). https://doi.org/10.1038/s41597-024-03592-7
+                        </span>
+                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>

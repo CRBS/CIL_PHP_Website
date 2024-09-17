@@ -75,6 +75,23 @@ Sim+A13ons and M. Schmid. An International System for Human Cytogenetic Nomencla
                     The images of the 24 chromosome annotations were evaluated according to the rules, "diff_image.txt" contains the filenames of all difficult images.
                 </span>
             </div>
+                
+            <div class="col-md-12">
+            <br/><br/>
+            <span class="cil_title2">Licensing</span>
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="/pic/attribution_cc_by.png">
+                </div>
+                <div class="col-md-10">
+                    <div class="licensing_details_text_container">
+                    <b>Attribution Only:</b> This image is licensed under a Creative Commons Attribution License.  <a href="http://creativecommons.org/licenses/by/3.0" class="license_view_links" target="_blank">View License Deed</a> | <a href="http://creativecommons.org/licenses/by/3.0/legalcode" class="license_view_links" target="_blank">View Legal Code</a>
+                    </div>
+                </div>
+            </div>
+            <br/><br/>
+            </div>
+                
             <div class="col-md-12">
                 <br/><br/>
                 <center><a href='/images/54816' target='_self' class='btn btn-primary'>Download dataset</a></center>

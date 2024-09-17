@@ -258,4 +258,21 @@ class Pages  extends CI_Controller
         $this->load->view('templates/cil_footer2', $data);
     }
     
+    public function References()
+    {
+        $data['title'] = "CIL references";
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('pages/references_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+    }
+    
+    
+    public function Project_20503()
+    {
+        $data['title']="Ebola virus Huh7 infected cells";
+        $this->load->view('templates/cil_header4', $data);
+        $this->load->view('pages/project_20503_display', $data);
+        $this->load->view('templates/cil_footer2', $data);
+    }
+    
 }
