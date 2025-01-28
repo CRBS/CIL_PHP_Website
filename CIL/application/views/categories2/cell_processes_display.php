@@ -33,27 +33,39 @@
     
     <br/>
 <?php
-    /*$cell_processes = $summary->Cell_process;
-    $count = count($cell_processes);
-    
-        $newRow = false;
-    $i = 0;
-    $index = 0;
-    while($i<$count)
-    {*/
+
+
 if(isset($result->hits->hits))
 {
+  
     $hits = $result->hits->hits;
     $count = count($hits);
     for($i=0;$i<$count;$i++)
     {
+    
 ?>
     <div class="row">
         <div class="col-md-4">
 <?php
-        /*$cp = $cell_processes[$i];
-        include 'inner_cell_processes_image.php';
-        $i++;*/
+        
+        if($i < $count)
+        {
+            $item = $hits[$i];
+            if(isset($item->_source->Name) &&
+                isset($item->_source->Total) &&
+                isset($item->_source->Rep_id))
+            {
+               
+               include 'inner_cell_processes_image.php';
+            }
+            $i++;
+        } 
+?>
+        </div>
+        
+        <div class="col-md-4">
+<?php                
+        
         if($i < $count)
         {
             $item = $hits[$i];
@@ -70,36 +82,7 @@ if(isset($result->hits->hits))
         
         <div class="col-md-4">
 <?php                
-         /*if($i<$count)
-         {
-             $cp = $cell_processes[$i];
-             //echo $cp->Name;
-             include 'inner_cell_processes_image.php';
-            $i++;
-         }*/
-        if($i < $count)
-        {
-            $item = $hits[$i];
-            if(isset($item->_source->Name) &&
-                isset($item->_source->Total) &&
-                isset($item->_source->Rep_id))
-            {
-                include 'inner_cell_processes_image.php';
-            }
-            $i++;
-        }
-?>
-        </div>
         
-        <div class="col-md-4">
-<?php                
-         /*if($i<$count)
-         {
-             $cp = $cell_processes[$i];
-             //echo $cp->Name;
-             include 'inner_cell_processes_image.php';
-            $i++;
-         }*/
         if($i < $count)
         {
             $item = $hits[$i];
@@ -118,7 +101,7 @@ if(isset($result->hits->hits))
         <br/>
 <?php   
     }
-}
+}  
 ?>
  
 </div> 

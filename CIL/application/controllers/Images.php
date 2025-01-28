@@ -159,7 +159,7 @@ class Images  extends CI_Controller
             //echo "<br/>".$query_string0;
             //echo "<br/>".$ip_address;
             
-            $sutil->trackUserQueryInfo($base_url0, $query_string0, $ip_address);
+            //$sutil->trackUserQueryInfo($base_url0, $query_string0, $ip_address);
             
             $data['title'] = $keywords." | CIL Search";
             
@@ -300,7 +300,7 @@ class Images  extends CI_Controller
             $base_url0 = $this->config->item('base_url');
             $query_string0 = $this->input->server('QUERY_STRING');
             $ip_address = $this->input->ip_address();
-            $sutil->trackUserQueryInfo($base_url0, $query_string0, $ip_address);
+            //$sutil->trackUserQueryInfo($base_url0, $query_string0, $ip_address);
             
             
             
@@ -590,7 +590,7 @@ class Images  extends CI_Controller
         $base_url0 = $this->config->item('base_url');
         $ip_address = $this->input->ip_address();
         $browserAgent = $_SERVER['HTTP_USER_AGENT'];
-        $sutil->trackImageView($base_url0, $imageID, $ip_address,$browserAgent);
+        //$sutil->trackImageView($base_url0, $imageID, $ip_address,$browserAgent);
         /***************End Tracking image view*********************/
         
         $data['test'] = "test";
